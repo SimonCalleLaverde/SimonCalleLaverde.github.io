@@ -1,0 +1,18 @@
+<!--IN DEVELOPMENT-->
+
+<!--Have Problem Adding Tags In Pages As Per | tags: [First Tag, Second Tag, Third Tag]-->
+
+{% comment %}
+
+{% assign attachment_list = "#" %}
+{% for attachment in page.attachments %}
+	{% capture filename %}{{ attachment.file_name | downcase }}{% endcapture %}
+	{% assign attachment_list = "#" | append:filename | append:attachment_list %}
+{% endfor %}
+
+{% assign page_tags_list = "#" %}
+{% for tag in page.tags %}
+	{% assign page_tags_list = "#" | append:tag.slug | append:page_tags_list %}
+{% endfor %}
+
+{% endcomment %}

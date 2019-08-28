@@ -1,0 +1,76 @@
+{% assign posts_count = 0 %}
+{% assign sorted_downloadables = site.downloadables | sort:"order" %}
+
+{% assign downloadables_exist = "false" %}
+{% for child in sorted_downloadables %}
+  {% if child.attachment.size > 0 %}
+    {% assign downloadables_exist = "true" %}
+  {% endif %}
+{% endfor %}
+
+{% if downloadables_exist == "true" %}
+  <section class="downloadables-section bg-grey-dark text-center clearfix">
+    <div class="container">
+      <h6 class="text-blue-light text-uppercase pb-3">Downloadables</h6>
+
+      {% for child in sorted_downloadables %}
+        {% assign pdf_link = "empty" %}
+
+        <!--Does child contains a PDF file?-->
+        <!--{% comment %}
+        {% for attachment in child.attachment %}
+          {% if attachment.content_type contains "pdf" %}
+            {% assign pdf_link = attachment.url %}
+          {% endif %}
+        {% endfor %}
+        {% endcomment %}-->
+        
+        <!--Does child contains a file attachment to use as the downloadable? (can be a JPG, PNG, or any attached file)-->
+        {% if child.attachment.url.size > 0 %}
+          {% assign pdf_link = child.attachment.url %}
+        {% endif %}
+        
+        <!--If child contains a file attachment to use as the downloadable-->
+        {% if pdf_link != "empty" %}
+          {% if posts_count == 0 %}
+          <div class="row no-gutters">
+          {% endif %}
+            <div class="col-md-3">
+
+              <article class="{% if posts_count == 0 %}pr-md-1 pl-md-0{% elsif posts_count == 3 %}pr-md-0 pl-md-1{% else %}px-md-1{% endif %} pb-4">
+                <a href="{{ pdf_link }}" target="_blank">
+                  <!--Desktop-->
+                  <style type="text/css">
+                    #thumbnail_{{ child.slug }} {
+                      background:url('{{ child.downloadable_image }}') no-repeat center center scroll;
+                      -webkit-background-size:cover;
+                      -moz-background-size:cover;
+                      -o-background-size:cover;
+                      background-size:cover;
+                    }
+                  </style>
+                  <div style="overflow:hidden;">
+                    <div class="scale-element {{ child.attachment.content_type }} d-none d-md-block" id="thumbnail_{{ child.slug }}" title="{{ child.name }} Thumbnail Image" style="height:195px;">
+                    </div>
+                  </div>
+                  <!--Mobile-->
+                  <img class="d-block d-md-none" src="{{ child.downloadable_image }}" alt="{{ child.name }} Thumbnail Image">
+                </a>
+
+                <a class="text-magenta" href="{{ pdf_link }}" target="_blank" download="download">
+                  <h6 class="text-uppercase mt-3 pt-1">{{ child.name }}</h6>
+                </a>
+              </article>
+
+            </div>
+          {% assign posts_count = posts_count | plus:1 %}
+          {% if posts_count == 4 or forloop.last %}
+          </div>
+          {% assign posts_count = 0 %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </section>
+{% endif %}

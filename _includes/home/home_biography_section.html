@@ -1,0 +1,46 @@
+<!--IN DEVELOPMENT-->
+
+<section class="home-biography-section bg-black clearfix" id="section_2">
+  <div class="container">
+
+    <div class="row pt-5">
+      <div class="col-md-4">
+        <!--Desktop-->
+        <h3 class="headline text-white text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;">{{ page.headline | default:page.title }}</h3>
+        <!--Mobile-->
+        <h4 class="headline text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">{{ page.headline | default:page.title }}</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 offset-md-2">
+        <!--Desktop-->
+        <div class="intro text-grey-light column_div d-none d-md-block"><!--id="column_div"-->
+          {{ content }}
+        </div>
+        <!--Mobile-->
+        <div class="intro text-grey-light d-block d-md-none" aria-hidden="true">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-5">
+      <div class="col-md-6 offset-md-3">
+
+
+
+        <!--Temporary-->
+        <article class="px-4 pb-4 pb-md-5">
+          <a href="{{ 'uploads/referral-letter-simon-calle.pdf' | relative_url }}" target="iframe_pdf">
+            <iframe src="{{ 'uploads/referral-letter-simon-calle.pdf' | relative_url }}" name="iframe_pdf" height="630" width="100%" style="border:none;"></iframe>
+          </a>
+        </article>
+
+
+
+      </div>
+    </div>
+    
+  </div>
+</section>

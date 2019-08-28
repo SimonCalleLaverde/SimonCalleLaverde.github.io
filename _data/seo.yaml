@@ -1,0 +1,4 @@
+---
+Defaults:
+  share_image: "/uploads/share.jpg"
+  excerpt: "Fine Web Design is the platform throught which I will handle small website projects mostly created using Jekyll, Bootstrap 4, and Forestry."

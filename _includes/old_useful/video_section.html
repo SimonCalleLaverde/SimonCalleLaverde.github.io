@@ -1,0 +1,46 @@
+<!--No Longer In Use-->
+
+<!--Base Start: Our Base NB Liquid Modified-->
+{% capture video_id %}https://www.youtube.com/watch?v=DPZdqJWxoIY{% endcapture %}
+{% assign escaped_content = video_id | escape %}
+
+{% if video_id.size > 0 %}
+  <section class="video-section clearfix">
+    
+    <div class="preview-video" style="position:relative; width:100%;">
+      <a href="{{ video_id }}" data-videomodal-title="Video Title">
+        <div class="filter">
+        </div>
+        <i class="fa fa-play-circle" aria-hidden="true" data-aos="fade-zoom-in" data-aos-duration="700" data-aos-easing="ease-in-sine"></i>
+        <img id="video-img-{{ forloop.index }}" src="{{ '/uploads/video-image.jpg' | prepend:site.base_file_url }}">
+        {% if escaped_content contains 'https://vimeo.com/' %}<!--and child.features.size == 0-->
+          <script type="text/javascript">
+            $(function(){
+              $.get('http://vimeo.com/api/v2/video/{{ video_id }}.json', function(data){
+                $('#video-img-{{ forloop.index }}').prop('src',data[0]['thumbnail_large']);
+              });
+            });
+          </script>
+        {% endif %}
+      </a>
+    </div>
+
+  </section>
+{% endif %}
+
+<style type="text/css">
+  .fa-play-circle {
+    position:absolute;
+    width:90px;
+    height:90px;
+    margin:auto;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    font-size:90px;
+    color:#E1E1E1;
+    opacity:0.7;
+    z-index:999;
+  }
+</style>

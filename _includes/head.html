@@ -1,0 +1,40 @@
+<head>
+  <meta charset="utf-8">
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--<meta name="keywords" content="" />-->
+  <link rel="shortcut icon" href="/uploads/favicon.jpg">
+  <title>{{ site.title }}</title>
+  {% seo %}
+  <meta property="og:type" content="article">
+  <meta name="twitter:image" content="/uploads/share.jpg">
+  <meta name="twitter:title" content="Fine Web Design">
+  <meta name="twitter:domain" content="fine-web-design.com">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!--Main-->
+  <link rel="stylesheet" type="text/css" href="{{ '/assets/css/theme.css' | relative_url }}">
+  
+  <!--Flickity-->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <!--AOS | Animate On Scroll Library-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!--{% comment %}
+  {% if site.typekit_id %}
+  	<script src="https://use.typekit.net/{{ site.typekit_id }}.js"></script>
+  	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+  {% endif %}
+
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+  	{% include google-analytics.html %}
+  {% endif %}
+  {% include facebook_pixel.html %}
+  {% endcomment %}-->
+</head>

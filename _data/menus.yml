@@ -1,0 +1,33 @@
+---
+header:
+- identifier: partners
+  url: "/partners"
+  weight: 1
+  title: Partners
+  dev_on: true
+- identifier: resources
+  url: "/resources"
+  weight: 2
+  title: Resources
+  dev_on: true
+- identifier: calendar
+  url: "/calendar"
+  weight: 3
+  title: Calendar
+  dev_on: true
+- identifier: store
+  url: "/store"
+  weight: 4
+  title: Store
+  dev_on: true
+- identifier: contact
+  url: "/contact"
+  weight: 5
+  title: Contact
+  dev_on: false
+# footer:
+# - identifier: home
+#   url: "/"
+#   weight: 1
+#   title: Home
+#   dev_on: ""

@@ -1,0 +1,71 @@
+<!--IN DEVELOPMENT | "Shop/Add-To-Cart" Functionality-->
+
+<!--<script type="text/javascript">
+  $(function(){
+    $('#merchandise_size option:first').prop('selected',true).prop('disabled',true).text('Select Size');
+  });
+</script>-->
+
+<section class="merchandise-page bg-grey-dark clearfix">
+	<div class="container">
+		
+		<h5 class="text-grey-light text-uppercase text-center mb-1 pb-5 d-none d-md-block">Store</h5>
+		<h5 class="text-grey-light text-uppercase text-center mb-1 pb-4 d-block d-md-none" aria-hidden="true">Merchandise</h5>
+
+		{% assign posts_count = 0 %}
+		{% assign sorted_merch = site.merch | sort:"order" %}
+
+	  {% for merch in sorted_merch %}
+		  {% if posts_count == 0 %}
+		  <div class="row">
+		  {% endif %}
+		    <div class="col-md-4">
+		    	<article class="text-center mb-2 pb-4more pb-md-5">
+		    		<!--Desktop-->
+		    		<style type="text/css">
+						  #thumbnail-{{ merch.slug }} {
+						    background:url('{{ merch.thumbnail_image | relative_url }}') no-repeat center center scroll;
+						    -webkit-background-size:cover;
+						    -moz-background-size:cover;
+						    -o-background-size:cover;
+						    background-size:cover;
+						  }
+						</style>
+		    		<div id="thumbnail-{{ merch.slug }}" class="d-none d-md-block" style="height:295px;" title="{{ merch.name }} Image" aria-hidden="true">
+		    		</div>
+
+		    		<!--Mobile-->
+		    		<img src="{{ merch.thumbnail_image | relative_url }}" class="d-block d-md-none" alt="{{ merch.name }} Image">
+
+		    		<h5 class="text-white text-uppercase mt-3 mt-md-4 pt-2 pb-2">{{ merch.name }}</h5>
+		    		<h5 class="text-grey-light text-lighter">USD {{ merch.price }}</h5>
+
+		    		<div class="row pt-2 pt-md-3">
+					    <div class="col-md-12">
+					      <div class="form-group">
+					        <label class="sr-only" for="merchandise_size">Sizes</label>
+					        <select id="merchandise_size" name="merchandise_size_options">
+						        <option value="first" selected="selected">Select Size</option>
+						    		{% for item in merch.size %}
+						        	<option value="{{ item }}">{{ item }}</option>
+						    		{% endfor %}
+						      </select>
+					      </div>
+					    </div>
+					  </div>
+
+					  <!--Missing Function "Shop/Add-To-Cart"-->
+					  <div class="mt-1 pt-1 pt-md-2">
+					  	<a href="#" class="btn btn-blue-light btn-longer">Add to cart</a>
+					  </div>
+					</article>
+		    </div>
+		  {% assign posts_count = posts_count | plus:1 %}
+		  {% if posts_count == 3 or forloop.last %}
+		  </div>
+		  {% assign posts_count = 0 %}
+		  {% endif %}
+	  {% endfor %}
+
+	</div>
+</section>

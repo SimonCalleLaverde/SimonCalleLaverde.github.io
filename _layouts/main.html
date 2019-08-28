@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default:site.lang | default:'en' }}">
+
+  {% include head.html %}
+
+  <body class="theme-colour page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} black" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
+
+    <div class="switch-colour-wrap">
+      <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-inline-block" title="Change to a more classic look"></a>
+      <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-none" title="Change to a more modern look"></a>
+      
+      <p class="text-element text-grey-light d-inline-block">change to white</p>
+      <p class="text-element text-grey-dark d-none">change to black</p>
+    </div>
+
+    {% include cursor.html %}
+
+    {% include nav_social_media.html %}
+
+    {% include nav.html %}
+
+    <h1 class="sr-only">{{ page.title }}</h1>
+
+    {% if page.header_image.size > 0 %}
+      {% include header_image.html %}
+    {% endif %}
+
+    <main class="main-middle-section" id="middle">
+      {{ content }}
+    </main>
+    
+    {% include footer.html %}
+
+    {% include scripts.html %}
+
+    {% include home/home_project_modal.html %}
+
+  </body>
+
+</html>

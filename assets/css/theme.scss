@@ -1,0 +1,62 @@
+---
+---
+
+// Brand Colours
+$theme-color-grey-dark:#222222;
+$theme-color-grey-mid:lighten(#000,60);
+$theme-color-grey-light:#B5B5B5;
+$theme-color-magenta:#EB0082;//Magenta//Other Option #F83470
+//$theme-color-blue-light:darken(rgba(158,232,248,1),10);//Blue Light
+
+//$theme-color-magenta:#FF3547;//Red Neon//Test
+$theme-color-blue-light:rgba(146,174,245,1);//Blue Pastel//Test
+$theme-color-purple-dark:#880E4F;//Purple Dark//Test
+
+// Map Colours
+// https://brandcolors.net/
+$theme-colors: (
+	"facebook":#3B5998,//Facebook Official
+	"twitter":#1DA1F2,//Twitter Official
+	"pinterest":#BD081C,//Pinterest Official
+	"youtube":#FF0000,//Youtube Official
+	"linkedin":#0077B5,//LinkedIn Official
+	"google-plus":#DD4B39,//Google Plus Official
+	"instagram":#E1306C,//Instagram Official
+	"paypal":#003087,//PayPal Official
+	"forestry-darken":darken(#20C997,20),//Forestry Darken
+	"forestry":#20C997,//Forestry
+	"forestry-lighten":lighten(#20C997,20),//Forestry Lighten
+	"jekyll-darken":darken(#FFCC00,20),//Jekyll Darken
+	"jekyll":#FFCC00,//Jekyll
+	"jekyll-lighten":lighten(#FFCC00,20),//Jekyll Lighten
+	"bootstrap-darken":darken(#563D7C,20),//Bootstrap Darken
+	"bootstrap":#563D7C,//Bootstrap
+	"bootstrap-lighten":lighten(#563D7C,20),//Bootstrap Lighten
+
+	"facebook-inverted":#C4A667,//Facebook Inverted
+	"pinterest-inverted":#42F7E3,//Pinterest Inverted
+	"instagram-inverted":#1ECF93,//Instagram Inverted
+
+	"codenation":#0EDDDD,
+
+	"black":#000000,
+	"white":#FFFFFF,
+
+	"grey-dark":$theme-color-grey-dark,
+	"grey-mid":$theme-color-grey-mid,
+	"grey-light":$theme-color-grey-light,
+	"magenta":$theme-color-magenta,
+	"blue-light":$theme-color-blue-light,
+	"purple-dark":$theme-color-purple-dark
+);
+
+// Bootstrap 4
+@import "bootstrap";
+
+// Custom Styles
+@import "styles_theme";
+@import "styles_tablet_and_desktop";
+
+// Plugins
+@import "styles_videos_and_videomodal";
+@import "styles_settings_icon";

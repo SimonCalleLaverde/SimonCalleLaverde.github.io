@@ -1,0 +1,36 @@
+<section class="content-image-left bg-grey-dark text-white clearfix">
+
+  <div class="row no-gutters">
+    <div class="col-md-5 d-none d-md-block" aria-hidden="true"><!--mobile-thumbnail-control-->
+      <style type="text/css">
+        #{{ page.slug }}-side-image {
+          background:url('{{ page.thumbnail_image }}') no-repeat center center scroll;
+          -webkit-background-size:cover;
+          -moz-background-size:cover;
+          -o-background-size:cover;
+          background-size:cover;
+        }
+      </style>
+      <div id="{{ page.slug }}-side-image" title="{{ page.title }} Image" style="position:absolute; width:100%; height:100%; top:0; left:0;">
+      </div>
+    </div>
+    
+    <div class="col-md-7">
+      <div class="mx-0 mx-md-2 pt-4more pb-3 py-lg-5 px-4 px-md-5">
+        <!--Desktop-->
+        <h4 class="headline text-blue-light text-uppercase mb-4 pb-3 d-none d-lg-block">{{ page.headline | default:page.title }}</h4>
+        <!--Mobile-->
+        <h4 class="headline text-blue-light text-uppercase mb-4 d-block d-lg-none" aria-hidden="true">{{ page.headline | default:page.title }}</h4>
+
+        <div class="intro">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-5 d-block d-md-none">
+      <img src="{{ page.thumbnail_image }}" alt="{{ page.title }} Image">
+    </div>
+  </div>
+
+</section>

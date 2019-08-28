@@ -1,0 +1,23 @@
+// Font Face
+$FontsPath:"/uploads";//https://s3.amazonaws.com/bogota-bulldogs/uploads
+
+@font-face {
+  font-family:'BG light';
+  src:url('#{$FontsPath}/hinted-BrandonGrotesque-Light.eot');
+  src:local('Brandon Grotesque Light'), local('BrandonGrotesque-Light'),
+    url('#{$FontsPath}/hinted-BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+    url('#{$FontsPath}/hinted-BrandonGrotesque-Light.woff2') format('woff2'),
+    url('#{$FontsPath}/hinted-BrandonGrotesque-Light.woff') format('woff'),
+    url('#{$FontsPath}/hinted-BrandonGrotesque-Light.ttf') format('truetype');
+  font-weight:300;
+  font-style:normal;
+}
+
+// Font Headline
+$font-headline:"Montserrat",sans-serif;//"Bebas Neue","Avenir Next Pro Bold",Helvetica
+
+// Font Paragraph
+$font-paragraph:"BG light","Avenir Next Pro",Sans-serif;
+
+// Font Subtitles
+$font-subtitles:"Montserrat",sans-serif;//"Bebas Neue","Avenir Next Pro Bold",Helvetica

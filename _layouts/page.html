@@ -1,0 +1,18 @@
+---
+layout: "main"
+---
+
+{% if page.slug == "partners" %}
+	{% include content_centered.html %}
+	{% include partners/partners_section.html %}
+
+{% elsif page.slug == "resources" %}
+	{% include content_centered.html %}
+	{% include resources/video_gallery_section.html %}
+	{% include resources/downloadables_section.html %}
+	{% include resources/carousel_section.html %}
+
+{% else %}
+
+  {% include content_simple.html %}
+{% endif %}

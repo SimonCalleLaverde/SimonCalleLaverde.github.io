@@ -1,0 +1,217 @@
+@include media-breakpoint-up(md) {
+
+  //------------------General Styles------------------//
+
+  // General
+  body {
+  	padding:10px;
+  }
+
+  // Main, Header, Section
+	main, header, section {
+		text-align:left;
+	}
+
+	// Buttons
+  .btn {
+    &.btn-60 {
+      width:60%;
+    }
+  }
+
+  // Columnizer
+  #column_div, .column_div {
+    .first.column {
+      padding-right:20px;
+    }
+    .last.column {
+      padding-left:20px;
+    }
+  }
+
+  // Flickity Carousel
+	.flickity-carousel {
+	  .main-carousel {
+	    article.carousel-cell {
+	      height:530px;
+	    }
+	  }
+	  .flickity-carousel-bottom-images {
+	  	display:block;//Desktop
+	    .carousel-nav {
+		    article.carousel-cell {
+		      //float:left;
+		      width:11.95%;//12.15%
+		      height:100px;
+		      margin:0 0.35%;
+		    }
+		    .flickity-button {
+		      display:none;
+		    }
+	    	// Style the selected nav image compared to the others
+		    article.carousel-cell {
+		      border:3px solid transparent;
+		      @include filter(opacity(0.5));
+		      &.is-nav-selected {
+		        border-color:theme-color("magenta");
+		        @include filter(opacity(1));
+		      }
+		      // > div {
+		      // 	&:hover, &:active, &:focus {
+			     //  	@include box-shadow(none);
+			     //  }
+		      // }
+		    }
+	    }
+	  }
+	}
+
+	//------------------Section Styles------------------//
+
+	// Nav Desktop
+	.navbar {
+		position:fixed;
+		width:100vh;//We Will Use Viewport-Height To Apply To The Width //100%
+		height:70px;
+		top:10px;
+		left:100%;//auto
+    z-index:10000;
+		//mix-blend-mode:difference;//
+		@include transform(rotateZ(90deg));
+  	@include transform-origin(0% 0%);
+    @include transition(all 1000ms cubic-bezier(0.77,0,0.175,1));
+    ul.navbar-nav {
+    	li.nav-item {
+	    	a.nav-link {
+	    		padding:0 0.5rem;//0.5rem 1rem
+	    		font-family:$font-headline;
+	    		//font-weight:bold;
+	    		font-size:14.5px;
+	    		color:theme-color('grey-mid');
+	    		white-space:nowrap;
+	    		&:hover {//, &:active, &:focus
+	    			color:#FFF;//theme-color('grey-light')
+	    		}
+		    	&.active {
+						color:theme-color('blue-light');
+					}
+	    	}
+    	}
+    }
+	}
+
+	// Middle
+  main#middle {
+  }
+
+  // Calendar Page
+	section.calendar-page {
+	  padding:48px 0 20px;
+	}
+
+	// Committee Section
+	section.committee-section {
+	  padding:58px 0 25px;
+	}
+
+	// Merchandise Page
+	section.merchandise-page {
+		padding:58px 0 0;
+	}
+
+	// Partners Section
+	section.partners-section {
+	  padding:40px 0 0;
+	  article.org-article {
+	    .org-logo {
+	      height:123px;
+	    }
+	  }
+	}
+
+	// Carousel Section
+	section.carousel-section {
+	  padding:42px 0 35px;
+	}
+
+	// Feedback Page
+	section.feedback-page {
+		.feedback-form {
+			height:100vh;
+			//min-height:640px;
+		}
+	}
+
+	// Downloadables Section
+	section.downloadables-section {
+	  padding:40px 0 5px;
+	}
+
+	// Video Gallery Section
+	section.video-gallery-section {
+	  padding:7px 0 15px;
+	}
+
+	// Team Section
+	section.team-section {
+	  padding:0 0 10px;
+	}
+
+	// Home Profile Header
+	header.home-profile-header {
+	  padding:60px 0;
+	}
+
+	// Home Biography Section
+	section.home-biography-section {
+		padding:60px 0;
+	}
+
+	// Home Education Section
+	section.home-education-section {
+	  padding:60px 0;
+	}
+
+	// Home Portfolio Section
+	section.home-portfolio-section {
+	  padding:60px 0 0;
+	}
+
+	//------------------Page Styles------------------//
+
+	// Theme Colour White
+	body.theme-colour.white {
+		.navbar {
+			ul.navbar-nav {
+	    	li.nav-item {
+		    	a.nav-link {
+		    		color:theme-color('grey-dark');
+		    		&:hover {//, &:active, &:focus
+		    			color:#000;
+		    		}
+			    	&.active {
+							color:theme-color('magenta');
+						}
+		    	}
+	    	}
+	    }
+		}
+	}
+
+}//@media
+
+//------------------Other Media Queries------------------//
+
+@include media-breakpoint-up(xl) {
+	
+	// main#middle {
+	// 	.container {
+	//     max-width:1010px;
+	//   }
+	// }
+
+	.container {
+		max-width:1055px;//Was 1140px
+	}
+
+}//@media

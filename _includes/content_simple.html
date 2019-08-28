@@ -1,0 +1,19 @@
+<section class="content-simple bg-grey-dark px-4 px-md-0 pt-4more pb-3 py-md-5 clearfix">
+  <div class="container">
+
+    <!--Desktop-->
+    <h3 class="headline text-grey-light text-uppercase mb-4 pb-3 d-none d-md-block">{{ page.headline | default:page.title }}</h3>
+    <!--Mobile-->
+    <h4 class="headline text-grey-light text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">{{ page.headline | default:page.title }}</h4>
+
+    <!--Desktop-->
+    <div class="intro column_div d-none d-md-block"><!--id="column_div"-->
+      {{ content }}
+    </div>
+    <!--Mobile-->
+    <div class="intro d-block d-md-none" aria-hidden="true">
+      {{ content }}
+    </div>
+
+  </div>
+</section>
