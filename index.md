@@ -18,4 +18,5 @@ portfolio_us_section:
 
 <h3 class="text-white">Hello!</h3> I'm Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com">Code Nation</a> for passed 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.
 
+
 https://www.youtube.com/watch?v=2MsN8gpT6jY
