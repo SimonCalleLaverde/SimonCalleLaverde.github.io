@@ -11455,8 +11455,8 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
 .cursor {
   display: none;
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
   background-color: #FFF;
   z-index: 11000;
   pointer-events: none;

@@ -2,7 +2,7 @@ const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
 	//console.log(e);
-	cursor.setAttribute("style", "display:block; top:"+(e.pageY - 35)+"px; left:"+(e.pageX - 35)+"px;")
+	cursor.setAttribute("style", "display:block; top:"+(e.pageY - 60)+"px; left:"+(e.pageX - 60)+"px;")
 })
 
 document.addEventListener('click', () => {
