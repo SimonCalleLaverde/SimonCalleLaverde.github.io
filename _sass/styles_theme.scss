@@ -147,7 +147,7 @@ body {
   // --color-fill:#222222;
   // --color-link:theme-color('magenta');
   //overflow-x:hidden;//Nav Sidebar
-  @include transition(all ease-out 0.4s);
+  @include transition(all ease-out 0.3s);
 }
 // p {
 //   font-family:$font-paragraph;
@@ -212,6 +212,7 @@ img {
 
 // Main, Header, Section
 main, header, section {
+  position:relative;
   text-align:center;
 }
 
@@ -403,16 +404,24 @@ article.project-article {
   position:fixed;
   top:33%;
   left:0;
+  z-index:10000;
   span.fa-stack.custom {
-    height:auto;//Was 2em
+    height:27px;//34px//auto//Was 2em
+    
+
+
+
     .fa-stack-2x, .fa-circle {
+      //height:34px;//
       font-size:1.8rem;//Was 2em
       color:#FFF!important;
+      @include transition(all ease-out 0.3s);
     }
     .fa-stack-1x, .fa-facebook, .fa-pinterest, .fa-instagram {
       font-size:0.9rem;
       line-height:2;
       color:#000!important;
+      @include transition(all ease-out 0.3s);
     }
     &:hover, &:active, &:focus {
       @include filter(opacity(0.9));
@@ -479,54 +488,74 @@ article.project-article {
 span.fa-stack {
   &:hover, &:active, &:focus {
     i.fa {
-      @include animation(fa-spin 0.4s linear);
+      @include animation(fa-spin 0.3s linear);//0.4s
     }
+  }
+}
+
+
+
+
+a, img {
+  &:hover {
+    cursor:none;
   }
 }
 
 // Cursor
 .cursor {
   display:none;
-  position:absolute;//fixed
-  width:120px;//70px
-  height:120px;//70px
-  background-color:#FFF;
-  //border:1px solid #FFF;
+  position:fixed;//absolute
+  width:50px;
+  height:50px;
+  //background-color:#FFF;
+  border:1px solid #FFF;
   z-index:11000;
   pointer-events:none;
   mix-blend-mode:difference;
   @include border-radius(50%);
-  @include transition(100ms ease-out);
-  @include animation(cursorAnim1 .5s infinite alternate);
-  // &.animate-on-hover {
-  //   @include animation(cursorAnim1 .5s infinite alternate);
-  //   &:after {
-  //     @include animation(cursorAnim2 .5s infinite alternate);
-  //   }
+  @include transition(all ease-out 0.2s);//@include transition(ease-out 100ms)
+  //@include animation(cursorAnim1 .5s infinite alternate);
+  // &.cursor-on-click {
+  //   background-color:transparent;
+  //   border-color:theme-color('blue-light');
+  //   @include animation(cursorAnim3 .5s forwards);
   // }
-  &.cursor-on-click {
-    background-color:transparent;
-    border:1px solid theme-color('blue-light');
-    @include animation(cursorAnim3 .5s forwards);
+  &.hoveredLink {
+    width:120px;
+    height:120px;
+    background-color:#FFF;
+    //mix-blend-mode:normal!important;
+    @include transform(translateX(-35px) translateY(-35px));
+    @include animation(cursorAnim1 .5s infinite alternate);
+    // &:after {
+    //   display:block;
+    // }
+  }
+  &.hoveredImg {
+    //background-color:#000;
+    border-color:#000;
+    mix-blend-mode:normal!important;
   }
   // &:after {
+  //   display:none;
   //   content:"";
   //   position:absolute;
-  //   width:80px;
-  //   height:80px;
-  //   top:-7px;
-  //   left:-7px;
-  //   border:3px solid theme-color('magenta');
+  //   width:120px;
+  //   height:120px;
+  //   top:0;
+  //   left:0;
+  //   border:1px solid theme-color('magenta');
   //   @include border-radius(50%);
   //   @include filter(opacity(0.8));
   //   @include animation(cursorAnim2 .5s infinite alternate);
   // }
   @keyframes cursorAnim1 {
     from {
-      @include transform(scale(1));
+      @include transform(scale(1) translateX(-35px) translateY(-35px));
     }
     to {
-      @include transform(scale(.7));
+      @include transform(scale(.7) translateX(-35px) translateY(-35px));
     }
   }
   @keyframes cursorAnim2 {
@@ -534,7 +563,7 @@ span.fa-stack {
       @include transform(scale(1));
     }
     to {
-      @include transform(scale(.7));//.4
+      @include transform(scale(.5));//.4
     }
   }
   @keyframes cursorAnim3 {
@@ -567,6 +596,7 @@ span.fa-stack {
   width:200px;
   top:40px;
   left:40px;
+  z-index:9000;
   a.switch-theme-colour {
     width:20px;
     height:20px;
@@ -581,7 +611,7 @@ span.fa-stack {
     }
     &:hover {//, &:active, &:focus
       @include transform(scale(1.2));
-      @include box-shadow(0 0 10px rgba(255,255,255,0.5)!important);
+      @include box-shadow(0 0 5px rgba(255,255,255,0.5)!important);
     }
     &:hover, &:active, &:focus {
       outline:none!important;//
@@ -592,11 +622,34 @@ span.fa-stack {
   .switch-colour-wrap {
     a.switch-theme-colour {
       &:hover, &:active, &:focus {
-        @include box-shadow(0 0 10px rgba(0,0,0,0.5)!important);
+        @include box-shadow(0 0 5px rgba(0,0,0,0.5)!important);
       }
     }
   }
 }//@media
+
+// Section Number
+.section-number {
+  position:absolute;
+  height:calc(100vh - 120px);
+  //top:45px;
+  left:10%;//100%;
+  color:#FFF;
+  font-family:$font-headline;
+  font-size:20rem;
+  text-align:center;
+  //z-index:9000;
+  -webkit-text-fill-color:#000;//Will Override Color (Regardless Of Order)
+  //-webkit-text-stroke-width:2px;
+  //-webkit-text-stroke-color:#FFF;
+  -webkit-text-stroke:2px #FFF;
+  @include filter(opacity(0.3));
+  // @include transform(rotateZ(90deg) translateY(-4%));//translateY(-26.4%)
+  // @include transform-origin(0% 0%);
+  & + .container, &  .container {
+    z-index:9500;
+  }
+}
 
 //------------------Section Styles------------------//
 
@@ -671,8 +724,8 @@ section.team-section {
   padding:0 20px;
 }
 
-// Home Profile Header
-header.home-profile-header {
+// Home Section One
+header.home-section-one {
   padding:30px 20px;//To revise mobile
   img.profile-image {
     @include border-radius(50%);
@@ -688,18 +741,18 @@ header.home-profile-header {
   // }
 }
 
-// Home Biography Section
-section.home-biography-section {
+// Home Section Two
+section.home-section-two {
   padding:30px 20px;//To revise mobile
 }
 
-// Home Education Section
-section.home-education-section {
+// Home Section Three
+section.home-section-three {
   padding:30px 20px;//To revise mobile
 }
 
-// Home Portfolio Section
-section.home-portfolio-section {
+// Home Section Four
+section.home-section-four {
   padding:30px 20px 0;//To revise mobile
   article {
     iframe {
@@ -742,7 +795,7 @@ body.theme-colour.white {
   // a {
   //   cursor:pointer;
   // }
-  header.home-profile-header {
+  header.home-section-one {
     img.profile-image {
       @include filter(grayscale(0));
     }
@@ -787,6 +840,13 @@ body.theme-colour.white {
     .project-thumbnail {
       .project-year {
         color:theme-color('magenta')!important;
+      }
+    }
+  }
+  .switch-colour-wrap {
+    a.switch-theme-colour {
+      &:hover {//, &:active, &:focus
+        @include box-shadow(0 0 5px rgba(0,0,0,0.5)!important);
       }
     }
   }

@@ -72,12 +72,11 @@
 	.navbar {
 		position:fixed;
 		width:100vh;//We Will Use Viewport-Height To Apply To The Width //100%
-		height:70px;
-		top:10px;
+		height:60px;
 		left:100%;//auto
     z-index:10000;
-		//mix-blend-mode:difference;//
-		@include transform(rotateZ(90deg));
+		//mix-blend-mode:difference;
+		@include transform(rotateZ(90deg) translateY(10px));
   	@include transform-origin(0% 0%);
     @include transition(all 1000ms cubic-bezier(0.77,0,0.175,1));
     ul.navbar-nav {
@@ -87,13 +86,15 @@
 	    		font-family:$font-headline;
 	    		//font-weight:bold;
 	    		font-size:14.5px;
-	    		color:theme-color('grey-mid');
+	    		color:#FFF;//theme-color('grey-mid')
 	    		white-space:nowrap;
+	    		//@include text-shadow(0 0 10px #FFF);
 	    		&:hover {//, &:active, &:focus
 	    			color:#FFF;//theme-color('grey-light')
 	    		}
 		    	&.active {
 						color:theme-color('blue-light');
+	    			@include text-shadow(0 0 10px theme-color('blue-light'));
 					}
 	    	}
     	}
@@ -157,23 +158,26 @@
 	  padding:0 0 10px;
 	}
 
-	// Home Profile Header
-	header.home-profile-header {
+	// Home Section One
+	header.home-section-one {
 	  padding:60px 0;
 	}
 
-	// Home Biography Section
-	section.home-biography-section {
+	// Home Section Two
+	section.home-section-two {
+		min-height:100vh;
 		padding:60px 0;
 	}
 
-	// Home Education Section
-	section.home-education-section {
+	// Home Section Three
+	section.home-section-three {
+		min-height:100vh;
 	  padding:60px 0;
 	}
 
-	// Home Portfolio Section
-	section.home-portfolio-section {
+	// Home Section Four
+	section.home-section-four {
+		min-height:100vh;
 	  padding:60px 0 0;
 	}
 
