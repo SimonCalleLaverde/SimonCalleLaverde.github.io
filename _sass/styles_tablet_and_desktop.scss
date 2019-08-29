@@ -82,6 +82,7 @@
     ul.navbar-nav {
     	li.nav-item {
 	    	a.nav-link {
+	    		position:relative;
 	    		padding:0 0.5rem;//0.5rem 1rem
 	    		font-family:$font-headline;
 	    		//font-weight:bold;
@@ -93,9 +94,68 @@
 	    			color:#FFF;//theme-color('grey-light')
 	    		}
 		    	&.active {
-						color:theme-color('blue-light');
-	    			@include text-shadow(0 0 10px theme-color('blue-light'));
+						color:theme-color('grey-light');//blue-light
+	    			@include text-shadow(0 0 10px theme-color('grey-light'));//blue-light
+	    			// &:hover {
+		    		// 	color:#6D510A;
+		    		// }
+		    		&:after {
+		    			content:'';
+		    			position:absolute;
+		    			//top:-15px;
+		    			right:calc(50% - 3.5px);
+		    			bottom:-5px;
+		    			width:7px;
+		    			height:7px;
+		    			//background-color:theme-color('grey-light');
+		    			border:1.5px solid theme-color('grey-light');
+		    			@include border-radius(50%);
+		    		}
+						// .star-five {
+						// 	@include filter(opacity(1));
+						// }
 					}
+					// .star-five {
+					// 	position:absolute;
+				 //    width:0px;
+				 //    height:0px;
+					// 	top:-10px;//-45px
+					// 	right:-84.5px;
+					// 	//left:-73%;
+				 //    color:theme-color('grey-light');
+				 //    border-right:100px solid transparent;
+				 //    border-bottom:70px solid theme-color('grey-light');
+				 //    border-left:100px solid transparent;
+					// 	@include filter(opacity(0));
+				 //    @include transform(scale(0.06) rotate(30deg));
+					//   &:before {
+					//     display:block;
+					//     position:absolute;
+					//     content:'';
+					//     width:0;
+					//     height:0;
+					//     top:-45px;
+					//     left:-65px;
+					//     border-right:30px solid transparent;
+					//     border-bottom:80px solid theme-color('grey-light');
+					//     border-left:30px solid transparent;
+					//     @include transform(rotate(-35deg));
+					//   }
+					//   &:after {
+					//     display:block;
+					//     position:absolute;
+					//     content:'';
+					//     width:0px;
+					//     height:0px;
+					//     top:3px;
+					//     left:-105px;
+					//     color:theme-color('grey-light');
+					//     border-right:100px solid transparent;
+					//     border-bottom:70px solid theme-color('grey-light');
+					//     border-left:100px solid transparent;
+					//     @include transform(rotate(-70deg));
+					//   }
+				 //  }
 	    	}
     	}
     }

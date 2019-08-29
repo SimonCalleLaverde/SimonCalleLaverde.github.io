@@ -147,6 +147,7 @@ body {
   // --color-fill:#222222;
   // --color-link:theme-color('magenta');
   //overflow-x:hidden;//Nav Sidebar
+  -webkit-font-smoothing:subpixel-antialiased;
   @include transition(all ease-out 0.3s);
 }
 // p {
@@ -409,8 +410,6 @@ article.project-article {
     height:27px;//34px//auto//Was 2em
     
 
-
-
     .fa-stack-2x, .fa-circle {
       //height:34px;//
       font-size:1.8rem;//Was 2em
@@ -493,22 +492,18 @@ span.fa-stack {
   }
 }
 
-
-
-
+// Cursor
 a, img {
   &:hover {
     cursor:none;
   }
 }
-
-// Cursor
 .cursor {
   display:none;
   position:fixed;//absolute
-  width:50px;
-  height:50px;
-  //background-color:#FFF;
+  width:60px;
+  height:60px;
+  background-color:#FFF;
   border:1px solid #FFF;
   z-index:11000;
   pointer-events:none;
@@ -521,21 +516,22 @@ a, img {
   //   border-color:theme-color('blue-light');
   //   @include animation(cursorAnim3 .5s forwards);
   // }
-  &.hoveredLink {
+  &.hoveredLink, &.hoveredIcon {
     width:120px;
     height:120px;
     background-color:#FFF;
     //mix-blend-mode:normal!important;
     @include transform(translateX(-35px) translateY(-35px));
-    @include animation(cursorAnim1 .5s infinite alternate);
+    @include animation(none);
     // &:after {
     //   display:block;
     // }
   }
   &.hoveredImg {
-    //background-color:#000;
-    border-color:#000;
+    background-color:transparent;
+    border-color:#FFF;
     mix-blend-mode:normal!important;
+    @include animation(none);
   }
   // &:after {
   //   display:none;
@@ -552,32 +548,32 @@ a, img {
   // }
   @keyframes cursorAnim1 {
     from {
-      @include transform(scale(1) translateX(-35px) translateY(-35px));
-    }
-    to {
-      @include transform(scale(.7) translateX(-35px) translateY(-35px));
-    }
-  }
-  @keyframes cursorAnim2 {
-    from {
       @include transform(scale(1));
     }
     to {
-      @include transform(scale(.5));//.4
+      @include transform(scale(1.3));//.7
     }
   }
-  @keyframes cursorAnim3 {
-    0% {
-      @include transform(scale(0.5));//(1)
-    }
-    50% {
-      @include transform(scale(1.5));//(3)
-    }
-    100% {
-      @include transform(scale(0.5));//(1)
-      @include filter(opacity(0));
-    }
-  }
+  // @keyframes cursorAnim2 {
+  //   from {
+  //     @include transform(scale(1));
+  //   }
+  //   to {
+  //     @include transform(scale(.4));
+  //   }
+  // }
+  // @keyframes cursorAnim3 {
+  //   0% {
+  //     @include transform(scale(0.5));//(1)
+  //   }
+  //   50% {
+  //     @include transform(scale(1.5));//(3)
+  //   }
+  //   100% {
+  //     @include transform(scale(0.5));//(1)
+  //     @include filter(opacity(0));
+  //   }
+  // }
 }
 @media (pointer:coarse) and (hover:none) {
   .cursor {

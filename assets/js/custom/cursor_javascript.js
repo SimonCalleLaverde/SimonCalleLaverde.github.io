@@ -3,7 +3,7 @@
 
 // document.addEventListener('mousemove', e => {
 // 	//console.log(e);
-// 	cursor.setAttribute("style", "display:block; top:"+(e.pageY - 25)+"px; left:"+(e.pageX - 25)+"px;");
+// 	cursor.setAttribute("style", "display:block; top:"+(e.pageY - 30)+"px; left:"+(e.pageX - 30)+"px;");
 // })
 
 // document.addEventListener('click', () => {
@@ -19,12 +19,14 @@ $(document).mousemove(function(e) {
   const target = $(event.target);
   
   // update position of cursor
-  cursor.css('left', e.clientX - 25).css('top', e.clientY - 25).css('display', 'block');
+  cursor.css('left', e.clientX - 30).css('top', e.clientY - 30).css('display', 'block');
   
   const isLinkTag = target.is('a');
   const isImgTag = target.is('img');
+  const isIconTag = target.is('i');
   const isLinkHovered = cursor.hasClass('hoveredLink');
   const isImgHovered = cursor.hasClass('hoveredImg');
+  const isIconHovered = cursor.hasClass('hoveredIcon');
   
   // toggle the cursor class if necessary 
   if(isLinkTag && !isLinkHovered) {
@@ -38,14 +40,20 @@ $(document).mousemove(function(e) {
   } else if(!isImgTag && isImgHovered) {
     cursor.removeClass('hoveredImg');
   }
+
+  if(isIconTag && !isIconHovered) {
+    cursor.addClass('hoveredIcon');
+  } else if(!isIconTag && isIconHovered) {
+    cursor.removeClass('hoveredIcon');
+  }
 });
 
-$(document).mouseleave(function(e) {
-  const cursor = $('.cursor');
-  cursor.hide()
-});
+// $(document).mouseleave(function(e) {
+//   const cursor = $('.cursor');
+//   cursor.hide()
+// });
 
-$(document).mouseenter(function(e) {
-  const cursor = $('.cursor');
-  cursor.show()
-});
+// $(document).mouseenter(function(e) {
+//   const cursor = $('.cursor');
+//   cursor.show()
+// });
