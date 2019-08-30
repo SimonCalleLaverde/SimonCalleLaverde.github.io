@@ -71,7 +71,7 @@
 	// Nav Desktop
 	.navbar {
 		position:fixed;
-		width:100vh;//We Will Use Viewport-Height To Apply To The Width //100%
+		width:100vh;//100%//We Will Use Viewport-Height To Apply To The Width
 		height:60px;
 		left:100%;//auto
     z-index:10000;
@@ -87,75 +87,32 @@
 	    		font-family:$font-headline;
 	    		//font-weight:bold;
 	    		font-size:14.5px;
-	    		color:#FFF;//theme-color('grey-mid')
+	    		color:#FFF;
 	    		white-space:nowrap;
 	    		//@include text-shadow(0 0 10px #FFF);
 	    		&:hover {//, &:active, &:focus
-	    			color:#FFF;//theme-color('grey-light')
+	    			color:#FFF;
+	    			@include text-shadow(0 0 20px theme-color('grey-light'));
 	    		}
 		    	&.active {
-						color:theme-color('grey-light');//blue-light
-	    			@include text-shadow(0 0 10px theme-color('grey-light'));//blue-light
+						color:theme-color('grey-light');
+	    			@include text-shadow(0 0 20px theme-color('grey-light'));
+	    			@include transition(all 0.3s ease-out);
 	    			// &:hover {
 		    		// 	color:#6D510A;
 		    		// }
 		    		&:after {
 		    			content:'';
 		    			position:absolute;
-		    			//top:-15px;
 		    			right:calc(50% - 3.5px);
-		    			bottom:-5px;
+		    			bottom:-7px;
 		    			width:7px;
 		    			height:7px;
-		    			//background-color:theme-color('grey-light');
 		    			border:1.5px solid theme-color('grey-light');
 		    			@include border-radius(50%);
+		    			@include transition(none);
 		    		}
-						// .star-five {
-						// 	@include filter(opacity(1));
-						// }
 					}
-					// .star-five {
-					// 	position:absolute;
-				 //    width:0px;
-				 //    height:0px;
-					// 	top:-10px;//-45px
-					// 	right:-84.5px;
-					// 	//left:-73%;
-				 //    color:theme-color('grey-light');
-				 //    border-right:100px solid transparent;
-				 //    border-bottom:70px solid theme-color('grey-light');
-				 //    border-left:100px solid transparent;
-					// 	@include filter(opacity(0));
-				 //    @include transform(scale(0.06) rotate(30deg));
-					//   &:before {
-					//     display:block;
-					//     position:absolute;
-					//     content:'';
-					//     width:0;
-					//     height:0;
-					//     top:-45px;
-					//     left:-65px;
-					//     border-right:30px solid transparent;
-					//     border-bottom:80px solid theme-color('grey-light');
-					//     border-left:30px solid transparent;
-					//     @include transform(rotate(-35deg));
-					//   }
-					//   &:after {
-					//     display:block;
-					//     position:absolute;
-					//     content:'';
-					//     width:0px;
-					//     height:0px;
-					//     top:3px;
-					//     left:-105px;
-					//     color:theme-color('grey-light');
-					//     border-right:100px solid transparent;
-					//     border-bottom:70px solid theme-color('grey-light');
-					//     border-left:100px solid transparent;
-					//     @include transform(rotate(-70deg));
-					//   }
-				 //  }
 	    	}
     	}
     }
@@ -252,9 +209,14 @@
 		    		color:theme-color('grey-dark');
 		    		&:hover {//, &:active, &:focus
 		    			color:#000;
+		    			@include text-shadow(0 0 20px rgba(0,0,0,0.5), 0 0 20px rgba(235,0,130,0.5));
 		    		}
 			    	&.active {
 							color:theme-color('magenta');
+							@include text-shadow(0 0 20px rgba(0,0,0,0.5), 0 0 20px rgba(235,0,130,0.5));
+			    		&:after {
+			    			border:1.5px solid theme-color('magenta');
+			    		}
 						}
 		    	}
 	    	}

@@ -11504,7 +11504,7 @@ a:hover, img:hover {
     animation: none; }
   .cursor.hoveredImg {
     background-color: transparent;
-    border-color: #FFF;
+    border-color: #000;
     mix-blend-mode: normal !important;
     -webkit-animation: none;
     -moz-animation: none;
@@ -11532,7 +11532,7 @@ a:hover, img:hover {
     display: none !important; } }
 .switch-colour-wrap {
   position: absolute;
-  width: 200px;
+  width: 250px;
   top: 40px;
   left: 40px;
   z-index: 9000; }
@@ -11547,7 +11547,12 @@ a:hover, img:hover {
     -moz-border-radius: 0.2rem;
     -ms-border-radius: 0.2rem;
     -o-border-radius: 0.2rem;
-    border-radius: 0.2rem; }
+    border-radius: 0.2rem;
+    -webkit-animation: switchAnim 1s infinite alternate;
+    -moz-animation: switchAnim 1s infinite alternate;
+    -ms-animation: switchAnim 1s infinite alternate;
+    -o-animation: switchAnim 1s infinite alternate;
+    animation: switchAnim 1s infinite alternate; }
     .switch-colour-wrap a.switch-theme-colour.btn-outline-black {
       border-width: 1px;
       -webkit-box-shadow: none !important;
@@ -11568,7 +11573,19 @@ a:hover, img:hover {
       box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) !important; }
     .switch-colour-wrap a.switch-theme-colour:hover, .switch-colour-wrap a.switch-theme-colour:active, .switch-colour-wrap a.switch-theme-colour:focus {
       outline: none !important; }
-
+@keyframes switchAnim {
+  from {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); }
+  to {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); } }
 @media (pointer: coarse) and (hover: none) {
   .switch-colour-wrap a.switch-theme-colour:hover, .switch-colour-wrap a.switch-theme-colour:active, .switch-colour-wrap a.switch-theme-colour:focus {
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;
@@ -11633,7 +11650,7 @@ section.team-section {
 
 header.home-section-one {
   padding: 30px 20px; }
-  header.home-section-one img.profile-image {
+  header.home-section-one img.profile-picture {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -11649,6 +11666,12 @@ header.home-section-one {
     -ms-transition: all ease-out 0.3s;
     -o-transition: all ease-out 0.3s;
     transition: all ease-out 0.3s; }
+    header.home-section-one img.profile-picture:hover, header.home-section-one img.profile-picture:active, header.home-section-one img.profile-picture:focus {
+      -webkit-filter: grayscale(0);
+      -moz-filter: grayscale(0);
+      -ms-filter: grayscale(0);
+      -o-filter: grayscale(0);
+      filter: grayscale(0); }
 
 section.home-section-two {
   padding: 30px 20px; }
@@ -11679,7 +11702,7 @@ body.theme-colour.white {
     color: #222222 !important; }
   body.theme-colour.white .cursor {
     display: none !important; }
-  body.theme-colour.white header.home-section-one img.profile-image {
+  body.theme-colour.white header.home-section-one img.profile-picture {
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
     -ms-filter: grayscale(0);
@@ -11709,6 +11732,10 @@ body.theme-colour.white {
     -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;
     -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; }
+  body.theme-colour.white a:hover {
+    cursor: pointer; }
+  body.theme-colour.white img:hover {
+    cursor: default; }
 
 @media (min-width: 768px) {
   body {
@@ -11779,19 +11806,29 @@ body.theme-colour.white {
       color: #FFF;
       white-space: nowrap; }
       .navbar ul.navbar-nav li.nav-item a.nav-link:hover {
-        color: #FFF; }
+        color: #FFF;
+        -webkit-text-shadow: 0 0 20px #B5B5B5;
+        -moz-text-shadow: 0 0 20px #B5B5B5;
+        -ms-text-shadow: 0 0 20px #B5B5B5;
+        -o-text-shadow: 0 0 20px #B5B5B5;
+        text-shadow: 0 0 20px #B5B5B5; }
       .navbar ul.navbar-nav li.nav-item a.nav-link.active {
         color: #B5B5B5;
-        -webkit-text-shadow: 0 0 10px #B5B5B5;
-        -moz-text-shadow: 0 0 10px #B5B5B5;
-        -ms-text-shadow: 0 0 10px #B5B5B5;
-        -o-text-shadow: 0 0 10px #B5B5B5;
-        text-shadow: 0 0 10px #B5B5B5; }
+        -webkit-text-shadow: 0 0 20px #B5B5B5;
+        -moz-text-shadow: 0 0 20px #B5B5B5;
+        -ms-text-shadow: 0 0 20px #B5B5B5;
+        -o-text-shadow: 0 0 20px #B5B5B5;
+        text-shadow: 0 0 20px #B5B5B5;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out; }
         .navbar ul.navbar-nav li.nav-item a.nav-link.active:after {
           content: '';
           position: absolute;
           right: calc(50% - 3.5px);
-          bottom: -5px;
+          bottom: -7px;
           width: 7px;
           height: 7px;
           border: 1.5px solid #B5B5B5;
@@ -11799,7 +11836,12 @@ body.theme-colour.white {
           -moz-border-radius: 50%;
           -ms-border-radius: 50%;
           -o-border-radius: 50%;
-          border-radius: 50%; }
+          border-radius: 50%;
+          -webkit-transition: none;
+          -moz-transition: none;
+          -ms-transition: none;
+          -o-transition: none;
+          transition: none; }
 
   section.calendar-page {
     padding: 48px 0 20px; }
@@ -11848,9 +11890,21 @@ body.theme-colour.white {
   body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link {
     color: #222222; }
     body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link:hover {
-      color: #000; }
+      color: #000;
+      -webkit-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
+      -moz-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
+      -ms-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
+      -o-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5); }
     body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link.active {
-      color: #EB0082; } }
+      color: #EB0082;
+      -webkit-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
+      -moz-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
+      -ms-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
+      -o-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5); }
+      body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link.active:after {
+        border: 1.5px solid #EB0082; } }
 @media (min-width: 1200px) {
   .container {
     max-width: 1055px; } }

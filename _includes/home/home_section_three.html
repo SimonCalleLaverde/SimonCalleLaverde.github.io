@@ -1,29 +1,23 @@
 <!--IN DEVELOPMENT-->
 
-<section class="home-section-three bg-black text-md-right clearfix" id="section_3">
+<section class="home-section-three bg-black clearfix" id="section_3">
   <div class="section-number">
     03
   </div>
 
-	<div class="container">
+  <div class="container">
 
-		<div class="row">
-      <div class="col-md-12">
+    <div class="row pt-5">
+      <div class="col-md-4">
         <!--Desktop-->
-        <h3 class="headline text-white text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;">Education</h3>
+        <h3 class="headline text-white text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;">{{ page.headline | default:page.title }}</h3>
         <!--Mobile-->
-        <h4 class="headline text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">Education</h4>
+        <h4 class="headline text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">{{ page.headline | default:page.title }}</h4>
       </div>
     </div>
 
-
-
-    More than a school, this was an (incubadora) of good believes, good moral and principles,   a lot of .... as well as a place that evoqued creativity and artistic view......
-
-
-
-    <div class="row pt-3">
-      <div class="col-md-6 offset-md-4">
+    <div class="row">
+      <div class="col-md-6 offset-md-2">
         <!--Desktop-->
         <div class="intro text-grey-light column_div d-none d-md-block"><!--id="column_div"-->
           {{ content }}
@@ -35,5 +29,5 @@
       </div>
     </div>
 
-	</div>
+  </div>
 </section>

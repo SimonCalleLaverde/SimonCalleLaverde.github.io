@@ -1,6 +1,6 @@
 <!--IN DEVELOPMENT-->
 
-<section class="home-section-four bg-black clearfix" id="section_4">
+<section class="home-section-four bg-black text-md-right clearfix" id="section_4">
   <div class="section-number">
     04
   </div>
@@ -10,66 +10,28 @@
 		<div class="row">
       <div class="col-md-12">
         <!--Desktop-->
-        <h3 class="headline text-white text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;">{{ page.portfolio_us_section.headline }}</h3>
+        <h3 class="headline text-white text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;">Education</h3>
         <!--Mobile-->
-        <h4 class="headline text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">{{ page.portfolio_us_section.headline }}</h4>
+        <h4 class="headline text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">Education</h4>
       </div>
     </div>
+
+
+
+    More than a school, this was an (incubadora) of good believes, good moral and principles,   a lot of .... as well as a place that evoqued creativity and artistic view......
+
+
 
     <div class="row pt-3">
-      <div class="col-md-2 offset-md-1">
-        <h5 class="text-magenta mb-5">Disclaimer:</h5>
-      </div>
-    </div>
-
-    <div class="row pt-4 pb-2">
-      <div class="col-md-8 offset-md-2">
+      <div class="col-md-6 offset-md-4">
         <!--Desktop-->
-        <div class="intro text-white column_div d-none d-md-block"><!--id="column_div"-->
-          {{ page.portfolio_us_section.content }}
+        <div class="intro text-grey-light column_div d-none d-md-block"><!--id="column_div"-->
+          {{ content }}
         </div>
         <!--Mobile-->
-        <div class="intro text-white d-block d-md-none" aria-hidden="true">
-          {{ page.portfolio_us_section.content }}
+        <div class="intro text-grey-light d-block d-md-none" aria-hidden="true">
+          {{ content }}
         </div>
-      </div>
-    </div>
-
-    <div class="row pt-5">
-      <div class="col-md-12">
-        {% assign posts_count = 0 %}
-        {% assign sorted_projects = site.projects | sort:"order" | reverse %}
-
-        {% for project in sorted_projects %}
-          {% assign posts_count = posts_count | plus:1 %}
-          {% if posts_count == 1 %}
-          <div class="row">
-          {% endif %}
-            <div class="col-md-6 mt-md-1 mb-md-1">
-              {% include home/home_project_article.html %}
-            </div>
-          {% if posts_count == 2 or forloop.last %}
-          </div>
-          {% assign posts_count = 0 %}
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-
-    <div class="row pt-5">
-      <div class="col-md-6 offset-md-3">
-
-
-
-        <!--Temporary-->
-        <article class="px-4 pb-4 pb-md-5">
-          <a href="{{ 'uploads/referral-letter-simon-calle.pdf' | relative_url }}" target="iframe_pdf">
-            <iframe src="{{ 'uploads/referral-letter-simon-calle.pdf' | relative_url }}" name="iframe_pdf" height="630" width="100%" style="border:none;"></iframe>
-          </a>
-        </article>
-
-
-
       </div>
     </div>
 
