@@ -64,7 +64,11 @@
         <!--Temporary-->
         <article class="px-4 pb-4 pb-md-5">
           <a href="{{ 'uploads/referral-letter-simon-calle.pdf' | relative_url }}" target="iframe_pdf">
-            <iframe src="{{ 'uploads/referral-letter-simon-calle.pdf' | relative_url }}" name="iframe_pdf" height="630" width="100%" style="border:none;"></iframe>
+            <!--<iframe src="{{ 'uploads/referral-letter-simon-calle.pdf' | relative_url }}" name="iframe_pdf" height="630" width="100%"></iframe>-->
+
+            <object data="{{ 'uploads/referral-letter-simon-calle.pdf' | relative_url }}" height="630" width="100%">
+              <param name="iframe_pdf" value="">
+            </object>
           </a>
         </article>
 

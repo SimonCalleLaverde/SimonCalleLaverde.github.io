@@ -92,11 +92,11 @@
 	    		//@include text-shadow(0 0 10px #FFF);
 	    		&:hover {//, &:active, &:focus
 	    			color:#FFF;
-	    			@include text-shadow(0 0 20px theme-color('grey-light'));
+	    			@include text-shadow(0 0 10px theme-color('grey-light'), 0 0 20px rgba(0,0,0,1));
 	    		}
 		    	&.active {
 						color:theme-color('grey-light');
-	    			@include text-shadow(0 0 20px theme-color('grey-light'));
+	    			@include text-shadow(0 0 10px theme-color('grey-light'), 0 0 20px rgba(0,0,0,1));
 	    			@include transition(all 0.3s ease-out);
 	    			// &:hover {
 		    		// 	color:#6D510A;

@@ -45,19 +45,21 @@
   <!---->
 </head>
 
-  <body class="theme-colour page-type-basic home white" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"--><!--black-->
+  <body class="theme-colour page-type-basic home black" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
 
     <div class="switch-colour-wrap">
-      <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-inline-block" title="Change to a Black & White look"></a>
-      <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-none" title="Change to a White look"></a>
-      
-      <p class="text-element text-grey-dark d-inline-block">Change to Black mode</p>
-      <p class="text-element text-grey-light d-none">Change to White mode</p>
+      <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-inline-block" title="Change to a White look"></a>
+      <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-none" title="Change to a Black look"></a>
+
+      <template>
+        <p class="text-element text-grey-light d-inline-block">Change to White mode</p>
+        <p class="text-element text-grey-dark d-none">Change to Black mode</p>
+      </template>
     </div>
 
     <div class="cursor"><div></div></div>
 
-    <div class="nav-social-media py-4 px-4more">
+    <aside class="nav-social-media py-4 px-4more">
   <div class="mb-2 pb-2">
     <a class="text-dark" href="https://www.facebook.com/" target="_blank"><!--data-stick-cursor-->
       <span class="fa-stack custom"><!--fa-1x fa-lg fa-4x-->
@@ -84,7 +86,7 @@
       </span>
     </a>
   </div>
-</div>
+</aside>
 
     <!--IN DEVELOPMENT-->
 
@@ -115,10 +117,7 @@
     <main class="main-middle-section" id="middle">
       <!--IN DEVELOPMENT-->
 
-<header class="home-section-one bg-black text-white clearfix" id="section_1"><!--position-relative-->
-  <!--<div class="position-absolute" id="section_1" style="top:-10px;">
-  </div>-->
-
+<header class="home-section-one bg-black text-white clearfix" id="section_1">
   <div class="section-number">
     01
   </div>
@@ -127,8 +126,10 @@
 
     <div class="row d-flex flex-row justify-content-center text-center mb-4">
       <div class="col-3">
-        <img class="profile-picture d-none" src="/uploads/logo-placeholder.jpg" alt="Profile Picture Simón Calle Laverde"><!--scale-element-->
-        <img class="profile-picture d-inline-block" src="/uploads/logo-placeholder.png" alt="Profile Picture Simón Calle Laverde"><!--scale-element-->
+        <!--<figure>-->
+          <img class="profile-picture" src="/uploads/logo-placeholder.jpg" alt="Profile Picture Simón Calle Laverde"><!--d-none-->
+          <!--<img class="profile-picture d-inline-block" src="/uploads/logo-placeholder.png" alt="Profile Picture Simón Calle Laverde">-->
+        <!--</figure>-->
       </div>
     </div>
 
@@ -143,7 +144,7 @@
     <div class="row">
       <div class="col-md-6 offset-md-3">
         <div class="text-grey-light">
-          <p>I’m Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com">Code Nation</a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.</p>
+          <p>I’m Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com"><u>Code Nation</u></a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.</p>
 
 <p>https://www.youtube.com/watch?v=2MsN8gpT6jY</p>
 
@@ -221,24 +222,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_bogota_bulldogs">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-bogota_bulldogs" title="Bogota Bulldogs Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Bogota Bulldogs</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-bogota_bulldogs" title="Bogota Bulldogs Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Bogota Bulldogs</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2019</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2019</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -262,24 +265,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_injured_workers_support_network">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-injured_workers_support_network" title="Injured Workers Support Network Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Injured Workers<br>Support Network</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-injured_workers_support_network" title="Injured Workers Support Network Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Injured Workers<br>Support Network</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2019</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2019</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -308,24 +313,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_repower_alice_springs">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-repower_alice_springs" title="Repower Alice Springs Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Repower Alice<br>Springs</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-repower_alice_springs" title="Repower Alice Springs Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Repower Alice<br>Springs</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2019</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2019</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -349,26 +356,28 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_refugee_council_of_australia">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-refugee_council_of_australia" title="Refugee Council of Australia Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Refugee Council<br>of Australia</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-refugee_council_of_australia" title="Refugee Council of Australia Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Refugee Council<br>of Australia</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">DevelopmentCross-platform coordination</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development <span style="margin-right:1px; font-size:17px;">&middot;</span></h6>
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Cross-platform coordination</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">DevelopmentCross-platform coordination</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development <span style="margin-right:1px; font-size:17px;">&middot;</span></h6>
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Cross-platform coordination</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2019</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2019</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -397,24 +406,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_give_a_dam">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-give_a_dam" title="Give A Dam Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Give A Dam</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-give_a_dam" title="Give A Dam Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Give A Dam</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2019</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2019</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -438,24 +449,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_kimberley_clean_energy_plan">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-kimberley_clean_energy_plan" title="Kimberley Clean Energy Plan Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Kimberley Clean<br>Energy Plan</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-kimberley_clean_energy_plan" title="Kimberley Clean Energy Plan Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Kimberley Clean<br>Energy Plan</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2018</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2018</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -484,24 +497,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_wentworth_for_refugees">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-wentworth_for_refugees" title="Wentworth for Refugees Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Wentworth for<br>Refugees</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-wentworth_for_refugees" title="Wentworth for Refugees Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Wentworth for<br>Refugees</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2018</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2018</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -525,24 +540,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_seed_your_future">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-seed_your_future" title="Seed Your Future Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Seed Your Future</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-seed_your_future" title="Seed Your Future Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Seed Your Future</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2018</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2018</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -571,24 +588,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_repower_australia">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-repower_australia" title="Repower Australia Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Repower<br>Australia</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-repower_australia" title="Repower Australia Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Repower<br>Australia</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2018</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2018</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -612,26 +631,28 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_fitzroy_river_statement">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-fitzroy_river_statement" title="Fitzroy River Statement Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Fitzroy River<br>Statement</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-fitzroy_river_statement" title="Fitzroy River Statement Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Fitzroy River<br>Statement</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">DevelopmentDesign-on-the-go</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development <span style="margin-right:1px; font-size:17px;">&middot;</span></h6>
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Design-on-the-go</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">DevelopmentDesign-on-the-go</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development <span style="margin-right:1px; font-size:17px;">&middot;</span></h6>
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Design-on-the-go</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -660,24 +681,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_outback_queensland">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-outback_queensland" title="Outback Queensland Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Outback<br>Queensland</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-outback_queensland" title="Outback Queensland Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Outback<br>Queensland</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -701,24 +724,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_cultivate_oregon">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-cultivate_oregon" title="Cultivate Oregon Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Cultivate Oregon</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-cultivate_oregon" title="Cultivate Oregon Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Cultivate Oregon</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -747,24 +772,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_time_for_melbournes_west">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-time_for_melbournes_west" title="Time for Melbourne's West Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Time for<br>Melbourne's<br>West</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-time_for_melbournes_west" title="Time for Melbourne's West Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Time for<br>Melbourne's<br>West</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -788,24 +815,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_seed_ban_fracking">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-seed_ban_fracking" title="Seed Ban Fracking Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Seed Ban<br>Fracking</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-seed_ban_fracking" title="Seed Ban Fracking Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Seed Ban<br>Fracking</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -834,24 +863,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_stop_adani_alliance">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-stop_adani_alliance" title="Stop Adani Alliance Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Stop Adani<br>Alliance</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-stop_adani_alliance" title="Stop Adani Alliance Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Stop Adani<br>Alliance</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -875,24 +906,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_child_rights_australia">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-child_rights_australia" title="Child Rights Australia Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Child Rights<br>Australia</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-child_rights_australia" title="Child Rights Australia Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Child Rights<br>Australia</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -921,24 +954,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_alice_springs_community_garden">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-alice_springs_community_garden" title="Alice Springs Community Garden Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">ASCG</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-alice_springs_community_garden" title="Alice Springs Community Garden Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">ASCG</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2017</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -962,24 +997,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_national_apology_foundation">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-national_apology_foundation" title="National Apology Foundation Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Nafia</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-national_apology_foundation" title="National Apology Foundation Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Nafia</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -1008,24 +1045,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_el_avispero_mov">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-el_avispero_mov" title="El Avispero Mov Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">El Avispero Mov</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-el_avispero_mov" title="El Avispero Mov Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">El Avispero Mov</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -1049,24 +1088,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_total_environment_centre">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-total_environment_centre" title="Total Environment Centre Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">TEC</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-total_environment_centre" title="Total Environment Centre Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">TEC</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -1095,24 +1136,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_the_kimberley_like_nowhere_else">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-the_kimberley_like_nowhere_else" title="The Kimberley Like Nowhere Else Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">The Kimberley</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-the_kimberley_like_nowhere_else" title="The Kimberley Like Nowhere Else Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">The Kimberley</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -1136,24 +1179,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_farmers_for_climate_action">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-farmers_for_climate_action" title="Farmers for Climate Action Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Farmers for<br>Climate Action</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-farmers_for_climate_action" title="Farmers for Climate Action Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Farmers for<br>Climate Action</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -1182,24 +1227,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_arid_lands_environment_centre">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-arid_lands_environment_centre" title="Arid Lands Environment Centre Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Arid Lands<br>Environment<br>Centre</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-arid_lands_environment_centre" title="Arid Lands Environment Centre Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Arid Lands<br>Environment<br>Centre</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -1223,24 +1270,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_frack_free_future">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-frack_free_future" title="Frack Free Future Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Frack Free<br>Future</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-frack_free_future" title="Frack Free Future Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Frack Free<br>Future</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -1269,24 +1318,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_healthy_futures">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-healthy_futures" title="Healthy Futures Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">Healthy Futures</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-healthy_futures" title="Healthy Futures Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">Healthy Futures</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2016</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -1310,24 +1361,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_conservation_council_sa">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-conservation_council_sa" title="Conservation Council SA Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">CCSA</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-conservation_council_sa" title="Conservation Council SA Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">CCSA</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2015</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2015</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -1356,24 +1409,26 @@
 	  }
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_australian_religious_response_to_climate_change">
-		<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-australian_religious_response_to_climate_change" title="Australian Religious Response to Climate Change Website Project" style="height:330px;" aria-hidden="true"><!--scale-element-->
-			<div class="project-caption d-flex flex-column">
-				<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<h3 class="text-grey-dark text-uppercase m-0">ARRCC</h3>
-				</div>
+		<!--<figure>-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-australian_religious_response_to_climate_change" title="Australian Religious Response to Climate Change Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column">
+					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<h3 class="text-grey-dark text-uppercase m-0">ARRCC</h3>
+					</div>
 
-				<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-					<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
-					
-						<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
-					
-				</div>
-			</div>
+					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
+						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">Development</h6>-->
+						
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+						
+					</div>
+				</figcaption>
 
-			<div class="project-year text-white">
-				<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2015</h5>
-			</div>
-		</div>
+				<time class="project-year text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">2015</h5>
+				</time>
+			</figure>
+		<!--</figure>-->
 	</a>
 
 	<!---->
@@ -1395,7 +1450,11 @@
         <!--Temporary-->
         <article class="px-4 pb-4 pb-md-5">
           <a href="/uploads/referral-letter-simon-calle.pdf" target="iframe_pdf">
-            <iframe src="/uploads/referral-letter-simon-calle.pdf" name="iframe_pdf" height="630" width="100%" style="border:none;"></iframe>
+            <!--<iframe src="/uploads/referral-letter-simon-calle.pdf" name="iframe_pdf" height="630" width="100%"></iframe>-->
+
+            <object data="/uploads/referral-letter-simon-calle.pdf" height="630" width="100%">
+              <param name="iframe_pdf" value="">
+            </object>
           </a>
         </article>
 
@@ -1429,14 +1488,14 @@
       <div class="col-md-6 offset-md-2">
         <!--Desktop-->
         <div class="intro text-grey-light column_div d-none d-md-block"><!--id="column_div"-->
-          <p>I’m Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com">Code Nation</a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.</p>
+          <p>I’m Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com"><u>Code Nation</u></a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.</p>
 
 <p>https://www.youtube.com/watch?v=2MsN8gpT6jY</p>
 
         </div>
         <!--Mobile-->
         <div class="intro text-grey-light d-block d-md-none" aria-hidden="true">
-          <p>I’m Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com">Code Nation</a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.</p>
+          <p>I’m Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com"><u>Code Nation</u></a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.</p>
 
 <p>https://www.youtube.com/watch?v=2MsN8gpT6jY</p>
 
@@ -1475,14 +1534,14 @@
       <div class="col-md-6 offset-md-4">
         <!--Desktop-->
         <div class="intro text-grey-light column_div d-none d-md-block"><!--id="column_div"-->
-          <p>I’m Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com">Code Nation</a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.</p>
+          <p>I’m Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com"><u>Code Nation</u></a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.</p>
 
 <p>https://www.youtube.com/watch?v=2MsN8gpT6jY</p>
 
         </div>
         <!--Mobile-->
         <div class="intro text-grey-light d-block d-md-none" aria-hidden="true">
-          <p>I’m Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com">Code Nation</a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.</p>
+          <p>I’m Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com"><u>Code Nation</u></a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.</p>
 
 <p>https://www.youtube.com/watch?v=2MsN8gpT6jY</p>
 
@@ -1499,7 +1558,7 @@
 
     <div class="row">
       <div class="col-md-10 offset-md-1">
-        <small class="text-grey-light">© 2019 by <i>Fine Web Design</i>. This site was built by <a class="text-white" href="https://www.fine-web-design.com/?" target="_blank"><i>Fine Web Design</i></a> using <a class="text-jekyll" href="https://jekyllrb.com/" target="_blank">Jekyll</a>, <a class="text-forestry" href="https://forestry.io/" target="_blank">Forestry</a> and <a class="text-bootstrap-lighten" href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a></small><!--text-bootstrap-alternate-->
+        <small class="text-grey-light">© 2019 by <cite>Fine Web Design</cite>. This site was built by <a class="text-white" href="https://www.fine-web-design.com/?" target="_blank"><i>Fine Web Design</i></a> using <a class="text-jekyll" href="https://jekyllrb.com/" target="_blank">Jekyll</a>, <a class="text-forestry" href="https://forestry.io/" target="_blank">Forestry</a> and <a class="text-bootstrap-lighten" href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a></small><!--text-bootstrap-alternate-->
       </div>
     </div>
     
@@ -1559,7 +1618,7 @@
     $('.theme-colour').toggleClass("black white");
     $('.switch-theme-colour').toggleClass("d-none d-inline-block");//btn-outline-white btn-outline-black
     $('.text-element').toggleClass("d-none d-inline-block");
-    $('.profile-picture').toggleClass("d-none d-inline-block");
+    //$('.profile-picture').toggleClass("d-none d-inline-block");
     //$('.text-bootstrap-alternate').toggleClass("text-bootstrap-lighten text-bootstrap");
     e.preventDefault();
   });

@@ -48,19 +48,21 @@
   <!---->
 </head>
 
-  <body class="theme-colour page-type- event-1 white" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"--><!--black-->
+  <body class="theme-colour page-type- event-1 black" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
 
     <div class="switch-colour-wrap">
-      <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-inline-block" title="Change to a Black & White look"></a>
-      <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-none" title="Change to a White look"></a>
-      
-      <p class="text-element text-grey-dark d-inline-block">Change to Black mode</p>
-      <p class="text-element text-grey-light d-none">Change to White mode</p>
+      <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-inline-block" title="Change to a White look"></a>
+      <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-none" title="Change to a Black look"></a>
+
+      <template>
+        <p class="text-element text-grey-light d-inline-block">Change to White mode</p>
+        <p class="text-element text-grey-dark d-none">Change to Black mode</p>
+      </template>
     </div>
 
     <div class="cursor"><div></div></div>
 
-    <div class="nav-social-media py-4 px-4more">
+    <aside class="nav-social-media py-4 px-4more">
   <div class="mb-2 pb-2">
     <a class="text-dark" href="https://www.facebook.com/" target="_blank"><!--data-stick-cursor-->
       <span class="fa-stack custom"><!--fa-1x fa-lg fa-4x-->
@@ -87,7 +89,7 @@
       </span>
     </a>
   </div>
-</div>
+</aside>
 
     <!--IN DEVELOPMENT-->
 
@@ -148,7 +150,7 @@
 
     <div class="row">
       <div class="col-md-10 offset-md-1">
-        <small class="text-grey-light">© 2019 by <i>Fine Web Design</i>. This site was built by <a class="text-white" href="https://www.fine-web-design.com/?" target="_blank"><i>Fine Web Design</i></a> using <a class="text-jekyll" href="https://jekyllrb.com/" target="_blank">Jekyll</a>, <a class="text-forestry" href="https://forestry.io/" target="_blank">Forestry</a> and <a class="text-bootstrap-lighten" href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a></small><!--text-bootstrap-alternate-->
+        <small class="text-grey-light">© 2019 by <cite>Fine Web Design</cite>. This site was built by <a class="text-white" href="https://www.fine-web-design.com/?" target="_blank"><i>Fine Web Design</i></a> using <a class="text-jekyll" href="https://jekyllrb.com/" target="_blank">Jekyll</a>, <a class="text-forestry" href="https://forestry.io/" target="_blank">Forestry</a> and <a class="text-bootstrap-lighten" href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a></small><!--text-bootstrap-alternate-->
       </div>
     </div>
     
@@ -208,7 +210,7 @@
     $('.theme-colour').toggleClass("black white");
     $('.switch-theme-colour').toggleClass("d-none d-inline-block");//btn-outline-white btn-outline-black
     $('.text-element').toggleClass("d-none d-inline-block");
-    $('.profile-picture').toggleClass("d-none d-inline-block");
+    //$('.profile-picture').toggleClass("d-none d-inline-block");
     //$('.text-bootstrap-alternate').toggleClass("text-bootstrap-lighten text-bootstrap");
     e.preventDefault();
   });

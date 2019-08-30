@@ -16,7 +16,7 @@ portfolio_us_section:
     <p>Then we could also eventually add other functionalities, new pages, some in-development design changes or tweaks to the theme, creating new sections or anything coming from our client's feedback during the years and this could have been done by any one in the team.</p>
 ---
 
-I'm Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com">Code Nation</a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.
+I'm Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com"><u>Code Nation</u></a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.
 
 
 https://www.youtube.com/watch?v=2MsN8gpT6jY

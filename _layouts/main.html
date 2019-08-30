@@ -3,14 +3,16 @@
 
   {% include head.html %}
 
-  <body class="theme-colour page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} white" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"--><!--black-->
+  <body class="theme-colour page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} black" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
 
     <div class="switch-colour-wrap">
-      <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-inline-block" title="Change to a Black & White look"></a>
-      <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-none" title="Change to a White look"></a>
-      
-      <p class="text-element text-grey-dark d-inline-block">Change to Black mode</p>
-      <p class="text-element text-grey-light d-none">Change to White mode</p>
+      <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-inline-block" title="Change to a White look"></a>
+      <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-none" title="Change to a Black look"></a>
+
+      <template>
+        <p class="text-element text-grey-light d-inline-block">Change to White mode</p>
+        <p class="text-element text-grey-dark d-none">Change to Black mode</p>
+      </template>
     </div>
 
     {% include cursor.html %}

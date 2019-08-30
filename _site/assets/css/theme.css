@@ -11182,8 +11182,11 @@ a.text-purple-dark:hover, a.text-purple-dark:focus {
   src: local("Brandon Grotesque Light"), local("BrandonGrotesque-Light"), url("/uploads/hinted-BrandonGrotesque-Light.eot?#iefix") format("embedded-opentype"), url("/uploads/hinted-BrandonGrotesque-Light.woff2") format("woff2"), url("/uploads/hinted-BrandonGrotesque-Light.woff") format("woff"), url("/uploads/hinted-BrandonGrotesque-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
-html ::-webkit-scrollbar {
-  display: none; }
+html {
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility; }
+  html ::-webkit-scrollbar {
+    display: none; }
 
 body {
   position: relative;
@@ -11192,7 +11195,6 @@ body {
   font-style: normal;
   font-size: 17px;
   background-color: #222222;
-  -webkit-font-smoothing: subpixel-antialiased;
   -webkit-transition: all ease-out 0.3s;
   -moz-transition: all ease-out 0.3s;
   -ms-transition: all ease-out 0.3s;
@@ -11260,6 +11262,14 @@ img {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.3); }
+
+iframe {
+  border: none; }
+
+figure {
+  margin: 0; }
+  figure figcaption, figure time {
+    pointer-events: none; }
 
 main, header, section {
   position: relative;
@@ -11511,6 +11521,41 @@ a:hover, img:hover {
     -ms-animation: none;
     -o-animation: none;
     animation: none; }
+  .cursor.hoveredFigure {
+    width: 80px;
+    height: 80px;
+    background-color: #EB0082;
+    border-color: #EB0082;
+    mix-blend-mode: normal !important;
+    -webkit-transform: translateY(-10px) translateX(-10px);
+    -moz-transform: translateY(-10px) translateX(-10px);
+    -ms-transform: translateY(-10px) translateX(-10px);
+    -o-transform: translateY(-10px) translateX(-10px);
+    transform: translateY(-10px) translateX(-10px);
+    -webkit-animation: fa-spin 3s linear infinite;
+    -moz-animation: fa-spin 3s linear infinite;
+    -ms-animation: fa-spin 3s linear infinite;
+    -o-animation: fa-spin 3s linear infinite;
+    animation: fa-spin 3s linear infinite; }
+    .cursor.hoveredFigure:after {
+      content: "Open";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      padding-top: 28px;
+      top: -1px;
+      left: -1px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      color: #FFF;
+      border: 1px solid transparent;
+      text-align: center;
+      text-transform: uppercase;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%; }
 @keyframes cursorAnim1 {
   from {
     -webkit-transform: scale(1);
@@ -11807,18 +11852,18 @@ body.theme-colour.white {
       white-space: nowrap; }
       .navbar ul.navbar-nav li.nav-item a.nav-link:hover {
         color: #FFF;
-        -webkit-text-shadow: 0 0 20px #B5B5B5;
-        -moz-text-shadow: 0 0 20px #B5B5B5;
-        -ms-text-shadow: 0 0 20px #B5B5B5;
-        -o-text-shadow: 0 0 20px #B5B5B5;
-        text-shadow: 0 0 20px #B5B5B5; }
+        -webkit-text-shadow: 0 0 10px #B5B5B5, 0 0 20px black;
+        -moz-text-shadow: 0 0 10px #B5B5B5, 0 0 20px black;
+        -ms-text-shadow: 0 0 10px #B5B5B5, 0 0 20px black;
+        -o-text-shadow: 0 0 10px #B5B5B5, 0 0 20px black;
+        text-shadow: 0 0 10px #B5B5B5, 0 0 20px black; }
       .navbar ul.navbar-nav li.nav-item a.nav-link.active {
         color: #B5B5B5;
-        -webkit-text-shadow: 0 0 20px #B5B5B5;
-        -moz-text-shadow: 0 0 20px #B5B5B5;
-        -ms-text-shadow: 0 0 20px #B5B5B5;
-        -o-text-shadow: 0 0 20px #B5B5B5;
-        text-shadow: 0 0 20px #B5B5B5;
+        -webkit-text-shadow: 0 0 10px #B5B5B5, 0 0 20px black;
+        -moz-text-shadow: 0 0 10px #B5B5B5, 0 0 20px black;
+        -ms-text-shadow: 0 0 10px #B5B5B5, 0 0 20px black;
+        -o-text-shadow: 0 0 10px #B5B5B5, 0 0 20px black;
+        text-shadow: 0 0 10px #B5B5B5, 0 0 20px black;
         -webkit-transition: all 0.3s ease-out;
         -moz-transition: all 0.3s ease-out;
         -ms-transition: all 0.3s ease-out;

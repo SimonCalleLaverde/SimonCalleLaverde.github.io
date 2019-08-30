@@ -131,6 +131,9 @@
 
 // General
 html {
+  //-webkit-font-smoothing:antialiased;
+  -webkit-font-smoothing:subpixel-antialiased;
+  text-rendering:optimizeLegibility;
   ::-webkit-scrollbar {
     display:none;
   }
@@ -147,7 +150,6 @@ body {
   // --color-fill:#222222;
   // --color-link:theme-color('magenta');
   //overflow-x:hidden;//Nav Sidebar
-  -webkit-font-smoothing:subpixel-antialiased;
   @include transition(all ease-out 0.3s);
 }
 // p {
@@ -209,6 +211,15 @@ img {
   bottom:0;
   left:0;
   background-color:rgba(0,0,0,0.3);
+}
+iframe {
+  border:none;
+}
+figure {
+  margin:0;//
+  figcaption, time {
+    pointer-events:none;
+  }
 }
 
 // Main, Header, Section
@@ -510,11 +521,11 @@ a, img {
   mix-blend-mode:difference;
   @include border-radius(50%);
   @include transition(all ease-out 0.2s);//@include transition(ease-out 100ms)
-  //@include animation(cursorAnim1 .5s infinite alternate);
+  //@include animation(cursorAnim1 0.5s infinite alternate);
   // &.cursor-on-click {
   //   background-color:transparent;
   //   border-color:theme-color('blue-light');
-  //   @include animation(cursorAnim3 .5s forwards);
+  //   @include animation(cursorAnim3 0.5s forwards);
   // }
   &.hoveredLink, &.hoveredIcon {
     width:120px;
@@ -527,11 +538,36 @@ a, img {
     //   display:block;
     // }
   }
-  &.hoveredImg {
+  &.hoveredImg {//hoveredBgImage
     background-color:transparent;
     border-color:#000;
     mix-blend-mode:normal!important;
     @include animation(none);
+  }
+  &.hoveredFigure {//hoveredFigcaption
+    width:80px;
+    height:80px;
+    background-color:theme-color('magenta');
+    border-color:theme-color('magenta');
+    mix-blend-mode:normal!important;
+    @include transform(translateY(-10px) translateX(-10px));
+    @include animation(fa-spin 3s linear infinite);
+    &:after {
+      content:"Open";
+      position:absolute;
+      width:80px;
+      height:80px;
+      padding-top:28px;
+      top:-1px;
+      left:-1px;
+      font-family:$font-headline;
+      font-size:15px;
+      color:#FFF;
+      border:1px solid transparent;//rgba(0,0,0,0.5)
+      text-align:center;
+      text-transform:uppercase;
+      @include border-radius(50%);
+    }
   }
   // &:after {
   //   display:none;
@@ -544,7 +580,7 @@ a, img {
   //   border:1px solid theme-color('magenta');
   //   @include border-radius(50%);
   //   @include filter(opacity(0.8));
-  //   @include animation(cursorAnim2 .5s infinite alternate);
+  //   @include animation(cursorAnim2 0.5s infinite alternate);
   // }
   @keyframes cursorAnim1 {
     from {

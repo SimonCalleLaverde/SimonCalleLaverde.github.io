@@ -22,10 +22,14 @@ $(document).mousemove(function(e) {
   cursor.css('left', e.clientX - 30).css('top', e.clientY - 30).css('display', 'block');
   
   const isLinkTag = target.is('a');
-  const isImgTag = target.is('img');
+  const isImgTag = target.is('img');//figure
+  const isFigureTag = target.is('figure');//document.querySelectorAll('.bg-image');//document.getElementsByClassName('bg-image');
+  //const isFigcaptionTag = target.is('figcaption');
   const isIconTag = target.is('i');
   const isLinkHovered = cursor.hasClass('hoveredLink');
   const isImgHovered = cursor.hasClass('hoveredImg');
+  const isFigureHovered = cursor.hasClass('hoveredFigure');
+  //const isFigcaptionHovered = cursor.hasClass('hoveredFigcaption');
   const isIconHovered = cursor.hasClass('hoveredIcon');
   
   // toggle the cursor class if necessary 
@@ -46,14 +50,26 @@ $(document).mousemove(function(e) {
   } else if(!isIconTag && isIconHovered) {
     cursor.removeClass('hoveredIcon');
   }
+
+  if(isFigureTag && !isFigureHovered) {
+    cursor.addClass('hoveredFigure');
+  } else if(!isFigureTag && isFigureHovered) {
+    cursor.removeClass('hoveredFigure');
+  }
+
+  // if(isFigcaptionTag && !isFigcaptionHovered) {
+  //   cursor.addClass('hoveredFigcaption');
+  // } else if(!isFigcaptionTag && isFigcaptionHovered) {
+  //   cursor.removeClass('hoveredFigcaption');
+  // }
 });
 
-// $(document).mouseleave(function(e) {
-//   const cursor = $('.cursor');
-//   cursor.hide()
-// });
+$(document).mouseleave(function(e) {
+  const cursor = $('.cursor');
+  cursor.hide()
+});
 
-// $(document).mouseenter(function(e) {
-//   const cursor = $('.cursor');
-//   cursor.show()
-// });
+$(document).mouseenter(function(e) {
+  const cursor = $('.cursor');
+  cursor.show()
+});
