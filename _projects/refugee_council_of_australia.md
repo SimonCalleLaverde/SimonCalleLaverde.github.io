@@ -5,7 +5,7 @@ thumbnail_image: /uploads/site-image-refugee-council-of-australia.png
 platform: NationBuilder
 theme: Bootstrap 4
 year: 2019
-roles: [Development, Cross-platform coordination]
+roles: [Development, Cross Platform]
 web:
   domain: refugeecouncilaus-refugeecouncilaus.nationbuilder.com
   image: /uploads/site-web-refugee-council-of-australia.png

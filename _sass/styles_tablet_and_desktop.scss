@@ -91,7 +91,7 @@
 	    		white-space:nowrap;
 	    		//@include text-shadow(0 0 10px #FFF);
 	    		&:hover {//, &:active, &:focus
-	    			color:#FFF;
+	    			color:theme-color('grey-light');//#FFF
 	    			@include text-shadow(0 0 10px theme-color('grey-light'), 0 0 20px rgba(0,0,0,1));
 	    		}
 		    	&.active {
@@ -122,80 +122,49 @@
   main#middle {
   }
 
-  // Calendar Page
+  // Blog Page
+	section.blog-page {
+	  padding:50px 0 25px;
+	}
+
+	// Calendar Page
 	section.calendar-page {
-	  padding:48px 0 20px;
-	}
-
-	// Committee Section
-	section.committee-section {
-	  padding:58px 0 25px;
-	}
-
-	// Merchandise Page
-	section.merchandise-page {
-		padding:58px 0 0;
-	}
-
-	// Partners Section
-	section.partners-section {
-	  padding:40px 0 0;
-	  article.org-article {
-	    .org-logo {
-	      height:123px;
-	    }
-	  }
-	}
-
-	// Carousel Section
-	section.carousel-section {
-	  padding:42px 0 35px;
+	  padding:50px 0 25px;
 	}
 
 	// Feedback Page
 	section.feedback-page {
-		.feedback-form {
-			height:100vh;
-			//min-height:640px;
-		}
+		// .feedback-form {
+		// 	height:100vh;
+		// 	//min-height:640px;
+		// }
 	}
 
-	// Downloadables Section
-	section.downloadables-section {
-	  padding:40px 0 5px;
-	}
-
-	// Video Gallery Section
-	section.video-gallery-section {
-	  padding:7px 0 15px;
-	}
-
-	// Team Section
-	section.team-section {
-	  padding:0 0 10px;
-	}
-
-	// Home Section One
-	header.home-section-one {
+	// Home One Section
+	header.home-one-section {
 	  padding:60px 0;
 	}
 
-	// Home Section Two
-	section.home-section-two {
+	// Home Two Section
+	section.home-two-section {
 		min-height:100vh;
 		padding:60px 0;
 	}
 
-	// Home Section Three
-	section.home-section-three {
+	// Home Three Section
+	section.home-three-section {
 		min-height:100vh;
 	  padding:60px 0;
 	}
 
-	// Home Section Four
-	section.home-section-four {
+	// Home Four Section
+	section.home-four-section {
 		min-height:100vh;
 	  padding:60px 0 0;
+	}
+
+	// Work Section
+	section.work-section {
 	}
 
 	//------------------Page Styles------------------//

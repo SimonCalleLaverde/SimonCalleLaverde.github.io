@@ -12,16 +12,15 @@
 	</style>
 	<a href="#" data-toggle="modal" data-target="#projectModal_{{ project.slug }}">
 		<!--<figure>-->
-			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-{{ project.slug }}" title="{{ project.name }} Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+			<figure class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-{{ project.slug }}" title="{{ project.name }} Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"--><!--div-->
 				<figcaption class="project-caption d-flex flex-column">
 					<div class="project-name align-self-start bg-white mb-2 py-2 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
 						<h3 class="text-grey-dark text-uppercase m-0">{{ project.name_for_thumbnail }}</h3>
 					</div>
 
 					<div class="project-roles align-self-start bg-white pt-1 px-3"><!--d-inline-flex--><!--style="flex-basis:auto;"-->
-						<!--<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="font-size:0.8rem;">{{ project.roles }}</h6>-->
 						{% for item in project.roles %}
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">{{ item }}{% unless forloop.last %} <span style="margin-right:1px; font-size:17px;">&middot;</span>{% endunless %}</h6>
+							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">{{ item }}{% unless forloop.last %} <span style="margin-right:1px;">&middot;</span>{% endunless %}</h6>
 						{% endfor %}
 					</div>
 				</figcaption>

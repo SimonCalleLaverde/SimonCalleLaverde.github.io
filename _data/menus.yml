@@ -1,28 +1,13 @@
 ---
 header:
-- identifier: partners
-  url: "/partners"
+- identifier: work
+  url: "/work"
   weight: 1
-  title: Partners
-  dev_on: true
-- identifier: resources
-  url: "/resources"
-  weight: 2
-  title: Resources
-  dev_on: true
-- identifier: calendar
-  url: "/calendar"
-  weight: 3
-  title: Calendar
-  dev_on: true
-- identifier: store
-  url: "/store"
-  weight: 4
-  title: Store
+  title: Work
   dev_on: true
 - identifier: contact
   url: "/contact"
-  weight: 5
+  weight: 2
   title: Contact
   dev_on: false
 # footer:

@@ -1,6 +1,6 @@
 <!--IN DEVELOPMENT-->
 
-<section class="home-section-two bg-black clearfix" id="section_2">
+<section class="home-two-section bg-black clearfix" id="section_2">
   <div class="section-number">
     02
   </div>
@@ -10,9 +10,9 @@
 		<div class="row">
       <div class="col-md-12">
         <!--Desktop-->
-        <h3 class="headline text-white text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;">{{ page.portfolio_us_section.headline }}</h3>
+        <h3 class="headline text-white text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;">{{ page.portfolio_section.headline }}</h3>
         <!--Mobile-->
-        <h4 class="headline text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">{{ page.portfolio_us_section.headline }}</h4>
+        <h4 class="headline text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">{{ page.portfolio_section.headline }}</h4>
       </div>
     </div>
 
@@ -26,11 +26,11 @@
       <div class="col-md-8 offset-md-2">
         <!--Desktop-->
         <div class="intro text-white column_div d-none d-md-block"><!--id="column_div"-->
-          {{ page.portfolio_us_section.content }}
+          {{ page.portfolio_section.content }}
         </div>
         <!--Mobile-->
         <div class="intro text-white d-block d-md-none" aria-hidden="true">
-          {{ page.portfolio_us_section.content }}
+          {{ page.portfolio_section.content }}
         </div>
       </div>
     </div>
@@ -40,7 +40,7 @@
         {% assign posts_count = 0 %}
         {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
-        {% for project in sorted_projects %}
+        {% for project in sorted_projects | limit:6 %}
           {% assign posts_count = posts_count | plus:1 %}
           {% if posts_count == 1 %}
           <div class="row">

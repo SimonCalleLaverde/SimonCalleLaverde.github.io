@@ -4,15 +4,17 @@
   {% include head.html %}
 
   <body class="theme-colour page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} black" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
+    
+    <h1 class="sr-only">{{ page.title }}</h1>
 
     <div class="switch-colour-wrap">
-      <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-inline-block" title="Change to a White look"></a>
-      <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-none" title="Change to a Black look"></a>
-
-      <template>
+      <!--<template>-->
         <p class="text-element text-grey-light d-inline-block">Change to White mode</p>
         <p class="text-element text-grey-dark d-none">Change to Black mode</p>
-      </template>
+      <!--</template>-->
+
+      <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-inline-block" title="Change to a White look"></a>
+      <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-none" title="Change to a Black look"></a>
     </div>
 
     {% include cursor.html %}
@@ -20,9 +22,7 @@
     {% include nav_social_media.html %}
 
     {% include nav.html %}
-
-    <h1 class="sr-only">{{ page.title }}</h1>
-
+    
     {% if page.header_image.size > 0 %}
       {% include header_image.html %}
     {% endif %}

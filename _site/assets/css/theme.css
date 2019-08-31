@@ -11524,19 +11524,19 @@ a:hover, img:hover {
   .cursor.hoveredFigure {
     width: 80px;
     height: 80px;
-    background-color: #EB0082;
-    border-color: #EB0082;
+    background-color: transparent;
+    border-color: transparent;
     mix-blend-mode: normal !important;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
     -webkit-transform: translateY(-10px) translateX(-10px);
     -moz-transform: translateY(-10px) translateX(-10px);
     -ms-transform: translateY(-10px) translateX(-10px);
     -o-transform: translateY(-10px) translateX(-10px);
-    transform: translateY(-10px) translateX(-10px);
-    -webkit-animation: fa-spin 3s linear infinite;
-    -moz-animation: fa-spin 3s linear infinite;
-    -ms-animation: fa-spin 3s linear infinite;
-    -o-animation: fa-spin 3s linear infinite;
-    animation: fa-spin 3s linear infinite; }
+    transform: translateY(-10px) translateX(-10px); }
     .cursor.hoveredFigure:after {
       content: "Open";
       position: absolute;
@@ -11547,15 +11547,21 @@ a:hover, img:hover {
       left: -1px;
       font-family: "Montserrat", sans-serif;
       font-size: 15px;
+      background-color: #EB0082;
       color: #FFF;
-      border: 1px solid transparent;
+      border: 1px solid #EB0082;
       text-align: center;
       text-transform: uppercase;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
-      border-radius: 50%; }
+      border-radius: 50%;
+      -webkit-animation: fa-spin 3s linear infinite;
+      -moz-animation: fa-spin 3s linear infinite;
+      -ms-animation: fa-spin 3s linear infinite;
+      -o-animation: fa-spin 3s linear infinite;
+      animation: fa-spin 3s linear infinite; }
 @keyframes cursorAnim1 {
   from {
     -webkit-transform: scale(1);
@@ -11577,14 +11583,13 @@ a:hover, img:hover {
     display: none !important; } }
 .switch-colour-wrap {
   position: absolute;
-  width: 250px;
   top: 40px;
-  left: 40px;
-  z-index: 9000; }
+  right: 42px;
+  z-index: 10001; }
   .switch-colour-wrap a.switch-theme-colour {
     width: 20px;
     height: 20px;
-    margin-right: 5px;
+    margin-left: 5px;
     padding: 0;
     vertical-align: top;
     outline: none !important;
@@ -11656,46 +11661,18 @@ a:hover, img:hover {
   .section-number + .container, .section-number .container {
     z-index: 9500; }
 
-section.calendar-page {
-  padding: 30px 20px 0; }
-
-section.committee-section {
-  padding: 30px 20px 0; }
-
-section.merchandise-page {
-  padding: 30px 20px 0; }
-  section.merchandise-page article .form-group > select {
-    width: 100%;
-    height: 35px;
-    padding: 8px 15px;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0; }
-    section.merchandise-page article .form-group > select:hover, section.merchandise-page article .form-group > select:active, section.merchandise-page article .form-group > select:focus {
-      cursor: pointer; }
-
-section.partners-section {
-  padding: 5px 20px; }
-  section.partners-section article.org-article .org-logo {
-    height: auto; }
-
-section.carousel-section {
-  padding: 30px 20px 35px; }
-
-section.downloadables-section {
-  padding: 30px 20px 0; }
-
-section.video-gallery-section {
-  padding: 0 20px 5px; }
-
-section.team-section {
-  padding: 0 20px; }
-
-header.home-section-one {
+section.blog-page {
   padding: 30px 20px; }
-  header.home-section-one img.profile-picture {
+
+section.calendar-page {
+  padding: 30px 20px; }
+
+section.feedback-page {
+  padding: 30px 20px; }
+
+header.home-one-section {
+  padding: 30px 20px; }
+  header.home-one-section img.profile-picture {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -11711,22 +11688,22 @@ header.home-section-one {
     -ms-transition: all ease-out 0.3s;
     -o-transition: all ease-out 0.3s;
     transition: all ease-out 0.3s; }
-    header.home-section-one img.profile-picture:hover, header.home-section-one img.profile-picture:active, header.home-section-one img.profile-picture:focus {
+    header.home-one-section img.profile-picture:hover, header.home-one-section img.profile-picture:active, header.home-one-section img.profile-picture:focus {
       -webkit-filter: grayscale(0);
       -moz-filter: grayscale(0);
       -ms-filter: grayscale(0);
       -o-filter: grayscale(0);
       filter: grayscale(0); }
 
-section.home-section-two {
+section.home-two-section {
   padding: 30px 20px; }
 
-section.home-section-three {
+section.home-three-section {
   padding: 30px 20px; }
 
-section.home-section-four {
+section.home-four-section {
   padding: 30px 20px 0; }
-  section.home-section-four article iframe {
+  section.home-four-section article iframe {
     -webkit-border-radius: 0.3rem;
     -moz-border-radius: 0.3rem;
     -ms-border-radius: 0.3rem;
@@ -11747,7 +11724,7 @@ body.theme-colour.white {
     color: #222222 !important; }
   body.theme-colour.white .cursor {
     display: none !important; }
-  body.theme-colour.white header.home-section-one img.profile-picture {
+  body.theme-colour.white header.home-one-section img.profile-picture {
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
     -ms-filter: grayscale(0);
@@ -11851,7 +11828,7 @@ body.theme-colour.white {
       color: #FFF;
       white-space: nowrap; }
       .navbar ul.navbar-nav li.nav-item a.nav-link:hover {
-        color: #FFF;
+        color: #B5B5B5;
         -webkit-text-shadow: 0 0 10px #B5B5B5, 0 0 20px black;
         -moz-text-shadow: 0 0 10px #B5B5B5, 0 0 20px black;
         -ms-text-shadow: 0 0 10px #B5B5B5, 0 0 20px black;
@@ -11888,47 +11865,24 @@ body.theme-colour.white {
           -o-transition: none;
           transition: none; }
 
+  section.blog-page {
+    padding: 50px 0 25px; }
+
   section.calendar-page {
-    padding: 48px 0 20px; }
+    padding: 50px 0 25px; }
 
-  section.committee-section {
-    padding: 58px 0 25px; }
-
-  section.merchandise-page {
-    padding: 58px 0 0; }
-
-  section.partners-section {
-    padding: 40px 0 0; }
-    section.partners-section article.org-article .org-logo {
-      height: 123px; }
-
-  section.carousel-section {
-    padding: 42px 0 35px; }
-
-  section.feedback-page .feedback-form {
-    height: 100vh; }
-
-  section.downloadables-section {
-    padding: 40px 0 5px; }
-
-  section.video-gallery-section {
-    padding: 7px 0 15px; }
-
-  section.team-section {
-    padding: 0 0 10px; }
-
-  header.home-section-one {
+  header.home-one-section {
     padding: 60px 0; }
 
-  section.home-section-two {
+  section.home-two-section {
     min-height: 100vh;
     padding: 60px 0; }
 
-  section.home-section-three {
+  section.home-three-section {
     min-height: 100vh;
     padding: 60px 0; }
 
-  section.home-section-four {
+  section.home-four-section {
     min-height: 100vh;
     padding: 60px 0 0; }
 

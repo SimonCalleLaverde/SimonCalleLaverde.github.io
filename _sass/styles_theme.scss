@@ -419,8 +419,6 @@ article.project-article {
   z-index:10000;
   span.fa-stack.custom {
     height:27px;//34px//auto//Was 2em
-    
-
     .fa-stack-2x, .fa-circle {
       //height:34px;//
       font-size:1.8rem;//Was 2em
@@ -547,11 +545,11 @@ a, img {
   &.hoveredFigure {//hoveredFigcaption
     width:80px;
     height:80px;
-    background-color:theme-color('magenta');
-    border-color:theme-color('magenta');
+    background-color:transparent;
+    border-color:transparent;
     mix-blend-mode:normal!important;
+    @include transition(none);
     @include transform(translateY(-10px) translateX(-10px));
-    @include animation(fa-spin 3s linear infinite);
     &:after {
       content:"Open";
       position:absolute;
@@ -562,11 +560,14 @@ a, img {
       left:-1px;
       font-family:$font-headline;
       font-size:15px;
+      background-color:theme-color('magenta');
       color:#FFF;
-      border:1px solid transparent;//rgba(0,0,0,0.5)
+      border:1px solid theme-color('magenta');
       text-align:center;
       text-transform:uppercase;
       @include border-radius(50%);
+      //@include transition(all ease-out 0.2s);
+      @include animation(fa-spin 3s linear infinite);
     }
   }
   // &:after {
@@ -625,14 +626,14 @@ a, img {
 // Switch Colour Wrap
 .switch-colour-wrap {
   position:absolute;
-  width:250px;
+  //width:auto;//250px
   top:40px;
-  left:40px;
-  z-index:9000;
+  right:42px;
+  z-index:10001;
   a.switch-theme-colour {
     width:20px;
     height:20px;
-    margin-right:5px;
+    margin-left:5px;
     padding:0;
     vertical-align:top;
     outline:none!important;//
@@ -698,75 +699,23 @@ a, img {
 main#middle {
 }
 
+// Blog Page
+section.blog-page {
+  padding:30px 20px;
+}
+
 // Calendar Page
 section.calendar-page {
-  padding:30px 20px 0;
-}
-
-// Committee Section
-section.committee-section {
-  padding:30px 20px 0;
-}
-
-// Merchandise Page
-section.merchandise-page {
-  padding:30px 20px 0;
-  article {
-    .form-group {
-      > select {
-        width:100%;
-        height:35px;
-        padding:8px 15px;
-        @include border-radius(0);
-        option {
-          // &:hover, &:active, &:focus {
-          //   cursor:pointer;
-          // }
-        }
-        &:hover, &:active, &:focus {
-          cursor:pointer;
-        }
-      }
-    }
-  }
-}
-
-// Partners Section
-section.partners-section {
-  padding:5px 20px;
-  article.org-article {
-    .org-logo {
-      height:auto;
-    }
-  }
-}
-
-// Carousel Section
-section.carousel-section {
-  padding:30px 20px 35px;
+  padding:30px 20px;
 }
 
 // Feedback Page
 section.feedback-page {
+  padding:30px 20px;
 }
 
-// Downloadables Section
-section.downloadables-section {
-  padding:30px 20px 0;
-}
-
-// Video Gallery Section
-section.video-gallery-section {
-  padding:0 20px 5px;
-}
-
-// Team Section
-section.team-section {
-  padding:0 20px;
-}
-
-// Home Section One
-header.home-section-one {
+// Home One Section
+header.home-one-section {
   padding:30px 20px;//To revise mobile
   img.profile-picture {
     @include border-radius(50%);
@@ -778,24 +727,28 @@ header.home-section-one {
   }
 }
 
-// Home Section Two
-section.home-section-two {
+// Home Two Section
+section.home-two-section {
   padding:30px 20px;//To revise mobile
 }
 
-// Home Section Three
-section.home-section-three {
+// Home Three Section
+section.home-three-section {
   padding:30px 20px;//To revise mobile
 }
 
-// Home Section Four
-section.home-section-four {
+// Home Four Section
+section.home-four-section {
   padding:30px 20px 0;//To revise mobile
   article {
     iframe {
       @include border-radius(0.3rem);
     }
   }
+}
+
+// Work Section
+section.work-section {
 }
 
 // Footer
@@ -805,12 +758,20 @@ footer {
 
 //------------------Page Styles------------------//
 
+// Blog Page
+body.page-type-blog {
+}
+
 // Calendar Page
 body.page-type-calendar {
 }
 
-// Partners Page (Basic)
-body.page-type-basic.partners {
+// Feedback Page
+body.page-type-feedback {
+}
+
+// Work Page (Basic)
+body.page-type-basic.work {
 }
 
 // Theme Colour White
@@ -832,7 +793,7 @@ body.theme-colour.white {
   // a {
   //   cursor:pointer;
   // }
-  header.home-section-one {
+  header.home-one-section {
     img.profile-picture {
       @include filter(grayscale(0));
     }
