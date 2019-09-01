@@ -10,5 +10,7 @@ web:
   domain: www.alec.org.au
   image: /uploads/site-web-arid-lands-environment-centre.png
   url: https://www.alec.org.au/
+category: Code Nation
+tags: ""
 order: 5
 ---

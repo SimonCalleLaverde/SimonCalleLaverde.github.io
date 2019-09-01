@@ -10,5 +10,7 @@ web:
   domain: www.kimberleycleanenergy.org
   image: /uploads/site-web-kimberley-clean-energy-plan.png
   url: https://www.kimberleycleanenergy.org/
+category: Code Nation
+tags: [featured, other]
 order: 22
 ---

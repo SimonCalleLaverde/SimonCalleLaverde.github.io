@@ -10,6 +10,8 @@ web:
   domain: www.repoweralicesprings.org.au
   image: /uploads/site-web-repower-alice-springs.png
   url: https://www.repoweralicesprings.org.au/
+category: Code Nation
+tags: ""
 order: 25
 ---
 

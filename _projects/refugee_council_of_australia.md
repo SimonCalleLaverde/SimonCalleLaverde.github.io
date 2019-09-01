@@ -10,6 +10,8 @@ web:
   domain: refugeecouncilaus-refugeecouncilaus.nationbuilder.com
   image: /uploads/site-web-refugee-council-of-australia.png
   url: https://refugeecouncilaus-refugeecouncilaus.nationbuilder.com/
+category: Code Nation
+tags: ""
 order: 24
 ---
 

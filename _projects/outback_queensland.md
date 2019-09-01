@@ -10,5 +10,7 @@ web:
   domain: www.outbackqueensland.org.au
   image: /uploads/site-web-outback-queensland.png
   url: https://www.outbackqueensland.org.au
+category: Code Nation
+tags: ""
 order: 17
 ---

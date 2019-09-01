@@ -10,6 +10,8 @@ web:
   domain: www.stopadanialliance.com
   image: /uploads/site-web-stop-adani-alliance.png
   url: http://www.stopadanialliance.com/
+category: Code Nation
+tags: ""
 order: 13
 ---
 

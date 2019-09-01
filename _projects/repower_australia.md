@@ -10,6 +10,8 @@ web:
   domain: www.repoweraustralia.org.au
   image: /uploads/site-web-repower-australia.png
   url: https://www.repoweraustralia.org.au/
+category: Code Nation
+tags: [featured, other]
 order: 19
 ---
 

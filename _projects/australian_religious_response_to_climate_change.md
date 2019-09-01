@@ -10,6 +10,8 @@ web:
   domain: www.arrcc.org.au
   image: /uploads/site-web-australian-religious-response-to-climate-change.png
   url: https://www.arrcc.org.au/
+category: Code Nation
+tags: [featured, other]
 order: 1
 ---
 

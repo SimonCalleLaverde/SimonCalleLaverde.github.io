@@ -10,6 +10,8 @@ web:
   domain: www.wentworth4refugees.org.au
   image: /uploads/site-web-wentworth-for-refugees.png
   url: https://www.wentworth4refugees.org.au/
+category: Code Nation
+tags: ""
 order: 21
 ---
 

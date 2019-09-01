@@ -10,6 +10,8 @@ web:
   domain: www.nafia.org.au
   image: /uploads/site-web-national-apology-foundation.png
   url: https://www.nafia.org.au/
+category: Code Nation
+tags: ""
 order: 10
 ---
 

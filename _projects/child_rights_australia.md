@@ -10,5 +10,7 @@ web:
   domain: www.childrightsaustralia.org.au
   image: /uploads/site-web-child-rights-australia.png
   url: https://www.childrightsaustralia.org.au/
+category: Code Nation
+tags: ""
 order: 12
 ---

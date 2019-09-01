@@ -10,6 +10,8 @@ web:
   domain: bogota-bulldogs.netlify.com
   image: /uploads/site-web-bogota-bulldogs.png
   url: https://bogota-bulldogs.netlify.com/
+category: Code Nation
+tags: ""
 order: 27
 ---
 

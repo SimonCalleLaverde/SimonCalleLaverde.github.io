@@ -10,6 +10,8 @@ web:
   domain: www.fitzroystatement.org
   image: /uploads/site-web-fitzroy-river-statement.png
   url: http://www.fitzroystatement.org
+category: Code Nation
+tags: [featured, other]
 order: 18
 ---
 

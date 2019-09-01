@@ -10,5 +10,7 @@ web:
   domain: www.cultivateoregon.org
   image: /uploads/site-web-cultivate-oregon.png
   url: https://www.cultivateoregon.org/
+category: Code Nation
+tags: [featured, other]
 order: 16
 ---

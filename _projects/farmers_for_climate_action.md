@@ -10,5 +10,7 @@ web:
   domain: www.farmersforclimateaction.org.au
   image: /uploads/site-web-farmers-for-climate-action.png
   url: https://www.farmersforclimateaction.org.au
+category: Code Nation
+tags: ""
 order: 6
 ---

@@ -20,3 +20,7 @@ I'm Simón Calle Laverde. I worked at <a class="text-codenation" href="www.coden
 
 
 https://www.youtube.com/watch?v=2MsN8gpT6jY
+
+Tutorials (from the same of sticky cursor with noise)
+Smooth-scroll and images loading when scrolling, EXACTLYYY what I was hoping for to find and have seen as a mayor trend:
+https://tympanus.net/codrops/category/tutorials/

@@ -10,5 +10,7 @@ web:
   domain: nt.seedmob.org.au
   image: /uploads/site-web-seed-ban-fracking.png
   url: https://nt.seedmob.org.au/
+category: Code Nation
+tags: ""
 order: 14
 ---

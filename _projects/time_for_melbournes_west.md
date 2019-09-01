@@ -10,5 +10,7 @@ web:
   domain: www.timeforthewest.org.au
   image: /uploads/site-web-time-for-melbournes-west.png
   url: http://www.timeforthewest.org.au
+category: Code Nation
+tags: [featured, other]
 order: 15
 ---

@@ -10,6 +10,8 @@ web:
   domain: www.conservationsa.org.au
   image: /uploads/site-web-conservation-council-sa.png
   url: https://www.conservationsa.org.au/
+category: Code Nation
+tags: [featured, other]
 order: 2
 ---
 

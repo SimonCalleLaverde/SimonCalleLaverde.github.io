@@ -10,6 +10,8 @@ web:
   domain: www.likenowhereelse.org.au
   image: /uploads/site-web-the-kimberley-like-nowhere-else.png
   url: https://www.likenowhereelse.org.au/
+category: Code Nation
+tags: ""
 order: 7
 ---
 

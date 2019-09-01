@@ -10,6 +10,8 @@ web:
   domain: www.tec.org.au
   image: /uploads/site-web-total-environment-centre.png
   url: https://www.tec.org.au/
+category: Code Nation
+tags: ""
 order: 8
 ---
 

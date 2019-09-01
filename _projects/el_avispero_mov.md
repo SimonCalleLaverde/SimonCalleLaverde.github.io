@@ -10,6 +10,8 @@ web:
   domain: www.elavisperomov
   image: /uploads/site-web-el-avispero-mov.png
   url: http://www.elavisperomov.org/
+category: Code Nation
+tags: ""
 order: 9
 ---
 

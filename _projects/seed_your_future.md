@@ -10,5 +10,7 @@ web:
   domain: www.seedyourfuture.org
   image: /uploads/site-web-seed-your-future.png
   url: https://www.seedyourfuture.org/
+category: Code Nation
+tags: [featured, other]
 order: 20
 ---

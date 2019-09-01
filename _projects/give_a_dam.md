@@ -10,6 +10,8 @@ web:
   domain: www.giveadam.org.au
   image: /uploads/site-web-give-a-dam.png
   url: https://www.giveadam.org.au/
+category: Code Nation
+tags: [featured, other]
 order: 23
 ---
 

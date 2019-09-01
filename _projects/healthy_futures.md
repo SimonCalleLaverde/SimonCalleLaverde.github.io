@@ -10,6 +10,8 @@ web:
   domain: www.healthyfutures.net.au
   image: /uploads/site-web-healthy-futures.png
   url: http://www.healthyfutures.net.au/
+category: Code Nation
+tags: [featured, other]
 order: 3
 ---
 

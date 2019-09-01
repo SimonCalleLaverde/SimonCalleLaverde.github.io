@@ -10,6 +10,8 @@ web:
   domain: www.frackfreefuture.org.au
   image: /uploads/site-web-frack-free-future.png
   url: http://www.frackfreefuture.org.au/
+category: Code Nation
+tags: ""
 order: 4
 ---
 
