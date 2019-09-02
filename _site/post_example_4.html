@@ -51,6 +51,30 @@
     
     <h1 class="sr-only">Post Example 4</h1>
 
+    <div class="cursor"></div>
+
+    <div class="logo">
+	<style type="text/css">
+	  .glitch-img {
+	    background:url('/uploads/logo-placeholder.jpg') no-repeat center center scroll;
+	    -webkit-background-size:cover;
+	    -moz-background-size:cover;
+	    -o-background-size:cover;
+	    background-size:cover;
+	  }
+	</style>
+	
+	<a href="/">
+		<div class="profile-picture glitch">
+		  <div class="glitch-img"></div>
+		  <div class="glitch-img"></div>
+		  <div class="glitch-img"></div>
+		  <div class="glitch-img"></div>
+		  <div class="glitch-img"></div>
+		</div>
+	</a>
+</div>
+
     <div class="switch-colour-wrap">
       <template>
         <p class="text-element text-grey-light d-inline-block">Change to White mode</p>
@@ -60,8 +84,6 @@
       <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-inline-block" title="Change to a Bright look"></a>
       <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-none" title="Change to a Dark look"></a>
     </div>
-
-    <div class="cursor"></div>
 
     <aside class="nav-social-media py-4 px-4more">
   <div class="mb-2 pb-2">
@@ -200,6 +222,12 @@
 	  AOS.init();
 	});
 </script>
+
+<!--Imagesloaded | imagesloaded.desandro.com-->
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<!--Glitch Demo Javascript-->
+<script type="text/javascript" src="/assets/js/custom/demo.js"></script>
 
 <!--Cursor Animation Sticky + Noise (https://tympanus.net/codrops/2019/01/31/custom-cursor-effects/)-->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>

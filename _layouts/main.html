@@ -7,6 +7,10 @@
     
     <h1 class="sr-only">{{ page.title }}</h1>
 
+    {% include cursor.html %}
+
+    {% include logo.html %}
+
     <div class="switch-colour-wrap">
       <template>
         <p class="text-element text-grey-light d-inline-block">Change to White mode</p>
@@ -16,8 +20,6 @@
       <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-inline-block" title="Change to a Bright look"></a>
       <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-none" title="Change to a Dark look"></a>
     </div>
-
-    {% include cursor.html %}
 
     {% include nav_social_media.html %}
 
