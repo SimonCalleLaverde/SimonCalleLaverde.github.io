@@ -4,7 +4,7 @@
 
   // General
   body {
-  	padding:10px;
+  	padding:12px;
   }
 
   // Main, Header, Section
@@ -161,7 +161,12 @@
 
 	// Home One Section
 	header.home-one-section {
-	  padding:100px 0 60px;
+		padding-right:0;
+  	padding-left:0;
+		.container {
+			padding-top:100px;
+			padding-bottom:60px;
+		}
 	}
 
 	// Home Two Section
@@ -190,6 +195,7 @@
 
 	// Theme Colour White
 	body.theme-colour.white {
+		//padding:0;
 		.navbar {
 			ul.navbar-nav {
 	    	li.nav-item {

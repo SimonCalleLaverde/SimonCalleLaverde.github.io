@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="theme-colour page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} black" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
+  <body class="theme-colour page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} black{% if page.slug == 'home' %} home-body{% endif %}" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
     
     <h1 class="sr-only">{{ page.title }}</h1>
 

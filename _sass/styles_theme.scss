@@ -226,6 +226,7 @@ figure {
 main, header, section {
   position:relative;
   text-align:center;
+  @include transition(all ease-out 0.3s);
 }
 
 // Link Overrides
@@ -749,7 +750,12 @@ section.feedback-page {
 
 // Home One Section
 header.home-one-section {
-  padding:30px 20px;//To revise mobile
+  padding-right:20px;
+  padding-left:20px;
+  .container {
+    padding-top:30px;//To revise mobile
+    padding-bottom:30px;//To revise mobile
+  }
 }
 
 // Home Two Section
@@ -801,7 +807,6 @@ body.page-type-basic.work {
 
 // Theme Colour White
 body.theme-colour.white {
-  padding:0;
   background-color:$theme-color-grey-light;
   section, header, main, footer {
     background-color:#FFF!important;
