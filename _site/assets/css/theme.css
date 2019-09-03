@@ -11519,7 +11519,7 @@ a:hover, img:hover {
     animation: none; }
   .cursor.hoveredImg {
     background-color: transparent;
-    border-color: #000;
+    border-color: #FFF;
     mix-blend-mode: normal !important;
     -webkit-animation: none;
     -moz-animation: none;

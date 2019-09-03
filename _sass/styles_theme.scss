@@ -539,7 +539,7 @@ a, img {
   }
   &.hoveredImg {
     background-color:transparent;
-    border-color:#000;
+    border-color:#FFF;//#000
     mix-blend-mode:normal!important;
     @include animation(none);
   }
