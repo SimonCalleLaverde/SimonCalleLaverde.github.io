@@ -11182,6 +11182,12 @@ a.text-purple-dark:hover, a.text-purple-dark:focus {
   src: local("Brandon Grotesque Light"), local("BrandonGrotesque-Light"), url("/uploads/hinted-BrandonGrotesque-Light.eot?#iefix") format("embedded-opentype"), url("/uploads/hinted-BrandonGrotesque-Light.woff2") format("woff2"), url("/uploads/hinted-BrandonGrotesque-Light.woff") format("woff"), url("/uploads/hinted-BrandonGrotesque-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
+@font-face {
+  font-family: 'BG regular';
+  src: url("/uploads/hinted-BrandonGrotesque-Regular.eot");
+  src: local("Brandon Grotesque Regular"), local("BrandonGrotesque-Regular"), url("/uploads/hinted-BrandonGrotesque-Regular.eot?#iefix") format("embedded-opentype"), url("/uploads/hinted-BrandonGrotesque-Regular.woff2") format("woff2"), url("/uploads/hinted-BrandonGrotesque-Regular.woff") format("woff"), url("/uploads/hinted-BrandonGrotesque-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 html {
   -webkit-font-smoothing: subpixel-antialiased;
   text-rendering: optimizeLegibility; }
@@ -11194,7 +11200,7 @@ body {
   font-weight: 300;
   font-style: normal;
   font-size: 17px;
-  background-color: #222222;
+  background-color: #000;
   -webkit-transition: all ease-out 0.3s;
   -moz-transition: all ease-out 0.3s;
   -ms-transition: all ease-out 0.3s;
@@ -11202,18 +11208,18 @@ body {
   transition: all ease-out 0.3s; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 3px; }
 
 .font-headline {
-  font-family: "Montserrat", sans-serif !important;
-  font-weight: bold !important;
+  font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica !important;
+  font-weight: 500 !important;
   letter-spacing: 3px; }
 
-.font-subtitles {
-  font-family: "Montserrat", sans-serif !important;
+.font-subtitle {
+  font-family: "BG regular", "Avenir Next Pro Bold", Helvetica !important;
   font-weight: normal !important;
   letter-spacing: 1.5px; }
 
@@ -11279,6 +11285,9 @@ main, header, section {
   -ms-transition: all ease-out 0.3s;
   -o-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s; }
+
+main > div {
+  overflow: hidden; }
 
 a {
   color: #EB0082;
@@ -11366,16 +11375,18 @@ article .article-caption {
 
 article.project-article .project-thumbnail {
   position: relative; }
-  article.project-article .project-thumbnail .project-year {
+  article.project-article .project-thumbnail time.project-year {
     position: absolute;
     top: 15%;
     right: 0;
+    font-family: "BG regular", "Avenir Next Pro Bold", Helvetica;
+    font-weight: normal;
     -webkit-transform: rotate(90deg) translateY(-26px);
     -moz-transform: rotate(90deg) translateY(-26px);
     -ms-transform: rotate(90deg) translateY(-26px);
     -o-transform: rotate(90deg) translateY(-26px);
     transform: rotate(90deg) translateY(-26px); }
-  article.project-article .project-thumbnail .project-caption .project-name, article.project-article .project-thumbnail .project-caption .project-roles {
+  article.project-article .project-thumbnail figcaption.project-caption .project-name, article.project-article .project-thumbnail figcaption.project-caption .project-roles {
     background-color: rgba(255, 255, 255, 0.9) !important; }
 
 .flickity-carousel .main-carousel, .flickity-carousel .carousel-nav {
@@ -11423,7 +11434,12 @@ article.project-article .project-thumbnail {
   position: fixed;
   top: 33%;
   left: 0;
-  z-index: 10000; }
+  z-index: 10000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
   .nav-social-media span.fa-stack.custom {
     height: 27px; }
     .nav-social-media span.fa-stack.custom .fa-stack-2x, .nav-social-media span.fa-stack.custom .fa-circle {
@@ -11486,8 +11502,8 @@ a:hover, img:hover {
 .cursor {
   display: none;
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background-color: #FFF;
   border: 1px solid #FFF;
   z-index: 11000;
@@ -11504,64 +11520,62 @@ a:hover, img:hover {
   -o-transition: all ease-out 0.2s;
   transition: all ease-out 0.2s; }
   .cursor.hoveredLink {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     background-color: #FFF;
-    -webkit-transform: translateX(-35px) translateY(-35px);
-    -moz-transform: translateX(-35px) translateY(-35px);
-    -ms-transform: translateX(-35px) translateY(-35px);
-    -o-transform: translateX(-35px) translateY(-35px);
-    transform: translateX(-35px) translateY(-35px);
-    -webkit-animation: none;
-    -moz-animation: none;
-    -ms-animation: none;
-    -o-animation: none;
-    animation: none; }
+    -webkit-transform: translateX(-50px) translateY(-50px);
+    -moz-transform: translateX(-50px) translateY(-50px);
+    -ms-transform: translateX(-50px) translateY(-50px);
+    -o-transform: translateX(-50px) translateY(-50px);
+    transform: translateX(-50px) translateY(-50px); }
   .cursor.hoveredImg {
     background-color: transparent;
     border-color: #FFF;
-    mix-blend-mode: normal !important;
-    -webkit-animation: none;
-    -moz-animation: none;
-    -ms-animation: none;
-    -o-animation: none;
-    animation: none; }
+    mix-blend-mode: normal !important; }
   .cursor.hoveredFigure {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     background-color: transparent;
     border-color: transparent;
     mix-blend-mode: normal !important;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none;
-    -webkit-transform: translateY(-10px) translateX(-10px);
-    -moz-transform: translateY(-10px) translateX(-10px);
-    -ms-transform: translateY(-10px) translateX(-10px);
-    -o-transform: translateY(-10px) translateX(-10px);
-    transform: translateY(-10px) translateX(-10px); }
+    -webkit-transition: color ease-out 0s;
+    -moz-transition: color ease-out 0s;
+    -ms-transition: color ease-out 0s;
+    -o-transition: color ease-out 0s;
+    transition: color ease-out 0s;
+    -webkit-transform: translateY(-30px) translateX(-30px);
+    -moz-transform: translateY(-30px) translateX(-30px);
+    -ms-transform: translateY(-30px) translateX(-30px);
+    -o-transform: translateY(-30px) translateX(-30px);
+    transform: translateY(-30px) translateX(-30px); }
     .cursor.hoveredFigure:after {
       content: "Open";
       position: absolute;
-      width: 80px;
-      height: 80px;
-      padding-top: 28px;
+      width: 100px;
+      height: 100px;
+      padding-top: 38px;
       top: -1px;
       left: -1px;
-      font-family: "Montserrat", sans-serif;
+      font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
+      font-weight: 500;
       font-size: 15px;
       background-color: #EB0082;
       color: #FFF;
       border: 1px solid #EB0082;
-      text-align: center;
       text-transform: uppercase;
+      letter-spacing: 3px;
+      white-space: nowrap;
+      text-align: center;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
       border-radius: 50%;
+      -webkit-transition: all ease-out 0.2s;
+      -moz-transition: all ease-out 0.2s;
+      -ms-transition: all ease-out 0.2s;
+      -o-transition: all ease-out 0.2s;
+      transition: all ease-out 0.2s;
       -webkit-animation: fa-spin 3s linear infinite;
       -moz-animation: fa-spin 3s linear infinite;
       -ms-animation: fa-spin 3s linear infinite;
@@ -11653,7 +11667,7 @@ a:hover, img:hover {
   height: calc(100vh - 120px);
   left: 15%;
   color: #FFF;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
   font-size: 20rem;
   text-align: center;
   -webkit-text-fill-color: #000;
@@ -11667,12 +11681,12 @@ a:hover, img:hover {
     z-index: 9500; }
 
 .logo {
-  --glitch-width:100px;
-  --glitch-height:95px;
+  --glitch-width:250px;
+  --glitch-height:240px;
   --gap-horizontal:10px;
   --gap-vertical:5px;
-  --time-anim:10s;
-  --delay-anim:2s;
+  --time-anim:5s;
+  --delay-anim:1s;
   --blend-mode-1:none;
   --blend-mode-2:none;
   --blend-mode-3:none;
@@ -11682,12 +11696,10 @@ a:hover, img:hover {
   --blend-color-2:transparent;
   --blend-color-3:transparent;
   --blend-color-4:transparent;
-  --blend-color-5:#AF4949; }
+  --blend-color-5:#AF4949;
+  text-align: center; }
   .logo .profile-picture {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    z-index: 10000;
+    display: inline-block;
     cursor: pointer;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -11743,18 +11755,24 @@ section.home-four-section {
     border-radius: 0.3rem; }
 
 footer {
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -ms-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
 
 body.theme-colour.white {
-  background-color: #B5B5B5; }
-  body.theme-colour.white section, body.theme-colour.white header, body.theme-colour.white main, body.theme-colour.white footer {
+  background-color: #FFF; }
+  body.theme-colour.white header, body.theme-colour.white section, body.theme-colour.white footer {
     background-color: #FFF !important; }
   body.theme-colour.white .text-white {
     color: #000000 !important; }
   body.theme-colour.white .text-grey-light {
     color: #222222 !important; }
   body.theme-colour.white .cursor {
-    display: none !important; }
+    background-color: transparent;
+    border-color: transparent; }
   body.theme-colour.white .logo .profile-picture {
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
@@ -11777,7 +11795,7 @@ body.theme-colour.white {
     color: #e75d8c !important; }
   body.theme-colour.white .nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white .nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white .nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white .nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white .nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white .nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest {
     color: #ee0a23 !important; }
-  body.theme-colour.white article.project-article .project-thumbnail .project-year {
+  body.theme-colour.white article.project-article .project-thumbnail time.project-year {
     color: #EB0082 !important; }
   body.theme-colour.white .switch-colour-wrap a.switch-theme-colour:hover {
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;
@@ -11790,7 +11808,6 @@ body.theme-colour.white {
   body.theme-colour.white img:hover {
     cursor: default; }
 
-/* Glitch styles */
 .glitch {
   position: relative;
   width: var(--glitch-width);
@@ -11838,7 +11855,6 @@ body.theme-colour.white {
   background-blend-mode: var(--blend-mode-5);
   animation-name: glitch-anim-flash; }
 
-/* Animations */
 @keyframes glitch-anim-1 {
   0% {
     opacity: 1;
@@ -12027,7 +12043,6 @@ body.theme-colour.white {
     transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); } }
-/* Flash */
 @keyframes glitch-anim-flash {
   0%, 5% {
     opacity: 0.2;
@@ -12036,9 +12051,6 @@ body.theme-colour.white {
     opacity: 0;
     transform: translate3d(0, 0, 0); } }
 @media (min-width: 768px) {
-  body {
-    padding: 12px; }
-
   main, header, section {
     text-align: left; }
 
@@ -12099,7 +12111,7 @@ body.theme-colour.white {
     nav.navbar ul.navbar-nav li.nav-item a.nav-link {
       position: relative;
       padding: 0 0.5rem;
-      font-family: "Montserrat", sans-serif;
+      font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
       font-size: 14.5px;
       color: #FFF;
       white-space: nowrap; }
@@ -12178,7 +12190,7 @@ body.theme-colour.white {
     padding: 60px 0; }
 
   section.home-four-section {
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 60px 0 0; }
 
   body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link {

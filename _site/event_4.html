@@ -3,7 +3,7 @@
 
   <head>
   <meta charset="utf-8">
-  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="A portfolio website made up with Jekyll; a showcase of my work at Code Nation, my education, and a general CV">
   <meta name="author" content="Simón Calle Laverde">
@@ -33,58 +33,27 @@
   <meta name="twitter:domain" content="fine-web-design.com">
   <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=latin-ext" rel="stylesheet">-->
 
   <!--Main-->
   <link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
-  
-  <!--Flickity-->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
   <!--AOS | Animate On Scroll Library-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <!--Flickity-->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
   <!---->
 </head>
 
-  <body class="theme-colour page-type- event-4 black" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
+  <body class="loading page-type- event-4 theme-colour black" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
     
-    <h1 class="sr-only">Event 4</h1>
-
     <div class="cursor"></div>
-
-    <div class="logo">
-	<style type="text/css">
-	  .glitch-img {
-	    background:url('/uploads/logo-placeholder.jpg') no-repeat center center scroll;
-	    -webkit-background-size:cover;
-	    -moz-background-size:cover;
-	    -o-background-size:cover;
-	    background-size:cover;
-	  }
-	</style>
-	
-	<a href="/">
-		<div class="profile-picture glitch">
-		  <div class="glitch-img"></div>
-		  <div class="glitch-img"></div>
-		  <div class="glitch-img"></div>
-		  <div class="glitch-img"></div>
-		  <div class="glitch-img"></div>
-		</div>
-	</a>
-</div>
-
-    <div class="switch-colour-wrap">
-      <template>
-        <p class="text-element text-grey-light d-inline-block">Change to White mode</p>
-        <p class="text-element text-grey-dark d-none">Change to Black mode</p>
-      </template>
-
-      <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-inline-block" title="Change to a Bright look"></a>
-      <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-none" title="Change to a Dark look"></a>
-    </div>
 
     <aside class="nav-social-media py-4 px-4more">
   <div class="mb-2 pb-2">
@@ -140,11 +109,26 @@
 <nav class="work">
 	<a class="nav-link" href="/work">All Work</a>
 </nav>
-    
-    
+
+    <div class="switch-colour-wrap">
+  <template>
+    <p class="text-element text-grey-light d-inline-block">Change to White mode</p>
+    <p class="text-element text-grey-dark d-none">Change to Black mode</p>
+  </template>
+
+  <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-inline-block" title="Change to a Bright look"></a>
+  <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-none" title="Change to a Dark look"></a>
+</div>
 
     <main class="main-middle-section" id="middle">
-      <section class="content-simple bg-black px-4 px-md-0 pt-4more pb-3 py-md-5 clearfix">
+      <div data-scroll>
+        <h1 class="sr-only">Event 4</h1>
+
+        <!-- include logo.html -->
+
+        
+
+        <section class="content-simple bg-black px-4 px-md-0 pt-4more pb-3 py-md-5 clearfix">
   <div class="container">
 
     <!--Desktop-->
@@ -173,10 +157,35 @@ Maecenas cursus velit non gravida pulvinar. Suspendisse vel ligula turpis. Duis 
 
   </div>
 </section>
-    </main>
-    
-    <footer class="bg-black text-white text-center m-0 px-2 px-md-0 py-4more py-md-5 clearfix">
+        
+        <footer class="bg-black text-white text-center m-0 px-2 px-md-0 py-4more py-md-5 clearfix">
   <div class="container">
+
+  	<div class="row mb-5 pb-5">
+  		<div class="col-md-6 offset-md-3">
+  			<div class="logo">
+	<style type="text/css">
+	  .glitch-img {
+	    background:url('/uploads/logo-placeholder.jpg') no-repeat center center scroll;
+	    -webkit-background-size:cover;
+	    -moz-background-size:cover;
+	    -o-background-size:cover;
+	    background-size:cover;
+	  }
+	</style>
+	
+	<a href="/">
+		<div class="profile-picture glitch">
+		  <div class="glitch-img"></div>
+		  <div class="glitch-img"></div>
+		  <div class="glitch-img"></div>
+		  <div class="glitch-img"></div>
+		  <div class="glitch-img"></div>
+		</div>
+	</a>
+</div>
+  		</div>
+  	</div>
 
     <div class="row">
       <div class="col-md-10 offset-md-1">
@@ -187,7 +196,7 @@ Maecenas cursus velit non gravida pulvinar. Suspendisse vel ligula turpis. Duis 
   </div>
 </footer>
 
-    <!--To Use Grunt Or Similar To Minify Within "main.js"-->
+        <!--To Use Grunt Or Similar To Minify Within "main.js"-->
 <!--<script src="/scripts/main.js"></script>-->
 
 <!--Jquery-->
@@ -198,11 +207,12 @@ Maecenas cursus velit non gravida pulvinar. Suspendisse vel ligula turpis. Duis 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<!--Flickity-->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!--Cursor Animation Sticky + Noise (https://tympanus.net/codrops/2019/01/31/custom-cursor-effects/)-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>-->
 
-<!--Videomodal-->
-<script type="text/javascript" src="/assets/js/custom/videomodal.js"></script>
+<!--Cursor-->
+<script src="/assets/js/custom/cursor_javascript.js" type="text/javascript"></script>
 
 <!--Columnizer-->
 <script type="text/javascript" src="/assets/js/custom/jquery.columnizer.js"></script>
@@ -217,23 +227,25 @@ Maecenas cursus velit non gravida pulvinar. Suspendisse vel ligula turpis. Duis 
 	});
 </script>
 
+<!--Flickity-->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!--Videomodal-->
+<script type="text/javascript" src="/assets/js/custom/videomodal.js"></script>
+
 <!--Imagesloaded | imagesloaded.desandro.com-->
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
-<!--Glitch Demo Javascript-->
-<script type="text/javascript" src="/assets/js/custom/demo.js"></script>
+<!--Image Glitch Javascript-->
+<script type="text/javascript" src="/assets/js/custom/image_glitch.js"></script>
 
-<!--Cursor Animation Sticky + Noise (https://tympanus.net/codrops/2019/01/31/custom-cursor-effects/)-->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>-->
-
-<!--Cursor-->
-<script src="/assets/js/custom/cursor_javascript.js" type="text/javascript"></script>
+<!--Smooth Scrolling Behavior Javascript-->
+<script type="text/javascript" src="/assets/js/custom/smooth_scrolling_behavior.js"></script>
 
 <!--Custom Javascripts-->
-<script src="/assets/js/custom/custom_javascript.js" type="text/javascript"></script>
+<script src="/assets/js/custom/custom_javascripts.js" type="text/javascript"></script>
 
-    <!--IN DEVELOPMENT-->
+        <!--IN DEVELOPMENT-->
 
 
 
@@ -1431,6 +1443,8 @@ Maecenas cursus velit non gravida pulvinar. Suspendisse vel ligula turpis. Duis 
     </div>
   </div>
 
+      </div>
+    </main>
 
   </body>
 

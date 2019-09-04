@@ -1,3 +1,6 @@
+// Brandon Grotesque Github| https://github.com/sqreen/CTOSecurityChecklist/tree/master/docs/fonts
+// Brandon Grotesque Github| https://github.com/sqreen/CTOSecurityChecklist/blob/master/docs/scss/design/_font.scss#L5-L15
+
 // Font Face
 $FontsPath:"/uploads";//https://s3.amazonaws.com/bogota-bulldogs/uploads
 
@@ -13,11 +16,23 @@ $FontsPath:"/uploads";//https://s3.amazonaws.com/bogota-bulldogs/uploads
   font-style:normal;
 }
 
+@font-face {
+	font-family:'BG regular';
+	src:url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.eot');
+	src:local('Brandon Grotesque Regular'), local('BrandonGrotesque-Regular'),
+		url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+		url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.woff2') format('woff2'),
+		url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.woff') format('woff'),
+		url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+
 // Font Headline
-$font-headline:"Montserrat",sans-serif;//"Bebas Neue","Avenir Next Pro Bold",Helvetica
+$font-headline:"Montserrat","Avenir Next Pro Bold",Helvetica;
+
+// Font Subtitle
+$font-subtitle:"BG regular","Avenir Next Pro Bold",Helvetica;//"Montserrat"
 
 // Font Paragraph
-$font-paragraph:"BG light","Avenir Next Pro",Sans-serif;
-
-// Font Subtitles
-$font-subtitles:"Montserrat",sans-serif;//"Bebas Neue","Avenir Next Pro Bold",Helvetica
+$font-paragraph:"BG light","Avenir Next Pro",Sans-serif;//"Cuprum"

@@ -3,41 +3,35 @@
 
   {% include head.html %}
 
-  <body class="theme-colour page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} black{% if page.slug == 'home' %} home-body{% endif %}" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
+  <body class="loading page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} theme-colour black" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
     
-    <h1 class="sr-only">{{ page.title }}</h1>
-
     {% include cursor.html %}
-
-    {% include logo.html %}
-
-    <div class="switch-colour-wrap">
-      <template>
-        <p class="text-element text-grey-light d-inline-block">Change to White mode</p>
-        <p class="text-element text-grey-dark d-none">Change to Black mode</p>
-      </template>
-
-      <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-inline-block" title="Change to a Bright look"></a>
-      <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-none" title="Change to a Dark look"></a>
-    </div>
 
     {% include nav_social_media.html %}
 
     {% include nav.html %}
-    
-    {% if page.header_image.size > 0 %}
-      {% include header_image.html %}
-    {% endif %}
+
+    {% include switch_color_toggler.html %}
 
     <main class="main-middle-section" id="middle">
-      {{ content }}
+      <div data-scroll>
+        <h1 class="sr-only">{{ page.title }}</h1>
+
+        <!-- include logo.html -->
+
+        {% if page.header_image.size > 0 %}
+          {% include header_image.html %}
+        {% endif %}
+
+        {{ content }}
+        
+        {% include footer.html %}
+
+        {% include scripts.html %}
+
+        {% include home/home_project_modal.html %}
+      </div>
     </main>
-    
-    {% include footer.html %}
-
-    {% include scripts.html %}
-
-    {% include home/home_project_modal.html %}
 
   </body>
 

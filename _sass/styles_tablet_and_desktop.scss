@@ -4,7 +4,7 @@
 
   // General
   body {
-  	padding:12px;
+  	//padding:12px;
   }
 
   // Main, Header, Section
@@ -178,13 +178,13 @@
 	// Home Three Section
 	section.home-three-section {
 		min-height:100vh;
-	  padding:60px 0;
+		padding:60px 0;
 	}
 
 	// Home Four Section
 	section.home-four-section {
-		min-height:100vh;
-	  padding:60px 0 0;
+		min-height:80vh;//100vh
+		padding:60px 0 0;
 	}
 
 	// Work Section
