@@ -3,7 +3,7 @@
 
 // document.addEventListener('mousemove', e => {
 // 	//console.log(e);
-// 	cursor.setAttribute("style", "display:block; top:"+(e.pageY - 20)+"px; left:"+(e.pageX - 20)+"px;");
+// 	cursor.setAttribute("style", "display:block; top:"+(e.pageY - 12.5)+"px; left:"+(e.pageX - 12.5)+"px;");
 // })
 
 // document.addEventListener('click', () => {
@@ -19,7 +19,7 @@ $(document).mousemove(function(e) {
   const target = $(event.target);
   
   // update position of cursor
-  cursor.css('left', e.clientX - 20).css('top', e.clientY - 20).css('display', 'block');
+  cursor.css('left', e.clientX - 12.5).css('top', e.clientY - 12.5).css('display', 'block');
   
   const isLinkTag = target.is('a, i, u');//.nav-social-media
   const isImgTag = target.is('img, .glitch-img');

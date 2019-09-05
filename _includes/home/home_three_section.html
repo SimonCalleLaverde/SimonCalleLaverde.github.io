@@ -1,33 +1,22 @@
 <!--IN DEVELOPMENT-->
 
-<section class="home-three-section bg-black clearfix" id="section_3">
-  <div class="section-number">
+<section class="home-three-section mary-lou-grid-customized d-flex flex-column align-items-center bg-black clearfix" id="section_3">
+  <!-- <div class="section-number">
     03
-  </div>
+  </div> -->
 
-  <div class="container">
+  {% assign posts_count = 0 %}
+  {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
-    <div class="row pt-5">
-      <div class="col-md-4">
-        <!--Desktop-->
-        <h3 class="headline text-white text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;">{{ page.headline | default:page.title }}</h3>
-        <!--Mobile-->
-        <h4 class="headline text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">{{ page.headline | default:page.title }}</h4>
-      </div>
-    </div>
+  {% for project in sorted_projects %}
+    {% assign project_tags_list = "#" %}
+    {% for tag in project.tags %}
+      {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
+    {% endfor %}
 
-    <div class="row">
-      <div class="col-md-6 offset-md-2">
-        <!--Desktop-->
-        <div class="intro text-grey-light column_div d-none d-md-block"><!--id="column_div"-->
-          {{ content }}
-        </div>
-        <!--Mobile-->
-        <div class="intro text-grey-light d-block d-md-none" aria-hidden="true">
-          {{ content }}
-        </div>
-      </div>
-    </div>
-
-  </div>
+    {% if project_tags_list contains "featured" %}
+      {% assign posts_count = posts_count | plus:1 %}
+      {% include home/home_project_article.html %}
+    {% endif %}
+  {% endfor %}
 </section>

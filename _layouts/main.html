@@ -4,7 +4,6 @@
   {% include head.html %}
 
   <body class="loading page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} theme-colour black" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
-    
     {% include cursor.html %}
 
     {% include nav_social_media.html %}
@@ -13,18 +12,16 @@
 
     {% include switch_color_toggler.html %}
 
-    <main class="main-middle-section" id="middle">
+    <main id="middle">
       <div data-scroll>
         <h1 class="sr-only">{{ page.title }}</h1>
-
-        <!-- include logo.html -->
-
+        
         {% if page.header_image.size > 0 %}
           {% include header_image.html %}
         {% endif %}
-
-        {{ content }}
         
+        {{ content }}
+
         {% include footer.html %}
 
         {% include scripts.html %}

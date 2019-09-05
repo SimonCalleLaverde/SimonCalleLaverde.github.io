@@ -38,15 +38,15 @@ $(function() {
 
 // // Change Class After Scrolling Some Element | As Per (https://stackoverflow.com/questions/29717119/how-to-change-class-after-scroll-somewhere/29717259)
 // $(function() {
-//   var body = $(".home-body");//body
+//   var body = $("body");
 //   $(window).scroll(function() {
 //     var scroll = $(window).scrollTop();
-//     var objectSelect = $("#section_4");
+//     var objectSelect = $("#section_2");
 //     var objectPosition = objectSelect.offset().top;
 //     if (scroll > objectPosition) {
-//       body.removeClass("black").addClass("white");//$(".home-body").addClass("change");
+//       body.removeClass("black").addClass("white");//$("body").addClass("change");
 //     } else {
-//       body.removeClass("white").addClass("black");//$(".home-body").removeClass("change");
+//       body.removeClass("white").addClass("black");//$("body").removeClass("change");
 //     }
 //   });
 // });

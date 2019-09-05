@@ -1,3 +1,5 @@
+// https://tympanus.net/codrops/2019/07/10/how-to-add-smooth-scrolling-with-inner-image-animations-to-a-web-page/
+
 /**
 * demo.js
 * http://www.codrops.com
@@ -38,7 +40,7 @@
 			// the .item element
 			this.DOM = {el: el};
 			// the inner image
-			this.DOM.image = this.DOM.el.querySelector('.item__img');
+			this.DOM.image = this.DOM.el.querySelector('.item-img');
 			this.renderedStyles = {
 				// here we define which property will change as we scroll the page and the items is inside the viewport
 				// in this case we will be translating the image on the y-axis
@@ -125,7 +127,7 @@
 			this.DOM.scrollable = this.DOM.main.querySelector('div[data-scroll]');
 			// the items on the page
 			this.items = [];
-			[...this.DOM.main.querySelectorAll('.content > .item')].forEach(item => this.items.push(new Item(item)));
+			[...this.DOM.main.querySelectorAll('.project-article')].forEach(item => this.items.push(new Item(item)));// # Was ---> .content > .item
 			// here we define which property will change as we scroll the page
 			// in this case we will be translating on the y-axis
 			// we interpolate between the previous and current value to achieve the smooth scrolling effect
@@ -167,7 +169,7 @@
 		}
 		setSize() {
 			// set the heigh of the body in order to keep the scrollbar on the page
-			body.style.height = `${this.DOM.scrollable.scrollHeight}px`;
+			body.style.height = this.DOM.scrollable.scrollHeight + 'px';// # Demo Version ---> body.style.height = `${this.DOM.scrollable.scrollHeight}px`;
 		}
 		style() {
 			// the <main> needs to "stick" to the screen and not scroll
@@ -210,7 +212,7 @@
 	// Preload images
 	const preloadImages = () => {
 		return new Promise((resolve, reject) => {
-			imagesLoaded(document.querySelectorAll('.item__img'), {background: true}, resolve);
+			imagesLoaded(document.querySelectorAll('.item-img'), {background: true}, resolve);
 		});
 	};
 	

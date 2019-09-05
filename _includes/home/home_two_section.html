@@ -1,9 +1,9 @@
 <!--IN DEVELOPMENT-->
 
-<section class="home-two-section bg-black clearfix" id="section_2">
-  <div class="section-number">
+<section class="home-two-section mary-lou-grid d-flex flex-column align-items-center bg-black clearfix" id="section_2">
+  <!-- <div class="section-number">
     02
-  </div>
+  </div> -->
 
 	<div class="container">
 
@@ -16,6 +16,7 @@
       </div>
     </div>
 
+    {% comment %}
     <div class="row pt-3">
       <div class="col-md-6 offset-md-1">
         <h5 class="text-magenta mb-5">Disclaimer: Designed by the designers at Code Nation, developed 80% - 100% by me.</h5>
@@ -34,55 +35,7 @@
         </div>
       </div>
     </div>
-
-    <div class="row pt-5">
-      <div class="col-md-12">
-        {% assign posts_count = 0 %}
-        {% assign sorted_projects = site.projects | sort:"order" | reverse %}
-
-        {% for project in sorted_projects %}
-          {% assign project_tags_list = "#" %}
-          {% for tag in project.tags %}
-            {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
-          {% endfor %}
-
-          {% if project_tags_list contains "featured" %}
-            {% assign posts_count = posts_count | plus:1 %}
-            {% if posts_count == 1 %}
-            <div class="row">
-            {% endif %}
-              <div class="col-md-6 mt-md-1 mb-md-1">
-                {% include home/home_project_article.html %}
-              </div>
-            {% if posts_count == 2 or forloop.last %}
-            </div>
-            {% assign posts_count = 0 %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-
-    <div class="row pt-5">
-      <div class="col-md-6 offset-md-3">
-
-
-
-        <!--Temporary-->
-        <article class="px-4 pb-4 pb-md-5">
-          <a href="{{ 'uploads/referral-letter-simon-calle.pdf' | relative_url }}" target="iframe_pdf">
-            <!--<iframe src="{{ 'uploads/referral-letter-simon-calle.pdf' | relative_url }}" name="iframe_pdf" height="630" width="100%"></iframe>-->
-
-            <object data="{{ 'uploads/referral-letter-simon-calle.pdf' | relative_url }}" height="630" width="100%">
-              <param name="iframe_pdf" value="">
-            </object>
-          </a>
-        </article>
-
-
-
-      </div>
-    </div>
-
+    {% endcomment %}
+    
 	</div>
 </section>
