@@ -21,31 +21,31 @@ $(document).mousemove(function(e) {
   // update position of cursor
   cursor.css('left', e.clientX - 12.5).css('top', e.clientY - 12.5).css('display', 'block');
   
-  const isLinkTag = target.is('a > span > i, a > span, a > i, a > u, a > p, a > h1, a > h2, a > h3, a > h4, a > h5, a > h6');//.nav-social-media//a
-  const isImgTag = target.is('img, .glitch-img', '.parallax-image');
-  const isFigureTag = target.is('figure');
+  const isLink = target.is('a > span > i, a > span, a > i, a > u, a > p, a > h1, a > h2, a > h3, a > h4, a > h5, a > h6');//.nav-social-media//a
+  const isImg = target.is('img, .glitch-img', '.parallax-image');
+  const isProject = target.is('.project-thumbnail');//figure
 
   const isLinkHovered = cursor.hasClass('hoveredLink');
   const isImgHovered = cursor.hasClass('hoveredImg');
-  const isFigureHovered = cursor.hasClass('hoveredFigure');
+  const isProjectHovered = cursor.hasClass('hoveredProject');
   
   // toggle the cursor class if necessary 
-  if(isLinkTag && !isLinkHovered) {
+  if(isLink && !isLinkHovered) {
     cursor.addClass('hoveredLink');
-  } else if(!isLinkTag && isLinkHovered) {
+  } else if(!isLink && isLinkHovered) {
     cursor.removeClass('hoveredLink');
   }
 
-  if(isImgTag && !isImgHovered) {
+  if(isImg && !isImgHovered) {
     cursor.addClass('hoveredImg');
-  } else if(!isImgTag && isImgHovered) {
+  } else if(!isImg && isImgHovered) {
     cursor.removeClass('hoveredImg');
   }
 
-  if(isFigureTag && !isFigureHovered) {
-    cursor.addClass('hoveredFigure');
-  } else if(!isFigureTag && isFigureHovered) {
-    cursor.removeClass('hoveredFigure');
+  if(isProject && !isProjectHovered) {
+    cursor.addClass('hoveredProject');
+  } else if(!isProject && isProjectHovered) {
+    cursor.removeClass('hoveredProject');
   }
 });
 

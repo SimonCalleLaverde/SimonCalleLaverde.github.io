@@ -11775,7 +11775,7 @@ a:hover, img:hover {
   .cursor.hoveredImg {
     background-color: transparent;
     border-color: #FFF; }
-  .cursor.hoveredFigure {
+  .cursor.hoveredProject {
     width: 100px;
     height: 100px;
     background-color: #EB0082;
@@ -11790,7 +11790,7 @@ a:hover, img:hover {
     -ms-transition: background-color ease-out 0.2s;
     -o-transition: background-color ease-out 0.2s;
     transition: background-color ease-out 0.2s; }
-    .cursor.hoveredFigure:after {
+    .cursor.hoveredProject:after {
       content: "View It";
       width: 100px;
       height: 100px;
