@@ -804,7 +804,14 @@ body.theme-colour.white {
 //----------------------------------Cursor Custom Styles----------------------------------//
 
 // Cursor
-a, img {
+a {
+  > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
+    &:hover {
+      cursor:none;
+    }
+  }
+}
+img, .glitch-img, .parallax-image, .project-thumbnail {
   &:hover {
     cursor:none;
   }

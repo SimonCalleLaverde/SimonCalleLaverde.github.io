@@ -11723,7 +11723,10 @@ body.theme-colour.white {
   body.theme-colour.white img:hover {
     cursor: default; }
 
-a:hover, img:hover {
+a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover {
+  cursor: none; }
+
+img:hover, .glitch-img:hover, .parallax-image:hover, .project-thumbnail:hover {
   cursor: none; }
 
 .cursor {
@@ -12263,7 +12266,12 @@ a:hover, img:hover {
           -o-transition: none;
           transition: none; }
         nav.navbar ul.navbar-nav li.nav-item a.nav-link.active.not-active {
-          color: #FFF; }
+          color: #FFF;
+          -webkit-text-shadow: none;
+          -moz-text-shadow: none;
+          -ms-text-shadow: none;
+          -o-text-shadow: none;
+          text-shadow: none; }
           nav.navbar ul.navbar-nav li.nav-item a.nav-link.active.not-active:after {
             display: none; }
 

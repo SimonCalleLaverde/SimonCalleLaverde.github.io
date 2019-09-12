@@ -118,6 +118,7 @@
 		    		}
 		    		&.not-active {
 		    			color:#FFF;
+		    			@include text-shadow(none);
 		    			&:after {
 		    				display:none;
 		    			}
