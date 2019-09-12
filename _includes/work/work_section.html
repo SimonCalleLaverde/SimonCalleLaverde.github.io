@@ -1,4 +1,4 @@
-<section class="work-section bg-black clearfix">
+<section class="work-section bg-black clearfix" id="work_section">
 	<div class="container">
 
 		{% comment %}
@@ -11,8 +11,6 @@
       </div>
     </div>
     {% endcomment %}
-
-
 
     {% comment %}
     <div class="row pt-3">
@@ -36,8 +34,6 @@
     </div>
     {% endcomment %}
 
-
-
     <div class="row pt-3"><!--pt-5-->
       <div class="col-md-12">
         {% assign posts_count = 0 %}
@@ -49,7 +45,7 @@
           <div class="row">
           {% endif %}
             <div class="col-md-6 mt-md-1 mb-md-1">
-              {% include home/home_project_article_old.html %}
+              {% include home/home_project_article.html %}
             </div>
           {% if posts_count == 2 or forloop.last %}
           </div>

@@ -116,6 +116,12 @@
 		    			@include border-radius(50%);
 		    			@include transition(none);
 		    		}
+		    		&.not-active {
+		    			color:#FFF;
+		    			&:after {
+		    				display:none;
+		    			}
+		    		}
 					}
 	    	}
     	}
@@ -216,6 +222,9 @@
 							@include text-shadow(0 0 20px rgba(0,0,0,0.5), 0 0 20px rgba(235,0,130,0.5));
 			    		&:after {
 			    			border:1.5px solid theme-color('magenta');
+			    		}
+			    		&.not-active {
+			    			color:theme-color('grey-dark');
 			    		}
 						}
 		    	}

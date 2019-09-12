@@ -2,16 +2,21 @@
 
 <!-- include liquid_top_variables.html -->
 
-<section class="{{ page.tags | slugify | replace:'-','_' }} content-centered bg-black text-white text-center px-4 px-md-0 pt-4more pt-md-5 pb-3 pb-md-4 clearfix"><!--url_encode-->
+<section class="{{ page.tags | slugify | replace:'-','_' }} content-centered bg-black text-white text-center px-4 px-md-0 pt-4more pt-md-5 pb-3 pb-md-4 clearfix" id="content_centered"><!--url_encode-->
   <div class="container">
 
     <div class="row">
       <div class="col-md-10 offset-md-1">
         <div class="mx-md-3 px-md-4">
           <!--Desktop-->
-          <h5 class="headline {% if page.tags contains 'Admin Headline Magenta' %}text-magenta{% else %}text-yellow{% endif %} text-uppercase mb-3 pb-4 d-none d-md-block">{{ page.headline | default:page.title }}</h5>
+          <a class="nav-link smoothScroll mb-4more d-none d-md-inline-block" href="#work_section">
+            <h5 class="headline {% if page.tags contains 'Admin Headline Magenta' %}text-magenta{% else %}text-yellow{% endif %} text-uppercase" style="font-size:6rem;">{{ page.headline | default:page.title }}</h5>
+          </a>
+
           <!--Mobile-->
-          <h5 class="headline {% if page.tags contains 'Admin Headline Magenta' %}text-magenta{% else %}text-yellow{% endif %} text-uppercase mb-3 d-block d-md-none" aria-hidden="true">{{ page.headline | default:page.title }}</h5>
+          <a class="nav-link smoothScroll mb-3 d-inline-block d-md-none" href="#work_section">
+            <h5 class="headline {% if page.tags contains 'Admin Headline Magenta' %}text-magenta{% else %}text-yellow{% endif %} text-uppercase d-block d-md-none" aria-hidden="true">{{ page.headline | default:page.title }}</h5>
+          </a>
 
           <div class="intro">
             {{ content }}

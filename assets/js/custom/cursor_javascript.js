@@ -21,8 +21,8 @@ $(document).mousemove(function(e) {
   // update position of cursor
   cursor.css('left', e.clientX - 12.5).css('top', e.clientY - 12.5).css('display', 'block');
   
-  const isLinkTag = target.is('a, i, u');//.nav-social-media
-  const isImgTag = target.is('img, .glitch-img');
+  const isLinkTag = target.is('a > span > i, a > span, a > i, a > u, a > p, a > h1, a > h2, a > h3, a > h4, a > h5, a > h6');//.nav-social-media//a
+  const isImgTag = target.is('img, .glitch-img', '.parallax-image');
   const isFigureTag = target.is('figure');
 
   const isLinkHovered = cursor.hasClass('hoveredLink');

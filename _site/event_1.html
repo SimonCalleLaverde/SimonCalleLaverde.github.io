@@ -86,38 +86,14 @@
     <!--IN DEVELOPMENT-->
 
 <nav class="navbar navbar-expand-md d-flex flex-row justify-content-center align-items-end text-center" id="navbar"><!--bg-dark navbar-dark fixed-top-->
-	<ul class="navbar-nav">
-		<li class="nav-item px-3">
-			<a class="nav-link smoothScroll" href="#section_1">01</a>
-		</li>
-		
-		<li class="nav-item px-3">
-			<a class="nav-link smoothScroll" href="#section_2">02</a>
-		</li>
-		
-		<li class="nav-item px-3">
-			<a class="nav-link smoothScroll" href="#section_3">03</a>
-		</li>
-		
-		<li class="nav-item px-3">
-			<a class="nav-link smoothScroll" href="#section_4">04</a>
-		</li>
-	</ul>
+	
 </nav>
 
 <nav class="work">
-	<a class="nav-link" href="/work">All Work</a>
+	<a class="nav-link" href="/work"><p class="m-0">All Work</p></a>
 </nav>
 
-    <div class="switch-colour-wrap">
-  <template>
-    <p class="text-element text-grey-light d-inline-block">Change to White mode</p>
-    <p class="text-element text-grey-dark d-none">Change to Black mode</p>
-  </template>
-
-  <a href="#" class="switch-theme-colour scale-element btn btn-outline-white d-inline-block" title="Change to a Bright look"></a>
-  <a href="#" class="switch-theme-colour scale-element btn btn-outline-black d-none" title="Change to a Dark look"></a>
-</div>
+    <!-- include switch_color_toggler.html -->
 
     <main id="middle">
       <div data-scroll>
@@ -151,10 +127,10 @@
   </div>
 </section>
 
-        <footer class="bg-black text-white text-center m-0 px-2 px-md-0 py-4more py-md-5 clearfix">
+        <footer class="bg-black text-white text-center m-0 px-2 px-md-0 py-4more py-md-5 clearfix" id="footer">
   <div class="container">
 
-  	<div class="row mb-5 pb-5">
+  	<div class="row mt-5 mb-5 pb-5">
   		<div class="col-md-6 offset-md-3">
   			<div class="logo">
 	<style type="text/css">
@@ -182,7 +158,7 @@
 
     <div class="row">
       <div class="col-md-10 offset-md-1">
-        <small class="text-grey-light">© 2019 by <cite>Simón Calle Laverde</cite>. This site was built by <a class="text-white" href="/" target="_blank"><i>Simón Calle Laverde</i></a> using <a class="text-jekyll" href="https://jekyllrb.com/" target="_blank">Jekyll</a>, <a class="text-forestry" href="https://forestry.io/" target="_blank">Forestry</a> and <a class="text-bootstrap-lighten" href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a></small><!--text-bootstrap-alternate--><!--https://www.fine-web-design.com/?--><!--Fine Web Design-->
+        <small class="text-grey-light">© 2019 by <cite>Simón Calle Laverde</cite>. This site was built by <a class="text-white" href="/" target="_blank"><i>Simón Calle Laverde</i></a> using <a class="text-jekyll" href="https://jekyllrb.com/" target="_blank"><span>Jekyll</span></a>, <a class="text-forestry" href="https://forestry.io/" target="_blank"><span>Forestry</span></a> and <a class="text-bootstrap-lighten" href="https://getbootstrap.com/" target="_blank"><span>Bootstrap 4</span></a></small><!--text-bootstrap-alternate--><!--https://www.fine-web-design.com/?--><!--Fine Web Design-->
       </div>
     </div>
     
@@ -227,7 +203,8 @@
 <script type="text/javascript" src="/assets/js/custom/videomodal.js"></script>
 
 <!--Imagesloaded | imagesloaded.desandro.com-->
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<!--<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>-->
+<script src="/assets/js/custom/imagesloaded.pkgd.min.js"></script>
 
 <!--Image Glitch Javascript-->
 <script type="text/javascript" src="/assets/js/custom/image_glitch.js"></script>
@@ -235,10 +212,18 @@
 <!--Smooth Scrolling Behavior Javascript-->
 <script type="text/javascript" src="/assets/js/custom/smooth_scrolling_behavior.js"></script>
 
+<!--Greensock Animation Platform-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+<!--Greensock Custom Animations-->
+<script src="/assets/js/custom/greenstock_animations.js" type="text/javascript"></script>
+
 <!--Custom Javascripts-->
 <script src="/assets/js/custom/custom_javascripts.js" type="text/javascript"></script>
-
-        <!--IN DEVELOPMENT-->
+      </div>
+    </main>
+    
+    <!--IN DEVELOPMENT-->
 
 
 
@@ -258,10 +243,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Australian Religious Response to Climate Change</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-australian-religious-response-to-climate-change.png" alt="Australian Religious Response to Climate Change Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>This is the first website I worked in at Code Nation while getting used to NationBuilder platform and CMS for the first time. Designed by Lully Duque it was a tricky but a nice project to start up with and it was built beginning with one of the NationBuilder’s main themes getting to a complete customization and change according to the Australian Religious Response to Climate Change organization’s needs and some of Lully’s colourful effect design touches which we managed to re-create in code.</p>
@@ -272,6 +253,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-australian-religious-response-to-climate-change.png" alt="Australian Religious Response to Climate Change Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.arrcc.org.au/" target="_blank">
@@ -302,10 +291,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Conservation Council SA</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-conservation-council-sa.png" alt="Conservation Council SA Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>The second site I developed in Code Nation in 2015 and I still love it. Designed by Lully Duque, with the team at Conservation Council SA being very engaged with the platform throught the years, creating actions and petitions and filling the website with inspirational images and content.</p>
@@ -316,6 +301,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-conservation-council-sa.png" alt="Conservation Council SA Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.conservationsa.org.au/" target="_blank">
@@ -346,10 +339,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Healthy Futures</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-healthy-futures.png" alt="Healthy Futures Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>Designed by Lully Duque this was one of the earliest sites I worked in as a member of Code Nation in its beginnings. It is for a health professional group taking action on climate change and they are fully engaged with the site until today creating events and actions using all the dynamic platform we created. The website developed three years ago is still looking great today; it might be one of my favorite designs from Lully, and the images added by the client has given it that magic.</p>
@@ -360,6 +349,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-healthy-futures.png" alt="Healthy Futures Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="http://www.healthyfutures.net.au/" target="_blank">
@@ -390,10 +387,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Frack Free Future</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-frack-free-future.png" alt="Frack Free Future Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>This site was build starting with one of NationBuilder’s main public themes “Aware”. The site has had some changes over the years, specially in the top part of the homepage and some new sections and features had been created.</p>
@@ -404,6 +397,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-frack-free-future.png" alt="Frack Free Future Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="http://www.frackfreefuture.org.au/" target="_blank">
@@ -434,10 +435,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Arid Lands Environment Centre</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-arid-lands-environment-centre.png" alt="Arid Lands Environment Centre Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               
@@ -448,6 +445,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-arid-lands-environment-centre.png" alt="Arid Lands Environment Centre Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.alec.org.au/" target="_blank">
@@ -478,10 +483,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Farmers for Climate Action</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-farmers-for-climate-action.png" alt="Farmers for Climate Action Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               
@@ -492,6 +493,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-farmers-for-climate-action.png" alt="Farmers for Climate Action Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.farmersforclimateaction.org.au" target="_blank">
@@ -522,10 +531,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">The Kimberley Like Nowhere Else</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-the-kimberley-like-nowhere-else.png" alt="The Kimberley Like Nowhere Else Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>This was an awesome project to work in, some new features like “email your mp” and others have been added through the years to handle the campaigning of protecting The Kimberley. An engaging news section and professional photography accompany this website. Some new sections were added too by members of the team like the carousel of facebook posts at the bottom in the homepage and some other small additions.</p>
@@ -536,6 +541,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-the-kimberley-like-nowhere-else.png" alt="The Kimberley Like Nowhere Else Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.likenowhereelse.org.au/" target="_blank">
@@ -566,10 +579,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Total Environment Centre</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-total-environment-centre.png" alt="Total Environment Centre Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>I created the whole first version of this site, altho many additions have been made throught the years. Cool icons, graphics and design touches have been added by the designers and other developers making the site highlight even more and the whole awesome collage section in the homepage is all new and was done by co-workers at Code Nation. Also new imagery was added by the client making the site very professional and good looking.</p>
@@ -580,6 +589,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-total-environment-centre.png" alt="Total Environment Centre Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.tec.org.au/" target="_blank">
@@ -610,10 +627,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">El Avispero Mov</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-el-avispero-mov.png" alt="El Avispero Mov Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>This was a Colombian very big project with a lot of customization to all pages in NationBuilder, handling profile pages, petitions, endorsements, campaigns created by users, events, stories and managed this design from Lully Duque with lots of alternating colours and vibrant tones.</p>
@@ -624,6 +637,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-el-avispero-mov.png" alt="El Avispero Mov Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="http://www.elavisperomov.org/" target="_blank">
@@ -654,10 +675,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">National Apology Foundation</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-national-apology-foundation.png" alt="National Apology Foundation Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>First created starting with the NationBuilders “Aware V2” theme, this was an early project we worked in at Code Nation. The website has had a lot of changes over the years since I worked it in, with new carousels and plugins, new sections and in-development design changes making it a bit more classic following feedback from the client, it resembles some less the first version I created and the original design from Lully Duque today, but it still uses a very similar structure or barely the same one in terms of UI.</p>
@@ -668,6 +685,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-national-apology-foundation.png" alt="National Apology Foundation Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.nafia.org.au/" target="_blank">
@@ -698,10 +723,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Alice Springs Community Garden</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-alice-springs-community-garden.png" alt="Alice Springs Community Garden Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               
@@ -712,6 +733,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-alice-springs-community-garden.png" alt="Alice Springs Community Garden Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.alicecommunitygarden.org.au/" target="_blank">
@@ -742,10 +771,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Child Rights Australia</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-child-rights-australia.png" alt="Child Rights Australia Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               
@@ -756,6 +781,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-child-rights-australia.png" alt="Child Rights Australia Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.childrightsaustralia.org.au/" target="_blank">
@@ -786,10 +819,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Stop Adani Alliance</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-stop-adani-alliance.png" alt="Stop Adani Alliance Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>Stop Adani Alliance is a campaign site from the same people at <a href="https://www.stopadani.com/">Stop Adani</a> also created by Code Nation, where I have also participated in some development but in some minor way doing small changes and some sections. Stop Adani Alliance tho was started by my team using Jekyll, Forestry, and Slides as a theme and passed to me to fully develop it as per the design, adding also small CSS effect touches.</p>
@@ -800,6 +829,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-stop-adani-alliance.png" alt="Stop Adani Alliance Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="http://www.stopadanialliance.com/" target="_blank">
@@ -830,10 +867,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Seed Ban Fracking</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-seed-ban-fracking.png" alt="Seed Ban Fracking Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               
@@ -844,6 +877,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-seed-ban-fracking.png" alt="Seed Ban Fracking Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://nt.seedmob.org.au/" target="_blank">
@@ -874,10 +915,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Time for Melbourne's West</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-time-for-melbournes-west.png" alt="Time for Melbourne's West Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               
@@ -888,6 +925,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-time-for-melbournes-west.png" alt="Time for Melbourne's West Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="http://www.timeforthewest.org.au" target="_blank">
@@ -918,10 +963,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Cultivate Oregon</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-cultivate-oregon.png" alt="Cultivate Oregon Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               
@@ -932,6 +973,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-cultivate-oregon.png" alt="Cultivate Oregon Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.cultivateoregon.org/" target="_blank">
@@ -962,10 +1011,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Outback Queensland</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-outback-queensland.png" alt="Outback Queensland Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               
@@ -976,6 +1021,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-outback-queensland.png" alt="Outback Queensland Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.outbackqueensland.org.au" target="_blank">
@@ -1006,10 +1059,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Fitzroy River Statement</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-fitzroy-river-statement.png" alt="Fitzroy River Statement Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>This was a site were I received no design, it was inspired in an old site of the client and some examples, the sections are also dynamic so for example they could create as many as they want in the homepage, the buttons are dynamic, the text can be spread into one or two columns easily through the backend. It was a site made up following functionality and a short deadline.</p>
@@ -1020,6 +1069,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-fitzroy-river-statement.png" alt="Fitzroy River Statement Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="http://www.fitzroystatement.org" target="_blank">
@@ -1050,10 +1107,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Repower Australia</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-repower-australia.png" alt="Repower Australia Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>Repower Australia is a website winner of a <strong>Reed Award</strong> in February 2019 for <i>Best International Campaign Website</i> and it is one I’m proud of and the same for everyone at Code Nation. Designed by Lully Duque with incredible custom designed infographics and images, telling a story organized by the team and clients as well as organizing a functional UI, was started with a <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and Slides theme base code and I made the full development of it. It had a short deadline but I even managed to re-create everything again just as Lully designed it but now as a full website written in HTML, SCSS, and Liquid; also we made everything dynamic using <a href="https://forestry.io/" target="_blank">Forestry</a>. I handled to add putting some extra time as a bonus a lot of clean animations and cool effects like every element entering from the sides or fading, elements appearing while scrolling, the button shadow small unique effect touch and things I tryied to put with love that are not priority for the company’s workflow but ended up with an awesome UX, adding up the whole team’s work.</p>
@@ -1064,6 +1117,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-repower-australia.png" alt="Repower Australia Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.repoweraustralia.org.au/" target="_blank">
@@ -1094,10 +1155,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Seed Your Future</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-seed-your-future.png" alt="Seed Your Future Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               
@@ -1108,6 +1165,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-seed-your-future.png" alt="Seed Your Future Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.seedyourfuture.org/" target="_blank">
@@ -1138,10 +1203,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Wentworth for Refugees</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-wentworth-for-refugees.png" alt="Wentworth for Refugees Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>This was a small election site created for the Refugee Council of Australia group for whom we worked a bigger site later.</p>
@@ -1152,6 +1213,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-wentworth-for-refugees.png" alt="Wentworth for Refugees Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.wentworth4refugees.org.au/" target="_blank">
@@ -1182,10 +1251,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Kimberley Clean Energy Plan</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-kimberley-clean-energy-plan.png" alt="Kimberley Clean Energy Plan Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               
@@ -1196,6 +1261,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-kimberley-clean-energy-plan.png" alt="Kimberley Clean Energy Plan Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.kimberleycleanenergy.org/" target="_blank">
@@ -1226,10 +1299,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Give A Dam</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-give-a-dam.png" alt="Give A Dam Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>Give A Dam is one recent site created using Bootstrap 4 within NationBuilder.</p>
@@ -1240,6 +1309,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-give-a-dam.png" alt="Give A Dam Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.giveadam.org.au/" target="_blank">
@@ -1270,10 +1347,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Refugee Council of Australia</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-refugee-council-of-australia.png" alt="Refugee Council of Australia Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>This was a full site development with around 7 main pages in the top navigation and from around 3 to 7 subpages in the dropdown of each one of those, with full customization for every page-type in NationBuilder like Feedback, Signup, Volunteer Signup, Donation pages. But at the end for efficiency reasons the client wanted to maintain most of their blog posts and content within their original Wordpress site. The main design from Lully Duque was based a lot in that Wordpress site so they were a bit similar already but still different. I had to work in coordination with that Wordpress site and link pages from one to the other. One main functionality they are using from our site is the Donation page <a href="https://refugeecouncilaus-refugeecouncilaus.nationbuilder.com/donate" target="_blank">here</a>, where NationBuilder is the perfect tool for those type of actions. Later I had to re-create i.e. the footer and some membership and contact us pages closer and resembling their original site <a href="https://www.refugeecouncil.org.au/" target="_blank">here</a>, so the users could transfer from one to the other without a so drastic change and maybe not even noticing it. <a href="https://refugeecouncilaus-refugeecouncilaus.nationbuilder.com/members" target="_blank">This</a> is a membership page I created and <a href="https://www.refugeecouncil.org.au/membership/" target="_blank">this</a> is their original Worpress membership page.</p>
@@ -1284,6 +1357,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-refugee-council-of-australia.png" alt="Refugee Council of Australia Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://refugeecouncilaus-refugeecouncilaus.nationbuilder.com/" target="_blank">
@@ -1314,10 +1395,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Repower Alice Springs</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-repower-alice-springs.png" alt="Repower Alice Springs Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>Something to mention here is this website was developed during a recent team-catchup we all in the team of Code Nation took in Australia around March of 2019, so work was a bit different than usual and was very nice being able to colaborate directly with the designers and rest of the team every day working on this project, different as we accustomed lately as for the two latest years we worked remotedly resembling a 3.0 model of work.</p>
@@ -1328,6 +1405,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-repower-alice-springs.png" alt="Repower Alice Springs Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.repoweralicesprings.org.au/" target="_blank">
@@ -1358,10 +1443,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Injured Workers Support Network</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-injured-workers-support-network-victoria.png" alt="Injured Workers Support Network Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>Designed by Viviana Bernal at Code Nation this was for sure one of my favourite sites to develop in the 4 years in the company and was a very recent launch. The client is still working on content and the site might still get some revisions after I left it. The design is so awesome and minimalistic, also working with the latest Bootstrap 4 templates and 4 years with NationBuilder let me polish the site more than some others and finish it with small touches like small fade-in animations and a very responsive layout for mobile devices.</p>
@@ -1376,6 +1457,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-injured-workers-support-network-victoria.png" alt="Injured Workers Support Network Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://www.iwsnvic.org.au/" target="_blank">
@@ -1406,10 +1495,6 @@
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
           <h4 class="text-black text-uppercase mb-4">Bogota Bulldogs</h4>
 
-          <div class="border mb-4">
-            <img src="/uploads/site-web-bogota-bulldogs.png" alt="Bogota Bulldogs Image">
-          </div>
-
           <!-- if project.content.size > 0 -->
             <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
               <p>This is the last website I worked in during my time at Code Nation, the Bogota Bulldogs is the first amateur australian football club dedicated to establishing and growing the great australian sport in Bogotá and across Colombia. I finished the full site and left when it was just about to be launched. (The URL is temporary and will change when the site gets live).</p>
@@ -1420,6 +1505,14 @@
 
             </div>
           <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-bogota-bulldogs.png" alt="Bogota Bulldogs Image">
+          </div>
+          
+          
+          
+          
 
           <div class="mt-3">
             <a class="text-purple-dark" href="https://bogota-bulldogs.netlify.com/" target="_blank">
@@ -1436,8 +1529,110 @@
     </div>
   </div>
 
+  <div class="project-modal modal fade text-center" id="projectModal_freshhold" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"><!--aria-hidden="true"-->
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content bg-white">
+        <div class="modal-header pt-2 pt-md-3 pb-0 px-4">
+          <h3 class="modal-title text-black text-uppercase sr-only" id="projectModalLabel">Freshhold</h3>
+          
+          <button type="button" class="close text-black" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
+          <h4 class="text-black text-uppercase mb-4">Freshhold Consulting</h4>
+
+          <!-- if project.content.size > 0 -->
+            <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
+              <p>This was a very small concept site full of lorem ipsum and placeholder content, created fully by me in almost one afternoon in 2015 just as a small showcase of some HTML and CSS skills following a small task to enter my old company Freshhold Consulting which later became Code Nation.</p>
+
+            </div>
+            <div class="intro text-black d-block d-md-none" aria-hidden="true">
+              <p>This was a very small concept site full of lorem ipsum and placeholder content, created fully by me in almost one afternoon in 2015 just as a small showcase of some HTML and CSS skills following a small task to enter my old company Freshhold Consulting which later became Code Nation.</p>
+
+            </div>
+          <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-freshhold-1.png" alt="Freshhold Consulting Image">
+          </div>
+          
+          
+            <div class="border mt-4more">
+              <img src="/uploads/site-web-freshhold-2.png" alt="Freshhold Consulting Image 2">
+            </div>
+          
+          
+          
+            <div class="border mt-4more">
+              <img src="/uploads/site-web-freshhold-3.png" alt="Freshhold Consulting Image 3">
+            </div>
+          
+
+          <div class="mt-3">
+            <a class="text-purple-dark" href="" target="_blank">
+              <h4 class="font-paragraph">no longer live</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="modal-footer py-1 pt-md-3 pb-md-4">
+          <!--<button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+        </div>
       </div>
-    </main>
+    </div>
+  </div>
+
+  <div class="project-modal modal fade text-center" id="projectModal_calle_impresores" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"><!--aria-hidden="true"-->
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content bg-white">
+        <div class="modal-header pt-2 pt-md-3 pb-0 px-4">
+          <h3 class="modal-title text-black text-uppercase sr-only" id="projectModalLabel">Calle_impresores</h3>
+          
+          <button type="button" class="close text-black" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
+          <h4 class="text-black text-uppercase mb-4">Calle Impresores</h4>
+
+          <!-- if project.content.size > 0 -->
+            <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
+              <p>This is a concept project I started in 2015 which I’ll be getting into again in September, 2019. I will be creating a new more modern design following some of the UI I had already created and polishing the concept, as well as maintaining the classic brand look established since 1987 but making it shine in a modern website.</p>
+
+            </div>
+            <div class="intro text-black d-block d-md-none" aria-hidden="true">
+              <p>This is a concept project I started in 2015 which I’ll be getting into again in September, 2019. I will be creating a new more modern design following some of the UI I had already created and polishing the concept, as well as maintaining the classic brand look established since 1987 but making it shine in a modern website.</p>
+
+            </div>
+          <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-calle-impresores.png" alt="Calle Impresores Image">
+          </div>
+          
+          
+          
+          
+
+          <div class="mt-3">
+            <a class="text-purple-dark" href="" target="_blank">
+              <h4 class="font-paragraph">site under construction</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="modal-footer py-1 pt-md-3 pb-md-4">
+          <!--<button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   </body>
 

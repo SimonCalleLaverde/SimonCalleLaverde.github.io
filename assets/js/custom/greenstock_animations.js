@@ -1,0 +1,1 @@
+TweenMax.from('.header-image', 2, {css:{opacity:0}});
