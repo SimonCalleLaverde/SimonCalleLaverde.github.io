@@ -11300,9 +11300,6 @@ a {
   transition: all ease-out 0.5s; }
   a:hover, a:active, a:focus {
     text-decoration: none; }
-    a:hover .headline, a:active .headline, a:focus .headline {
-      color: #FFF;
-      -webkit-text-stroke: 2px #FFF; }
   a.text-black:hover, a.text-black:active, a.text-black:focus {
     color: #262626 !important; }
   a.text-white:hover, a.text-white:active, a.text-white:focus {
@@ -11360,11 +11357,14 @@ a {
 .headline {
   color: #000;
   -webkit-text-stroke: 2px #FFF;
-  -webkit-transition: color ease-out 0.5s;
-  -moz-transition: color ease-out 0.5s;
-  -ms-transition: color ease-out 0.5s;
-  -o-transition: color ease-out 0.5s;
-  transition: color ease-out 0.5s; }
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -ms-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s; }
+  .headline:hover, .headline:active, .headline:focus {
+    color: #FFF;
+    -webkit-text-stroke: 2px #FFF; }
 
 input.text, textarea.textarea, .form-group > select {
   height: 40px;
@@ -11756,12 +11756,7 @@ a:hover, img:hover {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-transition: all ease-out 0.2s;
-    -moz-transition: all ease-out 0.2s;
-    -ms-transition: all ease-out 0.2s;
-    -o-transition: all ease-out 0.2s;
-    transition: all ease-out 0.2s; }
+    border-radius: 50%; }
   .cursor.hoveredLink {
     width: 140px;
     height: 140px;
@@ -11771,15 +11766,12 @@ a:hover, img:hover {
     -moz-transform: translateX(-57.5px) translateY(-57.5px);
     -ms-transform: translateX(-57.5px) translateY(-57.5px);
     -o-transform: translateX(-57.5px) translateY(-57.5px);
-    transform: translateX(-57.5px) translateY(-57.5px); }
-    .cursor.hoveredLink:after {
-      width: 140px;
-      height: 140px;
-      -webkit-transition: all ease-out 0.3s;
-      -moz-transition: all ease-out 0.3s;
-      -ms-transition: all ease-out 0.3s;
-      -o-transition: all ease-out 0.3s;
-      transition: all ease-out 0.3s; }
+    transform: translateX(-57.5px) translateY(-57.5px);
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -ms-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s; }
   .cursor.hoveredImg {
     background-color: transparent;
     border-color: #FFF; }
@@ -11792,12 +11784,17 @@ a:hover, img:hover {
     -moz-transform: translateY(-37.5px) translateX(-37.5px);
     -ms-transform: translateY(-37.5px) translateX(-37.5px);
     -o-transform: translateY(-37.5px) translateX(-37.5px);
-    transform: translateY(-37.5px) translateX(-37.5px); }
+    transform: translateY(-37.5px) translateX(-37.5px);
+    -webkit-transition: background-color ease-out 0.2s;
+    -moz-transition: background-color ease-out 0.2s;
+    -ms-transition: background-color ease-out 0.2s;
+    -o-transition: background-color ease-out 0.2s;
+    transition: background-color ease-out 0.2s; }
     .cursor.hoveredFigure:after {
       content: "View It";
       width: 100px;
       height: 100px;
-      padding-top: 38px;
+      padding-top: 40px;
       font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
       font-weight: 500;
       font-size: 13.5px;

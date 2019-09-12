@@ -239,13 +239,6 @@ a {
   @include transition(all ease-out 0.5s);
   &:hover, &:active, &:focus {
     text-decoration:none;
-    .headline {
-      color:#FFF;//
-      //-webkit-text-fill-color:#FFF;//Will Override Color (Regardless Of Order)
-      //-webkit-text-stroke-width:2px;
-      //-webkit-text-stroke-color:#FFF;
-      -webkit-text-stroke:2px #FFF;
-    }
   }
   &.text-black {
     &:hover, &:active, &:focus {
@@ -319,10 +312,14 @@ a {
   //-webkit-text-stroke-width:2px;
   //-webkit-text-stroke-color:#FFF;
   -webkit-text-stroke:2px #FFF;
-  //@include transition(all ease-out 0.5s);
-
-  @include transition(color ease-out 0.5s);
-
+  @include transition(all ease-out 0.3s);
+  &:hover, &:active, &:focus {
+    color:#FFF;//
+    //-webkit-text-fill-color:#FFF;//Will Override Color (Regardless Of Order)
+    //-webkit-text-stroke-width:2px;
+    //-webkit-text-stroke-color:#FFF;
+    -webkit-text-stroke:2px #FFF;
+  }
 }
 
 // Forms
@@ -723,7 +720,7 @@ body.page-type-basic.work {
 
 // Theme Colour White
 body.theme-colour.white {
-  background-color:#FFF;//$theme-color-grey-light
+  background-color:#FFF;
   header, section, footer {//main
     background-color:#FFF!important;
   }
@@ -734,20 +731,9 @@ body.theme-colour.white {
     color:theme-color('grey-dark')!important;
   }
   .cursor {
-    //display:none!important;
     background-color:transparent;
     border-color:transparent;
   }
-  // figure {
-  //   &:hover, &:active, &:focus {
-  //     .cursor {
-  //       display:block!important;
-  //     }
-  //   }
-  // }
-  // a {
-  //   cursor:pointer;
-  // }
   .logo {
     .profile-picture {
       @include filter(grayscale(0));
@@ -848,37 +834,33 @@ a, img {
     top:-1px;
     left:-1px;
     @include border-radius(50%);
-    @include transition(all ease-out 0.2s);
   }
   &.hoveredLink {
     width:140px;
     height:140px;
     background-color:#FFF;
-    mix-blend-mode:difference;//normal!important
+    mix-blend-mode:difference;
     @include transform(translateX(-57.5px) translateY(-57.5px));
-    &:after {
-      width:140px;
-      height:140px;
-      @include transition(all ease-out 0.3s);
-    }
+    @include transition(all ease-out 0.3s);
   }
   &.hoveredImg {
     background-color:transparent;
     border-color:#FFF;
-    //mix-blend-mode:normal!important;
+    //mix-blend-mode:normal;
   }
   &.hoveredFigure {
     width:100px;
     height:100px;
     background-color:theme-color('magenta');
     border:1px solid theme-color('magenta');
-    //mix-blend-mode:normal!important;
+    //mix-blend-mode:normal;
     @include transform(translateY(-37.5px) translateX(-37.5px));
+    @include transition(background-color ease-out 0.2s);
     &:after {
       content:"View It";
       width:100px;
       height:100px;
-      padding-top:38px;
+      padding-top:40px;
       font-family:$font-headline;
       font-weight:500;
       font-size:13.5px;
