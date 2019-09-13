@@ -668,11 +668,11 @@ header.home-one-section {
       position:absolute;
       width:110%;
       top:-170px;
-      left:175px;
+      left:180px;
       z-index:4500;
       @include filter(opacity(0));
       @include transform(translateY(-40px) rotate(0));
-      @include transition(transform ease-out 0.2s);
+      @include transition(transform ease-out 0.3s);
     }
     .bogota-picture {
       height:400px;
@@ -889,7 +889,7 @@ a {
     border-color:transparent;
     mix-blend-mode:difference;
     @include transform(translateX(-30px) translateY(-30px));
-    @include transition(background-color, color, transform, ease-out 0.3s);
+    @include transition(all ease-out 0.3s);//background-color, color, transform, ease-out 0.3s
     // &:after {
     //   width:110px;
     //   height:110px;
@@ -1003,6 +1003,10 @@ a {
   --blend-color-3:transparent;
   --blend-color-4:transparent;
   --blend-color-5:theme-color('magenta');
+  // &.bogota-picture {
+  //   --glitch-width:110%;
+  //   --glitch-height:400px;
+  // }
 }
 .glitch-img {
   position: absolute;
@@ -1024,7 +1028,6 @@ a {
   animation-delay: var(--delay-anim);
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  opacity:0.7;//Added
 }
 .imgloaded .glitch-img:nth-child(2) {
   background-color: var(--blend-color-2);

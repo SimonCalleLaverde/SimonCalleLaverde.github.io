@@ -14,23 +14,20 @@
 
     <div class="row mt-4more">
       <div class="col-md-6 offset-md-3">
-        <div class="home-image-appear text-grey-light">
-          
-
-
+        <div class="home-image-appear">
           <h2 class="text-white text-uppercase" style="position:absolute; z-index:5000;">
-            I'm Simón Calle Laverde, an advertiser and web developer from the nice city of <span class="text-magenta" style="text-decoration:line-through;">Bogotá</span>.<!--headline soft--><!--text-underline-->
+            I'm Simón Calle Laverde, an advertiser and web developer from the nice city of <span class="text-magenta" style="text-decoration:line-through; cursor:pointer;">Bogotá</span>.<!--headline soft--><!--text-underline-->
 
+            <style type="text/css">
+              .glitch-img-bogota {
+                background:url('{{ "/uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg" | relative_url }}') no-repeat center center scroll;
+                -webkit-background-size:cover;
+                -moz-background-size:cover;
+                -o-background-size:cover;
+                background-size:cover;
+              }
+            </style>
             <div class="bogota-picture glitch" title="Credit to Fernando Garcia on: https://www.flickr.com/photos/gogeid/16925533979">
-              <style type="text/css">
-                .glitch-img-bogota {
-                  background:url('{{ "/uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg" | relative_url }}') no-repeat center center scroll;
-                  -webkit-background-size:cover;
-                  -moz-background-size:cover;
-                  -o-background-size:cover;
-                  background-size:cover;
-                }
-              </style>
               <div class="glitch-img glitch-img-bogota bg-image-load"></div>
               <div class="glitch-img glitch-img-bogota bg-image-load"></div>
               <div class="glitch-img glitch-img-bogota bg-image-load"></div>
@@ -41,23 +38,17 @@
           </h2>
 
           <h2 class="headline soft text-uppercase" style="position:absolute; z-index:5001;">I'm Simón Calle Laverde, an advertiser and web developer from the nice city of</h2>
-          
-          
-
-
-
         </div>
       </div>
     </div>
-
-
-
-
+    
     {% comment %}
     <div class="row">
       <div class="col-md-6 offset-md-5">
         <div class="text-grey-light">
           {{ content }}
+
+          Altho I studied advertisement, marketing, and branding for 5 - 6 years, the Branding and web design was done in Code Nation by the designers while I was developing the live and interactive sites as well as managing Nation Builder's backend and making the site straight away dynamic with it.
         </div>
       </div>
     </div>

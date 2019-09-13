@@ -11643,7 +11643,7 @@ header.home-one-section {
       position: absolute;
       width: 110%;
       top: -170px;
-      left: 175px;
+      left: 180px;
       z-index: 4500;
       -webkit-filter: opacity(0);
       -moz-filter: opacity(0);
@@ -11655,11 +11655,11 @@ header.home-one-section {
       -ms-transform: translateY(-40px) rotate(0);
       -o-transform: translateY(-40px) rotate(0);
       transform: translateY(-40px) rotate(0);
-      -webkit-transition: transform ease-out 0.2s;
-      -moz-transition: transform ease-out 0.2s;
-      -ms-transition: transform ease-out 0.2s;
-      -o-transition: transform ease-out 0.2s;
-      transition: transform ease-out 0.2s; }
+      -webkit-transition: transform ease-out 0.3s;
+      -moz-transition: transform ease-out 0.3s;
+      -ms-transition: transform ease-out 0.3s;
+      -o-transition: transform ease-out 0.3s;
+      transition: transform ease-out 0.3s; }
     header.home-one-section .home-image-appear .bogota-picture {
       height: 400px; }
     header.home-one-section .home-image-appear h1 > span:hover ~ .bogota-picture, header.home-one-section .home-image-appear h1 > span:hover ~ img.image-bogota, header.home-one-section .home-image-appear h2 > span:hover ~ .bogota-picture, header.home-one-section .home-image-appear h2 > span:hover ~ img.image-bogota, header.home-one-section .home-image-appear h3 > span:hover ~ .bogota-picture, header.home-one-section .home-image-appear h3 > span:hover ~ img.image-bogota, header.home-one-section .home-image-appear h4 > span:hover ~ .bogota-picture, header.home-one-section .home-image-appear h4 > span:hover ~ img.image-bogota, header.home-one-section .home-image-appear h5 > span:hover ~ .bogota-picture, header.home-one-section .home-image-appear h5 > span:hover ~ img.image-bogota, header.home-one-section .home-image-appear h6 > span:hover ~ .bogota-picture, header.home-one-section .home-image-appear h6 > span:hover ~ img.image-bogota {
@@ -11791,11 +11791,11 @@ a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h
     -ms-transform: translateX(-30px) translateY(-30px);
     -o-transform: translateX(-30px) translateY(-30px);
     transform: translateX(-30px) translateY(-30px);
-    -webkit-transition: background-color, color, transform, ease-out 0.3s;
-    -moz-transition: background-color, color, transform, ease-out 0.3s;
-    -ms-transition: background-color, color, transform, ease-out 0.3s;
-    -o-transition: background-color, color, transform, ease-out 0.3s;
-    transition: background-color, color, transform, ease-out 0.3s; }
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -ms-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s; }
   .cursor.hoveredProject {
     width: 100px;
     height: 100px;
@@ -11888,8 +11888,7 @@ a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h
   animation-duration: var(--time-anim);
   animation-delay: var(--delay-anim);
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  opacity: 0.7; }
+  animation-iteration-count: infinite; }
 
 .imgloaded .glitch-img:nth-child(2) {
   background-color: var(--blend-color-2);
