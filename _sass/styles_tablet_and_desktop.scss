@@ -6,6 +6,9 @@
   body {
   	//padding:12px;
   }
+  h1, h2, h3, h4, h5, h6 {
+	  line-height:1.4;//
+	}
 
   // Main, Header, Section
 	main, header, section {
@@ -83,6 +86,7 @@
 		@include transform(rotateZ(90deg) translateY(10px));
   	@include transform-origin(0% 0%);
     @include transition(all 1000ms cubic-bezier(0.77,0,0.175,1));
+    //@include animation(fadeInAnimation 3s ease-in);
     ul.navbar-nav {
     	li.nav-item {
 	    	a.nav-link {
@@ -96,11 +100,16 @@
 	    		//@include text-shadow(0 0 10px #FFF);
 	    		&:hover {//, &:active, &:focus
 	    			color:theme-color('grey-light');//#FFF
-	    			@include text-shadow(0 0 10px theme-color('grey-light'), 0 0 20px rgba(0,0,0,1));
+	    			//@include text-shadow(0 0 10px theme-color('grey-light'), 0 0 20px rgba(0,0,0,1));
+	    			&.active {
+	    				&:after {
+	    					border:1.5px solid theme-color('grey-light');//#14FF7D
+	    				}
+	    			}
 	    		}
 		    	&.active {
-						color:theme-color('grey-light');
-	    			@include text-shadow(0 0 10px theme-color('grey-light'), 0 0 20px rgba(0,0,0,1));
+						//color:theme-color('grey-light');
+	    			//@include text-shadow(0 0 10px theme-color('grey-light'), 0 0 20px rgba(0,0,0,1));
 	    			@include transition(all 0.3s ease-out);
 	    			// &:hover {
 		    		// 	color:#6D510A;
@@ -112,9 +121,10 @@
 		    			bottom:-7px;
 		    			width:7px;
 		    			height:7px;
-		    			border:1.5px solid theme-color('grey-light');
+		    			border:1.5px solid theme-color('magenta');//grey-light
+		    			pointer-events:none;
 		    			@include border-radius(50%);
-		    			@include transition(none);
+		    			@include transition(all 0.3s ease-out);//(none)
 		    		}
 		    		&.not-active {
 		    			color:#FFF;
@@ -168,36 +178,31 @@
 
 	// Home One Section
 	header.home-one-section {
-		padding-right:0;
-  	padding-left:0;
-		.container {
-			padding-top:100px;
-			padding-bottom:60px;
-		}
+		padding:80px 0 30px;
 	}
 
 	// Home Two Section
 	section.home-two-section {
-		//min-height:100vh;
-		padding:60px 0;
+		//min-height:80vh;
+		padding:30px 0;
 	}
 
 	// Home Three Section
 	section.home-three-section {
-		min-height:100vh;
-		padding:60px 0;
+		min-height:80vh;
+		padding:30px 0;
 	}
 
 	// Home Four Section
 	section.home-four-section {
-		min-height:100vh;
-		padding:60px 0;
+		min-height:80vh;
+		padding:30px 0;
 	}
 
 	// Home Five Section
 	section.home-five-section {
 		min-height:80vh;//100vh
-		padding:60px 0 0;
+		padding:30px 0 0;
 	}
 
 	// Work Section
@@ -226,6 +231,7 @@
 			    		}
 			    		&.not-active {
 			    			color:theme-color('grey-dark');
+			    			@include text-shadow(none);
 			    		}
 						}
 		    	}

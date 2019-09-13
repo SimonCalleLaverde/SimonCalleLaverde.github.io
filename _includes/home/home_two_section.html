@@ -23,9 +23,9 @@
 		<div class="row">
       <div class="col-md-12">
         <!--Desktop-->
-        <h3 class="headline text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;">{{ page.portfolio_section.headline }}</h3>
+        <h3 class="text-white text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;">{{ page.portfolio_section.headline }}</h3>
         <!--Mobile-->
-        <h4 class="headline text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">{{ page.portfolio_section.headline }}</h4>
+        <h4 class="text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">{{ page.portfolio_section.headline }}</h4>
       </div>
     </div>
 
@@ -50,7 +50,7 @@
     </div>
     {% endcomment %}
 
-    <div class="row pt-5">
+    <div class="row pt-4">
       <div class="col-md-12">
         {% assign posts_count = 0 %}
         {% assign sorted_projects = site.projects | sort:"order" | reverse %}
@@ -70,6 +70,22 @@
         {% endfor %}
       </div>
     </div>
-    
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center mt-4 mx-md-3 px-md-4">
+          <!--Desktop-->
+          <a class="nav-link mb-4more d-none d-md-inline-block" href="/work">
+            <h5 class="headline text-uppercase" style="font-size:6rem;">All Work</h5>
+          </a>
+
+          <!--Mobile-->
+          <a class="nav-link mb-3 d-inline-block d-md-none" href="/work">
+            <h5 class="headline text-uppercase d-block d-md-none" aria-hidden="true">All Work</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>

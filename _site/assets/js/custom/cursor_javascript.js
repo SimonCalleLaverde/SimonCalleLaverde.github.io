@@ -3,7 +3,7 @@
 
 // document.addEventListener('mousemove', e => {
 // 	//console.log(e);
-// 	cursor.setAttribute("style", "display:block; top:"+(e.pageY - 12.5)+"px; left:"+(e.pageX - 12.5)+"px;");
+// 	cursor.setAttribute("style", "display:block; top:"+(e.pageY - 25)+"px; left:"+(e.pageX - 25)+"px;");
 // })
 
 // document.addEventListener('click', () => {
@@ -19,10 +19,10 @@ $(document).mousemove(function(e) {
   const target = $(event.target);
   
   // update position of cursor
-  cursor.css('left', e.clientX - 12.5).css('top', e.clientY - 12.5).css('display', 'block');
+  cursor.css('left', e.clientX - 25).css('top', e.clientY - 25).css('display', 'block');
   
-  const isLink = target.is('a > span > i, a > span, a > i, a > u, a > p, a > h1, a > h2, a > h3, a > h4, a > h5, a > h6');//.nav-social-media//a
-  const isImg = target.is('img, .glitch-img', '.parallax-image');
+  const isLink = target.is('a > span > i, a > span, a > i, a > u, a > p, a > h1, a > h2, a > h3, a > h4, a > h5, a > h6');//a::after, a::before//.nav-social-media//a
+  const isImg = target.is('img, .glitch-img, .parallax-image');
   const isProject = target.is('.project-thumbnail');//figure
 
   const isLinkHovered = cursor.hasClass('hoveredLink');

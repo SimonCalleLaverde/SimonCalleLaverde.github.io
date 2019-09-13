@@ -1,45 +1,59 @@
 <!--IN DEVELOPMENT-->
 
 <header class="home-one-section d-flex flex-column align-items-center bg-black text-white clearfix" id="section_1">
-
-  <div class="parallax-image header-image">
-    <style type="text/css">
-      #header-image {
-        background:url('/uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg') no-repeat 50% 0% scroll;
-        -webkit-background-size:cover;
-        -moz-background-size:cover;
-        -o-background-size:cover;
-        background-size:cover;
-      }
-    </style>
-    <div class="item-img-wrap">
-      <div class="item-img item-img-t1" id="header-image" title="Credit to Fernando Garcia: https://www.flickr.com/photos/gogeid/16925533979" style="z-index:1000;">
-      </div>
-    </div>
-
-
-
-    <div class="item-caption">
-      <h4 class="text-white text-center text-uppercase" style="">Just one developer from the nice city of Bogotá</h4>
-    </div>
-  </div>
-
-
-
-
-
-
-
   <div class="container">
     
     <div class="row mt-4">
       <div class="col-md-4 offset-md-2">
         <div class="text-grey-light">
-          <h1 class="headline" style="font-size:6rem;">Hello!</h1><!--text-white-->
+          <h1 class="text-white" style="font-size:6rem;">Hello!</h1>
+          <h1 class="headline" style="position:absolute; top:0; font-size:6rem; z-index:5001;">Hello!</h1>
         </div>
       </div>
     </div>
 
+    <div class="row mt-4more">
+      <div class="col-md-6 offset-md-3">
+        <div class="home-image-appear text-grey-light">
+          
+
+
+          <h2 class="text-white text-uppercase" style="position:absolute; z-index:5000;">
+            I'm Simón Calle Laverde, an advertiser and web developer from the nice city of <span class="text-magenta" style="text-decoration:line-through;">Bogotá</span>.<!--headline soft--><!--text-underline-->
+
+            <div class="bogota-picture glitch" title="Credit to Fernando Garcia on: https://www.flickr.com/photos/gogeid/16925533979">
+              <style type="text/css">
+                .glitch-img-bogota {
+                  background:url('{{ "/uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg" | relative_url }}') no-repeat center center scroll;
+                  -webkit-background-size:cover;
+                  -moz-background-size:cover;
+                  -o-background-size:cover;
+                  background-size:cover;
+                }
+              </style>
+              <div class="glitch-img glitch-img-bogota bg-image-load"></div>
+              <div class="glitch-img glitch-img-bogota bg-image-load"></div>
+              <div class="glitch-img glitch-img-bogota bg-image-load"></div>
+              <div class="glitch-img glitch-img-bogota bg-image-load"></div>
+              <div class="glitch-img glitch-img-bogota bg-image-load"></div>
+            </div>
+            <!--<img class="image-bogota" src="uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg" alt="Credit to Fernando Garcia on: https://www.flickr.com/photos/gogeid/16925533979">-->
+          </h2>
+
+          <h2 class="headline soft text-uppercase" style="position:absolute; z-index:5001;">I'm Simón Calle Laverde, an advertiser and web developer from the nice city of</h2>
+          
+          
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    {% comment %}
     <div class="row">
       <div class="col-md-6 offset-md-5">
         <div class="text-grey-light">
@@ -47,6 +61,7 @@
         </div>
       </div>
     </div>
+    {% endcomment %}
     
   </div>
 </header>

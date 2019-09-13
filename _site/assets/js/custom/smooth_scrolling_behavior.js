@@ -212,7 +212,7 @@
 	// Preload images
 	const preloadImages = () => {
 		return new Promise((resolve, reject) => {
-			imagesLoaded(document.querySelectorAll('.item-img'), {background: true}, resolve);
+			imagesLoaded(document.querySelectorAll('img, .bg-image-load'), {background: true}, resolve);
 		});
 	};
 	
@@ -220,6 +220,7 @@
 	preloadImages().then(() => {
 		// Remove the loader
 		document.body.classList.remove('loading');
+		document.body.classList.add('imgloaded');//#Added For Image Glitch
 		// Get the scroll position
 		getPageYScroll();
 		// Initialize the Smooth Scrolling

@@ -48,7 +48,7 @@
   <!---->
 </head>
 
-  <body class="loading page-type-basic home theme-colour black" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
+  <body class="page-type-basic home theme-colour black loading" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
     <div class="cursor"></div>
 
     <aside class="nav-social-media py-4 px-4more">
@@ -85,27 +85,33 @@
 <nav class="navbar navbar-expand-md d-flex flex-row justify-content-center align-items-end text-center" id="navbar"><!--bg-dark navbar-dark fixed-top-->
 	
 		<ul class="navbar-nav">
-			<li class="nav-item px-3">
+			<li class="nav-item px-2">
 				<a class="nav-link smoothScroll" href="#section_1">
-					<p class="m-0">01</p>
+					<p class="m-0">Hello</p>
 				</a>
 			</li>
 			
-			<li class="nav-item px-3">
+			<li class="nav-item px-2">
 				<a class="nav-link smoothScroll" href="#section_2">
-					<p class="m-0">02</p>
+					<p class="m-0">My work</p><!--Portfolio-->
 				</a>
 			</li>
 			
-			<li class="nav-item px-3">
+			<li class="nav-item px-2">
 				<a class="nav-link smoothScroll" href="#section_3">
-					<p class="m-0">03</p>
+					<p class="m-0">My skills</p><!--I know--><!--Expertise-->
 				</a>
 			</li>
 			
-			<li class="nav-item px-3">
+			<li class="nav-item px-2">
 				<a class="nav-link smoothScroll" href="#section_4">
-					<p class="m-0">04</p>
+					<p class="m-0">Get in touch</p>
+				</a>
+			</li>
+
+			<li class="nav-item px-2">
+				<a class="nav-link" href="/work">
+					<p class="m-0">All work</p>
 				</a>
 			</li>
 		</ul>
@@ -113,9 +119,7 @@
 	
 </nav>
 
-<nav class="work">
-	<a class="nav-link" href="/work"><p class="m-0">All Work</p></a>
-</nav>
+<!---->
 
     <!-- include switch_color_toggler.html -->
 
@@ -128,55 +132,59 @@
         <!--IN DEVELOPMENT-->
 
 <header class="home-one-section d-flex flex-column align-items-center bg-black text-white clearfix" id="section_1">
-
-  <div class="parallax-image header-image">
-    <style type="text/css">
-      #header-image {
-        background:url('/uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg') no-repeat 50% 0% scroll;
-        -webkit-background-size:cover;
-        -moz-background-size:cover;
-        -o-background-size:cover;
-        background-size:cover;
-      }
-    </style>
-    <div class="item-img-wrap">
-      <div class="item-img item-img-t1" id="header-image" title="Credit to Fernando Garcia: https://www.flickr.com/photos/gogeid/16925533979" style="z-index:1000;">
-      </div>
-    </div>
-
-
-
-    <div class="item-caption">
-      <h4 class="text-white text-center text-uppercase" style="">Just one developer from the nice city of Bogotá</h4>
-    </div>
-  </div>
-
-
-
-
-
-
-
   <div class="container">
     
     <div class="row mt-4">
       <div class="col-md-4 offset-md-2">
         <div class="text-grey-light">
-          <h1 class="headline" style="font-size:6rem;">Hello!</h1><!--text-white-->
+          <h1 class="text-white" style="font-size:6rem;">Hello!</h1>
+          <h1 class="headline" style="position:absolute; top:0; font-size:6rem; z-index:5001;">Hello!</h1>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6 offset-md-5">
-        <div class="text-grey-light">
-          <p>I’m Simón Calle Laverde. I worked at <a class="text-codenation" href="www.codenation.com"><u>Code Nation</u></a> for over 4 years, an international 5 star rated creative agency developing awesome platforms for progressive campaigners. Our platforms helped our clients reach more people and allow them to engage with the cause, as well as letting them manage and organize huge bases of data and help those people to take action. Our clients were mostly based in Australia, some in Colombia and some in the United States.</p>
+    <div class="row mt-4more">
+      <div class="col-md-6 offset-md-3">
+        <div class="home-image-appear text-grey-light">
+          
 
-<p>https://www.youtube.com/watch?v=2MsN8gpT6jY</p>
+
+          <h2 class="text-white text-uppercase" style="position:absolute; z-index:5000;">
+            I'm Simón Calle Laverde, an advertiser and web developer from the nice city of <span class="text-magenta" style="text-decoration:line-through;">Bogotá</span>.<!--headline soft--><!--text-underline-->
+
+            <div class="bogota-picture glitch" title="Credit to Fernando Garcia on: https://www.flickr.com/photos/gogeid/16925533979">
+              <style type="text/css">
+                .glitch-img-bogota {
+                  background:url('/uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg') no-repeat center center scroll;
+                  -webkit-background-size:cover;
+                  -moz-background-size:cover;
+                  -o-background-size:cover;
+                  background-size:cover;
+                }
+              </style>
+              <div class="glitch-img glitch-img-bogota bg-image-load"></div>
+              <div class="glitch-img glitch-img-bogota bg-image-load"></div>
+              <div class="glitch-img glitch-img-bogota bg-image-load"></div>
+              <div class="glitch-img glitch-img-bogota bg-image-load"></div>
+              <div class="glitch-img glitch-img-bogota bg-image-load"></div>
+            </div>
+            <!--<img class="image-bogota" src="uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg" alt="Credit to Fernando Garcia on: https://www.flickr.com/photos/gogeid/16925533979">-->
+          </h2>
+
+          <h2 class="headline soft text-uppercase" style="position:absolute; z-index:5001;">I'm Simón Calle Laverde, an advertiser and web developer from the nice city of</h2>
+          
+          
+
+
 
         </div>
       </div>
     </div>
+
+
+
+
+    
     
   </div>
 </header>
@@ -191,15 +199,15 @@
 		<div class="row">
       <div class="col-md-12">
         <!--Desktop-->
-        <h3 class="headline text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;">Portfolio</h3>
+        <h3 class="text-white text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;">Highlighted Work</h3>
         <!--Mobile-->
-        <h4 class="headline text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">Portfolio</h4>
+        <h4 class="text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">Highlighted Work</h4>
       </div>
     </div>
 
     
 
-    <div class="row pt-5">
+    <div class="row pt-4">
       <div class="col-md-12">
         
         
@@ -224,7 +232,7 @@
 		  }
 		</style>
 		<figure>
-			<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-calle_impresores" title="Calle Impresores Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+			<div class="project-thumbnail scale-element bg-image-load d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-calle_impresores" title="Calle Impresores Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
 				<figcaption class="project-caption d-flex flex-column" loading="lazy">
 					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
 						<h3 class="text-grey-dark text-uppercase m-0">Calle Impresores</h3>
@@ -268,7 +276,7 @@
 		  }
 		</style>
 		<figure>
-			<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-freshhold" title="Freshhold Consulting Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+			<div class="project-thumbnail scale-element bg-image-load d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-freshhold" title="Freshhold Consulting Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
 				<figcaption class="project-caption d-flex flex-column" loading="lazy">
 					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
 						<h3 class="text-grey-dark text-uppercase m-0">Freshhold<br>Consulting</h3>
@@ -317,7 +325,7 @@
 		  }
 		</style>
 		<figure>
-			<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-bogota_bulldogs" title="Bogota Bulldogs Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+			<div class="project-thumbnail scale-element bg-image-load d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-bogota_bulldogs" title="Bogota Bulldogs Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
 				<figcaption class="project-caption d-flex flex-column" loading="lazy">
 					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
 						<h3 class="text-grey-dark text-uppercase m-0">Bogota Bulldogs</h3>
@@ -359,7 +367,7 @@
 		  }
 		</style>
 		<figure>
-			<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-injured_workers_support_network" title="Injured Workers Support Network Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+			<div class="project-thumbnail scale-element bg-image-load d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-injured_workers_support_network" title="Injured Workers Support Network Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
 				<figcaption class="project-caption d-flex flex-column" loading="lazy">
 					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
 						<h3 class="text-grey-dark text-uppercase m-0">Injured Workers<br>Support Network</h3>
@@ -406,7 +414,7 @@
 		  }
 		</style>
 		<figure>
-			<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-repower_alice_springs" title="Repower Alice Springs Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+			<div class="project-thumbnail scale-element bg-image-load d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-repower_alice_springs" title="Repower Alice Springs Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
 				<figcaption class="project-caption d-flex flex-column" loading="lazy">
 					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
 						<h3 class="text-grey-dark text-uppercase m-0">Repower Alice<br>Springs</h3>
@@ -448,7 +456,7 @@
 		  }
 		</style>
 		<figure>
-			<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-refugee_council_of_australia" title="Refugee Council of Australia Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
+			<div class="project-thumbnail scale-element bg-image-load d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-refugee_council_of_australia" title="Refugee Council of Australia Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
 				<figcaption class="project-caption d-flex flex-column" loading="lazy">
 					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
 						<h3 class="text-grey-dark text-uppercase m-0">Refugee Council<br>of Australia</h3>
@@ -480,7 +488,23 @@
         
       </div>
     </div>
-    
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center mt-4 mx-md-3 px-md-4">
+          <!--Desktop-->
+          <a class="nav-link mb-4more d-none d-md-inline-block" href="/work">
+            <h5 class="headline text-uppercase" style="font-size:6rem;">All Work</h5>
+          </a>
+
+          <!--Mobile-->
+          <a class="nav-link mb-3 d-inline-block d-md-none" href="/work">
+            <h5 class="headline text-uppercase d-block d-md-none" aria-hidden="true">All Work</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -516,6 +540,39 @@
         </div>
       </div>
     </div>
+
+
+    <div class="row pt-5">
+      <div class="col-md-6 offset-md-3">
+        <div class="text-white">
+          <div class="pb-4more">
+            <h2 class="text-white">Graphic and design software</h2>
+            - Corel Draw (5/5) (Life expert, using it since very little as my family works in graphic arts and design, had and used this programs all my life)<br>
+            - Photoshop (5/5)<br>
+            - Illustrator (5/5)<br>
+            - Adobe XD (2/5) (Learning)<br>
+          </div>
+
+          <div class="pb-4more">
+            <h2 class="text-white">Programming languages and platforms</h2>
+            - Sass (5/5)<br>
+            - Html (5/5)<br>
+            - Liquid (4/5) (For dynamic websites, and working with Jekyll or Hugo)<br>
+            - Javascript (2/5)<br>
+            - Jquery (3/5)<br>
+            - Greensock Animation Platform (2/5) (Learning)<br>
+          </div>
+
+          <div class="pb-4more">
+            <h2 class="text-white">Video and animation software</h2>
+            - Premiere Pro (3/5)<br>
+            - After Effects (3/5)<br>
+            <!--Blender (0/5) (To Learn) (Web/Game Assets, 3d Objects For Websites Using Three.js)-->
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="row pt-5">
       <div class="col-md-6 offset-md-3">
@@ -578,7 +635,7 @@
   		<div class="col-md-6 offset-md-3">
   			<div class="logo">
 	<style type="text/css">
-	  .glitch-img {
+	  .glitch-img-logo {
 	    background:url('/uploads/logo-placeholder.jpg') no-repeat center center scroll;
 	    -webkit-background-size:cover;
 	    -moz-background-size:cover;
@@ -589,11 +646,11 @@
 	
 	<!--<a href="/">-->
 		<div class="profile-picture glitch">
-		  <div class="glitch-img"></div>
-		  <div class="glitch-img"></div>
-		  <div class="glitch-img"></div>
-		  <div class="glitch-img"></div>
-		  <div class="glitch-img"></div>
+		  <div class="glitch-img glitch-img-logo bg-image-load"></div>
+		  <div class="glitch-img glitch-img-logo bg-image-load"></div>
+		  <div class="glitch-img glitch-img-logo bg-image-load"></div>
+		  <div class="glitch-img glitch-img-logo bg-image-load"></div>
+		  <div class="glitch-img glitch-img-logo bg-image-load"></div>
 		</div>
 	<!--</a>-->
 </div>
@@ -647,8 +704,8 @@
 <script type="text/javascript" src="/assets/js/custom/videomodal.js"></script>
 
 <!--Imagesloaded | imagesloaded.desandro.com-->
-<!--<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>-->
-<script src="/assets/js/custom/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<!--<script src="/assets/js/custom/imagesloaded.pkgd.min.js"></script>-->
 
 <!--Image Glitch Javascript-->
 <script type="text/javascript" src="/assets/js/custom/image_glitch.js"></script>

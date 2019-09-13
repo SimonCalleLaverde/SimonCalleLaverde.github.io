@@ -30,7 +30,7 @@ $(function() {
 
     if (scrollBottom >= 50) {//scroll
       body.removeClass("white").addClass("black");
-    } else {
+    } else if (scrollBottom <= 50) {
       body.removeClass("black").addClass("white");
     }
   });
