@@ -623,7 +623,7 @@ span.fa-stack {
 .text-line-through {
   position:relative;
 }
-.text-line-through::after {
+.text-line-through:after {
   content:"";
   position:absolute;
   width:100%;

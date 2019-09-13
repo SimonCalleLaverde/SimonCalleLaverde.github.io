@@ -11602,7 +11602,7 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
 .text-line-through {
   position: relative; }
 
-.text-line-through::after {
+.text-line-through:after {
   content: "";
   position: absolute;
   width: 100%;
