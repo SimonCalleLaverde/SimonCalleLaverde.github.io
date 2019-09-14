@@ -368,13 +368,9 @@ article {
   min-height:300px;
 }
 article.project-article {
-
-
-  overflow:hidden;//
-
-
   .project-thumbnail {
     position:relative;
+    height:330px;
     time.project-year {
       position:absolute;
       top:15%;//80%
@@ -389,13 +385,11 @@ article.project-article {
       .project-name, .project-roles {
         background-color:rgba(255,255,255,0.9)!important;
 
-
         //white-space:normal;//nowrap
 
         // transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
         // transform-style: preserve-3d;
         // opacity: 1;
-
 
       }
     }
@@ -637,24 +631,12 @@ span.fa-stack {
   //animation-iteration-count:1;
   //animation-fill-mode:forwards;
   @include animation(textLineThroughAnim 7s ease-in-out infinite);
+  &:hover {
+    @include animation(none);//
+  }
 }
 @keyframes textLineThroughAnim {
-  0% {
-    width:0;
-  }
-  10% {
-    width:0;
-  }
-  20% {
-    width:0;
-  }
-  30% {
-    width:0;
-  }
-  40% {
-    width:0;
-  }
-  50% {
+  0%, 50% {
     width:0;
   }
   60% {
@@ -667,16 +649,37 @@ span.fa-stack {
     right:0;
     left:100%;
   }
-  80% {
-    width:0;
-  }
-  90% {
-    width:0;
-  }
-  100% {
+  80%, 100% {
     width:0;
   }
 }//keyframes
+
+// Copyright
+.copyright {
+  position:fixed;
+  bottom:50px;
+  left:35px;
+  font-size:15px;
+  z-index:10000;
+  mix-blend-mode:difference;
+}
+
+// Mobile Dev Notice
+.mobile-dev-notice {
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:300000;
+  .profile-picture {
+    display:inline-block;
+    width:150px;
+    height:145px;
+    @include border-radius(50%);
+    @include filter(grayscale(100%));
+  }
+}
 
 //----------------------------------Section Styles----------------------------------//
 
@@ -703,8 +706,8 @@ section.feedback-page {
 header.home-one-section {
   padding-top:30px 20px;//To revise mobile
   .home-image-appear {
-    height:400px;
-    .bogota-picture, img.image-bogota {
+    height:300px;
+    .bogota-picture {//, img.image-bogota
       position:absolute;
       width:110%;
       top:-170px;
@@ -721,7 +724,7 @@ header.home-one-section {
       > span {
         //@include animation(linkPulse 0.5s infinite alternate);
         &:hover {
-          ~ .bogota-picture, ~ img.image-bogota {
+          ~ .bogota-picture {//, ~ img.image-bogota
             @include filter(opacity(1));
             @include transform(translateY(0) rotate(2deg));
           }
@@ -772,15 +775,19 @@ section.work-section {
 footer {
   font-size:16px;
   @include transition(all ease-out 0.3s);
-  .logo {
+  .footer-profile-picture {
     text-align:center;
     .profile-picture {
       //position:absolute;
       display:inline-block;
+      width:250px;//var(--glitch-width)
+      height:240px;//var(--glitch-height)
+      //--glitch-width:250px;//100px
+      //--glitch-height:240px;//95px
       //top:40px;
       //left:40px;
       //z-index:10000;
-      cursor:pointer;
+      //cursor:pointer;
       @include border-radius(50%);
       @include filter(grayscale(100%));
       @include transition(all ease-out 0.3s);
@@ -828,11 +835,6 @@ body.theme-colour.white {
       }
     }
   }
-  // img, .glitch-img, .parallax-image, .project-thumbnail {
-  //   &:hover {
-  //     cursor:default;
-  //   }
-  // }
   .cursor {
     //display:none;//Script adds display
     background-color:transparent;
@@ -841,7 +843,7 @@ body.theme-colour.white {
       display:none;
     }
   }
-  .logo {
+  .footer-profile-picture {
     .profile-picture {
       @include filter(grayscale(0));
     }
@@ -908,11 +910,6 @@ a {
     }
   }
 }
-// img, .glitch-img, .parallax-image, .project-thumbnail {
-//   &:hover {
-//     cursor:none;
-//   }
-// }
 .cursor {
   display:none;
   position:fixed;//absolute
@@ -1041,15 +1038,11 @@ a {
 // Glitch
 .glitch {
   position:relative;
-  width:var(--glitch-width);
-  height:var(--glitch-height);
   overflow:hidden;
-  --glitch-width:250px;//100px
-  --glitch-height:240px;//95px
   --gap-horizontal:10px;
   --gap-vertical:5px;
   --time-anim:5s;
-  --delay-anim:1s;
+  --delay-anim:0;//1s
   --blend-mode-1:none;
   --blend-mode-2:none;
   --blend-mode-3:none;

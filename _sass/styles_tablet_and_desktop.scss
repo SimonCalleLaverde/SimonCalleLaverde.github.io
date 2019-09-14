@@ -114,7 +114,7 @@
 		    			content:'';
 		    			position:absolute;
 		    			right:calc(50% - 3.5px);
-		    			bottom:-7px;
+		    			bottom:-10px;//-7px
 		    			width:7px;
 		    			height:7px;
 		    			border:1.5px solid theme-color('magenta');//grey-light
@@ -174,30 +174,30 @@
 
 	// Home One Section
 	header.home-one-section {
-		padding:80px 0 30px;
+		padding:80px 0 20px;
 	}
 
 	// Home Two Section
 	section.home-two-section {
-		//min-height:80vh;
-		padding:30px 0;
+		//min-height:70vh;
+		padding:20px 0;
 	}
 
 	// Home Three Section
 	section.home-three-section {
-		min-height:80vh;
+		min-height:70vh;
 		padding:30px 0;
 	}
 
 	// Home Four Section
 	section.home-four-section {
-		min-height:80vh;
+		min-height:70vh;
 		padding:30px 0;
 	}
 
 	// Home Five Section
 	section.home-five-section {
-		min-height:80vh;//100vh
+		min-height:70vh;//100vh
 		padding:30px 0 0;
 	}
 
@@ -241,12 +241,6 @@
 //------------------Other Media Queries------------------//
 
 @include media-breakpoint-up(xl) {
-	
-	// main#middle {
-	// 	.container {
-	//     max-width:1010px;
-	//   }
-	// }
 
 	.container {
 		max-width:1055px;//Was 1140px
