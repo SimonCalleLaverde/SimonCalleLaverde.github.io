@@ -1,3 +1,10 @@
+// Mobile Dev Notice
+@include media-breakpoint-down(lg) {
+  body {
+    height:100vh;
+  }
+}
+
 //----------------------------------General Styles----------------------------------//
 
 // Fonts
