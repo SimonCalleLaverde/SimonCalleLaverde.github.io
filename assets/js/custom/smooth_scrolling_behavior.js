@@ -220,7 +220,7 @@
 	preloadImages().then(() => {
 		// Remove the loader
 		document.body.classList.remove('loading');
-		document.body.classList.add('imgloaded');//#Added For Image Glitch
+		document.body.classList.add('imagesloaded');//#Added For Image Glitch
 		// Get the scroll position
 		getPageYScroll();
 		// Initialize the Smooth Scrolling

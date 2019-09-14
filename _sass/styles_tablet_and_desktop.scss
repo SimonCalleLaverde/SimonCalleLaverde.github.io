@@ -94,6 +94,10 @@
 	    		color:#FFF;
 	    		white-space:nowrap;
 	    		//@include text-shadow(0 0 10px #FFF);
+	    		&:after {
+	    			//@include transform(scale(0.1));
+	    			@include animation(scaleDotAnim 0.5s ease-in);
+	    		}
 	    		&:hover {//, &:active, &:focus
 	    			color:theme-color('grey-light');//#FFF
 	    			//@include text-shadow(0 0 10px theme-color('grey-light'), 0 0 20px rgba(0,0,0,1));
@@ -120,6 +124,7 @@
 		    			border:1.5px solid theme-color('magenta');//grey-light
 		    			pointer-events:none;
 		    			@include border-radius(50%);
+		    			//@include transform(scale(1));
 		    			@include transition(all 0.3s ease-out);//(none)
 		    		}
 		    		&.not-active {
