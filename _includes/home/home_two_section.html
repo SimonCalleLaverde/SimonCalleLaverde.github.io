@@ -60,7 +60,7 @@
           {% if posts_count == 1 %}
           <div class="row">
           {% endif %}
-            <div class="col-md-6 mt-md-1 mb-md-1"  data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
+            <div class="col-md-6 mt-md-1 mb-md-1" data-aos="{% cycle 'fade-right', 'fade-left' %}" data-aos-duration="700" data-aos-easing="ease-in-sine">
               {% include home/home_project_article.html %}
             </div>
           {% if posts_count == 2 or forloop.last %}

@@ -11907,11 +11907,11 @@ section.calendar-page {
 section.feedback-page {
   padding: 30px 20px; }
 
-header.home-one-section {
+header.home-hello-section {
   padding-top: 30px 20px; }
-  header.home-one-section .home-image-appear {
+  header.home-hello-section .home-image-appear {
     height: 300px; }
-    header.home-one-section .home-image-appear .bogota-picture {
+    header.home-hello-section .home-image-appear .bogota-picture {
       position: absolute;
       width: 110%;
       top: -170px;
@@ -11932,9 +11932,9 @@ header.home-one-section {
       -ms-transition: transform ease-out 0.3s;
       -o-transition: transform ease-out 0.3s;
       transition: transform ease-out 0.3s; }
-    header.home-one-section .home-image-appear .bogota-picture {
+    header.home-hello-section .home-image-appear .bogota-picture {
       height: 400px; }
-    header.home-one-section .home-image-appear h1 > span:hover ~ .bogota-picture, header.home-one-section .home-image-appear h2 > span:hover ~ .bogota-picture, header.home-one-section .home-image-appear h3 > span:hover ~ .bogota-picture, header.home-one-section .home-image-appear h4 > span:hover ~ .bogota-picture, header.home-one-section .home-image-appear h5 > span:hover ~ .bogota-picture, header.home-one-section .home-image-appear h6 > span:hover ~ .bogota-picture {
+    header.home-hello-section .home-image-appear h1 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h2 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h3 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h4 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h5 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h6 > span:hover ~ .bogota-picture {
       -webkit-filter: opacity(1);
       -moz-filter: opacity(1);
       -ms-filter: opacity(1);
@@ -12301,11 +12301,29 @@ body.loading:after {
       color: #FFF;
       white-space: nowrap; }
       nav.navbar ul.navbar-nav li.nav-item a.nav-link:after {
-        -webkit-animation: scaleDotAnim 0.5s ease-in;
-        -moz-animation: scaleDotAnim 0.5s ease-in;
-        -ms-animation: scaleDotAnim 0.5s ease-in;
-        -o-animation: scaleDotAnim 0.5s ease-in;
-        animation: scaleDotAnim 0.5s ease-in; }
+        content: '';
+        position: absolute;
+        right: calc(50% - 3.5px);
+        bottom: 3px;
+        width: 7px;
+        height: 7px;
+        border: 1.5px solid #EB0082;
+        pointer-events: none;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: all 0.7s ease-out;
+        -moz-transition: all 0.7s ease-out;
+        -ms-transition: all 0.7s ease-out;
+        -o-transition: all 0.7s ease-out;
+        transition: all 0.7s ease-out; }
       nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
         color: #B5B5B5; }
         nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover.active:after {
@@ -12317,24 +12335,12 @@ body.loading:after {
         -o-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out; }
         nav.navbar ul.navbar-nav li.nav-item a.nav-link.active:after {
-          content: '';
-          position: absolute;
-          right: calc(50% - 3.5px);
           bottom: -10px;
-          width: 7px;
-          height: 7px;
-          border: 1.5px solid #EB0082;
-          pointer-events: none;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -o-border-radius: 50%;
-          border-radius: 50%;
-          -webkit-transition: all 0.3s ease-out;
-          -moz-transition: all 0.3s ease-out;
-          -ms-transition: all 0.3s ease-out;
-          -o-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out; }
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+          transform: scale(1); }
         nav.navbar ul.navbar-nav li.nav-item a.nav-link.active.not-active {
           color: #FFF;
           -webkit-text-shadow: none;
@@ -12366,7 +12372,7 @@ body.loading:after {
   section.calendar-page {
     padding: 50px 0 25px; }
 
-  header.home-one-section {
+  header.home-hello-section {
     padding: 80px 0 20px; }
 
   section.home-two-section {
@@ -12384,31 +12390,21 @@ body.loading:after {
     min-height: 70vh;
     padding: 30px 0 0; }
 
+  footer .footer-copyright {
+    text-align: left; }
+  footer .footer-built {
+    text-align: right; }
+
   body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link {
     color: #222222; }
     body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link:hover {
-      color: #000;
-      -webkit-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
-      -moz-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
-      -ms-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
-      -o-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
-      text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5); }
+      color: #000; }
     body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link.active {
-      color: #EB0082;
-      -webkit-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
-      -moz-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
-      -ms-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
-      -o-text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5);
-      text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(235, 0, 130, 0.5); }
+      color: #EB0082; }
       body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link.active:after {
         border: 1.5px solid #EB0082; }
       body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link.active.not-active {
-        color: #222222;
-        -webkit-text-shadow: none;
-        -moz-text-shadow: none;
-        -ms-text-shadow: none;
-        -o-text-shadow: none;
-        text-shadow: none; } }
+        color: #222222; } }
 @media (min-width: 1200px) {
   .container {
     max-width: 1055px; } }
