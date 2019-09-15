@@ -183,14 +183,14 @@
 		padding:80px 0 20px;
 	}
 
-	// Home Two Section
-	section.home-two-section {
+	// Home Portfolio Section
+	section.home-portfolio-section {
 		//min-height:70vh;
 		padding:20px 0;
 	}
 
-	// Home Three Section
-	section.home-three-section {
+	// Home Skills Section
+	section.home-skills-section {
 		min-height:70vh;
 		padding:30px 0;
 	}
@@ -209,16 +209,22 @@
 
 	// Work Section
 	section.work-section {
+		padding:0;
+	}
+
+	// Plans Section
+	section.plans-section {
+	  padding:60px 0 30px;
 	}
 
 	// Footer
 	footer {
-		.footer-copyright {
-			text-align:left;
-		}
-		.footer-built {
-			text-align:right;
-		}
+		// .footer-copyright {
+		// 	text-align:left;
+		// }
+		// .footer-built {
+		// 	text-align:right;
+		// }
 	}
 
 	//------------------Page Styles------------------//

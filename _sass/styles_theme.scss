@@ -719,13 +719,13 @@ header.home-hello-section {
 //   }
 // }//@keyframes
 
-// Home Two Section
-section.home-two-section {
+// Home Portfolio Section
+section.home-portfolio-section {
   padding:30px 20px;//To revise mobile
 }
 
-// Home Three Section
-section.home-three-section {
+// Home Skills Section
+section.home-skills-section {
   padding:30px 20px;//To revise mobile
 }
 
@@ -746,6 +746,12 @@ section.home-five-section {
 
 // Work Section
 section.work-section {
+  padding:0 20px;
+}
+
+// Plans Section
+section.plans-section {
+  padding:30px 20px 0;
 }
 
 // Footer

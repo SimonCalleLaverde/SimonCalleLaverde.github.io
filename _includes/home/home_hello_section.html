@@ -6,8 +6,8 @@
     <div class="row mt-4">
       <div class="col-md-4 offset-md-2">
         <div class="text-grey-light">
-          <h1 class="text-white" style="font-size:6rem;">Hello!</h1>
-          <h1 class="headline" style="position:absolute; top:0; font-size:6rem; z-index:5001;">Hello!</h1>
+          <h1 class="text-white" style="font-size:6rem;">{{ page.headline | default:page.title }}</h1>
+          <h1 class="headline" style="position:absolute; top:0; font-size:6rem; z-index:5001;">{{ page.headline | default:page.title }}</h1>
         </div>
       </div>
     </div>

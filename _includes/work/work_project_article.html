@@ -10,8 +10,8 @@
 		  }
 		</style>
 		<figure>
-			<div class="project-thumbnail scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-{{ project.slug }}" title="{{ project.name }} Website Project" style="height:330px;" aria-hidden="true"><!--scale-element--><!--object type="image"-->
-				<figcaption class="project-caption d-flex flex-column" loading="lazy">
+			<div class="project-thumbnail scale-element bg-image-load d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-{{ project.slug }}" title="{{ project.name }} Website Project" loading="lazy" aria-hidden="true"><!--object type="image"-->
+				<figcaption class="project-caption d-flex flex-column" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine"><!--{% cycle 'fade-up-right', 'fade-up-left' %}-->
 					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
 						<h3 class="text-grey-dark text-uppercase m-0">{{ project.name_for_thumbnail }}</h3>
 					</div>
@@ -30,3 +30,29 @@
 		</figure>
 	</a>
 </article>
+
+{% comment %}
+<article class="parallax-image item-article {% cycle 'left', 'right' %}">
+	<a href="#" data-toggle="modal" data-target="#projectModal_{{ project.slug }}">
+	  <div class="item-img-wrap">
+		  <style type="text/css">
+		    #thumbnail-{{ project.slug }} {
+		      background:url('{{ project.thumbnail_image | relative_url }}') no-repeat 50% 0% scroll;
+		      -webkit-background-size:cover;
+			    -moz-background-size:cover;
+			    -o-background-size:cover;
+			    background-size:cover;
+		    }
+		  </style>
+	    <figure class="item-img bg-image-load {% cycle 'item-img-t1', 'item-img-t2', 'item-img-t3' %}" id="thumbnail-{{ project.slug }}">
+	    </figure>
+	  </div>
+	  <!--{% comment %}
+	  <div class="item__caption">
+	    <h2 class="item__caption-title">Central view</h2>
+	    <p class="item__caption-copy">Great turbulent clouds emerged into consciousness citizens.</p>
+	  </div>
+	  {% endcomment %}-->
+	</a>
+</article>
+{% endcomment %}

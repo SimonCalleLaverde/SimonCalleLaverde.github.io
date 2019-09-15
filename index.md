@@ -4,7 +4,7 @@ title: Fine Web Design
 permalink: /
 slug: home
 type_slug: basic
-headline: Biography
+headline: Hello!
 header_image: ""
 background_image: ""
 thumbnail_image: ""

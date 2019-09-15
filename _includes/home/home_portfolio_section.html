@@ -1,6 +1,6 @@
 <!--IN DEVELOPMENT-->
 
-<section class="home-two-section d-flex flex-column align-items-center bg-black clearfix" id="section_2">
+<section class="home-portfolio-section d-flex flex-column align-items-center bg-black clearfix" id="section_2">
   <!--{% comment %}
   {% assign posts_count = 0 %}
   {% assign sorted_projects = site.projects | sort:"order" | reverse %}
@@ -61,7 +61,7 @@
           <div class="row">
           {% endif %}
             <div class="col-md-6 mt-md-1 mb-md-1" data-aos="{% cycle 'fade-right', 'fade-left' %}" data-aos-duration="700" data-aos-easing="ease-in-sine">
-              {% include home/home_project_article.html %}
+              {% include work/work_project_article.html %}<!--home/home_project_article.html-->
             </div>
           {% if posts_count == 2 or forloop.last %}
           </div>

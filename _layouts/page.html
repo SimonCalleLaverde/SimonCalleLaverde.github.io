@@ -2,9 +2,13 @@
 layout: "main"
 ---
 
-{% if page.slug == "work" %}
+{% if page.slug == "work" or page.slug contains "work" %}
 	{% include content_centered.html %}
 	{% include work/work_section.html %}
+
+{% elsif page.slug == "plans" or page.slug contains "plans" %}
+	{% include content_centered.html %}
+	{% include plans/plans_section.html %}
 
 {% else %}
 
