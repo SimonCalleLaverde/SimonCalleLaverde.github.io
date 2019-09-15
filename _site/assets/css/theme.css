@@ -11949,10 +11949,10 @@ header.home-hello-section {
 section.home-portfolio-section {
   padding: 30px 20px; }
 
-section.home-three-section {
+section.home-skills-section {
   padding: 30px 20px; }
 
-section.home-four-section {
+section.home-education-section {
   padding: 30px 20px; }
 
 section.home-five-section {
@@ -12384,11 +12384,11 @@ body.loading:after {
   section.home-portfolio-section {
     padding: 20px 0; }
 
-  section.home-three-section {
+  section.home-skills-section {
     min-height: 70vh;
     padding: 30px 0; }
 
-  section.home-four-section {
+  section.home-education-section {
     min-height: 70vh;
     padding: 30px 0; }
 
