@@ -3,6 +3,7 @@
 
 // Brand Colours
 $theme-color-grey-dark:#1A1A1A;
+$theme-color-grey-mid:darken(#CCC,5);
 $theme-color-grey-light:#FEFEFE;
 $theme-color-magenta:#EB0082;//rgba(235,0,130,1)//Magenta//Other Option #F83470
 //$theme-color-blue-light:darken(rgba(158,232,248,1),10);//Blue Light
@@ -37,6 +38,7 @@ $theme-colors: (
 	"white":#FFFFFF,
 
 	"grey-dark":$theme-color-grey-dark,
+	"grey-mid":$theme-color-grey-mid,
 	"grey-light":$theme-color-grey-light,
 	"magenta":$theme-color-magenta,
 	"blue-light":$theme-color-blue-light,

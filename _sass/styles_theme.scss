@@ -268,9 +268,14 @@ a {
       color:lighten(theme-color("grey-dark"),15)!important;
     }
   }
+  &.text-grey-mid {
+    &:hover, &:active, &:focus {
+      color:lighten(theme-color("grey-mid"),15)!important;
+    }
+  }
   &.text-grey-light {
     &:hover, &:active, &:focus {
-      color:lighten(theme-color("grey-light"),15)!important;
+      color:darken(theme-color("grey-light"),15)!important;
     }
   }
 }
@@ -629,7 +634,7 @@ span.fa-stack {
 // Copyright
 .copyright {
   position:fixed;
-  bottom:50px;
+  bottom:30px;
   left:35px;
   font-size:15px;
   z-index:10000;
@@ -662,6 +667,21 @@ span.fa-stack {
 }
 .text-stroke-magenta {
   -webkit-text-stroke:2px theme-color('magenta');
+}
+
+// Change Lang
+.change-lang {
+  position:absolute;
+  top:30px;
+  right:3.5%;
+  font-size:15px;
+  z-index:10001;
+  span, i {
+    cursor:not-allowed;//no-drop
+  }
+  i {
+    font-size:14px;
+  }
 }
 
 //----------------------------------Section Styles----------------------------------//
@@ -787,6 +807,11 @@ footer {
       }
     }
   }
+
+  .see-letter-button {
+    cursor:alias;
+  }
+
 }
 
 //----------------------------------Page Styles----------------------------------//
@@ -910,8 +935,9 @@ a {
   border:1px solid #FFF;
   z-index:11000;
   pointer-events:none;
+  will-change:transform, filter, opacity, background-color, color;//transform, opacity
   @include border-radius(50%);
-  @include transition(background-color, color, transform, ease-out 0.2s);//ease-out 100ms
+  @include transition(transform, filter, opacity, background-color, color, ease-out 0.2s);//ease-out 100ms
   //@include animation(cursorAnim1 0.5s infinite alternate);
   // &.cursor-on-click {
   //   background-color:transparent;
@@ -925,7 +951,9 @@ a {
     height:50px;
     top:-1px;
     left:-1px;
+    will-change:filter, opacity, background-color, color;
     @include border-radius(50%);
+    @include transition(background-color ease-out 0.2s);
   }
   &.hoveredLink {
     width:110px;

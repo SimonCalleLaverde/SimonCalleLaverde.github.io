@@ -54,6 +54,8 @@
 
     <div class="row pt-4">
       <div class="col-md-12">
+        {% comment %}
+
         {% assign posts_count = 0 %}
         {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
@@ -70,6 +72,27 @@
           {% assign posts_count = 0 %}
           {% endif %}
         {% endfor %}
+
+        {% endcomment %}
+
+
+
+        <div class="slick-carousel" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
+          {% assign posts_count = 0 %}
+          {% assign sorted_projects = site.projects | sort:"order" | reverse %}
+
+          {% for project in sorted_projects %}<!--| limit:6-->
+            {% assign posts_count = posts_count | plus:1 %}
+
+            <div class="mt-md-1 mb-md-1">
+              {% include home/home_project_article.html %}
+            </div>
+          {% endfor %}
+        </div>
+
+
+
+
       </div>
     </div>
 
