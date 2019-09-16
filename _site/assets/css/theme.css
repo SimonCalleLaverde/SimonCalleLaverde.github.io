@@ -11407,7 +11407,17 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
-    border-radius: 0.5rem; }
+    border-radius: 0.5rem;
+    -webkit-filter: opacity(1);
+    -moz-filter: opacity(1);
+    -ms-filter: opacity(1);
+    -o-filter: opacity(1);
+    filter: opacity(1);
+    -webkit-transition: filter ease-out 1s;
+    -moz-transition: filter ease-out 1s;
+    -ms-transition: filter ease-out 1s;
+    -o-transition: filter ease-out 1s;
+    transition: filter ease-out 1s; }
     .change-lang .show-message.hide-it {
       -webkit-filter: opacity(0);
       -moz-filter: opacity(0);
@@ -11588,17 +11598,17 @@ a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h
   border: 1px solid #FFF;
   z-index: 11000;
   pointer-events: none;
-  will-change: transform, filter, opacity, background-color, color;
+  will-change: transform, filter, background-color;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  -webkit-transition: transform, filter, opacity, background-color, color, ease-out 0.2s;
-  -moz-transition: transform, filter, opacity, background-color, color, ease-out 0.2s;
-  -ms-transition: transform, filter, opacity, background-color, color, ease-out 0.2s;
-  -o-transition: transform, filter, opacity, background-color, color, ease-out 0.2s;
-  transition: transform, filter, opacity, background-color, color, ease-out 0.2s; }
+  -webkit-transition: transform, filter, background-color, ease-out 0.2s;
+  -moz-transition: transform, filter, background-color, ease-out 0.2s;
+  -ms-transition: transform, filter, background-color, ease-out 0.2s;
+  -o-transition: transform, filter, background-color, ease-out 0.2s;
+  transition: transform, filter, background-color, ease-out 0.2s; }
   .cursor:after {
     content: "";
     position: absolute;
@@ -11606,7 +11616,7 @@ a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h
     height: 50px;
     top: -1px;
     left: -1px;
-    will-change: filter, opacity, background-color, color;
+    will-change: filter, background-color, color;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
