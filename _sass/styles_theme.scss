@@ -725,12 +725,12 @@ header.home-hello-section {
     height:300px;
     .bogota-picture {//, img.image-bogota
       position:absolute;
-      width:110%;
-      top:-170px;
-      left:165px;
+      width:120%;
+      top:-180px;
+      left:-60px;
       z-index:4500;
       pointer-events:none;
-      @include border-radius(1rem);
+      @include border-radius(0.5rem);
       @include filter(opacity(0));
       @include transform(translateY(-40px) rotate(0));
       @include transition(transform ease-out 0.3s);
