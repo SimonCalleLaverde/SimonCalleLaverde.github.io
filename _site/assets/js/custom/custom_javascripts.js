@@ -79,3 +79,23 @@ $(document).ready(function(){
     ]
   });
 });
+
+// Show Message Missing Features
+$(function() {
+  // $('.show-message-button').on('click', function(e) {
+  //   $('.show-message').removeClass("hide-it");
+
+  //   setTimeout(function () {
+  //     $('.show-message').addClass('hide-it');//classList.add
+  //   }, 3000);
+    
+  //   e.preventDefault();
+  // });
+
+  $('.show-message-button').on('click',function(){
+    var $this = $('.show-message').removeClass('hide-it');
+    window.setTimeout(function(){
+      $this.addClass('hide-it');
+    }, 3000);
+  });
+});

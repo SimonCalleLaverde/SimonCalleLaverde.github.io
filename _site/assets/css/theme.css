@@ -11397,6 +11397,23 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     cursor: not-allowed; }
   .change-lang i {
     font-size: 14px; }
+  .change-lang .show-message {
+    position: absolute;
+    top: -5px;
+    left: -230px;
+    background-color: rgba(255, 255, 255, 0.8);
+    white-space: nowrap;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border-radius: 0.5rem; }
+    .change-lang .show-message.hide-it {
+      -webkit-filter: opacity(0);
+      -moz-filter: opacity(0);
+      -ms-filter: opacity(0);
+      -o-filter: opacity(0);
+      filter: opacity(0); }
 
 section.blog-page {
   padding: 30px 20px; }
