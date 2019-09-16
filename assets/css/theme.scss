@@ -2,9 +2,8 @@
 ---
 
 // Brand Colours
-$theme-color-grey-dark:#222222;
-$theme-color-grey-mid:lighten(#000,60);
-$theme-color-grey-light:#B5B5B5;
+$theme-color-grey-dark:#1A1A1A;
+$theme-color-grey-light:#FEFEFE;
 $theme-color-magenta:#EB0082;//rgba(235,0,130,1)//Magenta//Other Option #F83470
 //$theme-color-blue-light:darken(rgba(158,232,248,1),10);//Blue Light
 
@@ -23,13 +22,8 @@ $theme-colors: (
 	"google-plus":#DD4B39,//Google Plus Official
 	"instagram":#E1306C,//Instagram Official
 	"paypal":#003087,//PayPal Official
-	"forestry-darken":darken(#20C997,20),//Forestry Darken
 	"forestry":#20C997,//Forestry
-	"forestry-lighten":lighten(#20C997,20),//Forestry Lighten
-	"jekyll-darken":darken(#FFCC00,20),//Jekyll Darken
 	"jekyll":#FFCC00,//Jekyll
-	"jekyll-lighten":lighten(#FFCC00,20),//Jekyll Lighten
-	"bootstrap-darken":darken(#563D7C,20),//Bootstrap Darken
 	"bootstrap":#563D7C,//Bootstrap
 	"bootstrap-lighten":lighten(#563D7C,20),//Bootstrap Lighten
 
@@ -43,7 +37,6 @@ $theme-colors: (
 	"white":#FFFFFF,
 
 	"grey-dark":$theme-color-grey-dark,
-	"grey-mid":$theme-color-grey-mid,
 	"grey-light":$theme-color-grey-light,
 	"magenta":$theme-color-magenta,
 	"blue-light":$theme-color-blue-light,

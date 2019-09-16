@@ -1,6 +1,6 @@
 <!--IN DEVELOPMENT-->
 
-<section class="home-portfolio-section d-flex flex-column align-items-center bg-black clearfix" id="section_2">
+<section class="home-my-work-section d-flex flex-column align-items-center clearfix" id="section_2">
   <!--{% comment %}
   {% assign posts_count = 0 %}
   {% assign sorted_projects = site.projects | sort:"order" | reverse %}
@@ -20,10 +20,12 @@
 
 	<div class="container">
 
-		<div class="row">
-      <div class="col-md-6 offset-md-2">
+		<div class="row" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
+      <div class="col-md-10 offset-md-2">
+        <p class="font-headline text-white text-uppercase mb-0">My Work</p>
+
         <!--Desktop-->
-        <h3 class="text-white text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem;" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">{{ page.portfolio_section.headline }}</h3><!--fade-zoom-in-->
+        <h3 class="text-white text-uppercase text-stroke-white mb-4 pb-3 d-none d-md-block" style="font-size:4rem; line-height:1.1;">{{ page.portfolio_section.headline }}</h3><!--fade-zoom-in-->
         <!--Mobile-->
         <h4 class="text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">{{ page.portfolio_section.headline }}</h4><!--fade-zoom-in-->
       </div>
@@ -55,12 +57,12 @@
         {% assign posts_count = 0 %}
         {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
-        {% for project in sorted_projects | limit:6 %}
+        {% for project in sorted_projects %}<!--| limit:6-->
           {% assign posts_count = posts_count | plus:1 %}
           {% if posts_count == 1 %}
           <div class="row">
           {% endif %}
-            <div class="col-md-6 mt-md-1 mb-md-1" data-aos="{% cycle 'fade-right', 'fade-left' %}" data-aos-duration="700" data-aos-easing="ease-in-sine">
+            <div class="col-md-6 mt-md-1 mb-md-1">
               {% include work/work_project_article.html %}<!--home/home_project_article.html-->
             </div>
           {% if posts_count == 2 or forloop.last %}
@@ -76,12 +78,12 @@
         <div class="text-center mt-4 mx-md-3 px-md-4">
           <!--Desktop-->
           <a class="nav-link mb-4more d-none d-md-inline-block" href="/work">
-            <h5 class="headline text-uppercase" style="font-size:6rem;">All Work</h5>
+            <h5 class="headline text-uppercase" style="font-size:6rem;">All Projects</h5>
           </a>
 
           <!--Mobile-->
           <a class="nav-link mb-3 d-inline-block d-md-none" href="/work">
-            <h5 class="headline text-uppercase d-block d-md-none" aria-hidden="true">All Work</h5>
+            <h5 class="headline text-uppercase d-block d-md-none" aria-hidden="true">All Projects</h5>
           </a>
         </div>
       </div>

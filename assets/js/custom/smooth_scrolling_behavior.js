@@ -212,7 +212,7 @@
 	// Preload images
 	const preloadImages = () => {
 		return new Promise((resolve, reject) => {
-			imagesLoaded(document.querySelectorAll('img, .bg-image-load'), {background: true}, resolve);
+			imagesLoaded(document.querySelectorAll('img, .bg-image'), {background: true}, resolve);
 		});
 	};
 	

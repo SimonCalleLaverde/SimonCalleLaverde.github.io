@@ -155,7 +155,7 @@ body {
   font-weight:300;
   font-style:normal;
   font-size:17px;
-  background-color:#000;//$theme-color-grey-dark
+  background-color:theme-color('grey-dark');
   z-index:1;
   @include transition(all ease-out 0.3s);
   &.loading {
@@ -266,11 +266,6 @@ a {
   &.text-grey-dark {
     &:hover, &:active, &:focus {
       color:lighten(theme-color("grey-dark"),15)!important;
-    }
-  }
-  &.text-grey-mid {
-    &:hover, &:active, &:focus {
-      color:lighten(theme-color("grey-mid"),15)!important;
     }
   }
   &.text-grey-light {
@@ -386,7 +381,7 @@ article.project-article {
     }
     figcaption.project-caption {
       .project-name, .project-roles {
-        background-color:rgba(255,255,255,0.9)!important;
+        background-color:rgba(255,255,255,0.95)!important;
 
         //white-space:normal;//nowrap
 
@@ -435,7 +430,7 @@ article.project-article {
   }
 }
 
-// Modals
+// Modal
 .modal {
   .modal-content {
     @include border-radius(0);
@@ -658,6 +653,17 @@ span.fa-stack {
   }
 }
 
+// Text Stroke
+.text-transparent {
+  color:transparent!important;
+}
+.text-stroke-white {
+  -webkit-text-stroke:2px #FFF;
+}
+.text-stroke-magenta {
+  -webkit-text-stroke:2px theme-color('magenta');
+}
+
 //----------------------------------Section Styles----------------------------------//
 
 // // Middle
@@ -688,8 +694,10 @@ header.home-hello-section {
       position:absolute;
       width:110%;
       top:-170px;
-      left:180px;
+      left:165px;
       z-index:4500;
+      pointer-events:none;
+      @include border-radius(1rem);
       @include filter(opacity(0));
       @include transform(translateY(-40px) rotate(0));
       @include transition(transform ease-out 0.3s);
@@ -703,7 +711,7 @@ header.home-hello-section {
         &:hover {
           ~ .bogota-picture {//, ~ img.image-bogota
             @include filter(opacity(1));
-            @include transform(translateY(0) rotate(2deg));
+            @include transform(translateY(0) rotate(-2deg));
           }
         }
       }
@@ -719,8 +727,8 @@ header.home-hello-section {
 //   }
 // }//@keyframes
 
-// Home Portfolio Section
-section.home-portfolio-section {
+// Home My Work Section
+section.home-my-work-section {
   padding:30px 20px;//To revise mobile
 }
 
@@ -801,15 +809,15 @@ body.page-type-basic.work {
 
 // Theme Colour White
 body.theme-colour.white {
-  background-color:#FFF;
-  header, section, footer {//main
-    background-color:#FFF!important;
-  }
+  background-color:theme-color('grey-light');
   .text-white {
     color:theme-color('black')!important;
   }
   .text-grey-light {
     color:theme-color('grey-dark')!important;
+  }
+  .copyright {
+    color:theme-color('grey-light')!important;
   }
   a {
     > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
@@ -963,6 +971,9 @@ a {
       @include animation(fa-spin 5s linear infinite);
     }
   }
+  &.hoveredModal {
+    border-color:#000;
+  }
   // &:after {
   //   display:none;
   //   content:"";
@@ -1066,7 +1077,7 @@ body.loading {
     height:100%;
     top:0;
     left:0;
-    background-color:#000;
+    background-color:theme-color('grey-dark');
     z-index:100000;
   }
   &:after {

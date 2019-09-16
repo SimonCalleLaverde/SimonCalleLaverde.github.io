@@ -24,10 +24,12 @@ $(document).mousemove(function(e) {
   const isLink = target.is('a > span > i, a > span, a > i, a > u, a > p, a > h1, a > h2, a > h3, a > h4, a > h5, a > h6');//a::after, a::before//.nav-social-media//a
   const isImg = target.is('img, .glitch-img, .parallax-image');
   const isProject = target.is('.project-thumbnail');//figure
+  const isModal = target.is('.modal, .modal div, .modal p, .modal h1, .modal h2, .modal h3, .modal h4, .modal h5, .modal h6, .modal img, .modal a, .modal button, .modal span');
 
   const isLinkHovered = cursor.hasClass('hoveredLink');
   const isImgHovered = cursor.hasClass('hoveredImg');
   const isProjectHovered = cursor.hasClass('hoveredProject');
+  const isModalHovered = cursor.hasClass('hoveredModal');
   
   // toggle the cursor class if necessary 
   if(isLink && !isLinkHovered) {
@@ -46,6 +48,12 @@ $(document).mousemove(function(e) {
     cursor.addClass('hoveredProject');
   } else if(!isProject && isProjectHovered) {
     cursor.removeClass('hoveredProject');
+  }
+
+  if(isModal && !isModalHovered) {
+    cursor.addClass('hoveredModal');
+  } else if(!isModal && isModalHovered) {
+    cursor.removeClass('hoveredModal');
   }
 });
 

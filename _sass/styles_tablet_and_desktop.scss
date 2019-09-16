@@ -180,13 +180,13 @@
 
 	// Home Hello Section
 	header.home-hello-section {
-		padding:80px 0 20px;
+		padding:80px 0 30px;
 	}
 
-	// Home Portfolio Section
-	section.home-portfolio-section {
+	// Home My Work Section
+	section.home-my-work-section {
 		//min-height:70vh;
-		padding:20px 0;
+		padding:30px 0;
 	}
 
 	// Home Skills Section
@@ -219,12 +219,7 @@
 
 	// Footer
 	footer {
-		// .footer-copyright {
-		// 	text-align:left;
-		// }
-		// .footer-built {
-		// 	text-align:right;
-		// }
+		min-height:100vh;
 	}
 
 	//------------------Page Styles------------------//
