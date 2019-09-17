@@ -36,20 +36,20 @@ $(function() {
   });
 });
 
-// Change Some Class After Scrolling Some Element | As Per, But Modified Now (https://stackoverflow.com/questions/29717119/how-to-change-class-after-scroll-somewhere/29717259)
-$(function() {
-  var changeFeaturesDiv = $(".change-features");
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    var objectSelect = $("#section_2");
-    var objectPosition = objectSelect.offset().top;
-    if (scroll > objectPosition) {
-      changeFeaturesDiv.removeClass("show-it").addClass("hide-it");//$("body").addClass("change");
-    } else if (scroll < objectPosition) {
-      changeFeaturesDiv.removeClass("hide-it").addClass("show-it");//$("body").removeClass("change");
-    }
-  });
-});
+// // Change Some Class After Scrolling Some Element | As Per, But Modified Now (https://stackoverflow.com/questions/29717119/how-to-change-class-after-scroll-somewhere/29717259)
+// $(function() {
+//   var changeFeaturesDiv = $(".change-features");
+//   $(window).scroll(function() {
+//     var scroll = $(window).scrollTop();
+//     var objectSelect = $("#section_2");
+//     var objectPosition = objectSelect.offset().top;
+//     if (scroll > objectPosition) {
+//       changeFeaturesDiv.removeClass("show-it").addClass("hide-it");//$("body").addClass("change");
+//     } else if (scroll < objectPosition) {
+//       changeFeaturesDiv.removeClass("hide-it").addClass("show-it");//$("body").removeClass("change");
+//     }
+//   });
+// });
 
 // Initialize Slick Carousel
 $(document).ready(function(){
@@ -64,11 +64,9 @@ $(document).ready(function(){
 $(function() {
   $('.show-message-button').on('click', function() {//(e)
     var $this = $('.show-message').removeClass('hide-it');//$('.show-message').removeClass('hide-it');
-
     window.setTimeout(function() {//setTimeout(function() {
       $this.addClass('hide-it');//$('.show-message').addClass('hide-it');
     }, 3000);
-
     //e.preventDefault();
   });
 });
