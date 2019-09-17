@@ -10951,6 +10951,7 @@ html {
 
 body {
   position: relative;
+  height: 100vh;
   font-family: "BG light", "Avenir Next Pro", Sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -11387,17 +11388,17 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
 .text-stroke-magenta {
   -webkit-text-stroke: 2px #EB0082; }
 
-.change-lang {
-  position: absolute;
+.change-features {
+  position: fixed;
   top: 30px;
   right: 3.5%;
   font-size: 15px;
   z-index: 10001; }
-  .change-lang span, .change-lang i {
+  .change-features span, .change-features i {
     cursor: not-allowed; }
-  .change-lang i {
+  .change-features i {
     font-size: 14px; }
-  .change-lang .show-message {
+  .change-features .show-message {
     position: absolute;
     top: -5px;
     left: -230px;
@@ -11412,18 +11413,28 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     -moz-filter: opacity(1);
     -ms-filter: opacity(1);
     -o-filter: opacity(1);
-    filter: opacity(1);
-    -webkit-transition: filter ease-out 1s;
-    -moz-transition: filter ease-out 1s;
-    -ms-transition: filter ease-out 1s;
-    -o-transition: filter ease-out 1s;
-    transition: filter ease-out 1s; }
-    .change-lang .show-message.hide-it {
-      -webkit-filter: opacity(0);
-      -moz-filter: opacity(0);
-      -ms-filter: opacity(0);
-      -o-filter: opacity(0);
-      filter: opacity(0); }
+    filter: opacity(1); }
+
+.show-it, .hide-it {
+  -webkit-transition: filter ease-out 1s;
+  -moz-transition: filter ease-out 1s;
+  -ms-transition: filter ease-out 1s;
+  -o-transition: filter ease-out 1s;
+  transition: filter ease-out 1s; }
+
+.show-it {
+  -webkit-filter: opacity(1) !important;
+  -moz-filter: opacity(1) !important;
+  -ms-filter: opacity(1) !important;
+  -o-filter: opacity(1) !important;
+  filter: opacity(1) !important; }
+
+.hide-it {
+  -webkit-filter: opacity(0) !important;
+  -moz-filter: opacity(0) !important;
+  -ms-filter: opacity(0) !important;
+  -o-filter: opacity(0) !important;
+  filter: opacity(0) !important; }
 
 section.blog-page {
   padding: 30px 20px; }

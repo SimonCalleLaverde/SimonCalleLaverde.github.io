@@ -1,24 +1,7 @@
 <!--IN DEVELOPMENT-->
 
 <section class="home-my-work-section d-flex flex-column align-items-center clearfix" id="section_2">
-  <!--{% comment %}
-  {% assign posts_count = 0 %}
-  {% assign sorted_projects = site.projects | sort:"order" | reverse %}
-
-  {% for project in sorted_projects %}
-    {% assign project_tags_list = "#" %}
-    {% for tag in project.tags %}
-      {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
-    {% endfor %}
-
-    {% if project_tags_list contains "featured" %}
-      {% assign posts_count = posts_count | plus:1 %}
-      {% include home/home_project_article.html %}
-    {% endif %}
-  {% endfor %}
-  {% endcomment %}-->
-
-	<div class="container">
+  <div class="container">
 
 		<div class="row" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
       <div class="col-md-10 offset-md-2">
@@ -52,47 +35,26 @@
     </div>
     {% endcomment %}
 
-    <div class="row pt-4">
+    <div class="row pt-4" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
       <div class="col-md-12">
-        {% comment %}
-
-        {% assign posts_count = 0 %}
-        {% assign sorted_projects = site.projects | sort:"order" | reverse %}
-
-        {% for project in sorted_projects %}<!--| limit:6-->
-          {% assign posts_count = posts_count | plus:1 %}
-          {% if posts_count == 1 %}
-          <div class="row">
-          {% endif %}
-            <div class="col-md-6 mt-md-1 mb-md-1">
-              {% include work/work_project_article.html %}<!--home/home_project_article.html-->
-            </div>
-          {% if posts_count == 2 or forloop.last %}
-          </div>
-          {% assign posts_count = 0 %}
-          {% endif %}
-        {% endfor %}
-
-        {% endcomment %}
-
-
-
-        <div class="slick-carousel" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
+        <div class="slick-carousel">
           {% assign posts_count = 0 %}
           {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
           {% for project in sorted_projects %}<!--| limit:6-->
-            {% assign posts_count = posts_count | plus:1 %}
+            {% assign project_tags_list = "#" %}
+            {% for tag in project.tags %}
+              {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
+            {% endfor %}
 
-            <div class="mt-md-1 mb-md-1">
-              {% include home/home_project_article.html %}
-            </div>
+            {% if project_tags_list contains "featured" %}
+              {% assign posts_count = posts_count | plus:1 %}
+              <div class="mt-md-1 mb-md-1">
+                {% include home/home_project_article.html %}
+              </div>
+            {% endif %}
           {% endfor %}
         </div>
-
-
-
-
       </div>
     </div>
 

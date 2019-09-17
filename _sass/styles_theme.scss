@@ -151,6 +151,7 @@ html {
 }
 body {
   position:relative;//For Scroll Spy
+  height:100vh;
   font-family:$font-paragraph;
   font-weight:300;
   font-style:normal;
@@ -669,9 +670,9 @@ span.fa-stack {
   -webkit-text-stroke:2px theme-color('magenta');
 }
 
-// Change Lang
-.change-lang {
-  position:absolute;
+// Change Features
+.change-features {
+  position:fixed;
   top:30px;
   right:3.5%;
   font-size:15px;
@@ -690,11 +691,18 @@ span.fa-stack {
     white-space:nowrap;
     @include border-radius(0.5rem);
     @include filter(opacity(1));
-    @include transition(filter ease-out 1s);
-    &.hide-it {
-      @include filter(opacity(0));
-    }
   }
+}
+
+// Show It & Hide It
+.show-it, .hide-it {
+  @include transition(filter ease-out 1s);
+}
+.show-it {
+  @include filter(opacity(1)!important);
+}
+.hide-it {
+  @include filter(opacity(0)!important);
 }
 
 //----------------------------------Section Styles----------------------------------//

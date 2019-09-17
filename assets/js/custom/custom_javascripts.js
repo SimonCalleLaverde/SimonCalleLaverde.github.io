@@ -20,7 +20,7 @@ $(function() {
   });
 });
 
-// Change Class After Scrolling Some Distance | As Per (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
+// Change Some Class After Scrolling Some Distance | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
 $(function() {
   //caches a jQuery object containing the body element
   var body = $("body");
@@ -36,66 +36,39 @@ $(function() {
   });
 });
 
-// // Change Class After Scrolling Some Element | As Per (https://stackoverflow.com/questions/29717119/how-to-change-class-after-scroll-somewhere/29717259)
-// $(function() {
-//   var body = $("body");
-//   $(window).scroll(function() {
-//     var scroll = $(window).scrollTop();
-//     var objectSelect = $("#section_2");
-//     var objectPosition = objectSelect.offset().top;
-//     if (scroll > objectPosition) {
-//       body.removeClass("black").addClass("white");//$("body").addClass("change");
-//     } else {
-//       body.removeClass("white").addClass("black");//$("body").removeClass("change");
-//     }
-//   });
-// });
+// Change Some Class After Scrolling Some Element | As Per, But Modified Now (https://stackoverflow.com/questions/29717119/how-to-change-class-after-scroll-somewhere/29717259)
+$(function() {
+  var changeFeaturesDiv = $(".change-features");
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $("#section_2");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+      changeFeaturesDiv.removeClass("show-it").addClass("hide-it");//$("body").addClass("change");
+    } else if (scroll < objectPosition) {
+      changeFeaturesDiv.removeClass("hide-it").addClass("show-it");//$("body").removeClass("change");
+    }
+  });
+});
 
 // Initialize Slick Carousel
 $(document).ready(function(){
   $('.slick-carousel').slick({
-    centerMode: true,
-    centerPadding: '80px',//60px
-    slidesToShow: 1,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '60px',//40px
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
+    infinite: false,//true
+    slidesToShow: 2,
+    slidesToScroll: 2
   });
 });
 
 // Show Message Missing Features
 $(function() {
-  // $('.show-message-button').on('click', function(e) {
-  //   $('.show-message').removeClass("hide-it");
+  $('.show-message-button').on('click', function() {//(e)
+    var $this = $('.show-message').removeClass('hide-it');//$('.show-message').removeClass('hide-it');
 
-  //   setTimeout(function () {
-  //     $('.show-message').addClass('hide-it');//classList.add
-  //   }, 3000);
-    
-  //   e.preventDefault();
-  // });
-
-  $('.show-message-button').on('click',function(){
-    var $this = $('.show-message').removeClass('hide-it');
-    window.setTimeout(function(){
-      $this.addClass('hide-it');
+    window.setTimeout(function() {//setTimeout(function() {
+      $this.addClass('hide-it');//$('.show-message').addClass('hide-it');
     }, 3000);
+
+    //e.preventDefault();
   });
 });
