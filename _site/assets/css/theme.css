@@ -11382,10 +11382,10 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
   color: transparent !important; }
 
 .text-stroke-white {
-  -webkit-text-stroke: 2px #FFF; }
+  -webkit-text-stroke: 2px #FFF !important; }
 
 .text-stroke-magenta {
-  -webkit-text-stroke: 2px #EB0082; }
+  -webkit-text-stroke: 2px #EB0082 !important; }
 
 .change-features {
   position: fixed;
@@ -11436,6 +11436,9 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
   -o-filter: opacity(0) !important;
   filter: opacity(0) !important; }
 
+.slick-slide {
+  outline: none; }
+
 section.blog-page {
   padding: 30px 20px; }
 
@@ -11451,44 +11454,51 @@ header.home-hello-section {
     height: 300px; }
     header.home-hello-section .home-image-appear .bogota-picture {
       position: absolute;
-      width: 120%;
-      top: -175px;
-      left: -80px;
+      width: 100vw;
+      top: -90px;
+      left: -303px;
       z-index: 4500;
       pointer-events: none;
-      -webkit-border-radius: 0.5rem;
-      -moz-border-radius: 0.5rem;
-      -ms-border-radius: 0.5rem;
-      -o-border-radius: 0.5rem;
-      border-radius: 0.5rem;
+      -webkit-border-radius: 0.3rem;
+      -moz-border-radius: 0.3rem;
+      -ms-border-radius: 0.3rem;
+      -o-border-radius: 0.3rem;
+      border-radius: 0.3rem;
       -webkit-filter: opacity(0);
       -moz-filter: opacity(0);
       -ms-filter: opacity(0);
       -o-filter: opacity(0);
       filter: opacity(0);
-      -webkit-transform: translateY(-40px) rotate(0);
-      -moz-transform: translateY(-40px) rotate(0);
-      -ms-transform: translateY(-40px) rotate(0);
-      -o-transform: translateY(-40px) rotate(0);
-      transform: translateY(-40px) rotate(0);
-      -webkit-transition: transform ease-out 0.3s;
-      -moz-transition: transform ease-out 0.3s;
-      -ms-transition: transform ease-out 0.3s;
-      -o-transition: transform ease-out 0.3s;
-      transition: transform ease-out 0.3s; }
+      -webkit-transform: scale(0.2);
+      -moz-transform: scale(0.2);
+      -ms-transform: scale(0.2);
+      -o-transform: scale(0.2);
+      transform: scale(0.2);
+      -webkit-transition: transform ease-out 0.5s;
+      -moz-transition: transform ease-out 0.5s;
+      -ms-transition: transform ease-out 0.5s;
+      -o-transition: transform ease-out 0.5s;
+      transition: transform ease-out 0.5s; }
     header.home-hello-section .home-image-appear .bogota-picture {
-      height: 450px; }
+      height: 320px; }
     header.home-hello-section .home-image-appear h1 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h2 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h3 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h4 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h5 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h6 > span:hover ~ .bogota-picture {
-      -webkit-filter: opacity(1);
-      -moz-filter: opacity(1);
-      -ms-filter: opacity(1);
-      -o-filter: opacity(1);
-      filter: opacity(1);
-      -webkit-transform: translateY(0) rotate(-2deg);
-      -moz-transform: translateY(0) rotate(-2deg);
-      -ms-transform: translateY(0) rotate(-2deg);
-      -o-transform: translateY(0) rotate(-2deg);
-      transform: translateY(0) rotate(-2deg); }
+      -webkit-filter: opacity(0.8);
+      -moz-filter: opacity(0.8);
+      -ms-filter: opacity(0.8);
+      -o-filter: opacity(0.8);
+      filter: opacity(0.8);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1); }
+  header.home-hello-section .bogota-picture-cover {
+    position: absolute !important;
+    width: 40vw;
+    height: 75vh;
+    top: 12.5vh;
+    right: 0;
+    z-index: 4000; }
 
 section.home-my-work-section {
   padding: 30px 20px; }
@@ -11555,17 +11565,30 @@ body.theme-colour.white {
   background-color: #FEFEFE; }
   body.theme-colour.white .text-white {
     color: #000000 !important; }
+  body.theme-colour.white .text-stroke-white {
+    -webkit-text-stroke-color: #1A1A1A !important; }
   body.theme-colour.white .text-grey-light {
     color: #1A1A1A !important; }
   body.theme-colour.white .copyright {
     color: #FEFEFE !important; }
-  body.theme-colour.white a > span > i:hover, body.theme-colour.white a > span:hover, body.theme-colour.white a > i:hover, body.theme-colour.white a > u:hover, body.theme-colour.white a > p:hover, body.theme-colour.white a > h1:hover, body.theme-colour.white a > h2:hover, body.theme-colour.white a > h3:hover, body.theme-colour.white a > h4:hover, body.theme-colour.white a > h5:hover, body.theme-colour.white a > h6:hover {
-    cursor: pointer; }
   body.theme-colour.white .cursor {
     background-color: transparent;
-    border-color: transparent; }
+    border-color: #EB0082; }
     body.theme-colour.white .cursor:after {
       display: none; }
+    body.theme-colour.white .cursor.hoveredLink {
+      background-color: #EB0082;
+      border-color: transparent;
+      -webkit-filter: opacity(0.2);
+      -moz-filter: opacity(0.2);
+      -ms-filter: opacity(0.2);
+      -o-filter: opacity(0.2);
+      filter: opacity(0.2);
+      -webkit-transition: transform ease-out 0.2s, background-color ease-out 0.2s;
+      -moz-transition: transform ease-out 0.2s, background-color ease-out 0.2s;
+      -ms-transition: transform ease-out 0.2s, background-color ease-out 0.2s;
+      -o-transition: transform ease-out 0.2s, background-color ease-out 0.2s;
+      transition: transform ease-out 0.2s, background-color ease-out 0.2s; }
   body.theme-colour.white .footer-profile-picture .profile-picture {
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
@@ -11596,6 +11619,9 @@ body.theme-colour.white {
     -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;
     -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; }
+
+a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover {
+  cursor: none; }
 
 .cursor {
   display: none;
@@ -11929,10 +11955,12 @@ body.loading:after {
     padding: 50px 0 25px; }
 
   header.home-hello-section {
-    padding: 80px 0 60px; }
+    min-height: 100vh;
+    padding: 60px 0 60px; }
 
   section.home-my-work-section {
-    padding: 80px 0 60px; }
+    min-height: 100vh;
+    padding: 100px 0 60px; }
 
   section.home-skills-section {
     min-height: 70vh;
@@ -11950,7 +11978,7 @@ body.loading:after {
     padding: 0; }
 
   section.plans-section {
-    padding: 60px 0 30px; }
+    padding: 100px 0 60px; }
 
   footer {
     min-height: 100vh; }

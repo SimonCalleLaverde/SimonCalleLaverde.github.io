@@ -52,7 +52,12 @@ thumbnail_image: ""
 <a href="https://www.wokine.com/">Wokine</a>
 <a href="https://art4globalgoals.com/en">Art 4 Global Goals</a>
 <a href="https://www.rezo-zero.com/">Rezo Zero</a>
+<a href="http://jiaszeto.com/">Jiaszeto</a>
+<a href="http://ss.art4web.co/">Art 4 Web</a>
+<a href="http://markovskaia.ru/">Markovskaia</a>
 <!--
+<a href="..."></a>
+<a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
@@ -64,3 +69,6 @@ thumbnail_image: ""
 <h1>Bootstrap 4</h1>
 <a href="https://mdbootstrap.com/education/bootstrap/">Bootstrap</a>
 <a href="https://mdbootstrap.com/education/javascript/chapter-1-lesson-1/">Introduction To JavaScript</a>
+
+<h1>Videos To Watch | For A Video 'Cool' Sources Blog</h1>
+<a href="youtube.com/watch?v=dv2TvTXQ4FQ">SVG Can Do that?</a>

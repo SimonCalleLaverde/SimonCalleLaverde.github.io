@@ -6,7 +6,7 @@
 }
 
 /* Icons */
-@font-face
+/*@font-face
 {
     font-family: 'slick';
     font-weight: normal;
@@ -14,7 +14,7 @@
 
     src: url('/uploads/fonts/slick.eot');
     src: url('/uploads/fonts/slick.eot?#iefix') format('embedded-opentype'), url('/uploads/fonts/slick.woff') format('woff'), url('/uploads/fonts/slick.ttf') format('truetype'), url('/uploads/fonts/slick.svg#slick') format('svg');
-}
+}*/
 /* Arrows */
 .slick-prev,
 .slick-next

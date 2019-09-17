@@ -3,14 +3,14 @@
 <section class="home-my-work-section d-flex flex-column align-items-center clearfix" id="section_2">
   <div class="container">
 
-		<div class="row" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
-      <div class="col-md-10 offset-md-2">
-        <p class="font-headline text-white text-uppercase mb-0">My Work</p>
+		<div class="row text-right" data-aos="fade-in" data-aos-duration="700" data-aos-easing="ease-in-sine">
+      <div class="col-md-9 offset-md-2">
+        <p class="font-headline text-white text-uppercase mb-0">Work</p>
 
         <!--Desktop-->
-        <h3 class="text-white text-uppercase text-stroke-white mb-4 pb-3 d-none d-md-block" style="font-size:4rem; line-height:1.1;">{{ page.portfolio_section.headline }}</h3><!--fade-zoom-in-->
+        <h3 class="text-white text-uppercase text-stroke-white mb-4 pb-3 d-none d-md-block" style="font-size:4rem; line-height:1.1;">{{ page.portfolio_section.headline }}</h3>
         <!--Mobile-->
-        <h4 class="text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">{{ page.portfolio_section.headline }}</h4><!--fade-zoom-in-->
+        <h4 class="text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">{{ page.portfolio_section.headline }}</h4>
       </div>
     </div>
 
@@ -35,13 +35,14 @@
     </div>
     {% endcomment %}
 
-    <div class="row pt-5" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine">
+    <div class="row pt-5" data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-sine">
       <div class="col-md-12">
+
+
         <div class="slick-carousel">
-          {% assign posts_count = 0 %}
           {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
-          {% for project in sorted_projects %}<!--| limit:6-->
+          {% for project in sorted_projects %}
             {% assign project_tags_list = "#" %}
             {% for tag in project.tags %}
               {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
@@ -55,12 +56,32 @@
             {% endif %}
           {% endfor %}
         </div>
+
+
+        <div class="slick-as-nav-for">
+          {% for project in sorted_projects %}
+            {% assign project_tags_list = "#" %}
+            {% for tag in project.tags %}
+              {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
+            {% endfor %}
+
+            {% if project_tags_list contains "featured" %}
+              {% assign posts_count = posts_count | plus:1 %}
+              <div class="mt-md-1 mb-md-1">
+                {% include home/home_project_as_nav_for.html %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+
+
       </div>
     </div>
 
-    <div class="row"><!--data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
+    <div class="row pt-5">
       <div class="col-md-12">
-        <div class="text-center mt-4 mx-md-3 px-md-4">
+        <div class="text-center mt-4 mx-md-3 px-md-4"><!--data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
           <!--Desktop-->
           <a class="nav-link mb-4more d-none d-md-inline-block" href="/work">
             <h5 class="headline text-uppercase" style="font-size:6rem;">All Projects</h5>

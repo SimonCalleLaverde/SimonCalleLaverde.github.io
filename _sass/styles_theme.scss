@@ -663,10 +663,10 @@ span.fa-stack {
   color:transparent!important;
 }
 .text-stroke-white {
-  -webkit-text-stroke:2px #FFF;
+  -webkit-text-stroke:2px #FFF!important;
 }
 .text-stroke-magenta {
-  -webkit-text-stroke:2px theme-color('magenta');
+  -webkit-text-stroke:2px theme-color('magenta')!important;
 }
 
 // Change Features
@@ -705,6 +705,11 @@ span.fa-stack {
   @include filter(opacity(0)!important);
 }
 
+// Slick Slide
+.slick-slide {
+  outline:none;
+}
+
 //----------------------------------Section Styles----------------------------------//
 
 // // Middle
@@ -733,40 +738,40 @@ header.home-hello-section {
     height:300px;
     .bogota-picture {//, img.image-bogota
       position:absolute;
-      width:120%;
-      top:-175px;
-      left:-80px;
+      width:100vw;//120%
+      top:-90px;//-175px
+      left:-303px;//-80px
       z-index:4500;
       pointer-events:none;
-      @include border-radius(0.5rem);
+      @include border-radius(0.3rem);
       @include filter(opacity(0));
-      @include transform(translateY(-40px) rotate(0));
-      @include transition(transform ease-out 0.3s);
+      @include transform(scale(0.2));//translateY(-40px) rotate(0)
+      @include transition(transform ease-out 0.5s);
     }
     .bogota-picture {
-      height:450px;
+      height:320px;//450px
     }
     h1, h2, h3, h4, h5, h6 {
       > span {
         //@include animation(linkPulse 0.5s infinite alternate);
         &:hover {
           ~ .bogota-picture {//, ~ img.image-bogota
-            @include filter(opacity(1));
-            @include transform(translateY(0) rotate(-2deg));
+            @include filter(opacity(0.8));
+            @include transform(scale(1));//translateY(0) rotate(-2deg)
           }
         }
       }
     }
   }
+  .bogota-picture-cover {
+    position:absolute!important;
+    width:40vw;
+    height:75vh;
+    top:12.5vh;
+    right:0;
+    z-index:4000;
+  }
 }
-// @keyframes linkPulse {
-//   from {
-//     @include transform(scale(1));
-//   }
-//   to {
-//     @include transform(scale(1.3));
-//   }
-// }//@keyframes
 
 // Home My Work Section
 section.home-my-work-section {
@@ -859,25 +864,38 @@ body.theme-colour.white {
   .text-white {
     color:theme-color('black')!important;
   }
+  .text-stroke-white {
+    -webkit-text-stroke-color:theme-color('grey-dark')!important;
+  }
   .text-grey-light {
     color:theme-color('grey-dark')!important;
   }
   .copyright {
     color:theme-color('grey-light')!important;
   }
-  a {
-    > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
-      &:hover {
-        cursor:pointer;
-      }
-    }
-  }
+  // a {
+  //   > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
+  //     &:hover {
+  //       cursor:pointer;
+  //     }
+  //   }
+  // }
   .cursor {
     //display:none;//Script adds display
     background-color:transparent;
-    border-color:transparent;
+    border-color:theme-color('magenta');//transparent
+    //@include transition(border-color ease-out 0);
     &:after {
       display:none;
+    }
+    &.hoveredLink {
+      // width:110px;
+      // height:110px;
+      background-color:theme-color('magenta');
+      border-color:transparent;
+      //@include transform(scale(1) translateX(-30px) translateY(-30px));
+      @include filter(opacity(0.2));
+      @include transition(transform ease-out 0.2s, background-color ease-out 0.2s);
     }
   }
   .footer-profile-picture {
@@ -943,7 +961,7 @@ body.theme-colour.white {
 a {
   > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
     &:hover {
-      //cursor:none;
+      cursor:none;
     }
   }
 }

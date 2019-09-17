@@ -1,4 +1,4 @@
-<article class="project-article {% if posts_count == 2 %}mt-5 pt-5 {% endif %}px-4 pb-4 pb-md-5">
+<article class="project-article px-4 pb-4 pb-md-5 rellax" data-rellax-speed="{% if posts_count_left == 1 %}0.4{% elsif posts_count_right == 2 %}-0.4{% endif %}" style="margin-bottom:104px; will-change:scroll-position;">
 	<a href="#" data-toggle="modal" data-target="#projectModal_{{ project.slug }}">
 		<style type="text/css">
 		  #thumbnail-{{ project.slug }} {
@@ -10,8 +10,8 @@
 		  }
 		</style>
 		<figure>
-			<div class="project-thumbnail scale-element bg-image d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-{{ project.slug }}" title="{{ project.name }} Website Project" loading="lazy" aria-hidden="true"><!--object type="image"-->
-				<figcaption class="project-caption d-flex flex-column" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine" style="will-change:scroll-position;"><!--{% cycle 'fade-up-right', 'fade-up-left' %}-->
+			<div class="project-thumbnail scale-element bg-image d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-{{ project.slug }}" type="image" title="{{ project.name }} Website Project"><!--loading="lazy"-->
+				<figcaption class="project-caption d-flex flex-column"><!--data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine"--><!--{% cycle 'fade-up-right', 'fade-up-left' %}-->
 					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
 						<h3 class="text-grey-dark text-uppercase m-0">{{ project.name_for_thumbnail }}</h3>
 					</div>

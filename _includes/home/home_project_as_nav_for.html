@@ -1,0 +1,13 @@
+<!--IN DEVELOPMENT | As Nav For-->
+
+<style type="text/css">
+  #as-nav-for-{{ project.slug }} {
+    background:url('{{ project.thumbnail_image | relative_url }}') no-repeat center center scroll;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+  }
+</style>
+<div class="project-as-nav-for bg-image" id="as-nav-for-{{ project.slug }}" type="image" aria-hidden="true" style="height:130px;">
+</div>

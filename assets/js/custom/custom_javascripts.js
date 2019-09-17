@@ -28,9 +28,9 @@ $(function() {
     //var scroll = $(window).scrollTop();
     var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollBottom >= 50) {//scroll
+    if (scrollBottom >= 580) {//scroll//50
       body.removeClass("white").addClass("black");
-    } else if (scrollBottom <= 50) {
+    } else if (scrollBottom <= 580) {//50
       body.removeClass("black").addClass("white");
     }
   });
@@ -54,9 +54,31 @@ $(function() {
 // Initialize Slick Carousel
 $(document).ready(function(){
   $('.slick-carousel').slick({
-    infinite: false,//true
-    slidesToShow: 2,
-    slidesToScroll: 2
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    centerMode: true,
+    variableWidth: false,
+    adaptiveHeight: false,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    //fade: true,
+    //cssEase: 'linear'
+    asNavFor: '.slick-as-nav-for'
+  });
+
+  $('.slick-as-nav-for').slick({
+    dots: false,
+    infinite: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows: false,
+    centerMode: false,
+    focusOnSelect: true,
+    asNavFor: '.slick-carousel'
   });
 });
 
