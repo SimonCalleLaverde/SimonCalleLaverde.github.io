@@ -11441,8 +11441,8 @@ header.home-hello-section {
     header.home-hello-section .home-image-appear .bogota-picture {
       position: absolute;
       width: 120%;
-      top: -180px;
-      left: -60px;
+      top: -175px;
+      left: -80px;
       z-index: 4500;
       pointer-events: none;
       -webkit-border-radius: 0.5rem;
@@ -11466,7 +11466,7 @@ header.home-hello-section {
       -o-transition: transform ease-out 0.3s;
       transition: transform ease-out 0.3s; }
     header.home-hello-section .home-image-appear .bogota-picture {
-      height: 400px; }
+      height: 450px; }
     header.home-hello-section .home-image-appear h1 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h2 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h3 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h4 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h5 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h6 > span:hover ~ .bogota-picture {
       -webkit-filter: opacity(1);
       -moz-filter: opacity(1);
@@ -11586,9 +11586,6 @@ body.theme-colour.white {
     -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; }
 
-a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover {
-  cursor: none; }
-
 .cursor {
   display: none;
   position: fixed;
@@ -11604,11 +11601,11 @@ a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  -webkit-transition: transform, filter, background-color, ease-out 0.2s;
-  -moz-transition: transform, filter, background-color, ease-out 0.2s;
-  -ms-transition: transform, filter, background-color, ease-out 0.2s;
-  -o-transition: transform, filter, background-color, ease-out 0.2s;
-  transition: transform, filter, background-color, ease-out 0.2s; }
+  -webkit-transition: all ease-out 0.2s;
+  -moz-transition: all ease-out 0.2s;
+  -ms-transition: all ease-out 0.2s;
+  -o-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s; }
   .cursor:after {
     content: "";
     position: absolute;
@@ -11616,28 +11613,35 @@ a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h
     height: 50px;
     top: -1px;
     left: -1px;
-    will-change: filter, background-color, color;
+    padding-top: 40px;
+    font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
+    font-weight: 500;
+    font-size: 13.5px;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    text-align: center;
+    will-change: filter, background-color;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    -webkit-transition: background-color ease-out 0.2s;
-    -moz-transition: background-color ease-out 0.2s;
-    -ms-transition: background-color ease-out 0.2s;
-    -o-transition: background-color ease-out 0.2s;
-    transition: background-color ease-out 0.2s; }
+    -webkit-transition: background-color ease-out 0.3s;
+    -moz-transition: background-color ease-out 0.3s;
+    -ms-transition: background-color ease-out 0.3s;
+    -o-transition: background-color ease-out 0.3s;
+    transition: background-color ease-out 0.3s; }
   .cursor.hoveredLink {
-    width: 110px;
-    height: 110px;
     background-color: #FFF;
     border-color: transparent;
     mix-blend-mode: difference;
-    -webkit-transform: translateX(-30px) translateY(-30px);
-    -moz-transform: translateX(-30px) translateY(-30px);
-    -ms-transform: translateX(-30px) translateY(-30px);
-    -o-transform: translateX(-30px) translateY(-30px);
-    transform: translateX(-30px) translateY(-30px);
+    -webkit-transform: scale(2.2);
+    -moz-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -o-transform: scale(2.2);
+    transform: scale(2.2);
     -webkit-transition: all ease-out 0.3s;
     -moz-transition: all ease-out 0.3s;
     -ms-transition: all ease-out 0.3s;
@@ -11647,30 +11651,21 @@ a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h
     width: 100px;
     height: 100px;
     background-color: #EB0082;
-    border: 1px solid #EB0082;
+    border-color: #EB0082;
     -webkit-transform: translateY(-25px) translateX(-25px);
     -moz-transform: translateY(-25px) translateX(-25px);
     -ms-transform: translateY(-25px) translateX(-25px);
     -o-transform: translateY(-25px) translateX(-25px);
     transform: translateY(-25px) translateX(-25px);
-    -webkit-transition: background-color ease-out 0.2s;
-    -moz-transition: background-color ease-out 0.2s;
-    -ms-transition: background-color ease-out 0.2s;
-    -o-transition: background-color ease-out 0.2s;
-    transition: background-color ease-out 0.2s; }
+    -webkit-transition: background-color ease-out 0.3s;
+    -moz-transition: background-color ease-out 0.3s;
+    -ms-transition: background-color ease-out 0.3s;
+    -o-transition: background-color ease-out 0.3s;
+    transition: background-color ease-out 0.3s; }
     .cursor.hoveredProject:after {
       content: "View It";
       width: 100px;
       height: 100px;
-      padding-top: 40px;
-      font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
-      font-weight: 500;
-      font-size: 13.5px;
-      color: #FFF;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      white-space: nowrap;
-      text-align: center;
       -webkit-animation: fa-spin 5s linear infinite;
       -moz-animation: fa-spin 5s linear infinite;
       -ms-animation: fa-spin 5s linear infinite;
@@ -11923,18 +11918,18 @@ body.loading:after {
     padding: 50px 0 25px; }
 
   header.home-hello-section {
-    padding: 80px 0 40px; }
+    padding: 80px 0 60px; }
 
   section.home-my-work-section {
-    padding: 40px 0; }
+    padding: 80px 0 60px; }
 
   section.home-skills-section {
     min-height: 70vh;
-    padding: 40px 0; }
+    padding: 80px 0 60px; }
 
   section.home-education-section {
     min-height: 70vh;
-    padding: 40px 0; }
+    padding: 80px 0 60px; }
 
   section.home-five-section {
     min-height: 70vh;
