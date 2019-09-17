@@ -935,7 +935,7 @@ body.theme-colour.white {
 a {
   > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
     &:hover {
-      //cursor:none;
+      cursor:none;
     }
   }
 }
@@ -973,7 +973,7 @@ a {
     letter-spacing:2px;
     white-space:nowrap;
     text-align:center;
-    will-change:filter, background-color;
+    will-change:background-color;
     @include border-radius(50%);
     @include transition(background-color ease-out 0.3s);
   }
