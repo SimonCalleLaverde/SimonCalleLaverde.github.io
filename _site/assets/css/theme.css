@@ -10951,7 +10951,6 @@ html {
 
 body {
   position: relative;
-  height: 100vh;
   font-family: "BG light", "Avenir Next Pro", Sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -11597,9 +11596,6 @@ body.theme-colour.white {
     -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; }
 
-a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover {
-  cursor: none; }
-
 .cursor {
   display: none;
   position: fixed;
@@ -11636,7 +11632,7 @@ a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h
     letter-spacing: 2px;
     white-space: nowrap;
     text-align: center;
-    will-change: background-color;
+    will-change: filter, background-color;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
