@@ -35,12 +35,12 @@
     </div>
     {% endcomment %}
 
-    <div class="row pt-5" data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-sine">
+    <div class="row pt-5">
       <div class="col-md-12">
 
 
 
-        <div class="slick-carousel">
+        <div class="slick-carousel" data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-sine">
           {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
           {% for project in sorted_projects %}
@@ -57,18 +57,8 @@
             {% endif %}
           {% endfor %}
         </div>
-
-
-
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-8 offset-md-4">
-
-
-
-        <div class="slick-as-nav-for pl-4more">
+        
+        <div class="slick-as-nav-for pl-4more"><!--data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
           {% for project in sorted_projects %}
             {% assign project_tags_list = "#" %}
             {% for tag in project.tags %}
@@ -89,7 +79,7 @@
       </div>
     </div>
 
-    <div class="row pt-5">
+    <div class="row mt-5 pt-5">
       <div class="col-md-12">
         <div class="text-center mt-4 mx-md-3 px-md-4"><!--data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
           <!--Desktop-->

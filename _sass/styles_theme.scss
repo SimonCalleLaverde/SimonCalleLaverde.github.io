@@ -156,6 +156,7 @@ body {
   font-style:normal;
   font-size:17px;
   background-color:theme-color('grey-dark');
+  // overflow:hidden;//For Virtual Scroll
   z-index:1;
   @include transition(all ease-out 0.3s);
   &.loading {
@@ -243,6 +244,10 @@ main, header, section {
   position:relative;
   text-align:center;
   @include transition(all ease-out 0.3s);
+}
+main {
+  // position:absolute;//For Virtual Scroll
+  // width:100vw;//For Virtual Scroll
 }
 
 // Link Overrides
@@ -611,23 +616,23 @@ span.fa-stack {
 // Text Line Through
 .text-line-through {
   position:relative;
-}
-.text-line-through:after {
-  content:"";
-  position:absolute;
-  width:100%;
-  height:3px;
-  top:48%;//50%
-  left:0;
-  background-color:theme-color('magenta');
-  //animation-name:textLineThroughAnim;
-  //animation-duration:4s;
-  //animation-timing-function:linear;
-  //animation-iteration-count:1;
-  //animation-fill-mode:forwards;
-  @include animation(textLineThroughAnim 7s ease-in-out infinite);
-  &:hover {
-    @include animation(none);//
+  &:after {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:3px;
+    top:48%;//50%
+    left:0;
+    background-color:theme-color('magenta');
+    //animation-name:textLineThroughAnim;
+    //animation-duration:4s;
+    //animation-timing-function:linear;
+    //animation-iteration-count:1;
+    //animation-fill-mode:forwards;
+    @include animation(textLineThroughAnim 7s ease-in-out infinite);
+    &:hover {
+      @include animation(none);//
+    }
   }
 }
 
@@ -838,6 +843,27 @@ footer {
     cursor:alias;
   }
 
+  .plans-text {
+    position:relative;
+    &:after {
+      content:"";
+      position:absolute;
+      width:100%;
+      height:0;
+      bottom:12%;
+      left:0;
+      background-color:theme-color('magenta');
+      @include filter(opacity(0.5));
+      @include transition(all ease-out 0.15s);
+    }
+    &:hover {
+      &:after {
+        height:76%;
+        //@include animation(textFillAnim 0.3s ease-in);//infinite
+      }
+    }
+  }
+
 }
 
 //----------------------------------Page Styles----------------------------------//
@@ -873,30 +899,31 @@ body.theme-colour.white {
   .copyright {
     color:theme-color('grey-light')!important;
   }
-  // a {
-  //   > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
-  //     &:hover {
-  //       cursor:pointer;
-  //     }
-  //   }
-  // }
+  a {
+    > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
+      &:hover {
+        cursor:pointer;
+      }
+    }
+  }
   .cursor {
     //display:none;//Script adds display
     background-color:transparent;
-    border-color:theme-color('magenta');//transparent
+    border-color:transparent;//theme-color('magenta')
     //@include transition(border-color ease-out 0);
     &:after {
       display:none;
     }
-    &.hoveredLink {
-      // width:110px;
-      // height:110px;
-      background-color:theme-color('magenta');
-      border-color:transparent;
-      //@include transform(scale(1) translateX(-30px) translateY(-30px));
-      @include filter(opacity(0.2));
-      @include transition(transform ease-out 0.2s, background-color ease-out 0.2s);
-    }
+    // &.hoveredLink {
+    //   //width:110px;
+    //   //height:110px;
+    //   //background-color:theme-color('magenta');
+    //   //border-width:0.5px;
+    //   //border-color:transparent;
+    //   @include transform(scale(1));//translateX(-30px) translateY(-30px)
+    //   @include filter(opacity(0.2));
+    //   @include transition(transform ease-out 0.2s, background-color ease-out 0.2s);
+    // }
   }
   .footer-profile-picture {
     .profile-picture {

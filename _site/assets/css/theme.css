@@ -11327,26 +11327,25 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; } }
 .text-line-through {
   position: relative; }
-
-.text-line-through:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  top: 48%;
-  left: 0;
-  background-color: #EB0082;
-  -webkit-animation: textLineThroughAnim 7s ease-in-out infinite;
-  -moz-animation: textLineThroughAnim 7s ease-in-out infinite;
-  -ms-animation: textLineThroughAnim 7s ease-in-out infinite;
-  -o-animation: textLineThroughAnim 7s ease-in-out infinite;
-  animation: textLineThroughAnim 7s ease-in-out infinite; }
-  .text-line-through:after:hover {
-    -webkit-animation: none;
-    -moz-animation: none;
-    -ms-animation: none;
-    -o-animation: none;
-    animation: none; }
+  .text-line-through:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 48%;
+    left: 0;
+    background-color: #EB0082;
+    -webkit-animation: textLineThroughAnim 7s ease-in-out infinite;
+    -moz-animation: textLineThroughAnim 7s ease-in-out infinite;
+    -ms-animation: textLineThroughAnim 7s ease-in-out infinite;
+    -o-animation: textLineThroughAnim 7s ease-in-out infinite;
+    animation: textLineThroughAnim 7s ease-in-out infinite; }
+    .text-line-through:after:hover {
+      -webkit-animation: none;
+      -moz-animation: none;
+      -ms-animation: none;
+      -o-animation: none;
+      animation: none; }
 
 .copyright {
   position: fixed;
@@ -11560,6 +11559,28 @@ footer {
         filter: grayscale(0); }
   footer .see-letter-button {
     cursor: alias; }
+  footer .plans-text {
+    position: relative; }
+    footer .plans-text:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0;
+      bottom: 12%;
+      left: 0;
+      background-color: #EB0082;
+      -webkit-filter: opacity(0.5);
+      -moz-filter: opacity(0.5);
+      -ms-filter: opacity(0.5);
+      -o-filter: opacity(0.5);
+      filter: opacity(0.5);
+      -webkit-transition: all ease-out 0.15s;
+      -moz-transition: all ease-out 0.15s;
+      -ms-transition: all ease-out 0.15s;
+      -o-transition: all ease-out 0.15s;
+      transition: all ease-out 0.15s; }
+    footer .plans-text:hover:after {
+      height: 76%; }
 
 body.theme-colour.white {
   background-color: #FEFEFE; }
@@ -11571,24 +11592,13 @@ body.theme-colour.white {
     color: #1A1A1A !important; }
   body.theme-colour.white .copyright {
     color: #FEFEFE !important; }
+  body.theme-colour.white a > span > i:hover, body.theme-colour.white a > span:hover, body.theme-colour.white a > i:hover, body.theme-colour.white a > u:hover, body.theme-colour.white a > p:hover, body.theme-colour.white a > h1:hover, body.theme-colour.white a > h2:hover, body.theme-colour.white a > h3:hover, body.theme-colour.white a > h4:hover, body.theme-colour.white a > h5:hover, body.theme-colour.white a > h6:hover {
+    cursor: pointer; }
   body.theme-colour.white .cursor {
     background-color: transparent;
-    border-color: #EB0082; }
+    border-color: transparent; }
     body.theme-colour.white .cursor:after {
       display: none; }
-    body.theme-colour.white .cursor.hoveredLink {
-      background-color: #EB0082;
-      border-color: transparent;
-      -webkit-filter: opacity(0.2);
-      -moz-filter: opacity(0.2);
-      -ms-filter: opacity(0.2);
-      -o-filter: opacity(0.2);
-      filter: opacity(0.2);
-      -webkit-transition: transform ease-out 0.2s, background-color ease-out 0.2s;
-      -moz-transition: transform ease-out 0.2s, background-color ease-out 0.2s;
-      -ms-transition: transform ease-out 0.2s, background-color ease-out 0.2s;
-      -o-transition: transform ease-out 0.2s, background-color ease-out 0.2s;
-      transition: transform ease-out 0.2s, background-color ease-out 0.2s; }
   body.theme-colour.white .footer-profile-picture .profile-picture {
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);

@@ -74,7 +74,6 @@ $(document).ready(function(){
     //cssEase: 'linear'
     asNavFor: '.slick-as-nav-for'
   });
-
   $('.slick-as-nav-for').slick({
     dots: false,
     infinite: false,

@@ -61,6 +61,7 @@ thumbnail_image: ""
 <a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
+<a href="..."></a>
 -->
 
 <h1>Plugins</h1>
@@ -72,3 +73,6 @@ thumbnail_image: ""
 
 <h1>Videos To Watch | For A Video 'Cool' Sources Blog</h1>
 <a href="youtube.com/watch?v=dv2TvTXQ4FQ">SVG Can Do that?</a>
+<a href="http://youtube.com/watch?v=dGcsHMXbSOA">React Tutorial For Beginners</a>
+<a href="https://www.youtube.com/watch?v=LmXVxkWjLT8&list=LL4KC8qzHaqFuW7XvQ0fMB2A&index=2&t=1148s">Practical Tips for Great UI Animation</a>
+<a href="https://www.youtube.com/watch?v=bEg5ySTUGxE">The Faker You Are, the More Successful You Can Be</a>
