@@ -39,6 +39,7 @@
       <div class="col-md-12">
 
 
+
         <div class="slick-carousel">
           {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
@@ -58,7 +59,16 @@
         </div>
 
 
-        <div class="slick-as-nav-for">
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 offset-md-4">
+
+
+
+        <div class="slick-as-nav-for pl-4more">
           {% for project in sorted_projects %}
             {% assign project_tags_list = "#" %}
             {% for tag in project.tags %}

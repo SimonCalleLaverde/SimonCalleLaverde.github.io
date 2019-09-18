@@ -10962,7 +10962,7 @@ body {
   -ms-transition: all ease-out 0.3s;
   -o-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s; }
-  body.imagesloaded main, body.imagesloaded aside.nav-social-media, body.imagesloaded .copyright, body.imagesloaded nav.navbar {
+  body.imagesloaded main, body.imagesloaded aside.nav-social-media, body.imagesloaded .copyright, body.imagesloaded .change-features, body.imagesloaded nav.navbar {
     -webkit-animation: fadeInAnimation 1s ease-in;
     -moz-animation: fadeInAnimation 1s ease-in;
     -ms-animation: fadeInAnimation 1s ease-in;
@@ -11416,11 +11416,11 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     filter: opacity(1); }
 
 .show-it, .hide-it {
-  -webkit-transition: filter ease-out 1s;
-  -moz-transition: filter ease-out 1s;
-  -ms-transition: filter ease-out 1s;
-  -o-transition: filter ease-out 1s;
-  transition: filter ease-out 1s; }
+  -webkit-transition: filter ease-out 0.5s;
+  -moz-transition: filter ease-out 0.5s;
+  -ms-transition: filter ease-out 0.5s;
+  -o-transition: filter ease-out 0.5s;
+  transition: filter ease-out 0.5s; }
 
 .show-it {
   -webkit-filter: opacity(1) !important;
@@ -11811,7 +11811,7 @@ body.loading:after {
   -o-animation: loaderAnim 0.5s linear infinite alternate forwards;
   animation: loaderAnim 0.5s linear infinite alternate forwards; }
 
-[data-scroll] {
+body > main > [data-scroll] {
   will-change: transform; }
 
 @media (min-width: 768px) {

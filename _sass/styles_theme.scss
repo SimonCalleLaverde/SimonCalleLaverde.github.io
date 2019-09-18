@@ -163,7 +163,7 @@ body {
   }
   &.imagesloaded {
     //@include filter(opacity(1));
-    main, aside.nav-social-media, .copyright, nav.navbar {
+    main, aside.nav-social-media, .copyright, .change-features, nav.navbar {
       @include animation(fadeInAnimation 1s ease-in);
     }
   }
@@ -696,7 +696,7 @@ span.fa-stack {
 
 // Show It & Hide It
 .show-it, .hide-it {
-  @include transition(filter ease-out 1s);
+  @include transition(filter ease-out 0.5s);
 }
 .show-it {
   @include filter(opacity(1)!important);
@@ -1167,8 +1167,12 @@ body.loading {
 }
 
 // Data Scroll (Div)
-[data-scroll] {
-  will-change:transform;
+body {
+  > main {
+    > [data-scroll] {
+      will-change:transform;
+    }
+  }
 }
 
 //----------------------------------Parallax Images Styles----------------------------------//

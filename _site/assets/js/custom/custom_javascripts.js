@@ -28,28 +28,28 @@ $(function() {
     //var scroll = $(window).scrollTop();
     var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollBottom >= 580) {//scroll//50
+    if (scrollBottom >= 730) {//scroll//50
       body.removeClass("white").addClass("black");
-    } else if (scrollBottom <= 580) {//50
+    } else if (scrollBottom <= 730) {//50
       body.removeClass("black").addClass("white");
     }
   });
 });
 
-// // Change Some Class After Scrolling Some Element | As Per, But Modified Now (https://stackoverflow.com/questions/29717119/how-to-change-class-after-scroll-somewhere/29717259)
-// $(function() {
-//   var changeFeaturesDiv = $(".change-features");
-//   $(window).scroll(function() {
-//     var scroll = $(window).scrollTop();
-//     var objectSelect = $("#section_2");
-//     var objectPosition = objectSelect.offset().top;
-//     if (scroll > objectPosition) {
-//       changeFeaturesDiv.removeClass("show-it").addClass("hide-it");//$("body").addClass("change");
-//     } else if (scroll < objectPosition) {
-//       changeFeaturesDiv.removeClass("hide-it").addClass("show-it");//$("body").removeClass("change");
-//     }
-//   });
-// });
+// Change Some Class After Scrolling Some Element | As Per, But Modified Now (https://stackoverflow.com/questions/29717119/how-to-change-class-after-scroll-somewhere/29717259)
+$(function() {
+  var changeFeaturesDiv = $(".change-features");
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var objectSelect = $("#section_2, #work_section");
+    var objectPosition = objectSelect.offset().top;
+    if (scroll > objectPosition) {
+      changeFeaturesDiv.removeClass("show-it").addClass("hide-it");//$("body").addClass("change");
+    } else if (scroll < objectPosition) {
+      changeFeaturesDiv.removeClass("hide-it").addClass("show-it");//$("body").removeClass("change");
+    }
+  });
+});
 
 // Initialize Slick Carousel
 $(document).ready(function(){
@@ -58,13 +58,18 @@ $(document).ready(function(){
     infinite: false,
     speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    //slidesToScroll: 1,
+    //draggable: true,//default
+    //swipe: true,//default
+    swipeToSlide: true,
     arrows: true,
     centerMode: true,
     variableWidth: false,
     adaptiveHeight: false,
-    autoplay: false,
-    autoplaySpeed: 3000,
+    //autoplay: true,
+    autoplaySpeed: 10000,
+    pauseOnHover: false,
+    //pauseOnFocus: true,//default
     //fade: true,
     //cssEase: 'linear'
     asNavFor: '.slick-as-nav-for'
@@ -74,7 +79,10 @@ $(document).ready(function(){
     dots: false,
     infinite: false,
     slidesToShow: 6,
-    slidesToScroll: 1,
+    //slidesToScroll: 1,
+    //draggable: true,//default
+    //swipe: true,//default
+    swipeToSlide: true,
     arrows: false,
     centerMode: false,
     focusOnSelect: true,

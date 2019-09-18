@@ -1,7 +1,7 @@
 <section class="work-section clearfix" id="work_section">
-	<div class="container">
+  <div class="container">
 
-		{% comment %}
+    {% comment %}
     <div class="row">
       <div class="col-md-12">
         <!--Desktop-->
@@ -39,19 +39,19 @@
     <!--Desktop-->
     <div class="row pt-3 d-none d-md-block">
       <div class="col-md-12">
-        {% assign posts_count_left = 0 %}
-        {% assign posts_count_right = 0 %}
         <div class="row">
           <div class="col-md-6 mt-md-1 mb-md-1">
             <div class="work-projects-left-column">
+              {% assign posts_count_odd = 0 %}
+              
               {% for project in sorted_projects %}
-                {% assign posts_count_left = posts_count_left | plus:1 %}
-                {% if posts_count_left == 1 %}
+                {% assign posts_count_odd = posts_count_odd | plus:1 %}
+                {% if posts_count_odd == 1 %}
                   {% include work/work_project_article.html %}
                 {% endif %}
 
-                {% if posts_count_left == 2 or forloop.last %}
-                  {% assign posts_count_left = 0 %}
+                {% if posts_count_odd == 2 or forloop.last %}
+                  {% assign posts_count_odd = 0 %}
                 {% endif %}
               {% endfor %}
             </div>
@@ -59,14 +59,16 @@
 
           <div class="col-md-6 mt-md-1 mb-md-1">
             <div class="work-projects-right-column" style="margin-top:96px;">
+              {% assign posts_count_even = 0 %}
+
               {% for project in sorted_projects %}
-                {% assign posts_count_right = posts_count_right | plus:1 %}
-                {% if posts_count_right == 2 %}
+                {% assign posts_count_even = posts_count_even | plus:1 %}
+                {% if posts_count_even == 2 %}
                   {% include work/work_project_article.html %}
                 {% endif %}
 
-                {% if posts_count_right == 2 or forloop.last %}
-                  {% assign posts_count_right = 0 %}
+                {% if posts_count_even == 2 or forloop.last %}
+                  {% assign posts_count_even = 0 %}
                 {% endif %}
               {% endfor %}
             </div>
@@ -97,5 +99,5 @@
       </div>
     </div>
 
-	</div>
+  </div>
 </section>
