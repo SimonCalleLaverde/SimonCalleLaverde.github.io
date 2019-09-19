@@ -10659,7 +10659,8 @@ a.text-purple-dark:hover, a.text-purple-dark:focus {
 @media (max-width: 1199.98px) {
   body {
     width: 100%;
-    height: 100% !important; } }
+    height: 100% !important;
+    overflow: hidden; } }
 @font-face {
   font-family: 'BG light';
   src: url("/uploads/hinted-BrandonGrotesque-Light.eot");
@@ -10951,12 +10952,13 @@ html {
     display: none; }
 
 body {
-  overscroll-behavior-y: none;
+  position: relative;
   font-family: "BG light", "Avenir Next Pro", Sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 17px;
   background-color: #1A1A1A;
+  overscroll-behavior-y: none;
   z-index: 1;
   -webkit-transition: all ease-out 0.3s;
   -moz-transition: all ease-out 0.3s;
@@ -11043,11 +11045,11 @@ figure {
 main, header, section {
   position: relative;
   text-align: center;
-  -webkit-transition: all ease-out 0.3s;
-  -moz-transition: all ease-out 0.3s;
-  -ms-transition: all ease-out 0.3s;
-  -o-transition: all ease-out 0.3s;
-  transition: all ease-out 0.3s; }
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s; }
 
 a {
   color: #EB0082;
@@ -11102,6 +11104,12 @@ a {
   .btn.btn-100 {
     width: 100%;
     text-align: center; }
+
+.position-relative {
+  position: relative; }
+
+.position-absolute {
+  position: absolute; }
 
 .text-bold {
   font-weight: bold !important; }

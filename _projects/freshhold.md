@@ -14,7 +14,7 @@ web:
   url: ""
 category: Tryitdigital Domain
 tags: featured
-order: 28
+order: 1
 ---
 
 This was a very small concept site full of lorem ipsum and placeholder content, created fully by me in almost one afternoon in 2015 just as a small showcase of some HTML and CSS skills following a small task to enter my old company Freshhold Consulting which later became Code Nation.

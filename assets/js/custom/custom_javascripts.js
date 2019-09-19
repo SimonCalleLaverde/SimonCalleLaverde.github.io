@@ -20,36 +20,50 @@ $(function() {
   });
 });
 
-// Change Some Class After Scrolling Some Distance | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
+// Change Some Class After Scrolling Some Distance From Top | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
+$(function() {
+  //caches a jQuery object containing the body element
+  var changeFeaturesDiv = $(".change-features");
+  $(window).scroll(function() {
+    var scrollFromTop = $(window).scrollTop();
+
+    if (scrollFromTop >= 700) {
+      changeFeaturesDiv.removeClass("show-it").addClass("hide-it");
+    } else if (scrollFromTop <= 700) {
+      changeFeaturesDiv.removeClass("hide-it").addClass("show-it");
+    }
+  });
+});
+
+// Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
 $(function() {
   //caches a jQuery object containing the body element
   var body = $("body");
   $(window).scroll(function() {
-    //var scroll = $(window).scrollTop();
-    var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+    var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollBottom >= 400) {//scroll//50
+    if (scrollFromBottom >= 400) {//scroll//50
       body.removeClass("white").addClass("black");
-    } else if (scrollBottom <= 400) {//50
+    } else if (scrollFromBottom <= 400) {//50
       body.removeClass("black").addClass("white");
     }
   });
 });
 
-// Change Some Class After Scrolling Some Element | As Per, But Modified Now (https://stackoverflow.com/questions/29717119/how-to-change-class-after-scroll-somewhere/29717259)
-$(function() {
-  var changeFeaturesDiv = $(".change-features");
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    var objectSelect = $("#section_2, #work_section");
-    var objectPosition = objectSelect.offset().top;
-    if (scroll > objectPosition) {
-      changeFeaturesDiv.removeClass("show-it").addClass("hide-it");//$("body").addClass("change");
-    } else if (scroll < objectPosition) {
-      changeFeaturesDiv.removeClass("hide-it").addClass("show-it");//$("body").removeClass("change");
-    }
-  });
-});
+// // Change Some Class After Scrolling Some Element | As Per, But Modified Now (https://stackoverflow.com/questions/29717119/how-to-change-class-after-scroll-somewhere/29717259)
+// $(function() {
+//   var changeFeaturesDiv = $(".change-features");
+//   $(window).scroll(function() {
+//     var scroll = $(window).scrollTop();
+//     var objectSelect = $("#section_2, #work_section");
+//     var objectPosition = objectSelect.offset().top;
+//     if (scroll > objectPosition) {
+//       changeFeaturesDiv.removeClass("show-it").addClass("hide-it");//$("body").addClass("change");
+//     } else if (scroll < objectPosition) {
+//       changeFeaturesDiv.removeClass("hide-it").addClass("show-it");//$("body").removeClass("change");
+//     }
+//   });
+// });
 
 // Initialize Slick Carousel
 $(document).ready(function(){

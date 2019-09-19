@@ -12,7 +12,7 @@ web:
   url: https://www.iwsnvic.org.au/
 category: Code Nation
 tags: [featured, other]
-order: 26
+order: 27
 ---
 
 Designed by Viviana Bernal at Code Nation this was for sure one of my favourite sites to develop in the 4 years in the company and was a very recent launch. The client is still working on content and the site might still get some revisions after I left it. The design is so awesome and minimalistic, also working with the latest Bootstrap 4 templates and 4 years with NationBuilder let me polish the site more than some others and finish it with small touches like small fade-in animations and a very responsive layout for mobile devices.

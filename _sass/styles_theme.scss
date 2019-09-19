@@ -3,7 +3,7 @@
   body {
     width:100%;
     height:100%!important;//100vh
-    //overflow:hidden;
+    overflow:hidden;
   }
 }//@media
 
@@ -152,24 +152,15 @@ html {
   }
 }
 body {
-
-  overscroll-behavior-y: none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
-
-  // overflow-x: hidden;//For GSAP Smooth Page Scrolling
-  // overflow-y: scroll;//For GSAP Smooth Page Scrolling
-  //position:relative;//For Scroll Spy
-  // position:fixed;//For Smooth Scroll Plugin
-  // width:100%;//For Smooth Scroll Plugin
-  // height:100%;//5000px//For Smooth Scroll Plugin
-  // top:0;//For Smooth Scroll Plugin
-  // left:0;//For Smooth Scroll Plugin
+  //overflow-x:hidden;//For GSAP Smooth Page Scrolling
+  //overflow-y:scroll;//For GSAP Smooth Page Scrolling
+  position:relative;//For Scroll Spy
   font-family:$font-paragraph;
   font-weight:300;
   font-style:normal;
   font-size:17px;
   background-color:theme-color('grey-dark');
-  //overflow:auto;//For Smooth Scroll Plugin
-  // overflow:hidden;//For Virtual Scroll
+  overscroll-behavior-y: none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
   z-index:1;
   @include transition(all ease-out 0.3s);
   &.loading {
@@ -256,41 +247,27 @@ figure {
 main, header, section {
   position:relative;
   text-align:center;
-  @include transition(all ease-out 0.3s);
+  @include transition(all ease-in-out 0.3s);
 }
 main {
-  // position:absolute;//For Virtual Scroll
-  // width:100vw;//For Virtual Scroll
-  // position:fixed;//For Smooth Scroll Plugin
-  // width:100%;//For Smooth Scroll Plugin
-  // height:100%;//5000px//For Smooth Scroll Plugin
-
-  // top:0;//For Virtual Scroll
-  // right:0;//For Virtual Scroll
-  // bottom:0;//For Virtual Scroll
-  // left:0;//For Virtual Scroll
-
-  // overflow:auto;//For Smooth Scroll Plugin
   // &.viewport {
-  //   overflow: hidden;//For GSAP Smooth Page Scrolling
-  //   position: fixed;//For GSAP Smooth Page Scrolling
-  //   height: 100%;//For GSAP Smooth Page Scrolling
-  //   width: 100%;//For GSAP Smooth Page Scrolling
-  //   top: 0;//For GSAP Smooth Page Scrolling
-  //   left: 0;//For GSAP Smooth Page Scrolling
-  //   right: 0;//For GSAP Smooth Page Scrolling
-  //   bottom: 0;//For GSAP Smooth Page Scrolling
-
+  //   position:fixed;//For GSAP Smooth Page Scrolling
+  //   width:100%;//For GSAP Smooth Page Scrolling
+  //   height:100%;//For GSAP Smooth Page Scrolling
+  //   top:0;//For GSAP Smooth Page Scrolling
+  //   right:0;//For GSAP Smooth Page Scrolling
+  //   bottom:0;//For GSAP Smooth Page Scrolling
+  //   left:0;//For GSAP Smooth Page Scrolling
+  //   overflow:hidden;//For GSAP Smooth Page Scrolling
   //   .scroll-container {//For GSAP Smooth Page Scrolling
-  //     position: absolute;  
+  //     position:absolute;  
   //     width:100%;//#My Addition | For GSAP Smooth Page Scrolling
-  //     overflow: hidden;
-  //     z-index: 10;
-  //     backface-visibility: hidden;
-  //     transform-style: preserve-3d;
+  //     overflow:hidden;
+  //     z-index:10;
+  //     transform-style:preserve-3d;
+  //     backface-visibility:hidden;
   //   }
   // }
-
 }
 
 // Link Overrides
@@ -356,6 +333,12 @@ a {
 }
 
 // Bootstrap Complements
+.position-relative {
+  position:relative;
+}
+.position-absolute {
+  position:absolute;
+}
 .text-bold {
   font-weight:bold!important;
 }
@@ -509,7 +492,6 @@ article.project-article {
   z-index:10000;
   //shape-outside:circle(50%);
   @include border-radius(50%);
-  //@include animation(fadeInAnimation 3s ease-in);
   span.fa-stack.custom {
     height:27px;//34px//auto//Was 2em
     .fa-stack-2x, .fa-circle {
@@ -905,7 +887,7 @@ footer {
     &:hover {
       &:after {
         height:76%;
-        //@include animation(textFillAnim 0.3s ease-in);//infinite
+        //@include animation(textPaintAnim 0.3s ease-in);//infinite
       }
     }
   }
@@ -1247,130 +1229,3 @@ body {
     }
   }
 }
-
-//----------------------------------Parallax Images Styles----------------------------------//
-
-// // Parallax Image
-// .parallax-image {
-//   position:relative;
-//   max-width:100%;
-//   margin:10vh auto;
-//   will-change:transform;
-//   .item-img-wrap {
-//     width:500px;
-//     max-width:calc(100% - 2rem);
-//     margin:0 auto;
-//     padding-bottom:calc(100% / (var(--aspect-ratio)));
-//     overflow:hidden;
-//     will-change:transform;
-//     --aspect-ratio:600/500;//1/1.5;
-//   }
-//   &.header-image {
-//     .item-img-wrap {
-//       width:calc(100vw - 11rem);//100vw
-//       --aspect-ratio:1500/800;
-//     }
-//     .item-caption {//
-//       position:absolute;
-//       top:50%;
-//       right:0;
-//       bottom:auto;
-//       left:0;
-//     }
-//   }
-//   &.item-article {//project-article
-//     position:relative;
-//     max-width:100%;
-//     margin:10vh auto;
-//     will-change:transform;
-//     &.left {
-//       margin:10vh auto 10vh 5.5rem !important;
-//     }
-//     &.right {
-//       margin:10vh 5.5rem 10vh auto !important;
-//     }
-//     &:first-child {
-//       .item-img-wrap {
-//         --aspect-ratio:600/500;//8/10;
-//       }
-//     }
-//     &:nth-child(2) {
-//       .item-img-wrap {
-//         //width:1000px;
-//         --aspect-ratio:600/500;//120/76;
-//       }
-//     }
-//     &:nth-child(3) {
-//       .item-img-wrap {
-//         --aspect-ratio:600/500;//60/75;
-//       }
-//     }
-//     &:nth-child(4) {
-//       .item-img-wrap {
-//         //width:800px;
-//         --aspect-ratio:600/500;//900/505;
-//       }
-//     }
-//     &:nth-child(5) {
-//       .item-img-wrap {
-//         --aspect-ratio:600/500;//6/8;
-//       }
-//     }
-//     &:nth-child(6) {
-//       .item-img-wrap {
-//         //width:calc(100vw - 2rem);
-//         --aspect-ratio:600/500;//1500/844;
-//       }
-//     }
-//     &:nth-child(7) {
-//       .item-img-wrap {
-//         //width:900px;
-//         --aspect-ratio:600/500;//1000/749;
-//       }
-//     }
-//     &:nth-child(8) {
-//       .item-img-wrap {
-//         //width:900px;
-//         --aspect-ratio:600/500;//1000/562;
-//       }
-//     }
-//     &:nth-child(9) {
-//       .item-img-wrap {
-//         --aspect-ratio:600/500;//60/75;
-//       }
-//     }
-//     &:nth-child(10) {
-//       .item-img-wrap {
-//         --aspect-ratio:600/500;//8/10;
-//       }
-//     }
-//     &:nth-child(11) {
-//       .item-img-wrap {
-//         //width:1000px;
-//         --aspect-ratio:600/500;//120/76;
-//       }
-//     }
-//     &:nth-child(12) {
-//       .item-img-wrap {
-//         --aspect-ratio:600/500;//60/75;
-//       }
-//     }
-//   }
-// }
-// .item-img {
-//   position:absolute;
-//   width:100%;
-//   height:calc(100% + (2 * var(--overflow)));
-//   top:calc(-1 * var(--overflow));
-//   will-change:transform;
-//   --overflow:40px;
-// }
-// .item-img-t1 {
-//   --overflow:60px;
-// }
-// .item-img-t2 {
-//   --overflow:80px;
-// }
-// .item-img-t3 {
-//   --overflow:120px;
-// }

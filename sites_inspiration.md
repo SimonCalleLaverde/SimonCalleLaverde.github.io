@@ -62,8 +62,6 @@ thumbnail_image: ""
 <a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
-<a href="..."></a>
-<a href="..."></a>
 -->
 
 <h1>Plugins</h1>
@@ -71,6 +69,8 @@ thumbnail_image: ""
 <a href="http://digitalzoomstudio.net/previews/parallaxer/">Parallaxer | To test someday for parallax image effects</a>
 <a href="https://giphy.com/gifs/perfect-loops-2dnGHOAQt1tIziib5X">Giphy</a>
 <a href="https://dixonandmoe.com/rellax/">For parallax element effects</a>
+<a href="https://greensock.com/forums/topic/15210-easing-to-y-position-set-on-mousemove/">Mouse Cool Pens</a>
+<a href="https://www.cssscript.com/demo/inertial-parallax-scroll-luxy/">Smooth Scrolling Option 5 | To Be Tested Someday, Looks Good</a>
 
 <h1>Platforms</h1>
 <a href="https://webflow.com/cms">Webflow CMS</a>

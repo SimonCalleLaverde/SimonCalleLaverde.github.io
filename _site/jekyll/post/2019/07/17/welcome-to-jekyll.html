@@ -244,7 +244,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>-->
 
 <!--Cursor-->
-<script src="/assets/js/custom/cursor_javascript.js" type="text/javascript"></script>
+<script src="/assets/js/custom/cursor_custom.js" type="text/javascript"></script>
 
 <!--Columnizer-->
 <script type="text/javascript" src="/assets/js/custom/jquery.columnizer.js"></script>
@@ -284,36 +284,14 @@
 <!--Greensock Custom Animations-->
 <script src="/assets/js/custom/greenstock_animations.js" type="text/javascript"></script>
 
+<!--Greensock Smooth Scroll Behavior-->
+<script src="/assets/js/custom/greenstock_smooth_scroll_behavior.js" type="text/javascript"></script>
+
 <!--Rellax | Parallax Scrolling-->
 <script src="/assets/js/custom/rellax.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 	var rellax = new Rellax('.rellax');
 </script>
-
-<!--Virtual Scroll | Smooth Scrolling Environment-->
-<!--<script src="/assets/js/custom/virtual_scroll.js" type="text/javascript"></script>-->
-<!--<script src="/assets/js/custom/virtual_scroll_custom_javascript.js" type="text/javascript"></script>-->
-
-<!--Smooth Scrollbar | As Per: https://idiotwu.github.io/smooth-scrollbar/-->
-<!--<script src="/assets/js/custom/smooth-scrollbar.js"></script>--><!--No Bundler-->
-<!--<script type="text/javascript">
-	// Npm Install
-	//import Scrollbar from 'smooth-scrollbar';
-
-	const bodyTag = document.querySelector('main');//#My Testings to add height to body
-	const bodyHeight = document.documentElement.scrollHeight;//#My Testings to add height to body
-	bodyTag.setAttribute("style", "height:"+bodyHeight+"px;");//#My Testings to add height to body
-
-	// No Bundler
-	var Scrollbar = window.Scrollbar;
-	
-	const options = {
-	  damping: 0.1,
-	  //continuousScrolling: false,
-	};
-	
-	Scrollbar.init(document.querySelector('main'), options);//#my-scrollbar
-</script>-->
 
 <!--Custom Javascripts-->
 <script src="/assets/js/custom/custom_javascripts.js" type="text/javascript"></script>
@@ -328,6 +306,60 @@
 
 
 
+
+  <div class="project-modal modal fade text-center" id="projectModal_freshhold" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"><!--aria-hidden="true"-->
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content bg-white">
+        <div class="modal-header pt-2 pt-md-3 pb-0 px-4">
+          <h3 class="modal-title text-black text-uppercase sr-only" id="projectModalLabel">Freshhold</h3>
+          
+          <button type="button" class="close text-black" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
+          <h4 class="text-black text-uppercase mb-4">Freshhold Consulting</h4>
+
+          <!-- if project.content.size > 0 -->
+            <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
+              This was a very small concept site full of lorem ipsum and placeholder content, created fully by me in almost one afternoon in 2015 just as a small showcase of some HTML and CSS skills following a small task to enter my old company Freshhold Consulting which later became Code Nation.
+            </div>
+            <div class="intro text-black d-block d-md-none" aria-hidden="true">
+              This was a very small concept site full of lorem ipsum and placeholder content, created fully by me in almost one afternoon in 2015 just as a small showcase of some HTML and CSS skills following a small task to enter my old company Freshhold Consulting which later became Code Nation.
+            </div>
+          <!-- endif -->
+
+          <div class="border mt-4">
+            <img src="/uploads/site-web-freshhold-1.png" alt="Freshhold Consulting Image">
+          </div>
+          
+          
+            <div class="border mt-4more">
+              <img src="/uploads/site-web-freshhold-2.png" alt="Freshhold Consulting Image 2">
+            </div>
+          
+          
+          
+            <div class="border mt-4more">
+              <img src="/uploads/site-web-freshhold-3.png" alt="Freshhold Consulting Image 3">
+            </div>
+          
+
+          <div class="mt-3">
+            <a class="text-purple-dark" href="" target="_blank">
+              <h4 class="font-paragraph">no longer live</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="modal-footer py-1 pt-md-3 pb-md-4">
+          <!--<button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="project-modal modal fade text-center" id="projectModal_australian_religious_response_to_climate_change" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"><!--aria-hidden="true"-->
     <div class="modal-dialog modal-lg" role="document">
@@ -1563,60 +1595,6 @@ Viviana also designed some other sites I developed too like "Freedom Wheelchairs
           <div class="mt-3">
             <a class="text-purple-dark" href="https://bogota-bulldogs.netlify.com/" target="_blank">
               <h4 class="font-paragraph">bogota-bulldogs.netlify.com</h4>
-            </a>
-          </div>
-        </div>
-
-        <div class="modal-footer py-1 pt-md-3 pb-md-4">
-          <!--<button type="button" class="btn btn-primary">Save changes</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="project-modal modal fade text-center" id="projectModal_freshhold" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"><!--aria-hidden="true"-->
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content bg-white">
-        <div class="modal-header pt-2 pt-md-3 pb-0 px-4">
-          <h3 class="modal-title text-black text-uppercase sr-only" id="projectModalLabel">Freshhold</h3>
-          
-          <button type="button" class="close text-black" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
-          <h4 class="text-black text-uppercase mb-4">Freshhold Consulting</h4>
-
-          <!-- if project.content.size > 0 -->
-            <div class="intro text-black column_div d-none d-md-block"><!--id="column_div"-->
-              This was a very small concept site full of lorem ipsum and placeholder content, created fully by me in almost one afternoon in 2015 just as a small showcase of some HTML and CSS skills following a small task to enter my old company Freshhold Consulting which later became Code Nation.
-            </div>
-            <div class="intro text-black d-block d-md-none" aria-hidden="true">
-              This was a very small concept site full of lorem ipsum and placeholder content, created fully by me in almost one afternoon in 2015 just as a small showcase of some HTML and CSS skills following a small task to enter my old company Freshhold Consulting which later became Code Nation.
-            </div>
-          <!-- endif -->
-
-          <div class="border mt-4">
-            <img src="/uploads/site-web-freshhold-1.png" alt="Freshhold Consulting Image">
-          </div>
-          
-          
-            <div class="border mt-4more">
-              <img src="/uploads/site-web-freshhold-2.png" alt="Freshhold Consulting Image 2">
-            </div>
-          
-          
-          
-            <div class="border mt-4more">
-              <img src="/uploads/site-web-freshhold-3.png" alt="Freshhold Consulting Image 3">
-            </div>
-          
-
-          <div class="mt-3">
-            <a class="text-purple-dark" href="" target="_blank">
-              <h4 class="font-paragraph">no longer live</h4>
             </a>
           </div>
         </div>
