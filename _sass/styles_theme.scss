@@ -1,7 +1,9 @@
 // Mobile Dev Notice
 @include media-breakpoint-down(lg) {
   body {
+    width:100%;
     height:100%!important;//100vh
+    //overflow:hidden;
   }
 }//@media
 
@@ -150,12 +152,23 @@ html {
   }
 }
 body {
-  position:relative;//For Scroll Spy
+
+  overscroll-behavior-y: none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
+
+  // overflow-x: hidden;//For GSAP Smooth Page Scrolling
+  // overflow-y: scroll;//For GSAP Smooth Page Scrolling
+  //position:relative;//For Scroll Spy
+  // position:fixed;//For Smooth Scroll Plugin
+  // width:100%;//For Smooth Scroll Plugin
+  // height:100%;//5000px//For Smooth Scroll Plugin
+  // top:0;//For Smooth Scroll Plugin
+  // left:0;//For Smooth Scroll Plugin
   font-family:$font-paragraph;
   font-weight:300;
   font-style:normal;
   font-size:17px;
   background-color:theme-color('grey-dark');
+  //overflow:auto;//For Smooth Scroll Plugin
   // overflow:hidden;//For Virtual Scroll
   z-index:1;
   @include transition(all ease-out 0.3s);
@@ -248,6 +261,36 @@ main, header, section {
 main {
   // position:absolute;//For Virtual Scroll
   // width:100vw;//For Virtual Scroll
+  // position:fixed;//For Smooth Scroll Plugin
+  // width:100%;//For Smooth Scroll Plugin
+  // height:100%;//5000px//For Smooth Scroll Plugin
+
+  // top:0;//For Virtual Scroll
+  // right:0;//For Virtual Scroll
+  // bottom:0;//For Virtual Scroll
+  // left:0;//For Virtual Scroll
+
+  // overflow:auto;//For Smooth Scroll Plugin
+  // &.viewport {
+  //   overflow: hidden;//For GSAP Smooth Page Scrolling
+  //   position: fixed;//For GSAP Smooth Page Scrolling
+  //   height: 100%;//For GSAP Smooth Page Scrolling
+  //   width: 100%;//For GSAP Smooth Page Scrolling
+  //   top: 0;//For GSAP Smooth Page Scrolling
+  //   left: 0;//For GSAP Smooth Page Scrolling
+  //   right: 0;//For GSAP Smooth Page Scrolling
+  //   bottom: 0;//For GSAP Smooth Page Scrolling
+
+  //   .scroll-container {//For GSAP Smooth Page Scrolling
+  //     position: absolute;  
+  //     width:100%;//#My Addition | For GSAP Smooth Page Scrolling
+  //     overflow: hidden;
+  //     z-index: 10;
+  //     backface-visibility: hidden;
+  //     transform-style: preserve-3d;
+  //   }
+  // }
+
 }
 
 // Link Overrides
@@ -769,6 +812,9 @@ header.home-hello-section {
     }
   }
   .bogota-picture-cover {
+
+    display:none;//Tired of it
+
     position:absolute!important;
     width:40vw;
     height:75vh;

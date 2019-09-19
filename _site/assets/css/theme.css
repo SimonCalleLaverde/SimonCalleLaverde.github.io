@@ -10658,6 +10658,7 @@ a.text-purple-dark:hover, a.text-purple-dark:focus {
     border-color: #dee2e6; } }
 @media (max-width: 1199.98px) {
   body {
+    width: 100%;
     height: 100% !important; } }
 @font-face {
   font-family: 'BG light';
@@ -10950,7 +10951,7 @@ html {
     display: none; }
 
 body {
-  position: relative;
+  overscroll-behavior-y: none;
   font-family: "BG light", "Avenir Next Pro", Sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -11492,6 +11493,7 @@ header.home-hello-section {
       -o-transform: scale(1);
       transform: scale(1); }
   header.home-hello-section .bogota-picture-cover {
+    display: none;
     position: absolute !important;
     width: 40vw;
     height: 75vh;
@@ -11966,7 +11968,7 @@ body > main > [data-scroll] {
 
   header.home-hello-section {
     min-height: 100vh;
-    padding: 60px 0 60px; }
+    padding: 80px 0 60px; }
 
   section.home-my-work-section {
     min-height: 100vh;

@@ -55,8 +55,10 @@ thumbnail_image: ""
 <a href="http://jiaszeto.com/">Jiaszeto</a>
 <a href="http://ss.art4web.co/">Art 4 Web</a>
 <a href="http://markovskaia.ru/">Markovskaia</a>
+<a href="https://oh.curiowellness.com/">Oh Curiowellness | Incredible</a>
+<a href="http://www.thibaudallie.com/">Thibaudallie</a>
+<a href="https://conference.awwwards.com/tokyo/">Conference Awwwards Tokyo</a>
 <!--
-<a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
@@ -66,6 +68,12 @@ thumbnail_image: ""
 
 <h1>Plugins</h1>
 <a href="https://kenwheeler.github.io/slick/">Slick | As per "https://eyeso.co"</a>
+<a href="http://digitalzoomstudio.net/previews/parallaxer/">Parallaxer | To test someday for parallax image effects</a>
+<a href="https://giphy.com/gifs/perfect-loops-2dnGHOAQt1tIziib5X">Giphy</a>
+<a href="https://dixonandmoe.com/rellax/">For parallax element effects</a>
+
+<h1>Platforms</h1>
+<a href="https://webflow.com/cms">Webflow CMS</a>
 
 <h1>Bootstrap 4</h1>
 <a href="https://mdbootstrap.com/education/bootstrap/">Bootstrap</a>

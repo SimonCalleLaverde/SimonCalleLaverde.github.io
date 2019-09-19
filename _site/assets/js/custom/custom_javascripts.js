@@ -28,9 +28,9 @@ $(function() {
     //var scroll = $(window).scrollTop();
     var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollBottom >= 730) {//scroll//50
+    if (scrollBottom >= 400) {//scroll//50
       body.removeClass("white").addClass("black");
-    } else if (scrollBottom <= 730) {//50
+    } else if (scrollBottom <= 400) {//50
       body.removeClass("black").addClass("white");
     }
   });

@@ -3,7 +3,7 @@
 <section class="home-my-work-section d-flex flex-column align-items-center clearfix" id="section_2">
   <div class="container">
 
-		<div class="row text-right" data-aos="fade-in" data-aos-duration="700" data-aos-easing="ease-in-sine">
+		<div class="row text-right"><!--data-aos="fade-in" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
       <div class="col-md-9 offset-md-2">
         <p class="font-headline text-white text-uppercase mb-0">Work</p>
 
@@ -40,7 +40,7 @@
 
 
 
-        <div class="slick-carousel" data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-sine">
+        <div class="slick-carousel"><!--data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
           {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
           {% for project in sorted_projects %}
