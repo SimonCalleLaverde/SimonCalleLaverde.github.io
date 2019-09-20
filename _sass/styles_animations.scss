@@ -108,12 +108,15 @@
 
 @keyframes backgroundTranslateAnim {
   0% {
+    //background-image:url("/uploads/home-header.jpg")!important;
     background-position:center center;
   }
   50% {
+    //background-image:url("/uploads/home-header.jpg")!important;
     background-position:center center;
   }
   100% {
+    //background-image:url("/uploads/home-header-black-and-white.jpg")!important;
     background-position:bottom center;
   }
 }//@keyframes

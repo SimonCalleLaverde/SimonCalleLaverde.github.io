@@ -11114,7 +11114,8 @@ a.text-goldy:hover, a.text-goldy:focus {
 html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always; }
   html ::-webkit-scrollbar {
     display: none; }
 
@@ -11126,6 +11127,7 @@ body {
   font-size: 17px;
   background-color: #1A1A1A;
   overscroll-behavior-y: none;
+  overflow: hidden;
   z-index: 1;
   -webkit-transition: all ease-out 0.3s;
   -moz-transition: all ease-out 0.3s;
@@ -11133,6 +11135,7 @@ body {
   -o-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s; }
   body.imagesloaded {
+    overflow: auto;
     -webkit-animation: backgroundTranslateAnim 0.7s ease-in 1.2s forwards;
     -moz-animation: backgroundTranslateAnim 0.7s ease-in 1.2s forwards;
     -ms-animation: backgroundTranslateAnim 0.7s ease-in 1.2s forwards;
@@ -11635,6 +11638,25 @@ aside.change-features {
 
 .slick-slide {
   outline: none; }
+
+.loading #loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: #FFF;
+  text-align: center;
+  z-index: 200000; }
+  .loading #loader i {
+    display: none;
+    font-weight: 900; }
+
+.imagesloaded #loader {
+  display: none; }
 
 section.blog-page {
   padding: 30px 20px; }

@@ -137,6 +137,7 @@ html {
   text-rendering:optimizeLegibility;
   -webkit-font-smoothing:subpixel-antialiased;//-webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
+  font-smooth:always;
   ::-webkit-scrollbar {
     display:none;
   }
@@ -151,6 +152,7 @@ body {
   font-size:17px;
   background-color:theme-color('grey-dark');
   overscroll-behavior-y:none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
+  overflow:hidden;
   z-index:1;
   //@include transform(translateY(0));
   @include transition(all ease-out 0.3s);
@@ -158,6 +160,7 @@ body {
     //@include filter(opacity(0));
   }
   &.imagesloaded {//&.render
+    overflow:auto;
     //@include filter(opacity(1));
     @include animation(backgroundTranslateAnim 0.7s ease-in 1.2s forwards);
     main {
@@ -749,6 +752,40 @@ aside.change-features {
   outline:none;
 }
 
+
+
+.loading #loader {
+  position:fixed;
+  width:100vw;
+  height:100vh;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+  color:#FFF;
+  text-align:center;
+
+
+  //display:table-cell;
+  //vertical-align:middle;
+
+  //display:inline-block;
+
+  z-index:200000;
+  i {
+    display:none;
+    font-weight:900;
+  }
+
+}
+.imagesloaded #loader {
+  display:none;
+}
+
+
+
+
 //----------------------------------Section Styles----------------------------------//
 
 // // Middle
@@ -1159,6 +1196,7 @@ body {
       width:60px;
       height:60px;
       margin:-30px 0 0 -30px;
+      //margin-top:-100px;//...........
       top:50%;
       left:50%;
       background-color:#FFF;//theme-color('goldy');//theme-color('magenta');

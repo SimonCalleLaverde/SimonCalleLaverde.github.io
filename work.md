@@ -6,7 +6,7 @@ slug: work
 type_slug: basic
 headline: Projects
 header_image: ""
-background_image: /uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg
+background_image: /uploads/work-header.jpg
 thumbnail_image: ""
 ---
 
