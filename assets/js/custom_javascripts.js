@@ -1,3 +1,15 @@
+// Force Site To Load At The Top
+// First scrollTop scrolls early, after document ready | Second scrollTop scrolls late, after load event, and after timeout
+$(document).ready(function() {
+    $('html, body').scrollTop(0);
+
+    $(window).on('load', function() {
+    setTimeout(function(){
+      $('html, body').scrollTop(0);
+    }, 0);
+ });
+});
+
 // Smooth Scroll Script
 $(function() {
   $('.smoothScroll').click(function(event) {
@@ -20,35 +32,50 @@ $(function() {
   });
 });
 
-// Change Some Class After Scrolling Some Distance From Top | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
+// // Change Some Class After Scrolling Some Distance From Top | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
+// $(function() {
+//   //caches a jQuery object containing the body element
+//   var changeFeaturesDiv = $(".change-features");
+//   $(window).scroll(function() {
+//     var scrollFromTop = $(window).scrollTop();
+
+//     if (scrollFromTop >= 700) {
+//       changeFeaturesDiv.removeClass("show-it").addClass("hide-it");
+//     } else if (scrollFromTop <= 700) {
+//       changeFeaturesDiv.removeClass("hide-it").addClass("show-it");
+//     }
+//   });
+// });
+
+// Removes Class After Scrolling Some Distance From Top | As Per Above
 $(function() {
   //caches a jQuery object containing the body element
-  var changeFeaturesDiv = $(".change-features");
+  var changeFeaturesDiv = $(".change-features-interior");
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
 
     if (scrollFromTop >= 700) {
-      changeFeaturesDiv.removeClass("show-it").addClass("hide-it");
+      changeFeaturesDiv.addClass("hide-it");
     } else if (scrollFromTop <= 700) {
-      changeFeaturesDiv.removeClass("hide-it").addClass("show-it");
+      changeFeaturesDiv.removeClass("hide-it");
     }
   });
 });
 
-// Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
-$(function() {
-  //caches a jQuery object containing the body element
-  var body = $("body");
-  $(window).scroll(function() {
-    var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+// // Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
+// $(function() {
+//   //caches a jQuery object containing the body element
+//   var body = $("body");
+//   $(window).scroll(function() {
+//     var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollFromBottom >= 400) {//scroll//50
-      body.removeClass("white").addClass("black");
-    } else if (scrollFromBottom <= 400) {//50
-      body.removeClass("black").addClass("white");
-    }
-  });
-});
+//     if (scrollFromBottom >= 400) {//scroll//50
+//       body.removeClass("white").addClass("black");
+//     } else if (scrollFromBottom <= 400) {//50
+//       body.removeClass("black").addClass("white");
+//     }
+//   });
+// });
 
 // // Change Some Class After Scrolling Some Element | As Per, But Modified Now (https://stackoverflow.com/questions/29717119/how-to-change-class-after-scroll-somewhere/29717259)
 // $(function() {
@@ -66,7 +93,7 @@ $(function() {
 // });
 
 // Initialize Slick Carousel
-$(document).ready(function(){
+$(document).ready(function() {
   $('.slick-carousel').slick({
     dots: false,
     infinite: false,

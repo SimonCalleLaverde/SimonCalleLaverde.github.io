@@ -1,12 +1,3 @@
-// Mobile Dev Notice
-@include media-breakpoint-down(lg) {
-  body {
-    width:100%;
-    height:100%!important;//100vh
-    overflow:hidden;
-  }
-}//@media
-
 //----------------------------------General Styles----------------------------------//
 
 // Fonts
@@ -144,8 +135,7 @@
 // General
 html {
   text-rendering:optimizeLegibility;
-  //-webkit-font-smoothing:antialiased;
-  -webkit-font-smoothing:subpixel-antialiased;
+  -webkit-font-smoothing:subpixel-antialiased;//-webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   ::-webkit-scrollbar {
     display:none;
@@ -160,17 +150,27 @@ body {
   font-style:normal;
   font-size:17px;
   background-color:theme-color('grey-dark');
-  overscroll-behavior-y: none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
+  overscroll-behavior-y:none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
   z-index:1;
+  //@include transform(translateY(0));
   @include transition(all ease-out 0.3s);
   &.loading {
     //@include filter(opacity(0));
   }
-  &.imagesloaded {
+  &.imagesloaded {//&.render
     //@include filter(opacity(1));
-    main, aside.nav-social-media, .copyright, .change-features, nav.navbar {
-      @include animation(bodyFadeInAnim 1s ease-in);
+    @include animation(backgroundTranslateAnim 0.7s ease-in 1.2s forwards);
+    main {
+      @include transform(translateY(100vh));
+      @include animation(mainTranslateAnim 0.7s ease-in 1.5s forwards);
+      //@include animation(bodyFadeInAnim 1s ease-in);
     }
+
+    aside.nav-social-media, .copyright, aside.change-features, nav.navbar {
+      @include filter(opacity(0));
+      @include animation(fadeInAnim 0.2s ease-in 2.5s forwards);
+    }
+
   }
 }
 // p {
@@ -246,6 +246,7 @@ figure {
 // Main, Header, Section
 main, header, section {
   position:relative;
+  background-color:theme-color('grey-dark');
   text-align:center;
   @include transition(all ease-in-out 0.3s);
 }
@@ -280,6 +281,7 @@ a {
   //cursor:none;
   @include transition(all ease-out 0.5s);
   &:hover, &:active, &:focus {
+    color:lighten(theme-color('magenta'),15);
     text-decoration:none;
   }
   &.text-black {
@@ -704,13 +706,14 @@ span.fa-stack {
 }
 
 // Change Features
-.change-features {
+aside.change-features {
   position:fixed;
   top:30px;
   right:3.5%;
   font-size:15px;
   z-index:10001;
   mix-blend-mode:difference;
+  @include filter(opacity(0));
   span, i {
     cursor:not-allowed;//no-drop
   }
@@ -730,13 +733,15 @@ span.fa-stack {
 
 // Show It & Hide It
 .show-it, .hide-it {
-  @include transition(filter ease-out 0.5s);
+  //@include transition(filter ease-out 0.5s);
 }
 .show-it {
-  @include filter(opacity(1)!important);
+  @include animation(fadeInAnim 0.5s ease-out forwards);
+  //@include filter(opacity(1)!important);
 }
 .hide-it {
-  @include filter(opacity(0)!important);
+  @include animation(fadeOutAnim 0.5s ease-out forwards);
+  //@include filter(opacity(0)!important);
 }
 
 // Slick Slide
@@ -919,6 +924,9 @@ body.page-type-basic.work {
 // Theme Colour White
 body.theme-colour.white {
   background-color:theme-color('grey-light');
+  main, header, section {
+    background-color:theme-color('grey-light');
+  }
   .text-white {
     color:theme-color('black')!important;
   }
@@ -1131,42 +1139,43 @@ a {
 
 // Page Loader
 body {
+  &:before {
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:theme-color('grey-dark');
+    z-index:100000;
+    //@include transform(translateY(-100vh));
+  }
   //&.loading {
-    &:before {
+    &:after {
       content:"";
       position:fixed;
-      width:100%;
-      height:100%;
-      top:0;
-      right:0;
-      bottom:0;
-      left:0;
-      background-color:theme-color('grey-dark');
+      width:60px;
+      height:60px;
+      margin:-30px 0 0 -30px;
+      top:50%;
+      left:50%;
+      background-color:#FFF;//theme-color('goldy');//theme-color('magenta');
+      pointer-events:none;
       z-index:100000;
-      //@include transform(translateY(-100vh));
-      @include animation(loaderGoAwayAnim 1s ease-in forwards);
-    }
-    &.loading {
-      &:after {
-        content:"";
-        position:fixed;
-        width:60px;
-        height:60px;
-        margin:-30px 0 0 -30px;
-        top:50%;
-        left:50%;
-        background-color:theme-color('magenta');
-        pointer-events:none;
-        z-index:100000;
-        @include border-radius(50%);
-        @include filter(opacity(0.5));
-        @include animation(loaderAnim 0.5s linear infinite alternate forwards);
-      }
+      @include border-radius(50%);
+      @include filter(opacity(0.5));
+      @include animation(loaderCircleAnim 0.5s linear infinite alternate forwards);
     }
   //}
-  &.render {//&.imgloaded
+  &.imagesloaded {//&.render
     &:before {
-      @include animation(loaderGoAwayAnim 1s ease-in forwards);
+      @include animation(loaderBeforeGoAwayAnim 1.5s ease-in forwards);
+    }
+    &:after {
+      display:none;
+      //@include animation(loaderAfterGoAwayAnim 1.3s ease-in forwards);
     }
   }
 }
@@ -1246,3 +1255,16 @@ body {
   background-blend-mode: var(--blend-mode-5);
   animation-name: glitch-anim-flash;
 }
+
+//------------------Other Media Queries------------------//
+
+// Mobile Dev Notice
+@include media-breakpoint-down(lg) {
+
+  body {
+    width:100%;
+    height:100%!important;//100vh
+    overflow:hidden;
+  }
+
+}//@media

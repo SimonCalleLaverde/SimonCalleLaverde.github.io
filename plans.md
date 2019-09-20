@@ -6,7 +6,7 @@ slug: plans
 type_slug: basic
 headline: Plans
 header_image: ""
-background_image: ""
+background_image: /uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg
 thumbnail_image: ""
 ---
 

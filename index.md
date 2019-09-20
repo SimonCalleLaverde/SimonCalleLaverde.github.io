@@ -5,8 +5,8 @@ permalink: /
 slug: home
 type_slug: basic
 headline: Hello!<br>I am<br>Simón
-header_image: /uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg
-background_image: ""
+header_image: ""
+background_image: /uploads/home-header-image.jpg
 thumbnail_image: ""
 
 my_work_section:

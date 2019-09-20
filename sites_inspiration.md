@@ -58,7 +58,12 @@ thumbnail_image: ""
 <a href="https://oh.curiowellness.com/">Oh Curiowellness | Incredible</a>
 <a href="http://www.thibaudallie.com/">Thibaudallie</a>
 <a href="https://conference.awwwards.com/tokyo/">Conference Awwwards Tokyo</a>
+<a href="https://www.rodolfosarno.com/">Rodolfo Sarno</a>
 <!--
+<a href="..."></a>
+<a href="..."></a>
+<a href="..."></a>
+<a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
@@ -76,6 +81,10 @@ thumbnail_image: ""
 <a href="https://dixonandmoe.com/rellax/">For parallax element effects</a>
 <a href="https://greensock.com/forums/topic/15210-easing-to-y-position-set-on-mousemove/">Mouse Cool Pens</a>
 <a href="https://www.cssscript.com/demo/inertial-parallax-scroll-luxy/">Smooth Scrolling Option 5 | To Be Tested Someday, Looks Good</a>
+<a href="https://medium.muz.li/top-30-most-captivating-preloaders-for-your-website-95ed1beff99d">Awesome Loaders</a>
+<a href="https://codepen.io/jackrugile/pen/ejsbf">Loader Circle Paint</a>
+<a href="https://codepen.io/MathieuRichard/pen/LrHeD">Loader Blend Text White Background</a>
+<a href="https://codepen.io/WhiteWolfWizard/pen/vorqj">Loader Dots</a>
 
 <h1>Platforms</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY">GitHub Pages</a>
