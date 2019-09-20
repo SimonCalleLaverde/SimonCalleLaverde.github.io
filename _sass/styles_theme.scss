@@ -143,10 +143,10 @@
 
 // General
 html {
+  text-rendering:optimizeLegibility;
   //-webkit-font-smoothing:antialiased;
   -webkit-font-smoothing:subpixel-antialiased;
-  text-rendering:optimizeLegibility;
-  //scroll-behavior:smooth;
+  -moz-osx-font-smoothing:grayscale;
   ::-webkit-scrollbar {
     display:none;
   }
@@ -169,7 +169,7 @@ body {
   &.imagesloaded {
     //@include filter(opacity(1));
     main, aside.nav-social-media, .copyright, .change-features, nav.navbar {
-      @include animation(fadeInAnimation 1s ease-in);
+      @include animation(bodyFadeInAnim 1s ease-in);
     }
   }
 }
@@ -268,6 +268,10 @@ main {
   //     backface-visibility:hidden;
   //   }
   // }
+}
+
+// Header Image
+.header-image {
 }
 
 // Link Overrides
@@ -1123,6 +1127,59 @@ a {
   }
 }//@media
 
+//----------------------------------Smoothly Scrolling Behavior & Page Loader Styles----------------------------------//
+
+// Page Loader
+body {
+  //&.loading {
+    &:before {
+      content:"";
+      position:fixed;
+      width:100%;
+      height:100%;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      background-color:theme-color('grey-dark');
+      z-index:100000;
+      //@include transform(translateY(-100vh));
+      @include animation(loaderGoAwayAnim 1s ease-in forwards);
+    }
+    &.loading {
+      &:after {
+        content:"";
+        position:fixed;
+        width:60px;
+        height:60px;
+        margin:-30px 0 0 -30px;
+        top:50%;
+        left:50%;
+        background-color:theme-color('magenta');
+        pointer-events:none;
+        z-index:100000;
+        @include border-radius(50%);
+        @include filter(opacity(0.5));
+        @include animation(loaderAnim 0.5s linear infinite alternate forwards);
+      }
+    }
+  //}
+  &.render {//&.imgloaded
+    &:before {
+      @include animation(loaderGoAwayAnim 1s ease-in forwards);
+    }
+  }
+}
+
+// Data Scroll (Div)
+body {
+  > main {
+    > [data-scroll] {
+      will-change:transform;
+    }
+  }
+}
+
 //----------------------------------Glitch Image Effect Styles----------------------------------//
 
 // Glitch
@@ -1188,44 +1245,4 @@ a {
   background-color: var(--blend-color-5);
   background-blend-mode: var(--blend-mode-5);
   animation-name: glitch-anim-flash;
-}
-
-//----------------------------------Smoothly Scrolling Behavior & Page Loader Styles----------------------------------//
-
-// Page Loader
-body.loading {
-  &:before {
-    content:"";
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    background-color:theme-color('grey-dark');
-    z-index:100000;
-  }
-  &:after {
-    content:"";
-    position:fixed;
-    width:60px;
-    height:60px;
-    margin:-30px 0 0 -30px;
-    top:50%;
-    left:50%;
-    background-color:theme-color('magenta');
-    pointer-events:none;
-    z-index:100000;
-    @include border-radius(50%);
-    @include filter(opacity(0.5));
-    @include animation(loaderAnim 0.5s linear infinite alternate forwards);
-  }
-}
-
-// Data Scroll (Div)
-body {
-  > main {
-    > [data-scroll] {
-      will-change:transform;
-    }
-  }
 }

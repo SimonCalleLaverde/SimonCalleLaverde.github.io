@@ -14,18 +14,19 @@
 
     {% include nav.html %}
 
+    {% if page.header_image.size > 0 %}
+      {% include header_image.html %}
+    {% endif %}
+
     <!-- include switch_color_toggler.html -->
 
 
 
-    <main class="viewport" id="middle"><!--data-scrollbar | For Smooth Scroll Plugin--><!--viewport | For GSAP Smooth Page Scrolling-->
+    <main class="bg-grey-dark" id="middle"><!--class="viewport"--><!--data-scrollbar | For Smooth Scroll Plugin--><!--viewport | For GSAP Smooth Page Scrolling-->
       <div data-scroll>
         <!--<div id="scroll-container" class="scroll-container">--><!--For GSAP Smooth Page Scrolling-->
           <h1 class="sr-only">{{ page.title }}</h1>
           
-          {% if page.header_image.size > 0 %}
-            {% include header_image.html %}
-          {% endif %}
           
           {{ content }}
 
@@ -43,5 +44,17 @@
     {% include mobile_dev_notice.html %}
 
   </body>
+
+  {% if page.background_image.size > 0 %}
+    <style type="text/css">
+      body {
+        background:url('{{ page.background_image }}') no-repeat center center fixed;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:cover;
+      }
+    </style>
+  {% endif %}
 
 </html>
