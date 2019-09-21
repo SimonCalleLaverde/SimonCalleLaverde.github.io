@@ -11530,7 +11530,7 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important; } }
 .text-line-through {
   position: relative; }
-  .text-line-through:after {
+  .text-line-through:after, .text-line-through:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -11538,26 +11538,38 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     top: 48%;
     left: 0;
     background-color: #FFF;
-    -webkit-animation: textLineThroughAnim 5s linear 1.8s infinite;
-    -moz-animation: textLineThroughAnim 5s linear 1.8s infinite;
-    -ms-animation: textLineThroughAnim 5s linear 1.8s infinite;
-    -o-animation: textLineThroughAnim 5s linear 1.8s infinite;
-    animation: textLineThroughAnim 5s linear 1.8s infinite; }
-    .text-line-through:after:hover {
-      -webkit-animation: none;
-      -moz-animation: none;
-      -ms-animation: none;
-      -o-animation: none;
-      animation: none; }
+    pointer-events: none;
+    -webkit-animation: textLineThroughAnim 5s linear 1.9s infinite;
+    -moz-animation: textLineThroughAnim 5s linear 1.9s infinite;
+    -ms-animation: textLineThroughAnim 5s linear 1.9s infinite;
+    -o-animation: textLineThroughAnim 5s linear 1.9s infinite;
+    animation: textLineThroughAnim 5s linear 1.9s infinite; }
+  .text-line-through:before {
+    width: 0;
+    left: 0;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    transition: all linear 0.5s; }
   .text-line-through.websites-text:after {
-    -webkit-animation: textLineThroughAnim 5s linear 2.9s infinite;
-    -moz-animation: textLineThroughAnim 5s linear 2.9s infinite;
-    -ms-animation: textLineThroughAnim 5s linear 2.9s infinite;
-    -o-animation: textLineThroughAnim 5s linear 2.9s infinite;
-    animation: textLineThroughAnim 5s linear 2.9s infinite; }
+    -webkit-animation: textLineThroughAnim 5s linear 3s infinite;
+    -moz-animation: textLineThroughAnim 5s linear 3s infinite;
+    -ms-animation: textLineThroughAnim 5s linear 3s infinite;
+    -o-animation: textLineThroughAnim 5s linear 3s infinite;
+    animation: textLineThroughAnim 5s linear 3s infinite; }
 
 a:hover.text-line-through:after {
   background-color: transparent; }
+a:hover.text-line-through:before {
+  width: 100%;
+  right: 0;
+  left: 0; }
 
 .copyright {
   position: fixed;

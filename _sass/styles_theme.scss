@@ -648,7 +648,7 @@ span.fa-stack {
 // Text Line Through
 .text-line-through {
   position:relative;
-  &:after {
+  &:after, &:before {
     content:"";
     position:absolute;
     width:100%;
@@ -656,20 +656,24 @@ span.fa-stack {
     top:48%;//50%
     left:0;
     background-color:#FFF;//theme-color('magenta')
+    pointer-events:none;
     //mix-blend-mode:difference;
     //animation-name:textLineThroughAnim;
     //animation-duration:4s;
     //animation-timing-function:linear;
     //animation-iteration-count:1;
     //animation-fill-mode:forwards;
-    @include animation(textLineThroughAnim 5s linear 1.8s infinite);//ease-in-out
-    &:hover {
-      @include animation(none);//
-    }
+    @include animation(textLineThroughAnim 5s linear 1.9s infinite);//ease-in-out
+  }
+  &:before {
+    width:0;
+    left:0;
+    @include animation(none);
+    @include transition(all linear 0.5s);
   }
   &.websites-text {
     &:after {
-      @include animation(textLineThroughAnim 5s linear 2.9s infinite);//ease-in-out
+      @include animation(textLineThroughAnim 5s linear 3s infinite);//ease-in-out
     }
   }
 }
@@ -678,8 +682,12 @@ a {
     &.text-line-through {
       //&.branding-text, &.websites-text {
         &:after {
-          //display:none;
           background-color:transparent;
+        }
+        &:before {
+          width:100%;
+          right:0;
+          left:0;
         }
       //}
     }
