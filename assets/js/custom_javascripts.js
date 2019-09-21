@@ -54,9 +54,9 @@ $(function() {
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
 
-    if (scrollFromTop >= 700) {
+    if (scrollFromTop >= 200) {
       changeFeaturesDiv.addClass("hide-it");
-    } else if (scrollFromTop <= 700) {
+    } else if (scrollFromTop <= 200) {
       changeFeaturesDiv.removeClass("hide-it");
     }
   });
@@ -124,7 +124,7 @@ $(document).ready(function() {
     //swipe: true,//default
     swipeToSlide: true,
     arrows: false,
-    centerMode: false,
+    centerMode: true,
     focusOnSelect: true,
     asNavFor: '.slick-carousel'
   });
