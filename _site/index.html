@@ -39,8 +39,8 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
 
   <!--AOS | Animate On Scroll Library-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
 
   <!--Flickity-->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -53,8 +53,7 @@
 </head>
 
   <body class="page-type-basic home bg-image theme-colour black loading" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
-    <div id="loader">
-    </div>
+    <div id="loader"><!--Loading--></div>
 
     <div class="cursor"></div>
 
@@ -93,7 +92,7 @@
 		<i class="fa fa-adjust text-grey-light show-message-button" style="margin-left:30px;"></i>
 
 		<div class="show-message text-grey-dark hide-it py-1 px-2">
-			This feature will be coming soon
+			Sorry :( this feature will be coming soon
 		</div>
 	</div>
 </aside>
@@ -108,19 +107,19 @@
 	
 		<ul class="navbar-nav">
 			<li class="nav-item px-2">
-				<a class="nav-link smoothScroll" href="#section_1">
+				<a class="nav-link smoothScroll" href="#hello_section">
 					<p class="m-0">Hello</p>
 				</a>
 			</li>
 			
 			<li class="nav-item px-2">
-				<a class="nav-link smoothScroll" href="#section_2">
+				<a class="nav-link smoothScroll" href="#my_work_section">
 					<p class="m-0">My work</p><!--Portfolio-->
 				</a>
 			</li>
 			
 			<li class="nav-item px-2">
-				<a class="nav-link smoothScroll" href="#section_3">
+				<a class="nav-link smoothScroll" href="#my_skills_section">
 					<p class="m-0">My skills</p><!--I know--><!--Expertise-->
 				</a>
 			</li>
@@ -148,51 +147,39 @@
     <!-- include switch_color_toggler.html -->
 
 
-
     <main id="middle"><!--class="viewport"--><!--data-scrollbar | For Smooth Scroll Plugin--><!--viewport | For GSAP Smooth Page Scrolling-->
       <div data-scroll>
         <!--<div id="scroll-container" class="scroll-container">--><!--For GSAP Smooth Page Scrolling-->
           <h1 class="sr-only">Fine Web Design</h1>
           
           
-          <!--IN DEVELOPMENT-->
+          <!--IN DEVELOPMENT | Logo, moving dots, parallax elements, letters comming in from bottom one by one quickly, and more-->
 
-<header class="home-hello-section d-flex flex-column align-items-center text-white clearfix" id="section_1">
-  <style type="text/css">
-    .glitch-img-bogota-cover {
-      background:url('/uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg') no-repeat center center scroll;
-      -webkit-background-size:cover;
-      -moz-background-size:cover;
-      -o-background-size:cover;
-      background-size:cover;
-    }
-  </style>
-  <div class="bogota-picture-cover glitch" title="Credit to Fernando Garcia on: https://www.flickr.com/photos/gogeid/16925533979">
-    <div class="glitch-img glitch-img-bogota-cover bg-image"></div>
-    <div class="glitch-img glitch-img-bogota-cover bg-image"></div>
-    <div class="glitch-img glitch-img-bogota-cover bg-image"></div>
-    <div class="glitch-img glitch-img-bogota-cover bg-image"></div>
-    <div class="glitch-img glitch-img-bogota-cover bg-image"></div>
-  </div>
-
+<header class="home-hello-header d-flex flex-row align-items-center text-white clearfix" id="hello_section">
   <div class="container">
-    
-    <div class="row mt-4">
-      <div class="col-md-6 offset-md-1">
-        <h1 class="text-white mb-3" style="font-size:7rem; line-height:1.1;">Hello!<br>I am<br>Simón</h1>
-        <h1 class="headline mb-3" style="position:absolute; top:0; font-size:7rem; line-height:1.1; z-index:5001;">Hello!<br>I am<br>Simón</h1>
 
-        <p class="font-headline text-white text-uppercase mt-3 mb-0">This is a brand built out of coffee, quality, and care</p>
+    <div class="row">
+      <div class="col-md-7 offset-md-1">
+        <h1 class="text-white mb-3" style="font-size:9rem; line-height:1;">Hello!<br>I am<br>Simon</h1>
+        <h1 class="headline mb-3" style="position:absolute; top:0; font-size:9rem; line-height:1; z-index:5001;">Hello!<br>I am<br>Simon</h1>
+
+        <p class="font-headline text-white text-uppercase mt-3 mb-0">And I <!--<i class="fa fa-heart text-magenta" aria-hidden="true"></i>--><!--like--> do <a class="branding-text text-white text-line-through smoothScroll" href="#education_section"><span>branding</span></a> & appealing <a class="websites-text text-white text-line-through smoothScroll" href="#my_work_2"><span>websites</span></a><!--This is a brand built out of coffee, quality, and care--></p>
       </div>
     </div>
 
-    <div class="row mt-5 pt-5">
-      <div class="col-md-6 offset-md-6 mt-5 pt-5">
-        <div class="home-image-appear text-center">
-          <h2 class="text-white text-uppercase text-right" style="position:absolute; z-index:5000;">
-            I am a publicist and web developer<br>from the nice city of<br><span class="text-line-through text-magenta" style="cursor:pointer;">Bogotá</span>.<!--headline soft--><!--text-underline--><!--text-decoration:line-through;-->
+  </div>
+</header>
 
-            <style type="text/css">
+<section class="about-me-section clearfix" id="about_me_section">
+  <div class="container">
+
+    <div class="row mt-5 pt-5">
+      <div class="col-md-12 mt-5 pt-5"><!--col-md-6 offset-md-6-->
+        <div class="home-image-appear text-center">
+          <h1 class="text-white text-uppercase text-right" style="position:absolute; font-size:4rem; line-height:1.1; z-index:5000;">
+            I am a publicist and web developer from the nice city of<span class="text-line-through text-magenta" style="cursor:pointer;">Bogotá</span>.<!--headline soft--><!--text-underline--><!--text-decoration:line-through;-->
+
+            <!--<style type="text/css">
               .glitch-img-bogota {
                 background:url('/uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg') no-repeat center center scroll;
                 -webkit-background-size:cover;
@@ -207,11 +194,11 @@
               <div class="glitch-img glitch-img-bogota bg-image"></div>
               <div class="glitch-img glitch-img-bogota bg-image"></div>
               <div class="glitch-img glitch-img-bogota bg-image"></div>
-            </div>
+            </div>-->
             <!--<img class="image-bogota" src="uploads/bogota-skyline-photo-by-fernando-garcia-on-flicker.jpg" alt="Credit to Fernando Garcia on: https://www.flickr.com/photos/gogeid/16925533979">-->
-          </h2>
+          </h1>
 
-          <h2 class="headline soft text-uppercase text-right" style="position:absolute; z-index:5001;">I am a publicist and web developer<br>from the nice city of</h2>
+          <h1 class="headline soft text-uppercase text-right" style="position:absolute; font-size:4rem; line-height:1.1; z-index:5001;">I am a publicist and web developer from the nice city of</h1>
         </div>
       </div>
     </div>
@@ -219,14 +206,14 @@
     
     
   </div>
-</header>
+</section>
 
 <!--IN DEVELOPMENT-->
 
-<section class="home-my-work-section d-flex flex-column align-items-center clearfix" id="section_2">
+<section class="home-my-work-section d-flex flex-column align-items-center clearfix" id="my_work_section">
   <div class="container">
 
-		<div class="row text-right"><!--data-aos="fade-in" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
+		<div class="row text-right">
       <div class="col-md-9 offset-md-2">
         <p class="font-headline text-white text-uppercase mb-0">Work</p>
 
@@ -244,7 +231,7 @@
 
 
 
-        <div class="slick-carousel"><!--data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
+        <div class="slick-carousel">
           
 
           
@@ -1129,7 +1116,7 @@
           
         </div>
         
-        <div class="slick-as-nav-for pl-4more"><!--data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
+        <div class="slick-as-nav-for pl-4more">
           
             
             
@@ -1523,7 +1510,7 @@
 
     <div class="row mt-5 pt-5">
       <div class="col-md-12">
-        <div class="text-center mt-4 mx-md-3 px-md-4"><!--data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
+        <div class="text-center mt-4 mx-md-3 px-md-4">
           <!--Desktop-->
           <a class="nav-link mb-4more d-none d-md-inline-block" href="/work">
             <h5 class="headline text-uppercase" style="font-size:6rem;">All Projects</h5>
@@ -1542,7 +1529,7 @@
 
 <!--IN DEVELOPMENT-->
 
-<section class="home-skills-section clearfix" id="section_3">
+<section class="home-my-skills-section clearfix" id="my_skills_section">
   <div class="container">
 
     <div class="row pt-5">
@@ -1640,14 +1627,14 @@
           <p class="font-headline text-white text-uppercase d-none d-md-inline-block">Take a look at my</p>
           <br>
           <a class="d-none d-md-inline-block" href="/plans">
-            <h5 class="plans-text text-transparent text-stroke-magenta text-uppercase mb-4more" style="font-size:6rem; line-height:1.2;">plans</h5>
+            <h5 class="plans-text text-transparent text-stroke-white text-uppercase mb-4more" style="font-size:6rem; line-height:1.2;">plans</h5>
           </a><!--text-underline-->
 
           <!--Mobile-->
           <p class="text-magenta text-stroke-magenta text-uppercase d-inline-block d-md-none" aria-hidden="true">Take a look at my</p>
           <br>
           <a class="d-inline-block d-md-none" href="/plans">
-            <h5 class="plans-text text-transparent text-stroke-magenta text-uppercase mb-3" style="font-size:3rem; line-height:1.3;">plans</h5>
+            <h5 class="plans-text text-transparent text-stroke-white text-uppercase mb-3" style="font-size:3rem; line-height:1.3;">plans</h5>
           </a><!--text-underline-->
         </div>
       </div>
@@ -1687,11 +1674,11 @@
 </script>
 
 <!--AOS | Animate On Scroll Library-->
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$(function() {
 	  AOS.init();
 	});
-</script>
+</script>-->
 
 <!--Flickity | Carousel-->
 <!--<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>-->
@@ -1732,7 +1719,6 @@
         <!--</div>-->
       </div>
     </main>
-
 
     
     <!--IN DEVELOPMENT-->
@@ -3146,7 +3132,7 @@
   </div>
 
 
-    <div class="mobile-dev-notice bg-black text-white text-center d-flex flex-column align-items-center justify-content-center p-5 d-block d-lg-none"><!--Lg to cover until tablet for now--><!--d-md-none-->
+    <div class="mobile-dev-notice bg-grey-dark text-white text-center d-flex flex-column align-items-center justify-content-center p-5 d-block d-lg-none"><!--Lg to cover until tablet for now--><!--d-md-none-->
   <style type="text/css">
 	  .glitch-img-logo {
 	    background:url('/uploads/logo-placeholder.jpg') no-repeat center center scroll;
@@ -3168,7 +3154,7 @@
 
   <h6 class="mb-4more">It will be up soon!</h6>
 
-  <p>Best experience of this website for now is in desktop screen using <i>Chrome</i></p>
+  <p>Best experience for this website for now is in a desktop screen with <i>Chrome</i></p>
 </div>
 
   </body>

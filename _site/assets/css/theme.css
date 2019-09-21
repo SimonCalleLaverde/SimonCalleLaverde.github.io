@@ -11537,18 +11537,27 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     height: 3px;
     top: 48%;
     left: 0;
-    background-color: #EB0082;
-    -webkit-animation: textLineThroughAnim 7s ease-in-out infinite;
-    -moz-animation: textLineThroughAnim 7s ease-in-out infinite;
-    -ms-animation: textLineThroughAnim 7s ease-in-out infinite;
-    -o-animation: textLineThroughAnim 7s ease-in-out infinite;
-    animation: textLineThroughAnim 7s ease-in-out infinite; }
+    background-color: #FFF;
+    -webkit-animation: textLineThroughAnim 5s linear 1.8s infinite;
+    -moz-animation: textLineThroughAnim 5s linear 1.8s infinite;
+    -ms-animation: textLineThroughAnim 5s linear 1.8s infinite;
+    -o-animation: textLineThroughAnim 5s linear 1.8s infinite;
+    animation: textLineThroughAnim 5s linear 1.8s infinite; }
     .text-line-through:after:hover {
       -webkit-animation: none;
       -moz-animation: none;
       -ms-animation: none;
       -o-animation: none;
       animation: none; }
+  .text-line-through.websites-text:after {
+    -webkit-animation: textLineThroughAnim 5s linear 2.9s infinite;
+    -moz-animation: textLineThroughAnim 5s linear 2.9s infinite;
+    -ms-animation: textLineThroughAnim 5s linear 2.9s infinite;
+    -o-animation: textLineThroughAnim 5s linear 2.9s infinite;
+    animation: textLineThroughAnim 5s linear 2.9s infinite; }
+
+a:hover.text-line-through:after {
+  background-color: transparent; }
 
 .copyright {
   position: fixed;
@@ -11639,20 +11648,21 @@ aside.change-features {
 .slick-slide {
   outline: none; }
 
-.loading #loader {
+#loader {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  top: 0;
+  margin: auto;
+  top: 100%;
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
-  color: #FFF;
+  color: #EB0082;
   text-align: center;
   z-index: 200000; }
-  .loading #loader i {
+  #loader i {
     display: none;
+    font-size: 40px;
     font-weight: 900; }
 
 .imagesloaded #loader {
@@ -11667,11 +11677,11 @@ section.calendar-page {
 section.feedback-page {
   padding: 30px 20px; }
 
-header.home-hello-section {
+header.home-hello-header {
   padding-top: 30px 20px; }
-  header.home-hello-section .home-image-appear {
+  header.home-hello-header .home-image-appear {
     height: 300px; }
-    header.home-hello-section .home-image-appear .bogota-picture {
+    header.home-hello-header .home-image-appear .bogota-picture {
       position: absolute;
       width: 100vw;
       top: -90px;
@@ -11698,9 +11708,9 @@ header.home-hello-section {
       -ms-transition: transform ease-out 0.5s;
       -o-transition: transform ease-out 0.5s;
       transition: transform ease-out 0.5s; }
-    header.home-hello-section .home-image-appear .bogota-picture {
+    header.home-hello-header .home-image-appear .bogota-picture {
       height: 320px; }
-    header.home-hello-section .home-image-appear h1 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h2 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h3 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h4 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h5 > span:hover ~ .bogota-picture, header.home-hello-section .home-image-appear h6 > span:hover ~ .bogota-picture {
+    header.home-hello-header .home-image-appear h1 > span:hover ~ .bogota-picture, header.home-hello-header .home-image-appear h2 > span:hover ~ .bogota-picture, header.home-hello-header .home-image-appear h3 > span:hover ~ .bogota-picture, header.home-hello-header .home-image-appear h4 > span:hover ~ .bogota-picture, header.home-hello-header .home-image-appear h5 > span:hover ~ .bogota-picture, header.home-hello-header .home-image-appear h6 > span:hover ~ .bogota-picture {
       -webkit-filter: opacity(0.8);
       -moz-filter: opacity(0.8);
       -ms-filter: opacity(0.8);
@@ -11711,7 +11721,7 @@ header.home-hello-section {
       -ms-transform: scale(1);
       -o-transform: scale(1);
       transform: scale(1); }
-  header.home-hello-section .bogota-picture-cover {
+  header.home-hello-header .bogota-picture-cover {
     display: none;
     position: absolute !important;
     width: 40vw;
@@ -11720,10 +11730,13 @@ header.home-hello-section {
     right: 0;
     z-index: 4000; }
 
+section.about-me-section {
+  padding: 30px 20px; }
+
 section.home-my-work-section {
   padding: 30px 20px; }
 
-section.home-skills-section {
+section.home-my-skills-section {
   padding: 30px 20px; }
 
 section.home-education-section {
@@ -11959,7 +11972,9 @@ body:before {
   right: 0;
   bottom: 0;
   left: 0;
+  color: #FFF;
   background-color: #1A1A1A;
+  text-align: center;
   z-index: 100000; }
 body:after {
   content: "";
@@ -11967,9 +11982,10 @@ body:after {
   width: 60px;
   height: 60px;
   margin: -30px 0 0 -30px;
+  margin-top: -40px;
   top: 50%;
   left: 50%;
-  background-color: #FFF;
+  background-color: #EB0082;
   pointer-events: none;
   z-index: 100000;
   -webkit-border-radius: 50%;
@@ -11977,11 +11993,11 @@ body:after {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  -webkit-filter: opacity(0.5);
-  -moz-filter: opacity(0.5);
-  -ms-filter: opacity(0.5);
-  -o-filter: opacity(0.5);
-  filter: opacity(0.5);
+  -webkit-filter: opacity(0.7);
+  -moz-filter: opacity(0.7);
+  -ms-filter: opacity(0.7);
+  -o-filter: opacity(0.7);
+  filter: opacity(0.7);
   -webkit-animation: loaderCircleAnim 0.5s linear infinite alternate forwards;
   -moz-animation: loaderCircleAnim 0.5s linear infinite alternate forwards;
   -ms-animation: loaderCircleAnim 0.5s linear infinite alternate forwards;
@@ -12202,15 +12218,19 @@ body > main > [data-scroll] {
   section.calendar-page {
     padding: 50px 0 25px; }
 
-  header.home-hello-section {
+  header.home-hello-header {
     min-height: 100vh;
-    padding: 80px 0 60px; }
+    padding: 50px 0; }
+
+  section.about-me-section {
+    min-height: 100vh;
+    padding: 100px 0 60px; }
 
   section.home-my-work-section {
     min-height: 100vh;
     padding: 100px 0 60px; }
 
-  section.home-skills-section {
+  section.home-my-skills-section {
     min-height: 70vh;
     padding: 80px 0 60px; }
 

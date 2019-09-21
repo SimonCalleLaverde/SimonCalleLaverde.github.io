@@ -1,9 +1,9 @@
 <!--IN DEVELOPMENT-->
 
-<section class="home-my-work-section d-flex flex-column align-items-center clearfix" id="section_2">
+<section class="home-my-work-section d-flex flex-column align-items-center clearfix" id="my_work_section">
   <div class="container">
 
-		<div class="row text-right"><!--data-aos="fade-in" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
+		<div class="row text-right">
       <div class="col-md-9 offset-md-2">
         <p class="font-headline text-white text-uppercase mb-0">Work</p>
 
@@ -24,7 +24,7 @@
     <div class="row pt-4 pb-2">
       <div class="col-md-8 offset-md-2">
         <!--Desktop-->
-        <div class="intro text-white column_div d-none d-md-block"><!--id="column_div"-->
+        <div class="intro text-white column_div d-none d-md-block">
           {{ page.my_work_section.content }}
         </div>
         <!--Mobile-->
@@ -40,7 +40,7 @@
 
 
 
-        <div class="slick-carousel"><!--data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
+        <div class="slick-carousel">
           {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
           {% for project in sorted_projects %}
@@ -58,7 +58,7 @@
           {% endfor %}
         </div>
         
-        <div class="slick-as-nav-for pl-4more"><!--data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
+        <div class="slick-as-nav-for pl-4more">
           {% for project in sorted_projects %}
             {% assign project_tags_list = "#" %}
             {% for tag in project.tags %}
@@ -81,7 +81,7 @@
 
     <div class="row mt-5 pt-5">
       <div class="col-md-12">
-        <div class="text-center mt-4 mx-md-3 px-md-4"><!--data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine"-->
+        <div class="text-center mt-4 mx-md-3 px-md-4">
           <!--Desktop-->
           <a class="nav-link mb-4more d-none d-md-inline-block" href="/work">
             <h5 class="headline text-uppercase" style="font-size:6rem;">All Projects</h5>

@@ -178,10 +178,16 @@
 		// }
 	}
 
-	// Home Hello Section
-	header.home-hello-section {
+	// Home Hello Header
+	header.home-hello-header {
 		min-height:100vh;
-		padding:80px 0 60px;
+		padding:50px 0;
+	}
+
+	// About Me Section
+	section.about-me-section {
+	  min-height:100vh;
+		padding:100px 0 60px;
 	}
 
 	// Home My Work Section
@@ -190,8 +196,8 @@
 		padding:100px 0 60px;
 	}
 
-	// Home Skills Section
-	section.home-skills-section {
+	// Home My Skills Section
+	section.home-my-skills-section {
 		min-height:70vh;
 		padding:80px 0 60px;
 	}

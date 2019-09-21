@@ -6,7 +6,7 @@ slug: work
 type_slug: basic
 headline: Projects
 header_image: ""
-background_image: /uploads/work-header.jpg
+background_image: /uploads/home-header.jpg
 thumbnail_image: ""
 ---
 

@@ -141,7 +141,7 @@ $(function() {
   });
 });
 
-// Loader Dots
+// Loader Dots | As Per: https://codepen.io/WhiteWolfWizard/pen/vorqj
 $(function() {
   var $loader = $('#loader'),
     max = 75, speed = 500,
