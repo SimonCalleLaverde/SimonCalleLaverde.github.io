@@ -1,0 +1,43 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "a package json",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonCalleLaverde/SimonCalleLaverde.github.io.git"
+  },
+  "keywords": [
+    "fine",
+    "web",
+    "design",
+    "web",
+    "design",
+    "web",
+    "development",
+    "front",
+    "end",
+    "development",
+    "website",
+    "websites",
+    "jekyll",
+    "html",
+    "css",
+    "javascript",
+    "sass",
+    "scss",
+    "liquid"
+  ],
+  "author": "simon calle laverde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonCalleLaverde/SimonCalleLaverde.github.io/issues"
+  },
+  "homepage": "https://github.com/SimonCalleLaverde/SimonCalleLaverde.github.io#readme",
+  "dependencies": {
+    "lax.js": "^1.2.3"
+  }
+}
