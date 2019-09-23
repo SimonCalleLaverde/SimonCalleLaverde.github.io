@@ -1,3 +1,5 @@
+// Connecting feelings with features
+
 //----------------------------------General Styles----------------------------------//
 
 // Fonts
@@ -150,7 +152,7 @@ body {
   font-weight:300;
   font-style:normal;
   font-size:17px;
-  background-color:theme-color('grey-dark');
+  background-color:#FFF;//theme-color('grey-dark')
   overscroll-behavior-y:none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
   overflow:hidden;
   z-index:1;
@@ -672,7 +674,7 @@ span.fa-stack {
   }
   &.websites-text {
     &:after {
-      @include animation(textLineThroughAnim 5s linear 3.1s infinite);//ease-in-out
+      @include animation(textLineThroughAnim 5s linear 3.2s infinite);//ease-in-out
     }
   }
 }

@@ -21,7 +21,7 @@ thumbnail_image: ""
 <a href="https://jekyllrb.com/docs/liquid/">Liquid</a>
 <a href="https://jekyllrb.com/docs/collections/">Collections</a>
 <a href="https://snipcart.com/blog/jekyll-ecommerce-tutorial">Was | 6. Deploying your Jekyll e-commerce website</a>
-<a href="https://jekyllrb.com/docs/deployment/third-party/">Was | GitHub Pages, To Read/Do Netlify</a>
+<a href="https://jekyllrb.com/docs/deployment/third-party/">Was | GitHub Pages | To Read/Do Netlify</a>
 
 <h1>Forestry</h1>
 <a href="https://forestry.io/">Forestry.io</a>
@@ -70,7 +70,6 @@ thumbnail_image: ""
 <a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
-<a href="..."></a>
 -->
 
 <h1>Plugins</h1>
@@ -85,6 +84,7 @@ thumbnail_image: ""
 <a href="https://codepen.io/jackrugile/pen/ejsbf">Loader Circle Paint</a>
 <a href="https://codepen.io/MathieuRichard/pen/LrHeD">Loader Blend Text White Background</a>
 <a href="https://codepen.io/WhiteWolfWizard/pen/vorqj">Loader Dots</a>
+<a href="codepen.io/ispal/pen/mVaaJe">Stairs Dot Loader</a>
 
 <h1>Platforms</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY">GitHub Pages</a>

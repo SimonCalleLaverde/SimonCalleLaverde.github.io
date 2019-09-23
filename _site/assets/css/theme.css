@@ -11125,7 +11125,7 @@ body {
   font-weight: 300;
   font-style: normal;
   font-size: 17px;
-  background-color: #1A1A1A;
+  background-color: #FFF;
   overscroll-behavior-y: none;
   overflow: hidden;
   z-index: 1;
@@ -11508,11 +11508,11 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     -o-transition: all linear 0.5s;
     transition: all linear 0.5s; }
   .text-line-through.websites-text:after {
-    -webkit-animation: textLineThroughAnim 5s linear 3.1s infinite;
-    -moz-animation: textLineThroughAnim 5s linear 3.1s infinite;
-    -ms-animation: textLineThroughAnim 5s linear 3.1s infinite;
-    -o-animation: textLineThroughAnim 5s linear 3.1s infinite;
-    animation: textLineThroughAnim 5s linear 3.1s infinite; }
+    -webkit-animation: textLineThroughAnim 5s linear 3.2s infinite;
+    -moz-animation: textLineThroughAnim 5s linear 3.2s infinite;
+    -ms-animation: textLineThroughAnim 5s linear 3.2s infinite;
+    -o-animation: textLineThroughAnim 5s linear 3.2s infinite;
+    animation: textLineThroughAnim 5s linear 3.2s infinite; }
 
 a:hover.text-line-through:after {
   background-color: transparent; }
