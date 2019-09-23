@@ -45,6 +45,21 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+exclude: # From Bogota Bulldogs, to review with above original Jekyll example
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package.json
+  - package-lock.json
+  - Gruntfile.js
+  - README*
+  - LICENSE
+  - ".gitignore"
+
 collections:
   projects:
     title: Portfolio
