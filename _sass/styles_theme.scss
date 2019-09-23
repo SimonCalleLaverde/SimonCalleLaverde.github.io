@@ -1127,17 +1127,22 @@ body.theme-colour.white {
 a {
   > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
     &:hover {
-      cursor:none;
+      //cursor:none;
     }
+  }
+}
+i.fa {
+  &:hover {
+    cursor:none;
   }
 }
 .cursor {
   display:none;
-  position:fixed;//absolute
+  position:fixed;
   width:50px;
   height:50px;
   background-color:transparent;
-  border:1px solid #FFF;
+  border:1px solid transparent;
   z-index:11000;
   pointer-events:none;
   will-change:transform, filter, background-color;//transform, opacity
@@ -1149,65 +1154,61 @@ a {
   //   border-color:theme-color('blue-light');
   //   @include animation(cursorAnim3 0.5s forwards);
   // }
-  &:after {
+  &:before, &:after {
     content:"";
     position:absolute;
     width:50px;
     height:50px;
     top:-1px;
     left:-1px;
+    background-color:transparent;
+    border:1px solid #FFF;
+    @include border-radius(50%);
+  }
+  &:before {
     padding-top:40px;
     font-family:$font-headline;
     font-weight:500;
     font-size:13.5px;
     color:#FFF;
+    border-color:transparent;
     text-transform:uppercase;
     letter-spacing:2px;
     white-space:nowrap;
     text-align:center;
-    will-change:filter, background-color;
-    @include border-radius(50%);
-    @include transition(background-color ease-out 0.3s);
+    z-index:11002;
+    will-change:width, height, background-color, border-color, transform;
+    @include transition(none);
+  }
+  &:after {
+    z-index:11001;
+    will-change:background-color, transform;
+    @include transition(background-color ease-out 0.3s, transform ease-out 0.3s);
   }
   &.hoveredLink {
-    // width:110px;
-    // height:110px;
-    background-color:#FFF;
-    border-color:transparent;
     mix-blend-mode:difference;
-    @include transform(scale(2.2));
-    // @include transform(translateX(-30px) translateY(-30px));
-    @include transition(all ease-out 0.3s);//background-color, color, transform, ease-out 0.3s
-    // &:after {
-    //   width:110px;
-    //   height:110px;
-    //   // top:-30px;
-    //   // left:-30px;
-    // }
-  }
-  // &.hoveredImg {
-  //   background-color:transparent;
-  //   border-color:#FFF;
-  //   //mix-blend-mode:normal;
-  // }
-  &.hoveredProject {
-    width:100px;
-    height:100px;
-    background-color:theme-color('magenta');
-    border-color:theme-color('magenta');
-    //mix-blend-mode:normal;
-    // @include transform(scale(2));
-    @include transform(translateY(-25px) translateX(-25px));
-    @include transition(background-color ease-out 0.3s);
+    @include transition(all ease-out 0.3s);
     &:after {
+      background-color:#FFF;
+      @include transform(scale(2.2));
+    }
+  }
+  &.hoveredProject {
+    @include transition(all ease-out 0.3s);
+    @include animation(fa-spin 5s linear infinite);
+    &:before {
       content:"View It";
       width:100px;
       height:100px;
-      @include animation(fa-spin 5s linear infinite);
+      background-color:theme-color('magenta');
+      border-color:theme-color('magenta');
+      @include transform(translateY(-25px) translateX(-25px));
     }
   }
   &.hoveredModal {
-    border-color:#000;
+    &:after {
+      border-color:#000;
+    }
   }
   // &:after {
   //   display:none;
