@@ -4,7 +4,9 @@
   {% include head.html %}
 
   <body class="page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} bg-image theme-colour black loading" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
+    {% comment %}
     <div id="loader"><!--Loading--></div>
+    {% endcomment %}
 
     {% include cursor.html %}
 
