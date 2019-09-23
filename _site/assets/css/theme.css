@@ -11126,10 +11126,9 @@ body {
   font-style: normal;
   font-size: 17px;
   background-color: #FFF;
-  overscroll-behavior-y: none;
+  overflow: hidden;
   z-index: 1;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overscroll-behavior-y: none;
   -webkit-transition: all ease-out 0.3s;
   -moz-transition: all ease-out 0.3s;
   -ms-transition: all ease-out 0.3s;
@@ -11616,44 +11615,6 @@ aside.change-features {
 .slick-carousel .slick-arrow.slick-next {
   right: auto;
   left: 170px; }
-
-#loader {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  margin: auto;
-  top: 100%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  color: #EB0082;
-  text-align: center;
-  z-index: 200000; }
-  #loader i {
-    display: none;
-    font-size: 40px;
-    font-weight: 900; }
-
-.imagesloaded #loader {
-  display: none; }
-
-.viewport {
-  overflow: hidden;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-
-.scroll-container {
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  z-index: 10;
-  backface-visibility: hidden;
-  transform-style: preserve-3d; }
 
 section.blog-page {
   padding: 30px 20px; }

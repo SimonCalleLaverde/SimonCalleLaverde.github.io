@@ -51,7 +51,7 @@
 					// current value
 					current: 0, 
 					// amount to interpolate
-					ease: 0.3,//0.1
+					ease: 0.1,
 					// the maximum value to translate the image is set in a CSS variable (--overflow)
 					maxValue: parseInt(getComputedStyle(this.DOM.image).getPropertyValue('--overflow'), 10),
 					// current value setter
