@@ -11136,11 +11136,11 @@ body {
   transition: all ease-out 0.3s; }
   body.imagesloaded {
     overflow: auto;
-    -webkit-animation: backgroundTranslateAnim 0.7s ease-in 1.2s forwards;
-    -moz-animation: backgroundTranslateAnim 0.7s ease-in 1.2s forwards;
-    -ms-animation: backgroundTranslateAnim 0.7s ease-in 1.2s forwards;
-    -o-animation: backgroundTranslateAnim 0.7s ease-in 1.2s forwards;
-    animation: backgroundTranslateAnim 0.7s ease-in 1.2s forwards; }
+    -webkit-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
+    -moz-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
+    -ms-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
+    -o-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
+    animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards; }
     body.imagesloaded main {
       -webkit-transform: translateY(100vh);
       -moz-transform: translateY(100vh);
@@ -11839,9 +11839,6 @@ body.theme-colour.white {
   body.theme-colour.white a:hover.text-line-through:after {
     background-color: transparent; }
 
-a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover {
-  cursor: none; }
-
 i.fa:hover {
   cursor: none; }
 
@@ -11851,7 +11848,7 @@ i.fa:hover {
   width: 50px;
   height: 50px;
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid transparent;
   z-index: 11000;
   pointer-events: none;
   will-change: transform, filter, background-color;
@@ -11865,73 +11862,83 @@ i.fa:hover {
   -ms-transition: all ease-out 0.2s;
   -o-transition: all ease-out 0.2s;
   transition: all ease-out 0.2s; }
-  .cursor:after {
+  .cursor:before, .cursor:after {
     content: "";
     position: absolute;
     width: 50px;
     height: 50px;
     top: -1px;
     left: -1px;
-    padding-top: 40px;
-    font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
-    font-weight: 500;
-    font-size: 13.5px;
     background-color: transparent;
-    color: #FFF;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    white-space: nowrap;
-    text-align: center;
-    will-change: filter, background-color;
+    border: 1px solid #FFF;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-transition: background-color ease-out 0.3s;
-    -moz-transition: background-color ease-out 0.3s;
-    -ms-transition: background-color ease-out 0.3s;
-    -o-transition: background-color ease-out 0.3s;
-    transition: background-color ease-out 0.3s; }
-  .cursor.hoveredLink {
-    background-color: #FFF;
+    border-radius: 50%; }
+  .cursor:before {
+    padding-top: 40px;
+    font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
+    font-weight: 500;
+    font-size: 13.5px;
+    color: #FFF;
     border-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    text-align: center;
+    z-index: 11002;
+    will-change: width, height, background-color, border-color, transform;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none; }
+  .cursor:after {
+    z-index: 11001;
+    will-change: background-color, transform;
+    -webkit-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
+    -moz-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
+    -ms-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
+    -o-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
+    transition: background-color ease-out 0.3s, transform ease-out 0.3s; }
+  .cursor.hoveredLink {
     mix-blend-mode: difference;
-    -webkit-transform: scale(2.2);
-    -moz-transform: scale(2.2);
-    -ms-transform: scale(2.2);
-    -o-transform: scale(2.2);
-    transform: scale(2.2);
     -webkit-transition: all ease-out 0.3s;
     -moz-transition: all ease-out 0.3s;
     -ms-transition: all ease-out 0.3s;
     -o-transition: all ease-out 0.3s;
     transition: all ease-out 0.3s; }
+    .cursor.hoveredLink:after {
+      background-color: #FFF;
+      -webkit-transform: scale(2.2);
+      -moz-transform: scale(2.2);
+      -ms-transform: scale(2.2);
+      -o-transform: scale(2.2);
+      transform: scale(2.2); }
   .cursor.hoveredProject {
-    width: 100px;
-    height: 100px;
-    background-color: #EB0082;
-    border-color: #EB0082;
-    -webkit-transform: translateY(-25px) translateX(-25px);
-    -moz-transform: translateY(-25px) translateX(-25px);
-    -ms-transform: translateY(-25px) translateX(-25px);
-    -o-transform: translateY(-25px) translateX(-25px);
-    transform: translateY(-25px) translateX(-25px);
-    -webkit-transition: background-color ease-out 0.3s;
-    -moz-transition: background-color ease-out 0.3s;
-    -ms-transition: background-color ease-out 0.3s;
-    -o-transition: background-color ease-out 0.3s;
-    transition: background-color ease-out 0.3s; }
-    .cursor.hoveredProject:after {
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -ms-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+    -webkit-animation: fa-spin 5s linear infinite;
+    -moz-animation: fa-spin 5s linear infinite;
+    -ms-animation: fa-spin 5s linear infinite;
+    -o-animation: fa-spin 5s linear infinite;
+    animation: fa-spin 5s linear infinite; }
+    .cursor.hoveredProject:before {
       content: "View It";
       width: 100px;
       height: 100px;
-      -webkit-animation: fa-spin 5s linear infinite;
-      -moz-animation: fa-spin 5s linear infinite;
-      -ms-animation: fa-spin 5s linear infinite;
-      -o-animation: fa-spin 5s linear infinite;
-      animation: fa-spin 5s linear infinite; }
-  .cursor.hoveredModal {
+      background-color: #EB0082;
+      border-color: #EB0082;
+      -webkit-transform: translateY(-25px) translateX(-25px);
+      -moz-transform: translateY(-25px) translateX(-25px);
+      -ms-transform: translateY(-25px) translateX(-25px);
+      -o-transform: translateY(-25px) translateX(-25px);
+      transform: translateY(-25px) translateX(-25px); }
+  .cursor.hoveredModal:after {
     border-color: #000; }
 
 @media (pointer: coarse) and (hover: none) {

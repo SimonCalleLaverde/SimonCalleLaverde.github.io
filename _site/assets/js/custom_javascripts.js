@@ -54,9 +54,9 @@ $(function() {
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
 
-    if (scrollFromTop >= 200) {
+    if (scrollFromTop >= 400) {
       changeFeaturesDiv.addClass("hide-it");
-    } else if (scrollFromTop <= 200) {
+    } else if (scrollFromTop <= 400) {
       changeFeaturesDiv.removeClass("hide-it");
     }
   });

@@ -13,6 +13,6 @@
 	
 	imagesLoaded('img, .bg-image', { background: true }, () => {
 		document.body.classList.remove('loading');
-		document.body.classList.add('imgloaded');
+		document.body.classList.add('imagesloaded');//imgloaded
 	});
 }
