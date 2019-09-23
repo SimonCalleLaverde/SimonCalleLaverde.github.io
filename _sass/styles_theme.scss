@@ -154,8 +154,14 @@ body {
   font-size:17px;
   background-color:#FFF;//theme-color('grey-dark')
   overscroll-behavior-y:none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
-  overflow:hidden;
+  //overflow:hidden;
   z-index:1;
+
+
+  overflow-x: hidden;//GSAP
+  overflow-y: scroll;//GSAP
+
+
   //@include transform(translateY(0));
   @include transition(all ease-out 0.3s);
   &.loading {
@@ -815,6 +821,35 @@ aside.change-features {
 .imagesloaded #loader {
   display:none;
 }
+
+
+
+
+
+.viewport {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.scroll-container {  
+  position: absolute;  
+  width:100%;//GSAP
+  overflow: hidden;
+  z-index: 10;
+  //display: flex;
+  //justify-content: center;  
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+
+
 
 //----------------------------------Section Styles----------------------------------//
 

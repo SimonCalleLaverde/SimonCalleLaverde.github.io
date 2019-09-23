@@ -11127,8 +11127,9 @@ body {
   font-size: 17px;
   background-color: #FFF;
   overscroll-behavior-y: none;
-  overflow: hidden;
   z-index: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
   -webkit-transition: all ease-out 0.3s;
   -moz-transition: all ease-out 0.3s;
   -ms-transition: all ease-out 0.3s;
@@ -11635,6 +11636,24 @@ aside.change-features {
 
 .imagesloaded #loader {
   display: none; }
+
+.viewport {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.scroll-container {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  backface-visibility: hidden;
+  transform-style: preserve-3d; }
 
 section.blog-page {
   padding: 30px 20px; }
