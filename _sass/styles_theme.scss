@@ -405,13 +405,13 @@ input.text, textarea.textarea, .form-group > select {
 }
 
 // Panels
-article {
-  .article-caption {
-    font-size:14px;
-    line-height:1.25;
-    color:#FFF;
-  }
-}
+// article {
+//   .article-caption {
+//     font-size:14px;
+//     line-height:1.25;
+//     color:#FFF;
+//   }
+// }
 .mobile-thumbnail-control {
   min-height:300px;
 }
@@ -426,13 +426,14 @@ article.project-article {
         right:0;
         font-family:$font-subtitle;
         font-weight:normal;
-        //mix-blend-mode:difference;
         @include transform(rotate(90deg) translateY(-26px));
-        //@include transform(skewY(0deg));
       }
       figcaption.project-caption {
         .project-name, .project-roles {
-          background-color:rgba(255,255,255,0.95)!important;
+          background-color:rgba(0,0,0,0.9);
+          h1, h2, h3, h4, h5, h6 {
+            color:theme-color('grey-light');
+          }
         }
       }
     }
@@ -447,13 +448,15 @@ article.project-article {
         right:0;
         font-family:$font-subtitle;
         font-weight:normal;
-        //mix-blend-mode:difference;
         @include transform(rotate(90deg) translateY(-26px));
         //@include transform(skewY(0deg));
       }
       figcaption.project-caption {
         .project-name, .project-roles {
-          background-color:rgba(255,255,255,0.95)!important;
+          background-color:rgba(255,255,255,0.95);
+          h1, h2, h3, h4, h5, h6 {
+            color:theme-color('grey-dark');
+          }
         }
       }
     }
@@ -758,7 +761,7 @@ a {
 aside.change-features {
   position:fixed;
   top:30px;
-  right:3.5%;
+  right:3.55%;
   font-size:15px;
   z-index:10001;
   //mix-blend-mode:difference;
@@ -766,13 +769,13 @@ aside.change-features {
   span {//, i
     cursor:not-allowed;//no-drop
   }
-  i {
-    font-size:14px;
+  i.fa {
+    font-size:13px;
   }
   .show-message {
     position:absolute;
     top:-5px;
-    left:-230px;
+    left:-260px;
     background-color:rgba(255,255,255,0.8);
     white-space:nowrap;
     @include border-radius(0.5rem);
@@ -938,16 +941,6 @@ section.home-education-section {
   padding:30px 20px;//To revise mobile
 }
 
-// Home Five Section
-section.home-five-section {
-  padding:30px 20px 0;//To revise mobile
-  article {
-    iframe {
-      @include border-radius(0.3rem);
-    }
-  }
-}
-
 // Work Section
 section.work-section {
   padding:0 20px;
@@ -981,6 +974,12 @@ footer {
       &:hover, &:active, &:focus {
         @include filter(grayscale(0));
       }
+    }
+  }
+  
+  article {
+    iframe {
+      @include border-radius(0.3rem);
     }
   }
 
@@ -1165,7 +1164,7 @@ body.theme-colour.white {
 a {
   > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
     &:hover {
-      //cursor:none;
+      cursor:none;
     }
   }
 }

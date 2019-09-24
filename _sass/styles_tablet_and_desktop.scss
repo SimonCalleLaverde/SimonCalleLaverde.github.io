@@ -69,6 +69,36 @@
 	  }
 	}
 
+	// Grid
+	#grid {
+		position:fixed;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		pointer-events:none;
+		z-index:13000;
+		.container {
+			// border-left:0.5px solid rgba(255,255,255,0.1);
+			// border-right:0.5px solid rgba(255,255,255,0.1);
+			.row {
+				div {
+					position:relative;
+					.grid-element {
+						height:100vh;
+						border-right:0.5px solid rgba(255,255,255,0.1);
+					}
+					&:first-child {
+						.grid-element {
+							border-left:0.5px solid rgba(255,255,255,0.1);
+							border-right:none;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	//------------------Section Styles------------------//
 
 	// Nav Desktop
@@ -187,31 +217,25 @@
 	// About Me Section
 	section.about-me-section {
 	  //min-height:100vh;
-		padding:30px 0 60px;
+		padding:90px 0 60px;
 	}
 
 	// Home My Work Section
 	section.home-my-work-section {
 		//min-height:100vh;
-		padding:100px 0 60px;
+		padding:90px 0 60px;
 	}
 
 	// Home My Skills Section
 	section.home-my-skills-section {
-		//min-height:70vh;
-		padding:80px 0 60px;
+		//min-height:100vh;
+		padding:90px 0 60px;
 	}
 
 	// Home Education Section
 	section.home-education-section {
 		//min-height:70vh;
-		padding:80px 0 60px;
-	}
-
-	// Home Five Section
-	section.home-five-section {
-		min-height:70vh;//100vh
-		padding:40px 0 0;
+		padding:90px 0 60px;
 	}
 
 	// Work Section
@@ -221,7 +245,7 @@
 
 	// Plans Section
 	section.plans-section {
-	  padding:100px 0 60px;
+	  padding:90px 0 60px;
 	}
 
 	// Footer

@@ -69,7 +69,6 @@ thumbnail_image: ""
 <a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
-<a href="..."></a>
 -->
 
 <h1>Plugins</h1>
@@ -99,3 +98,4 @@ thumbnail_image: ""
 <a href="http://youtube.com/watch?v=dGcsHMXbSOA">React Tutorial For Beginners</a>
 <a href="https://www.youtube.com/watch?v=LmXVxkWjLT8&list=LL4KC8qzHaqFuW7XvQ0fMB2A&index=2&t=1148s">Practical Tips for Great UI Animation</a>
 <a href="https://www.youtube.com/watch?v=bEg5ySTUGxE">The Faker You Are, the More Successful You Can Be</a>
+<a href="https://www.youtube.com/watch?v=RKXZ7t_RiOE">Cómo poner precio a tus servicios de diseño</a>

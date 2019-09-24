@@ -47,17 +47,17 @@ $(function() {
 //   });
 // });
 
-// Removes Class After Scrolling Some Distance From Top | As Per Above
+// Adds/Removes Class After Scrolling Some Distance From Top | As Per Above Modified
 $(function() {
   //caches a jQuery object containing the body element
-  var changeFeaturesDiv = $(".change-features-interior");
+  var hideThisDivs = $(".change-features-interior, .copyright-interior");
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
 
-    if (scrollFromTop >= 400) {
-      changeFeaturesDiv.addClass("hide-it");
-    } else if (scrollFromTop <= 400) {
-      changeFeaturesDiv.removeClass("hide-it");
+    if (scrollFromTop >= 300) {
+      hideThisDivs.addClass("hide-it");
+    } else if (scrollFromTop <= 300) {
+      hideThisDivs.removeClass("hide-it");
     }
   });
 });

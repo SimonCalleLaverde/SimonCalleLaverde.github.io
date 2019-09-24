@@ -11347,11 +11347,6 @@ input.text, textarea.textarea, .form-group > select {
 .form-group > select:hover, .form-group > select:active, .form-group > select:focus {
   cursor: pointer; }
 
-article .article-caption {
-  font-size: 14px;
-  line-height: 1.25;
-  color: #FFF; }
-
 .mobile-thumbnail-control {
   min-height: 300px; }
 
@@ -11370,7 +11365,9 @@ article.project-article.home .project-thumbnail {
     -o-transform: rotate(90deg) translateY(-26px);
     transform: rotate(90deg) translateY(-26px); }
   article.project-article.home .project-thumbnail figcaption.project-caption .project-name, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles {
-    background-color: rgba(255, 255, 255, 0.95) !important; }
+    background-color: rgba(0, 0, 0, 0.9); }
+    article.project-article.home .project-thumbnail figcaption.project-caption .project-name h1, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h2, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h3, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h4, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h5, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h6, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h1, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h2, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h3, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h4, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h5, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h6 {
+      color: #FEFEFE; }
 article.project-article.work .project-thumbnail {
   position: relative;
   height: 330px; }
@@ -11386,7 +11383,9 @@ article.project-article.work .project-thumbnail {
     -o-transform: rotate(90deg) translateY(-26px);
     transform: rotate(90deg) translateY(-26px); }
   article.project-article.work .project-thumbnail figcaption.project-caption .project-name, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles {
-    background-color: rgba(255, 255, 255, 0.95) !important; }
+    background-color: rgba(255, 255, 255, 0.95); }
+    article.project-article.work .project-thumbnail figcaption.project-caption .project-name h1, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h2, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h3, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h4, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h5, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h6, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h1, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h2, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h3, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h4, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h5, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h6 {
+      color: #1A1A1A; }
 
 .flickity-carousel .main-carousel, .flickity-carousel .carousel-nav {
   width: 100%; }
@@ -11580,7 +11579,7 @@ a:hover.text-line-through:before {
 aside.change-features {
   position: fixed;
   top: 30px;
-  right: 3.5%;
+  right: 3.55%;
   font-size: 15px;
   z-index: 10001;
   -webkit-filter: opacity(0);
@@ -11590,12 +11589,12 @@ aside.change-features {
   filter: opacity(0); }
   aside.change-features span {
     cursor: not-allowed; }
-  aside.change-features i {
-    font-size: 14px; }
+  aside.change-features i.fa {
+    font-size: 13px; }
   aside.change-features .show-message {
     position: absolute;
     top: -5px;
-    left: -230px;
+    left: -260px;
     background-color: rgba(255, 255, 255, 0.8);
     white-space: nowrap;
     -webkit-border-radius: 0.5rem;
@@ -11720,15 +11719,6 @@ section.home-my-skills-section {
 section.home-education-section {
   padding: 30px 20px; }
 
-section.home-five-section {
-  padding: 30px 20px 0; }
-  section.home-five-section article iframe {
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem; }
-
 section.work-section {
   padding: 0 20px; }
 
@@ -11769,6 +11759,12 @@ footer {
         -ms-filter: grayscale(0);
         -o-filter: grayscale(0);
         filter: grayscale(0); }
+  footer article iframe {
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    border-radius: 0.3rem; }
   footer .see-letter-button {
     cursor: alias; }
   footer .plans-text {
@@ -11848,6 +11844,9 @@ body.theme-colour.white {
     background-color: #1A1A1A; }
   body.theme-colour.white a:hover.text-line-through:after {
     background-color: transparent; }
+
+a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover {
+  cursor: none; }
 
 i.fa:hover {
   cursor: none; }
@@ -12112,6 +12111,23 @@ body > main > [data-scroll] {
         -o-filter: opacity(1);
         filter: opacity(1); }
 
+  #grid {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 13000; }
+    #grid .container .row div {
+      position: relative; }
+      #grid .container .row div .grid-element {
+        height: 100vh;
+        border-right: 0.5px solid rgba(255, 255, 255, 0.1); }
+      #grid .container .row div:first-child .grid-element {
+        border-left: 0.5px solid rgba(255, 255, 255, 0.1);
+        border-right: none; }
+
   nav.navbar {
     position: fixed;
     width: 100vh;
@@ -12217,26 +12233,22 @@ body > main > [data-scroll] {
     padding: 50px 0; }
 
   section.about-me-section {
-    padding: 30px 0 60px; }
+    padding: 90px 0 60px; }
 
   section.home-my-work-section {
-    padding: 100px 0 60px; }
+    padding: 90px 0 60px; }
 
   section.home-my-skills-section {
-    padding: 80px 0 60px; }
+    padding: 90px 0 60px; }
 
   section.home-education-section {
-    padding: 80px 0 60px; }
-
-  section.home-five-section {
-    min-height: 70vh;
-    padding: 40px 0 0; }
+    padding: 90px 0 60px; }
 
   section.work-section {
     padding: 0; }
 
   section.plans-section {
-    padding: 100px 0 60px; }
+    padding: 90px 0 60px; }
 
   footer {
     min-height: 100vh; }

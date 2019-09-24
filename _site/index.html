@@ -55,6 +55,32 @@
   <body class="page-type-basic home bg-image theme-colour black loading rendering" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
     
 
+    <div id="grid">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-4">
+        <div class="grid-element">
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="grid-element">
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="grid-element">
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="grid-element">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     <div class="cursor"></div>
 
     <aside class="nav-social-media py-4 px-4more">
@@ -86,10 +112,10 @@
   </div>
 </aside>
 
-    <aside class="change-features text-white"><!--show-it-->
+    <aside class="change-features">
 	<div class="change-features-interior">
-		<a class="text-grey-mid" href="/"><p class="m-0" style="display:inline-block;">En</p></a> / <span class="text-white show-message-button"><!--title="This feature will be coming soon"--><p class="m-0" style="display:inline-block;">Es</p></span>
-		<i class="fa fa-adjust text-grey-light switch-theme-colour" style="margin-left:30px;"></i>
+		<a class="text-white" href="/"><p class="m-0" style="display:inline-block;">En</p></a><span class="text-grey-mid"> / </span><span class="text-white show-message-button"><!--title="This feature will be coming soon"--><p class="text-grey-mid m-0" style="display:inline-block;">Es</p></span>
+		<i class="fa fa-adjust text-grey-mid switch-theme-colour" style="margin-left:5px;"></i><!--margin-left:30px;-->
 
 		<div class="show-message text-grey-dark hide-it py-1 px-2">
 			Sorry :( this feature will be coming soon
@@ -98,7 +124,9 @@
 </aside>
 
     <div class="copyright text-white">
-	© 2019<!--© 2019 Simón Calle Laverde--><!--<small></small>-->
+	<div class="copyright-interior">
+		© 2019<!--© 2019 Simón Calle Laverde--><!--<small></small>-->
+	</div>
 </div>
 
     <!--IN DEVELOPMENT-->
@@ -179,18 +207,20 @@
 <section class="about-me-section clearfix" id="about_me_section">
   <div class="container">
 
-    <div class="row"><!--lax--><!--data-lax-preset="rightToLeft-.05"-->
-
-
-      <div class="col-md-6">
-        <h6 class="text-grey-mid">But I also love web development, check out some of the websites I have developed below. For now most of them were within my time in my last company I worked for</h6><!--:)-->
+    <div class="row"><!--data-lax-preset="leftToRight-.05"-->
+      <div class="col-md-6 offset-md-1 mb-5 lax" data-lax-preset="driftRight-20">
+        <h6 class="text-grey-mid" style="text-align:justify;">But I also love web development, check out some of the websites I have developed below. For now most of them were done within my time at <a class="text-grey-light text-underline" href="https://www.codenation.com/" target="_blank">Code Nation</a>, the last company I worked for.</h6><!--:)-->
       </div>
 
 
-      <div class="col-md-12 mt-5 pt-5"><!--col-md-6 offset-md-6-->
+
+
+
+
+      <div class="col-md-10 offset-md-1 mt-5 pt-5 lax" data-lax-preset="driftLeft-20"><!--col-md-6 offset-md-6-->
         <div class="home-image-appear">
-          <h1 class="text-white text-uppercase" style="font-size:3rem; line-height:1.2; z-index:5000;">
-            I am a publicist and web developer from the nice city of <span class="text-white" style="cursor:pointer;">Bogotá</span>.<!--text-line-through--><!--headline soft--><!--text-underline--><!--text-decoration:line-through;-->
+          <h1 class="text-white text-uppercase" style="font-size:4rem; line-height:1.1; z-index:5000;">
+            I am a publicist and web developer from the nice city of <span class="text-white text-stroke-white" style="cursor:pointer;">Bogotá</span>.<!--text-line-through--><!--headline soft--><!--text-underline--><!--text-decoration:line-through;-->
 
             <!--<style type="text/css">
               .glitch-img-bogota {
@@ -216,8 +246,8 @@
       </div>
     </div>
     
-    <div class="row mt-5 pt-5 lax" data-lax-preset="leftToRight-.05">
-      <div class="col-md-6">
+    <div class="row mt-5 pt-5 lax"><!--data-lax-preset="leftToRight-.05"-->
+      <div class="col-md-6 offset-md-1">
         <div class="column_div text-grey-light">
           
 
@@ -286,15 +316,15 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-calle_impresores" type="image" title="Calle Impresores Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">Calle Impresores</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">Calle Impresores</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Design <span style="margin-right:1px;">&middot;</span></h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Design <span style="margin-right:1px;">&middot;</span></h6>
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -350,13 +380,13 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-injured_workers_support_network" type="image" title="Injured Workers Support Network Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">Injured Workers<br>Support Network</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">Injured Workers<br>Support Network</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -417,13 +447,13 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-give_a_dam" type="image" title="Give A Dam Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">Give A Dam</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">Give A Dam</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -474,13 +504,13 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-kimberley_clean_energy_plan" type="image" title="Kimberley Clean Energy Plan Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">Kimberley Clean<br>Energy Plan</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">Kimberley Clean<br>Energy Plan</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -536,13 +566,13 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-seed_your_future" type="image" title="Seed Your Future Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">Seed Your Future</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">Seed Your Future</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -593,13 +623,13 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-repower_australia" type="image" title="Repower Australia Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">Repower<br>Australia</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">Repower<br>Australia</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -650,15 +680,15 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-fitzroy_river_statement" type="image" title="Fitzroy River Statement Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">Fitzroy River<br>Statement</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">Fitzroy River<br>Statement</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development <span style="margin-right:1px;">&middot;</span></h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development <span style="margin-right:1px;">&middot;</span></h6>
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Design-on-the-go</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Design-on-the-go</h6>
 						
 					</div>
 				</figcaption>
@@ -714,13 +744,13 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-cultivate_oregon" type="image" title="Cultivate Oregon Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">Cultivate Oregon</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">Cultivate Oregon</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -771,13 +801,13 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-time_for_melbournes_west" type="image" title="Time for Melbourne's West Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">Time for<br>Melbourne's<br>West</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">Time for<br>Melbourne's<br>West</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -843,13 +873,13 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-alice_springs_community_garden" type="image" title="Alice Springs Community Garden Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">ASCG</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">ASCG</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -935,13 +965,13 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-healthy_futures" type="image" title="Healthy Futures Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">Healthy Futures</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">Healthy Futures</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -992,13 +1022,13 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-conservation_council_sa" type="image" title="Conservation Council SA Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">CCSA</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">CCSA</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -1049,13 +1079,13 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-australian_religious_response_to_climate_change" type="image" title="Australian Religious Response to Climate Change Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">ARRCC</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">ARRCC</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -1106,15 +1136,15 @@
 
 			<div class="project-thumbnail bg-image scale-element d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail-freshhold" type="image" title="Freshhold Consulting Website Project">
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
-					<div class="project-name align-self-start bg-white mb-2 py-2 px-3">
-						<h3 class="text-grey-dark text-uppercase m-0">Freshhold<br>Consulting</h3>
+					<div class="project-name align-self-start mb-2 py-2 px-3">
+						<h3 class="text-uppercase m-0">Freshhold<br>Consulting</h3>
 					</div>
 
-					<div class="project-roles align-self-start bg-white pt-1 px-3">
+					<div class="project-roles align-self-start pt-1 px-3">
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Design <span style="margin-right:1px;">&middot;</span></h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Design <span style="margin-right:1px;">&middot;</span></h6>
 						
-							<h6 class="font-paragraph text-grey-dark text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
+							<h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">Development</h6>
 						
 					</div>
 				</figcaption>
@@ -1609,7 +1639,7 @@
   <div class="container">
 
     <div class="text-left">
-      <p class="mb-0">Credits:</p>
+      <p class="text-bold text-uppercase mb-0">Credits</p>
 
       <p class="mb-0" title="Go check out her awesome work!">Main logos by <a class="text-white text-underline" href="#" target="_blank">Francesca Lobo</a></p>
 
