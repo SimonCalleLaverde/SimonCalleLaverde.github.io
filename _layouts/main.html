@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} bg-image theme-colour black loading" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
+  <body class="page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} bg-image theme-colour black loading rendering" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
     {% comment %}
     <div id="loader"><!--Loading--></div>
     {% endcomment %}
@@ -25,7 +25,7 @@
     <!-- include switch_color_toggler.html -->
 
 
-    <main id="middle"><!--class="viewport"--><!--data-scrollbar | For Smooth Scroll Plugin--><!--viewport | For GSAP Smooth Page Scrolling-->
+    <main id="middle"><!--id="luxy"--><!--class="viewport"--><!--data-scrollbar | For Smooth Scroll Plugin--><!--viewport | For GSAP Smooth Page Scrolling-->
       <div data-scroll>
         <!--<div id="scroll-container" class="scroll-container">--><!--For GSAP Smooth Page Scrolling-->
           <h1 class="sr-only">{{ page.title }}</h1>

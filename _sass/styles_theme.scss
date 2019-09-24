@@ -153,16 +153,21 @@ body {
   font-style:normal;
   font-size:17px;
   background-color:#FFF;//theme-color('grey-dark')
-  overflow:hidden;
+  //cursor:default;//After Loading, Including Intro Animation
+  //overflow:auto;//After Loading, Including Intro Animation
   z-index:1;
   overscroll-behavior-y:none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
   //@include transform(translateY(0));
   @include transition(all ease-out 0.3s);
   &.loading {
+    //cursor:progress;
     //@include filter(opacity(0));
   }
+  &.rendering {
+    cursor:progress;//While Loading
+    overflow:hidden;//While Loading
+  }
   &.imagesloaded {//&.render
-    overflow:auto;
     //@include filter(opacity(1));
     @include animation(backgroundTranslateAnim 0.7s ease-in 1.1s forwards);
     main {
@@ -411,29 +416,45 @@ article {
   min-height:300px;
 }
 article.project-article {
-  .project-thumbnail {
-    position:relative;
-    height:330px;
-    time.project-year {
-      position:absolute;
-      top:15%;//80%
-      right:0;
-      font-family:$font-subtitle;
-      font-weight:normal;
-      //mix-blend-mode:difference;
-      @include transform(rotate(90deg) translateY(-26px));
-      //@include transform(skewY(0deg));
+  &.home {
+    .project-thumbnail {
+      position:relative;
+      height:330px;
+      time.project-year {
+        position:absolute;
+        top:15%;//80%
+        right:0;
+        font-family:$font-subtitle;
+        font-weight:normal;
+        //mix-blend-mode:difference;
+        @include transform(rotate(90deg) translateY(-26px));
+        //@include transform(skewY(0deg));
+      }
+      figcaption.project-caption {
+        .project-name, .project-roles {
+          background-color:rgba(255,255,255,0.95)!important;
+        }
+      }
     }
-    figcaption.project-caption {
-      .project-name, .project-roles {
-        background-color:rgba(255,255,255,0.95)!important;
-
-        //white-space:normal;//nowrap
-
-        // transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-        // transform-style: preserve-3d;
-        // opacity: 1;
-
+  }
+  &.work {
+    .project-thumbnail {
+      position:relative;
+      height:330px;
+      time.project-year {
+        position:absolute;
+        top:15%;//80%
+        right:0;
+        font-family:$font-subtitle;
+        font-weight:normal;
+        //mix-blend-mode:difference;
+        @include transform(rotate(90deg) translateY(-26px));
+        //@include transform(skewY(0deg));
+      }
+      figcaption.project-caption {
+        .project-name, .project-roles {
+          background-color:rgba(255,255,255,0.95)!important;
+        }
       }
     }
   }
@@ -816,6 +837,21 @@ aside.change-features {
 //   display:none;
 // }
 
+// Hero Note
+.hero-note {
+  //width:305px;
+  height:305px;
+  font-size:13px;
+  //text-align:justify;
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+  //@include transform(rotate(90deg) translateX(-110px));
+  i.fa {
+    font-size:10px;
+    @include transform(rotate(90deg) translateY(3px));
+  }
+}
+
 //----------------------------------Section Styles----------------------------------//
 
 // // Middle
@@ -1085,9 +1121,11 @@ body.theme-colour.white {
     }
   }
   article.project-article {
-    .project-thumbnail {
-      time.project-year {
-        color:theme-color('magenta')!important;
+    &.home, &.work {
+      .project-thumbnail {
+        time.project-year {
+          color:theme-color('magenta')!important;
+        }
       }
     }
   }

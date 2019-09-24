@@ -9,7 +9,8 @@
  * http://www.codrops.com
  */
 {
-	setTimeout(() => document.body.classList.add('render'), 60);
+	setTimeout(() => document.body.classList.add('rendered'), 2800);//2200//60
+	setTimeout(() => document.body.classList.remove('rendering'), 2800);//2200//60
 	
 	imagesLoaded('img, .bg-image', { background: true }, () => {
 		document.body.classList.remove('loading');

@@ -98,7 +98,7 @@ $(document).ready(function() {
     dots: false,
     infinite: false,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 1,//3
     //slidesToScroll: 1,
     //draggable: true,//default
     //swipe: true,//default

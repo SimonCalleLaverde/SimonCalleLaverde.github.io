@@ -11126,7 +11126,6 @@ body {
   font-style: normal;
   font-size: 17px;
   background-color: #FFF;
-  overflow: hidden;
   z-index: 1;
   overscroll-behavior-y: none;
   -webkit-transition: all ease-out 0.3s;
@@ -11134,8 +11133,10 @@ body {
   -ms-transition: all ease-out 0.3s;
   -o-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s; }
+  body.rendering {
+    cursor: progress;
+    overflow: hidden; }
   body.imagesloaded {
-    overflow: auto;
     -webkit-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
     -moz-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
     -ms-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
@@ -11354,10 +11355,10 @@ article .article-caption {
 .mobile-thumbnail-control {
   min-height: 300px; }
 
-article.project-article .project-thumbnail {
+article.project-article.home .project-thumbnail {
   position: relative;
   height: 330px; }
-  article.project-article .project-thumbnail time.project-year {
+  article.project-article.home .project-thumbnail time.project-year {
     position: absolute;
     top: 15%;
     right: 0;
@@ -11368,7 +11369,23 @@ article.project-article .project-thumbnail {
     -ms-transform: rotate(90deg) translateY(-26px);
     -o-transform: rotate(90deg) translateY(-26px);
     transform: rotate(90deg) translateY(-26px); }
-  article.project-article .project-thumbnail figcaption.project-caption .project-name, article.project-article .project-thumbnail figcaption.project-caption .project-roles {
+  article.project-article.home .project-thumbnail figcaption.project-caption .project-name, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles {
+    background-color: rgba(255, 255, 255, 0.95) !important; }
+article.project-article.work .project-thumbnail {
+  position: relative;
+  height: 330px; }
+  article.project-article.work .project-thumbnail time.project-year {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    font-family: "BG regular", "Avenir Next Pro Bold", Helvetica;
+    font-weight: normal;
+    -webkit-transform: rotate(90deg) translateY(-26px);
+    -moz-transform: rotate(90deg) translateY(-26px);
+    -ms-transform: rotate(90deg) translateY(-26px);
+    -o-transform: rotate(90deg) translateY(-26px);
+    transform: rotate(90deg) translateY(-26px); }
+  article.project-article.work .project-thumbnail figcaption.project-caption .project-name, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles {
     background-color: rgba(255, 255, 255, 0.95) !important; }
 
 .flickity-carousel .main-carousel, .flickity-carousel .carousel-nav {
@@ -11616,6 +11633,19 @@ aside.change-features {
   right: auto;
   left: 170px; }
 
+.hero-note {
+  height: 305px;
+  font-size: 13px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed; }
+  .hero-note i.fa {
+    font-size: 10px;
+    -webkit-transform: rotate(90deg) translateY(3px);
+    -moz-transform: rotate(90deg) translateY(3px);
+    -ms-transform: rotate(90deg) translateY(3px);
+    -o-transform: rotate(90deg) translateY(3px);
+    transform: rotate(90deg) translateY(3px); }
+
 section.blog-page {
   padding: 30px 20px; }
 
@@ -11807,7 +11837,7 @@ body.theme-colour.white {
     color: #e75d8c !important; }
   body.theme-colour.white .nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white .nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white .nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white .nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white .nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white .nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest {
     color: #ee0a23 !important; }
-  body.theme-colour.white article.project-article .project-thumbnail time.project-year {
+  body.theme-colour.white article.project-article.home .project-thumbnail time.project-year, body.theme-colour.white article.project-article.work .project-thumbnail time.project-year {
     color: #EB0082 !important; }
   body.theme-colour.white .headline {
     -webkit-text-stroke: 2px #1A1A1A; }
@@ -12187,19 +12217,15 @@ body > main > [data-scroll] {
     padding: 50px 0; }
 
   section.about-me-section {
-    min-height: 100vh;
-    padding: 100px 0 60px; }
+    padding: 30px 0 60px; }
 
   section.home-my-work-section {
-    min-height: 100vh;
     padding: 100px 0 60px; }
 
   section.home-my-skills-section {
-    min-height: 70vh;
     padding: 80px 0 60px; }
 
   section.home-education-section {
-    min-height: 70vh;
     padding: 80px 0 60px; }
 
   section.home-five-section {
