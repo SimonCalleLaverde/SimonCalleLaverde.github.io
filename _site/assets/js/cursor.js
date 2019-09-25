@@ -21,7 +21,7 @@ $(document).mousemove(function(e) {
   // update position of cursor
   cursor.css('left', e.clientX - 25).css('top', e.clientY - 25).css('display', 'block');
   
-  const isLink = target.is('a > span > i, a > span, a > i, a > u, a > p, a > h1, a > h2, a > h3, a > h4, a > h5, a > h6, i.fa');//a::after, a::before//.nav-social-media//a
+  const isLink = target.is('a > span > i, a > span, a > i, a > u, a > p, a > h1, a > h2, a > h3, a > h4, a > h5, a > h6, i.fa.link');//a::after, a::before//.nav-social-media//a
   const isImg = target.is('img, .glitch-img, .parallax-image');
   const isProject = target.is('.project-thumbnail');//figure
   const isModal = target.is('.modal, .modal div, .modal p, .modal h1, .modal h2, .modal h3, .modal h4, .modal h5, .modal h6, .modal img, .modal a, .modal button, .modal span');

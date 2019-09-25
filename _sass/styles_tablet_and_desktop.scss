@@ -185,26 +185,41 @@
 
 	// About Me Section
 	section.about-me-section {
-	  //min-height:100vh;
-		padding:90px 0 60px;
+		padding:70px 0 60px;
+		.bogota-candelaria-image {
+			width:101.5%;
+			margin-top:-15px;//-48px
+			//@include transform(translateY(-48px));
+		}
+		.i-am-based-text {
+			margin-top:150px;
+		}
+		.cooffee-image-i {
+			width:106.5%;
+			margin-left:-6.5%;
+		}
+		.cooffee-image-ii {
+			width:106%;
+		}
+		.bogota-image-i {
+			width:101.5%;
+			margin-left:-1.5%;
+		}
 	}
 
 	// Home My Work Section
 	section.home-my-work-section {
-		//min-height:100vh;
-		padding:90px 0 60px;
+		padding:70px 0 60px;
 	}
 
 	// Home My Skills Section
 	section.home-my-skills-section {
-		//min-height:100vh;
-		padding:90px 0 60px;
+		padding:70px 0 60px;
 	}
 
 	// Home Education Section
 	section.home-education-section {
-		//min-height:70vh;
-		padding:90px 0 60px;
+		padding:70px 0 60px;
 	}
 
 	// Work Section
@@ -214,7 +229,7 @@
 
 	// Plans Section
 	section.plans-section {
-	  padding:90px 0 60px;
+	  padding:70px 0 60px;
 	}
 
 	// Footer

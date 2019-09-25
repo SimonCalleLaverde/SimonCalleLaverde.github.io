@@ -1,43 +1,63 @@
-<!--IN DEVELOPMENT | To start second section brief paragraph about what I do, photo bogota | Text moving sideways over image, text-stroke only over image, different layers-->
-
 <section class="about-me-section clearfix" id="about_me_section">
   <div class="container">
 
-    <div class="row"><!--data-lax-preset="leftToRight-.05"-->
-      <div class="col-md-6 offset-md-1 mb-5 lax" data-lax-preset="driftRight-20">
-        <h6 class="text-grey-mid">I love web development, check out some of the websites I have developed below. For now most of them were done within my time at <a class="text-grey-light text-underline" href="https://www.codenation.com/" target="_blank" title="Check out their amazing work and contact them for any cool campaigning related project">Code Nation</a>, an Australian 5 star rated digital agency specialized in campaigning platforms which help big communities engage in big actions. I worked there for the past 4 years. I'm hoping to transitions with time to showcase some more of my independent work and new business and branding related projects.</h6>
-      </div>
-
-
-
-
-
-
-      <div class="col-md-10 offset-md-1 mt-5 pt-5 lax" data-lax-preset="driftLeft-20">
-        <div class="home-image-appear">
-          <h1 class="text-white text-uppercase" style="font-size:4rem; line-height:1.1; z-index:5000;">
-            I am a publicist and web developer from the nice city of <span class="text-white text-stroke-white" style="cursor:pointer;">Bogotá</span>.<!--text-line-through--><!--headline soft--><!--text-underline--><!--text-decoration:line-through;-->
-
-            
-            <img class="image-bogota lax" src="uploads/bogota-candelaria-image.jpg">
+    <div class="row">
+      <div class="col-md-8 mt-5 pt-5">
+        <div class="position-relative">
+          <h1 class="text-white text-uppercase ml-5 lax" style="font-size:5rem; line-height:1;" data-lax-preset="driftRight-10">
+            City of<br>Bogotá.
           </h1>
+          
+          <div class="bogota-candelaria-image rellax" data-rellax-speed="0.35">
+            <img src="uploads/bogota-candelaria-image.jpg">
+          </div>
+          
+          <h1 class="text-stroke-white text-uppercase ml-5 lax" style="position:absolute; top:0; left:0; font-size:5rem; line-height:1;" data-lax-preset="driftRight-10">
+            City of<br>Bogotá.
+          </h1>
+        </div>
+      </div>
 
-
-
-          <h1 class="headline soft text-uppercase d-none" style="position:absolute; font-size:4rem; line-height:1.1; z-index:5001;"><!--lax--><!--data-lax-preset="driftRight"-->I am a publicist and web developer from the nice city of Bogotá</h1>
+      <div class="col-md-4 d-flex flex-row align-items-center justify-content-center">
+        <div class="i-am-based-text p-5 rellax" data-rellax-speed="-0.4">
+          <h6 class="text-white text-uppercase px-2">I am based in the nice city of Bogotá, Colombia</h6>
         </div>
       </div>
     </div>
-    
-    <div class="row mt-5 pt-5 lax"><!--data-lax-preset="leftToRight-.05"-->
-      <div class="col-md-6 offset-md-1">
-        <div class="column_div text-grey-light">
-          {% comment %}
-          {{ content }}
-          {% endcomment %}
+
+    <div class="row">
+      <div class="col-md-4 mt-5 pt-4">
+        <div class="cooffee-image-ii mt-4 rellax" data-rellax-speed="-0.2">
+          <img src="uploads/coffee-image-ii.jpg">
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-5 pt-4">
+        <div class="i-am-based-text p-5">
+          <h6 class="text-white text-uppercase">Where some of the best coffee in the world comes from, you know</h6>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-5 pt-4">
+        <div class="cooffee-image-i rellax" data-rellax-speed="0.2">
+          <img src="uploads/coffee-image-i.jpg">
         </div>
       </div>
     </div>
-    
+
+    <div class="row">
+      <div class="col-md-4 mt-5 pt-4">
+        <div class="i-am-based-text p-5">
+          <h6 class="text-white text-uppercase px-4">And this is my city, with our two or three skyscrapers :) ya know</h6>
+        </div>
+      </div>
+
+      <div class="col-md-8 mt-5 pt-5">
+        <div class="bogota-image-i">
+          <img src="uploads/bogota-image-i.jpg">
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>

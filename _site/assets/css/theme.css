@@ -11360,6 +11360,10 @@ a {
     color: #FFF;
     -webkit-text-stroke: 2px #FFF; }
 
+.text-huge {
+  font-size: 5rem;
+  line-height: 1; }
+
 input.text, textarea.textarea, .form-group > select {
   height: 40px;
   padding: 8px 15px;
@@ -11554,12 +11558,14 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     -ms-transition: all linear 0.5s;
     -o-transition: all linear 0.5s;
     transition: all linear 0.5s; }
-  .text-line-through.websites-text:after {
+  .text-line-through.text-websites:after {
     -webkit-animation: textLineThroughAnim 5s linear 3.2s infinite;
     -moz-animation: textLineThroughAnim 5s linear 3.2s infinite;
     -ms-animation: textLineThroughAnim 5s linear 3.2s infinite;
     -o-animation: textLineThroughAnim 5s linear 3.2s infinite;
     animation: textLineThroughAnim 5s linear 3.2s infinite; }
+  .text-line-through.text-huge {
+    height: 8px; }
 
 a:hover.text-line-through:after {
   background-color: transparent; }
@@ -11602,9 +11608,11 @@ a:hover.text-line-through:before {
   color: transparent !important; }
 
 .text-stroke-white {
+  color: transparent !important;
   -webkit-text-stroke: 2px #FFF !important; }
 
 .text-stroke-magenta {
+  color: transparent !important;
   -webkit-text-stroke: 2px #EB0082 !important; }
 
 aside.change-features {
@@ -11639,19 +11647,26 @@ aside.change-features {
     -o-filter: opacity(1);
     filter: opacity(1); }
 
+.show-it, .hide-it {
+  -webkit-transition: filter ease-out 0.5s;
+  -moz-transition: filter ease-out 0.5s;
+  -ms-transition: filter ease-out 0.5s;
+  -o-transition: filter ease-out 0.5s;
+  transition: filter ease-out 0.5s; }
+
 .show-it {
-  -webkit-animation: fadeInAnim 0.5s ease-out forwards;
-  -moz-animation: fadeInAnim 0.5s ease-out forwards;
-  -ms-animation: fadeInAnim 0.5s ease-out forwards;
-  -o-animation: fadeInAnim 0.5s ease-out forwards;
-  animation: fadeInAnim 0.5s ease-out forwards; }
+  -webkit-filter: opacity(1) !important;
+  -moz-filter: opacity(1) !important;
+  -ms-filter: opacity(1) !important;
+  -o-filter: opacity(1) !important;
+  filter: opacity(1) !important; }
 
 .hide-it {
-  -webkit-animation: fadeOutAnim 0.5s ease-out forwards;
-  -moz-animation: fadeOutAnim 0.5s ease-out forwards;
-  -ms-animation: fadeOutAnim 0.5s ease-out forwards;
-  -o-animation: fadeOutAnim 0.5s ease-out forwards;
-  animation: fadeOutAnim 0.5s ease-out forwards; }
+  -webkit-filter: opacity(0) !important;
+  -moz-filter: opacity(0) !important;
+  -ms-filter: opacity(0) !important;
+  -o-filter: opacity(0) !important;
+  filter: opacity(0) !important; }
 
 .slick-carousel .slick-slide {
   outline: none; }
@@ -12185,22 +12200,35 @@ body.imagesloaded:after {
     padding: 50px 0; }
 
   section.about-me-section {
-    padding: 90px 0 60px; }
+    padding: 70px 0 60px; }
+    section.about-me-section .bogota-candelaria-image {
+      width: 101.5%;
+      margin-top: -15px; }
+    section.about-me-section .i-am-based-text {
+      margin-top: 150px; }
+    section.about-me-section .cooffee-image-i {
+      width: 106.5%;
+      margin-left: -6.5%; }
+    section.about-me-section .cooffee-image-ii {
+      width: 106%; }
+    section.about-me-section .bogota-image-i {
+      width: 101.5%;
+      margin-left: -1.5%; }
 
   section.home-my-work-section {
-    padding: 90px 0 60px; }
+    padding: 70px 0 60px; }
 
   section.home-my-skills-section {
-    padding: 90px 0 60px; }
+    padding: 70px 0 60px; }
 
   section.home-education-section {
-    padding: 90px 0 60px; }
+    padding: 70px 0 60px; }
 
   section.work-section {
     padding: 0; }
 
   section.plans-section {
-    padding: 90px 0 60px; }
+    padding: 70px 0 60px; }
 
   footer {
     min-height: 100vh; }

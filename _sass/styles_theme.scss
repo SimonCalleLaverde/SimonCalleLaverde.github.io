@@ -409,6 +409,10 @@ a {
     -webkit-text-stroke:2px #FFF;
   }
 }
+.text-huge {
+  font-size:5rem;
+  line-height:1;
+}
 
 // Forms
 input.text, textarea.textarea, .form-group > select {
@@ -720,16 +724,19 @@ span.fa-stack {
     @include animation(none);
     @include transition(all linear 0.5s);
   }
-  &.websites-text {
+  &.text-websites {
     &:after {
       @include animation(textLineThroughAnim 5s linear 3.2s infinite);//ease-in-out
     }
+  }
+  &.text-huge {
+    height:8px;
   }
 }
 a {
   &:hover {
     &.text-line-through {
-      //&.branding-text, &.websites-text {
+      //&.text-branding, &.text-websites {
         &:after {
           background-color:transparent;
         }
@@ -772,12 +779,14 @@ a {
 
 // Text Stroke
 .text-transparent {
-  color:transparent!important;
+  color:transparent!important;//To Remove
 }
 .text-stroke-white {
+  color:transparent!important;
   -webkit-text-stroke:2px #FFF!important;
 }
 .text-stroke-magenta {
+  color:transparent!important;
   -webkit-text-stroke:2px theme-color('magenta')!important;
 }
 
@@ -809,15 +818,15 @@ aside.change-features {
 
 // Show It & Hide It
 .show-it, .hide-it {
-  //@include transition(filter ease-out 0.5s);
+  @include transition(filter ease-out 0.5s);
 }
 .show-it {
-  @include animation(fadeInAnim 0.5s ease-out forwards);
-  //@include filter(opacity(1)!important);
+  //@include animation(fadeInAnim 0.5s ease-out forwards);
+  @include filter(opacity(1)!important);
 }
 .hide-it {
-  @include animation(fadeOutAnim 0.5s ease-out forwards);
-  //@include filter(opacity(0)!important);
+  //@include animation(fadeOutAnim 0.5s ease-out forwards);
+  @include filter(opacity(0)!important);
 }
 
 // Slick Carousel
@@ -1352,10 +1361,6 @@ body {
   --blend-color-3:transparent;
   --blend-color-4:transparent;
   --blend-color-5:theme-color('magenta');
-  // &.bogota-picture {
-  //   --glitch-width:110%;
-  //   --glitch-height:400px;
-  // }
 }
 .glitch-img {
   position: absolute;

@@ -55,9 +55,9 @@ $(function() {
     var scrollFromTop = $(window).scrollTop();
 
     if (scrollFromTop >= 300) {
-      hideThisDivs.addClass("hide-it");
+      hideThisDivs.addClass("hide-it").removeClass("show-it");
     } else if (scrollFromTop <= 300) {
-      hideThisDivs.removeClass("hide-it");
+      hideThisDivs.removeClass("hide-it").addClass("show-it");
     }
   });
 });
