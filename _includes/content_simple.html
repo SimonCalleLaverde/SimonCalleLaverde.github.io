@@ -1,19 +1,31 @@
 <section class="content-simple px-4 px-md-0 pt-4more pb-3 py-md-5 clearfix">
   <div class="container">
 
-    <!--Desktop-->
-    <h3 class="headline text-grey-light text-uppercase mb-4 pb-3 d-none d-md-block">{{ page.headline | default:page.title }}</h3>
-    <!--Mobile-->
-    <h4 class="headline text-grey-light text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">{{ page.headline | default:page.title }}</h4>
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
 
-    <!--Desktop-->
-    <div class="intro column_div d-none d-md-block"><!--id="column_div"-->
-      {{ content }}
-    </div>
-    <!--Mobile-->
-    <div class="intro d-block d-md-none" aria-hidden="true">
-      {{ content }}
-    </div>
+        <!--Desktop-->
+        <a class="smoothScroll mb-4 d-none d-md-inline-block" href="#work_section">
+          <h3 class="headline text-uppercase mb-4 pb-3" style="font-size:6rem; line-height:1.1;">{{ page.headline | default:page.title }}</h3>
+        </a>
 
+        <!--Mobile-->
+        <a class="smoothScroll mb-3 d-inline-block d-md-none" href="#work_section">
+          <h4 class="headline text-uppercase mb-3 pb-1" aria-hidden="true">{{ page.headline | default:page.title }}</h4>
+        </a>
+
+        <!--Desktop-->
+        <div class="intro column_div d-none d-md-block">
+          {{ content }}
+        </div>
+        
+        <!--Mobile-->
+        <div class="intro d-block d-md-none" aria-hidden="true">
+          {{ content }}
+        </div>
+
+      </div>
+    </div>
+    
   </div>
 </section>

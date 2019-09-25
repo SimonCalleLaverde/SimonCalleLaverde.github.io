@@ -4,11 +4,8 @@
   {% include head.html %}
 
   <body class="page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} bg-image theme-colour black loading rendering" data-spy="scroll" data-target="#navbar" data-offset="80"><!--data-target=".navbar"--><!--data-offset="50"-->
-    {% comment %}
-    <div id="loader"><!--Loading--></div>
-    {% endcomment %}
 
-    {% include grid.html %}
+    <!--<div id="loader">Loading</div>-->
 
     {% include cursor.html %}
 
@@ -19,30 +16,25 @@
     {% include copyright.html %}
 
     {% include nav.html %}
+    
+    <main id="main">
+      {% include grid.html %}
 
-    {% if page.header_image.size > 0 %}
-      {% include header_image.html %}
-    {% endif %}
+      <div class="scroll-container" data-scroll>
+        <h1 class="sr-only">{{ page.title }}</h1>
+        
+        {% if page.header_image.size > 0 %}
+          {% include header_image.html %}
+        {% endif %}
+        
+        {{ content }}
 
-    <!-- include switch_color_toggler.html -->
+        {% include footer.html %}
 
-
-    <main id="middle"><!--id="luxy"--><!--class="viewport"--><!--data-scrollbar | For Smooth Scroll Plugin--><!--viewport | For GSAP Smooth Page Scrolling-->
-      <div data-scroll>
-        <!--<div id="scroll-container" class="scroll-container">--><!--For GSAP Smooth Page Scrolling-->
-          <h1 class="sr-only">{{ page.title }}</h1>
-          
-          
-          {{ content }}
-
-          {% include footer.html %}
-
-          {% include scripts.html %}
-        <!--</div>-->
+        {% include scripts.html %}
       </div>
     </main>
 
-    
     {% include work/work_project_modal.html %}
 
     {% include mobile_dev_notice.html %}

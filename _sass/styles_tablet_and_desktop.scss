@@ -25,10 +25,13 @@
   // Columnizer
   #column_div, .column_div {
     .first.column {
-      padding-right:20px;
+    	width:70%!important;//
+    	padding-left:5px;//
+      padding-right:40px;//20px
     }
     .last.column {
-      padding-left:20px;
+    	width:30%!important;//
+      padding-left:40px;//20px
     }
   }
 
@@ -69,36 +72,6 @@
 	  }
 	}
 
-	// Grid
-	#grid {
-		position:fixed;
-		top:0;
-		right:0;
-		bottom:0;
-		left:0;
-		pointer-events:none;
-		z-index:13000;
-		.container {
-			// border-left:0.5px solid rgba(255,255,255,0.1);
-			// border-right:0.5px solid rgba(255,255,255,0.1);
-			.row {
-				div {
-					position:relative;
-					.grid-element {
-						height:100vh;
-						border-right:0.5px solid rgba(255,255,255,0.1);
-					}
-					&:first-child {
-						.grid-element {
-							border-left:0.5px solid rgba(255,255,255,0.1);
-							border-right:none;
-						}
-					}
-				}
-			}
-		}
-	}
-
 	//------------------Section Styles------------------//
 
 	// Nav Desktop
@@ -111,7 +84,7 @@
 		//mix-blend-mode:difference;
 		@include transform(rotateZ(90deg) translateY(10px));
   	@include transform-origin(0% 0%);
-    @include transition(all 1000ms cubic-bezier(0.77,0,0.175,1));
+    //@include transition(all 1000ms cubic-bezier(0.77,0,0.175,1));
     //@include animation(fadeInAnimation 3s ease-in);
     ul.navbar-nav {
     	li.nav-item {
@@ -186,11 +159,7 @@
 		}
 	}
 
-	// Middle
-  main#middle {
-  }
-
-  // Blog Page
+	// Blog Page
 	section.blog-page {
 	  padding:50px 0 25px;
 	}

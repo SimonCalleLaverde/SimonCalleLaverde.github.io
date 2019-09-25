@@ -251,32 +251,53 @@ figure {
   }
 }
 
-// Main, Header, Section
-main, header, section {
+// Main, Header, Section, Footer
+main, header, section, footer {
   position:relative;
-  background-color:theme-color('grey-dark');
-  text-align:center;
-  @include transition(all ease-in-out 0.3s);
 }
 main {
-  // &.viewport {
-  //   position:fixed;//For GSAP Smooth Page Scrolling
-  //   width:100%;//For GSAP Smooth Page Scrolling
-  //   height:100%;//For GSAP Smooth Page Scrolling
-  //   top:0;//For GSAP Smooth Page Scrolling
-  //   right:0;//For GSAP Smooth Page Scrolling
-  //   bottom:0;//For GSAP Smooth Page Scrolling
-  //   left:0;//For GSAP Smooth Page Scrolling
-  //   overflow:hidden;//For GSAP Smooth Page Scrolling
-  //   .scroll-container {//For GSAP Smooth Page Scrolling
-  //     position:absolute;  
-  //     width:100%;//#My Addition | For GSAP Smooth Page Scrolling
-  //     overflow:hidden;
-  //     z-index:10;
-  //     transform-style:preserve-3d;
-  //     backface-visibility:hidden;
-  //   }
-  // }
+  background-color:theme-color('grey-dark');
+  text-align:center;
+  z-index:2;
+  @include transition(all ease-in-out 0.3s);
+  #grid {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    pointer-events:none;
+    z-index:3;
+    .container {
+      // border-left:0.5px solid rgba(255,255,255,0.1);
+      // border-right:0.5px solid rgba(255,255,255,0.1);
+      .row {
+        div {
+          position:relative;
+          .grid-element {
+            height:100vh;
+            border-right:0.5px solid rgba(255,255,255,0.1);
+          }
+          &:first-child {
+            .grid-element {
+              border-left:0.5px solid rgba(255,255,255,0.1);
+              border-right:none;
+            }
+          }
+        }
+      }
+    }
+  }
+  > .scroll-container, > [data-scroll] {
+    position:fixed;//So it remains above #grid
+    width:100%;//As it is fixed
+    z-index:4;
+  }
+}
+
+// Nav Social Media, Copyright, Change Features, Navbar {
+aside.nav-social-media, .copyright, aside.change-features, nav.navbar {
+  z-index:6000;
 }
 
 // Header Image
@@ -416,6 +437,7 @@ input.text, textarea.textarea, .form-group > select {
   min-height:300px;
 }
 article.project-article {
+  z-index:100;
   &.home {
     .project-thumbnail {
       position:relative;
@@ -439,6 +461,8 @@ article.project-article {
     }
   }
   &.work {
+    margin-bottom:104px;
+    will-change:scroll-position;//transform
     .project-thumbnail {
       position:relative;
       height:330px;
@@ -857,10 +881,6 @@ aside.change-features {
 
 //----------------------------------Section Styles----------------------------------//
 
-// // Middle
-// main#middle {
-// }
-
 // Blog Page
 section.blog-page {
   padding:30px 20px;
@@ -879,46 +899,6 @@ section.feedback-page {
 // Home Hello Header
 header.home-hello-header {
   padding-top:30px 20px;//To revise mobile
-  .home-image-appear {
-    height:300px;
-    .bogota-picture {//, img.image-bogota
-      position:absolute;
-      width:100vw;//120%
-      top:-90px;//-175px
-      left:-303px;//-80px
-      z-index:4500;
-      pointer-events:none;
-      @include border-radius(0.3rem);
-      @include filter(opacity(0));
-      @include transform(scale(0.2));//translateY(-40px) rotate(0)
-      @include transition(transform ease-out 0.5s);
-    }
-    .bogota-picture {
-      height:320px;//450px
-    }
-    h1, h2, h3, h4, h5, h6 {
-      > span {
-        //@include animation(linkPulse 0.5s infinite alternate);
-        &:hover {
-          ~ .bogota-picture {//, ~ img.image-bogota
-            @include filter(opacity(0.8));
-            @include transform(scale(1));//translateY(0) rotate(-2deg)
-          }
-        }
-      }
-    }
-  }
-  .bogota-picture-cover {
-
-    display:none;//Tired of it
-
-    position:absolute!important;
-    width:40vw;
-    height:75vh;
-    top:12.5vh;
-    right:0;
-    z-index:4000;
-  }
 }
 
 // About Me Section
@@ -988,27 +968,26 @@ footer {
   }
 
   .plans-text {
-    position:relative;
-    &:after {
-      content:"";
-      position:absolute;
-      width:100%;
-      height:0;
-      bottom:12%;
-      left:0;
-      background-color:#FFF;
-      //mix-blend-mode:difference;
-      @include filter(opacity(0.5));
-      @include transition(all ease-out 0.15s);
-    }
-    &:hover {
-      &:after {
-        height:76%;
-        //@include animation(textPaintAnim 0.3s ease-in);//infinite
-      }
-    }
+    // position:relative;
+    // &:after {
+    //   content:"";
+    //   position:absolute;
+    //   width:100%;
+    //   height:0;
+    //   bottom:12%;
+    //   left:0;
+    //   background-color:#FFF;
+    //   //mix-blend-mode:difference;
+    //   @include filter(opacity(0.5));
+    //   @include transition(all ease-out 0.15s);
+    // }
+    // &:hover {
+    //   &:after {
+    //     height:76%;
+    //     //@include animation(textPaintAnim 0.3s ease-in);//infinite
+    //   }
+    // }
   }
-
 }
 
 //----------------------------------Page Styles----------------------------------//
@@ -1031,8 +1010,7 @@ body.page-type-basic.work {
 
 // Theme Colour White
 body.theme-colour.white {
-  background-color:theme-color('grey-light');
-  main, header, section {
+  main {
     background-color:theme-color('grey-light');
   }
   .text-white, .text-grey-light, .text-grey-mid {
@@ -1046,6 +1024,9 @@ body.theme-colour.white {
   }
   .copyright {
     color:theme-color('grey-light')!important;
+  }
+  .intro {
+    color:#000;
   }
   a {
     > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
@@ -1162,7 +1143,7 @@ body.theme-colour.white {
 
 // Cursor
 a {
-  > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
+  > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {//> figure
     &:hover {
       cursor:none;
     }
@@ -1231,7 +1212,7 @@ i.fa {
     }
   }
   &.hoveredProject {
-    @include transition(all ease-out 0.3s);
+    @include transition(all ease-out 0.2s);
     @include animation(fa-spin 5s linear infinite);
     &:before {
       content:"View It";
@@ -1277,7 +1258,7 @@ i.fa {
 // Page Loader
 body {
   &:before {
-    content:"Don't spend a small effort for a big result";//A website made with \f004
+    content:"";//Don't spend a small effort for a big result//A website made with \f004
     position:fixed;
     display:flex;//To add prefixes
     flex-direction:row;//To add prefixes
@@ -1309,7 +1290,7 @@ body {
       width:60px;
       height:60px;
       margin:-30px 0 0 -30px;
-      margin-top:-110px;
+      //margin-top:-110px;
       top:50%;
       left:50%;
       background-color:theme-color('magenta');//#FFF//theme-color('goldy');
@@ -1326,17 +1307,27 @@ body {
       @include animation(loaderBeforeGoAwayAnim 1.5s ease-in forwards);
     }
     &:after {
-      display:none;
+      //display:none;
+      opacity:0;//Can't filter(opacity(0)) as transform is being used in animation
+      @include transition(all ease-out 0.3s);
       //@include animation(loaderAfterGoAwayAnim 1.3s ease-in forwards);
     }
   }
 }
+@include media-breakpoint-down(md) {
+  body {
+    //&.loading {
+      &:after {
+      }
+    //}
+  }
+}//@media
 
 // Data Scroll (Div)
 body {
   > main {
     > [data-scroll] {
-      will-change:transform;
+      //will-change:transform;
     }
   }
 }
@@ -1408,7 +1399,7 @@ body {
   animation-name: glitch-anim-flash;
 }
 
-//------------------Other Media Queries------------------//
+//----------------------------------Other Media Queries----------------------------------//
 
 // Mobile Dev Notice
 @include media-breakpoint-down(lg) {
