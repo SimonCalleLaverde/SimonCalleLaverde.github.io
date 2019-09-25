@@ -288,8 +288,8 @@ main {
       }
     }
   }
-  > .scroll-container, > [data-scroll] {
-    position:fixed;//So it remains above #grid
+  > .luxury-scroll-container, > [data-scroll] {
+    position:absolute;//So it remains above #grid
     width:100%;//As it is fixed
     z-index:4;
   }

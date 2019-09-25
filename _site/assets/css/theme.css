@@ -11263,8 +11263,8 @@ main {
       main #grid .container .row div:first-child .grid-element {
         border-left: 0.5px solid rgba(255, 255, 255, 0.1);
         border-right: none; }
-  main > .scroll-container, main > [data-scroll] {
-    position: fixed;
+  main > .luxury-scroll-container, main > [data-scroll] {
+    position: absolute;
     width: 100%;
     z-index: 4; }
 
