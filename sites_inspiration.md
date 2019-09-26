@@ -67,8 +67,6 @@ thumbnail_image: ""
 <a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
-<a href="..."></a>
-<a href="..."></a>
 -->
 
 <h1>Plugins</h1>
@@ -84,6 +82,8 @@ thumbnail_image: ""
 <a href="https://codepen.io/MathieuRichard/pen/LrHeD">Loader Blend Text White Background</a>
 <a href="https://codepen.io/WhiteWolfWizard/pen/vorqj">Loader Dots</a>
 <a href="codepen.io/ispal/pen/mVaaJe">Stairs Dot Loader</a>
+<a href="https://www.jqueryscript.net/other/Custom-Cursor-jQuery-CSS3.html">Nice Following Dot Custom Cursor, Already Tested</a>
+<a href="https://creativesfeed.com/custom-cursor-styling/">Nice 4 Custom Cursors, To Be Tested # 2</a>
 
 <h1>Platforms</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY">GitHub Pages</a>

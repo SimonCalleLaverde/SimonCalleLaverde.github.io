@@ -1,10 +1,24 @@
-// EXAMPLE 7
-// http://ahrengot.com/tutorials/greensock-javascript-animation
+// // EXAMPLE 1 (https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow)
+// const cursor = document.querySelector('.cursor');
 
-var $circle = $('.circle');
+// document.addEventListener('mousemove', e => {
+//  //console.log(e);
+//  cursor.setAttribute("style", "display:block; top:"+(e.pageY - 25)+"px; left:"+(e.pageX - 25)+"px;");
+// })
+
+// document.addEventListener('click', () => {
+//  cursor.classList.add("cursor-on-click");
+//  setTimeout(() => {
+//    cursor.classList.remove("cursor-on-click");
+//  }, 500)
+// })
+
+// EXAMPLE 7 (https://greensock.com/forums/topic/19789-follow-by-mouse/)
+// http://ahrengot.com/tutorials/greensock-javascript-animation
+var $cursor = $('.cursor');
 
 function moveCircle(e) {
-    TweenLite.to($circle, 0.3, {
+    TweenLite.to($cursor, 0.3, {
     css: {
       x: e.clientX,
       y: e.clientY
@@ -14,46 +28,18 @@ function moveCircle(e) {
 
 $(window).on('mousemove', moveCircle);
 
-
-
-
-// // EXAMPLE 6 (https://www.jqueryscript.net/other/Custom-Cursor-jQuery-CSS3.html)
-// $(document).mousemove(function(e) {
-//   $('.cursor').eq(0).css({left:e.clientX, top:e.clientY});
-//   setTimeout(function() {
-//     $('.cursor').eq(1).css({left:e.clientX, top:e.clientY});
-//   }, 100);
-// })
-
-// // EXAMPLE 1 (https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow)
-// const cursor = document.querySelector('.cursor');
-
-// document.addEventListener('mousemove', e => {
-// 	//console.log(e);
-// 	cursor.setAttribute("style", "display:block; top:"+(e.pageY - 25)+"px; left:"+(e.pageX - 25)+"px;");
-// })
-
-// document.addEventListener('click', () => {
-// 	cursor.classList.add("cursor-on-click");
-// 	setTimeout(() => {
-// 		cursor.classList.remove("cursor-on-click");
-// 	}, 500)
-// })
-
 // EXAMPLE 2 (https://stackoverflow.com/questions/51281666/animate-custom-cursor-when-hovering-on-a-link)
 $(document).mousemove(function(e) {
-  const cursor = $('.circle');
+  const cursor = $('.cursor');
   const target = $(event.target);
   
-  // update position of cursor
+  // update position of cursor // # As Css Transition Lag Issue Started, Now Using GSAP Above Code For Positioning
   cursor.css('display', 'block');//cursor.css('left', e.clientX - 25).css('top', e.clientY - 25).css('display', 'block');
 
-
-  // setTimeout(function() {// # My custom code with timeout, following above version, to create delay
+  // setTimeout(function() {// # My Custom Code With Timeout, Following Example 6, To Simulate Delay With setTimeout
   //   cursor.css('left', e.clientX - 25).css('top', e.clientY - 25).css('display', 'block');
   // }, 50);
 
-  
   const isLink = target.is('a > span > i, a > span, a > i, a > u, a > p, a > h1, a > h2, a > h3, a > h4, a > h5, a > h6, i.fa.link');//a::after, a::before//.nav-social-media//a
   const isImg = target.is('img, .glitch-img, .parallax-image');
   const isProject = target.is('.project-thumbnail');//figure
@@ -138,3 +124,13 @@ $(document).mouseenter(function(e) {
 //   ball.attr("cx", pos.x);
 //   ball.attr("cy", pos.y);
 // }
+
+// EXAMPLE 5 (Was A Youtube Code I Tested | https://www.youtube.com/watch?v=r3I04RXsvYA)
+
+// // EXAMPLE 6 (https://www.jqueryscript.net/other/Custom-Cursor-jQuery-CSS3.html)
+// $(document).mousemove(function(e) {
+//   $('.cursor').eq(0).css({left:e.clientX, top:e.clientY});
+//   setTimeout(function() {
+//     $('.cursor').eq(1).css({left:e.clientX, top:e.clientY});
+//   }, 100);
+// })

@@ -11825,43 +11825,24 @@ body.theme-colour.white .text-line-through:after, body.theme-colour.white .text-
 body.theme-colour.white a:hover.text-line-through:after {
   background-color: transparent; }
 
-a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover {
-  cursor: none; }
-
-i.fa:hover {
-  cursor: none; }
-
-.circle {
-  width: 60px;
-  height: 60px;
+.cursor {
+  display: none;
   position: fixed;
-  top: -30px;
-  left: -30px;
-  background-color: #FFF;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: -25px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  z-index: 11000;
+  pointer-events: none;
   mix-blend-mode: difference;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 11000; }
-
-.cursor, .circle {
-  display: none;
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border: 1px solid transparent;
-  z-index: 11000;
-  pointer-events: none;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   border-radius: 50%; }
-  .cursor:before, .cursor:after, .circle:before, .circle:after {
+  .cursor:before, .cursor:after {
     content: "";
     position: absolute;
     width: 50px;
@@ -11875,7 +11856,7 @@ i.fa:hover {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%; }
-  .cursor:before, .circle:before {
+  .cursor:before {
     padding-top: 40px;
     font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
     font-weight: 500;
@@ -11892,29 +11873,23 @@ i.fa:hover {
     -ms-transition: none;
     -o-transition: none;
     transition: none; }
-  .cursor:after, .circle:after {
+  .cursor:after {
     z-index: 11001;
     -webkit-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
     -moz-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
     -ms-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
     -o-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
     transition: background-color ease-out 0.3s, transform ease-out 0.3s; }
-  .cursor.hoveredLink, .circle.hoveredLink {
-    mix-blend-mode: difference; }
-    .cursor.hoveredLink:after, .circle.hoveredLink:after {
-      background-color: #FFF;
-      -webkit-transform: scale(2.2);
-      -moz-transform: scale(2.2);
-      -ms-transform: scale(2.2);
-      -o-transform: scale(2.2);
-      transform: scale(2.2); }
-  .cursor.hoveredProject, .circle.hoveredProject {
-    -webkit-animation: fa-spin 5s linear infinite;
-    -moz-animation: fa-spin 5s linear infinite;
-    -ms-animation: fa-spin 5s linear infinite;
-    -o-animation: fa-spin 5s linear infinite;
-    animation: fa-spin 5s linear infinite; }
-    .cursor.hoveredProject:before, .circle.hoveredProject:before {
+  .cursor.hoveredLink:after {
+    background-color: #FFF;
+    -webkit-transform: scale(2.2);
+    -moz-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -o-transform: scale(2.2);
+    transform: scale(2.2); }
+  .cursor.hoveredProject {
+    mix-blend-mode: normal; }
+    .cursor.hoveredProject:before {
       content: "View It";
       width: 100px;
       height: 100px;
@@ -11925,7 +11900,7 @@ i.fa:hover {
       -ms-transform: translateY(-25px) translateX(-25px);
       -o-transform: translateY(-25px) translateX(-25px);
       transform: translateY(-25px) translateX(-25px); }
-  .cursor.hoveredModal:after, .circle.hoveredModal:after {
+  .cursor.hoveredModal:after {
     border-color: #000; }
 
 @media (pointer: coarse) and (hover: none) {
@@ -12224,13 +12199,13 @@ body.imagesloaded:after {
       margin-left: -1.5%; }
 
   section.home-my-work-section {
-    padding: 70px 0 60px; }
+    padding: 100px 0 60px; }
 
   section.home-my-skills-section {
-    padding: 70px 0 60px; }
+    padding: 100px 0 60px; }
 
   section.home-education-section {
-    padding: 70px 0 60px; }
+    padding: 100px 0 60px; }
 
   section.work-section {
     padding: 0; }
