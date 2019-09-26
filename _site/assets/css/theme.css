@@ -11825,6 +11825,12 @@ body.theme-colour.white .text-line-through:after, body.theme-colour.white .text-
 body.theme-colour.white a:hover.text-line-through:after {
   background-color: transparent; }
 
+a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover, a .project-thumbnail:hover {
+  cursor: none; }
+
+i.fa:hover {
+  cursor: none; }
+
 .cursor {
   display: none;
   position: fixed;
@@ -11893,13 +11899,15 @@ body.theme-colour.white a:hover.text-line-through:after {
       content: "View It";
       width: 100px;
       height: 100px;
+      top: -25px;
+      left: -25px;
       background-color: #EB0082;
       border-color: #EB0082;
-      -webkit-transform: translateY(-25px) translateX(-25px);
-      -moz-transform: translateY(-25px) translateX(-25px);
-      -ms-transform: translateY(-25px) translateX(-25px);
-      -o-transform: translateY(-25px) translateX(-25px);
-      transform: translateY(-25px) translateX(-25px); }
+      -webkit-animation: fa-spin 5s linear infinite;
+      -moz-animation: fa-spin 5s linear infinite;
+      -ms-animation: fa-spin 5s linear infinite;
+      -o-animation: fa-spin 5s linear infinite;
+      animation: fa-spin 5s linear infinite; }
   .cursor.hoveredModal:after {
     border-color: #000; }
 

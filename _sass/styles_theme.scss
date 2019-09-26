@@ -1200,13 +1200,13 @@ body.theme-colour.white {
 a {
   > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6, .project-thumbnail {//> figure
     &:hover {
-      //cursor:none;
+      cursor:none;
     }
   }
 }
 i.fa {
   &:hover {
-    //cursor:none;
+    cursor:none;
   }
 }
 
@@ -1272,10 +1272,12 @@ i.fa {
       content:"View It";
       width:100px;
       height:100px;
+      top:-25px;//New | For GSAP Positioning
+      left:-25px;//New | For GSAP Positioning
       background-color:theme-color('magenta');
       border-color:theme-color('magenta');
-      @include transform(translateY(-25px) translateX(-25px));
-      //@include animation(fa-spin 5s linear infinite);
+      //@include transform(translateY(-25px) translateX(-25px));
+      @include animation(fa-spin 5s linear infinite);
     }
   }
   &.hoveredModal {
