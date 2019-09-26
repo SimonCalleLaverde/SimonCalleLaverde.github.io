@@ -11363,6 +11363,10 @@ a {
 .text-huge {
   font-size: 5rem;
   line-height: 1; }
+  .text-huge .text-line-through:before, .text-huge .text-line-through:after {
+    height: 7px; }
+  .text-huge .text-line-through:hover:before {
+    display: none; }
 
 input.text, textarea.textarea, .form-group > select {
   height: 40px;
@@ -11384,7 +11388,7 @@ article.project-article {
   z-index: 100; }
   article.project-article.home .project-thumbnail {
     position: relative;
-    height: 330px; }
+    height: 430px; }
     article.project-article.home .project-thumbnail time.project-year {
       position: absolute;
       top: 15%;
@@ -11531,7 +11535,7 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
 
 .text-line-through {
   position: relative; }
-  .text-line-through:after, .text-line-through:before {
+  .text-line-through:before, .text-line-through:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -11564,8 +11568,6 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     -ms-animation: textLineThroughAnim 5s linear 3.2s infinite;
     -o-animation: textLineThroughAnim 5s linear 3.2s infinite;
     animation: textLineThroughAnim 5s linear 3.2s infinite; }
-  .text-line-through.text-huge {
-    height: 8px; }
 
 a:hover.text-line-through:after {
   background-color: transparent; }
@@ -11670,6 +11672,9 @@ aside.change-features {
 
 .slick-carousel .slick-slide {
   outline: none; }
+  .slick-carousel .slick-slide article.project-article {
+    width: 55% !important;
+    margin: 0 auto; }
 .slick-carousel .slick-arrow.slick-prev, .slick-carousel .slick-arrow.slick-next {
   top: 41%; }
 .slick-carousel .slick-arrow.slick-prev {
@@ -11756,6 +11761,7 @@ footer {
         -o-filter: grayscale(0);
         filter: grayscale(0); }
   footer article iframe {
+    pointer-events: none;
     -webkit-border-radius: 0.3rem;
     -moz-border-radius: 0.3rem;
     -ms-border-radius: 0.3rem;
@@ -11825,7 +11831,23 @@ a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h
 i.fa:hover {
   cursor: none; }
 
-.cursor {
+.circle {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: -30px;
+  left: -30px;
+  background-color: #FFF;
+  mix-blend-mode: difference;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 11000; }
+
+.cursor, .circle {
   display: none;
   position: fixed;
   width: 50px;
@@ -11834,18 +11856,12 @@ i.fa:hover {
   border: 1px solid transparent;
   z-index: 11000;
   pointer-events: none;
-  will-change: transform, filter, background-color;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-transition: all ease-out 0.2s;
-  -moz-transition: all ease-out 0.2s;
-  -ms-transition: all ease-out 0.2s;
-  -o-transition: all ease-out 0.2s;
-  transition: all ease-out 0.2s; }
-  .cursor:before, .cursor:after {
+  border-radius: 50%; }
+  .cursor:before, .cursor:after, .circle:before, .circle:after {
     content: "";
     position: absolute;
     width: 50px;
@@ -11859,7 +11875,7 @@ i.fa:hover {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%; }
-  .cursor:before {
+  .cursor:before, .circle:before {
     padding-top: 40px;
     font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
     font-weight: 500;
@@ -11871,46 +11887,34 @@ i.fa:hover {
     white-space: nowrap;
     text-align: center;
     z-index: 11002;
-    will-change: width, height, background-color, border-color, transform;
     -webkit-transition: none;
     -moz-transition: none;
     -ms-transition: none;
     -o-transition: none;
     transition: none; }
-  .cursor:after {
+  .cursor:after, .circle:after {
     z-index: 11001;
-    will-change: background-color, transform;
     -webkit-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
     -moz-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
     -ms-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
     -o-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
     transition: background-color ease-out 0.3s, transform ease-out 0.3s; }
-  .cursor.hoveredLink {
-    mix-blend-mode: difference;
-    -webkit-transition: all ease-out 0.3s;
-    -moz-transition: all ease-out 0.3s;
-    -ms-transition: all ease-out 0.3s;
-    -o-transition: all ease-out 0.3s;
-    transition: all ease-out 0.3s; }
-    .cursor.hoveredLink:after {
+  .cursor.hoveredLink, .circle.hoveredLink {
+    mix-blend-mode: difference; }
+    .cursor.hoveredLink:after, .circle.hoveredLink:after {
       background-color: #FFF;
       -webkit-transform: scale(2.2);
       -moz-transform: scale(2.2);
       -ms-transform: scale(2.2);
       -o-transform: scale(2.2);
       transform: scale(2.2); }
-  .cursor.hoveredProject {
-    -webkit-transition: all ease-out 0.2s;
-    -moz-transition: all ease-out 0.2s;
-    -ms-transition: all ease-out 0.2s;
-    -o-transition: all ease-out 0.2s;
-    transition: all ease-out 0.2s;
+  .cursor.hoveredProject, .circle.hoveredProject {
     -webkit-animation: fa-spin 5s linear infinite;
     -moz-animation: fa-spin 5s linear infinite;
     -ms-animation: fa-spin 5s linear infinite;
     -o-animation: fa-spin 5s linear infinite;
     animation: fa-spin 5s linear infinite; }
-    .cursor.hoveredProject:before {
+    .cursor.hoveredProject:before, .circle.hoveredProject:before {
       content: "View It";
       width: 100px;
       height: 100px;
@@ -11921,7 +11925,7 @@ i.fa:hover {
       -ms-transform: translateY(-25px) translateX(-25px);
       -o-transform: translateY(-25px) translateX(-25px);
       transform: translateY(-25px) translateX(-25px); }
-  .cursor.hoveredModal:after {
+  .cursor.hoveredModal:after, .circle.hoveredModal:after {
     border-color: #000; }
 
 @media (pointer: coarse) and (hover: none) {
@@ -12067,11 +12071,15 @@ body.imagesloaded:after {
   .btn.btn-60 {
     width: 60%; }
 
-  #column_div .first.column, .column_div .first.column {
+  #column_div .first.column, .column-div .first.column {
+    padding-right: 20px; }
+  #column_div .last.column, .column-div .last.column {
+    padding-left: 20px; }
+  #column_div.column-large .first.column, .column-div.column-large .first.column {
     width: 70% !important;
     padding-left: 5px;
     padding-right: 40px; }
-  #column_div .last.column, .column_div .last.column {
+  #column_div.column-large .last.column, .column-div.column-large .last.column {
     width: 30% !important;
     padding-left: 40px; }
 
@@ -12203,7 +12211,7 @@ body.imagesloaded:after {
     padding: 70px 0 60px; }
     section.about-me-section .bogota-candelaria-image {
       width: 101.5%;
-      margin-top: -15px; }
+      margin-top: -25px; }
     section.about-me-section .i-am-based-text {
       margin-top: 150px; }
     section.about-me-section .cooffee-image-i {

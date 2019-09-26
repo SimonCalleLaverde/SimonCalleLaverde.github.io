@@ -23,15 +23,23 @@
   }
 
   // Columnizer
-  #column_div, .column_div {
+  #column_div, .column-div {
     .first.column {
-    	width:70%!important;//
-    	padding-left:5px;//
-      padding-right:40px;//20px
+      padding-right:20px;
     }
     .last.column {
-    	width:30%!important;//
-      padding-left:40px;//20px
+      padding-left:20px;
+    }
+    &.column-large {
+    	.first.column {
+	    	width:70%!important;//
+	    	padding-left:5px;//
+	      padding-right:40px;//20px
+	    }
+	    .last.column {
+	    	width:30%!important;//
+	      padding-left:40px;//20px
+	    }
     }
   }
 
@@ -188,7 +196,7 @@
 		padding:70px 0 60px;
 		.bogota-candelaria-image {
 			width:101.5%;
-			margin-top:-15px;//-48px
+			margin-top:-25px;//-48px
 			//@include transform(translateY(-48px));
 		}
 		.i-am-based-text {

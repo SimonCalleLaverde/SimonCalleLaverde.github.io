@@ -40,10 +40,6 @@
   <!--Main-->
   <link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
 
-  <!--AOS | Animate On Scroll Library-->
-  <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
-
   <!--Flickity-->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
@@ -58,7 +54,20 @@
 
     <!--<div id="loader">Loading</div>-->
 
-    <div class="cursor"></div>
+    <!-- <div class="cursor"></div> -->
+<!-- <div class="cursor"></div> -->
+
+<!-- <svg id="cursor">
+  <circle id="ball" cx="0" cy="0" r="25" fill="red" />
+</svg> -->
+
+
+
+<div class="circle">
+  <!-- <svg viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M75,100 C88.8071187,100 100,88.8071187 100,75 C100,61.1928813 88.8071187,50 75,50 C61.1928813,50 50,61.1928813 50,75 C50,88.8071187 61.1928813,100 75,100 Z"></path>
+  </svg> -->
+</div>
 
     <aside class="nav-social-media py-4 px-4more">
   <div class="mb-2 pb-2">
@@ -165,7 +174,7 @@
         </a>
 
         <!--Desktop-->
-        <div class="intro column_div d-none d-md-block">
+        <div class="intro column-div column-large d-none d-md-block">
           <h1>Pizza</h1>
 
 <p>Cras viverra nibh odio, in porta magna mollis ut. Donec lorem neque, tempor eget dui eu, placerat rutrum odio. Nullam fermentum varius dolor, eget blandit felis venenatis vulputate. Vestibulum iaculis sodales ante ac mattis. Nulla pellentesque nulla turpis, sit amet sollicitudin mauris elementum a.</p>
@@ -270,7 +279,8 @@
 <!--<script src="/scripts/main.js"></script>-->
 
 <!--Jquery-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>-->
 <!--<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>-->
 
 <!--Bootstrap 4-->
@@ -287,18 +297,8 @@
 <!--Columnizer-->
 <script type="text/javascript" src="/assets/js/jquery.columnizer.js"></script>
 <script type="text/javascript">
-  $('.column_div').columnize({ columns:2 });//#column_div
+  $('.column-div').columnize({ columns:2 });//#column_div
 </script>
-
-<!--AOS | Animate On Scroll Library-->
-<!--<script type="text/javascript">
-	$(function() {
-	  AOS.init();
-	});
-</script>-->
-
-<!--Flickity | Carousel-->
-<!--<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>-->
 
 <!--Slick | Carousel-->
 <script type="text/javascript" src="/assets/js/slick.min.js"></script>
@@ -307,7 +307,6 @@
 <script type="text/javascript" src="/assets/js/videomodal.js"></script>
 
 <!--Imagesloaded | imagesloaded.desandro.com-->
-<!--<script src="/assets/js/imagesloaded.pkgd.min.js"></script>-->
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 <!--Image Glitch | Custom Javascript-->

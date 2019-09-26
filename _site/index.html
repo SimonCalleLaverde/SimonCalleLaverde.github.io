@@ -38,10 +38,6 @@
   <!--Main-->
   <link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
 
-  <!--AOS | Animate On Scroll Library-->
-  <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
-
   <!--Flickity-->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
@@ -56,7 +52,20 @@
 
     <!--<div id="loader">Loading</div>-->
 
-    <div class="cursor"></div>
+    <!-- <div class="cursor"></div> -->
+<!-- <div class="cursor"></div> -->
+
+<!-- <svg id="cursor">
+  <circle id="ball" cx="0" cy="0" r="25" fill="red" />
+</svg> -->
+
+
+
+<div class="circle">
+  <!-- <svg viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M75,100 C88.8071187,100 100,88.8071187 100,75 C100,61.1928813 88.8071187,50 75,50 C61.1928813,50 50,61.1928813 50,75 C50,88.8071187 61.1928813,100 75,100 Z"></path>
+  </svg> -->
+</div>
 
     <aside class="nav-social-media py-4 px-4more">
   <div class="mb-2 pb-2">
@@ -177,7 +186,7 @@
         
         
         
-        <!--IN DEVELOPMENT | Logo, moving dots, parallax elements, letters fading-in one by one quickly, and more-->
+        <!--Logo, moving dots, parallax elements, letters fading-in one by one quickly, and more-->
 
 <header class="home-hello-header d-flex flex-row align-items-center text-white clearfix" id="hello_section">
   <div class="container">
@@ -248,9 +257,9 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4 mt-5 pt-4">
+      <div class="col-md-4 mt-5 pt-5less">
         <div class="i-am-based-text p-5">
-          <h6 class="text-white text-uppercase px-4">And this is my city, with our two or three skyscrapers :) ya know</h6>
+          <h6 class="text-white text-uppercase px-4 rellax" data-rellax-speed="0.2">And this is my city, with our two or three skyscrapers :) ya know</h6>
         </div>
       </div>
 
@@ -270,32 +279,49 @@
   <div class="container">
 
 		<div class="row">
-      <div class="col-md-12">
+      <div class="col-md-11 offset-md-1">
         <p class="font-headline text-white text-uppercase mb-0">My Work</p>
 
-        <h3 class="text-huge text-white text-uppercase mb-4 pb-3">Some sites I have <a class="headline text-uppercase text-line-through smoothScroll" href="#slick_carousel_scroll"><span>developed</span></a> through the past five years</h3>
+        <h3 class="text-huge text-white text-uppercase mb-0">Some sites I have <a class="headline text-uppercase smoothScroll" href="#slick_carousel_scroll"><span>developed</span></a> through the past five years</h3>
+
+        <!--<p class="font-headline text-white text-uppercase mt-1 mb-4 pb-3">Includes my work at Code Nation, as well as a concept small site I created in 2015, and other I started in 2015 and I'm retaking in 2019</p>-->
+      </div>
+    </div>
+    
+    <div class="row mt-5 pt-2">
+      <div class="col-md-6 offset-md-1">
+        <div class="column-div">
+          <h6 class="text-grey-light">I love web development, check out some of the websites I have developed <a class="text-grey-light text-underline smoothScroll" href="#slick_carousel_scroll">below</a>. For now most of them were done within my time at <a class="text-grey-light text-underline" href="https://www.codenation.com/" target="_blank" title="Check out their amazing work and contact them for any cool campaigning related project">Code Nation</a>, an Australian 5 star rated digital agency specialized in creating and managing campaigning platforms which help big communities engage in big actions. I worked there for the past 4 years. I'm hoping to transitions with time to showcase some more of my independent work and new business and branding related projects.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5less">
+      <div class="col-md-6 offset-md-1">
+        <p class="text-white mt-1">See the full collection <a class="text-white text-underline" href="/work">here</a>; the below includes my work at Code Nation, as well as a concept small site I created in 2015, and another business website I started in 2015 and I'm retaking in 2019 with a newest more modern design.</p>
       </div>
     </div>
 
 
 
-    <div class="row mt-5 pt-5"><!--lax--><!--data-lax-preset="leftToRight-.05"-->
-      <div class="col-md-6 offset-md-1 mb-5">
-        <h6 class="text-grey-mid" style="z-index:51">I love web development, check out some of the websites I have developed below. For now most of them were done within my time at <a class="text-grey-light text-underline" href="https://www.codenation.com/" target="_blank" title="Check out their amazing work and contact them for any cool campaigning related project">Code Nation</a>, an Australian 5 star rated digital agency specialized in campaigning platforms which help big communities engage in big actions. I worked there for the past 4 years. I'm hoping to transitions with time to showcase some more of my independent work and new business and branding related projects.</h6>
-      </div>
-    </div>
 
 
 
 
     
 
-    <div class="row pt-5 lax" id="slick_carousel_scroll" data-lax-preset="driftLeft-50"><!--data-lax-preset="rightToLeft-.1"-->
+
+
+
+
+
+
+    <div class="row pt-5" id="slick_carousel_scroll"><!--data-lax-preset="rightToLeft-.1"-->
       <div class="col-md-12">
 
 
 
-        <div class="slick-carousel">
+        <div class="slick-carousel lax" data-lax-preset="driftLeft-30">
           
 
           
@@ -1572,7 +1598,7 @@
       </div>
     </div>
 
-    <div class="row mt-5 pt-5">
+    <div class="row mt-5">
       <div class="col-md-12">
         <div class="text-center mt-4 mx-md-3 px-md-4">
           <!--Desktop-->
@@ -1599,9 +1625,9 @@
     <div class="row pt-5">
       <div class="col-md-8 offset-md-2">
         <!--Desktop-->
-        <h3 class="text-white text-uppercase text-stroke-white mb-4 pb-3 d-none d-md-block" style="font-size:4rem; line-height:1.1;">Some of my skills</h3>
+        <h3 class="text-white text-uppercase mb-4 pb-3 d-none d-md-block" style="font-size:4rem; line-height:1.1;">Some of my skills</h3>
         <!--Mobile-->
-        <h4 class="text-white text-uppercase text-stroke-white mb-3 pb-1 d-block d-md-none" aria-hidden="true">Some of my skills</h4>
+        <h4 class="text-white text-uppercase mb-3 pb-1 d-block d-md-none" aria-hidden="true">Some of my skills</h4>
       </div>
     </div>
 
@@ -1721,7 +1747,8 @@
 <!--<script src="/scripts/main.js"></script>-->
 
 <!--Jquery-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>-->
 <!--<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>-->
 
 <!--Bootstrap 4-->
@@ -1738,18 +1765,8 @@
 <!--Columnizer-->
 <script type="text/javascript" src="/assets/js/jquery.columnizer.js"></script>
 <script type="text/javascript">
-  $('.column_div').columnize({ columns:2 });//#column_div
+  $('.column-div').columnize({ columns:2 });//#column_div
 </script>
-
-<!--AOS | Animate On Scroll Library-->
-<!--<script type="text/javascript">
-	$(function() {
-	  AOS.init();
-	});
-</script>-->
-
-<!--Flickity | Carousel-->
-<!--<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>-->
 
 <!--Slick | Carousel-->
 <script type="text/javascript" src="/assets/js/slick.min.js"></script>
@@ -1758,7 +1775,6 @@
 <script type="text/javascript" src="/assets/js/videomodal.js"></script>
 
 <!--Imagesloaded | imagesloaded.desandro.com-->
-<!--<script src="/assets/js/imagesloaded.pkgd.min.js"></script>-->
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 <!--Image Glitch | Custom Javascript-->

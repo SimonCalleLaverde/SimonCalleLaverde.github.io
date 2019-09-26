@@ -4,20 +4,31 @@
   <div class="container">
 
 		<div class="row">
-      <div class="col-md-12">
+      <div class="col-md-11 offset-md-1">
         <p class="font-headline text-white text-uppercase mb-0">My Work</p>
 
-        <h3 class="text-huge text-white text-uppercase mb-4 pb-3">{{ page.my_work_section.headline }}</h3>
+        <h3 class="text-huge text-white text-uppercase mb-0">{{ page.my_work_section.headline }}</h3>
+
+        <!--<p class="font-headline text-white text-uppercase mt-1 mb-4 pb-3">Includes my work at Code Nation, as well as a concept small site I created in 2015, and other I started in 2015 and I'm retaking in 2019</p>-->
+      </div>
+    </div>
+    
+    <div class="row mt-5 pt-2">
+      <div class="col-md-6 offset-md-1">
+        <div class="column-div">
+          <h6 class="text-grey-light">I love web development, check out some of the websites I have developed <a class="text-grey-light text-underline smoothScroll" href="#slick_carousel_scroll">below</a>. For now most of them were done within my time at <a class="text-grey-light text-underline" href="https://www.codenation.com/" target="_blank" title="Check out their amazing work and contact them for any cool campaigning related project">Code Nation</a>, an Australian 5 star rated digital agency specialized in creating and managing campaigning platforms which help big communities engage in big actions. I worked there for the past 4 years. I'm hoping to transitions with time to showcase some more of my independent work and new business and branding related projects.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5less">
+      <div class="col-md-6 offset-md-1">
+        <p class="text-white mt-1">See the full collection <a class="text-white text-underline" href="/work">here</a>; the below includes my work at Code Nation, as well as a concept small site I created in 2015, and another business website I started in 2015 and I'm retaking in 2019 with a newest more modern design.</p>
       </div>
     </div>
 
 
 
-    <div class="row mt-5 pt-5"><!--lax--><!--data-lax-preset="leftToRight-.05"-->
-      <div class="col-md-6 offset-md-1 mb-5">
-        <h6 class="text-grey-mid" style="z-index:51">I love web development, check out some of the websites I have developed below. For now most of them were done within my time at <a class="text-grey-light text-underline" href="https://www.codenation.com/" target="_blank" title="Check out their amazing work and contact them for any cool campaigning related project">Code Nation</a>, an Australian 5 star rated digital agency specialized in campaigning platforms which help big communities engage in big actions. I worked there for the past 4 years. I'm hoping to transitions with time to showcase some more of my independent work and new business and branding related projects.</h6>
-      </div>
-    </div>
 
 
 
@@ -43,12 +54,18 @@
     </div>
     {% endcomment %}
 
-    <div class="row pt-5 lax" id="slick_carousel_scroll" data-lax-preset="driftLeft-50"><!--data-lax-preset="rightToLeft-.1"-->
+
+
+
+
+
+
+    <div class="row pt-5" id="slick_carousel_scroll"><!--data-lax-preset="rightToLeft-.1"-->
       <div class="col-md-12">
 
 
 
-        <div class="slick-carousel">
+        <div class="slick-carousel lax" data-lax-preset="driftLeft-30">
           {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
           {% for project in sorted_projects %}
@@ -87,7 +104,7 @@
       </div>
     </div>
 
-    <div class="row mt-5 pt-5">
+    <div class="row mt-5">
       <div class="col-md-12">
         <div class="text-center mt-4 mx-md-3 px-md-4">
           <!--Desktop-->

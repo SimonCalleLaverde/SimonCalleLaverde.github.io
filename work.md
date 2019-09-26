@@ -4,7 +4,7 @@ title: Work
 permalink: /work
 slug: work
 type_slug: basic
-headline: Projects
+headline: All Projects
 header_image: ""
 background_image: "" # /uploads/home-header.jpg
 thumbnail_image: ""
