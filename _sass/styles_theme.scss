@@ -254,49 +254,43 @@ main, header, section, footer {
   position:relative;
 }
 main {
-  //background-color:#000;
+  background-color:theme-color('grey-dark');
   text-align:center;
   z-index:2;
   @include transition(all ease-in-out 0.3s);
-  //.main-frame {
-    //position:relative;
-    background-color:theme-color('grey-dark');
-    //overflow:hidden;
-    //z-index:3;
-    #grid {
-      position:fixed;
-      top:12px;
-      right:12px;
-      bottom:12px;
-      left:12px;
-      pointer-events:none;
-      z-index:4;
-      .container {
-        // border-left:0.5px solid rgba(255,255,255,0.1);
-        // border-right:0.5px solid rgba(255,255,255,0.1);
-        .row {
-          div {
-            position:relative;
+  #grid {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    pointer-events:none;
+    z-index:4;
+    .container {
+      // border-left:0.5px solid rgba(255,255,255,0.1);
+      // border-right:0.5px solid rgba(255,255,255,0.1);
+      .row {
+        div {
+          position:relative;
+          .grid-element {
+            height:100vh;
+            border-right:0.5px solid rgba(255,255,255,0.1);
+          }
+          &:first-child {
             .grid-element {
-              height:100vh;
-              border-right:0.5px solid rgba(255,255,255,0.1);
-            }
-            &:first-child {
-              .grid-element {
-                border-left:0.5px solid rgba(255,255,255,0.1);
-                border-right:none;
-              }
+              border-left:0.5px solid rgba(255,255,255,0.1);
+              border-right:none;
             }
           }
         }
       }
     }
-    > .luxury-scroll-container, > [data-scroll] {
-      position:absolute;//So it remains above #grid
-      width:100%;//As it is fixed
-      z-index:5;
-    }
-  //}
+  }
+  > .luxury-scroll-container, > [data-scroll] {
+    //position:fixed;//absolute//So it remains above #grid
+    width:100%;//As it is fixed
+    z-index:5;
+  }
 }
 
 // Nav Social Media, Copyright, Change Features, Navbar, Logo {

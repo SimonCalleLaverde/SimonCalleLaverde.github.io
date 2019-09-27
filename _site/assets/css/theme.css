@@ -11239,20 +11239,20 @@ main, header, section, footer {
   position: relative; }
 
 main {
+  background-color: #1A1A1A;
   text-align: center;
   z-index: 2;
   -webkit-transition: all ease-in-out 0.3s;
   -moz-transition: all ease-in-out 0.3s;
   -ms-transition: all ease-in-out 0.3s;
   -o-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
-  background-color: #1A1A1A; }
+  transition: all ease-in-out 0.3s; }
   main #grid {
     position: fixed;
-    top: 12px;
-    right: 12px;
-    bottom: 12px;
-    left: 12px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     pointer-events: none;
     z-index: 4; }
     main #grid .container .row div {
@@ -11264,7 +11264,6 @@ main {
         border-left: 0.5px solid rgba(255, 255, 255, 0.1);
         border-right: none; }
   main > .luxury-scroll-container, main > [data-scroll] {
-    position: absolute;
     width: 100%;
     z-index: 5; }
 
