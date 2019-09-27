@@ -47,26 +47,26 @@ $(function() {
 //   });
 // });
 
-// Adds/Removes Class After Scrolling Some Distance From Top | As Per Above Modified
-$(function() {
-  //caches a jQuery object containing the body element
-  var hideThisDivs = $(".change-features-interior, .copyright-interior");
-  var hideThisLogo = $(".logo-interior");
-  $(window).scroll(function() {
-    var scrollFromTop = $(window).scrollTop();
+// // Adds/Removes Class After Scrolling Some Distance From Top | As Per Above Modified
+// $(function() {
+//   //caches a jQuery object containing the body element
+//   var hideThisDivs = $(".change-features-interior, .copyright-interior");
+//   var hideThisLogo = $(".logo-interior");
+//   $(window).scroll(function() {
+//     var scrollFromTop = $(window).scrollTop();
 
-    if (scrollFromTop >= 300) {
-      hideThisDivs.addClass("hide-it").removeClass("show-it");
-    } else if (scrollFromTop <= 300) {
-      hideThisDivs.removeClass("hide-it").addClass("show-it");
-    }
-    if (scrollFromTop >= 1000) {
-      hideThisLogo.addClass("hide-it").removeClass("show-it");
-    } else if (scrollFromTop <= 1000) {
-      hideThisLogo.removeClass("hide-it").addClass("show-it");
-    }
-  });
-});
+//     if (scrollFromTop >= 300) {
+//       hideThisDivs.addClass("hide-it").removeClass("show-it");
+//     } else if (scrollFromTop <= 300) {
+//       hideThisDivs.removeClass("hide-it").addClass("show-it");
+//     }
+//     if (scrollFromTop >= 1000) {
+//       hideThisLogo.addClass("hide-it").removeClass("show-it");
+//     } else if (scrollFromTop <= 1000) {
+//       hideThisLogo.removeClass("hide-it").addClass("show-it");
+//     }
+//   });
+// });
 
 // // Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
 // $(function() {

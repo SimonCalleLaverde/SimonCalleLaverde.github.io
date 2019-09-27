@@ -11254,7 +11254,7 @@ main {
     bottom: 0;
     left: 0;
     pointer-events: none;
-    z-index: 4; }
+    z-index: 3; }
     main #grid .container .row div {
       position: relative; }
       main #grid .container .row div .grid-element {
@@ -11265,7 +11265,7 @@ main {
         border-right: none; }
   main > .luxury-scroll-container, main > [data-scroll] {
     width: 100%;
-    z-index: 5; }
+    z-index: 4; }
 
 aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo {
   z-index: 6000; }

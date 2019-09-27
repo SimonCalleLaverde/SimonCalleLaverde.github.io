@@ -145,8 +145,6 @@ html {
   }
 }
 body {
-  //overflow-x:hidden;//For GSAP Smooth Page Scrolling
-  //overflow-y:scroll;//For GSAP Smooth Page Scrolling
   position:relative;//For Scroll Spy
   font-family:$font-paragraph;
   font-weight:300;
@@ -154,6 +152,8 @@ body {
   font-size:17px;
   background-color:#000;
   z-index:1;
+  // overflow-y:scroll;//For GSAP Smooth Page Scrolling
+  // overflow-x:hidden;//For GSAP Smooth Page Scrolling
   overscroll-behavior-y:none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
   //@include transform(translateY(0));
   @include transition(all ease-out 0.3s);
@@ -254,8 +254,16 @@ main, header, section, footer {
   position:relative;
 }
 main {
+  // position:fixed;//For GSAP Smooth Scroll
+  // width:100%;//For GSAP Smooth Scroll
+  // height:100%;//For GSAP Smooth Scroll
+  // top:0;//For GSAP Smooth Scroll
+  // right:0;//For GSAP Smooth Scroll
+  // bottom:0;//For GSAP Smooth Scroll
+  // left:0;//For GSAP Smooth Scroll
   background-color:theme-color('grey-dark');
   text-align:center;
+  // overflow:hidden;//For GSAP Smooth Scroll
   z-index:2;
   @include transition(all ease-in-out 0.3s);
   #grid {
@@ -265,7 +273,7 @@ main {
     bottom:0;
     left:0;
     pointer-events:none;
-    z-index:4;
+    z-index:3;
     .container {
       // border-left:0.5px solid rgba(255,255,255,0.1);
       // border-right:0.5px solid rgba(255,255,255,0.1);
@@ -286,10 +294,18 @@ main {
       }
     }
   }
+  // .scroll-container {//For GSAP Smooth Scroll
+  //   position:fixed;//absolute//For GSAP Smooth Scroll
+  //   width:100%;// # My addition//For GSAP Smooth Scroll
+  //   overflow:hidden;//For GSAP Smooth Scroll
+  //   z-index:4;//For GSAP Smooth Scroll
+  //   backface-visibility:hidden;//For GSAP Smooth Scroll
+  //   transform-style:preserve-3d;//For GSAP Smooth Scroll
+  // }
   > .luxury-scroll-container, > [data-scroll] {
     //position:fixed;//absolute//So it remains above #grid
     width:100%;//As it is fixed
-    z-index:5;
+    z-index:4;
   }
 }
 
@@ -823,7 +839,7 @@ aside.change-features {
 
 // Show It & Hide It
 .show-it, .hide-it {
-  //@include transition(filter ease-out 1s);
+  //@include transition(filter ease-out 0.7s);
 }
 .show-it {
   //@include animation(fadeInAnim 0.5s ease-out forwards);
