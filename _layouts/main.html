@@ -9,6 +9,8 @@
 
     {% include cursor.html %}
 
+    {% include logo.html %}
+
     {% include nav_social_media.html %}
 
     {% include change_features.html %}
@@ -18,23 +20,25 @@
     {% include nav.html %}
     
     <main id="main">
-      {% include grid.html %}
+      <!--<div class="main-frame">-->
+        {% include grid.html %}
 
-      <div class="luxury-scroll-container" data-scroll>
-        <h1 class="sr-only">{{ page.title }}</h1>
-        
-        {% if page.header_image.size > 0 %}
-          {% include header_image.html %}
-        {% endif %}
-        
-        {{ content }}
+        <div class="luxury-scroll-container" data-scroll>
+          <h1 class="sr-only">{{ page.title }}</h1>
+          
+          {% if page.header_image.size > 0 %}
+            {% include header_image.html %}
+          {% endif %}
+          
+          {{ content }}
 
-        {% comment %}
-        {% include footer.html %}
-        {% endcomment %}
+          {% comment %}
+          {% include footer.html %}
+          {% endcomment %}
 
-        {% include scripts.html %}
-      </div>
+          {% include scripts.html %}
+        </div>
+      <!--</div>-->
     </main>
 
     {% include work/work_project_modal.html %}

@@ -14,7 +14,7 @@ $(document).ready(function() {
 $(function() {
   $('.smoothScroll').click(function(event) {
     event.preventDefault();
-    var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 10;//0
+    var target_offset = $(this.hash).offset() ? $(this.hash).offset().top: 10;//0
     var customoffset = 0;//49
     $('html, body').animate({scrollTop:target_offset - customoffset}, 1200);
   });
@@ -51,6 +51,7 @@ $(function() {
 $(function() {
   //caches a jQuery object containing the body element
   var hideThisDivs = $(".change-features-interior, .copyright-interior");
+  var hideThisLogo = $(".logo-interior");
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
 
@@ -58,6 +59,11 @@ $(function() {
       hideThisDivs.addClass("hide-it").removeClass("show-it");
     } else if (scrollFromTop <= 300) {
       hideThisDivs.removeClass("hide-it").addClass("show-it");
+    }
+    if (scrollFromTop >= 1000) {
+      hideThisLogo.addClass("hide-it").removeClass("show-it");
+    } else if (scrollFromTop <= 1000) {
+      hideThisLogo.removeClass("hide-it").addClass("show-it");
     }
   });
 });

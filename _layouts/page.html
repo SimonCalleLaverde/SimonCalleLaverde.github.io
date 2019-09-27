@@ -10,6 +10,9 @@ layout: "main"
 	{% include content_centered.html %}
 	{% include plans/plans_section.html %}
 
+{% elsif page.slug == "sources" or page.slug contains "sources" %}
+	{% include sources/videos_section.html %}
+
 {% else %}
 
   {% include content_simple.html %}

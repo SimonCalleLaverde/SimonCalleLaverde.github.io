@@ -59,10 +59,8 @@ thumbnail_image: ""
 <a href="http://www.thibaudallie.com/">Thibaudallie</a>
 <a href="https://conference.awwwards.com/tokyo/">Conference Awwwards Tokyo</a>
 <a href="https://www.rodolfosarno.com/">Rodolfo Sarno</a>
+<a href="https://penumbra.edge-themes.com/landing-page">Awesome/Incredible Black & White Themes</a>
 <!--
-<a href="..."></a>
-<a href="..."></a>
-<a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
@@ -84,6 +82,7 @@ thumbnail_image: ""
 <a href="codepen.io/ispal/pen/mVaaJe">Stairs Dot Loader</a>
 <a href="https://www.jqueryscript.net/other/Custom-Cursor-jQuery-CSS3.html">Nice Following Dot Custom Cursor, Already Tested</a>
 <a href="https://creativesfeed.com/custom-cursor-styling/">Nice 4 Custom Cursors, To Be Tested # 2</a>
+<a href="http://scrollme.nckprsn.com/">Animate On Scroll Plugin</a>
 
 <h1>Platforms</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY">GitHub Pages</a>
@@ -99,3 +98,4 @@ thumbnail_image: ""
 <a href="https://www.youtube.com/watch?v=LmXVxkWjLT8&list=LL4KC8qzHaqFuW7XvQ0fMB2A&index=2&t=1148s">Practical Tips for Great UI Animation</a>
 <a href="https://www.youtube.com/watch?v=bEg5ySTUGxE">The Faker You Are, the More Successful You Can Be</a>
 <a href="https://www.youtube.com/watch?v=RKXZ7t_RiOE">Cómo poner precio a tus servicios de diseño</a>
+<a href="https://www.youtube.com/watch?v=iRo18pUs61Q">Why We Should Ditch React</a>

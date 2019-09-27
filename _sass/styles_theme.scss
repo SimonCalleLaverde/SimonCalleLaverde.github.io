@@ -152,9 +152,7 @@ body {
   font-weight:300;
   font-style:normal;
   font-size:17px;
-  background-color:#FFF;//theme-color('grey-dark')
-  //cursor:default;//After Loading, Including Intro Animation
-  //overflow:auto;//After Loading, Including Intro Animation
+  background-color:#000;
   z-index:1;
   overscroll-behavior-y:none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
   //@include transform(translateY(0));
@@ -175,7 +173,7 @@ body {
       @include animation(mainTranslateAnim 0.7s ease-in 1.5s forwards);
       //@include animation(bodyFadeInAnim 1s ease-in);
     }
-    aside.nav-social-media, .copyright, aside.change-features, nav.navbar {
+    aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo {
       @include filter(opacity(0));
       @include animation(fadeInAnim 0.2s ease-in 2s forwards);
     }
@@ -256,47 +254,53 @@ main, header, section, footer {
   position:relative;
 }
 main {
-  background-color:theme-color('grey-dark');
+  //background-color:#000;
   text-align:center;
   z-index:2;
   @include transition(all ease-in-out 0.3s);
-  #grid {
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    pointer-events:none;
-    z-index:3;
-    .container {
-      // border-left:0.5px solid rgba(255,255,255,0.1);
-      // border-right:0.5px solid rgba(255,255,255,0.1);
-      .row {
-        div {
-          position:relative;
-          .grid-element {
-            height:100vh;
-            border-right:0.5px solid rgba(255,255,255,0.1);
-          }
-          &:first-child {
+  //.main-frame {
+    //position:relative;
+    background-color:theme-color('grey-dark');
+    //overflow:hidden;
+    //z-index:3;
+    #grid {
+      position:fixed;
+      top:12px;
+      right:12px;
+      bottom:12px;
+      left:12px;
+      pointer-events:none;
+      z-index:4;
+      .container {
+        // border-left:0.5px solid rgba(255,255,255,0.1);
+        // border-right:0.5px solid rgba(255,255,255,0.1);
+        .row {
+          div {
+            position:relative;
             .grid-element {
-              border-left:0.5px solid rgba(255,255,255,0.1);
-              border-right:none;
+              height:100vh;
+              border-right:0.5px solid rgba(255,255,255,0.1);
+            }
+            &:first-child {
+              .grid-element {
+                border-left:0.5px solid rgba(255,255,255,0.1);
+                border-right:none;
+              }
             }
           }
         }
       }
     }
-  }
-  > .luxury-scroll-container, > [data-scroll] {
-    position:absolute;//So it remains above #grid
-    width:100%;//As it is fixed
-    z-index:4;
-  }
+    > .luxury-scroll-container, > [data-scroll] {
+      position:absolute;//So it remains above #grid
+      width:100%;//As it is fixed
+      z-index:5;
+    }
+  //}
 }
 
-// Nav Social Media, Copyright, Change Features, Navbar {
-aside.nav-social-media, .copyright, aside.change-features, nav.navbar {
+// Nav Social Media, Copyright, Change Features, Navbar, Logo {
+aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo {
   z-index:6000;
 }
 
@@ -410,7 +414,7 @@ a {
   }
 }
 .text-huge {
-  font-size:5rem;
+  font-size:4.5rem;//5rem;
   line-height:1;
   .text-line-through {
     &:before, &:after {
@@ -455,7 +459,7 @@ article.project-article {
   &.home {
     .project-thumbnail {
       position:relative;
-      height:430px;
+      height:400px;
       time.project-year {
         position:absolute;
         top:15%;//80%
@@ -825,24 +829,32 @@ aside.change-features {
 
 // Show It & Hide It
 .show-it, .hide-it {
-  @include transition(filter ease-out 0.5s);
+  //@include transition(filter ease-out 1s);
 }
 .show-it {
   //@include animation(fadeInAnim 0.5s ease-out forwards);
   @include filter(opacity(1)!important);
+  @include transition(filter ease-out 0.7s);
 }
 .hide-it {
   //@include animation(fadeOutAnim 0.5s ease-out forwards);
   @include filter(opacity(0)!important);
+  @include transition(filter ease-out 1s);
 }
 
 // Slick Carousel
 .slick-carousel {
   .slick-slide {
     outline:none;
+    @include transform(scale(1));
     article.project-article {
-      width:55%!important;
+      width:40%!important;
       margin:0 auto;
+    }
+    &.slick-current {
+      width:50%!important;
+      @include transition(transform ease-out 0.3s);
+      //@include transform(scale(1.2));
     }
   }
   .slick-arrow {
@@ -933,7 +945,43 @@ aside.change-features {
 
 
 
+
 //----------------------------------Section Styles----------------------------------//
+
+// Logo
+aside.logo {
+  position:fixed;
+  top:30px;
+  left:13px;
+  .logo-interior {
+    width:100px;
+    height:100px;
+    //background-color:#FFF;
+    @include border-radius(50%);
+    svg {
+      width:50%;
+      fill:theme-color('grey-light');
+      @include transition(all ease-out 0.3s);
+      .ear-right, .ear-left {//.path-bottom
+        stroke:theme-color('grey-light');
+      }
+      .path-bottom, .chin, .cheek-right, .cheek-left, .mouth, .nose, .ear-right, .ear-left {
+        display:none;
+      }
+    }
+  }
+  &:hover, &:active, &:focus {
+    .logo-interior {
+      svg {
+        //fill:lighten(theme-color('grey-mid'),10);
+        @include filter(opacity(0.8));
+        // .ear-right, .ear-left {//.path-bottom
+        //   stroke:lighten(theme-color('grey-mid'),10);
+        // }
+      }
+    }
+  }
+}
 
 // Blog Page
 section.blog-page {
@@ -950,9 +998,14 @@ section.feedback-page {
   padding:30px 20px;
 }
 
-// Home Hello Header
-header.home-hello-header {
+// Hello Header
+header.hello-header {
   padding-top:30px 20px;//To revise mobile
+}
+
+// My Work Section
+section.my-work-section {
+  padding:30px 20px;//To revise mobile
 }
 
 // About Me Section
@@ -960,18 +1013,13 @@ section.about-me-section {
   padding:30px 20px;//To revise mobile
 }
 
-// Home My Work Section
-section.home-my-work-section {
+// My Skills Section
+section.my-skills-section {
   padding:30px 20px;//To revise mobile
 }
 
-// Home My Skills Section
-section.home-my-skills-section {
-  padding:30px 20px;//To revise mobile
-}
-
-// Home Education Section
-section.home-education-section {
+// Education Section
+section.education-section {
   padding:30px 20px;//To revise mobile
 }
 
@@ -1065,11 +1113,22 @@ body.page-type-basic.work {
 
 // Theme Colour White
 body.theme-colour.white {
+  background-color:#FFF;
+  aside.logo {
+    .logo-interior {
+      svg {
+        fill:theme-color('grey-dark');
+      }
+    }
+  }
   main {
-    background-color:theme-color('grey-light');
+    //background-color:theme-color('grey-mid');
+    //.main-frame {
+      background-color:theme-color('grey-light');
+    //}
   }
   .text-white, .text-grey-light, .text-grey-mid {
-    color:theme-color('black')!important;
+    color:#000!important;
   }
   .text-stroke-white {
     -webkit-text-stroke-color:theme-color('grey-dark')!important;

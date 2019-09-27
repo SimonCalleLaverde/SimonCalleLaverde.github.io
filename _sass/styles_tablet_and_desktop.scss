@@ -4,7 +4,6 @@
 
   // General
   body {
-  	//padding:12px;
   }
   h1, h2, h3, h4, h5, h6 {
 	  line-height:1.4;//
@@ -13,6 +12,14 @@
   // Main, Header, Section
 	main, header, section {
 		text-align:left;
+	}
+	main {
+		// .main-frame {
+		// 	width:calc(100vw - 24px)!important;
+		// 	height:calc(100vh - 24px)!important;
+		// 	margin:12px;
+		// 	@include border-radius(0.3rem);
+		// }
 	}
 
 	// Buttons
@@ -185,10 +192,15 @@
 		// }
 	}
 
-	// Home Hello Header
-	header.home-hello-header {
-		min-height:100vh;
-		padding:50px 0;
+	// Hello Header
+	header.hello-header {
+		min-height:calc(100vh - 24px);//min-height:100vh;
+		padding:40px 0;
+	}
+
+	// My Work Section
+	section.my-work-section {
+		padding:150px 0 60px;
 	}
 
 	// About Me Section
@@ -196,8 +208,7 @@
 		padding:70px 0 60px;
 		.bogota-candelaria-image {
 			width:101.5%;
-			margin-top:-25px;//-48px
-			//@include transform(translateY(-48px));
+			@include transform(translateY(-48px));
 		}
 		.i-am-based-text {
 			margin-top:150px;
@@ -215,18 +226,13 @@
 		}
 	}
 
-	// Home My Work Section
-	section.home-my-work-section {
+	// My Skills Section
+	section.my-skills-section {
 		padding:100px 0 60px;
 	}
 
-	// Home My Skills Section
-	section.home-my-skills-section {
-		padding:100px 0 60px;
-	}
-
-	// Home Education Section
-	section.home-education-section {
+	// Education Section
+	section.education-section {
 		padding:100px 0 60px;
 	}
 

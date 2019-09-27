@@ -1,9 +1,9 @@
 <!--IN DEVELOPMENT-->
 
-<section class="home-my-work-section d-flex flex-column align-items-center clearfix" id="my_work_section">
+<section class="my-work-section d-flex flex-column align-items-center clearfix" id="my_work_section">
   <div class="container">
 
-		<div class="row">
+		<div class="row lax" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn">
       <div class="col-md-11 offset-md-1">
         <p class="font-headline text-white text-uppercase mb-0">My Work</p>
 
@@ -13,15 +13,19 @@
       </div>
     </div>
     
-    <div class="row mt-5 pt-2">
+    <div class="row mt-5 pt-4 lax" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn">
       <div class="col-md-6 offset-md-1">
         <div class="column-div">
           <h6 class="text-grey-light">I love web development, check out some of the websites I have developed <a class="text-grey-light text-underline smoothScroll" href="#slick_carousel_scroll">below</a>. For now most of them were done within my time at <a class="text-grey-light text-underline" href="https://www.codenation.com/" target="_blank" title="Check out their amazing work and contact them for any cool campaigning related project">Code Nation</a>, an Australian 5 star rated digital agency specialized in creating and managing campaigning platforms which help big communities engage in big actions. I worked there for the past 4 years. I'm hoping to transitions with time to showcase some more of my independent work and new business and branding related projects.</h6>
+
+          {% comment %}
+          {{ page.my_work_section.content }}
+          {% endcomment %}
         </div>
       </div>
     </div>
 
-    <div class="row mt-5less">
+    <div class="row mt-5less lax" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn">
       <div class="col-md-6 offset-md-1">
         <p class="text-white mt-1">See the full collection <a class="text-white text-underline" href="/work">here</a>; the below includes my work at Code Nation, as well as a concept small site I created in 2015, and another business website I started in 2015 and I'm retaking in 2019 with a newest more modern design.</p>
       </div>
@@ -33,26 +37,6 @@
 
 
 
-    {% comment %}
-    <div class="row pt-3">
-      <div class="col-md-6 offset-md-1">
-        <h5 class="text-magenta mb-5">Disclaimer: Designed by the designers at Code Nation, developed 80% - 100% by me.</h5>
-      </div>
-    </div>
-
-    <div class="row pt-4 pb-2">
-      <div class="col-md-8 offset-md-2">
-        <!--Desktop-->
-        <div class="intro text-white column_div d-none d-md-block">
-          {{ page.my_work_section.content }}
-        </div>
-        <!--Mobile-->
-        <div class="intro text-white d-block d-md-none" aria-hidden="true">
-          {{ page.my_work_section.content }}
-        </div>
-      </div>
-    </div>
-    {% endcomment %}
 
 
 
@@ -60,7 +44,7 @@
 
 
 
-    <div class="row pt-5" id="slick_carousel_scroll"><!--data-lax-preset="rightToLeft-.1"-->
+    <div class="row mt-5 pt-3 lax" id="slick_carousel_scroll" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn"><!--data-lax-preset="rightToLeft-.1"-->
       <div class="col-md-12">
 
 
@@ -83,7 +67,7 @@
           {% endfor %}
         </div>
         
-        <div class="slick-as-nav-for pl-4more">
+        <div class="slick-as-nav-for pl-4more" data-lax-preset="driftLeft-30">
           {% for project in sorted_projects %}
             {% assign project_tags_list = "#" %}
             {% for tag in project.tags %}
@@ -104,7 +88,7 @@
       </div>
     </div>
 
-    <div class="row mt-5">
+    <div class="row mt-5 pt-5 lax" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn">
       <div class="col-md-12">
         <div class="text-center mt-4 mx-md-3 px-md-4">
           <!--Desktop-->
