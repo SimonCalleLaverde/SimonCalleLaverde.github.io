@@ -60,7 +60,15 @@ thumbnail_image: ""
 <a href="https://conference.awwwards.com/tokyo/">Conference Awwwards Tokyo</a>
 <a href="https://www.rodolfosarno.com/">Rodolfo Sarno</a>
 <a href="https://penumbra.edge-themes.com/landing-page">Awesome/Incredible Black & White Themes</a>
+<a href="https://gruev.space/contacts#for-work">Gruev Space | Cool Blend-Mode Pink/Green | Infographics | 3d Main Menu | Cool Contact Form</a>
+<a href="https://experiencecrafted.com/">Experiencecrafted | Portfolio Rain Showcase</a>
+<a href="https://yuenye.com/profile/">Yuenye | Nice Portfolio | Sound | Rellax</a>
+<a href="https://www.new.company/">New Company | Awesome!</a>
+<a href="http://www.saramarandi.com/">Saramarandi | Photography | Beautiful | Mouse Hover Text Images Show</a>
+<a href="https://sabcomeed.com/">Sabcomeed | Awesome Mouse</a>
 <!--
+<a href="..."></a>
+<a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
@@ -83,10 +91,14 @@ thumbnail_image: ""
 <a href="https://www.jqueryscript.net/other/Custom-Cursor-jQuery-CSS3.html">Nice Following Dot Custom Cursor, Already Tested</a>
 <a href="https://creativesfeed.com/custom-cursor-styling/">Nice 4 Custom Cursors, To Be Tested # 2</a>
 <a href="http://scrollme.nckprsn.com/">Animate On Scroll Plugin</a>
+<a href="https://codepen.io/Omarzikry/pen/vYBbNqx?&page=1">Cursor Follow</a>
+<a href="https://codepen.io/simon-jaeger/pen/OJLpJZN?page=4">Cursor Follow | Add Transition</a>
 
 <h1>Platforms</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY">GitHub Pages</a>
 <a href="https://webflow.com/cms">Webflow CMS</a>
+<a href="https://barba.js.org/">Barba.js</a>
+<a href="https://threejs.org/">Threejs.org</a>
 
 <h1>Bootstrap 4</h1>
 <a href="https://mdbootstrap.com/education/bootstrap/">Bootstrap</a>
@@ -99,3 +111,7 @@ thumbnail_image: ""
 <a href="https://www.youtube.com/watch?v=bEg5ySTUGxE">The Faker You Are, the More Successful You Can Be</a>
 <a href="https://www.youtube.com/watch?v=RKXZ7t_RiOE">Cómo poner precio a tus servicios de diseño</a>
 <a href="https://www.youtube.com/watch?v=iRo18pUs61Q">Why We Should Ditch React</a>
+
+<h1>SEO</h1>
+<p>Google | Keywords Everywhere and Install for Chrome</p>
+<!--<a href="..."></a>-->
