@@ -6,7 +6,7 @@ slug: work
 type_slug: basic
 headline: All Projects
 header_image: ""
-background_image: /uploads/logo-beard-background.png # /uploads/home-header.jpg
+background_image: "" # /uploads/logo-beard-background.png # /uploads/home-header.jpg
 thumbnail_image: ""
 ---
 
