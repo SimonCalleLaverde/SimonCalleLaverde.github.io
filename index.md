@@ -6,7 +6,7 @@ slug: home
 type_slug: basic
 headline: Hello!<br>I am<br>Simon
 header_image: ""
-background_image: "" # /uploads/home-header.jpg
+background_image: /uploads/logo-beard-background.png # /uploads/home-header.jpg
 thumbnail_image: ""
 
 my_work_section:

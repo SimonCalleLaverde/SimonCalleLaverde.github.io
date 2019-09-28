@@ -150,7 +150,7 @@ body {
   font-weight:300;
   font-style:normal;
   font-size:17px;
-  background-color:#000;
+  background-color:#FFF;//#000
   z-index:1;
   // overflow-y:scroll;//For GSAP Smooth Page Scrolling
   // overflow-x:hidden;//For GSAP Smooth Page Scrolling
@@ -1385,6 +1385,7 @@ i.fa {
 body {
   &:before {
     content:"";//Don't spend a small effort for a big result//A website made with \f004
+    //The best things in life take time, and stay forever
     position:fixed;
     display:flex;//To add prefixes
     flex-direction:row;//To add prefixes
