@@ -50,8 +50,7 @@ $(function() {
 // Adds/Removes Class After Scrolling Some Distance From Top | As Per Above Modified
 $(function() {
   //caches a jQuery object containing the body element
-  var hideThisDivs = $(".change-features-interior, .copyright-interior");
-  var hideThisLogo = $(".logo-interior");
+  var hideThisDivs = $(".change-features-interior, .copyright-interior, .logo-interior");
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
 
@@ -59,11 +58,6 @@ $(function() {
       hideThisDivs.addClass("hide-it").removeClass("show-it");
     } else if (scrollFromTop <= 300) {
       hideThisDivs.removeClass("hide-it").addClass("show-it");
-    }
-    if (scrollFromTop >= 1000) {
-      hideThisLogo.addClass("hide-it").removeClass("show-it");
-    } else if (scrollFromTop <= 1000) {
-      hideThisLogo.removeClass("hide-it").addClass("show-it");
     }
   });
 });
