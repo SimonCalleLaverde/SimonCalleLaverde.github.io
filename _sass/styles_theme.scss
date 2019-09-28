@@ -1153,7 +1153,7 @@ body.theme-colour.white {
     color:#000;
   }
   a {
-    > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6 {
+    > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6, .project-thumbnail {
       &:hover {
         cursor:pointer;
       }
@@ -1168,8 +1168,9 @@ body.theme-colour.white {
     //display:none;//Script adds display
     background-color:transparent;
     border-color:transparent;//theme-color('magenta')
+    @include box-shadow(none);
     //@include transition(border-color ease-out 0);
-    &:after {
+    &:before, &:after {
       display:none;
     }
     // &.hoveredLink {

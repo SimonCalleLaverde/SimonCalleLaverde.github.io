@@ -11831,14 +11831,19 @@ body.theme-colour.white {
     color: #FEFEFE !important; }
   body.theme-colour.white .intro {
     color: #000; }
-  body.theme-colour.white a > span > i:hover, body.theme-colour.white a > span:hover, body.theme-colour.white a > i:hover, body.theme-colour.white a > u:hover, body.theme-colour.white a > p:hover, body.theme-colour.white a > h1:hover, body.theme-colour.white a > h2:hover, body.theme-colour.white a > h3:hover, body.theme-colour.white a > h4:hover, body.theme-colour.white a > h5:hover, body.theme-colour.white a > h6:hover {
+  body.theme-colour.white a > span > i:hover, body.theme-colour.white a > span:hover, body.theme-colour.white a > i:hover, body.theme-colour.white a > u:hover, body.theme-colour.white a > p:hover, body.theme-colour.white a > h1:hover, body.theme-colour.white a > h2:hover, body.theme-colour.white a > h3:hover, body.theme-colour.white a > h4:hover, body.theme-colour.white a > h5:hover, body.theme-colour.white a > h6:hover, body.theme-colour.white a .project-thumbnail:hover {
     cursor: pointer; }
   body.theme-colour.white i.fa:hover {
     cursor: pointer; }
   body.theme-colour.white .cursor {
     background-color: transparent;
-    border-color: transparent; }
-    body.theme-colour.white .cursor:after {
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none; }
+    body.theme-colour.white .cursor:before, body.theme-colour.white .cursor:after {
       display: none; }
   body.theme-colour.white .footer-profile-picture .profile-picture {
     -webkit-filter: grayscale(0);
