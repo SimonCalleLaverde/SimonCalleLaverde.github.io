@@ -11125,7 +11125,7 @@ body {
   font-weight: 300;
   font-style: normal;
   font-size: 17px;
-  background-color: #FFF;
+  background-color: #000;
   z-index: 1;
   overscroll-behavior-y: none;
   -webkit-transition: all ease-out 0.3s;
