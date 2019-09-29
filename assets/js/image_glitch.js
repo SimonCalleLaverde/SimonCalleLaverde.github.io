@@ -19,7 +19,7 @@
 		// document.body.classList.remove('loading');
 		// document.body.classList.add('imagesloaded');//imgloaded
 		
-		setTimeout(() => document.body.classList.remove('loading') , 500);
-		setTimeout(() => document.body.classList.add('imagesloaded') , 500);//imgloaded
+		setTimeout(() => document.body.classList.remove('loading') , 1000);
+		setTimeout(() => document.body.classList.add('imagesloaded') , 1000);//imgloaded
 	});
 }
