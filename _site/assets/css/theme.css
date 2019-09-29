@@ -10802,6 +10802,32 @@ a.text-goldy:hover, a.text-goldy:focus {
     -ms-filter: opacity(0);
     -o-filter: opacity(0);
     filter: opacity(0); } }
+@keyframes opacityInAnim {
+  0% {
+    -webkit-filter: opacity(0);
+    -moz-filter: opacity(0);
+    -ms-filter: opacity(0);
+    -o-filter: opacity(0);
+    filter: opacity(0); }
+  100% {
+    -webkit-filter: opacity(1);
+    -moz-filter: opacity(1);
+    -ms-filter: opacity(1);
+    -o-filter: opacity(1);
+    filter: opacity(1); } }
+@keyframes opacityOutAnim {
+  0% {
+    -webkit-filter: opacity(1);
+    -moz-filter: opacity(1);
+    -ms-filter: opacity(1);
+    -o-filter: opacity(1);
+    filter: opacity(1); }
+  100% {
+    -webkit-filter: opacity(0);
+    -moz-filter: opacity(0);
+    -ms-filter: opacity(0);
+    -o-filter: opacity(0);
+    filter: opacity(0); } }
 @keyframes backgroundTranslateAnimOld {
   0% {
     background-position: center center; }
@@ -11761,53 +11787,53 @@ body.home.imagesloaded .text-one span {
   -o-filter: opacity(0);
   filter: opacity(0); }
   body.home.imagesloaded .text-one span:nth-child(1) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
-    animation: fadeInAnim 0.2s ease-in 2.7s forwards; }
-  body.home.imagesloaded .text-one span:nth-child(2) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
-    animation: fadeInAnim 0.2s ease-in 2.8s forwards; }
-  body.home.imagesloaded .text-one span:nth-child(3) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
-    animation: fadeInAnim 0.2s ease-in 2.9s forwards; }
-  body.home.imagesloaded .text-one span:nth-child(4) {
     -webkit-animation: fadeInAnim 0.2s ease-in 3s forwards;
     -moz-animation: fadeInAnim 0.2s ease-in 3s forwards;
     -ms-animation: fadeInAnim 0.2s ease-in 3s forwards;
     -o-animation: fadeInAnim 0.2s ease-in 3s forwards;
     animation: fadeInAnim 0.2s ease-in 3s forwards; }
-  body.home.imagesloaded .text-one span:nth-child(5) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
-    animation: fadeInAnim 0.2s ease-in 3.1s forwards; }
-  body.home.imagesloaded .text-one span:nth-child(6) {
+  body.home.imagesloaded .text-one span:nth-child(2) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.7s forwards; }
+  body.home.imagesloaded .text-one span:nth-child(3) {
     -webkit-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
     -moz-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
     -ms-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
     -o-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
     animation: fadeInAnim 0.2s ease-in 3.2s forwards; }
-  body.home.imagesloaded .text-one span:nth-child(8) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
-    animation: fadeInAnim 0.2s ease-in 3.3s forwards; }
-  body.home.imagesloaded .text-one span:nth-child(9) {
+  body.home.imagesloaded .text-one span:nth-child(4) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.7s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.7s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.7s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.7s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.7s forwards; }
+  body.home.imagesloaded .text-one span:nth-child(5) {
     -webkit-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
     -moz-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
     -ms-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
     -o-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
     animation: fadeInAnim 0.2s ease-in 3.4s forwards; }
+  body.home.imagesloaded .text-one span:nth-child(6) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.9s forwards; }
+  body.home.imagesloaded .text-one span:nth-child(8) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.8s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.8s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.8s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.8s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.8s forwards; }
+  body.home.imagesloaded .text-one span:nth-child(9) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.8s forwards; }
   body.home.imagesloaded .text-one span:nth-child(10) {
     -webkit-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
     -moz-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
@@ -11815,35 +11841,35 @@ body.home.imagesloaded .text-one span {
     -o-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
     animation: fadeInAnim 0.2s ease-in 3.5s forwards; }
   body.home.imagesloaded .text-one span:nth-child(12) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 3.6s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 3.6s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 3.6s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 3.6s forwards;
-    animation: fadeInAnim 0.2s ease-in 3.6s forwards; }
-  body.home.imagesloaded .text-one span:nth-child(13) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 3.7s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 3.7s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 3.7s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 3.7s forwards;
-    animation: fadeInAnim 0.2s ease-in 3.7s forwards; }
-  body.home.imagesloaded .text-one span:nth-child(14) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 3.8s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 3.8s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 3.8s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 3.8s forwards;
-    animation: fadeInAnim 0.2s ease-in 3.8s forwards; }
-  body.home.imagesloaded .text-one span:nth-child(15) {
     -webkit-animation: fadeInAnim 0.2s ease-in 3.9s forwards;
     -moz-animation: fadeInAnim 0.2s ease-in 3.9s forwards;
     -ms-animation: fadeInAnim 0.2s ease-in 3.9s forwards;
     -o-animation: fadeInAnim 0.2s ease-in 3.9s forwards;
     animation: fadeInAnim 0.2s ease-in 3.9s forwards; }
-  body.home.imagesloaded .text-one span:nth-child(16) {
+  body.home.imagesloaded .text-one span:nth-child(13) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.1s forwards; }
+  body.home.imagesloaded .text-one span:nth-child(14) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.3s forwards; }
+  body.home.imagesloaded .text-one span:nth-child(15) {
     -webkit-animation: fadeInAnim 0.2s ease-in 4s forwards;
     -moz-animation: fadeInAnim 0.2s ease-in 4s forwards;
     -ms-animation: fadeInAnim 0.2s ease-in 4s forwards;
     -o-animation: fadeInAnim 0.2s ease-in 4s forwards;
     animation: fadeInAnim 0.2s ease-in 4s forwards; }
+  body.home.imagesloaded .text-one span:nth-child(16) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.6s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.6s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.6s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.6s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.6s forwards; }
 body.home.imagesloaded .text-two span {
   -webkit-filter: opacity(0);
   -moz-filter: opacity(0);
@@ -11851,53 +11877,53 @@ body.home.imagesloaded .text-two span {
   -o-filter: opacity(0);
   filter: opacity(0); }
   body.home.imagesloaded .text-two span:nth-child(1) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 2.2s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 2.2s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 2.2s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 2.2s forwards;
-    animation: fadeInAnim 0.2s ease-in 2.2s forwards; }
-  body.home.imagesloaded .text-two span:nth-child(2) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 2.3s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 2.3s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 2.3s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 2.3s forwards;
-    animation: fadeInAnim 0.2s ease-in 2.3s forwards; }
-  body.home.imagesloaded .text-two span:nth-child(3) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 2.4s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 2.4s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 2.4s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 2.4s forwards;
-    animation: fadeInAnim 0.2s ease-in 2.4s forwards; }
-  body.home.imagesloaded .text-two span:nth-child(4) {
     -webkit-animation: fadeInAnim 0.2s ease-in 2.5s forwards;
     -moz-animation: fadeInAnim 0.2s ease-in 2.5s forwards;
     -ms-animation: fadeInAnim 0.2s ease-in 2.5s forwards;
     -o-animation: fadeInAnim 0.2s ease-in 2.5s forwards;
     animation: fadeInAnim 0.2s ease-in 2.5s forwards; }
-  body.home.imagesloaded .text-two span:nth-child(5) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 2.6s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 2.6s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 2.6s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 2.6s forwards;
-    animation: fadeInAnim 0.2s ease-in 2.6s forwards; }
-  body.home.imagesloaded .text-two span:nth-child(6) {
+  body.home.imagesloaded .text-two span:nth-child(2) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.2s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.2s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.2s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.2s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.2s forwards; }
+  body.home.imagesloaded .text-two span:nth-child(3) {
     -webkit-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
     -moz-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
     -ms-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
     -o-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
     animation: fadeInAnim 0.2s ease-in 2.7s forwards; }
-  body.home.imagesloaded .text-two span:nth-child(8) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
-    animation: fadeInAnim 0.2s ease-in 2.8s forwards; }
-  body.home.imagesloaded .text-two span:nth-child(9) {
+  body.home.imagesloaded .text-two span:nth-child(4) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.2s forwards; }
+  body.home.imagesloaded .text-two span:nth-child(5) {
     -webkit-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
     -moz-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
     -ms-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
     -o-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
     animation: fadeInAnim 0.2s ease-in 2.9s forwards; }
+  body.home.imagesloaded .text-two span:nth-child(6) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.4s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.4s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.4s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.4s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.4s forwards; }
+  body.home.imagesloaded .text-two span:nth-child(8) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.3s forwards; }
+  body.home.imagesloaded .text-two span:nth-child(9) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.3s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.3s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.3s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.3s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.3s forwards; }
   body.home.imagesloaded .text-two span:nth-child(10) {
     -webkit-animation: fadeInAnim 0.2s ease-in 3s forwards;
     -moz-animation: fadeInAnim 0.2s ease-in 3s forwards;
@@ -11905,72 +11931,73 @@ body.home.imagesloaded .text-two span {
     -o-animation: fadeInAnim 0.2s ease-in 3s forwards;
     animation: fadeInAnim 0.2s ease-in 3s forwards; }
   body.home.imagesloaded .text-two span:nth-child(12) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
-    animation: fadeInAnim 0.2s ease-in 3.1s forwards; }
-  body.home.imagesloaded .text-two span:nth-child(13) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
-    animation: fadeInAnim 0.2s ease-in 3.2s forwards; }
-  body.home.imagesloaded .text-two span:nth-child(14) {
-    -webkit-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
-    -moz-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
-    -ms-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
-    -o-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
-    animation: fadeInAnim 0.2s ease-in 3.3s forwards; }
-  body.home.imagesloaded .text-two span:nth-child(15) {
     -webkit-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
     -moz-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
     -ms-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
     -o-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
     animation: fadeInAnim 0.2s ease-in 3.4s forwards; }
-  body.home.imagesloaded .text-two span:nth-child(16) {
+  body.home.imagesloaded .text-two span:nth-child(13) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.6s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.6s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.6s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.6s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.6s forwards; }
+  body.home.imagesloaded .text-two span:nth-child(14) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.8s forwards; }
+  body.home.imagesloaded .text-two span:nth-child(15) {
     -webkit-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
     -moz-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
     -ms-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
     -o-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
     animation: fadeInAnim 0.2s ease-in 3.5s forwards; }
-body.home.imagesloaded .text-i-am {
-  -webkit-animation: fadeInAnim 0.5s ease-in 4s forwards;
-  -moz-animation: fadeInAnim 0.5s ease-in 4s forwards;
-  -ms-animation: fadeInAnim 0.5s ease-in 4s forwards;
-  -o-animation: fadeInAnim 0.5s ease-in 4s forwards;
-  animation: fadeInAnim 0.5s ease-in 4s forwards; }
-body.home.imagesloaded .text-i-like {
-  -webkit-animation: fadeInAnim 0.5s ease-in 4s forwards;
-  -moz-animation: fadeInAnim 0.5s ease-in 4s forwards;
-  -ms-animation: fadeInAnim 0.5s ease-in 4s forwards;
-  -o-animation: fadeInAnim 0.5s ease-in 4s forwards;
-  animation: fadeInAnim 0.5s ease-in 4s forwards; }
-body.home.imagesloaded aside.nav-social-media, body.home.imagesloaded .copyright, body.home.imagesloaded aside.change-features, body.home.imagesloaded nav.navbar, body.home.imagesloaded aside.logo, body.home.imagesloaded article.project-article {
-  -webkit-animation: fadeInAnim 0.5s ease-in 4s forwards;
-  -moz-animation: fadeInAnim 0.5s ease-in 4s forwards;
-  -ms-animation: fadeInAnim 0.5s ease-in 4s forwards;
-  -o-animation: fadeInAnim 0.5s ease-in 4s forwards;
-  animation: fadeInAnim 0.5s ease-in 4s forwards; }
+  body.home.imagesloaded .text-two span:nth-child(16) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.1s forwards; }
+body.home.imagesloaded aside.nav-social-media, body.home.imagesloaded .copyright, body.home.imagesloaded aside.change-features, body.home.imagesloaded nav.navbar, body.home.imagesloaded aside.logo, body.home.imagesloaded article.project-article,
+body.home.imagesloaded .text-i-am, body.home.imagesloaded .text-i-like {
+  -webkit-animation: fadeInAnim 0.5s ease-in 4.2s forwards;
+  -moz-animation: fadeInAnim 0.5s ease-in 4.2s forwards;
+  -ms-animation: fadeInAnim 0.5s ease-in 4.2s forwards;
+  -o-animation: fadeInAnim 0.5s ease-in 4.2s forwards;
+  animation: fadeInAnim 0.5s ease-in 4.2s forwards; }
 body.home.imagesloaded .aside-cover-1, body.home.imagesloaded .aside-cover-2 {
-  -webkit-animation: fadeOutAnim 0.5s ease-in 4s forwards;
-  -moz-animation: fadeOutAnim 0.5s ease-in 4s forwards;
-  -ms-animation: fadeOutAnim 0.5s ease-in 4s forwards;
-  -o-animation: fadeOutAnim 0.5s ease-in 4s forwards;
-  animation: fadeOutAnim 0.5s ease-in 4s forwards; }
+  -webkit-animation: fadeOutAnim 0.5s ease-in 4.2s forwards;
+  -moz-animation: fadeOutAnim 0.5s ease-in 4.2s forwards;
+  -ms-animation: fadeOutAnim 0.5s ease-in 4.2s forwards;
+  -o-animation: fadeOutAnim 0.5s ease-in 4.2s forwards;
+  animation: fadeOutAnim 0.5s ease-in 4.2s forwards; }
+body.home.home-rendering .cursor {
+  -webkit-filter: opacity(0);
+  -moz-filter: opacity(0);
+  -ms-filter: opacity(0);
+  -o-filter: opacity(0);
+  filter: opacity(0); }
 
-body.work.imagesloaded aside.nav-social-media, body.work.imagesloaded .copyright, body.work.imagesloaded aside.change-features, body.work.imagesloaded nav.navbar, body.work.imagesloaded aside.logo, body.work.imagesloaded article.project-article {
+body.work.imagesloaded aside.nav-social-media, body.work.imagesloaded .copyright, body.work.imagesloaded aside.change-features, body.work.imagesloaded nav.navbar, body.work.imagesloaded aside.logo, body.work.imagesloaded article.project-article, body.contact.imagesloaded aside.nav-social-media, body.contact.imagesloaded .copyright, body.contact.imagesloaded aside.change-features, body.contact.imagesloaded nav.navbar, body.contact.imagesloaded aside.logo, body.contact.imagesloaded article.project-article, body.plans.imagesloaded aside.nav-social-media, body.plans.imagesloaded .copyright, body.plans.imagesloaded aside.change-features, body.plans.imagesloaded nav.navbar, body.plans.imagesloaded aside.logo, body.plans.imagesloaded article.project-article, body.sites_inspiration.imagesloaded aside.nav-social-media, body.sites_inspiration.imagesloaded .copyright, body.sites_inspiration.imagesloaded aside.change-features, body.sites_inspiration.imagesloaded nav.navbar, body.sites_inspiration.imagesloaded aside.logo, body.sites_inspiration.imagesloaded article.project-article {
   -webkit-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
   -moz-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
   -ms-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
   -o-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
   animation: fadeInAnim 0.5s ease-in 2.2s forwards; }
-body.work.imagesloaded .aside-cover-1, body.work.imagesloaded .aside-cover-2 {
+body.work.imagesloaded .aside-cover-1, body.work.imagesloaded .aside-cover-2, body.contact.imagesloaded .aside-cover-1, body.contact.imagesloaded .aside-cover-2, body.plans.imagesloaded .aside-cover-1, body.plans.imagesloaded .aside-cover-2, body.sites_inspiration.imagesloaded .aside-cover-1, body.sites_inspiration.imagesloaded .aside-cover-2 {
   -webkit-animation: fadeOutAnim 0.5s ease-in 2.2s forwards;
   -moz-animation: fadeOutAnim 0.5s ease-in 2.2s forwards;
   -ms-animation: fadeOutAnim 0.5s ease-in 2.2s forwards;
   -o-animation: fadeOutAnim 0.5s ease-in 2.2s forwards;
   animation: fadeOutAnim 0.5s ease-in 2.2s forwards; }
+body.work.rendering .cursor, body.contact.rendering .cursor, body.plans.rendering .cursor, body.sites_inspiration.rendering .cursor {
+  -webkit-filter: opacity(0);
+  -moz-filter: opacity(0);
+  -ms-filter: opacity(0);
+  -o-filter: opacity(0);
+  filter: opacity(0); }
 
 aside.logo {
   position: fixed;

@@ -922,7 +922,7 @@ aside.change-features {
 
 // Header Text Animations
 .text-i-am, .text-i-like,
-aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article {
+aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article {//.cursor
   @include filter(opacity(0));
 }
 body.home {
@@ -931,30 +931,30 @@ body.home {
       span {
         @include filter(opacity(0));
         &:nth-child(1) {
-          @include animation(fadeInAnim 0.2s ease-in 2.7s forwards);
-        }
-        &:nth-child(2) {
-          @include animation(fadeInAnim 0.2s ease-in 2.8s forwards);
-        }
-        &:nth-child(3) {
-          @include animation(fadeInAnim 0.2s ease-in 2.9s forwards);
-        }
-        &:nth-child(4) {
           @include animation(fadeInAnim 0.2s ease-in 3s forwards);
         }
+        &:nth-child(2) {
+          @include animation(fadeInAnim 0.2s ease-in 2.7s forwards);
+        }
+        &:nth-child(3) {
+          @include animation(fadeInAnim 0.2s ease-in 3.2s forwards);
+        }
+        &:nth-child(4) {
+          @include animation(fadeInAnim 0.2s ease-in 3.7s forwards);
+        }
         &:nth-child(5) {
-          @include animation(fadeInAnim 0.2s ease-in 3.1s forwards);
+          @include animation(fadeInAnim 0.2s ease-in 3.4s forwards);
         }
         &:nth-child(6) {
-          @include animation(fadeInAnim 0.2s ease-in 3.2s forwards);
+          @include animation(fadeInAnim 0.2s ease-in 2.9s forwards);
         }
         // &:nth-child(7) {
         // }
         &:nth-child(8) {
-          @include animation(fadeInAnim 0.2s ease-in 3.3s forwards);
+          @include animation(fadeInAnim 0.2s ease-in 3.8s forwards);
         }
         &:nth-child(9) {
-          @include animation(fadeInAnim 0.2s ease-in 3.4s forwards);
+          @include animation(fadeInAnim 0.2s ease-in 2.8s forwards);
         }
         &:nth-child(10) {
           @include animation(fadeInAnim 0.2s ease-in 3.5s forwards);
@@ -962,19 +962,19 @@ body.home {
         // &:nth-child(11) {
         // }
         &:nth-child(12) {
-          @include animation(fadeInAnim 0.2s ease-in 3.6s forwards);
-        }
-        &:nth-child(13) {
-          @include animation(fadeInAnim 0.2s ease-in 3.7s forwards);
-        }
-        &:nth-child(14) {
-          @include animation(fadeInAnim 0.2s ease-in 3.8s forwards);
-        }
-        &:nth-child(15) {
           @include animation(fadeInAnim 0.2s ease-in 3.9s forwards);
         }
-        &:nth-child(16) {
+        &:nth-child(13) {
+          @include animation(fadeInAnim 0.2s ease-in 3.1s forwards);
+        }
+        &:nth-child(14) {
+          @include animation(fadeInAnim 0.2s ease-in 3.3s forwards);
+        }
+        &:nth-child(15) {
           @include animation(fadeInAnim 0.2s ease-in 4s forwards);
+        }
+        &:nth-child(16) {
+          @include animation(fadeInAnim 0.2s ease-in 3.6s forwards);
         }
       }
     }
@@ -982,30 +982,30 @@ body.home {
       span {
         @include filter(opacity(0));
         &:nth-child(1) {
-          @include animation(fadeInAnim 0.2s ease-in 2.2s forwards);
-        }
-        &:nth-child(2) {
-          @include animation(fadeInAnim 0.2s ease-in 2.3s forwards);
-        }
-        &:nth-child(3) {
-          @include animation(fadeInAnim 0.2s ease-in 2.4s forwards);
-        }
-        &:nth-child(4) {
           @include animation(fadeInAnim 0.2s ease-in 2.5s forwards);
         }
+        &:nth-child(2) {
+          @include animation(fadeInAnim 0.2s ease-in 2.2s forwards);
+        }
+        &:nth-child(3) {
+          @include animation(fadeInAnim 0.2s ease-in 2.7s forwards);
+        }
+        &:nth-child(4) {
+          @include animation(fadeInAnim 0.2s ease-in 3.2s forwards);
+        }
         &:nth-child(5) {
-          @include animation(fadeInAnim 0.2s ease-in 2.6s forwards);
+          @include animation(fadeInAnim 0.2s ease-in 2.9s forwards);
         }
         &:nth-child(6) {
-          @include animation(fadeInAnim 0.2s ease-in 2.7s forwards);
+          @include animation(fadeInAnim 0.2s ease-in 2.4s forwards);
         }
         // &:nth-child(7) {
         // }
         &:nth-child(8) {
-          @include animation(fadeInAnim 0.2s ease-in 2.8s forwards);
+          @include animation(fadeInAnim 0.2s ease-in 3.3s forwards);
         }
         &:nth-child(9) {
-          @include animation(fadeInAnim 0.2s ease-in 2.9s forwards);
+          @include animation(fadeInAnim 0.2s ease-in 2.3s forwards);
         }
         &:nth-child(10) {
           @include animation(fadeInAnim 0.2s ease-in 3s forwards);
@@ -1013,43 +1013,48 @@ body.home {
         // &:nth-child(11) {
         // }
         &:nth-child(12) {
-          @include animation(fadeInAnim 0.2s ease-in 3.1s forwards);
-        }
-        &:nth-child(13) {
-          @include animation(fadeInAnim 0.2s ease-in 3.2s forwards);
-        }
-        &:nth-child(14) {
-          @include animation(fadeInAnim 0.2s ease-in 3.3s forwards);
-        }
-        &:nth-child(15) {
           @include animation(fadeInAnim 0.2s ease-in 3.4s forwards);
         }
-        &:nth-child(16) {
+        &:nth-child(13) {
+          @include animation(fadeInAnim 0.2s ease-in 2.6s forwards);
+        }
+        &:nth-child(14) {
+          @include animation(fadeInAnim 0.2s ease-in 2.8s forwards);
+        }
+        &:nth-child(15) {
           @include animation(fadeInAnim 0.2s ease-in 3.5s forwards);
+        }
+        &:nth-child(16) {
+          @include animation(fadeInAnim 0.2s ease-in 3.1s forwards);
         }
       }
     }
-    .text-i-am {
-      @include animation(fadeInAnim 0.5s ease-in 4s forwards);
-    }
-    .text-i-like {
-      @include animation(fadeInAnim 0.5s ease-in 4s forwards);
-    }
-    aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article {
-      @include animation(fadeInAnim 0.5s ease-in 4s forwards);
+    aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article,
+    .text-i-am, .text-i-like {
+      @include animation(fadeInAnim 0.5s ease-in 4.2s forwards);
     }
     .aside-cover-1, .aside-cover-2 {
-      @include animation(fadeOutAnim 0.5s ease-in 4s forwards);
+      @include animation(fadeOutAnim 0.5s ease-in 4.2s forwards);
+    }
+  }
+  &.home-rendering {
+    .cursor {
+      @include filter(opacity(0));
     }
   }
 }
-body.work {
+body.work, body.contact, body.plans, body.sites_inspiration {
   &.imagesloaded {
     aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article {
       @include animation(fadeInAnim 0.5s ease-in 2.2s forwards);
     }
     .aside-cover-1, .aside-cover-2 {
       @include animation(fadeOutAnim 0.5s ease-in 2.2s forwards);
+    }
+  }
+  &.rendering {
+    .cursor {
+      @include filter(opacity(0));
     }
   }
 }

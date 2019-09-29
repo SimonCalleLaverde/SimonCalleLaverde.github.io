@@ -20,6 +20,24 @@
   }
 }//@keyframes
 
+@keyframes opacityInAnim {
+  0% {
+    @include filter(opacity(0));
+  }
+  100% {
+    @include filter(opacity(1));
+  }
+}//@keyframes
+
+@keyframes opacityOutAnim {
+  0% {
+    @include filter(opacity(1));
+  }
+  100% {
+    @include filter(opacity(0));
+  }
+}//@keyframes
+
 @keyframes backgroundTranslateAnimOld {
   0% {
     //background-image:url("/uploads/home-header.jpg")!important;
