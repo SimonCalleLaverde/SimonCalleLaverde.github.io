@@ -764,7 +764,7 @@ span.fa-stack {
     //animation-timing-function:linear;
     //animation-iteration-count:1;
     //animation-fill-mode:forwards;
-    @include animation(textLineThroughAnim 5s linear 2s infinite);//ease-in-out
+    @include animation(textLineThroughAnim 5s linear 3.7s infinite);//ease-in-out
   }
   &:before {
     width:0;
@@ -774,7 +774,7 @@ span.fa-stack {
   }
   &.text-websites {
     &:after {
-      @include animation(textLineThroughAnim 5s linear 3.2s infinite);//ease-in-out
+      @include animation(textLineThroughAnim 5s linear 4.9s infinite);//ease-in-out
     }
   }
 }
