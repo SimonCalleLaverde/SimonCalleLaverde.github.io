@@ -4,7 +4,7 @@ title: Fine Web Design
 permalink: /
 slug: home
 type_slug: basic
-headline: Hello!<br>I am<br>Simon
+headline: <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span><span>!</span><br><span>I</span> <span>a</span><span>m</span><br><span>S</span><span>i</span><span>m</span><span>o</span><span>n</span>
 header_image: ""
 background_image: /uploads/logo-beard-background.png # /uploads/home-header.jpg
 thumbnail_image: ""

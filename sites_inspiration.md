@@ -72,7 +72,6 @@ thumbnail_image: ""
 <a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
-<a href="..."></a>
 -->
 
 <h1>Plugins</h1>
@@ -93,6 +92,7 @@ thumbnail_image: ""
 <a href="http://scrollme.nckprsn.com/">Animate On Scroll Plugin</a>
 <a href="https://codepen.io/Omarzikry/pen/vYBbNqx?&page=1">Cursor Follow</a>
 <a href="https://codepen.io/simon-jaeger/pen/OJLpJZN?page=4">Cursor Follow | Add Transition</a>
+<a href="https://codepen.io/ReGGae/pen/OavayV">Magnetic Cursor</a>
 
 <h1>Platforms</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY">GitHub Pages</a>

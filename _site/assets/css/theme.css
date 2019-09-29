@@ -11153,17 +11153,6 @@ body {
       -ms-animation: mainTranslateAnim 0.7s ease-in 1.5s forwards;
       -o-animation: mainTranslateAnim 0.7s ease-in 1.5s forwards;
       animation: mainTranslateAnim 0.7s ease-in 1.5s forwards; }
-    body.imagesloaded aside.nav-social-media, body.imagesloaded .copyright, body.imagesloaded aside.change-features, body.imagesloaded nav.navbar, body.imagesloaded aside.logo {
-      -webkit-filter: opacity(0);
-      -moz-filter: opacity(0);
-      -ms-filter: opacity(0);
-      -o-filter: opacity(0);
-      filter: opacity(0);
-      -webkit-animation: fadeInAnim 0.2s ease-in 2s forwards;
-      -moz-animation: fadeInAnim 0.2s ease-in 2s forwards;
-      -ms-animation: fadeInAnim 0.2s ease-in 2s forwards;
-      -o-animation: fadeInAnim 0.2s ease-in 2s forwards;
-      animation: fadeInAnim 0.2s ease-in 2s forwards; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
@@ -11466,7 +11455,7 @@ article.project-article {
   .modal .modal-content .modal-header button.close:hover, .modal .modal-content .modal-header button.close:active, .modal .modal-content .modal-header button.close:focus {
     outline: none; }
 
-.nav-social-media {
+aside.nav-social-media {
   position: fixed;
   top: 33%;
   left: 0;
@@ -11476,9 +11465,9 @@ article.project-article {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%; }
-  .nav-social-media span.fa-stack.custom {
+  aside.nav-social-media span.fa-stack.custom {
     height: 27px; }
-    .nav-social-media span.fa-stack.custom .fa-stack-2x, .nav-social-media span.fa-stack.custom .fa-circle {
+    aside.nav-social-media span.fa-stack.custom .fa-stack-2x, aside.nav-social-media span.fa-stack.custom .fa-circle {
       font-size: 1.8rem;
       color: #FFF !important;
       -webkit-transition: all ease-out 0.3s;
@@ -11486,7 +11475,7 @@ article.project-article {
       -ms-transition: all ease-out 0.3s;
       -o-transition: all ease-out 0.3s;
       transition: all ease-out 0.3s; }
-    .nav-social-media span.fa-stack.custom .fa-stack-1x, .nav-social-media span.fa-stack.custom .fa-facebook, .nav-social-media span.fa-stack.custom .fa-pinterest, .nav-social-media span.fa-stack.custom .fa-instagram {
+    aside.nav-social-media span.fa-stack.custom .fa-stack-1x, aside.nav-social-media span.fa-stack.custom .fa-facebook, aside.nav-social-media span.fa-stack.custom .fa-pinterest, aside.nav-social-media span.fa-stack.custom .fa-instagram {
       font-size: 0.9rem;
       line-height: 2;
       color: #000 !important;
@@ -11495,17 +11484,17 @@ article.project-article {
       -ms-transition: all ease-out 0.3s;
       -o-transition: all ease-out 0.3s;
       transition: all ease-out 0.3s; }
-    .nav-social-media span.fa-stack.custom:hover, .nav-social-media span.fa-stack.custom:active, .nav-social-media span.fa-stack.custom:focus {
+    aside.nav-social-media span.fa-stack.custom:hover, aside.nav-social-media span.fa-stack.custom:active, aside.nav-social-media span.fa-stack.custom:focus {
       -webkit-filter: opacity(0.9);
       -moz-filter: opacity(0.9);
       -ms-filter: opacity(0.9);
       -o-filter: opacity(0.9);
       filter: opacity(0.9); }
-  .nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, .nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, .nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, .nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, .nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, .nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook {
+  aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook {
     color: #C4A667 !important; }
-  .nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-instagram, .nav-social-media a:hover span.fa-stack.custom .fa-circle.text-instagram, .nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-instagram, .nav-social-media a:active span.fa-stack.custom .fa-circle.text-instagram, .nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-instagram, .nav-social-media a:focus span.fa-stack.custom .fa-circle.text-instagram {
+  aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-instagram, aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-instagram, aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-instagram, aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-instagram, aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-instagram, aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-instagram {
     color: #1ECF93 !important; }
-  .nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, .nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, .nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, .nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, .nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, .nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest {
+  aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest {
     color: #42F7E3 !important; }
 
 @media (pointer: coarse) and (hover: none) {
@@ -11710,6 +11699,213 @@ aside.change-features {
     -o-transform: rotate(90deg) translateY(3px);
     transform: rotate(90deg) translateY(3px); }
 
+.text-i-am, .text-i-like,
+aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo {
+  -webkit-filter: opacity(0);
+  -moz-filter: opacity(0);
+  -ms-filter: opacity(0);
+  -o-filter: opacity(0);
+  filter: opacity(0); }
+
+.imagesloaded .text-one span {
+  -webkit-filter: opacity(0);
+  -moz-filter: opacity(0);
+  -ms-filter: opacity(0);
+  -o-filter: opacity(0);
+  filter: opacity(0); }
+  .imagesloaded .text-one span:nth-child(1) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.7s forwards; }
+  .imagesloaded .text-one span:nth-child(2) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.8s forwards; }
+  .imagesloaded .text-one span:nth-child(3) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.9s forwards; }
+  .imagesloaded .text-one span:nth-child(4) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3s forwards;
+    animation: fadeInAnim 0.2s ease-in 3s forwards; }
+  .imagesloaded .text-one span:nth-child(5) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.1s forwards; }
+  .imagesloaded .text-one span:nth-child(6) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.2s forwards; }
+  .imagesloaded .text-one span:nth-child(8) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.3s forwards; }
+  .imagesloaded .text-one span:nth-child(9) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.4s forwards; }
+  .imagesloaded .text-one span:nth-child(10) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.5s forwards; }
+  .imagesloaded .text-one span:nth-child(12) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.6s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.6s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.6s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.6s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.6s forwards; }
+  .imagesloaded .text-one span:nth-child(13) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.7s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.7s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.7s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.7s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.7s forwards; }
+  .imagesloaded .text-one span:nth-child(14) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.8s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.8s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.8s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.8s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.8s forwards; }
+  .imagesloaded .text-one span:nth-child(15) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.9s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.9s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.9s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.9s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.9s forwards; }
+  .imagesloaded .text-one span:nth-child(16) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 4s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 4s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 4s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 4s forwards;
+    animation: fadeInAnim 0.2s ease-in 4s forwards; }
+.imagesloaded .text-two span {
+  -webkit-filter: opacity(0);
+  -moz-filter: opacity(0);
+  -ms-filter: opacity(0);
+  -o-filter: opacity(0);
+  filter: opacity(0); }
+  .imagesloaded .text-two span:nth-child(1) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.2s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.2s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.2s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.2s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.2s forwards; }
+  .imagesloaded .text-two span:nth-child(2) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.3s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.3s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.3s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.3s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.3s forwards; }
+  .imagesloaded .text-two span:nth-child(3) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.4s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.4s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.4s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.4s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.4s forwards; }
+  .imagesloaded .text-two span:nth-child(4) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.5s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.5s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.5s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.5s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.5s forwards; }
+  .imagesloaded .text-two span:nth-child(5) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.6s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.6s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.6s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.6s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.6s forwards; }
+  .imagesloaded .text-two span:nth-child(6) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.7s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.7s forwards; }
+  .imagesloaded .text-two span:nth-child(8) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.8s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.8s forwards; }
+  .imagesloaded .text-two span:nth-child(9) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 2.9s forwards;
+    animation: fadeInAnim 0.2s ease-in 2.9s forwards; }
+  .imagesloaded .text-two span:nth-child(10) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3s forwards;
+    animation: fadeInAnim 0.2s ease-in 3s forwards; }
+  .imagesloaded .text-two span:nth-child(12) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.1s forwards; }
+  .imagesloaded .text-two span:nth-child(13) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.2s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.2s forwards; }
+  .imagesloaded .text-two span:nth-child(14) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.3s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.3s forwards; }
+  .imagesloaded .text-two span:nth-child(15) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.4s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.4s forwards; }
+  .imagesloaded .text-two span:nth-child(16) {
+    -webkit-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
+    -moz-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
+    -ms-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
+    -o-animation: fadeInAnim 0.2s ease-in 3.5s forwards;
+    animation: fadeInAnim 0.2s ease-in 3.5s forwards; }
+.imagesloaded .text-i-am {
+  -webkit-animation: fadeInAnim 0.5s ease-in 4s forwards;
+  -moz-animation: fadeInAnim 0.5s ease-in 4s forwards;
+  -ms-animation: fadeInAnim 0.5s ease-in 4s forwards;
+  -o-animation: fadeInAnim 0.5s ease-in 4s forwards;
+  animation: fadeInAnim 0.5s ease-in 4s forwards; }
+.imagesloaded .text-i-like {
+  -webkit-animation: fadeInAnim 0.5s ease-in 4s forwards;
+  -moz-animation: fadeInAnim 0.5s ease-in 4s forwards;
+  -ms-animation: fadeInAnim 0.5s ease-in 4s forwards;
+  -o-animation: fadeInAnim 0.5s ease-in 4s forwards;
+  animation: fadeInAnim 0.5s ease-in 4s forwards; }
+.imagesloaded aside.nav-social-media, .imagesloaded .copyright, .imagesloaded aside.change-features, .imagesloaded nav.navbar, .imagesloaded aside.logo {
+  -webkit-animation: fadeInAnim 0.5s ease-in 4s forwards;
+  -moz-animation: fadeInAnim 0.5s ease-in 4s forwards;
+  -ms-animation: fadeInAnim 0.5s ease-in 4s forwards;
+  -o-animation: fadeInAnim 0.5s ease-in 4s forwards;
+  animation: fadeInAnim 0.5s ease-in 4s forwards; }
+
 aside.logo {
   position: fixed;
   top: 30px;
@@ -11851,21 +12047,21 @@ body.theme-colour.white {
     -ms-filter: grayscale(0);
     -o-filter: grayscale(0);
     filter: grayscale(0); }
-  body.theme-colour.white .nav-social-media span.fa-stack.custom .fa-stack-2x, body.theme-colour.white .nav-social-media span.fa-stack.custom .fa-circle {
+  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle {
     color: inherit !important; }
-    body.theme-colour.white .nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white .nav-social-media span.fa-stack.custom .fa-circle.text-facebook {
+    body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-facebook {
       color: #3B5998 !important; }
-    body.theme-colour.white .nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white .nav-social-media span.fa-stack.custom .fa-circle.text-instagram {
+    body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-instagram {
       color: #E1306C !important; }
-    body.theme-colour.white .nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white .nav-social-media span.fa-stack.custom .fa-circle.text-pinterest {
+    body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-pinterest {
       color: #BD081C !important; }
-  body.theme-colour.white .nav-social-media span.fa-stack.custom .fa-stack-1x, body.theme-colour.white .nav-social-media span.fa-stack.custom .fa-facebook, body.theme-colour.white .nav-social-media span.fa-stack.custom .fa-pinterest, body.theme-colour.white .nav-social-media span.fa-stack.custom .fa-instagram {
+  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-1x, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-facebook, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-pinterest, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-instagram {
     color: #FFF !important; }
-  body.theme-colour.white .nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white .nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white .nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white .nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white .nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white .nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook {
+  body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook {
     color: #4c70ba !important; }
-  body.theme-colour.white .nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white .nav-social-media a:hover span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white .nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white .nav-social-media a:active span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white .nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white .nav-social-media a:focus span.fa-stack.custom .fa-circle.text-instagram {
+  body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-instagram {
     color: #e75d8c !important; }
-  body.theme-colour.white .nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white .nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white .nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white .nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white .nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white .nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest {
+  body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest {
     color: #ee0a23 !important; }
   body.theme-colour.white article.project-article.home .project-thumbnail time.project-year, body.theme-colour.white article.project-article.work .project-thumbnail time.project-year {
     color: #EB0082 !important; }

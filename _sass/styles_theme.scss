@@ -173,10 +173,6 @@ body {
       @include animation(mainTranslateAnim 0.7s ease-in 1.5s forwards);
       //@include animation(bodyFadeInAnim 1s ease-in);
     }
-    aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo {
-      @include filter(opacity(0));
-      @include animation(fadeInAnim 0.2s ease-in 2s forwards);
-    }
   }
 }
 // p {
@@ -569,7 +565,7 @@ article.project-article {
 }
 
 // Nav Social Media
-.nav-social-media {
+aside.nav-social-media {
   position:fixed;
   //float:left;//For shape-outside
   top:33%;
@@ -921,40 +917,124 @@ aside.change-features {
   }
 }
 
-
-
-
-// .circle {//GSAP
-//   position: absolute;
-//   width: 100px;
-//   height: 100px;
-//   top: 50%;
-//   left: 50%;
-//   margin: -50px 0 0 -50px;
-//   background: #FFF;
-//   border-radius: 80%;
-//   backface-visibility: hidden;
-//   mix-blend-mode:difference;
-//   pointer-events:none;
-//   z-index:11000;
-// }
-
-
-
-
-
-// svg#cursor {//GSAP
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   z-index:11000;
-// }
-
-
-
-
+// Header Text Animations
+.text-i-am, .text-i-like,
+aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo {
+  @include filter(opacity(0));
+}
+.imagesloaded {//.rendered
+  .text-one {
+    span {
+      @include filter(opacity(0));
+      &:nth-child(1) {
+        @include animation(fadeInAnim 0.2s ease-in 2.7s forwards);
+      }
+      &:nth-child(2) {
+        @include animation(fadeInAnim 0.2s ease-in 2.8s forwards);
+      }
+      &:nth-child(3) {
+        @include animation(fadeInAnim 0.2s ease-in 2.9s forwards);
+      }
+      &:nth-child(4) {
+        @include animation(fadeInAnim 0.2s ease-in 3s forwards);
+      }
+      &:nth-child(5) {
+        @include animation(fadeInAnim 0.2s ease-in 3.1s forwards);
+      }
+      &:nth-child(6) {
+        @include animation(fadeInAnim 0.2s ease-in 3.2s forwards);
+      }
+      // &:nth-child(7) {
+      // }
+      &:nth-child(8) {
+        @include animation(fadeInAnim 0.2s ease-in 3.3s forwards);
+      }
+      &:nth-child(9) {
+        @include animation(fadeInAnim 0.2s ease-in 3.4s forwards);
+      }
+      &:nth-child(10) {
+        @include animation(fadeInAnim 0.2s ease-in 3.5s forwards);
+      }
+      // &:nth-child(11) {
+      // }
+      &:nth-child(12) {
+        @include animation(fadeInAnim 0.2s ease-in 3.6s forwards);
+      }
+      &:nth-child(13) {
+        @include animation(fadeInAnim 0.2s ease-in 3.7s forwards);
+      }
+      &:nth-child(14) {
+        @include animation(fadeInAnim 0.2s ease-in 3.8s forwards);
+      }
+      &:nth-child(15) {
+        @include animation(fadeInAnim 0.2s ease-in 3.9s forwards);
+      }
+      &:nth-child(16) {
+        @include animation(fadeInAnim 0.2s ease-in 4s forwards);
+      }
+    }
+  }
+  .text-two {
+    span {
+      @include filter(opacity(0));
+      &:nth-child(1) {
+        @include animation(fadeInAnim 0.2s ease-in 2.2s forwards);
+      }
+      &:nth-child(2) {
+        @include animation(fadeInAnim 0.2s ease-in 2.3s forwards);
+      }
+      &:nth-child(3) {
+        @include animation(fadeInAnim 0.2s ease-in 2.4s forwards);
+      }
+      &:nth-child(4) {
+        @include animation(fadeInAnim 0.2s ease-in 2.5s forwards);
+      }
+      &:nth-child(5) {
+        @include animation(fadeInAnim 0.2s ease-in 2.6s forwards);
+      }
+      &:nth-child(6) {
+        @include animation(fadeInAnim 0.2s ease-in 2.7s forwards);
+      }
+      // &:nth-child(7) {
+      // }
+      &:nth-child(8) {
+        @include animation(fadeInAnim 0.2s ease-in 2.8s forwards);
+      }
+      &:nth-child(9) {
+        @include animation(fadeInAnim 0.2s ease-in 2.9s forwards);
+      }
+      &:nth-child(10) {
+        @include animation(fadeInAnim 0.2s ease-in 3s forwards);
+      }
+      // &:nth-child(11) {
+      // }
+      &:nth-child(12) {
+        @include animation(fadeInAnim 0.2s ease-in 3.1s forwards);
+      }
+      &:nth-child(13) {
+        @include animation(fadeInAnim 0.2s ease-in 3.2s forwards);
+      }
+      &:nth-child(14) {
+        @include animation(fadeInAnim 0.2s ease-in 3.3s forwards);
+      }
+      &:nth-child(15) {
+        @include animation(fadeInAnim 0.2s ease-in 3.4s forwards);
+      }
+      &:nth-child(16) {
+        @include animation(fadeInAnim 0.2s ease-in 3.5s forwards);
+      }
+    }
+  }
+  .text-i-am {
+    @include animation(fadeInAnim 0.5s ease-in 4s forwards);
+  }
+  .text-i-like {
+    @include animation(fadeInAnim 0.5s ease-in 4s forwards);
+  }
+  aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo {
+    @include animation(fadeInAnim 0.5s ease-in 4s forwards);
+  }
+}
 
 //----------------------------------Section Styles----------------------------------//
 
@@ -1189,7 +1269,7 @@ body.theme-colour.white {
       @include filter(grayscale(0));
     }
   }
-  .nav-social-media {
+  aside.nav-social-media {
     span.fa-stack.custom {
       .fa-stack-2x, .fa-circle {
         color:inherit!important;
