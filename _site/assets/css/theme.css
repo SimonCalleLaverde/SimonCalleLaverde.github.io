@@ -10802,13 +10802,32 @@ a.text-goldy:hover, a.text-goldy:focus {
     -ms-filter: opacity(0);
     -o-filter: opacity(0);
     filter: opacity(0); } }
-@keyframes backgroundTranslateAnim {
+@keyframes backgroundTranslateAnimOld {
   0% {
     background-position: center center; }
   50% {
     background-position: center center; }
   100% {
     background-position: bottom center; } }
+@keyframes backgroundTranslateAnim {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(-22%);
+    -moz-transform: translateY(-22%);
+    -ms-transform: translateY(-22%);
+    -o-transform: translateY(-22%);
+    transform: translateY(-22%); } }
 @keyframes mainTranslateAnim {
   0% {
     -webkit-transform: translateY(100vh);
@@ -11143,23 +11162,17 @@ body {
   body.home.home-rendering {
     cursor: progress;
     overflow: hidden; }
-  body.imagesloaded {
-    -webkit-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
-    -moz-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
-    -ms-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
-    -o-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
-    animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards; }
-    body.imagesloaded main {
-      -webkit-transform: translateY(100vh);
-      -moz-transform: translateY(100vh);
-      -ms-transform: translateY(100vh);
-      -o-transform: translateY(100vh);
-      transform: translateY(100vh);
-      -webkit-animation: mainTranslateAnim 0.7s ease-in 1.5s forwards;
-      -moz-animation: mainTranslateAnim 0.7s ease-in 1.5s forwards;
-      -ms-animation: mainTranslateAnim 0.7s ease-in 1.5s forwards;
-      -o-animation: mainTranslateAnim 0.7s ease-in 1.5s forwards;
-      animation: mainTranslateAnim 0.7s ease-in 1.5s forwards; }
+  body.imagesloaded main {
+    -webkit-transform: translateY(100vh);
+    -moz-transform: translateY(100vh);
+    -ms-transform: translateY(100vh);
+    -o-transform: translateY(100vh);
+    transform: translateY(100vh);
+    -webkit-animation: mainTranslateAnim 0.7s ease-in 1.5s forwards;
+    -moz-animation: mainTranslateAnim 0.7s ease-in 1.5s forwards;
+    -ms-animation: mainTranslateAnim 0.7s ease-in 1.5s forwards;
+    -o-animation: mainTranslateAnim 0.7s ease-in 1.5s forwards;
+    animation: mainTranslateAnim 0.7s ease-in 1.5s forwards; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
@@ -11231,13 +11244,30 @@ figure {
   figure figcaption, figure time {
     pointer-events: none; }
 
+.background-for-animation {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2; }
+
+.imagesloaded .background-for-animation {
+  -webkit-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
+  -moz-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
+  -ms-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
+  -o-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
+  animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards; }
+
 main, header, section, footer {
   position: relative; }
 
 main {
   background-color: #1A1A1A;
   text-align: center;
-  z-index: 2;
+  z-index: 3;
   -webkit-transition: all ease-in-out 0.3s;
   -moz-transition: all ease-in-out 0.3s;
   -ms-transition: all ease-in-out 0.3s;
@@ -11250,7 +11280,7 @@ main {
     bottom: 0;
     left: 0;
     pointer-events: none;
-    z-index: 3; }
+    z-index: 4; }
     main #grid .container .row div {
       position: relative; }
       main #grid .container .row div .grid-element {
@@ -11261,9 +11291,9 @@ main {
         border-right: none; }
   main > .luxury-scroll-container, main > [data-scroll] {
     width: 100%;
-    z-index: 4; }
+    z-index: 5; }
 
-aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo {
+aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article {
   z-index: 6000; }
 
 .aside-cover-1, .aside-cover-2 {
@@ -11717,7 +11747,7 @@ aside.change-features {
     transform: rotate(90deg) translateY(3px); }
 
 .text-i-am, .text-i-like,
-aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo {
+aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article {
   -webkit-filter: opacity(0);
   -moz-filter: opacity(0);
   -ms-filter: opacity(0);
@@ -11916,7 +11946,7 @@ body.home.imagesloaded .text-i-like {
   -ms-animation: fadeInAnim 0.5s ease-in 4s forwards;
   -o-animation: fadeInAnim 0.5s ease-in 4s forwards;
   animation: fadeInAnim 0.5s ease-in 4s forwards; }
-body.home.imagesloaded aside.nav-social-media, body.home.imagesloaded .copyright, body.home.imagesloaded aside.change-features, body.home.imagesloaded nav.navbar, body.home.imagesloaded aside.logo {
+body.home.imagesloaded aside.nav-social-media, body.home.imagesloaded .copyright, body.home.imagesloaded aside.change-features, body.home.imagesloaded nav.navbar, body.home.imagesloaded aside.logo, body.home.imagesloaded article.project-article {
   -webkit-animation: fadeInAnim 0.5s ease-in 4s forwards;
   -moz-animation: fadeInAnim 0.5s ease-in 4s forwards;
   -ms-animation: fadeInAnim 0.5s ease-in 4s forwards;
@@ -11929,7 +11959,7 @@ body.home.imagesloaded .aside-cover-1, body.home.imagesloaded .aside-cover-2 {
   -o-animation: fadeOutAnim 0.5s ease-in 4s forwards;
   animation: fadeOutAnim 0.5s ease-in 4s forwards; }
 
-body.work.imagesloaded aside.nav-social-media, body.work.imagesloaded .copyright, body.work.imagesloaded aside.change-features, body.work.imagesloaded nav.navbar, body.work.imagesloaded aside.logo {
+body.work.imagesloaded aside.nav-social-media, body.work.imagesloaded .copyright, body.work.imagesloaded aside.change-features, body.work.imagesloaded nav.navbar, body.work.imagesloaded aside.logo, body.work.imagesloaded article.project-article {
   -webkit-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
   -moz-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
   -ms-animation: fadeInAnim 0.5s ease-in 2.2s forwards;

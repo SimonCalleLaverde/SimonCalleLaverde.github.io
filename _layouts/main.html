@@ -4,7 +4,7 @@
   {% include head.html %}
 
   <body class="page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} bg-image theme-colour black loading {% if page.slug == 'home' %}home-rendering{% else %}rendering{% endif %}" data-spy="scroll" data-target="#navbar" data-offset="80">
-    <!--<div id="loader">Loading</div>-->
+    {% include background_for_animation.html %}
 
     {% include cursor.html %}
 
@@ -19,7 +19,7 @@
     {% include nav.html %}
 
     {% include aside_covers.html %}
-    
+
     <main class="viewport" id="main">
       {% include grid.html %}
 
@@ -48,7 +48,7 @@
 
   {% if page.background_image.size > 0 %}
     <style type="text/css">
-      body {
+      #background_for_animation {/*body*/
         background:url('{{ page.background_image }}') no-repeat center center fixed;
         -webkit-background-size:cover;
         -moz-background-size:cover;

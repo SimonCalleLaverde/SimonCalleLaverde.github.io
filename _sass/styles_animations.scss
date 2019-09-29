@@ -20,7 +20,7 @@
   }
 }//@keyframes
 
-@keyframes backgroundTranslateAnim {
+@keyframes backgroundTranslateAnimOld {
   0% {
     //background-image:url("/uploads/home-header.jpg")!important;
     background-position:center center;
@@ -32,6 +32,18 @@
   100% {
     //background-image:url("/uploads/home-header-black-and-white.jpg")!important;
     background-position:bottom center;
+  }
+}//@keyframes
+
+@keyframes backgroundTranslateAnim {
+  0% {
+    @include transform(translateY(0));
+  }
+  50% {
+    @include transform(translateY(0));
+  }
+  100% {
+    @include transform(translateY(-22%));
   }
 }//@keyframes
 
