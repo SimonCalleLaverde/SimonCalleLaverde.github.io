@@ -16,7 +16,10 @@
 	//setTimeout(() => document.body.classList.add('rendered'), 4000);
 
 	imagesLoaded('img, .bg-image', { background: true }, () => {
-		document.body.classList.remove('loading');
-		document.body.classList.add('imagesloaded');//imgloaded
+		// document.body.classList.remove('loading');
+		// document.body.classList.add('imagesloaded');//imgloaded
+		
+		setTimeout(() => document.body.classList.remove('loading') , 500);
+		setTimeout(() => document.body.classList.add('imagesloaded') , 500);//imgloaded
 	});
 }
