@@ -12103,11 +12103,6 @@ i.fa:hover {
   z-index: 11000;
   pointer-events: none;
   mix-blend-mode: difference;
-  -webkit-box-shadow: 0 0 1rem #FFF;
-  -moz-box-shadow: 0 0 1rem #FFF;
-  -ms-box-shadow: 0 0 1rem #FFF;
-  -o-box-shadow: 0 0 1rem #FFF;
-  box-shadow: 0 0 1rem #FFF;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -12146,6 +12141,11 @@ i.fa:hover {
     transition: none; }
   .cursor:after {
     z-index: 11001;
+    -webkit-box-shadow: 0 0 1rem #FFF;
+    -moz-box-shadow: 0 0 1rem #FFF;
+    -ms-box-shadow: 0 0 1rem #FFF;
+    -o-box-shadow: 0 0 1rem #FFF;
+    box-shadow: 0 0 1rem #FFF;
     -webkit-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
     -moz-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
     -ms-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
@@ -12153,11 +12153,6 @@ i.fa:hover {
     transition: background-color ease-out 0.3s, transform ease-out 0.3s; }
   .cursor.hoveredLink:after {
     background-color: #FFF;
-    -webkit-box-shadow: 0 0 1rem #FFF;
-    -moz-box-shadow: 0 0 1rem #FFF;
-    -ms-box-shadow: 0 0 1rem #FFF;
-    -o-box-shadow: 0 0 1rem #FFF;
-    box-shadow: 0 0 1rem #FFF;
     -webkit-transform: scale(2.2);
     -moz-transform: scale(2.2);
     -ms-transform: scale(2.2);

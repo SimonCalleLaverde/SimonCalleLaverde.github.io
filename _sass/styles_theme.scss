@@ -1389,7 +1389,6 @@ i.fa {
   pointer-events:none;
   mix-blend-mode:difference;
   //will-change:transform, filter, background-color;
-  @include box-shadow(0 0 1rem #FFF);//#21D9AB (Other Option)//#14FF7D (Magenta Inverted)
   @include border-radius(50%);
   //@include transition(all ease-out 0.2s);//ease-out 100ms
   //@include animation(cursorAnim1 0.5s infinite alternate);
@@ -1422,13 +1421,13 @@ i.fa {
   &:after {
     z-index:11001;
     //will-change:background-color, transform;
+    @include box-shadow(0 0 1rem #FFF);//#21D9AB (Other Option)//#14FF7D (Magenta Inverted)
     @include transition(background-color ease-out 0.3s, transform ease-out 0.3s);
   }
   &.hoveredLink {
     //@include transition(all ease-out 0.3s);
     &:after {
       background-color:#FFF;
-      @include box-shadow(0 0 1rem #FFF);
       @include transform(scale(2.2));
     }
   }
