@@ -10774,12 +10774,14 @@ a.text-goldy:hover, a.text-goldy:focus {
   font-style: normal; }
 @keyframes fadeInAnim {
   0% {
+    pointer-events: none;
     -webkit-filter: opacity(0);
     -moz-filter: opacity(0);
     -ms-filter: opacity(0);
     -o-filter: opacity(0);
     filter: opacity(0); }
   100% {
+    pointer-events: auto;
     -webkit-filter: opacity(1);
     -moz-filter: opacity(1);
     -ms-filter: opacity(1);
@@ -10787,12 +10789,14 @@ a.text-goldy:hover, a.text-goldy:focus {
     filter: opacity(1); } }
 @keyframes fadeOutAnim {
   0% {
+    pointer-events: auto;
     -webkit-filter: opacity(1);
     -moz-filter: opacity(1);
     -ms-filter: opacity(1);
     -o-filter: opacity(1);
     filter: opacity(1); }
   100% {
+    pointer-events: none;
     -webkit-filter: opacity(0);
     -moz-filter: opacity(0);
     -ms-filter: opacity(0);
@@ -11262,6 +11266,19 @@ main {
 aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo {
   z-index: 6000; }
 
+.aside-cover-1, .aside-cover-2 {
+  position: fixed;
+  top: 0;
+  width: 150px;
+  height: 100vh;
+  z-index: 7000; }
+
+.aside-cover-1 {
+  left: 0; }
+
+.aside-cover-2 {
+  right: 0; }
+
 a {
   color: #EB0082;
   -webkit-transition: all ease-out 0.5s;
@@ -11462,7 +11479,6 @@ aside.nav-social-media {
   position: fixed;
   top: 33%;
   left: 0;
-  z-index: 10000;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -11501,14 +11517,12 @@ aside.nav-social-media {
     color: #42F7E3 !important; }
 
 @media (pointer: coarse) and (hover: none) {
-  .nav-social-media span.fa-stack.custom .fa-stack-2x, .nav-social-media span.fa-stack.custom .fa-circle {
-    color: inherit !important; }
-    .nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, .nav-social-media span.fa-stack.custom .fa-circle.text-facebook {
-      color: #3B5998 !important; }
-    .nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, .nav-social-media span.fa-stack.custom .fa-circle.text-instagram {
-      color: #E1306C !important; }
-    .nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, .nav-social-media span.fa-stack.custom .fa-circle.text-pinterest {
-      color: #BD081C !important; }
+  .nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, .nav-social-media span.fa-stack.custom .fa-circle.text-facebook {
+    color: #3B5998 !important; }
+  .nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, .nav-social-media span.fa-stack.custom .fa-circle.text-instagram {
+    color: #E1306C !important; }
+  .nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, .nav-social-media span.fa-stack.custom .fa-circle.text-pinterest {
+    color: #BD081C !important; }
   .nav-social-media span.fa-stack.custom .fa-stack-1x, .nav-social-media span.fa-stack.custom .fa-facebook, .nav-social-media span.fa-stack.custom .fa-pinterest, .nav-social-media span.fa-stack.custom .fa-instagram {
     color: #FFF !important; }
   .nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, .nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, .nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, .nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, .nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, .nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook {
@@ -11908,6 +11922,12 @@ body.home.imagesloaded aside.nav-social-media, body.home.imagesloaded .copyright
   -ms-animation: fadeInAnim 0.5s ease-in 4s forwards;
   -o-animation: fadeInAnim 0.5s ease-in 4s forwards;
   animation: fadeInAnim 0.5s ease-in 4s forwards; }
+body.home.imagesloaded .aside-cover-1, body.home.imagesloaded .aside-cover-2 {
+  -webkit-animation: fadeOutAnim 0.5s ease-in 4s forwards;
+  -moz-animation: fadeOutAnim 0.5s ease-in 4s forwards;
+  -ms-animation: fadeOutAnim 0.5s ease-in 4s forwards;
+  -o-animation: fadeOutAnim 0.5s ease-in 4s forwards;
+  animation: fadeOutAnim 0.5s ease-in 4s forwards; }
 
 body.work.imagesloaded aside.nav-social-media, body.work.imagesloaded .copyright, body.work.imagesloaded aside.change-features, body.work.imagesloaded nav.navbar, body.work.imagesloaded aside.logo {
   -webkit-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
@@ -11915,6 +11935,12 @@ body.work.imagesloaded aside.nav-social-media, body.work.imagesloaded .copyright
   -ms-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
   -o-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
   animation: fadeInAnim 0.5s ease-in 2.2s forwards; }
+body.work.imagesloaded .aside-cover-1, body.work.imagesloaded .aside-cover-2 {
+  -webkit-animation: fadeOutAnim 0.5s ease-in 2.2s forwards;
+  -moz-animation: fadeOutAnim 0.5s ease-in 2.2s forwards;
+  -ms-animation: fadeOutAnim 0.5s ease-in 2.2s forwards;
+  -o-animation: fadeOutAnim 0.5s ease-in 2.2s forwards;
+  animation: fadeOutAnim 0.5s ease-in 2.2s forwards; }
 
 aside.logo {
   position: fixed;
@@ -11923,29 +11949,31 @@ aside.logo {
   aside.logo .logo-interior {
     width: 100px;
     height: 100px;
+    background-color: transparent;
+    pointer-events: none;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border-radius: 50%; }
+    border-radius: 50%;
+    -webkit-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -ms-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+    transition: all ease-out 0.5s; }
     aside.logo .logo-interior svg {
       width: 50%;
       fill: #FEFEFE;
-      -webkit-transition: all ease-out 0.3s;
-      -moz-transition: all ease-out 0.3s;
-      -ms-transition: all ease-out 0.3s;
-      -o-transition: all ease-out 0.3s;
-      transition: all ease-out 0.3s; }
+      pointer-events: none;
+      -webkit-transition: all ease-out 0.5s;
+      -moz-transition: all ease-out 0.5s;
+      -ms-transition: all ease-out 0.5s;
+      -o-transition: all ease-out 0.5s;
+      transition: all ease-out 0.5s; }
       aside.logo .logo-interior svg .ear-right, aside.logo .logo-interior svg .ear-left {
         stroke: #FEFEFE; }
       aside.logo .logo-interior svg .path-bottom, aside.logo .logo-interior svg .chin, aside.logo .logo-interior svg .cheek-right, aside.logo .logo-interior svg .cheek-left, aside.logo .logo-interior svg .mouth, aside.logo .logo-interior svg .nose, aside.logo .logo-interior svg .ear-right, aside.logo .logo-interior svg .ear-left {
         display: none; }
-  aside.logo:hover .logo-interior svg, aside.logo:active .logo-interior svg, aside.logo:focus .logo-interior svg {
-    -webkit-filter: opacity(0.8);
-    -moz-filter: opacity(0.8);
-    -ms-filter: opacity(0.8);
-    -o-filter: opacity(0.8);
-    filter: opacity(0.8); }
 
 section.blog-page {
   padding: 30px 20px; }
@@ -12057,14 +12085,12 @@ body.theme-colour.white {
     -ms-filter: grayscale(0);
     -o-filter: grayscale(0);
     filter: grayscale(0); }
-  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle {
-    color: inherit !important; }
-    body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-facebook {
-      color: #3B5998 !important; }
-    body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-instagram {
-      color: #E1306C !important; }
-    body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-pinterest {
-      color: #BD081C !important; }
+  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-facebook {
+    color: #3B5998 !important; }
+  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-instagram {
+    color: #E1306C !important; }
+  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-pinterest {
+    color: #BD081C !important; }
   body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-1x, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-facebook, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-pinterest, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-instagram {
     color: #FFF !important; }
   body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook {

@@ -316,6 +316,21 @@ aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.log
   z-index:6000;
 }
 
+// Aside Covers
+.aside-cover-1, .aside-cover-2 {
+  position:fixed;
+  top:0;
+  width:150px;
+  height:100vh;
+  z-index:7000;
+}
+.aside-cover-1 {
+  left:0;
+}
+.aside-cover-2 {
+  right:0;
+}
+
 // Header Image
 .header-image {
 }
@@ -576,7 +591,6 @@ aside.nav-social-media {
   //float:left;//For shape-outside
   top:33%;
   left:0;
-  z-index:10000;
   //shape-outside:circle(50%);
   @include border-radius(50%);
   span.fa-stack.custom {
@@ -618,7 +632,6 @@ aside.nav-social-media {
   .nav-social-media {
     span.fa-stack.custom {
       .fa-stack-2x, .fa-circle {
-        color:inherit!important;
         &.text-facebook {
           color:theme-color('facebook')!important;
         }
@@ -1041,12 +1054,18 @@ body.home {
     aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo {
       @include animation(fadeInAnim 0.5s ease-in 4s forwards);
     }
+    .aside-cover-1, .aside-cover-2 {
+      @include animation(fadeOutAnim 0.5s ease-in 4s forwards);
+    }
   }
 }
 body.work {
   &.imagesloaded {
     aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo {
       @include animation(fadeInAnim 0.5s ease-in 2.2s forwards);
+    }
+    .aside-cover-1, .aside-cover-2 {
+      @include animation(fadeOutAnim 0.5s ease-in 2.2s forwards);
     }
   }
 }
@@ -1061,12 +1080,15 @@ aside.logo {
   .logo-interior {
     width:100px;
     height:100px;
-    //background-color:#FFF;
+    background-color:transparent;
+    pointer-events:none;
     @include border-radius(50%);
+    @include transition(all ease-out 0.5s);
     svg {
       width:50%;
       fill:theme-color('grey-light');
-      @include transition(all ease-out 0.3s);
+      pointer-events:none;
+      @include transition(all ease-out 0.5s);
       .ear-right, .ear-left {//.path-bottom
         stroke:theme-color('grey-light');
       }
@@ -1077,9 +1099,10 @@ aside.logo {
   }
   &:hover, &:active, &:focus {
     .logo-interior {
+      //background-color:#FFF;
       svg {
-        //fill:lighten(theme-color('grey-mid'),10);
-        @include filter(opacity(0.8));
+        //fill:theme-color('grey-dark');
+        //@include filter(opacity(0.8));
         // .ear-right, .ear-left {//.path-bottom
         //   stroke:lighten(theme-color('grey-mid'),10);
         // }
@@ -1287,7 +1310,6 @@ body.theme-colour.white {
   aside.nav-social-media {
     span.fa-stack.custom {
       .fa-stack-2x, .fa-circle {
-        color:inherit!important;
         &.text-facebook {
           color:theme-color('facebook')!important;
         }
@@ -1484,6 +1506,7 @@ body {
   &:before {
     content:"";//Don't spend a small effort for a big result//A website made with \f004
     //The best things in life take time, and stay forever
+    //..Every next level of your life, will demand a new (version of) you
     position:fixed;
     display:flex;//To add prefixes
     flex-direction:row;//To add prefixes

@@ -1,17 +1,21 @@
 @keyframes fadeInAnim {
   0% {
+    pointer-events:none;
     @include filter(opacity(0));
   }
   100% {
+    pointer-events:auto;
     @include filter(opacity(1));
   }
 }//@keyframes
 
 @keyframes fadeOutAnim {
   0% {
+    pointer-events:auto;
     @include filter(opacity(1));
   }
   100% {
+    pointer-events:none;
     @include filter(opacity(0));
   }
 }//@keyframes
