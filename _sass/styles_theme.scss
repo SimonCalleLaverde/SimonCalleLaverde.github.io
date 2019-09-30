@@ -450,12 +450,25 @@ a {
   }
 }
 .text-huge {
+  font-size:5rem;
+  line-height:1;
+  .text-line-through {
+    &:before, &:after {
+      height:10px;
+    }
+  }
+}
+.text-big {
   font-size:4.5rem;//5rem;
   line-height:1;
   .text-line-through {
     &:before, &:after {
       height:7px;
     }
+  }
+}
+.text-huge, .text-big {
+  .text-line-through {
     &:hover {
       &:before {
         display:none;
@@ -754,17 +767,16 @@ span.fa-stack {
     position:absolute;
     width:100%;
     height:3px;
-    top:45%;//50%
+    top:45%;
     left:0;
-    background-color:#FFF;//theme-color('magenta')
+    background-color:#FFF;
     pointer-events:none;
-    //mix-blend-mode:difference;
     //animation-name:textLineThroughAnim;
     //animation-duration:4s;
     //animation-timing-function:linear;
     //animation-iteration-count:1;
     //animation-fill-mode:forwards;
-    @include animation(textLineThroughAnim 5s linear 3.7s infinite);//ease-in-out
+    @include animation(textLineThroughAnim 5s linear 3.7s infinite);
   }
   &:before {
     width:0;
@@ -774,23 +786,21 @@ span.fa-stack {
   }
   &.text-websites {
     &:after {
-      @include animation(textLineThroughAnim 5s linear 4.9s infinite);//ease-in-out
+      @include animation(textLineThroughAnim 5s linear 4.9s infinite);
     }
   }
 }
 a {
   &:hover {
     &.text-line-through {
-      //&.text-branding, &.text-websites {
-        &:after {
-          background-color:transparent;
-        }
-        &:before {
-          width:100%;
-          right:0;
-          left:0;
-        }
-      //}
+      &:after {
+        background-color:transparent;
+      }
+      &:before {
+        width:100%;
+        right:0;
+        left:0;
+      }
     }
   }
 }
@@ -878,20 +888,47 @@ aside.change-features {
 
 // Slick Carousel
 .slick-carousel {
-  .slick-slide {
-    outline:none;
-    @include transform(scale(1));
-    article.project-article {
-      width:40%!important;
-      margin:0 auto;
+  z-index:10;
+  .slick-track {
+    .slick-slide {
+
+
+      
+      width:800px!important;
+      outline:none;
+      @include transform(scale(1));
+      article.project-article {
+        width:40%!important;
+        margin:0 130px;//0 auto
+        @include transform(translate3d(150px, 0px, 0px));
+      }
+      &.slick-current {
+        article.project-article {
+          width:50%!important;
+          @include transition(all ease-out 0.3s);
+          //@include transform(scale(1.2));
+        }
+      }
     }
-    &.slick-current {
-      width:50%!important;
-      @include transition(transform ease-out 0.3s);
-      //@include transform(scale(1.2));
-    }
+
+
+    // &.nth-child(1) {
+    //   .slick-slide article.project-article {
+    //     @include transform(translate3d(150px, 0px, 0px));
+    //   }
+    // }
+    // &.nth-child(2) {
+    //   .slick-slide article.project-article {
+    //     @include transform(translate3d(200px, 0px, 0px));
+    //   }
+    // }
+
+
+
+
   }
-  .slick-arrow {
+  button.slick-arrow {//Temporary
+    z-index:10;
     &.slick-prev, &.slick-next {
       top:41%;
     }
@@ -902,6 +939,12 @@ aside.change-features {
       right:auto;
       left:170px;
     }
+  }
+}
+.slick-as-nav-for  {
+  z-index:10;
+  .project-as-nav-for {
+    height:80px;
   }
 }
 
@@ -930,50 +973,46 @@ body.home {
     .text-one {
       span {
         @include filter(opacity(0));
-        &:nth-child(1) {
+        &.letter-1 {//&:nth-child(1)
           @include animation(fadeInAnim 0.2s ease-in 3s forwards);
         }
-        &:nth-child(2) {
+        &.letter-2 {
           @include animation(fadeInAnim 0.2s ease-in 2.7s forwards);
         }
-        &:nth-child(3) {
+        &.letter-3 {
           @include animation(fadeInAnim 0.2s ease-in 3.2s forwards);
         }
-        &:nth-child(4) {
+        &.letter-4 {
           @include animation(fadeInAnim 0.2s ease-in 3.7s forwards);
         }
-        &:nth-child(5) {
+        &.letter-5 {
           @include animation(fadeInAnim 0.2s ease-in 3.4s forwards);
         }
-        &:nth-child(6) {
+        &.letter-6 {
           @include animation(fadeInAnim 0.2s ease-in 2.9s forwards);
         }
-        // &:nth-child(7) {
-        // }
-        &:nth-child(8) {
+        &.letter-7 {
           @include animation(fadeInAnim 0.2s ease-in 3.8s forwards);
         }
-        &:nth-child(9) {
+        &.letter-8 {
           @include animation(fadeInAnim 0.2s ease-in 2.8s forwards);
         }
-        &:nth-child(10) {
+        &.letter-9 {
           @include animation(fadeInAnim 0.2s ease-in 3.5s forwards);
         }
-        // &:nth-child(11) {
-        // }
-        &:nth-child(12) {
+        &.letter-10 {
           @include animation(fadeInAnim 0.2s ease-in 4s forwards);
         }
-        &:nth-child(13) {
+        &.letter-11 {
           @include animation(fadeInAnim 0.2s ease-in 3.1s forwards);
         }
-        &:nth-child(14) {
+        &.letter-12 {
           @include animation(fadeInAnim 0.2s ease-in 3.3s forwards);
         }
-        &:nth-child(15) {
+        &.letter-13 {
           @include animation(fadeInAnim 0.2s ease-in 3.9s forwards);
         }
-        &:nth-child(16) {
+        &.letter-14 {
           @include animation(fadeInAnim 0.2s ease-in 3.6s forwards);
         }
       }
@@ -981,50 +1020,46 @@ body.home {
     .text-two {
       span {
         @include filter(opacity(0));
-        &:nth-child(1) {
+        &.letter-1 {//&:nth-child(1)
           @include animation(fadeInAnim 0.2s ease-in 2.5s forwards);
         }
-        &:nth-child(2) {
+        &.letter-2 {
           @include animation(fadeInAnim 0.2s ease-in 2.2s forwards);
         }
-        &:nth-child(3) {
+        &.letter-3 {
           @include animation(fadeInAnim 0.2s ease-in 2.7s forwards);
         }
-        &:nth-child(4) {
+        &.letter-4 {
           @include animation(fadeInAnim 0.2s ease-in 3.2s forwards);
         }
-        &:nth-child(5) {
+        &.letter-5 {
           @include animation(fadeInAnim 0.2s ease-in 2.9s forwards);
         }
-        &:nth-child(6) {
+        &.letter-6 {
           @include animation(fadeInAnim 0.2s ease-in 2.4s forwards);
         }
-        // &:nth-child(7) {
-        // }
-        &:nth-child(8) {
+        &.letter-7 {
           @include animation(fadeInAnim 0.2s ease-in 3.3s forwards);
         }
-        &:nth-child(9) {
+        &.letter-8 {
           @include animation(fadeInAnim 0.2s ease-in 2.3s forwards);
         }
-        &:nth-child(10) {
+        &.letter-9 {
           @include animation(fadeInAnim 0.2s ease-in 3s forwards);
         }
-        // &:nth-child(11) {
-        // }
-        &:nth-child(12) {
+        &.letter-10 {
           @include animation(fadeInAnim 0.2s ease-in 3.5s forwards);
         }
-        &:nth-child(13) {
+        &.letter-11 {
           @include animation(fadeInAnim 0.2s ease-in 2.6s forwards);
         }
-        &:nth-child(14) {
+        &.letter-12 {
           @include animation(fadeInAnim 0.2s ease-in 2.8s forwards);
         }
-        &:nth-child(15) {
+        &.letter-13 {
           @include animation(fadeInAnim 0.2s ease-in 3.4s forwards);
         }
-        &:nth-child(16) {
+        &.letter-14 {
           @include animation(fadeInAnim 0.2s ease-in 3.1s forwards);
         }
       }
