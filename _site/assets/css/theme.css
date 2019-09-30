@@ -11455,12 +11455,31 @@ input.text, textarea.textarea, .form-group > select {
 .mobile-thumbnail-control {
   min-height: 300px; }
 
-article.project-article {
-  z-index: 100; }
-  article.project-article.home .project-thumbnail {
+article.project-article.home .project-thumbnail {
+  position: relative;
+  height: 400px; }
+  article.project-article.home .project-thumbnail time.project-year {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    -webkit-transform: rotate(90deg) translateY(-26px);
+    -moz-transform: rotate(90deg) translateY(-26px);
+    -ms-transform: rotate(90deg) translateY(-26px);
+    -o-transform: rotate(90deg) translateY(-26px);
+    transform: rotate(90deg) translateY(-26px); }
+  article.project-article.home .project-thumbnail figcaption.project-caption .project-name, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles {
+    background-color: rgba(0, 0, 0, 0.9); }
+    article.project-article.home .project-thumbnail figcaption.project-caption .project-name h1, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h2, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h3, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h4, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h5, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h6, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h1, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h2, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h3, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h4, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h5, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h6 {
+      color: #FEFEFE; }
+article.project-article.work {
+  margin-bottom: 104px;
+  will-change: scroll-position; }
+  article.project-article.work .project-thumbnail {
     position: relative;
-    height: 400px; }
-    article.project-article.home .project-thumbnail time.project-year {
+    height: 330px; }
+    article.project-article.work .project-thumbnail time.project-year {
       position: absolute;
       top: 15%;
       right: 0;
@@ -11471,31 +11490,10 @@ article.project-article {
       -ms-transform: rotate(90deg) translateY(-26px);
       -o-transform: rotate(90deg) translateY(-26px);
       transform: rotate(90deg) translateY(-26px); }
-    article.project-article.home .project-thumbnail figcaption.project-caption .project-name, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles {
-      background-color: rgba(0, 0, 0, 0.9); }
-      article.project-article.home .project-thumbnail figcaption.project-caption .project-name h1, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h2, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h3, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h4, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h5, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h6, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h1, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h2, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h3, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h4, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h5, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h6 {
-        color: #FEFEFE; }
-  article.project-article.work {
-    margin-bottom: 104px;
-    will-change: scroll-position; }
-    article.project-article.work .project-thumbnail {
-      position: relative;
-      height: 330px; }
-      article.project-article.work .project-thumbnail time.project-year {
-        position: absolute;
-        top: 15%;
-        right: 0;
-        font-family: "Playfair Display", serif;
-        font-weight: normal;
-        -webkit-transform: rotate(90deg) translateY(-26px);
-        -moz-transform: rotate(90deg) translateY(-26px);
-        -ms-transform: rotate(90deg) translateY(-26px);
-        -o-transform: rotate(90deg) translateY(-26px);
-        transform: rotate(90deg) translateY(-26px); }
-      article.project-article.work .project-thumbnail figcaption.project-caption .project-name, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles {
-        background-color: rgba(255, 255, 255, 0.95); }
-        article.project-article.work .project-thumbnail figcaption.project-caption .project-name h1, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h2, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h3, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h4, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h5, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h6, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h1, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h2, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h3, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h4, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h5, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h6 {
-          color: #1A1A1A; }
+    article.project-article.work .project-thumbnail figcaption.project-caption .project-name, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles {
+      background-color: rgba(255, 255, 255, 0.95); }
+      article.project-article.work .project-thumbnail figcaption.project-caption .project-name h1, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h2, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h3, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h4, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h5, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h6, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h1, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h2, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h3, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h4, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h5, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h6 {
+        color: #1A1A1A; }
 
 .flickity-carousel .main-carousel, .flickity-carousel .carousel-nav {
   width: 100%; }
@@ -11649,7 +11647,6 @@ a:hover.text-line-through:before {
   bottom: 30px;
   left: 35px;
   font-size: 15px;
-  z-index: 10000;
   mix-blend-mode: difference; }
 
 .mobile-dev-notice {
@@ -11658,7 +11655,7 @@ a:hover.text-line-through:before {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 99999; }
+  z-index: 100002; }
   .mobile-dev-notice .profile-picture {
     display: inline-block;
     width: 150px;
@@ -11690,7 +11687,6 @@ aside.change-features {
   top: 30px;
   right: 3.55%;
   font-size: 15px;
-  z-index: 10001;
   -webkit-filter: opacity(0);
   -moz-filter: opacity(0);
   -ms-filter: opacity(0);
@@ -11760,7 +11756,7 @@ aside.change-features {
       -o-transform: translate3d(150px, 0px, 0px);
       transform: translate3d(150px, 0px, 0px); }
     .slick-carousel .slick-track .slick-slide.slick-current article.project-article {
-      width: 50% !important;
+      width: 60% !important;
       -webkit-transition: all ease-out 0.3s;
       -moz-transition: all ease-out 0.3s;
       -ms-transition: all ease-out 0.3s;
@@ -12246,11 +12242,6 @@ i.fa:hover {
     transition: none; }
   .cursor:after {
     z-index: 11001;
-    -webkit-box-shadow: 0 0 1rem #FFF;
-    -moz-box-shadow: 0 0 1rem #FFF;
-    -ms-box-shadow: 0 0 1rem #FFF;
-    -o-box-shadow: 0 0 1rem #FFF;
-    box-shadow: 0 0 1rem #FFF;
     -webkit-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
     -moz-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
     -ms-transition: background-color ease-out 0.3s, transform ease-out 0.3s;
@@ -12320,7 +12311,7 @@ body:after {
   left: 50%;
   background-color: #EB0082;
   pointer-events: none;
-  z-index: 100000;
+  z-index: 100001;
   transform-style: preserve-3d;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
