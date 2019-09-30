@@ -118,7 +118,7 @@ $(document).ready(function() {
   $('.slick-as-nav-for').slick({
     dots: false,
     infinite: false,
-    slidesToShow: 6,
+    slidesToShow: 10,
     //slidesToScroll: 1,
     //draggable: true,//default
     //swipe: true,//default

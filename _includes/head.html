@@ -2,11 +2,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="A portfolio website made up with Jekyll; a showcase of my work at Code Nation, my education, and a general CV">
+  <!--<meta name="description" content="A portfolio website made up with Jekyll; a showcase of my work at Code Nation, my education, and a general CV">-->
   <meta name="author" content="Simón Calle Laverde">
   <meta name="keywords" content="web design, fine design, cool design, design, webdesign, simple design, jekyll templates, freelance, freelancer, web freelancer, web design freelancer, brand, branding, online marketing, marketing, css, scss, html, html5, javascript, jquery, liquid, tutorial, tutorials, liquid tutorials">
   <link rel="shortcut icon" href="/uploads/favicon.jpg">
   <title>{{ site.title }}</title>
+  {% feed_meta %}
   {% seo %}
   <meta property="og:type" content="article">
   <meta name="twitter:image" content="/uploads/share.jpg">
@@ -40,5 +41,12 @@
   	{% include google-analytics.html %}
   {% endif %}
   {% include facebook_pixel.html %}
+  {% endcomment %}-->
+
+  <!--As per https://jekyllrb.com/docs/step-by-step/10-deployment/-->
+  <!--{% comment %}
+  {% if jekyll.environment == "production" %}
+    <script src="my-analytics-script.js"></script>
+  {% endif %}
   {% endcomment %}-->
 </head>
