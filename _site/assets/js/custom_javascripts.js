@@ -131,7 +131,7 @@ $(document).ready(function() {
     //swipe: true,//default
     swipeToSlide: true,
     arrows: false,
-    centerMode: true,
+    //centerMode: true,
     focusOnSelect: true,
     asNavFor: '.slick-carousel'
   });

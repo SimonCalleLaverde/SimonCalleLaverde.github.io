@@ -851,7 +851,8 @@ aside.change-features {
 
 // Slick Carousel
 .slick-carousel {
-  width:99.99%;
+  width:calc(100% - 3px);
+  margin-left:1px;
   z-index:100;
   button.slick-arrow {
     z-index:101;
@@ -859,11 +860,11 @@ aside.change-features {
       top:41%;
     }
     &.slick-prev {
-      right:190px;
+      right:195px;
       left:auto;
     }
     &.slick-next {
-      right:140px;
+      right:145px;
       left:auto;
     }
   }
@@ -904,6 +905,13 @@ aside.change-features {
         }
         &.slick-current {
           article.project-article {
+            .project-thumbnail {
+              @include transition(all ease-out 0.5s);
+              &:hover {//, &:active, &:focus
+                @include transform(scale(1.03));
+                //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
+              }
+            }
             // &:hover {
             //   &:before, &:after {
             //     @include transform(translateX(0));
@@ -916,7 +924,8 @@ aside.change-features {
   }
 }
 .slick-as-nav-for  {
-  width:99.99%;
+  width:calc(100% - 3px);
+  margin-left:1px;
   z-index:100;
   .slick-list {
     z-index:102;
@@ -929,10 +938,10 @@ aside.change-features {
         //width:80px!important;
         outline:none;
         cursor:pointer;
-        @include transform(translate3d(-70px, 0px, 0px)!important);
+        @include transform(translate3d(-1px, 0px, 0px)!important);//translate3d(-70px, 0px, 0px)!important
         .project-as-nav-for {
           height:80px;
-          @include filter(opacity(0.8));
+          @include filter(opacity(0.5));//grayscale(100%)
           &:before, &:after {
             content:'';
             position:absolute;
@@ -970,7 +979,7 @@ aside.change-features {
         }
         &.slick-current {
           .project-as-nav-for {
-            @include filter(opacity(1));
+            @include filter(opacity(1));//grayscale(0)
           }
         }
       }
@@ -1127,13 +1136,17 @@ body.work, body.contact, body.plans, body.sites_inspiration {
 //----------------------------------Section Styles----------------------------------//
 
 // Logo
+$logo-width:100px;
+$logo-height:100px;
+$logo-top:30px;
+$logo-left:13px;
 a.logo {
   position:fixed;
-  top:30px;
-  left:13px;
+  top:$logo-top;
+  left:$logo-left;
   .logo-interior {
-    width:100px;
-    height:100px;
+    width:$logo-width;
+    height:$logo-height;
     background-color:transparent;
     pointer-events:none;
     @include border-radius(50%);
@@ -1166,10 +1179,10 @@ a.logo {
 }
 .logo-cover {
   position:fixed;
-  width:100px;
-  height:100px;
-  top:30px;
-  left:13px;
+  width:$logo-width;
+  height:$logo-height;
+  top:$logo-top;
+  left:$logo-left;
   z-index:7000;
 }
 
