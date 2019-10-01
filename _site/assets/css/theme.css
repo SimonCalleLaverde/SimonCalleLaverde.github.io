@@ -11747,7 +11747,18 @@ aside.change-features {
         -ms-transition: all ease-out 0.3s;
         -o-transition: all ease-out 0.3s;
         transition: all ease-out 0.3s; }
+        .slick-carousel .slick-list .slick-track .slick-slide article.project-article .project-thumbnail {
+          -webkit-filter: opacity(0.5);
+          -moz-filter: opacity(0.5);
+          -ms-filter: opacity(0.5);
+          -o-filter: opacity(0.5);
+          filter: opacity(0.5); }
       .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail {
+        -webkit-filter: opacity(1);
+        -moz-filter: opacity(1);
+        -ms-filter: opacity(1);
+        -o-filter: opacity(1);
+        filter: opacity(1);
         -webkit-transition: all ease-out 0.5s;
         -moz-transition: all ease-out 0.5s;
         -ms-transition: all ease-out 0.5s;

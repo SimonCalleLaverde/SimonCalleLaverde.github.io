@@ -902,10 +902,14 @@ aside.change-features {
           //   right:0;
           //   @include transform(translateX(15px));
           // }
+          .project-thumbnail {
+            @include filter(opacity(0.5));//grayscale(100%)
+          }
         }
         &.slick-current {
           article.project-article {
             .project-thumbnail {
+              @include filter(opacity(1));//grayscale(0)
               @include transition(all ease-out 0.5s);
               &:hover {//, &:active, &:focus
                 @include transform(scale(1.03));
