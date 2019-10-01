@@ -11316,11 +11316,15 @@ main {
         border-left: 0.5px solid rgba(255, 255, 255, 0.1);
         border-right: none; }
   main > .luxury-scroll-container, main > [data-scroll] {
+    position: fixed;
     width: 100%;
     z-index: 5; }
 
-aside.nav-social-media, .copyright, aside.change-features, nav.navbar, a.logo, article.project-article {
+aside.nav-social-media, .copyright, nav.navbar, a.logo, article.project-article {
   z-index: 6000; }
+
+aside.change-features {
+  z-index: 6001; }
 
 .aside-cover-1, .aside-cover-2 {
   position: fixed;
@@ -11494,36 +11498,6 @@ article.project-article.work {
       background-color: rgba(255, 255, 255, 0.95); }
       article.project-article.work .project-thumbnail figcaption.project-caption .project-name h1, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h2, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h3, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h4, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h5, article.project-article.work .project-thumbnail figcaption.project-caption .project-name h6, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h1, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h2, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h3, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h4, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h5, article.project-article.work .project-thumbnail figcaption.project-caption .project-roles h6 {
         color: #1A1A1A; }
-
-.flickity-carousel .main-carousel, .flickity-carousel .carousel-nav {
-  width: 100%; }
-  .flickity-carousel .main-carousel article.carousel-cell, .flickity-carousel .carousel-nav article.carousel-cell {
-    width: 100%;
-    height: 350px; }
-  .flickity-carousel .main-carousel .flickity-button, .flickity-carousel .carousel-nav .flickity-button {
-    background-color: black; }
-    .flickity-carousel .main-carousel .flickity-button svg.flickity-button-icon, .flickity-carousel .carousel-nav .flickity-button svg.flickity-button-icon {
-      width: 40%;
-      left: 30%;
-      color: #FFF; }
-    .flickity-carousel .main-carousel .flickity-button.flickity-prev-next-button.next, .flickity-carousel .carousel-nav .flickity-button.flickity-prev-next-button.next {
-      right: 20px; }
-    .flickity-carousel .main-carousel .flickity-button.flickity-prev-next-button.previous, .flickity-carousel .carousel-nav .flickity-button.flickity-prev-next-button.previous {
-      left: 20px; }
-    .flickity-carousel .main-carousel .flickity-button:hover, .flickity-carousel .main-carousel .flickity-button:active, .flickity-carousel .main-carousel .flickity-button:focus, .flickity-carousel .carousel-nav .flickity-button:hover, .flickity-carousel .carousel-nav .flickity-button:active, .flickity-carousel .carousel-nav .flickity-button:focus {
-      opacity: 1;
-      -webkit-filter: opacity(0.65);
-      -moz-filter: opacity(0.65);
-      -ms-filter: opacity(0.65);
-      -o-filter: opacity(0.65);
-      filter: opacity(0.65);
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      -ms-box-shadow: none;
-      -o-box-shadow: none;
-      box-shadow: none; }
-.flickity-carousel .flickity-carousel-bottom-images {
-  display: none; }
 
 .modal .modal-content {
   -webkit-border-radius: 0;
@@ -11739,36 +11713,149 @@ aside.change-features {
   filter: opacity(0) !important; }
 
 .slick-carousel {
+  width: 99.99%;
   z-index: 100; }
   .slick-carousel button.slick-arrow {
     z-index: 101; }
     .slick-carousel button.slick-arrow.slick-prev, .slick-carousel button.slick-arrow.slick-next {
       top: 41%; }
     .slick-carousel button.slick-arrow.slick-prev {
-      left: 120px; }
+      right: 190px;
+      left: auto; }
     .slick-carousel button.slick-arrow.slick-next {
-      right: auto;
-      left: 170px; }
+      right: 140px;
+      left: auto; }
   .slick-carousel .slick-list {
     pointer-events: none;
     z-index: 102; }
     .slick-carousel .slick-list .slick-track .slick-slide {
-      outline: none; }
+      outline: none;
+      -webkit-transform: translate3d(-125px, 0px, 0px);
+      -moz-transform: translate3d(-125px, 0px, 0px);
+      -ms-transform: translate3d(-125px, 0px, 0px);
+      -o-transform: translate3d(-125px, 0px, 0px);
+      transform: translate3d(-125px, 0px, 0px); }
       .slick-carousel .slick-list .slick-track .slick-slide article.project-article {
-        width: 40% !important;
-        margin: 0 auto; }
-      .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article {
-        width: 55% !important;
+        position: relative;
+        width: 63.5%;
+        margin: 0 auto;
+        outline: none;
+        z-index: 103;
         -webkit-transition: all ease-out 0.3s;
         -moz-transition: all ease-out 0.3s;
         -ms-transition: all ease-out 0.3s;
         -o-transition: all ease-out 0.3s;
         transition: all ease-out 0.3s; }
+        .slick-carousel .slick-list .slick-track .slick-slide article.project-article:before, .slick-carousel .slick-list .slick-track .slick-slide article.project-article:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          height: 100%;
+          width: 15px;
+          background-color: #1A1A1A;
+          pointer-events: none;
+          z-index: 103;
+          -webkit-transition: all ease-out 0.3s;
+          -moz-transition: all ease-out 0.3s;
+          -ms-transition: all ease-out 0.3s;
+          -o-transition: all ease-out 0.3s;
+          transition: all ease-out 0.3s; }
+        .slick-carousel .slick-list .slick-track .slick-slide article.project-article:before {
+          left: 0;
+          -webkit-transform: translateX(-15px);
+          -moz-transform: translateX(-15px);
+          -ms-transform: translateX(-15px);
+          -o-transform: translateX(-15px);
+          transform: translateX(-15px); }
+        .slick-carousel .slick-list .slick-track .slick-slide article.project-article:after {
+          right: 0;
+          -webkit-transform: translateX(15px);
+          -moz-transform: translateX(15px);
+          -ms-transform: translateX(15px);
+          -o-transform: translateX(15px);
+          transform: translateX(15px); }
+      .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article:hover:before, .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article:hover:after {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0); }
 
 .slick-as-nav-for {
+  width: 99.99%;
   z-index: 100; }
-  .slick-as-nav-for .project-as-nav-for {
-    height: 80px; }
+  .slick-as-nav-for .slick-list {
+    z-index: 102; }
+    .slick-as-nav-for .slick-list.draggable {
+      padding: 0 !important; }
+    .slick-as-nav-for .slick-list .slick-track .slick-slide {
+      outline: none;
+      cursor: pointer;
+      -webkit-transform: translate3d(-70px, 0px, 0px) !important;
+      -moz-transform: translate3d(-70px, 0px, 0px) !important;
+      -ms-transform: translate3d(-70px, 0px, 0px) !important;
+      -o-transform: translate3d(-70px, 0px, 0px) !important;
+      transform: translate3d(-70px, 0px, 0px) !important; }
+      .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for {
+        height: 80px;
+        -webkit-filter: opacity(0.8);
+        -moz-filter: opacity(0.8);
+        -ms-filter: opacity(0.8);
+        -o-filter: opacity(0.8);
+        filter: opacity(0.8); }
+        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:before, .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          height: 100%;
+          width: 10px;
+          background-color: #1A1A1A;
+          pointer-events: none;
+          z-index: 103;
+          -webkit-transition: all ease-out 0.3s;
+          -moz-transition: all ease-out 0.3s;
+          -ms-transition: all ease-out 0.3s;
+          -o-transition: all ease-out 0.3s;
+          transition: all ease-out 0.3s;
+          -webkit-transform: translateX(0);
+          -moz-transform: translateX(0);
+          -ms-transform: translateX(0);
+          -o-transform: translateX(0);
+          transform: translateX(0); }
+        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:before {
+          left: 0; }
+        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:after {
+          right: 0; }
+        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:hover:before {
+          -webkit-transform: translateX(-10px);
+          -moz-transform: translateX(-10px);
+          -ms-transform: translateX(-10px);
+          -o-transform: translateX(-10px);
+          transform: translateX(-10px); }
+        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:hover:after {
+          -webkit-transform: translateX(10px);
+          -moz-transform: translateX(10px);
+          -ms-transform: translateX(10px);
+          -o-transform: translateX(10px);
+          transform: translateX(10px); }
+        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:hover ~ .project-as-nav-for:before {
+          -webkit-transform: translateX(-10px);
+          -moz-transform: translateX(-10px);
+          -ms-transform: translateX(-10px);
+          -o-transform: translateX(-10px);
+          transform: translateX(-10px); }
+        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:hover ~ .project-as-nav-for:after {
+          -webkit-transform: translateX(10px);
+          -moz-transform: translateX(10px);
+          -ms-transform: translateX(10px);
+          -o-transform: translateX(10px);
+          transform: translateX(10px); }
+      .slick-as-nav-for .slick-list .slick-track .slick-slide.slick-current .project-as-nav-for {
+        -webkit-filter: opacity(1);
+        -moz-filter: opacity(1);
+        -ms-filter: opacity(1);
+        -o-filter: opacity(1);
+        filter: opacity(1); }
 
 .hero-note {
   height: 305px;

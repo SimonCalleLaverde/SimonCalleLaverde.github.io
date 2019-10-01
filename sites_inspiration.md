@@ -111,6 +111,7 @@ thumbnail_image: ""
 <a href="https://www.youtube.com/watch?v=bEg5ySTUGxE">The Faker You Are, the More Successful You Can Be</a>
 <a href="https://www.youtube.com/watch?v=RKXZ7t_RiOE">Cómo poner precio a tus servicios de diseño</a>
 <a href="https://www.youtube.com/watch?v=iRo18pUs61Q">Why We Should Ditch React</a>
+<a href="https://www.youtube.com/watch?v=0HzOqyiV3f8">Websites Design | Top 10 Mistakes & Their Solutions</a>
 
 <h1>SEO</h1>
 <p>Google | Keywords Everywhere and Install for Chrome</p>

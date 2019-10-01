@@ -125,13 +125,13 @@ $(document).ready(function() {
   $('.slick-as-nav-for').slick({
     dots: false,
     infinite: false,
-    slidesToShow: 10,
+    slidesToShow: 8,
     //slidesToScroll: 1,
     //draggable: true,//default
     //swipe: true,//default
     swipeToSlide: true,
     arrows: false,
-    //centerMode: true,
+    centerMode: true,
     focusOnSelect: true,
     asNavFor: '.slick-carousel'
   });
