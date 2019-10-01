@@ -11412,7 +11412,7 @@ a {
 .text-underline {
   text-decoration: underline !important; }
 
-.headline {
+.headline-link {
   color: transparent;
   -webkit-text-stroke: 2px #FFF;
   -webkit-transition: all ease-out 0.3s;
@@ -11420,28 +11420,41 @@ a {
   -ms-transition: all ease-out 0.3s;
   -o-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s; }
-  .headline.soft {
+  .headline-link.soft {
     -webkit-text-stroke-width: 1.5px; }
-    .headline.soft:hover, .headline.soft:active, .headline.soft:focus {
+    .headline-link.soft:hover, .headline-link.soft:active, .headline-link.soft:focus {
       -webkit-text-stroke-width: 1.5px; }
-  .headline:hover, .headline:active, .headline:focus {
-    color: #FFF;
+  .headline-link:hover, .headline-link:active, .headline-link:focus {
+    color: #FFF !important;
     -webkit-text-stroke: 2px #FFF; }
 
-.text-huge {
-  font-size: 5rem;
+.text-stroke-white {
+  color: transparent !important;
+  -webkit-text-stroke: 2px #FFF !important; }
+
+.text-stroke-magenta {
+  color: transparent !important;
+  -webkit-text-stroke: 2px #EB0082 !important; }
+
+.text-gigantic, .text-huge, .text-big {
   line-height: 1; }
+  .text-gigantic .text-line-through:hover:before, .text-huge .text-line-through:hover:before, .text-big .text-line-through:hover:before {
+    display: none; }
+
+.text-gigantic {
+  font-size: 6rem; }
+  .text-gigantic .text-line-through:before, .text-gigantic .text-line-through:after {
+    height: 12px; }
+
+.text-huge {
+  font-size: 5rem; }
   .text-huge .text-line-through:before, .text-huge .text-line-through:after {
     height: 10px; }
 
 .text-big {
-  font-size: 4.5rem;
-  line-height: 1; }
+  font-size: 4.5rem; }
   .text-big .text-line-through:before, .text-big .text-line-through:after {
     height: 7px; }
-
-.text-huge .text-line-through:hover:before, .text-big .text-line-through:hover:before {
-  display: none; }
 
 input.text, textarea.textarea, .form-group > select {
   height: 40px;
@@ -11644,17 +11657,6 @@ a:hover.text-line-through:before {
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%); }
-
-.text-transparent {
-  color: transparent !important; }
-
-.text-stroke-white {
-  color: transparent !important;
-  -webkit-text-stroke: 2px #FFF !important; }
-
-.text-stroke-magenta {
-  color: transparent !important;
-  -webkit-text-stroke: 2px #EB0082 !important; }
 
 aside.change-features {
   position: fixed;
@@ -12108,7 +12110,7 @@ a.logo {
     -o-transition: all ease-out 0.5s;
     transition: all ease-out 0.5s; }
     a.logo .logo-interior svg {
-      width: 50%;
+      width: 47%;
       fill: #FEFEFE;
       pointer-events: none;
       -webkit-transition: all ease-out 0.5s;
@@ -12118,8 +12120,6 @@ a.logo {
       transition: all ease-out 0.5s; }
       a.logo .logo-interior svg .ear-right, a.logo .logo-interior svg .ear-left {
         stroke: #FEFEFE; }
-      a.logo .logo-interior svg .path-bottom, a.logo .logo-interior svg .chin, a.logo .logo-interior svg .cheek-right, a.logo .logo-interior svg .cheek-left, a.logo .logo-interior svg .mouth, a.logo .logo-interior svg .nose, a.logo .logo-interior svg .ear-right, a.logo .logo-interior svg .ear-left {
-        display: none; }
 
 .logo-cover {
   position: fixed;
@@ -12265,10 +12265,10 @@ body.theme-colour.white {
   body.theme-colour.white a:hover.text-line-through:after {
     background-color: transparent; }
 
-a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover, a .project-thumbnail:hover {
+a.link:hover, a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover, a .project-thumbnail:hover, a .logo-interior:hover {
   cursor: none; }
 
-i.fa:hover {
+i.fa.link:hover {
   cursor: none; }
 
 .cursor {
@@ -12536,7 +12536,6 @@ body.imagesloaded:after {
     width: 100vh;
     height: 60px;
     left: 100%;
-    z-index: 10000;
     -webkit-transform: rotateZ(90deg) translateY(10px);
     -moz-transform: rotateZ(90deg) translateY(10px);
     -ms-transform: rotateZ(90deg) translateY(10px);

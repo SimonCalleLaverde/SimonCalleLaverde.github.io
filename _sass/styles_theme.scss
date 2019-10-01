@@ -431,7 +431,7 @@ a {
 }
 
 // Headline, Title, Subtitle
-.headline {
+.headline-link {
   color:transparent;//#000
   //-webkit-text-fill-color:#000;//Will Override Color (Regardless Of Order)
   //-webkit-text-stroke-width:2px;
@@ -445,16 +445,39 @@ a {
     }
   }
   &:hover, &:active, &:focus {
-    color:#FFF;//
+    color:#FFF!important;//
     //-webkit-text-fill-color:#FFF;//Will Override Color (Regardless Of Order)
-    //-webkit-text-stroke-width:2px;
-    //-webkit-text-stroke-color:#FFF;
     -webkit-text-stroke:2px #FFF;
+  }
+}
+.text-stroke-white {
+  color:transparent!important;
+  -webkit-text-stroke:2px #FFF!important;
+}
+.text-stroke-magenta {
+  color:transparent!important;
+  -webkit-text-stroke:2px theme-color('magenta')!important;
+}
+.text-gigantic, .text-huge, .text-big {
+  line-height:1;
+  .text-line-through {
+    &:hover {
+      &:before {
+        display:none;
+      }
+    }
+  }
+}
+.text-gigantic {
+  font-size:6rem;
+  .text-line-through {
+    &:before, &:after {
+      height:12px;
+    }
   }
 }
 .text-huge {
   font-size:5rem;
-  line-height:1;
   .text-line-through {
     &:before, &:after {
       height:10px;
@@ -462,20 +485,10 @@ a {
   }
 }
 .text-big {
-  font-size:4.5rem;//5rem;
-  line-height:1;
+  font-size:4.5rem;
   .text-line-through {
     &:before, &:after {
       height:7px;
-    }
-  }
-}
-.text-huge, .text-big {
-  .text-line-through {
-    &:hover {
-      &:before {
-        display:none;
-      }
     }
   }
 }
@@ -796,19 +809,6 @@ a {
     @include border-radius(50%);
     @include filter(grayscale(100%));
   }
-}
-
-// Text Stroke
-.text-transparent {
-  color:transparent!important;//To Remove
-}
-.text-stroke-white {
-  color:transparent!important;
-  -webkit-text-stroke:2px #FFF!important;
-}
-.text-stroke-magenta {
-  color:transparent!important;
-  -webkit-text-stroke:2px theme-color('magenta')!important;
 }
 
 // Change Features
@@ -1156,16 +1156,16 @@ a.logo {
     @include border-radius(50%);
     @include transition(all ease-out 0.5s);
     svg {
-      width:50%;
+      width:47%;//45%//50%
       fill:theme-color('grey-light');
       pointer-events:none;
       @include transition(all ease-out 0.5s);
       .ear-right, .ear-left {//.path-bottom
         stroke:theme-color('grey-light');
       }
-      .path-bottom, .chin, .cheek-right, .cheek-left, .mouth, .nose, .ear-right, .ear-left {
-        display:none;
-      }
+      // .path-bottom, .chin, .cheek-right, .cheek-left, .mouth, .nose, .ear-right, .ear-left {
+      //   display:none;
+      // }
     }
   }
   &:hover, &:active, &:focus {
@@ -1232,12 +1232,12 @@ section.education-section {
 
 // Work Section
 section.work-section {
-  padding:0 20px;
+  padding:0 20px;//To revise mobile
 }
 
 // Plans Section
 section.plans-section {
-  padding:30px 20px 0;
+  padding:30px 20px 0;//To revise mobile
 }
 
 // Footer
@@ -1463,15 +1463,17 @@ body.theme-colour.white {
 
 // Cursor
 a {
-  > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6, .project-thumbnail {//> figure
+  &.link, > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6, .project-thumbnail, .logo-interior {//> figure
     &:hover {
       cursor:none;
     }
   }
 }
 i.fa {
-  &:hover {
-    cursor:none;
+  &.link {
+    &:hover {
+      cursor:none;
+    }
   }
 }
 

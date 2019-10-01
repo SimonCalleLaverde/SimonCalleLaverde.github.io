@@ -11,9 +11,9 @@
       </div>
     </div>
     
-    <div class="row mt-5 pt-5less lax" id="slick_carousel_scroll" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn"><!--data-lax-preset="rightToLeft-.1"-->
+    <div class="row mt-5 pt-5less" id="slick_carousel_scroll"><!--data-lax-preset="rightToLeft-.1"-->
       <div class="col-md-12">
-        <div class="slick-carousel lax" data-lax-preset="driftLeft-30">
+        <div class="slick-carousel"><!--lax--><!--data-lax-preset="driftLeft-30"-->
           {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
           {% for project in sorted_projects %}
@@ -59,7 +59,7 @@
     <div class="row mt-4 lax" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn">
       <div class="col-md-6 offset-md-1">
         <div class="mt-4 pt-5 column-div" id="content_development">
-          <h6 class="text-grey-light">I love web development, check out some of the websites I have developed <a class="text-grey-light text-underline smoothScroll" href="#slick_carousel_scroll">below</a>. For now most of them were done within my time at <a class="text-grey-light text-underline" href="https://www.codenation.com/" target="_blank" title="Check out their amazing work and contact them for any cool campaigning related project">Code Nation</a>, an Australian 5 star rated digital agency specialized in creating and managing campaigning platforms which help big communities engage in big actions. I worked there for the past 4 years. I'm hoping to transitions with time to showcase some more of my independent work and new business and branding related projects.</h6>
+          <h6 class="text-grey-light text-uppercase">Check out some of the websites I have <a class="text-grey-light text-underline" href="/work">worked on</a>. For now most of them were done within my time at <a class="text-grey-light text-underline" href="https://www.codenation.com/" target="_blank" title="Check out their amazing work and contact them for any cool campaigning related project">Code Nation</a>, an Australian 5 star rated digital agency specialized in creating and managing campaigning platforms which help big communities engage in big actions. I worked there for the past 4 years. I'm hoping to transitions with time to showcase some more of my independent work and new business and branding related projects.</h6>
 
           {% comment %}
           {{ page.my_work_section.content }}
@@ -70,9 +70,12 @@
 
     <div class="row mt-5less lax" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn">
       <div class="col-md-6 offset-md-1">
-        <p class="text-white mt-1">See the full collection <a class="text-white text-underline" href="/work">here</a>; the below includes my work at Code Nation, as well as a concept small site I created in 2015, and another business website I started in 2015 and I'm retaking in 2019 with a newest more modern design.</p>
+        <p class="text-white mt-1">The full collection of prjojects includes my work at Code Nation, as well as a concept small site I created in 2015, and another business website I started in 2015 and I'm retaking in 2019 with a newest more modern design.</p>
       </div>
     </div>
+
+
+
 
 
 
@@ -80,15 +83,7 @@
     <div class="row mt-5 pt-4 lax" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn">
       <div class="col-md-12">
         <div class="text-center mt-4 mx-md-3 px-md-4">
-          <!--Desktop-->
-          <a class="nav-link mb-4more d-none d-md-inline-block" href="/work">
-            <h5 class="headline text-uppercase" style="font-size:6rem;">All Projects</h5>
-          </a>
-
-          <!--Mobile-->
-          <a class="nav-link mb-3 d-inline-block d-md-none" href="/work">
-            <h5 class="headline text-uppercase d-block d-md-none" aria-hidden="true">All Projects</h5>
-          </a>
+          <a class="link font-headline headline-link text-gigantic text-uppercase d-none d-md-inline-block" href="/work">All Projects</a>
         </div>
       </div>
     </div>

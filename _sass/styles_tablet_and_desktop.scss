@@ -95,7 +95,6 @@
 		width:100vh;//100%//We Will Use Viewport-Height To Apply To The Width
 		height:60px;
 		left:100%;//auto
-    z-index:10000;
 		//mix-blend-mode:difference;
 		@include transform(rotateZ(90deg) translateY(10px));
   	@include transform-origin(0% 0%);
