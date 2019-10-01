@@ -882,33 +882,33 @@ aside.change-features {
           z-index:103;
           @include transition(all ease-out 0.3s);
           //@include transform(translate3d(150px, 0px, 0px));
-          &:before, &:after {
-            content:'';
-            position:absolute;
-            top:0;
-            height:100%;
-            width:15px;
-            background-color:theme-color('grey-dark');
-            pointer-events:none;
-            z-index:103;
-            @include transition(all ease-out 0.3s);
-          }
-          &:before {
-            left:0;
-            @include transform(translateX(-15px));
-          }
-          &:after {
-            right:0;
-            @include transform(translateX(15px));
-          }
+          // &:before, &:after {
+          //   content:'';
+          //   position:absolute;
+          //   top:0;
+          //   height:100%;
+          //   width:15px;
+          //   background-color:theme-color('grey-dark');
+          //   pointer-events:none;
+          //   z-index:103;
+          //   @include transition(all ease-out 0.3s);
+          // }
+          // &:before {
+          //   left:0;
+          //   @include transform(translateX(-15px));
+          // }
+          // &:after {
+          //   right:0;
+          //   @include transform(translateX(15px));
+          // }
         }
         &.slick-current {
           article.project-article {
-            &:hover {
-              &:before, &:after {
-                @include transform(translateX(0));
-              }
-            }
+            // &:hover {
+            //   &:before, &:after {
+            //     @include transform(translateX(0));
+            //   }
+            // }
           }
         }
       }

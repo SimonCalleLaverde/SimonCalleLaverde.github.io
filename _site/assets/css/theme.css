@@ -11746,40 +11746,6 @@ aside.change-features {
         -ms-transition: all ease-out 0.3s;
         -o-transition: all ease-out 0.3s;
         transition: all ease-out 0.3s; }
-        .slick-carousel .slick-list .slick-track .slick-slide article.project-article:before, .slick-carousel .slick-list .slick-track .slick-slide article.project-article:after {
-          content: '';
-          position: absolute;
-          top: 0;
-          height: 100%;
-          width: 15px;
-          background-color: #1A1A1A;
-          pointer-events: none;
-          z-index: 103;
-          -webkit-transition: all ease-out 0.3s;
-          -moz-transition: all ease-out 0.3s;
-          -ms-transition: all ease-out 0.3s;
-          -o-transition: all ease-out 0.3s;
-          transition: all ease-out 0.3s; }
-        .slick-carousel .slick-list .slick-track .slick-slide article.project-article:before {
-          left: 0;
-          -webkit-transform: translateX(-15px);
-          -moz-transform: translateX(-15px);
-          -ms-transform: translateX(-15px);
-          -o-transform: translateX(-15px);
-          transform: translateX(-15px); }
-        .slick-carousel .slick-list .slick-track .slick-slide article.project-article:after {
-          right: 0;
-          -webkit-transform: translateX(15px);
-          -moz-transform: translateX(15px);
-          -ms-transform: translateX(15px);
-          -o-transform: translateX(15px);
-          transform: translateX(15px); }
-      .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article:hover:before, .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article:hover:after {
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-        transform: translateX(0); }
 
 .slick-as-nav-for {
   width: 99.99%;
