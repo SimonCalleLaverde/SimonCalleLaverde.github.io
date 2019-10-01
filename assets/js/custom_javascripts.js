@@ -50,14 +50,21 @@ $(function() {
 // Adds/Removes Class After Scrolling Some Distance From Top | As Per Above Modified
 $(function() {
   //caches a jQuery object containing the body element
-  var hideThisDivs = $(".change-features-interior, .copyright-interior, .logo-interior");
+  var hideThisDivs = $(".change-features-interior, .copyright-interior, .logo");
+  var showThisDivs = $(".logo-cover");
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
 
-    if (scrollFromTop >= 300) {
+    if (scrollFromTop >= 540) {
       hideThisDivs.addClass("hide-it").removeClass("show-it");
-    } else if (scrollFromTop <= 300) {
+    } else if (scrollFromTop <= 540) {
       hideThisDivs.removeClass("hide-it").addClass("show-it");
+    }
+
+    if (scrollFromTop >= 540) {
+      showThisDivs.addClass("show-it").removeClass("hide-it");
+    } else if (scrollFromTop <= 540) {
+      showThisDivs.removeClass("show-it").addClass("hide-it");
     }
   });
 });
@@ -124,7 +131,7 @@ $(document).ready(function() {
     //swipe: true,//default
     swipeToSlide: true,
     arrows: false,
-    centerMode: true,
+    //centerMode: true,
     focusOnSelect: true,
     asNavFor: '.slick-carousel'
   });

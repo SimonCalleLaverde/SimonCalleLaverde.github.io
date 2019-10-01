@@ -11319,7 +11319,7 @@ main {
     width: 100%;
     z-index: 5; }
 
-aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article {
+aside.nav-social-media, .copyright, aside.change-features, nav.navbar, a.logo, article.project-article {
   z-index: 6000; }
 
 .aside-cover-1, .aside-cover-2 {
@@ -11610,11 +11610,11 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     left: 0;
     background-color: #FFF;
     pointer-events: none;
-    -webkit-animation: textLineThroughAnim 5s linear 3.7s infinite;
-    -moz-animation: textLineThroughAnim 5s linear 3.7s infinite;
-    -ms-animation: textLineThroughAnim 5s linear 3.7s infinite;
-    -o-animation: textLineThroughAnim 5s linear 3.7s infinite;
-    animation: textLineThroughAnim 5s linear 3.7s infinite; }
+    -webkit-animation: textLineThroughAnim 5s linear 3.8s infinite;
+    -moz-animation: textLineThroughAnim 5s linear 3.8s infinite;
+    -ms-animation: textLineThroughAnim 5s linear 3.8s infinite;
+    -o-animation: textLineThroughAnim 5s linear 3.8s infinite;
+    animation: textLineThroughAnim 5s linear 3.8s infinite; }
   .text-line-through:before {
     width: 0;
     left: 0;
@@ -11629,11 +11629,11 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     -o-transition: all linear 0.5s;
     transition: all linear 0.5s; }
   .text-line-through.text-websites:after {
-    -webkit-animation: textLineThroughAnim 5s linear 4.9s infinite;
-    -moz-animation: textLineThroughAnim 5s linear 4.9s infinite;
-    -ms-animation: textLineThroughAnim 5s linear 4.9s infinite;
-    -o-animation: textLineThroughAnim 5s linear 4.9s infinite;
-    animation: textLineThroughAnim 5s linear 4.9s infinite; }
+    -webkit-animation: textLineThroughAnim 5s linear 5s infinite;
+    -moz-animation: textLineThroughAnim 5s linear 5s infinite;
+    -ms-animation: textLineThroughAnim 5s linear 5s infinite;
+    -o-animation: textLineThroughAnim 5s linear 5s infinite;
+    animation: textLineThroughAnim 5s linear 5s infinite; }
 
 a:hover.text-line-through:after {
   background-color: transparent; }
@@ -11714,56 +11714,34 @@ aside.change-features {
     filter: opacity(1); }
 
 .show-it {
-  -webkit-filter: opacity(1) !important;
-  -moz-filter: opacity(1) !important;
-  -ms-filter: opacity(1) !important;
-  -o-filter: opacity(1) !important;
-  filter: opacity(1) !important;
   -webkit-transition: filter ease-out 0.7s;
   -moz-transition: filter ease-out 0.7s;
   -ms-transition: filter ease-out 0.7s;
   -o-transition: filter ease-out 0.7s;
-  transition: filter ease-out 0.7s; }
+  transition: filter ease-out 0.7s;
+  -webkit-filter: opacity(1) !important;
+  -moz-filter: opacity(1) !important;
+  -ms-filter: opacity(1) !important;
+  -o-filter: opacity(1) !important;
+  filter: opacity(1) !important; }
 
 .hide-it {
-  -webkit-filter: opacity(0) !important;
-  -moz-filter: opacity(0) !important;
-  -ms-filter: opacity(0) !important;
-  -o-filter: opacity(0) !important;
-  filter: opacity(0) !important;
+  pointer-events: none !important;
   -webkit-transition: filter ease-out 1s;
   -moz-transition: filter ease-out 1s;
   -ms-transition: filter ease-out 1s;
   -o-transition: filter ease-out 1s;
-  transition: filter ease-out 1s; }
+  transition: filter ease-out 1s;
+  -webkit-filter: opacity(0) !important;
+  -moz-filter: opacity(0) !important;
+  -ms-filter: opacity(0) !important;
+  -o-filter: opacity(0) !important;
+  filter: opacity(0) !important; }
 
 .slick-carousel {
-  z-index: 10; }
-  .slick-carousel .slick-track .slick-slide {
-    width: 800px !important;
-    outline: none;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1); }
-    .slick-carousel .slick-track .slick-slide article.project-article {
-      width: 40% !important;
-      margin: 0 130px;
-      -webkit-transform: translate3d(150px, 0px, 0px);
-      -moz-transform: translate3d(150px, 0px, 0px);
-      -ms-transform: translate3d(150px, 0px, 0px);
-      -o-transform: translate3d(150px, 0px, 0px);
-      transform: translate3d(150px, 0px, 0px); }
-    .slick-carousel .slick-track .slick-slide.slick-current article.project-article {
-      width: 60% !important;
-      -webkit-transition: all ease-out 0.3s;
-      -moz-transition: all ease-out 0.3s;
-      -ms-transition: all ease-out 0.3s;
-      -o-transition: all ease-out 0.3s;
-      transition: all ease-out 0.3s; }
+  z-index: 100; }
   .slick-carousel button.slick-arrow {
-    z-index: 10; }
+    z-index: 101; }
     .slick-carousel button.slick-arrow.slick-prev, .slick-carousel button.slick-arrow.slick-next {
       top: 41%; }
     .slick-carousel button.slick-arrow.slick-prev {
@@ -11771,9 +11749,24 @@ aside.change-features {
     .slick-carousel button.slick-arrow.slick-next {
       right: auto;
       left: 170px; }
+  .slick-carousel .slick-list {
+    pointer-events: none;
+    z-index: 102; }
+    .slick-carousel .slick-list .slick-track .slick-slide {
+      outline: none; }
+      .slick-carousel .slick-list .slick-track .slick-slide article.project-article {
+        width: 40% !important;
+        margin: 0 auto; }
+      .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article {
+        width: 55% !important;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+        transition: all ease-out 0.3s; }
 
 .slick-as-nav-for {
-  z-index: 10; }
+  z-index: 100; }
   .slick-as-nav-for .project-as-nav-for {
     height: 80px; }
 
@@ -11791,7 +11784,7 @@ aside.change-features {
     transform: rotate(90deg) translateY(3px); }
 
 .text-i-am, .text-i-like,
-aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article {
+aside.nav-social-media, .copyright, aside.change-features, nav.navbar, .logo-interior, article.project-article {
   -webkit-filter: opacity(0);
   -moz-filter: opacity(0);
   -ms-filter: opacity(0);
@@ -11978,7 +11971,7 @@ body.home.imagesloaded .text-two span {
     -ms-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
     -o-animation: fadeInAnim 0.2s ease-in 3.1s forwards;
     animation: fadeInAnim 0.2s ease-in 3.1s forwards; }
-body.home.imagesloaded aside.nav-social-media, body.home.imagesloaded .copyright, body.home.imagesloaded aside.change-features, body.home.imagesloaded nav.navbar, body.home.imagesloaded aside.logo, body.home.imagesloaded article.project-article,
+body.home.imagesloaded aside.nav-social-media, body.home.imagesloaded .copyright, body.home.imagesloaded aside.change-features, body.home.imagesloaded nav.navbar, body.home.imagesloaded .logo-interior, body.home.imagesloaded article.project-article,
 body.home.imagesloaded .text-i-am, body.home.imagesloaded .text-i-like {
   -webkit-animation: fadeInAnim 0.5s ease-in 4.2s forwards;
   -moz-animation: fadeInAnim 0.5s ease-in 4.2s forwards;
@@ -11998,7 +11991,7 @@ body.home.home-rendering .cursor {
   -o-filter: opacity(0);
   filter: opacity(0); }
 
-body.work.imagesloaded aside.nav-social-media, body.work.imagesloaded .copyright, body.work.imagesloaded aside.change-features, body.work.imagesloaded nav.navbar, body.work.imagesloaded aside.logo, body.work.imagesloaded article.project-article, body.contact.imagesloaded aside.nav-social-media, body.contact.imagesloaded .copyright, body.contact.imagesloaded aside.change-features, body.contact.imagesloaded nav.navbar, body.contact.imagesloaded aside.logo, body.contact.imagesloaded article.project-article, body.plans.imagesloaded aside.nav-social-media, body.plans.imagesloaded .copyright, body.plans.imagesloaded aside.change-features, body.plans.imagesloaded nav.navbar, body.plans.imagesloaded aside.logo, body.plans.imagesloaded article.project-article, body.sites_inspiration.imagesloaded aside.nav-social-media, body.sites_inspiration.imagesloaded .copyright, body.sites_inspiration.imagesloaded aside.change-features, body.sites_inspiration.imagesloaded nav.navbar, body.sites_inspiration.imagesloaded aside.logo, body.sites_inspiration.imagesloaded article.project-article {
+body.work.imagesloaded aside.nav-social-media, body.work.imagesloaded .copyright, body.work.imagesloaded aside.change-features, body.work.imagesloaded nav.navbar, body.work.imagesloaded .logo-interior, body.work.imagesloaded article.project-article, body.contact.imagesloaded aside.nav-social-media, body.contact.imagesloaded .copyright, body.contact.imagesloaded aside.change-features, body.contact.imagesloaded nav.navbar, body.contact.imagesloaded .logo-interior, body.contact.imagesloaded article.project-article, body.plans.imagesloaded aside.nav-social-media, body.plans.imagesloaded .copyright, body.plans.imagesloaded aside.change-features, body.plans.imagesloaded nav.navbar, body.plans.imagesloaded .logo-interior, body.plans.imagesloaded article.project-article, body.sites_inspiration.imagesloaded aside.nav-social-media, body.sites_inspiration.imagesloaded .copyright, body.sites_inspiration.imagesloaded aside.change-features, body.sites_inspiration.imagesloaded nav.navbar, body.sites_inspiration.imagesloaded .logo-interior, body.sites_inspiration.imagesloaded article.project-article {
   -webkit-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
   -moz-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
   -ms-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
@@ -12017,11 +12010,11 @@ body.work.rendering .cursor, body.contact.rendering .cursor, body.plans.renderin
   -o-filter: opacity(0);
   filter: opacity(0); }
 
-aside.logo {
+a.logo {
   position: fixed;
   top: 30px;
   left: 13px; }
-  aside.logo .logo-interior {
+  a.logo .logo-interior {
     width: 100px;
     height: 100px;
     background-color: transparent;
@@ -12036,7 +12029,7 @@ aside.logo {
     -ms-transition: all ease-out 0.5s;
     -o-transition: all ease-out 0.5s;
     transition: all ease-out 0.5s; }
-    aside.logo .logo-interior svg {
+    a.logo .logo-interior svg {
       width: 50%;
       fill: #FEFEFE;
       pointer-events: none;
@@ -12045,10 +12038,18 @@ aside.logo {
       -ms-transition: all ease-out 0.5s;
       -o-transition: all ease-out 0.5s;
       transition: all ease-out 0.5s; }
-      aside.logo .logo-interior svg .ear-right, aside.logo .logo-interior svg .ear-left {
+      a.logo .logo-interior svg .ear-right, a.logo .logo-interior svg .ear-left {
         stroke: #FEFEFE; }
-      aside.logo .logo-interior svg .path-bottom, aside.logo .logo-interior svg .chin, aside.logo .logo-interior svg .cheek-right, aside.logo .logo-interior svg .cheek-left, aside.logo .logo-interior svg .mouth, aside.logo .logo-interior svg .nose, aside.logo .logo-interior svg .ear-right, aside.logo .logo-interior svg .ear-left {
+      a.logo .logo-interior svg .path-bottom, a.logo .logo-interior svg .chin, a.logo .logo-interior svg .cheek-right, a.logo .logo-interior svg .cheek-left, a.logo .logo-interior svg .mouth, a.logo .logo-interior svg .nose, a.logo .logo-interior svg .ear-right, a.logo .logo-interior svg .ear-left {
         display: none; }
+
+.logo-cover {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  left: 13px;
+  z-index: 7000; }
 
 section.blog-page {
   padding: 30px 20px; }
@@ -12126,7 +12127,7 @@ footer {
 
 body.theme-colour.white {
   background-color: #FFF; }
-  body.theme-colour.white aside.logo .logo-interior svg {
+  body.theme-colour.white a.logo .logo-interior svg {
     fill: #1A1A1A; }
   body.theme-colour.white main {
     background-color: #FEFEFE; }

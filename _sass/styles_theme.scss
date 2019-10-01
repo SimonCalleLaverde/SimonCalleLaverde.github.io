@@ -321,7 +321,7 @@ main {
 }
 
 // Nav Social Media, Copyright, Change Features, Navbar, Logo {
-aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article {
+aside.nav-social-media, .copyright, aside.change-features, nav.navbar, a.logo, article.project-article {
   z-index:6000;
 }
 
@@ -776,7 +776,7 @@ span.fa-stack {
     //animation-timing-function:linear;
     //animation-iteration-count:1;
     //animation-fill-mode:forwards;
-    @include animation(textLineThroughAnim 5s linear 3.7s infinite);
+    @include animation(textLineThroughAnim 5s linear 3.8s infinite);
   }
   &:before {
     width:0;
@@ -786,7 +786,7 @@ span.fa-stack {
   }
   &.text-websites {
     &:after {
-      @include animation(textLineThroughAnim 5s linear 4.9s infinite);
+      @include animation(textLineThroughAnim 5s linear 5s infinite);
     }
   }
 }
@@ -870,63 +870,23 @@ aside.change-features {
 }
 
 // Show It & Hide It
-.show-it, .hide-it {
-  //@include transition(filter ease-out 0.7s);
-}
 .show-it {
-  //@include animation(fadeInAnim 0.5s ease-out forwards);
-  @include filter(opacity(1)!important);
   @include transition(filter ease-out 0.7s);
+  @include filter(opacity(1)!important);
+  //@include animation(fadeInAnim 0.5s ease-out forwards);
 }
 .hide-it {
-  //@include animation(fadeOutAnim 0.5s ease-out forwards);
-  @include filter(opacity(0)!important);
+  pointer-events:none!important;
   @include transition(filter ease-out 1s);
+  @include filter(opacity(0)!important);
+  //@include animation(fadeOutAnim 0.5s ease-out forwards);
 }
 
 // Slick Carousel
 .slick-carousel {
-  z-index:10;
-  .slick-track {
-    .slick-slide {
-
-
-      
-      width:800px!important;
-      outline:none;
-      @include transform(scale(1));
-      article.project-article {
-        width:40%!important;
-        margin:0 130px;//0 auto
-        @include transform(translate3d(150px, 0px, 0px));
-      }
-      &.slick-current {
-        article.project-article {
-          width:60%!important;//50%!important;
-          @include transition(all ease-out 0.3s);
-          //@include transform(scale(1.2));
-        }
-      }
-    }
-
-
-    // &.nth-child(1) {
-    //   .slick-slide article.project-article {
-    //     @include transform(translate3d(150px, 0px, 0px));
-    //   }
-    // }
-    // &.nth-child(2) {
-    //   .slick-slide article.project-article {
-    //     @include transform(translate3d(200px, 0px, 0px));
-    //   }
-    // }
-
-
-
-
-  }
-  button.slick-arrow {//Temporary
-    z-index:10;
+  z-index:100;
+  button.slick-arrow {
+    z-index:101;
     &.slick-prev, &.slick-next {
       top:41%;
     }
@@ -938,9 +898,29 @@ aside.change-features {
       left:170px;
     }
   }
+  .slick-list {
+    pointer-events:none;
+    z-index:102;
+    .slick-track {
+      .slick-slide {
+        outline:none;
+        article.project-article {
+          width:40%!important;
+          margin:0 auto;//0 130px
+          //@include transform(translate3d(150px, 0px, 0px));
+        }
+        &.slick-current {
+          article.project-article {
+            width:55%!important;
+            @include transition(all ease-out 0.3s);
+          }
+        }
+      }
+    }
+  }
 }
 .slick-as-nav-for  {
-  z-index:10;
+  z-index:100;
   .project-as-nav-for {
     height:80px;
   }
@@ -963,7 +943,7 @@ aside.change-features {
 
 // Header Text Animations
 .text-i-am, .text-i-like,
-aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article {//.cursor
+aside.nav-social-media, .copyright, aside.change-features, nav.navbar, .logo-interior, article.project-article {//.cursor
   @include filter(opacity(0));
 }
 body.home {
@@ -1062,7 +1042,7 @@ body.home {
         }
       }
     }
-    aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article,
+    aside.nav-social-media, .copyright, aside.change-features, nav.navbar, .logo-interior, article.project-article,
     .text-i-am, .text-i-like {
       @include animation(fadeInAnim 0.5s ease-in 4.2s forwards);
     }
@@ -1078,7 +1058,7 @@ body.home {
 }
 body.work, body.contact, body.plans, body.sites_inspiration {
   &.imagesloaded {
-    aside.nav-social-media, .copyright, aside.change-features, nav.navbar, aside.logo, article.project-article {
+    aside.nav-social-media, .copyright, aside.change-features, nav.navbar, .logo-interior, article.project-article {
       @include animation(fadeInAnim 0.5s ease-in 2.2s forwards);
     }
     .aside-cover-1, .aside-cover-2 {
@@ -1095,7 +1075,7 @@ body.work, body.contact, body.plans, body.sites_inspiration {
 //----------------------------------Section Styles----------------------------------//
 
 // Logo
-aside.logo {
+a.logo {
   position:fixed;
   top:30px;
   left:13px;
@@ -1131,6 +1111,14 @@ aside.logo {
       }
     }
   }
+}
+.logo-cover {
+  position:fixed;
+  width:100px;
+  height:100px;
+  top:30px;
+  left:13px;
+  z-index:7000;
 }
 
 // Blog Page
@@ -1263,7 +1251,7 @@ body.page-type-basic.work {
 // Theme Colour White
 body.theme-colour.white {
   background-color:#FFF;
-  aside.logo {
+  a.logo {
     .logo-interior {
       svg {
         fill:theme-color('grey-dark');

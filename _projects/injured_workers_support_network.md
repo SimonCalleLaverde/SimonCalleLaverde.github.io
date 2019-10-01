@@ -11,7 +11,7 @@ web:
   image: /uploads/site-web-injured-workers-support-network-victoria.png
   url: https://www.iwsnvic.org.au/
 category: Code Nation
-tags: [featured, other]
+tags: ""
 order: 27
 ---
 

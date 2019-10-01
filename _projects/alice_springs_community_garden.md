@@ -11,6 +11,6 @@ web:
   image: /uploads/site-web-alice-springs-community-garden.png
   url: https://www.alicecommunitygarden.org.au/
 category: Code Nation
-tags: [featured, other]
+tags: ""
 order: 12
 ---
