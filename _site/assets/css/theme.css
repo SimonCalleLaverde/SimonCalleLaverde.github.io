@@ -11737,7 +11737,7 @@ aside.change-features {
       transform: translate3d(-125px, 0px, 0px); }
       .slick-carousel .slick-list .slick-track .slick-slide article.project-article {
         position: relative;
-        width: 63.5%;
+        width: 64%;
         margin: 0 auto;
         outline: none;
         z-index: 103;

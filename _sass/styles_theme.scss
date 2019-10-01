@@ -876,7 +876,7 @@ aside.change-features {
         @include transform(translate3d(-125px, 0px, 0px));
         article.project-article {
           position:relative;
-          width:63.5%;//64%
+          width:64%;//63.5%
           margin:0 auto;//0 130px
           outline:none;
           z-index:103;
@@ -933,8 +933,6 @@ aside.change-features {
         .project-as-nav-for {
           height:80px;
           @include filter(opacity(0.8));
-
-
           &:before, &:after {
             content:'';
             position:absolute;
@@ -953,8 +951,6 @@ aside.change-features {
           &:after {
             right:0;
           }
-
-
           &:hover {
             &:before {
               @include transform(translateX(-10px));
@@ -971,10 +967,6 @@ aside.change-features {
               }
             }
           }
-
-
-
-
         }
         &.slick-current {
           .project-as-nav-for {
