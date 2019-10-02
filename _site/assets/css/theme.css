@@ -12343,11 +12343,11 @@ i.fa.link:hover {
       content: "< >";
       width: 50px;
       height: 8px;
-      top: -28px;
+      top: -28.5px;
       font-size: 17px;
-      color: #FFF; }
+      color: #FEFEFE; }
     .cursor.hoveredDragSides:after {
-      border-color: #FEFEFE; }
+      border-color: #FFF; }
 
 @media (pointer: coarse) and (hover: none) {
   .cursor {
