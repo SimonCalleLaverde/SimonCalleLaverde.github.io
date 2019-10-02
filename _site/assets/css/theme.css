@@ -11818,18 +11818,6 @@ aside.change-features {
           -ms-transform: translateX(10px);
           -o-transform: translateX(10px);
           transform: translateX(10px); }
-        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:hover ~ .project-as-nav-for:before {
-          -webkit-transform: translateX(-10px);
-          -moz-transform: translateX(-10px);
-          -ms-transform: translateX(-10px);
-          -o-transform: translateX(-10px);
-          transform: translateX(-10px); }
-        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:hover ~ .project-as-nav-for:after {
-          -webkit-transform: translateX(10px);
-          -moz-transform: translateX(10px);
-          -ms-transform: translateX(10px);
-          -o-transform: translateX(10px);
-          transform: translateX(10px); }
       .slick-as-nav-for .slick-list .slick-track .slick-slide.slick-current .project-as-nav-for {
         -webkit-filter: opacity(1);
         -moz-filter: opacity(1);
@@ -12343,7 +12331,7 @@ i.fa.link:hover {
       content: "< >";
       width: 50px;
       height: 8px;
-      top: -28.5px;
+      top: -27.5px;
       font-size: 17px;
       color: #FEFEFE; }
     .cursor.hoveredDragSides:after {

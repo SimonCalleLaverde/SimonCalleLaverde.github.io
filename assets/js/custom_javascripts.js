@@ -117,10 +117,13 @@ $(document).ready(function() {
     //autoplay: true,
     autoplaySpeed: 10000,
     pauseOnHover: false,
+    lazyLoad: 'progressive',//'ondemand'
     //pauseOnFocus: true,//default
     //fade: true,
     //cssEase: 'linear'
     asNavFor: '.slick-as-nav-for'
+
+
   });
   $('.slick-as-nav-for').slick({
     dots: false,

@@ -93,6 +93,8 @@ thumbnail_image: ""
 <a href="https://codepen.io/Omarzikry/pen/vYBbNqx?&page=1">Cursor Follow</a>
 <a href="https://codepen.io/simon-jaeger/pen/OJLpJZN?page=4">Cursor Follow | Add Transition</a>
 <a href="https://codepen.io/ReGGae/pen/OavayV">Magnetic Cursor</a>
+<a href="https://rioukevin.gitlab.io/magnetic_cursor/">Magnetic Cursor</a>
+<a href="https://codepen.io/mikewagz/pen/VWKemL">Magnetic Button</a>
 
 <h1>Platforms</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY">GitHub Pages</a>

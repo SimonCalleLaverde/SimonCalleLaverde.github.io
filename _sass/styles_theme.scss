@@ -874,6 +874,7 @@ aside.change-features {
     .slick-track {
       .slick-slide {
         outline:none;
+        //pointer-events:none;
         @include transform(translate3d(-125px, 0px, 0px));
         article.project-article {
           position:relative;
@@ -907,6 +908,7 @@ aside.change-features {
           }
         }
         &.slick-current {
+          //pointer-events:all;
           article.project-article {
             .project-thumbnail {
               @include filter(opacity(1));//grayscale(0)
@@ -971,14 +973,14 @@ aside.change-features {
             &:after {
               @include transform(translateX(10px));
             }
-            ~ .project-as-nav-for {
-              &:before {
-                @include transform(translateX(-10px));
-              }
-              &:after {
-                @include transform(translateX(10px));
-              }
-            }
+            // ~ .project-as-nav-for {
+            //   &:before {
+            //     @include transform(translateX(-10px));
+            //   }
+            //   &:after {
+            //     @include transform(translateX(10px));
+            //   }
+            // }
           }
         }
         &.slick-current {
@@ -1559,8 +1561,8 @@ i.fa {
       content:"< >";
       width:50px;
       height:8px;
-      top:-28.5px;//-27px;
-      font-size:17px;
+      top:-27.5px;//-28.5px;//-27px
+      font-size:17px;//17px
       color:theme-color('grey-light');
     }
     &:after {
