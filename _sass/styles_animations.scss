@@ -175,37 +175,6 @@
   }
 }//@keyframes
 
-//----------------------------------Cursor Custom Styles----------------------------------//
-
-@keyframes cursorAnim1 {
-  from {
-    @include transform(scale(1));
-  }
-  to {
-    @include transform(scale(1.3));//.7
-  }
-}//@keyframes
-// @keyframes cursorAnim2 {
-//   from {
-//     @include transform(scale(1));
-//   }
-//   to {
-//     @include transform(scale(.4));
-//   }
-// }
-// @keyframes cursorAnim3 {
-//   0% {
-//     @include transform(scale(0.5));//(1)
-//   }
-//   50% {
-//     @include transform(scale(1.5));//(3)
-//   }
-//   100% {
-//     @include transform(scale(0.5));//(1)
-//     @include filter(opacity(0));
-//   }
-// }
-
 //----------------------------------Glitch Image Effect Styles----------------------------------//
 
 @keyframes glitch-anim-1 {

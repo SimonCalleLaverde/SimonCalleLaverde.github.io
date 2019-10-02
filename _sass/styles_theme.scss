@@ -903,7 +903,7 @@ aside.change-features {
           //   @include transform(translateX(15px));
           // }
           .project-thumbnail {
-            @include filter(opacity(0.5));//grayscale(100%)
+            @include filter(opacity(0.6));//grayscale(100%)
           }
         }
         &.slick-current {
@@ -945,7 +945,7 @@ aside.change-features {
         @include transform(translate3d(-1px, 0px, 0px)!important);//translate3d(-70px, 0px, 0px)!important
         .project-as-nav-for {
           height:80px;
-          @include filter(opacity(0.5));//grayscale(100%)
+          @include filter(opacity(0.6));//grayscale(100%)
           &:before, &:after {
             content:'';
             position:absolute;
@@ -1490,10 +1490,8 @@ i.fa {
   z-index:11000;
   pointer-events:none;
   mix-blend-mode:difference;
-  //will-change:transform, filter, background-color;
   @include border-radius(50%);
-  //@include transition(all ease-out 0.2s);//ease-out 100ms
-  //@include animation(cursorAnim1 0.5s infinite alternate);
+  //@include transition(all ease-out 0.2s);
   &:before, &:after {
     content:"";
     position:absolute;
@@ -1554,19 +1552,21 @@ i.fa {
       border-color:#000;
     }
   }
-  // &:after {
-  //   display:none;
-  //   content:"";
-  //   position:absolute;
-  //   width:120px;
-  //   height:120px;
-  //   top:0;
-  //   left:0;
-  //   border:1px solid theme-color('magenta');
-  //   @include border-radius(50%);
-  //   @include filter(opacity(0.8));
-  //   @include animation(cursorAnim2 0.5s infinite alternate);
-  // }
+  &.hoveredDragSides {
+    //border-color:#000;
+    mix-blend-mode:normal;
+    &:before {
+      content:"< >";
+      width:50px;
+      height:8px;
+      top:-29px;//-27px;
+      font-size:17px;
+      color:#FFF;
+    }
+    &:after {
+      border-color:theme-color('grey-light');
+    }
+  }
 }
 @media (pointer:coarse) and (hover:none) {
   .cursor {

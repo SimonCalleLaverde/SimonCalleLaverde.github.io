@@ -127,8 +127,8 @@ $(document).ready(function() {
     infinite: false,
     slidesToShow: 8,
     //slidesToScroll: 1,
-    //draggable: true,//default
-    //swipe: true,//default
+    draggable: true,//default
+    swipe: true,//default
     swipeToSlide: true,
     arrows: false,
     //centerMode: true,
