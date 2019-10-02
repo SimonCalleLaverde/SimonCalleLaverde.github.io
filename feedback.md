@@ -1,10 +1,10 @@
 ---
 layout: feedback
-title: Contact
-permalink: /feedback
-slug: feedback
+title: Contact Me
+permalink: /contact_me
+slug: contact_me
 type_slug: feedback
-headline: Get In Touch
+headline: Need some help for a project? Contact me.
 header_image: ""
 background_image: ""
 thumbnail_image: ""

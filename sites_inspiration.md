@@ -66,8 +66,8 @@ thumbnail_image: ""
 <a href="https://www.new.company/">New Company | Awesome!</a>
 <a href="http://www.saramarandi.com/">Saramarandi | Photography | Beautiful | Mouse Hover Text Images Show</a>
 <a href="https://sabcomeed.com/">Sabcomeed | Awesome Mouse</a>
+<a href="https://www.ultranoir.com/en/">Ultranoir | Awesome Loading | Blend Loading</a>
 <!--
-<a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
 <a href="..."></a>
@@ -95,6 +95,7 @@ thumbnail_image: ""
 <a href="https://codepen.io/ReGGae/pen/OavayV">Magnetic Cursor</a>
 <a href="https://rioukevin.gitlab.io/magnetic_cursor/">Magnetic Cursor</a>
 <a href="https://codepen.io/mikewagz/pen/VWKemL">Magnetic Button</a>
+<a href="https://tympanus.net/codrops/2019/07/23/smooth-scrolling-image-effects/">Images Cool Effects | Mary Lou | # 3</a>
 
 <h1>Platforms</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY">GitHub Pages</a>

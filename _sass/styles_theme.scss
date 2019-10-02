@@ -882,7 +882,7 @@ aside.change-features {
           margin:0 auto;//0 130px
           outline:none;
           z-index:103;
-          @include transition(all ease-out 0.3s);
+          @include transition(all ease-out 0.5s);
           //@include transform(translate3d(150px, 0px, 0px));
           // &:before, &:after {
           //   content:'';
@@ -912,7 +912,7 @@ aside.change-features {
           article.project-article {
             .project-thumbnail {
               @include filter(opacity(1));//grayscale(0)
-              @include transition(all ease-out 0.5s);
+              @include transition(all ease-out 1s);
               &:hover {//, &:active, &:focus
                 @include transform(scale(1.03));
                 //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
@@ -1123,8 +1123,8 @@ body.home {
     }
   }
 }
-body.work, body.contact, body.plans, body.sites_inspiration {
-  &.imagesloaded {
+//body.work, body.contact_me, body.plans, body.sites_inspiration {
+  .imagesloaded {//&
     aside.nav-social-media, .copyright, aside.change-features, nav.navbar, .logo-interior, article.project-article {
       @include animation(fadeInAnim 0.5s ease-in 2.2s forwards);
     }
@@ -1132,12 +1132,12 @@ body.work, body.contact, body.plans, body.sites_inspiration {
       @include animation(fadeOutAnim 0.5s ease-in 2.2s forwards);
     }
   }
-  &.rendering {
+  .rendering {//&
     .cursor {
       @include filter(opacity(0));
     }
   }
-}
+//}
 
 //----------------------------------Section Styles----------------------------------//
 
@@ -1162,9 +1162,9 @@ a.logo {
       fill:theme-color('grey-light');
       pointer-events:none;
       @include transition(all ease-out 0.5s);
-      .ear-right, .ear-left {//.path-bottom
-        stroke:theme-color('grey-light');
-      }
+      // .ear-right, .ear-left {//.path-bottom
+      //   stroke:theme-color('grey-light');
+      // }
       // .path-bottom, .chin, .cheek-right, .cheek-left, .mouth, .nose, .ear-right, .ear-left {
       //   display:none;
       // }
@@ -1204,12 +1204,12 @@ section.calendar-page {
 
 // Feedback Page
 section.feedback-page {
-  padding:30px 20px;
+  padding:30px 20px;//To revise mobile
 }
 
 // Hello Header
 header.hello-header {
-  padding-top:30px 20px;//To revise mobile
+  padding:30px 20px;//To revise mobile
 }
 
 // My Work Section
@@ -1503,25 +1503,15 @@ i.fa {
     left:-1px;
     background-color:transparent;
     border:1px solid #FFF;
+    z-index:11001;
     @include border-radius(50%);
   }
   &:before {
-    padding-top:40px;
-    font-family:$font-headline;
-    font-weight:500;
-    font-size:13.5px;
-    color:#FFF;
     border-color:transparent;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    white-space:nowrap;
-    text-align:center;
-    z-index:11002;
     //will-change:width, height, background-color, border-color, transform;
     @include transition(none);
   }
   &:after {
-    z-index:11001;
     //will-change:background-color, transform;
     //@include box-shadow(0 0 1rem #FFF);//#21D9AB (Other Option)//#14FF7D (Magenta Inverted)
     @include transition(background-color ease-out 0.3s, transform ease-out 0.3s);
@@ -1543,7 +1533,17 @@ i.fa {
       top:-25px;//New | For GSAP Positioning
       left:-25px;//New | For GSAP Positioning
       background-color:theme-color('magenta');
+      padding-top:40px;
+      font-family:$font-headline;
+      font-weight:500;
+      font-size:13.5px;
+      color:#FFF;
       border-color:theme-color('magenta');
+      text-transform:uppercase;
+      letter-spacing:2px;
+      white-space:nowrap;
+      text-align:center;
+      z-index:11002;
       //@include transform(translateY(-25px) translateX(-25px));
       //@include box-shadow(0 0 1rem theme-color('magenta'));
       @include animation(fa-spin 5s linear infinite);
@@ -1555,18 +1555,25 @@ i.fa {
     }
   }
   &.hoveredDragSides {
-    //border-color:#000;
+    border-color:#FFF;
     mix-blend-mode:normal;
-    &:before {
-      content:"< >";
-      width:50px;
-      height:8px;
-      top:-27.5px;//-28.5px;//-27px
-      font-size:17px;//17px
+    &:before, &:after {
+      width:6px;
+      height:6px;
+      top:12.5px;
+      font-size:14px;
       color:theme-color('grey-light');
+      border:none;
+      z-index:11001;
+    }
+    &:before {
+      content:"<";
+      left:5px;
     }
     &:after {
-      border-color:#FFF;
+      content:">";
+      right:5px;
+      left:auto;
     }
   }
 }

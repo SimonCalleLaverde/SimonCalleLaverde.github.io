@@ -185,10 +185,12 @@
 
 	// Feedback Page
 	section.feedback-page {
-		// .feedback-form {
-		// 	height:100vh;
-		// 	//min-height:640px;
-		// }
+		padding:50px 0;
+		.feedback-form {
+			min-height:600px;
+			border:1px dotted #FFF;
+			@include border-radius(1rem);
+		}
 	}
 
 	// Hello Header
