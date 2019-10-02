@@ -12343,7 +12343,7 @@ i.fa.link:hover {
       content: "< >";
       width: 50px;
       height: 8px;
-      top: -29px;
+      top: -28px;
       font-size: 17px;
       color: #FFF; }
     .cursor.hoveredDragSides:after {
@@ -12628,7 +12628,7 @@ body.imagesloaded:after {
     padding: 40px 0; }
 
   section.my-work-section {
-    padding: 150px 0 60px; }
+    padding: 130px 0 60px; }
 
   section.about-me-section {
     padding: 70px 0 60px; }
