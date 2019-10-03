@@ -188,7 +188,7 @@
 		padding:50px 0;
 		.feedback-form {
 			min-height:600px;
-			border:1px dotted theme-color('grey-light');
+			border:1px dotted theme-color('grey-dark');
 			@include border-radius(1rem);
 		}
 	}
@@ -275,7 +275,7 @@
 	//------------------Page Styles------------------//
 
 	// Theme Colour Black/White | is-top/is-bottom
-	body.theme-colour.black.is-bottom, body.theme-colour.white.is-top {//body.theme-colour.contact_me
+	body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
 		//padding:0;
 		.navbar {
 			ul.navbar-nav {
