@@ -156,7 +156,7 @@ body {
   // overflow-x:hidden;//For GSAP Smooth Page Scrolling
   overscroll-behavior-y:none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
   //@include transform(translateY(0));
-  @include transition(all ease-out 0.3s);
+  @include transition(all ease-out 0.5s);
   &.loading {
     //cursor:progress;
     //@include filter(opacity(0));
@@ -1244,6 +1244,8 @@ section.plans-section {
 
 // Footer
 footer {
+  margin:0;
+  padding:40px 20px;//To revise mobile
   font-size:16px;
   @include transition(all ease-out 0.3s);
   .footer-profile-picture {
@@ -1251,8 +1253,8 @@ footer {
     .profile-picture {
       //position:absolute;
       display:inline-block;
-      width:250px;//var(--glitch-width)
-      height:240px;//var(--glitch-height)
+      width:205px;//var(--glitch-width)
+      height:200px;//var(--glitch-height)
       //--glitch-width:250px;//100px
       //--glitch-height:240px;//95px
       //top:40px;
@@ -1261,11 +1263,15 @@ footer {
       @include border-radius(50%);
       @include filter(grayscale(100%));
       @include transition(all ease-out 0.3s);
-      &:hover, &:active, &:focus {
-        @include filter(grayscale(0));
-      }
+      // &:hover, &:active, &:focus {
+      //   @include filter(grayscale(0));
+      // }
     }
   }
+  .footer-drop-me-a-line {
+    @include transform(rotat(45deg));
+  }
+
   
   article {
     iframe {
@@ -1351,15 +1357,17 @@ body.theme-colour.white {
     color:#000;
   }
   a {
-    > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6, .project-thumbnail {
+    &.link, > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6, .project-thumbnail, .logo-interior {//> figure
       &:hover {
         cursor:pointer;
       }
     }
   }
   i.fa {
-    &:hover {
-      cursor:pointer;
+    &.link {
+      &:hover {
+        cursor:pointer;
+      }
     }
   }
   .cursor {
@@ -1431,6 +1439,19 @@ body.theme-colour.white {
       }
     }
   }
+  .slick-as-nav-for  {
+    .slick-list {
+      .slick-track {
+        .slick-slide {
+          .project-as-nav-for {
+            &:before, &:after {
+              background-color:theme-color('grey-light');
+            }
+          }
+        }
+      }
+    }
+  }
   // .switch-colour-wrap {
   //   a.switch-theme-colour {
   //     &:hover {//, &:active, &:focus
@@ -1438,12 +1459,15 @@ body.theme-colour.white {
   //     }
   //   }
   // }
-  .headline {
-    -webkit-text-stroke:2px theme-color('grey-dark');
+  .headline-link {
+    -webkit-text-stroke:2px #000;
     &:hover, &:active, &:focus {
-      color:theme-color('grey-dark');//
-      -webkit-text-stroke:2px theme-color('grey-dark');
+      color:#000!important;//
+      -webkit-text-stroke:2px #000;
     }
+  }
+  .text-stroke-white {
+    -webkit-text-stroke:2px #000!important;
   }
   .text-line-through {
     &:after, &:before {

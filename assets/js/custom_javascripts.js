@@ -28,6 +28,15 @@ $(function() {
     $('.text-element').toggleClass("d-none d-inline-block");
     //$('.profile-picture').toggleClass("d-none d-inline-block");
     //$('.text-bootstrap-alternate').toggleClass("text-bootstrap-lighten text-bootstrap");
+
+
+    $('.theme-colour-in').removeClass("hide-it").addClass("show-it");
+    $('.theme-colour-in').toggleClass("text-grey-dark text-grey-light");
+    window.setTimeout(function() {
+      $('.theme-colour-in').removeClass("show-it").addClass("hide-it");;
+    }, 1000);
+
+
     e.preventDefault();
   });
 });
@@ -69,20 +78,20 @@ $(function() {
   });
 });
 
-// // Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
-// $(function() {
-//   //caches a jQuery object containing the body element
-//   var body = $("body");
-//   $(window).scroll(function() {
-//     var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+// Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
+$(function() {
+  //caches a jQuery object containing the body element
+  var body = $("body");
+  $(window).scroll(function() {
+    var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-//     if (scrollFromBottom >= 400) {//scroll//50
-//       body.removeClass("white").addClass("black");
-//     } else if (scrollFromBottom <= 400) {//50
-//       body.removeClass("black").addClass("white");
-//     }
-//   });
-// });
+    if (scrollFromBottom >= 100) {//scroll//50
+      body.removeClass("white").addClass("black");
+    } else if (scrollFromBottom <= 100) {//50
+      body.removeClass("black").addClass("white");
+    }
+  });
+});
 
 // // Change Some Class After Scrolling Some Element | As Per, But Modified Now (https://stackoverflow.com/questions/29717119/how-to-change-class-after-scroll-somewhere/29717259)
 // $(function() {
