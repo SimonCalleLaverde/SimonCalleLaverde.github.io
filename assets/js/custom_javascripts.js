@@ -23,18 +23,18 @@ $(function() {
 // Switch Theme Colour
 $(function() {
   $('.switch-theme-colour').on('click', function(e) {
-    $('.theme-colour').toggleClass("black white");
-    $('.switch-theme-colour').toggleClass("d-none d-inline-block");//btn-outline-white btn-outline-black
+    $('body').toggleClass("black white");
+    //$('.switch-theme-colour').toggleClass("d-none d-inline-block");//btn-outline-white btn-outline-black
     $('.text-element').toggleClass("d-none d-inline-block");
     //$('.profile-picture').toggleClass("d-none d-inline-block");
     //$('.text-bootstrap-alternate').toggleClass("text-bootstrap-lighten text-bootstrap");
 
 
-    $('.theme-colour-in').removeClass("hide-it").addClass("show-it");
-    $('.theme-colour-in').toggleClass("text-grey-dark text-grey-light");
-    window.setTimeout(function() {
-      $('.theme-colour-in').removeClass("show-it").addClass("hide-it");;
-    }, 1000);
+    // $('.theme-colour-in').removeClass("hide-it").addClass("show-it");
+    // $('.theme-colour-in').toggleClass("text-grey-dark text-grey-light");
+    // window.setTimeout(function() {
+    //   $('.theme-colour-in').removeClass("show-it").addClass("hide-it");;
+    // }, 1000);
 
 
     e.preventDefault();
@@ -85,10 +85,10 @@ $(function() {
   $(window).scroll(function() {
     var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollFromBottom >= 100) {//scroll//50
-      body.removeClass("white").addClass("black");
-    } else if (scrollFromBottom <= 100) {//50
-      body.removeClass("black").addClass("white");
+    if (scrollFromBottom >= 300) {//scroll//50
+      body.removeClass("is-bottom").addClass("is-top");
+    } else if (scrollFromBottom <= 300) {//50
+      body.removeClass("is-top").addClass("is-bottom");
     }
   });
 });

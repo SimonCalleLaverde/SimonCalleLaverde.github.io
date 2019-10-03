@@ -854,10 +854,22 @@ aside.change-features {
   width:calc(100% - 3px);
   margin-left:1px;
   z-index:100;
+  &:after {
+    content:'';
+    position:absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    width:20px;
+    z-index:103;
+  }
   button.slick-arrow {
     z-index:101;
     &.slick-prev, &.slick-next {
-      top:41%;
+      top:43%;
+      &:before, &:after {
+        font-size:25px;
+      }
     }
     &.slick-prev {
       right:195px;
@@ -882,6 +894,7 @@ aside.change-features {
           margin:0 auto;//0 130px
           outline:none;
           z-index:103;
+          pointer-events:none;
           @include transition(all ease-out 0.5s);
           //@include transform(translate3d(150px, 0px, 0px));
           // &:before, &:after {
@@ -903,20 +916,29 @@ aside.change-features {
           //   right:0;
           //   @include transform(translateX(15px));
           // }
+          > a {
+            pointer-events:none;//Can't remove pointer-events to links apparently
+          }
           .project-thumbnail {
+            pointer-events:none;
             @include filter(opacity(0.6));//grayscale(100%)
           }
         }
         &.slick-current {
           //pointer-events:all;
           article.project-article {
+            pointer-events:all;
             .project-thumbnail {
+              pointer-events:all;
               @include filter(opacity(1));//grayscale(0)
               @include transition(all ease-out 1s);
               &:hover {//, &:active, &:focus
                 @include transform(scale(1.03));
                 //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
               }
+            }
+            > a {
+              pointer-events:all;//Can't remove pointer-events to links apparently
             }
             // &:hover {
             //   &:before, &:after {
@@ -1325,8 +1347,8 @@ body.page-type-feedback {
 body.page-type-basic.work {
 }
 
-// Theme Colour White
-body.theme-colour.white {
+// Theme Colour Black/White | is-top/is-bottom
+body.theme-colour.black.is-bottom, body.theme-colour.white.is-top {//body.theme-colour.contact_me
   background-color:#FFF;
   a.logo {
     .logo-interior {

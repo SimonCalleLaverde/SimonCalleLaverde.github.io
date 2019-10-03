@@ -11705,10 +11705,20 @@ aside.change-features {
   width: calc(100% - 3px);
   margin-left: 1px;
   z-index: 100; }
+  .slick-carousel:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    z-index: 103; }
   .slick-carousel button.slick-arrow {
     z-index: 101; }
     .slick-carousel button.slick-arrow.slick-prev, .slick-carousel button.slick-arrow.slick-next {
-      top: 41%; }
+      top: 43%; }
+      .slick-carousel button.slick-arrow.slick-prev:before, .slick-carousel button.slick-arrow.slick-prev:after, .slick-carousel button.slick-arrow.slick-next:before, .slick-carousel button.slick-arrow.slick-next:after {
+        font-size: 25px; }
     .slick-carousel button.slick-arrow.slick-prev {
       right: 195px;
       left: auto; }
@@ -11731,34 +11741,43 @@ aside.change-features {
         margin: 0 auto;
         outline: none;
         z-index: 103;
+        pointer-events: none;
         -webkit-transition: all ease-out 0.5s;
         -moz-transition: all ease-out 0.5s;
         -ms-transition: all ease-out 0.5s;
         -o-transition: all ease-out 0.5s;
         transition: all ease-out 0.5s; }
+        .slick-carousel .slick-list .slick-track .slick-slide article.project-article > a {
+          pointer-events: none; }
         .slick-carousel .slick-list .slick-track .slick-slide article.project-article .project-thumbnail {
+          pointer-events: none;
           -webkit-filter: opacity(0.6);
           -moz-filter: opacity(0.6);
           -ms-filter: opacity(0.6);
           -o-filter: opacity(0.6);
           filter: opacity(0.6); }
-      .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail {
-        -webkit-filter: opacity(1);
-        -moz-filter: opacity(1);
-        -ms-filter: opacity(1);
-        -o-filter: opacity(1);
-        filter: opacity(1);
-        -webkit-transition: all ease-out 1s;
-        -moz-transition: all ease-out 1s;
-        -ms-transition: all ease-out 1s;
-        -o-transition: all ease-out 1s;
-        transition: all ease-out 1s; }
-        .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:hover {
-          -webkit-transform: scale(1.03);
-          -moz-transform: scale(1.03);
-          -ms-transform: scale(1.03);
-          -o-transform: scale(1.03);
-          transform: scale(1.03); }
+      .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article {
+        pointer-events: all; }
+        .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail {
+          pointer-events: all;
+          -webkit-filter: opacity(1);
+          -moz-filter: opacity(1);
+          -ms-filter: opacity(1);
+          -o-filter: opacity(1);
+          filter: opacity(1);
+          -webkit-transition: all ease-out 1s;
+          -moz-transition: all ease-out 1s;
+          -ms-transition: all ease-out 1s;
+          -o-transition: all ease-out 1s;
+          transition: all ease-out 1s; }
+          .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:hover {
+            -webkit-transform: scale(1.03);
+            -moz-transform: scale(1.03);
+            -ms-transform: scale(1.03);
+            -o-transform: scale(1.03);
+            transform: scale(1.03); }
+        .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article > a {
+          pointer-events: all; }
 
 .slick-as-nav-for {
   width: calc(100% - 3px);
@@ -12179,27 +12198,27 @@ footer {
   footer .see-letter-button {
     cursor: alias; }
 
-body.theme-colour.white {
+body.theme-colour.black.is-bottom, body.theme-colour.white.is-top {
   background-color: #FFF; }
-  body.theme-colour.white a.logo .logo-interior svg {
+  body.theme-colour.black.is-bottom a.logo .logo-interior svg, body.theme-colour.white.is-top a.logo .logo-interior svg {
     fill: #1A1A1A; }
-  body.theme-colour.white main {
+  body.theme-colour.black.is-bottom main, body.theme-colour.white.is-top main {
     background-color: #FEFEFE; }
-  body.theme-colour.white .text-white, body.theme-colour.white .text-grey-light, body.theme-colour.white .text-grey-mid {
+  body.theme-colour.black.is-bottom .text-white, body.theme-colour.black.is-bottom .text-grey-light, body.theme-colour.black.is-bottom .text-grey-mid, body.theme-colour.white.is-top .text-white, body.theme-colour.white.is-top .text-grey-light, body.theme-colour.white.is-top .text-grey-mid {
     color: #000 !important; }
-  body.theme-colour.white .text-stroke-white {
+  body.theme-colour.black.is-bottom .text-stroke-white, body.theme-colour.white.is-top .text-stroke-white {
     -webkit-text-stroke-color: #1A1A1A !important; }
-  body.theme-colour.white .text-grey-light {
+  body.theme-colour.black.is-bottom .text-grey-light, body.theme-colour.white.is-top .text-grey-light {
     color: #1A1A1A !important; }
-  body.theme-colour.white .copyright {
+  body.theme-colour.black.is-bottom .copyright, body.theme-colour.white.is-top .copyright {
     color: #FEFEFE !important; }
-  body.theme-colour.white .intro {
+  body.theme-colour.black.is-bottom .intro, body.theme-colour.white.is-top .intro {
     color: #000; }
-  body.theme-colour.white a.link:hover, body.theme-colour.white a > span > i:hover, body.theme-colour.white a > span:hover, body.theme-colour.white a > i:hover, body.theme-colour.white a > u:hover, body.theme-colour.white a > p:hover, body.theme-colour.white a > h1:hover, body.theme-colour.white a > h2:hover, body.theme-colour.white a > h3:hover, body.theme-colour.white a > h4:hover, body.theme-colour.white a > h5:hover, body.theme-colour.white a > h6:hover, body.theme-colour.white a .project-thumbnail:hover, body.theme-colour.white a .logo-interior:hover {
+  body.theme-colour.black.is-bottom a.link:hover, body.theme-colour.black.is-bottom a > span > i:hover, body.theme-colour.black.is-bottom a > span:hover, body.theme-colour.black.is-bottom a > i:hover, body.theme-colour.black.is-bottom a > u:hover, body.theme-colour.black.is-bottom a > p:hover, body.theme-colour.black.is-bottom a > h1:hover, body.theme-colour.black.is-bottom a > h2:hover, body.theme-colour.black.is-bottom a > h3:hover, body.theme-colour.black.is-bottom a > h4:hover, body.theme-colour.black.is-bottom a > h5:hover, body.theme-colour.black.is-bottom a > h6:hover, body.theme-colour.black.is-bottom a .project-thumbnail:hover, body.theme-colour.black.is-bottom a .logo-interior:hover, body.theme-colour.white.is-top a.link:hover, body.theme-colour.white.is-top a > span > i:hover, body.theme-colour.white.is-top a > span:hover, body.theme-colour.white.is-top a > i:hover, body.theme-colour.white.is-top a > u:hover, body.theme-colour.white.is-top a > p:hover, body.theme-colour.white.is-top a > h1:hover, body.theme-colour.white.is-top a > h2:hover, body.theme-colour.white.is-top a > h3:hover, body.theme-colour.white.is-top a > h4:hover, body.theme-colour.white.is-top a > h5:hover, body.theme-colour.white.is-top a > h6:hover, body.theme-colour.white.is-top a .project-thumbnail:hover, body.theme-colour.white.is-top a .logo-interior:hover {
     cursor: pointer; }
-  body.theme-colour.white i.fa.link:hover {
+  body.theme-colour.black.is-bottom i.fa.link:hover, body.theme-colour.white.is-top i.fa.link:hover {
     cursor: pointer; }
-  body.theme-colour.white .cursor {
+  body.theme-colour.black.is-bottom .cursor, body.theme-colour.white.is-top .cursor {
     background-color: transparent;
     border-color: transparent;
     -webkit-box-shadow: none;
@@ -12207,42 +12226,42 @@ body.theme-colour.white {
     -ms-box-shadow: none;
     -o-box-shadow: none;
     box-shadow: none; }
-    body.theme-colour.white .cursor:before, body.theme-colour.white .cursor:after {
+    body.theme-colour.black.is-bottom .cursor:before, body.theme-colour.black.is-bottom .cursor:after, body.theme-colour.white.is-top .cursor:before, body.theme-colour.white.is-top .cursor:after {
       display: none; }
-  body.theme-colour.white .footer-profile-picture .profile-picture {
+  body.theme-colour.black.is-bottom .footer-profile-picture .profile-picture, body.theme-colour.white.is-top .footer-profile-picture .profile-picture {
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
     -ms-filter: grayscale(0);
     -o-filter: grayscale(0);
     filter: grayscale(0); }
-  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-facebook {
+  body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-circle.text-facebook {
     color: #3B5998 !important; }
-  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-instagram {
+  body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-circle.text-instagram {
     color: #E1306C !important; }
-  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-pinterest {
+  body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-circle.text-pinterest {
     color: #BD081C !important; }
-  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-1x, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-facebook, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-pinterest, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-instagram {
+  body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-stack-1x, body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-facebook, body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-instagram, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-stack-1x, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-facebook, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-pinterest, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-instagram {
     color: #FFF !important; }
-  body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook {
+  body.theme-colour.black.is-bottom aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.black.is-bottom aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.black.is-bottom aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.black.is-bottom aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.black.is-bottom aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.black.is-bottom aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white.is-top aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white.is-top aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white.is-top aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white.is-top aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white.is-top aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white.is-top aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook {
     color: #4c70ba !important; }
-  body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-instagram {
+  body.theme-colour.black.is-bottom aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.black.is-bottom aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.black.is-bottom aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.black.is-bottom aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.black.is-bottom aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.black.is-bottom aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white.is-top aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white.is-top aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white.is-top aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white.is-top aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white.is-top aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white.is-top aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-instagram {
     color: #e75d8c !important; }
-  body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest {
+  body.theme-colour.black.is-bottom aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest {
     color: #ee0a23 !important; }
-  body.theme-colour.white article.project-article.home .project-thumbnail time.project-year, body.theme-colour.white article.project-article.work .project-thumbnail time.project-year {
+  body.theme-colour.black.is-bottom article.project-article.home .project-thumbnail time.project-year, body.theme-colour.black.is-bottom article.project-article.work .project-thumbnail time.project-year, body.theme-colour.white.is-top article.project-article.home .project-thumbnail time.project-year, body.theme-colour.white.is-top article.project-article.work .project-thumbnail time.project-year {
     color: #EB0082 !important; }
-  body.theme-colour.white .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:before, body.theme-colour.white .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:after {
+  body.theme-colour.black.is-bottom .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:before, body.theme-colour.black.is-bottom .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:after, body.theme-colour.white.is-top .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:before, body.theme-colour.white.is-top .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:after {
     background-color: #FEFEFE; }
-  body.theme-colour.white .headline-link {
+  body.theme-colour.black.is-bottom .headline-link, body.theme-colour.white.is-top .headline-link {
     -webkit-text-stroke: 2px #000; }
-    body.theme-colour.white .headline-link:hover, body.theme-colour.white .headline-link:active, body.theme-colour.white .headline-link:focus {
+    body.theme-colour.black.is-bottom .headline-link:hover, body.theme-colour.black.is-bottom .headline-link:active, body.theme-colour.black.is-bottom .headline-link:focus, body.theme-colour.white.is-top .headline-link:hover, body.theme-colour.white.is-top .headline-link:active, body.theme-colour.white.is-top .headline-link:focus {
       color: #000 !important;
       -webkit-text-stroke: 2px #000; }
-  body.theme-colour.white .text-stroke-white {
+  body.theme-colour.black.is-bottom .text-stroke-white, body.theme-colour.white.is-top .text-stroke-white {
     -webkit-text-stroke: 2px #000 !important; }
-  body.theme-colour.white .text-line-through:after, body.theme-colour.white .text-line-through:before {
+  body.theme-colour.black.is-bottom .text-line-through:after, body.theme-colour.black.is-bottom .text-line-through:before, body.theme-colour.white.is-top .text-line-through:after, body.theme-colour.white.is-top .text-line-through:before {
     background-color: #1A1A1A; }
-  body.theme-colour.white a:hover.text-line-through:after {
+  body.theme-colour.black.is-bottom a:hover.text-line-through:after, body.theme-colour.white.is-top a:hover.text-line-through:after {
     background-color: transparent; }
 
 a.link:hover, a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover, a .project-thumbnail:hover, a .logo-interior:hover {
@@ -12627,7 +12646,7 @@ body.imagesloaded:after {
     padding: 50px 0; }
     section.feedback-page .feedback-form {
       min-height: 600px;
-      border: 1px dotted #FFF;
+      border: 1px dotted #FEFEFE;
       -webkit-border-radius: 1rem;
       -moz-border-radius: 1rem;
       -ms-border-radius: 1rem;
@@ -12690,20 +12709,20 @@ body.imagesloaded:after {
 
   footer {
     min-height: 100vh;
-    padding: 300px 20px 80px; }
+    padding: 300px 20px 50px; }
     footer .footer-copyright {
       position: absolute;
       bottom: 30px;
       left: 35px;
       font-size: 15px; }
 
-  body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link {
+  body.theme-colour.black.is-bottom .navbar ul.navbar-nav li.nav-item a.nav-link, body.theme-colour.white.is-top .navbar ul.navbar-nav li.nav-item a.nav-link {
     color: #1A1A1A; }
-    body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link:hover {
+    body.theme-colour.black.is-bottom .navbar ul.navbar-nav li.nav-item a.nav-link:hover, body.theme-colour.white.is-top .navbar ul.navbar-nav li.nav-item a.nav-link:hover {
       color: #000; }
-    body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link.active:after {
+    body.theme-colour.black.is-bottom .navbar ul.navbar-nav li.nav-item a.nav-link.active:after, body.theme-colour.white.is-top .navbar ul.navbar-nav li.nav-item a.nav-link.active:after {
       border: 1.5px solid #EB0082; }
-    body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link.active.not-active {
+    body.theme-colour.black.is-bottom .navbar ul.navbar-nav li.nav-item a.nav-link.active.not-active, body.theme-colour.white.is-top .navbar ul.navbar-nav li.nav-item a.nav-link.active.not-active {
       color: #1A1A1A; } }
 @media (min-width: 1200px) {
   .container {
