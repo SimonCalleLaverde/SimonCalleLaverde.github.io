@@ -1,17 +1,19 @@
 <section class="my-work-section d-flex flex-column align-items-center clearfix" id="my_work_section">
   <div class="container">
 
-		<div class="row pt-4 lax" id="my_work_headline" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn">
-      <div class="col-md-11 offset-md-1">
-        <p class="font-headline text-white text-uppercase mb-0">My Work</p>
-        <h3 class="text-big text-white text-uppercase mb-0">{{ page.my_work_section.headline }}</h3>
-        <!--<p class="font-headline text-white text-uppercase mt-1 mb-4 pb-3">Includes my work at Code Nation, as well as a concept small site I created in 2015, and other I started in 2015 and I'm retaking in 2019</p>-->
+		<div class="row pt-4" id="my_work_headline"><!--lax--><!--data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn"-->
+      <div class="col-md-10 offset-md-1">
+        <div class="gsap-my-work-title">
+          <p class="font-headline text-white text-uppercase mb-0">My Work</p>
+          <h3 class="text-big text-white text-uppercase mb-0">{{ page.my_work_section.headline }}</h3>
+          <!--<p class="font-headline text-white text-uppercase mt-1 mb-4 pb-3">Includes my work at Code Nation, as well as a concept small site I created in 2015, and other I started in 2015 and I'm retaking in 2019</p>-->
+        </div>
       </div>
     </div>
     
-    <div class="row mt-5 pt-5less" id="slick_carousel_scroll"><!--data-lax-preset="rightToLeft-.1"-->
+    <div class="row mt-5 pt-5less" id="slick_carousel_scroll">
       <div class="col-md-12">
-        <div class="slick-carousel"><!--lax--><!--data-lax-preset="driftLeft-30"-->
+        <div class="slick-carousel magic-trigger-as-nav-for">
           {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
           {% for project in sorted_projects %}
@@ -29,7 +31,7 @@
           {% endfor %}
         </div>
         
-        <div class="slick-as-nav-for mt-5" data-lax-preset="driftLeft-30">
+        <div class="slick-as-nav-for magic-trigger-content-development mt-5">
           {% for project in sorted_projects %}
             {% assign project_tags_list = "#" %}
             {% for tag in project.tags %}
@@ -39,7 +41,9 @@
             {% if project_tags_list contains "featured" %}
               {% assign posts_count = posts_count | plus:1 %}
               <div>
-                {% include home/home_project_as_nav_for.html %}
+                <div class="gsap-as-nav-for">
+                  {% include home/home_project_as_nav_for.html %}
+                </div>
               </div>
             {% endif %}
           {% endfor %}
@@ -47,31 +51,34 @@
       </div>
     </div>
 
-    <div class="row mt-4 lax" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn">
+    <div class="row mt-4">
       <div class="col-md-6 offset-md-1">
-        <div class="mt-4 pt-5 column-div" id="content_development">
+        <div class="mt-4 pt-5 column-div gsap-content-development position-relative" id="content_development">
           <h6 class="text-grey-light">Check out some of the websites I have <a class="text-grey-light text-underline" href="/work">worked on</a>. For now most of them were done within my time at <a class="text-grey-light text-underline" href="https://www.codenation.com/" target="_blank" title="Check out their amazing work and contact them for any cool campaigning related project">Code Nation</a>, an Australian 5 star rated digital agency specialized in creating and managing campaigning platforms which help big communities engage in big actions. I worked there for the past 4 years. I'm hoping to transitions with time to showcase some more of my independent work and new business and branding related projects.</h6>
 
           {% comment %}
           {{ page.my_work_section.content }}
           {% endcomment %}
+
+          <div class="magic-trigger-subcontent position-absolute" style="width:0; height:0; margin:auto; top:0; right:0; bottom:0; left:0;"></div>
         </div>
       </div>
     </div>
 
-    <div class="row mt-5 pt-3 lax" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn">
+    <div class="row mt-5 pt-3">
       <div class="col-md-6 offset-md-1">
-        <p class="text-white mt-1">The full collection of prjojects includes my work at Code Nation, as well as a concept small site I created in 2015, and another business website I started in 2015 and I'm retaking in 2019 with a newest more modern design.</p>
-      </div>
-    </div>
-
-    <div class="row mt-5 pt-1 lax" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn">
-      <div class="col-md-12">
-        <div class="text-center mt-4 mx-md-3 px-md-4">
-          <a class="link font-headline headline-link text-gigantic text-uppercase d-none d-md-inline-block" href="/work">All Projects</a>
+        <div class="gsap-subcontent magic-trigger-all-projects">
+          <p class="text-white mt-1">The full collection of prjojects includes my work at Code Nation, as well as a concept small site I created in 2015, and another business website I started in 2015 and I'm retaking in 2019 with a newest more modern design.</p>
         </div>
       </div>
     </div>
 
+    <div class="row mt-5 pt-5"><!--lax--><!--data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn"-->
+      <div class="col-md-12">
+        <div class="gsap-all-projects text-center mt-5 pt-5less">
+          <a class="link font-headline headline-link text-gigantic text-uppercase d-none d-md-inline-block" href="/work">All Projects</a><!-- - <a class="link font-headline headline-link text-gigantic text-uppercase d-none d-md-inline-block" href="/work">All Projects</a> - <a class="link font-headline headline-link text-gigantic text-uppercase d-none d-md-inline-block" href="/work">All Projects</a>-->
+        </div>
+      </div>
+    </div>
   </div>
 </section>

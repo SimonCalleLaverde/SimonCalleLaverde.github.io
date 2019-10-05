@@ -11277,6 +11277,9 @@ figure {
 main, header, section, footer {
   position: relative; }
 
+header, section, footer {
+  z-index: 6; }
+
 main {
   background-color: #1A1A1A;
   text-align: center;
@@ -11459,6 +11462,8 @@ input.text, textarea.textarea, .form-group > select {
 .mobile-thumbnail-control {
   min-height: 300px; }
 
+article.project-article.home figure {
+  background-color: #1A1A1A; }
 article.project-article.home .project-thumbnail {
   position: relative;
   height: 400px; }
@@ -11584,11 +11589,11 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     left: 0;
     background-color: #FFF;
     pointer-events: none;
-    -webkit-animation: textLineThroughAnim 5s linear 3.8s infinite;
-    -moz-animation: textLineThroughAnim 5s linear 3.8s infinite;
-    -ms-animation: textLineThroughAnim 5s linear 3.8s infinite;
-    -o-animation: textLineThroughAnim 5s linear 3.8s infinite;
-    animation: textLineThroughAnim 5s linear 3.8s infinite; }
+    -webkit-animation: textLineThroughAnim 5s linear 4.3s infinite;
+    -moz-animation: textLineThroughAnim 5s linear 4.3s infinite;
+    -ms-animation: textLineThroughAnim 5s linear 4.3s infinite;
+    -o-animation: textLineThroughAnim 5s linear 4.3s infinite;
+    animation: textLineThroughAnim 5s linear 4.3s infinite; }
   .text-line-through:before {
     width: 0;
     left: 0;
@@ -11603,11 +11608,11 @@ span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
     -o-transition: all linear 0.5s;
     transition: all linear 0.5s; }
   .text-line-through.text-websites:after {
-    -webkit-animation: textLineThroughAnim 5s linear 5s infinite;
-    -moz-animation: textLineThroughAnim 5s linear 5s infinite;
-    -ms-animation: textLineThroughAnim 5s linear 5s infinite;
-    -o-animation: textLineThroughAnim 5s linear 5s infinite;
-    animation: textLineThroughAnim 5s linear 5s infinite; }
+    -webkit-animation: textLineThroughAnim 5s linear 5.5s infinite;
+    -moz-animation: textLineThroughAnim 5s linear 5.5s infinite;
+    -ms-animation: textLineThroughAnim 5s linear 5.5s infinite;
+    -o-animation: textLineThroughAnim 5s linear 5.5s infinite;
+    animation: textLineThroughAnim 5s linear 5.5s infinite; }
 
 a:hover.text-line-through:after {
   background-color: transparent; }
@@ -11845,7 +11850,7 @@ aside.change-features {
         filter: opacity(1); }
 
 .hero-note {
-  height: 305px;
+  height: 300px;
   font-size: 13px;
   writing-mode: vertical-rl;
   text-orientation: mixed; }
@@ -12183,11 +12188,11 @@ footer {
       -o-transition: all ease-out 0.3s;
       transition: all ease-out 0.3s; }
   footer .footer-drop-me-a-line {
-    -webkit-transform: rotat(45deg);
-    -moz-transform: rotat(45deg);
-    -ms-transform: rotat(45deg);
-    -o-transform: rotat(45deg);
-    transform: rotat(45deg); }
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
   footer article iframe {
     pointer-events: none;
     -webkit-border-radius: 0.3rem;
@@ -12350,22 +12355,22 @@ i.fa.link:hover {
   .cursor.hoveredModal:after {
     border-color: #000; }
   .cursor.hoveredDragSides {
-    border-color: #FFF;
+    border-color: #bfbfbf;
     mix-blend-mode: normal; }
     .cursor.hoveredDragSides:before, .cursor.hoveredDragSides:after {
       width: 6px;
       height: 6px;
       top: 12.5px;
       font-size: 14px;
-      color: #FEFEFE;
+      color: #bfbfbf;
       border: none;
       z-index: 11001; }
     .cursor.hoveredDragSides:before {
       content: "<";
-      left: 5px; }
+      left: 10px; }
     .cursor.hoveredDragSides:after {
       content: ">";
-      right: 5px;
+      right: 10px;
       left: auto; }
 
 @media (pointer: coarse) and (hover: none) {
@@ -12643,7 +12648,7 @@ body.imagesloaded:after {
     padding: 50px 0 25px; }
 
   section.feedback-page {
-    padding: 50px 0; }
+    padding: 50px 0 80px; }
     section.feedback-page .feedback-form {
       min-height: 600px;
       border: 1px dotted #1A1A1A;
@@ -12658,7 +12663,7 @@ body.imagesloaded:after {
     padding: 40px 0; }
 
   section.my-work-section {
-    padding: 130px 0 60px; }
+    padding: 130px 0 100px; }
 
   section.about-me-section {
     padding: 70px 0 60px; }

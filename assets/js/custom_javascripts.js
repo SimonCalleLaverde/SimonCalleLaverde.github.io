@@ -64,15 +64,15 @@ $(function() {
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
 
-    if (scrollFromTop >= 540) {
+    if (scrollFromTop >= 250) {
       hideThisDivs.addClass("hide-it").removeClass("show-it");
-    } else if (scrollFromTop <= 540) {
+    } else if (scrollFromTop <= 250) {
       hideThisDivs.removeClass("hide-it").addClass("show-it");
     }
 
-    if (scrollFromTop >= 540) {
+    if (scrollFromTop >= 250) {
       showThisDivs.addClass("show-it").removeClass("hide-it");
-    } else if (scrollFromTop <= 540) {
+    } else if (scrollFromTop <= 250) {
       showThisDivs.removeClass("show-it").addClass("hide-it");
     }
   });

@@ -4,7 +4,7 @@ title: Fine Web Design
 permalink: /
 slug: home
 type_slug: basic
-headline: <div class="lax" data-lax-translate-x="0 0, 50 0, 100 2, 150 4, 200 6, 250 8, 300 10, 350 12, 400 14, 450 16, 500 18"><span class="letter-1">H</span><span class="letter-2">e</span><span class="letter-3">l</span><span class="letter-4">l</span><span class="letter-5">o</span><span class="letter-6">!</span></div><div class="lax" data-lax-translate-x="0 0, 50 0, 100 -2, 150 -4, 200 -6, 250 -8, 300 -10, 350 -12, 400 -14, 450 -16, 500 -18"><span class="letter-7">I</span> <span class="letter-8">a</span><span class="letter-9">m</span></div><div class="lax" data-lax-translate-x="0 0, 50 0, 100 2, 150 4, 200 6, 250 8, 300 10, 350 12, 400 14, 450 16, 500 18"><span class="letter-10">S</span><span class="letter-11">i</span><span class="letter-12">m</span><span class="letter-13">o</span><span class="letter-14">n</span></div>
+headline: <div class="lax" data-lax-translate-x="0 0, 50 0, 500 30"><span class="letter-1">H</span><span class="letter-2">e</span><span class="letter-3">l</span><span class="letter-4">l</span><span class="letter-5">o</span><span class="letter-6">!</span></div><div class="lax" data-lax-translate-x="0 0, 50 0, 500 -30"><span class="letter-7">I</span> <span class="letter-8">a</span><span class="letter-9">m</span></div><div class="lax" data-lax-translate-x="0 0, 50 0, 500 30"><span class="letter-10">S</span><span class="letter-11">i</span><span class="letter-12">m</span><span class="letter-13">o</span><span class="letter-14">n</span></div>
 header_image: ""
 background_image: /uploads/logo-beard-background.png # /uploads/home-header.jpg
 thumbnail_image: ""

@@ -272,6 +272,9 @@ figure {
 main, header, section, footer {
   position:relative;
 }
+header, section, footer {
+  z-index:6;
+}
 main {
   // position:fixed;//For GSAP Smooth Scroll
   // width:100%;//For GSAP Smooth Scroll
@@ -522,6 +525,9 @@ input.text, textarea.textarea, .form-group > select {
 article.project-article {
   //z-index:100;
   &.home {
+    figure {
+      background-color:theme-color('grey-dark');
+    }
     .project-thumbnail {
       position:relative;
       height:400px;
@@ -756,7 +762,7 @@ span.fa-stack {
     //animation-timing-function:linear;
     //animation-iteration-count:1;
     //animation-fill-mode:forwards;
-    @include animation(textLineThroughAnim 5s linear 3.8s infinite);
+    @include animation(textLineThroughAnim 5s linear 4.3s infinite);
   }
   &:before {
     width:0;
@@ -766,7 +772,7 @@ span.fa-stack {
   }
   &.text-websites {
     &:after {
-      @include animation(textLineThroughAnim 5s linear 5s infinite);
+      @include animation(textLineThroughAnim 5s linear 5.5s infinite);
     }
   }
 }
@@ -1017,8 +1023,8 @@ aside.change-features {
 
 // Hero Note
 .hero-note {
-  //width:305px;
-  height:305px;
+  //width:300px;//305px
+  height:300px;//305px
   font-size:13px;
   //text-align:justify;
   writing-mode:vertical-rl;
@@ -1237,6 +1243,11 @@ header.hello-header {
 // My Work Section
 section.my-work-section {
   padding:30px 20px;//To revise mobile
+  .tag-moving-right {
+    //@include transform(translateX(-1000px));
+    .tag-moving-element {
+    }
+  }
 }
 
 // About Me Section
@@ -1291,7 +1302,7 @@ footer {
     }
   }
   .footer-drop-me-a-line {
-    @include transform(rotat(45deg));
+    @include transform(rotate(45deg));
   }
 
   
@@ -1601,24 +1612,24 @@ i.fa {
     }
   }
   &.hoveredDragSides {
-    border-color:#FFF;
+    border-color:theme-color('grey-mid');
     mix-blend-mode:normal;
     &:before, &:after {
       width:6px;
       height:6px;
       top:12.5px;
       font-size:14px;
-      color:theme-color('grey-light');
+      color:theme-color('grey-mid');
       border:none;
       z-index:11001;
     }
     &:before {
       content:"<";
-      left:5px;
+      left:10px;
     }
     &:after {
       content:">";
-      right:5px;
+      right:10px;
       left:auto;
     }
   }

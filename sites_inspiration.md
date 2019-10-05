@@ -116,7 +116,20 @@ thumbnail_image: ""
 <a href="https://www.youtube.com/watch?v=iRo18pUs61Q">Why We Should Ditch React</a>
 <a href="https://www.youtube.com/watch?v=0HzOqyiV3f8">Websites Design | Top 10 Mistakes & Their Solutions</a>
 <a href="https://www.youtube.com/watch?v=Zz6eOVaaelI">Learn Sass In 20 Minutes | Sass Crash Course</a>
+<a href="https://www.youtube.com/watch?v=J7sVJChzMOQ">Why I Don't Use Adobe Creative Cloud Anymore | Specially because of the alternative programs</a>
 
 <h1>SEO</h1>
 <p>Google | Keywords Everywhere and Install for Chrome</p>
-<!--<a href="..."></a>-->
+
+<h1>Jekyll, Ruby, NPM, Grunt, Compilers | Related Problems/Documentation</h1>
+<a href="https://gruntjs.com/sample-gruntfile">sample-gruntfile</a>
+<a href="https://gruntjs.com/configuring-tasks">configuring-tasks</a>
+<a href="http://o.zasadnyy.com/blog/optimized-jekyll-site-with-grunt/">The way I tryied, must follow main sources</a>
+<a href="http://mrloh.se/2015/06/serving-jekyll-with-grunt/#kudo">Other useful documentation to read/follow</a>
+<a href="http://beginrescueend.com/">Ruby On Rails</a>
+<a href="https://en.wikipedia.org/wiki/Command-line_interface">Command Line</a>
+<a href="http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/">Command Line for Begginers/Designers</a>
+<a href="https://sass-lang.com/install">Installing SASS as recommended | Don't use Ruby-Sass</a>
+<a href="https://docs.npmjs.com/files/package.json#devdependencies">Devdependencies</a>
+<a href="https://github.com/gruntjs/grunt-cli/blob/master/bin/grunt">grunt-cli | ?</a>
+<a href="https://github.com/gruntjs/grunt-contrib-sass">grunt-contrib-sass | ?</a>

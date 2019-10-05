@@ -1,7 +1,8 @@
 {
-  "name": "package.json",
+  "name": "simoncallelaverde.com",
+  "author": "Simon Calle Laverde",
   "version": "1.0.0",
-  "description": "a package json",
+  "description": "A package json for my main portfolio site",
   "main": "index.js",
   "scripts": {
     "test": "test"
@@ -31,7 +32,6 @@
     "scss",
     "liquid"
   ],
-  "author": "simon calle laverde",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SimonCalleLaverde/SimonCalleLaverde.github.io/issues"

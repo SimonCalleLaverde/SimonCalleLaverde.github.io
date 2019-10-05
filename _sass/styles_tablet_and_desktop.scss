@@ -1,6 +1,6 @@
 @include media-breakpoint-up(md) {
 
-  //------------------General Styles------------------//
+  //----------------------------------General Styles----------------------------------//
 
   // General
   body {
@@ -87,7 +87,7 @@
 	  }
 	}
 
-	//------------------Section Styles------------------//
+	//----------------------------------Section Styles----------------------------------//
 
 	// Nav Desktop
 	nav.navbar {
@@ -185,7 +185,7 @@
 
 	// Feedback Page
 	section.feedback-page {
-		padding:50px 0;
+		padding:50px 0 80px;
 		.feedback-form {
 			min-height:600px;
 			border:1px dotted theme-color('grey-dark');
@@ -201,7 +201,7 @@
 
 	// My Work Section
 	section.my-work-section {
-		padding:130px 0 60px;//150px 0 60px
+		padding:130px 0 100px;
 	}
 
 	// About Me Section
@@ -272,7 +272,7 @@
 		}
 	}
 
-	//------------------Page Styles------------------//
+	//----------------------------------Page Styles----------------------------------//
 
 	// Theme Colour Black/White | is-top/is-bottom
 	body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
@@ -305,7 +305,7 @@
 
 }//@media
 
-//------------------Other Media Queries------------------//
+//----------------------------------Other Media Queries----------------------------------//
 
 // General Container Width Big Screens
 @include media-breakpoint-up(xl) {
