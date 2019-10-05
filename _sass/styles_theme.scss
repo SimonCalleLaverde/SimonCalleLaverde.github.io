@@ -1378,7 +1378,7 @@ body.page-type-basic.work {
 }
 
 // Theme Colour Black/White | is-top/is-bottom
-body.theme-colour.white.is-top, body.theme-colour.contact_me {//body.theme-colour.black.is-bottom, 
+body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
   background-color:#FFF;
   a.logo {
     .logo-interior {
@@ -1431,16 +1431,21 @@ body.theme-colour.white.is-top, body.theme-colour.contact_me {//body.theme-colou
     &:before, &:after {
       display:none;
     }
-    // &.hoveredLink {
-    //   //width:110px;
-    //   //height:110px;
-    //   //background-color:theme-color('magenta');
-    //   //border-width:0.5px;
-    //   //border-color:transparent;
-    //   @include transform(scale(1));//translateX(-30px) translateY(-30px)
-    //   @include filter(opacity(0.2));
-    //   @include transition(transform ease-out 0.2s, background-color ease-out 0.2s);
-    // }
+    &.hoveredProject {
+      &:before, &:after {
+        display:block;
+      }
+    }
+    &.hoveredFooter {
+      &:before, &:after {
+        display:block;
+      }
+      &:before {
+        background-color:#000;
+        border-color:#000;
+        color:#FFF;
+      }
+    }
   }
   .footer-profile-picture {
     .profile-picture {
@@ -1652,30 +1657,34 @@ i.fa {
       left:auto;
     }
   }
-  &.hoveredFooter {
-    mix-blend-mode:normal;
-    //@include transition(all ease-out 0.2s);
-    &:before {
-      content:"Let's Talk";
-      width:120px;
-      height:120px;
-      top:-35px;//New | For GSAP Positioning
-      left:-35px;//New | For GSAP Positioning
-      background-color:theme-color('white');
-      padding-top:48px;
-      font-family:$font-headline;
-      font-weight:500;
-      font-size:13.5px;
-      color:#000;
-      border-color:theme-color('white');
-      text-transform:uppercase;
-      letter-spacing:2px;
-      white-space:nowrap;
-      text-align:center;
-      z-index:11002;
-      //@include transform(translateY(-25px) translateX(-25px));
-      //@include box-shadow(0 0 1rem theme-color('magenta'));
-      @include animation(fa-spin 5s linear infinite);
+}
+body.is-bottom {
+  .cursor {
+    &.hoveredFooter {
+      mix-blend-mode:normal;
+      //@include transition(all ease-out 0.2s);
+      &:before {
+        content:"Let's Talk";
+        width:120px;
+        height:120px;
+        top:-35px;//New | For GSAP Positioning
+        left:-35px;//New | For GSAP Positioning
+        background-color:#FFF;
+        padding-top:49px;
+        font-family:$font-headline;
+        font-weight:500;
+        font-size:13.5px;
+        color:#000;
+        border-color:#FFF;
+        text-transform:uppercase;
+        letter-spacing:2px;
+        white-space:nowrap;
+        text-align:center;
+        z-index:11002;
+        //@include transform(translateY(-25px) translateX(-25px));
+        //@include box-shadow(0 0 1rem theme-color('magenta'));
+        @include animation(fa-spin 5s linear infinite);
+      }
     }
   }
 }

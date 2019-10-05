@@ -34,6 +34,7 @@ var tlCd = new TimelineMax();
 var tlSc = new TimelineMax();
 var tlAp = new TimelineMax();
 var tlSh = new TimelineMax();
+var tlSc = new TimelineMax();
 
 const controller = new ScrollMagic.Controller();
 
@@ -65,6 +66,8 @@ tlSc.from(".gsap-subcontent", 1.5, {y:200, opacity:0, transformStyle:"preserve-3
 tlAp.from(".gsap-all-projects" , 2, {y:200, opacity:0, transformStyle:"preserve-3d", skewY:10, ease:Power3.easeOut});
 
 tlSh.from(".gsap-skills-headline" , 2, {y:200, opacity:0, transformStyle:"preserve-3d", skewY:10, ease:Power3.easeOut});
+
+tlSc.from(".gsap-skills-content" , 2, {y:200, opacity:0, transformStyle:"preserve-3d", skewY:10, ease:Power3.easeOut});
 
 const sceneMwT = new ScrollMagic.Scene({
 	triggerElement: ".magic-trigger-my-work-title"
@@ -100,4 +103,10 @@ const scenetlSh = new ScrollMagic.Scene({
 	triggerElement: "#my_skills_section"
 })
 .setTween(tlSh)
+	.addTo(controller);
+
+const scenetlSc = new ScrollMagic.Scene({
+	triggerElement: ".magic-trigger-skills-headline"
+})
+.setTween(tlSc)
 	.addTo(controller);
