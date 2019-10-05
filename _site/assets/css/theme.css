@@ -11446,19 +11446,6 @@ a {
   .text-big .text-line-through:before, .text-big .text-line-through:after {
     height: 7px; }
 
-input.text, textarea.textarea, .form-group > select {
-  height: 40px;
-  padding: 8px 15px;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0; }
-
-.form-group > select:hover, .form-group > select:active, .form-group > select:focus {
-  cursor: pointer; }
-
 .mobile-thumbnail-control {
   min-height: 300px; }
 
@@ -12222,6 +12209,23 @@ footer {
   footer .see-letter-button {
     cursor: alias; }
 
+body.page-type-feedback .copyright .copyright-interior, body.page-type-feedback .copyright .change-features-interior, body.page-type-feedback .change-features .copyright-interior, body.page-type-feedback .change-features .change-features-interior {
+  pointer-events: all !important;
+  -webkit-filter: opacity(1) !important;
+  -moz-filter: opacity(1) !important;
+  -ms-filter: opacity(1) !important;
+  -o-filter: opacity(1) !important;
+  filter: opacity(1) !important; }
+body.page-type-feedback a.logo {
+  pointer-events: all !important;
+  -webkit-filter: opacity(1) !important;
+  -moz-filter: opacity(1) !important;
+  -ms-filter: opacity(1) !important;
+  -o-filter: opacity(1) !important;
+  filter: opacity(1) !important; }
+body.page-type-feedback .logo-cover {
+  display: none; }
+
 body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
   background-color: #FFF; }
   body.theme-colour.black.is-bottom a.logo .logo-interior svg, body.theme-colour.white.is-top a.logo .logo-interior svg, body.theme-colour.contact_me a.logo .logo-interior svg {
@@ -12702,15 +12706,7 @@ body.imagesloaded:after {
     padding: 50px 0 25px; }
 
   section.feedback-page {
-    padding: 50px 0 80px; }
-    section.feedback-page .feedback-form {
-      min-height: 600px;
-      border: 1px dotted #1A1A1A;
-      -webkit-border-radius: 1rem;
-      -moz-border-radius: 1rem;
-      -ms-border-radius: 1rem;
-      -o-border-radius: 1rem;
-      border-radius: 1rem; }
+    padding: 50px 0 100px; }
 
   header.hello-header {
     min-height: calc(100vh - 24px);

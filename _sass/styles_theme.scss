@@ -497,19 +497,48 @@ a {
 }
 
 // Forms
-input.text, textarea.textarea, .form-group > select {
-  height:40px;
-  padding:8px 15px;
-  border:none;//
-  @include border-radius(0);
-}
-.form-group {
-  > select {
-    &:hover, &:active, &:focus {
-      cursor:pointer;
-    }
-  }
-}
+// input.text, textarea.textarea, .form-group > select {
+//   height:40px;
+//   padding:8px 15px;
+//   border:none;//
+//   @include border-radius(0);
+// }
+// .form-group {
+//   > select {
+//     &:hover, &:active, &:focus {
+//       cursor:pointer;
+//     }
+//   }
+// }
+
+
+
+
+// input {
+//   border: 1px solid #ccc;
+//   border-radius: 2px;
+//   padding: 1%;
+// }
+
+// /* target an element */
+// input[type="submit"] {
+//   background-color: white;
+//   padding: 1% 5%;
+//   border-color: purple;
+//   color: purple;
+// }
+
+// input[type="submit"]:hover {
+//   background-color: white;
+//   padding: 1% 5%;
+//   border-color: purple;
+//   color: white;
+//   cursor: pointer
+// }
+
+
+
+
 
 // Panels
 // article {
@@ -1377,6 +1406,19 @@ body.page-type-calendar {
 
 // Feedback Page
 body.page-type-feedback {
+  .copyright, .change-features {
+    .copyright-interior, .change-features-interior {
+      pointer-events:all!important;
+      @include filter(opacity(1)!important);
+    }
+  }
+  a.logo {
+    pointer-events:all!important;
+    @include filter(opacity(1)!important);
+  }
+  .logo-cover {
+    display:none;
+  }
 }
 
 // Work Page (Basic)

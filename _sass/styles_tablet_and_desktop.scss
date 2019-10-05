@@ -186,12 +186,12 @@
 
 	// Feedback Page
 	section.feedback-page {
-		padding:50px 0 80px;
-		.feedback-form {
-			min-height:600px;
-			border:1px dotted theme-color('grey-dark');
-			@include border-radius(1rem);
-		}
+		padding:50px 0 100px;
+		// .feedback-form {
+		// 	min-height:600px;
+		// 	border:1px dotted theme-color('grey-dark');
+		// 	@include border-radius(1rem);
+		// }
 	}
 
 	// Hello Header

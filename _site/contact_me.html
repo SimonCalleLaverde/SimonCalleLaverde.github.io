@@ -106,7 +106,7 @@
     <aside class="change-features">
 	<div class="change-features-interior show-it">
 		<a class="text-grey-mid" href="/"><p class="m-0" title="Lets speak English" style="display:inline-block;">En</p></a><span class="text-grey-mid"> / </span><span class="text-white show-message-button"><p class="text-white m-0" title="Hablemos Español" style="display:inline-block;">Sp</p></span>
-		<i class="fa fa-adjust link text-white switch-theme-colour" style="margin-left:5px;"></i>
+		
 
 		<div class="show-message text-grey-dark hide-it py-1 px-2">
 			Sorry :( this feature will be coming soon
@@ -177,6 +177,7 @@
 
 		<div class="row pt-4 lax" id="my_work_headline" data-lax-skew-y="200 0, 400 4, 600 8" data-lax-translate-y="200 0, 400 60, 600 110" data-lax-preset="fadeIn">
       <div class="col-md-10 offset-md-1">
+        <p class="font-headline text-white text-uppercase mb-0 ml-1"><small style="font-size:8px;">[I'm still developing this page].</small></p>
         <p class="font-headline text-white text-uppercase mb-0 ml-1">I'll be picking on some freelance work.</p>
         <h3 class="text-big text-white text-uppercase mb-0">Need some help for a project? Contact me.</h3>
       </div>
@@ -184,10 +185,90 @@
 
     <div class="row mt-5 pt-3" id="my_work_headline">
       <div class="col-md-10 offset-md-1">
-      	<div class="feedback-form">
+      	<div class="feedback-form formspree-form">
       		<!--IN DEVELOPMENT-->
 
-<!--TO INSERT Form Spree OR WHATEVER FORM HERE-->
+<!--Formspree | https://test.formspree.io/ | https://codepen.io/jonathanbarreto/pen/NAjPQW-->
+<form method="POST" action="https://formspree.io/kyverde88@gmail.com">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="sr-only" for="feedback_name">What's your name</label>
+				<input class="text form-control" type="text" name="name" id="feedback_name" placeholder="What's your name">
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="form-group">
+				<label class="sr-only" for="feedback_email">What's your email</label>
+				<input class="text form-control" type="email" name="_replyto" id="feedback_email" placeholder="What's your email">
+			</div>
+		</div>
+	</div>
+
+	<!--<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+				<label class="sr-only" for="feedback_question">Ask me a question...</label>
+      	<input class="text form-control" type="text" name="question" placeholder="Ask me a question..." id="feedback_question">
+			</div>
+		</div>
+	</div>-->
+	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+				<label class="sr-only" for="feedback_message">Please, tell me more about your project</label>
+				<textarea class="textarea form-control" name="message" id="feedback_message" placeholder="Please, tell me more about your project"></textarea>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<label class="sr-only" for="feedback_scratch">I'm starting from scratch, need your help</label>
+			<input type="radio" name="project_stage" value="scratch" id="feedback_scratch"> I'm starting from scratch, need your help
+		</div>
+	</div>
+
+	<div class="row pb-3">
+		<div class="col-md-12">
+			<label class="sr-only" for="feedback_we_have">We have a few mockups and a design, we want to make that real</label>
+			<input type="radio" name="project_stage" value="we_have" id="feedback_we_have"> We have a few mockups and a design, we want to make that real
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+				<label class="sr-only" for="feedback_budget">What is your estimated budget?</label>
+      	<input class="text form-control" type="text" name="question" placeholder="What is your estimated budget?" id="feedback_budget">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+				<label class="sr-only" for="feedback_timeframe">What is your timeframe?</label>
+      	<input class="text form-control" type="text" name="question" placeholder="What is your timeframe?" id="feedback_timeframe">
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+				<div class="button-wrap pt-3">
+					<input class="btn btn-magenta btn-lg" type="submit" value="Send">
+					<!--<button class="btn btn-magenta" type="submit">Send</button>--><!--Originnal For Formspree-->
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
       	</div>
       </div>
     </div>
