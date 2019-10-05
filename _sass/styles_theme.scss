@@ -599,6 +599,7 @@ aside.nav-social-media {
   //float:left;//For shape-outside
   top:33%;
   left:0;
+  pointer-events:none;
   //shape-outside:circle(50%);
   @include border-radius(50%);
   span.fa-stack.custom {
@@ -1167,6 +1168,14 @@ body.home {
   }
 //}
 
+// Selection Styles
+::selection {/*webkit, opera, IE9*/
+  background:lighten(theme-color('magenta'),40);
+}
+::-moz-selection {/*mozilla firefox*/
+  background:lighten(theme-color('magenta'),40);
+}
+
 //----------------------------------Section Styles----------------------------------//
 
 // Logo
@@ -1278,9 +1287,16 @@ section.plans-section {
 // Footer
 footer {
   margin:0;
-  padding:40px 20px;//To revise mobile
+  padding:0 20px;//To revise mobile
   font-size:16px;
   @include transition(all ease-out 0.3s);
+  .container {
+    padding-top:40px;
+    padding-bottom:40px;
+    div, a {
+      pointer-events:none;
+    }
+  }
   .footer-profile-picture {
     text-align:center;
     .profile-picture {
@@ -1303,6 +1319,9 @@ footer {
   }
   .footer-drop-me-a-line {
     @include transform(rotate(45deg));
+    h1, h2, h3, h4, h5, h6 {
+      font-size:8rem!important;
+    }
   }
 
   
@@ -1359,7 +1378,7 @@ body.page-type-basic.work {
 }
 
 // Theme Colour Black/White | is-top/is-bottom
-body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
+body.theme-colour.white.is-top, body.theme-colour.contact_me {//body.theme-colour.black.is-bottom, 
   background-color:#FFF;
   a.logo {
     .logo-interior {
@@ -1631,6 +1650,32 @@ i.fa {
       content:">";
       right:10px;
       left:auto;
+    }
+  }
+  &.hoveredFooter {
+    mix-blend-mode:normal;
+    //@include transition(all ease-out 0.2s);
+    &:before {
+      content:"Let's Talk";
+      width:120px;
+      height:120px;
+      top:-35px;//New | For GSAP Positioning
+      left:-35px;//New | For GSAP Positioning
+      background-color:theme-color('white');
+      padding-top:48px;
+      font-family:$font-headline;
+      font-weight:500;
+      font-size:13.5px;
+      color:#000;
+      border-color:theme-color('white');
+      text-transform:uppercase;
+      letter-spacing:2px;
+      white-space:nowrap;
+      text-align:center;
+      z-index:11002;
+      //@include transform(translateY(-25px) translateX(-25px));
+      //@include box-shadow(0 0 1rem theme-color('magenta'));
+      @include animation(fa-spin 5s linear infinite);
     }
   }
 }

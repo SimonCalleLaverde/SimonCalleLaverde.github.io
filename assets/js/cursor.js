@@ -45,13 +45,15 @@ $(document).mousemove(function(e) {
   const isProject = target.is('.project-thumbnail');//figure
   const isModal = target.is('.modal, .modal div, .modal p, .modal h1, .modal h2, .modal h3, .modal h4, .modal h5, .modal h6, .modal img, .modal a, .modal button, .modal span');
   const isDragSides = target.is('.project-as-nav-for');
+  const isFooter = target.is('footer .container');
 
   const isLinkHovered = cursor.hasClass('hoveredLink');
   const isImgHovered = cursor.hasClass('hoveredImg');
   const isProjectHovered = cursor.hasClass('hoveredProject');
   const isModalHovered = cursor.hasClass('hoveredModal');
   const isDragSidesHovered = cursor.hasClass('hoveredDragSides');
-  
+  const isFooterHovered = cursor.hasClass('hoveredFooter');
+
   // toggle the cursor class if necessary 
   if(isLink && !isLinkHovered) {
     cursor.addClass('hoveredLink');
@@ -81,6 +83,12 @@ $(document).mousemove(function(e) {
     cursor.addClass('hoveredDragSides');
   } else if(!isDragSides && isDragSidesHovered) {
     cursor.removeClass('hoveredDragSides');
+  }
+
+  if(isFooter && !isFooterHovered) {
+    cursor.addClass('hoveredFooter');
+  } else if(!isFooter && isFooterHovered) {
+    cursor.removeClass('hoveredFooter');
   }
 });
 

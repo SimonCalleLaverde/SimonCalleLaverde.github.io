@@ -95,6 +95,7 @@
 		width:100vh;//100%//We Will Use Viewport-Height To Apply To The Width
 		height:60px;
 		left:100%;//auto
+		pointer-events:none;
 		//mix-blend-mode:difference;
 		@include transform(rotateZ(90deg) translateY(10px));
   	@include transform-origin(0% 0%);
@@ -263,7 +264,11 @@
 	// Footer
 	footer {
 		min-height:100vh;
-		padding:300px 20px 50px;
+		padding:0 20px;
+		.container {
+			padding-top:35px;
+			padding-bottom:35px;
+		}
 		.footer-copyright {
 			position:absolute;
 		  bottom:30px;
@@ -275,7 +280,7 @@
 	//----------------------------------Page Styles----------------------------------//
 
 	// Theme Colour Black/White | is-top/is-bottom
-	body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
+	body.theme-colour.white.is-top, body.theme-colour.contact_me {//body.theme-colour.black.is-bottom, 
 		//padding:0;
 		.navbar {
 			ul.navbar-nav {
