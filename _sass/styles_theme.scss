@@ -1267,6 +1267,12 @@ section.about-me-section {
 // My Skills Section
 section.my-skills-section {
   padding:30px 20px;//To revise mobile
+  .skills-list {
+    i.fa {
+      font-size:12px;
+      margin:0 3px;
+    }
+  }
 }
 
 // Education Section
