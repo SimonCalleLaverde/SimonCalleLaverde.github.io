@@ -11169,10 +11169,7 @@ body {
   -ms-transition: all ease-out 0.5s;
   -o-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s; }
-  body.rendering {
-    cursor: progress;
-    overflow: hidden; }
-  body.home.home-rendering {
+  body.rendering, body.home-rendering {
     cursor: progress;
     overflow: hidden; }
   body.imagesloaded .background-for-color, body.imagesloaded main {
@@ -11298,7 +11295,7 @@ main {
   transition: all ease-in-out 0.3s; }
 
 #grid {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -11767,12 +11764,17 @@ aside.change-features {
           -ms-transition: all ease-out 1s;
           -o-transition: all ease-out 1s;
           transition: all ease-out 1s; }
-          .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:hover {
+          .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:hover, .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:active, .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:focus {
             -webkit-transform: scale(1.03);
             -moz-transform: scale(1.03);
             -ms-transform: scale(1.03);
             -o-transform: scale(1.03);
-            transform: scale(1.03); }
+            transform: scale(1.03);
+            -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important;
+            -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important;
+            -ms-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important;
+            -o-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important; }
         .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article > a {
           pointer-events: all; }
 
@@ -12056,11 +12058,11 @@ body.home.imagesloaded .aside-cover-1, body.home.imagesloaded .aside-cover-2 {
   -o-animation: fadeOutAnim 0.5s ease-in 4.2s forwards;
   animation: fadeOutAnim 0.5s ease-in 4.2s forwards; }
 body.home.imagesloaded article.project-article {
-  -webkit-animation: fadeInAnim 1s ease-in 4.7s forwards;
-  -moz-animation: fadeInAnim 1s ease-in 4.7s forwards;
-  -ms-animation: fadeInAnim 1s ease-in 4.7s forwards;
-  -o-animation: fadeInAnim 1s ease-in 4.7s forwards;
-  animation: fadeInAnim 1s ease-in 4.7s forwards; }
+  -webkit-animation: fadeInAnim 1.5s ease-in 4.5s forwards;
+  -moz-animation: fadeInAnim 1.5s ease-in 4.5s forwards;
+  -ms-animation: fadeInAnim 1.5s ease-in 4.5s forwards;
+  -o-animation: fadeInAnim 1.5s ease-in 4.5s forwards;
+  animation: fadeInAnim 1.5s ease-in 4.5s forwards; }
 body.home.home-rendering .cursor {
   -webkit-filter: opacity(0);
   -moz-filter: opacity(0);
@@ -12068,7 +12070,7 @@ body.home.home-rendering .cursor {
   -o-filter: opacity(0);
   filter: opacity(0); }
 
-.imagesloaded aside.nav-social-media, .imagesloaded .copyright, .imagesloaded aside.change-features, .imagesloaded nav.navbar, .imagesloaded .logo-interior, .imagesloaded article.project-article {
+.imagesloaded aside.nav-social-media, .imagesloaded .copyright, .imagesloaded aside.change-features, .imagesloaded nav.navbar, .imagesloaded .logo-interior {
   -webkit-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
   -moz-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
   -ms-animation: fadeInAnim 0.5s ease-in 2.2s forwards;
@@ -12080,6 +12082,12 @@ body.home.home-rendering .cursor {
   -ms-animation: fadeOutAnim 0.5s ease-in 2.2s forwards;
   -o-animation: fadeOutAnim 0.5s ease-in 2.2s forwards;
   animation: fadeOutAnim 0.5s ease-in 2.2s forwards; }
+.imagesloaded article.project-article {
+  -webkit-animation: fadeInAnim 1.5s ease-in 2.5s forwards;
+  -moz-animation: fadeInAnim 1.5s ease-in 2.5s forwards;
+  -ms-animation: fadeInAnim 1.5s ease-in 2.5s forwards;
+  -o-animation: fadeInAnim 1.5s ease-in 2.5s forwards;
+  animation: fadeInAnim 1.5s ease-in 2.5s forwards; }
 
 .rendering .cursor {
   -webkit-filter: opacity(0);
@@ -12191,11 +12199,11 @@ footer {
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
       border-radius: 50%;
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
-      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%), opacity(0);
+      -moz-filter: grayscale(100%), opacity(0);
+      -ms-filter: grayscale(100%), opacity(0);
+      -o-filter: grayscale(100%), opacity(0);
+      filter: grayscale(100%), opacity(0);
       -webkit-transition: all ease-out 0.3s;
       -moz-transition: all ease-out 0.3s;
       -ms-transition: all ease-out 0.3s;
@@ -12218,6 +12226,13 @@ footer {
     border-radius: 0.3rem; }
   footer .see-letter-button {
     cursor: alias; }
+
+.is-bottom footer .footer-profile-picture .profile-picture {
+  -webkit-filter: opacity(1);
+  -moz-filter: opacity(1);
+  -ms-filter: opacity(1);
+  -o-filter: opacity(1);
+  filter: opacity(1); }
 
 body.page-type-feedback .copyright .copyright-interior, body.page-type-feedback .copyright .change-features-interior, body.page-type-feedback .change-features .copyright-interior, body.page-type-feedback .change-features .change-features-interior {
   pointer-events: all !important;

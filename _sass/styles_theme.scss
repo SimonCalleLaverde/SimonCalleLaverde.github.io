@@ -152,24 +152,11 @@ body {
   font-size:17px;
   background-color:#000;
   z-index:1;
-  // overflow-y:scroll;//For GSAP Smooth Page Scrolling
-  // overflow-x:hidden;//For GSAP Smooth Page Scrolling
-  overscroll-behavior-y:none;//WOW!!! (4:44am, tryied around 4 diff plugins and ways, and this was the answer)
-  //@include transform(translateY(0));
+  overscroll-behavior-y:none;//WOW!!! (4:44am, trying around 4 diff plugins and ways, and this was the answer for the buggy bounce)
   @include transition(all ease-out 0.5s);
-  &.loading {
-    //cursor:progress;
-    //@include filter(opacity(0));
-  }
-  &.rendering {
+  &.rendering, &.home-rendering {
     cursor:progress;//While Loading
     overflow:hidden;//While Loading
-  }
-  &.home {
-    &.home-rendering {
-      cursor:progress;//While Loading
-      overflow:hidden;//While Loading
-    }
   }
   &.imagesloaded {//&.render
     //@include filter(opacity(1));
@@ -286,28 +273,14 @@ header, section, footer {
   //z-index:7;
 }
 main {
-  // position:fixed;//For GSAP Smooth Scroll
-  // width:100%;//For GSAP Smooth Scroll
-  // height:100%;//For GSAP Smooth Scroll
-  // top:0;//For GSAP Smooth Scroll
-  // right:0;//For GSAP Smooth Scroll
-  // bottom:0;//For GSAP Smooth Scroll
-  // left:0;//For GSAP Smooth Scroll
-  // background-color:theme-color('grey-dark');
   text-align:center;
-  // overflow:hidden;//For GSAP Smooth Scroll
   //z-index:6;
   @include transition(all ease-in-out 0.3s);
-  // > .luxury-scroll-container, > [data-scroll] {
-  //   position:fixed;//absolute//So it remains above #grid
-  //   width:100%;//As it is fixed
-  //   z-index:5;
-  // }
 }
 
 // Grid
 #grid {
-  position:fixed;
+  position:absolute;
   top:0;
   right:0;
   bottom:0;
@@ -315,8 +288,6 @@ main {
   pointer-events:none;
   z-index:4;
   .container {
-    // border-left:0.5px solid rgba(255,255,255,0.1);
-    // border-right:0.5px solid rgba(255,255,255,0.1);
     .row {
       div {
         position:relative;
@@ -730,68 +701,6 @@ span.fa-stack {
   }
 }
 
-// // Switch Colour Wrap
-// .switch-colour-wrap {
-//   position:absolute;
-//   //width:auto;//250px
-//   top:40px;
-//   right:40px;
-//   z-index:6000;
-//   a.switch-theme-colour {
-//     width:20px;
-//     height:20px;
-//     margin-left:5px;
-//     padding:0;
-//     vertical-align:top;
-//     outline:none!important;//
-//     @include border-radius(0.2rem);
-//     @include animation(switchAnim 1s infinite alternate);
-//     &.btn-outline-black {
-//       border-width:1px;
-//       @include box-shadow(none!important);
-//     }
-//     &:hover {//, &:active, &:focus
-//       @include transform(scale(1.2));
-//       @include box-shadow(0 0 5px rgba(255,255,255,0.5)!important);
-//     }
-//     &:hover, &:active, &:focus {
-//       outline:none!important;//
-//     }
-//   }
-// }
-// @media (pointer:coarse) and (hover:none) {
-//   .switch-colour-wrap {
-//     a.switch-theme-colour {
-//       &:hover, &:active, &:focus {
-//         @include box-shadow(0 0 5px rgba(0,0,0,0.5)!important);
-//       }
-//     }
-//   }
-// }//@media
-
-// // Section Number
-// .section-number {
-//   position:absolute;
-//   height:100vh;//calc(100vh - 120px)
-//   //top:45px;
-//   left:15%;//10%//100%
-//   color:#FFF;
-//   font-family:$font-headline;
-//   font-size:20rem;
-//   text-align:center;
-//   //z-index:6000;
-//   -webkit-text-fill-color:#000;//Will Override Color (Regardless Of Order)
-//   //-webkit-text-stroke-width:2px;
-//   //-webkit-text-stroke-color:#FFF;
-//   -webkit-text-stroke:2px #FFF;
-//   @include filter(opacity(0.3));
-//   // @include transform(rotateZ(90deg) translateY(-4%));//translateY(-26.4%)
-//   // @include transform-origin(0% 0%);
-//   & + .container, &  .container {
-//     z-index:6500;
-//   }
-// }
-
 // Text Line Through
 .text-line-through {
   position:relative;
@@ -870,9 +779,8 @@ aside.change-features {
   top:30px;
   right:3.55%;
   font-size:15px;
-  //mix-blend-mode:difference;
   @include filter(opacity(0));
-  span {//, i
+  span {
     cursor:not-allowed;//no-drop
   }
   i.fa {
@@ -893,13 +801,11 @@ aside.change-features {
 .show-it {
   @include transition(filter ease-out 0.7s);
   @include filter(opacity(1)!important);
-  //@include animation(fadeInAnim 0.5s ease-out forwards);
 }
 .hide-it {
   pointer-events:none!important;
   @include transition(filter ease-out 1s);
   @include filter(opacity(0)!important);
-  //@include animation(fadeOutAnim 0.5s ease-out forwards);
 }
 
 // Slick Carousel
@@ -939,42 +845,21 @@ aside.change-features {
     .slick-track {
       .slick-slide {
         outline:none;
-        //pointer-events:none;
         @include transform(translate3d(-125px, 0px, 0px));
         article.project-article {
           position:relative;
-          width:64%;//63.5%
-          margin:0 auto;//0 130px
+          width:64%;
+          margin:0 auto;
           outline:none;
           z-index:103;
           pointer-events:none;
           @include transition(all ease-out 0.5s);
-          //@include transform(translate3d(150px, 0px, 0px));
-          // &:before, &:after {
-          //   content:'';
-          //   position:absolute;
-          //   top:0;
-          //   height:100%;
-          //   width:15px;
-          //   background-color:theme-color('grey-dark');
-          //   pointer-events:none;
-          //   z-index:103;
-          //   @include transition(all ease-out 0.3s);
-          // }
-          // &:before {
-          //   left:0;
-          //   @include transform(translateX(-15px));
-          // }
-          // &:after {
-          //   right:0;
-          //   @include transform(translateX(15px));
-          // }
           > a {
             pointer-events:none;//Can't remove pointer-events to links apparently
           }
           .project-thumbnail {
             pointer-events:none;
-            @include filter(opacity(0.6));//grayscale(100%)
+            @include filter(opacity(0.6));
           }
         }
         &.slick-current {
@@ -983,21 +868,16 @@ aside.change-features {
             pointer-events:all;
             .project-thumbnail {
               pointer-events:all;
-              @include filter(opacity(1));//grayscale(0)
+              @include filter(opacity(1));
               @include transition(all ease-out 1s);
-              &:hover {//, &:active, &:focus
+              &:hover, &:active, &:focus {
                 @include transform(scale(1.03));
-                //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
+                @include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
               }
             }
             > a {
               pointer-events:all;//Can't remove pointer-events to links apparently
             }
-            // &:hover {
-            //   &:before, &:after {
-            //     @include transform(translateX(0));
-            //   }
-            // }
           }
         }
       }
@@ -1014,15 +894,13 @@ aside.change-features {
       padding:0!important;
     }
     .slick-track {
-      //@include transform(translate3d(0, 0px, 0px)!important);
       .slick-slide {
-        //width:80px!important;
         outline:none;
         cursor:pointer;
-        @include transform(translate3d(-1px, 0px, 0px)!important);//translate3d(-70px, 0px, 0px)!important
+        @include transform(translate3d(-1px, 0px, 0px)!important);
         .project-as-nav-for {
           height:80px;
-          @include filter(opacity(0.6));//grayscale(100%)
+          @include filter(opacity(0.6));
           &:before, &:after {
             content:'';
             position:absolute;
@@ -1048,19 +926,11 @@ aside.change-features {
             &:after {
               @include transform(translateX(10px));
             }
-            // ~ .project-as-nav-for {
-            //   &:before {
-            //     @include transform(translateX(-10px));
-            //   }
-            //   &:after {
-            //     @include transform(translateX(10px));
-            //   }
-            // }
           }
         }
         &.slick-current {
           .project-as-nav-for {
-            @include filter(opacity(1));//grayscale(0)
+            @include filter(opacity(1));
           }
         }
       }
@@ -1192,7 +1062,7 @@ body.home {
       @include animation(fadeOutAnim 0.5s ease-in 4.2s forwards);
     }
     article.project-article {
-      @include animation(fadeInAnim 1s ease-in 4.7s forwards);
+      @include animation(fadeInAnim 1.5s ease-in 4.5s forwards);
     }
   }
   &.home-rendering {
@@ -1203,11 +1073,14 @@ body.home {
 }
 //body.work, body.contact_me, body.plans, body.sites_inspiration {
   .imagesloaded {//&
-    aside.nav-social-media, .copyright, aside.change-features, nav.navbar, .logo-interior, article.project-article {
+    aside.nav-social-media, .copyright, aside.change-features, nav.navbar, .logo-interior {
       @include animation(fadeInAnim 0.5s ease-in 2.2s forwards);
     }
     .aside-cover-1, .aside-cover-2 {
       @include animation(fadeOutAnim 0.5s ease-in 2.2s forwards);
+    }
+    article.project-article {
+      @include animation(fadeInAnim 1.5s ease-in 2.5s forwards);
     }
   }
   .rendering {//&
@@ -1365,7 +1238,7 @@ footer {
       //left:40px;
       //cursor:pointer;
       @include border-radius(50%);
-      @include filter(grayscale(100%));
+      @include filter(grayscale(100%), opacity(0));
       @include transition(all ease-out 0.3s);
       // &:hover, &:active, &:focus {
       //   @include filter(grayscale(0));
@@ -1411,6 +1284,15 @@ footer {
     //     //@include animation(textPaintAnim 0.3s ease-in);//infinite
     //   }
     // }
+  }
+}
+.is-bottom {
+  footer {
+    .footer-profile-picture {
+      .profile-picture {
+        @include filter(opacity(1));
+      }
+    }
   }
 }
 
