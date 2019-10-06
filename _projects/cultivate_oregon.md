@@ -3,7 +3,7 @@ name: Cultivate Oregon
 name_for_thumbnail: Cultivate Oregon
 thumbnail_image: /uploads/site-image-cultivate-oregon.jpg
 platform: NationBuilder
-theme: Aware V2
+theme: Bootstrap 3
 year: 2017
 roles: Development
 web:

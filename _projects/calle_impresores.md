@@ -2,8 +2,8 @@
 name: Calle Impresores
 name_for_thumbnail: Calle Impresores
 thumbnail_image: /uploads/site-image-calle-impresores.jpg
-platform: [Raw HTML/CSS/PHP, Dreamweaver]
-theme: Custom
+platform: Dreamweaver
+theme: Html Css Php
 year: 2019
 roles: [Design, Development]
 web:

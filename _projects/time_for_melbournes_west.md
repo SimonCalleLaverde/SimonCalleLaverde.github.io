@@ -3,7 +3,7 @@ name: Time for Melbourne's West
 name_for_thumbnail: Time for<br>Melbourne's<br>West
 thumbnail_image: /uploads/site-image-time-for-melbournes-west.jpg
 platform: NationBuilder
-theme: Aware V2
+theme: Bootstrap 3
 year: 2017
 roles: Development
 web:

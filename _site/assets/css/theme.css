@@ -11452,24 +11452,36 @@ a {
 
 article.project-article.home figure {
   background-color: #1A1A1A; }
-article.project-article.home .project-thumbnail {
+  article.project-article.home figure .project-thumbnail {
+    position: relative;
+    height: 400px; }
+    article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles {
+      background-color: rgba(0, 0, 0, 0.9); }
+      article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name h1, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name h2, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name h3, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name h4, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name h5, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name h6, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles h1, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles h2, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles h3, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles h4, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles h5, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles h6 {
+        color: #FEFEFE; }
+article.project-article.home .project-info {
   position: relative;
-  height: 400px; }
-  article.project-article.home .project-thumbnail time.project-year {
-    position: absolute;
-    top: 15%;
-    right: 0;
-    font-family: "Playfair Display", serif;
-    font-weight: normal;
-    -webkit-transform: rotate(90deg) translateY(-26px);
-    -moz-transform: rotate(90deg) translateY(-26px);
-    -ms-transform: rotate(90deg) translateY(-26px);
-    -o-transform: rotate(90deg) translateY(-26px);
-    transform: rotate(90deg) translateY(-26px); }
-  article.project-article.home .project-thumbnail figcaption.project-caption .project-name, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles {
-    background-color: rgba(0, 0, 0, 0.9); }
-    article.project-article.home .project-thumbnail figcaption.project-caption .project-name h1, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h2, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h3, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h4, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h5, article.project-article.home .project-thumbnail figcaption.project-caption .project-name h6, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h1, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h2, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h3, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h4, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h5, article.project-article.home .project-thumbnail figcaption.project-caption .project-roles h6 {
-      color: #FEFEFE; }
+  height: 28px;
+  margin-top: 15%;
+  right: 0;
+  overflow: hidden; }
+  article.project-article.home .project-info > div {
+    -webkit-transition: transform ease-out 0.5s;
+    -moz-transition: transform ease-out 0.5s;
+    -ms-transition: transform ease-out 0.5s;
+    -o-transition: transform ease-out 0.5s;
+    transition: transform ease-out 0.5s;
+    -webkit-transform: translateY(-28px);
+    -moz-transform: translateY(-28px);
+    -ms-transform: translateY(-28px);
+    -o-transform: translateY(-28px);
+    transform: translateY(-28px); }
+article.project-article.home:hover .project-info > div {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0); }
 article.project-article.work {
   margin-bottom: 104px;
   will-change: scroll-position; }

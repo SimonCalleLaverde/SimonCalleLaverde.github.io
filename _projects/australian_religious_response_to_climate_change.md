@@ -3,7 +3,7 @@ name: Australian Religious Response to Climate Change
 name_for_thumbnail: ARRCC # Australian<br>Religious<br>Response to<br>Climate Change
 thumbnail_image: /uploads/site-image-australian-religious-response-to-climate-change.jpg
 platform: NationBuilder
-theme: Aware
+theme: Aware # V2
 year: 2015
 roles: Development
 web:

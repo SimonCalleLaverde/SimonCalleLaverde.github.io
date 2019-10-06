@@ -538,24 +538,34 @@ article.project-article {
   &.home {
     figure {
       background-color:theme-color('grey-dark');
-    }
-    .project-thumbnail {
-      position:relative;
-      height:400px;
-      time.project-year {
-        position:absolute;
-        top:15%;//80%
-        right:0;
-        font-family:$font-subtitle;
-        font-weight:normal;
-        @include transform(rotate(90deg) translateY(-26px));
-      }
-      figcaption.project-caption {
-        .project-name, .project-roles {
-          background-color:rgba(0,0,0,0.9);
-          h1, h2, h3, h4, h5, h6 {
-            color:theme-color('grey-light');
+      .project-thumbnail {
+        position:relative;
+        height:400px;
+        figcaption.project-caption {
+          .project-name, .project-roles {
+            background-color:rgba(0,0,0,0.9);
+            h1, h2, h3, h4, h5, h6 {
+              color:theme-color('grey-light');
+            }
           }
+        }
+      }
+    }
+    .project-info {
+      position:relative;
+      height:28px;
+      margin-top:15%;
+      right:0;
+      overflow:hidden;
+      > div {
+        @include transition(transform ease-out 0.5s);
+        @include transform(translateY(-28px));
+      }
+    }
+    &:hover {
+      .project-info {
+        > div {
+          @include transform(translateY(0));
         }
       }
     }

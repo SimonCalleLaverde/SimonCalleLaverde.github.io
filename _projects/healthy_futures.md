@@ -3,7 +3,7 @@ name: Healthy Futures
 name_for_thumbnail: Healthy Futures
 thumbnail_image: /uploads/site-image-healthy-futures.jpg
 platform: NationBuilder
-theme: Aware
+theme: Bootstrap 3
 year: 2016
 roles: Development
 web:

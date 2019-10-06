@@ -3,7 +3,7 @@ name: Fitzroy River Statement
 name_for_thumbnail: Fitzroy River<br>Statement
 thumbnail_image: /uploads/site-image-fitzroy-river-statement.jpg
 platform: NationBuilder
-theme: Aware V2
+theme: Bootstrap 3
 year: 2017
 roles: [Development, Design-on-the-go]
 web:
