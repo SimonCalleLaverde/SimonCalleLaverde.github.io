@@ -11256,8 +11256,8 @@ figure {
 
 .background-for-animation, .background-for-color {
   position: fixed;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   top: 0;
   right: 0;
   bottom: 0;
@@ -11280,20 +11280,6 @@ figure {
   -o-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
   animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards; }
 
-#luxy {
-  z-index: 5; }
-
-main, header, section, footer {
-  position: relative; }
-
-main {
-  text-align: center;
-  -webkit-transition: all ease-in-out 0.3s;
-  -moz-transition: all ease-in-out 0.3s;
-  -ms-transition: all ease-in-out 0.3s;
-  -o-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s; }
-
 #grid {
   position: absolute;
   top: 0;
@@ -11310,6 +11296,20 @@ main {
     #grid .container .row div:first-child .grid-element {
       border-left: 0.5px solid rgba(255, 255, 255, 0.1);
       border-right: none; }
+
+#luxy {
+  z-index: 5; }
+
+main, header, section, footer {
+  position: relative; }
+
+main {
+  text-align: center;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s; }
 
 aside.nav-social-media, .copyright, nav.navbar, a.logo, article.project-article {
   z-index: 6000; }

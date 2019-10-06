@@ -155,22 +155,16 @@ body {
   overscroll-behavior-y:none;//WOW!!! (4:44am, trying around 4 diff plugins and ways, and this was the answer for the buggy bounce)
   @include transition(all ease-out 0.5s);
   &.rendering, &.home-rendering {
-    cursor:progress;//While Loading
-    overflow:hidden;//While Loading
+    cursor:progress;
+    overflow:hidden;
   }
-  &.imagesloaded {//&.render
-    //@include filter(opacity(1));
-    //@include animation(backgroundTranslateAnim 0.7s ease-in 1.1s forwards);
+  &.imagesloaded {
     .background-for-color, main {
       @include transform(translateY(100vh));
       @include animation(mainTranslateAnim 0.7s ease-in 1.5s forwards);
-      //@include animation(bodyFadeInAnim 1s ease-in);
     }
   }
 }
-// p {
-//   font-family:$font-paragraph;
-// }
 h1, h2, h3, h4, h5, h6 {
   font-family:$font-headline;
   font-weight:500;
@@ -241,8 +235,8 @@ figure {
 // Background For Animation, Background For Color
 .background-for-animation, .background-for-color {
   position:fixed;
-  height:100vh;
   width:100vw;
+  height:100vh;
   top:0;
   right:0;
   bottom:0;
@@ -258,24 +252,6 @@ figure {
   .background-for-animation {
     @include animation(backgroundTranslateAnim 0.7s ease-in 1.1s forwards);
   }
-}
-
-// Luxy
-#luxy {
-  z-index:5;
-}
-
-// Main, Header, Section, Footer
-main, header, section, footer {
-  position:relative;
-}
-header, section, footer {
-  //z-index:7;
-}
-main {
-  text-align:center;
-  //z-index:6;
-  @include transition(all ease-in-out 0.3s);
 }
 
 // Grid
@@ -304,6 +280,24 @@ main {
       }
     }
   }
+}
+
+// Luxy
+#luxy {
+  z-index:5;
+}
+
+// Main, Header, Section, Footer
+main, header, section, footer {
+  position:relative;
+}
+main {
+  text-align:center;
+  //z-index:6;
+  @include transition(all ease-in-out 0.3s);
+}
+header, section, footer {
+  //z-index:7;
 }
 
 // Nav Social Media, Copyright, Change Features, Navbar, Logo {
