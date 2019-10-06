@@ -11354,11 +11354,11 @@ a {
 .btn {
   text-transform: uppercase;
   white-space: nowrap;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  border-radius: 0.3rem;
   -webkit-transition: all ease-out 0.3s;
   -moz-transition: all ease-out 0.3s;
   -ms-transition: all ease-out 0.3s;
@@ -11446,6 +11446,9 @@ a {
   font-size: 4.5rem; }
   .text-big .text-line-through:before, .text-big .text-line-through:after {
     height: 7px; }
+
+.form-group > select:hover, .form-group > select:active, .form-group > select:focus {
+  cursor: pointer; }
 
 .mobile-thumbnail-control {
   min-height: 300px; }

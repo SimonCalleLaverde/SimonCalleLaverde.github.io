@@ -370,7 +370,7 @@ a {
   // font-style:normal;
   text-transform:uppercase;
   white-space:nowrap;
-  @include border-radius(0);
+  @include border-radius(0.3rem);
   @include transition(all ease-out 0.3s);
   &.btn-longer {
     padding-right:2.5em;
@@ -474,19 +474,19 @@ a {
 }
 
 // Forms
-// input.text, textarea.textarea, .form-group > select {
-//   height:40px;
-//   padding:8px 15px;
-//   border:none;//
-//   @include border-radius(0);
-// }
-// .form-group {
-//   > select {
-//     &:hover, &:active, &:focus {
-//       cursor:pointer;
-//     }
-//   }
-// }
+input.text, textarea.textarea, .form-group > select {
+  //height:40px;
+  //padding:8px 15px;
+  //border:none;//
+  //@include border-radius(0);
+}
+.form-group {
+  > select {
+    &:hover, &:active, &:focus {
+      cursor:pointer;
+    }
+  }
+}
 
 
 
