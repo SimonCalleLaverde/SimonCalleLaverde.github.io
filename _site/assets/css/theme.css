@@ -12189,7 +12189,12 @@ footer {
     footer .container div, footer .container a {
       pointer-events: none; }
   footer .footer-profile-picture {
-    text-align: center; }
+    text-align: center;
+    -webkit-filter: opacity(0);
+    -moz-filter: opacity(0);
+    -ms-filter: opacity(0);
+    -o-filter: opacity(0);
+    filter: opacity(0); }
     footer .footer-profile-picture .profile-picture {
       display: inline-block;
       width: 205px;
@@ -12199,11 +12204,11 @@ footer {
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
       border-radius: 50%;
-      -webkit-filter: grayscale(100%), opacity(0);
-      -moz-filter: grayscale(100%), opacity(0);
-      -ms-filter: grayscale(100%), opacity(0);
-      -o-filter: grayscale(100%), opacity(0);
-      filter: grayscale(100%), opacity(0);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
       -webkit-transition: all ease-out 0.3s;
       -moz-transition: all ease-out 0.3s;
       -ms-transition: all ease-out 0.3s;
@@ -12227,7 +12232,7 @@ footer {
   footer .see-letter-button {
     cursor: alias; }
 
-.is-bottom footer .footer-profile-picture .profile-picture {
+.is-bottom footer .footer-profile-picture {
   -webkit-filter: opacity(1);
   -moz-filter: opacity(1);
   -ms-filter: opacity(1);

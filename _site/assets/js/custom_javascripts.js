@@ -372,19 +372,19 @@ const controller = new ScrollMagic.Controller();
 //   //console.log(tl0.progress());
 // }
 
-tlMwT.from(".gsap-my-work-title", 1.5, {y:200, opacity:0, transformStyle:"preserve-3d", skewY:10, ease:Power3.easeOut});//opacity:0, scale:0
+tlMwT.from(".gsap-my-work-title", 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});//opacity:0, scale:0
 
 //tlAnF.from(".gsap-as-nav-for", 3, {x:300, opacity:0, ease:Power2.easeOut});//scale:0
 
-tlCd.from(".gsap-content-development", 1.5, {y:200, opacity:0, transformStyle:"preserve-3d", skewY:10, ease:Power3.easeOut});//x:-500//scale:0.5
+tlCd.from(".gsap-content-development", 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});//x:-500//scale:0.5
 
-tlSc.from(".gsap-subcontent", 1.5, {y:200, opacity:0, transformStyle:"preserve-3d", skewY:10, ease:Power3.easeOut});
+tlSc.from(".gsap-subcontent", 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});
 
-tlAp.from(".gsap-all-projects" , 2, {y:200, opacity:0, transformStyle:"preserve-3d", skewY:10, ease:Power3.easeOut});
+tlAp.from(".gsap-all-projects" , 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});
 
-tlSh.from(".gsap-skills-headline" , 2, {y:200, opacity:0, transformStyle:"preserve-3d", skewY:10, ease:Power3.easeOut});
+tlSh.from(".gsap-skills-headline" , 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});
 
-tlSl.from(".gsap-skills-list" , 2, {y:200, opacity:0, transformStyle:"preserve-3d", skewY:10, ease:Power3.easeOut});
+tlSl.from(".gsap-skills-list" , 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});
 
 const sceneMwT = new ScrollMagic.Scene({
  triggerElement: ".magic-trigger-my-work-title"

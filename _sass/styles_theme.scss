@@ -1221,6 +1221,7 @@ footer {
   }
   .footer-profile-picture {
     text-align:center;
+    @include filter(opacity(0));
     .profile-picture {
       //position:absolute;
       display:inline-block;
@@ -1232,7 +1233,7 @@ footer {
       //left:40px;
       //cursor:pointer;
       @include border-radius(50%);
-      @include filter(grayscale(100%), opacity(0));
+      @include filter(grayscale(100%));
       @include transition(all ease-out 0.3s);
       // &:hover, &:active, &:focus {
       //   @include filter(grayscale(0));
@@ -1283,8 +1284,8 @@ footer {
 .is-bottom {
   footer {
     .footer-profile-picture {
+      @include filter(opacity(1));
       .profile-picture {
-        @include filter(opacity(1));
       }
     }
   }
