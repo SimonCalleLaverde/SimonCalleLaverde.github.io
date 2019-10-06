@@ -1184,12 +1184,15 @@ body.home {
         }
       }
     }
-    aside.nav-social-media, .copyright, aside.change-features, nav.navbar, .logo-interior, article.project-article,
+    aside.nav-social-media, .copyright, aside.change-features, nav.navbar, .logo-interior,
     .text-i-am, .text-i-like {
       @include animation(fadeInAnim 0.5s ease-in 4.2s forwards);
     }
     .aside-cover-1, .aside-cover-2 {
       @include animation(fadeOutAnim 0.5s ease-in 4.2s forwards);
+    }
+    article.project-article {
+      @include animation(fadeInAnim 1s ease-in 4.7s forwards);
     }
   }
   &.home-rendering {
@@ -1829,6 +1832,11 @@ body {
       opacity:0;//Can't filter(opacity(0)) as transform is being used in animation
       @include transition(all ease-out 0.3s);
       //@include animation(loaderAfterGoAwayAnim 1.3s ease-in forwards);
+    }
+  }
+  &.first-load {
+    &:after {
+      display:none;
     }
   }
 }

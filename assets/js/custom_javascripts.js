@@ -313,9 +313,12 @@ $(document).mouseenter(function(e) {
   setTimeout(() => document.body.classList.remove('rendering'), 5000);
   //setTimeout(() => document.body.classList.add('rendered'), 5000);
 
+  setTimeout(() => document.body.classList.remove('first-load'), 1000);
+
   imagesLoaded('img, .bg-image', { background: true }, () => {
     // document.body.classList.remove('loading');
     // document.body.classList.add('imagesloaded');//imgloaded
+    // document.body.classList.remove('first-load');
     
     setTimeout(() => document.body.classList.remove('loading') , 1000);
     setTimeout(() => document.body.classList.add('imagesloaded') , 1000);//imgloaded

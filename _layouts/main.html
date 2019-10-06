@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} bg-image theme-colour is-top black loading {% if page.slug == 'home' %}home-rendering{% else %}rendering{% endif %}" data-spy="scroll" data-target="#navbar" data-offset="80">
+  <body class="page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} bg-image theme-colour is-top black loading {% if page.slug == 'home' %}home-rendering{% else %}rendering{% endif %} first-load" data-spy="scroll" data-target="#navbar" data-offset="80">
     {% include background_for_animation.html %}
 
     {% include cursor.html %}
