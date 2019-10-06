@@ -3,69 +3,81 @@
 	<div class="row">
 		<div class="col-md-6">
 			<div class="form-group">
-				<label class="sr-only" for="feedback_name">What's your name</label>
-				<input class="text form-control" type="text" name="name" id="feedback_name" placeholder="What's your name">
+				<label class="sr-only" for="feedback_name">What is your name</label>
+				<input class="text form-control" type="text" name="name" id="feedback_name" placeholder="What is your name">
 			</div>
 		</div>
 
 		<div class="col-md-6">
 			<div class="form-group">
-				<label class="sr-only" for="feedback_email">What's your email</label>
-				<input class="text form-control" type="email" name="_replyto" id="feedback_email" placeholder="What's your email">
+				<label class="sr-only" for="feedback_email">What is your email</label>
+				<input class="text form-control" type="email" name="email" id="feedback_email" placeholder="What is your email">
 			</div>
 		</div>
 	</div>
 
-	<div class="row">
+	<!--<div class="row">
 		<div class="col-md-12">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_question">Ask me a question...</label>
       	<input class="text form-control" type="text" name="question" placeholder="Ask me a question..." id="feedback_question">
 			</div>
 		</div>
-	</div>
+	</div>-->
 	
-	<div class="row">
+	<div class="row pb-2">
 		<div class="col-md-12">
-			<div class="form-group">
-				<label class="sr-only" for="feedback_message">Please, tell me more about your project</label>
-				<textarea class="textarea form-control" name="message" id="feedback_message" placeholder="Please, tell me more about your project"></textarea>
+			<div class="form-check">
+				<label class="form-check-label" for="feedback_scratch">
+					<input class="form-check-input" type="radio" name="project_stage" value="scratch" id="feedback_scratch">I'm starting from scratch, need some help<!--need your help-->
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="row pb-3">
+		<div class="col-md-12">
+			<div class="form-check">
+				<label class="form-check-label" for="feedback_we_have">
+					<input class="form-check-input" type="radio" name="project_stage" value="we_have" id="feedback_we_have">I have a few mockups or/and a design, we want to make it a reality
+				</label>
 			</div>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="col-md-12">
-			<label class="sr-only" for="feedback_apple">Apple</label>
-			<input type="radio" name="fruit" value="apple" id="feedback_apple"> Apple
+			<div class="form-group">
+				<label class="sr-only" for="feedback_message">Please, tell me more about your project</label>
+				<textarea class="textarea form-control" rows="5" name="message" id="feedback_message" placeholder="Please, tell me more about your project"></textarea>
+			</div>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="col-md-12">
-			<label class="sr-only" for="feedback_orange">Orange</label>
-			<input type="radio" name="fruit" value="orange" id="feedback_orange"> Orange
+			<div class="form-group">
+				<label class="sr-only" for="feedback_budget">What is your estimated budget?</label>
+      	<input class="text form-control" type="text" name="question" placeholder="What is your estimated budget?" id="feedback_budget">
+			</div>
 		</div>
 	</div>
 
-	<!--http://www.phpforkids.com/html/html-form-check-boxes-radio-buttons.php-->
-	{% comment %}
-	<!--Chechboxes-->
-	<input type="checkbox" name="favorite1" value="chocolate"> Chocolate
-  <input type="checkbox" name="favorite2" value="vanilla"> Vanilla
-  <input type="checkbox" name="favorite3" value="mint"> Mint
-  <!--Radio Buttons-->
-  <input type="radio" name="joke" value="bed"> A Bed
-  <input type="radio" name="joke" value="clock"> A Clock
-  <input type="radio" name="joke" value="snake"> A Snake
-	{% endcomment %}
-	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+				<label class="sr-only" for="feedback_timeframe">What is your timeframe?</label>
+      	<input class="text form-control" type="text" name="question" placeholder="What is your timeframe?" id="feedback_timeframe">
+			</div>
+		</div>
+	</div>
+
 	<div class="row">
 		<div class="col-md-12">
 			<div class="form-group">
 				<div class="button-wrap pt-3">
 					<input class="btn btn-primary" type="submit" value="Send">
-					<!--<button class="btn btn-magenta" type="submit">Send</button>--><!--Originnal For Formspree-->
+					<!--<button class="btn btn-primary" type="submit">Send</button>--><!--Originnal For Formspree-->
 				</div>
 			</div>
 		</div>

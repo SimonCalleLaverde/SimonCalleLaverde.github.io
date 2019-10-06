@@ -12,7 +12,7 @@ d.removeClass(f("last")))}),b.width(b.children().length*l+"px");else{d=b.childre
 !0)).find(":first"+f("removeiffirst",!0)).remove();b.find(f("column",!0)).find(":last"+f("removeiflast",!0)).remove();b.data("columnizing",!1);a.overflow&&a.overflow.doneFunc();a.doneFunc()}}}var b=a.target?e(a.target):e(this),G=e(this).height(),t=e("<div></div>"),F=0,A=a.manualBreaks,q=p.cssClassPrefix;"string"==typeof a.cssClassPrefix&&(q=a.cssClassPrefix);t.append(e(this).contents().clone(!0));if(!a.ignoreImageLoading&&!a.target&&!b.data("imageLoaded")&&(b.data("imageLoaded",!0),0<e(this).find("img").length)){var H=
 function(b,e){return function(){b.data("firstImageLoaded")||(b.data("firstImageLoaded","true"),b.empty().append(e.children().clone(!0)),b.columnize(a))}}(e(this),t);e(this).find("img").one("load",H);e(this).find("img").one("abort",H);return}b.empty();v();a.buildOnce||e(window).resize(function(){a.buildOnce||(b.data("timeout")&&clearTimeout(b.data("timeout")),b.data("timeout",setTimeout(v,200)))})})}})(jQuery);
 
-// ORIGINAL
+// ORIGINAL (UN-MINIFIED)
 
 // // version 1.6.0
 // // http://welcome.totheinter.net/columnizer-jquery-plugin/
