@@ -4,14 +4,14 @@
 		<div class="col-md-6">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_name">What is your name</label>
-				<input class="text form-control" type="text" name="name" id="feedback_name" placeholder="What is your name">
+				<input class="text form-control form-control-lg" type="text" name="name" id="feedback_name" placeholder="What is your name">
 			</div>
 		</div>
 
 		<div class="col-md-6">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_email">What is your email</label>
-				<input class="text form-control" type="email" name="email" id="feedback_email" placeholder="What is your email">
+				<input class="text form-control form-control-lg" type="email" name="email" id="feedback_email" placeholder="What is your email">
 			</div>
 		</div>
 	</div>
@@ -20,36 +20,34 @@
 		<div class="col-md-12">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_question">Ask me a question...</label>
-      	<input class="text form-control" type="text" name="question" placeholder="Ask me a question..." id="feedback_question">
+      	<input class="text form-control form-control-lg" type="text" name="question" placeholder="Ask me a question..." id="feedback_question">
 			</div>
 		</div>
 	</div>-->
-	
+
 	<div class="row pb-2">
 		<div class="col-md-12">
-			<div class="form-check">
-				<label class="form-check-label" for="feedback_scratch">
-					<input class="form-check-input" type="radio" name="project_stage" value="scratch" id="feedback_scratch">I'm starting from scratch, need some help<!--need your help-->
-				</label>
+			<div class="custom-control custom-radio"><!--custom-checkbox-->
+				<input class="custom-control-input" type="radio" name="project_stage" value="scratch" id="feedback_stage">
+				<label class="custom-control-label" for="feedback_scratch">I'm starting from scratch, need some help<!--need your help--></label>
 			</div>
 		</div>
 	</div>
 
 	<div class="row pb-3">
 		<div class="col-md-12">
-			<div class="form-check">
-				<label class="form-check-label" for="feedback_we_have">
-					<input class="form-check-input" type="radio" name="project_stage" value="we_have" id="feedback_we_have">I have a few mockups or/and a design, we want to make it a reality
-				</label>
+			<div class="custom-control custom-radio"><!--custom-checkbox-->
+				<input class="custom-control-input" type="radio" name="project_stage" value="we_have" id="feedback_stage">
+				<label class="custom-control-label" for="feedback_we_have">I have a few mockups or/and a design, we want to make it a reality</label>
 			</div>
 		</div>
 	</div>
-
+	
 	<div class="row">
 		<div class="col-md-12">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_message">Please, tell me more about your project</label>
-				<textarea class="textarea form-control" rows="5" name="message" id="feedback_message" placeholder="Please, tell me more about your project"></textarea>
+				<textarea class="textarea form-control form-control-lg" rows="5" name="message" id="feedback_message" placeholder="Please, tell me more about your project"></textarea>
 			</div>
 		</div>
 	</div>
@@ -58,7 +56,7 @@
 		<div class="col-md-12">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_budget">What is your estimated budget?</label>
-      	<input class="text form-control" type="text" name="question" placeholder="What is your estimated budget?" id="feedback_budget">
+      	<input class="text form-control form-control-lg" type="text" name="question" placeholder="What is your estimated budget?" id="feedback_budget">
 			</div>
 		</div>
 	</div>
@@ -67,7 +65,7 @@
 		<div class="col-md-12">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_timeframe">What is your timeframe?</label>
-      	<input class="text form-control" type="text" name="question" placeholder="What is your timeframe?" id="feedback_timeframe">
+      	<input class="text form-control form-control-lg" type="text" name="question" placeholder="What is your timeframe?" id="feedback_timeframe">
 			</div>
 		</div>
 	</div>
@@ -76,8 +74,8 @@
 		<div class="col-md-12">
 			<div class="form-group">
 				<div class="button-wrap pt-3">
-					<input class="btn btn-primary" type="submit" value="Send">
-					<!--<button class="btn btn-primary" type="submit">Send</button>--><!--Originnal For Formspree-->
+					<input class="btn btn-magenta btn-lg" type="submit" value="Send">
+					<!--<button class="btn btn-magenta" type="submit">Send</button>--><!--Originnal For Formspree-->
 				</div>
 			</div>
 		</div>

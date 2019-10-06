@@ -21,11 +21,9 @@
     {% include aside_covers.html %}
 
     {% include theme_colour_in.html %}
-
-    <main id="main">
-      {% include grid.html %}
-
-      <div class="luxury-scroll-container" data-scroll>
+    
+    <div id="luxy">
+      <main id="main">
         <h1 class="sr-only">{{ page.title }}</h1>
         
         {% if page.header_image.size > 0 %}
@@ -37,8 +35,8 @@
         {% unless page.slug == "contact_me" or page.slug contains "contact" %}
           {% include footer.html %}
         {% endunless %}
-      </div>
-    </main>
+      </main>
+    </div>
 
     {% include work/work_project_modal.html %}
 

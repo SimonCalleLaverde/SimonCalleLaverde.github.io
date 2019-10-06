@@ -11175,7 +11175,7 @@ body {
   body.home.home-rendering {
     cursor: progress;
     overflow: hidden; }
-  body.imagesloaded main {
+  body.imagesloaded .background-for-color, body.imagesloaded main {
     -webkit-transform: translateY(100vh);
     -moz-transform: translateY(100vh);
     -ms-transform: translateY(100vh);
@@ -11257,7 +11257,7 @@ figure {
   figure figcaption, figure time {
     pointer-events: none; }
 
-.background-for-animation {
+.background-for-animation, .background-for-color {
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -11267,6 +11267,15 @@ figure {
   left: 0;
   z-index: 2; }
 
+.background-for-color {
+  background-color: #1A1A1A;
+  z-index: 3;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s; }
+
 .imagesloaded .background-for-animation {
   -webkit-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
   -moz-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
@@ -11274,41 +11283,36 @@ figure {
   -o-animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards;
   animation: backgroundTranslateAnim 0.7s ease-in 1.1s forwards; }
 
+#luxy {
+  z-index: 5; }
+
 main, header, section, footer {
   position: relative; }
 
-header, section, footer {
-  z-index: 6; }
-
 main {
-  background-color: #1A1A1A;
   text-align: center;
-  z-index: 3;
   -webkit-transition: all ease-in-out 0.3s;
   -moz-transition: all ease-in-out 0.3s;
   -ms-transition: all ease-in-out 0.3s;
   -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s; }
-  main #grid {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 4; }
-    main #grid .container .row div {
-      position: relative; }
-      main #grid .container .row div .grid-element {
-        height: 100vh;
-        border-right: 0.5px solid rgba(255, 255, 255, 0.1); }
-      main #grid .container .row div:first-child .grid-element {
-        border-left: 0.5px solid rgba(255, 255, 255, 0.1);
-        border-right: none; }
-  main > .luxury-scroll-container, main > [data-scroll] {
-    position: fixed;
-    width: 100%;
-    z-index: 5; }
+
+#grid {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 4; }
+  #grid .container .row div {
+    position: relative; }
+    #grid .container .row div .grid-element {
+      height: 100vh;
+      border-right: 0.5px solid rgba(255, 255, 255, 0.1); }
+    #grid .container .row div:first-child .grid-element {
+      border-left: 0.5px solid rgba(255, 255, 255, 0.1);
+      border-right: none; }
 
 aside.nav-social-media, .copyright, nav.navbar, a.logo, article.project-article {
   z-index: 6000; }
@@ -12228,10 +12232,10 @@ body.page-type-feedback .logo-cover {
 
 body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
   background-color: #FFF; }
+  body.theme-colour.black.is-bottom .background-for-color, body.theme-colour.white.is-top .background-for-color, body.theme-colour.contact_me .background-for-color {
+    background-color: #FEFEFE; }
   body.theme-colour.black.is-bottom a.logo .logo-interior svg, body.theme-colour.white.is-top a.logo .logo-interior svg, body.theme-colour.contact_me a.logo .logo-interior svg {
     fill: #1A1A1A; }
-  body.theme-colour.black.is-bottom main, body.theme-colour.white.is-top main, body.theme-colour.contact_me main {
-    background-color: #FEFEFE; }
   body.theme-colour.black.is-bottom .text-white, body.theme-colour.black.is-bottom .text-grey-light, body.theme-colour.black.is-bottom .text-grey-mid, body.theme-colour.white.is-top .text-white, body.theme-colour.white.is-top .text-grey-light, body.theme-colour.white.is-top .text-grey-mid, body.theme-colour.contact_me .text-white, body.theme-colour.contact_me .text-grey-light, body.theme-colour.contact_me .text-grey-mid {
     color: #000 !important; }
   body.theme-colour.black.is-bottom .text-stroke-white, body.theme-colour.white.is-top .text-stroke-white, body.theme-colour.contact_me .text-stroke-white {

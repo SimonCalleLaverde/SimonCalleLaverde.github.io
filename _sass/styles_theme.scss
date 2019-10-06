@@ -174,7 +174,7 @@ body {
   &.imagesloaded {//&.render
     //@include filter(opacity(1));
     //@include animation(backgroundTranslateAnim 0.7s ease-in 1.1s forwards);
-    main {
+    .background-for-color, main {
       @include transform(translateY(100vh));
       @include animation(mainTranslateAnim 0.7s ease-in 1.5s forwards);
       //@include animation(bodyFadeInAnim 1s ease-in);
@@ -251,8 +251,8 @@ figure {
   }
 }
 
-// Background For Animation
-.background-for-animation {
+// Background For Animation, Background For Color
+.background-for-animation, .background-for-color {
   position:fixed;
   height:100vh;
   width:100vw;
@@ -262,10 +262,20 @@ figure {
   left:0;
   z-index:2;
 }
+.background-for-color {
+  background-color:theme-color('grey-dark');
+  z-index:3;
+  @include transition(all ease-in-out 0.3s);
+}
 .imagesloaded {
   .background-for-animation {
     @include animation(backgroundTranslateAnim 0.7s ease-in 1.1s forwards);
   }
+}
+
+// Luxy
+#luxy {
+  z-index:5;
 }
 
 // Main, Header, Section, Footer
@@ -273,7 +283,7 @@ main, header, section, footer {
   position:relative;
 }
 header, section, footer {
-  z-index:6;
+  //z-index:7;
 }
 main {
   // position:fixed;//For GSAP Smooth Scroll
@@ -283,43 +293,45 @@ main {
   // right:0;//For GSAP Smooth Scroll
   // bottom:0;//For GSAP Smooth Scroll
   // left:0;//For GSAP Smooth Scroll
-  background-color:theme-color('grey-dark');
+  // background-color:theme-color('grey-dark');
   text-align:center;
   // overflow:hidden;//For GSAP Smooth Scroll
-  z-index:3;
+  //z-index:6;
   @include transition(all ease-in-out 0.3s);
-  #grid {
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    pointer-events:none;
-    z-index:4;
-    .container {
-      // border-left:0.5px solid rgba(255,255,255,0.1);
-      // border-right:0.5px solid rgba(255,255,255,0.1);
-      .row {
-        div {
-          position:relative;
+  // > .luxury-scroll-container, > [data-scroll] {
+  //   position:fixed;//absolute//So it remains above #grid
+  //   width:100%;//As it is fixed
+  //   z-index:5;
+  // }
+}
+
+// Grid
+#grid {
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  pointer-events:none;
+  z-index:4;
+  .container {
+    // border-left:0.5px solid rgba(255,255,255,0.1);
+    // border-right:0.5px solid rgba(255,255,255,0.1);
+    .row {
+      div {
+        position:relative;
+        .grid-element {
+          height:100vh;
+          border-right:0.5px solid rgba(255,255,255,0.1);
+        }
+        &:first-child {
           .grid-element {
-            height:100vh;
-            border-right:0.5px solid rgba(255,255,255,0.1);
-          }
-          &:first-child {
-            .grid-element {
-              border-left:0.5px solid rgba(255,255,255,0.1);
-              border-right:none;
-            }
+            border-left:0.5px solid rgba(255,255,255,0.1);
+            border-right:none;
           }
         }
       }
     }
-  }
-  > .luxury-scroll-container, > [data-scroll] {
-    position:fixed;//absolute//So it remains above #grid
-    width:100%;//As it is fixed
-    z-index:5;
   }
 }
 
@@ -1433,6 +1445,9 @@ body.page-type-basic.work {
 // Theme Colour Black/White | is-top/is-bottom
 body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
   background-color:#FFF;
+  .background-for-color {
+    background-color:theme-color('grey-light');
+  }
   a.logo {
     .logo-interior {
       svg {
@@ -1440,10 +1455,12 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
       }
     }
   }
+  #luxy {
+  }
   main {
     //background-color:theme-color('grey-mid');
     //.main-frame {
-      background-color:theme-color('grey-light');
+      // background-color:theme-color('grey-light');
     //}
   }
   .text-white, .text-grey-light, .text-grey-mid {
@@ -1824,14 +1841,14 @@ body {
   }
 }//@media
 
-// Data Scroll (Div)
-body {
-  > main {
-    > [data-scroll] {
-      //will-change:transform;
-    }
-  }
-}
+// // Data Scroll (Div)
+// body {
+//   > main {
+//     > [data-scroll] {
+//       //will-change:transform;
+//     }
+//   }
+// }
 
 //----------------------------------Glitch Image Effect Styles----------------------------------//
 
