@@ -1231,7 +1231,7 @@ footer {
   }
   .footer-profile-picture {
     text-align:center;
-    @include filter(opacity(0));
+    //@include filter(opacity(0));
     .profile-picture {
       //position:absolute;
       display:inline-block;
@@ -1294,7 +1294,7 @@ footer {
 .is-bottom {
   footer {
     .footer-profile-picture {
-      @include filter(opacity(1));
+      //@include filter(opacity(1));
       .profile-picture {
       }
     }

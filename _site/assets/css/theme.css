@@ -12201,12 +12201,7 @@ footer {
     footer .container div, footer .container a {
       pointer-events: none; }
   footer .footer-profile-picture {
-    text-align: center;
-    -webkit-filter: opacity(0);
-    -moz-filter: opacity(0);
-    -ms-filter: opacity(0);
-    -o-filter: opacity(0);
-    filter: opacity(0); }
+    text-align: center; }
     footer .footer-profile-picture .profile-picture {
       display: inline-block;
       width: 205px;
@@ -12243,13 +12238,6 @@ footer {
     border-radius: 0.3rem; }
   footer .see-letter-button {
     cursor: alias; }
-
-.is-bottom footer .footer-profile-picture {
-  -webkit-filter: opacity(1);
-  -moz-filter: opacity(1);
-  -ms-filter: opacity(1);
-  -o-filter: opacity(1);
-  filter: opacity(1); }
 
 body.page-type-feedback .copyright .copyright-interior, body.page-type-feedback .copyright .change-features-interior, body.page-type-feedback .change-features .copyright-interior, body.page-type-feedback .change-features .change-features-interior {
   pointer-events: all !important;
