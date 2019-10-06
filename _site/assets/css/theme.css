@@ -11474,17 +11474,17 @@ article.project-article.home .project-info {
     -ms-transition: transform ease-out 0.5s;
     -o-transition: transform ease-out 0.5s;
     transition: transform ease-out 0.5s;
-    -webkit-transform: translateY(-28px);
-    -moz-transform: translateY(-28px);
-    -ms-transform: translateY(-28px);
-    -o-transform: translateY(-28px);
-    transform: translateY(-28px); }
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); }
 article.project-article.home:hover .project-info > div {
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0); }
+  -webkit-transform: translateY(-28px);
+  -moz-transform: translateY(-28px);
+  -ms-transform: translateY(-28px);
+  -o-transform: translateY(-28px);
+  transform: translateY(-28px); }
 article.project-article.work {
   margin-bottom: 104px;
   will-change: scroll-position; }

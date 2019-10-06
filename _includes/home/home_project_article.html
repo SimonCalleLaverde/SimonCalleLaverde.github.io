@@ -27,6 +27,10 @@
 
 		<div class="project-info mt-3">
 			<div>
+				<time class="project-year font-subtitle text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">{{ project.year }}</h5>
+				</time>
+
 				<div class="project-platform font-subtitle text-white">
 					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">
 						{% for platform in project.platform %}
@@ -35,10 +39,6 @@
 						&middot; {{ project.theme }}
 					</h5>
 				</div>
-
-				<time class="project-year font-subtitle text-white">
-					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">{{ project.year }}</h5>
-				</time>
 			</div>
 		</div>
 	</a>

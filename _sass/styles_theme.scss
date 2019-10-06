@@ -226,7 +226,7 @@ iframe {
   border:none;
 }
 figure {
-  margin:0;//
+  margin:0;//Remove defaults from some browsers
   figcaption, time {
     pointer-events:none;
   }
@@ -559,13 +559,13 @@ article.project-article {
       overflow:hidden;
       > div {
         @include transition(transform ease-out 0.5s);
-        @include transform(translateY(-28px));
+        @include transform(translateY(0));
       }
     }
     &:hover {
       .project-info {
         > div {
-          @include transform(translateY(0));
+          @include transform(translateY(-28px));
         }
       }
     }
