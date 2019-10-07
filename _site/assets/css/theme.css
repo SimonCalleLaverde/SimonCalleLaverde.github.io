@@ -12152,8 +12152,6 @@ body.home.home-rendering .cursor {
     -ms-border-radius: 32px;
     -o-border-radius: 32px;
     border-radius: 32px; }
-    #burger-menu #burger-circle.white {
-      border: 2px solid white; }
   #burger-menu #burger-center {
     position: relative;
     width: 14px;
@@ -12195,17 +12193,17 @@ body.home.home-rendering .cursor {
     margin-left: -1px;
     letter-spacing: 4px; }
   #burger-menu:hover #burger-center:before {
-    -webkit-transform: translateX(-45px);
-    -moz-transform: translateX(-45px);
-    -ms-transform: translateX(-45px);
-    -o-transform: translateX(-45px);
-    transform: translateX(-45px); }
+    -webkit-transform: translateX(-47px);
+    -moz-transform: translateX(-47px);
+    -ms-transform: translateX(-47px);
+    -o-transform: translateX(-47px);
+    transform: translateX(-47px); }
   #burger-menu:hover #burger-center:after {
-    -webkit-transform: translateX(-17px) rotate(0);
-    -moz-transform: translateX(-17px) rotate(0);
-    -ms-transform: translateX(-17px) rotate(0);
-    -o-transform: translateX(-17px) rotate(0);
-    transform: translateX(-17px) rotate(0);
+    -webkit-transform: translateX(-15px) rotate(0);
+    -moz-transform: translateX(-15px) rotate(0);
+    -ms-transform: translateX(-15px) rotate(0);
+    -o-transform: translateX(-15px) rotate(0);
+    transform: translateX(-15px) rotate(0);
     -webkit-filter: opacity(1);
     -moz-filter: opacity(1);
     -ms-filter: opacity(1);
@@ -12425,6 +12423,10 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
     background-color: #1A1A1A; }
   body.theme-colour.black.is-bottom a:hover.text-line-through:after, body.theme-colour.white.is-top a:hover.text-line-through:after, body.theme-colour.contact_me a:hover.text-line-through:after {
     background-color: transparent; }
+  body.theme-colour.black.is-bottom #burger-menu #burger-circle, body.theme-colour.white.is-top #burger-menu #burger-circle, body.theme-colour.contact_me #burger-menu #burger-circle {
+    border: 1px solid #000; }
+  body.theme-colour.black.is-bottom #burger-menu #burger-center:before, body.theme-colour.black.is-bottom #burger-menu #burger-center:after, body.theme-colour.white.is-top #burger-menu #burger-center:before, body.theme-colour.white.is-top #burger-menu #burger-center:after, body.theme-colour.contact_me #burger-menu #burger-center:before, body.theme-colour.contact_me #burger-menu #burger-center:after {
+    color: #000; }
 
 a.link:hover, a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover, a .project-thumbnail:hover, a .logo-interior:hover {
   cursor: none; }

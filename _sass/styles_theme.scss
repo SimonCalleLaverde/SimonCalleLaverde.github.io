@@ -1129,9 +1129,6 @@ body.home {
     pointer-events:none;
     z-index:6504;
     @include border-radius(32px);
-    &.white {
-      border:2px solid rgba(255,255,255,1);
-    }
   }
   #burger-center {
     position:relative;
@@ -1151,7 +1148,6 @@ body.home {
       font-size:14.5px;
       color:#FFF;
       letter-spacing:1px;
-      //text-transform:uppercase;
       @include transition(0.2s ease-in-out);
     }
     &:before {
@@ -1165,15 +1161,16 @@ body.home {
   }
   &:hover {
     #burger-center {
+      //@include animation(fa-spin 20s linear backwards infinite);
       &:before, &:after {
         margin-left:-1px;
         letter-spacing:4px;
       }
       &:before {
-        @include transform(translateX(-45px));
+        @include transform(translateX(-47px));
       }
       &:after {
-        @include transform(translateX(-17px) rotate(0));
+        @include transform(translateX(-15px) rotate(0));
         @include filter(opacity(1));
       }
     }
@@ -1575,6 +1572,16 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
         &:after {
           background-color:transparent;
         }
+      }
+    }
+  }
+  #burger-menu {
+    #burger-circle {
+      border:1px solid #000;
+    }
+    #burger-center {
+      &:before, &:after {
+        color:#000;
       }
     }
   }
