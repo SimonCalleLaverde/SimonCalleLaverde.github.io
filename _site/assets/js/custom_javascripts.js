@@ -12,6 +12,21 @@ $(document).ready(function() {
  });
 });
 
+// Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
+$(function() {
+  //caches a jQuery object containing the body element
+  var body = $("body");
+  $(window).scroll(function() {
+    var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+
+    if (scrollFromBottom >= 120) {
+      body.removeClass("is-bottom").addClass("is-top");
+    } else if (scrollFromBottom <= 120) {
+      body.removeClass("is-top").addClass("is-bottom");
+    }
+  });
+});
+
 // Smooth Scroll Script
 $(function() {
   $('.smoothScroll').click(function(event) {
@@ -76,21 +91,6 @@ $(function() {
       showThisDivs.addClass("show-it").removeClass("hide-it");
     } else if (scrollFromTop <= 250) {
       showThisDivs.removeClass("show-it").addClass("hide-it");
-    }
-  });
-});
-
-// Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
-$(function() {
-  //caches a jQuery object containing the body element
-  var body = $("body");
-  $(window).scroll(function() {
-    var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
-
-    if (scrollFromBottom >= 120) {
-      body.removeClass("is-bottom").addClass("is-top");
-    } else if (scrollFromBottom <= 120) {
-      body.removeClass("is-top").addClass("is-bottom");
     }
   });
 });
@@ -430,27 +430,27 @@ const scenetlSl = new ScrollMagic.Scene({
 
 //---------------------------------MAGNETIC BUTTON---------------------------------//
 
-$('#burger-menu').mouseleave(function(e){
+$('.burger-menu').mouseleave(function(e){
   TweenMax.to(this, 0.3, {scale: 1});
-  TweenMax.to('#burger-circle, #burger-center', 0.3,{scale: 1, x: 0, y: 0});
+  TweenMax.to('.burger-circle, .burger-center', 0.3,{scale: 1, x: 0, y: 0});
 });
 
-$('#burger-menu').mouseenter(function(e){
+$('.burger-menu').mouseenter(function(e){
   TweenMax.to(this, 0.3, {transformOrigin: '0 0', scale: 1});
-  TweenMax.to('#burger-circle', 0.3,{scale: 1.3});
+  TweenMax.to('.burger-circle', 0.3,{scale: 1.3});
 });
 
-$('#burger-menu').mousemove(function(e){   
+$('.burger-menu').mousemove(function(e){
   callParallax(e);
 });
 
 function callParallax(e){
-  parallaxIt(e, '#burger-circle', 60);
-  parallaxIt(e, '#burger-center', 40);
+  parallaxIt(e, '.burger-circle', 60);
+  parallaxIt(e, '.burger-center', 40);
 }
 
 function parallaxIt(e, target, movement){
-  var $this = $('#burger-menu');
+  var $this = $('.burger-menu');
   var boundingRect = $this[0].getBoundingClientRect();
   var relX = e.pageX - boundingRect.left;
   var relY = e.pageY - boundingRect.top;
