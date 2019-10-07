@@ -11804,14 +11804,23 @@ aside.change-features {
       -ms-transform: translate3d(-1px, 0px, 0px) !important;
       -o-transform: translate3d(-1px, 0px, 0px) !important;
       transform: translate3d(-1px, 0px, 0px) !important; }
-      .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for {
-        height: 80px;
-        -webkit-filter: opacity(0.6);
-        -moz-filter: opacity(0.6);
-        -ms-filter: opacity(0.6);
-        -o-filter: opacity(0.6);
-        filter: opacity(0.6); }
-        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:before, .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:after {
+      .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows {
+        position: relative;
+        height: 80px; }
+        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows .project-as-nav-for {
+          position: absolute;
+          margin: auto;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 103;
+          -webkit-filter: opacity(0.6);
+          -moz-filter: opacity(0.6);
+          -ms-filter: opacity(0.6);
+          -o-filter: opacity(0.6);
+          filter: opacity(0.6); }
+        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before, .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after {
           content: '';
           position: absolute;
           top: 0;
@@ -11819,7 +11828,7 @@ aside.change-features {
           width: 10px;
           background-color: #1A1A1A;
           pointer-events: none;
-          z-index: 103;
+          z-index: 104;
           -webkit-transition: all ease-out 0.3s;
           -moz-transition: all ease-out 0.3s;
           -ms-transition: all ease-out 0.3s;
@@ -11830,28 +11839,28 @@ aside.change-features {
           -ms-transform: translateX(0);
           -o-transform: translateX(0);
           transform: translateX(0); }
-        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:before {
+        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before {
           left: 0; }
-        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:after {
+        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after {
           right: 0; }
-        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:hover:before {
-          -webkit-transform: translateX(-10px);
-          -moz-transform: translateX(-10px);
-          -ms-transform: translateX(-10px);
-          -o-transform: translateX(-10px);
-          transform: translateX(-10px); }
-        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:hover:after {
-          -webkit-transform: translateX(10px);
-          -moz-transform: translateX(10px);
-          -ms-transform: translateX(10px);
-          -o-transform: translateX(10px);
-          transform: translateX(10px); }
-      .slick-as-nav-for .slick-list .slick-track .slick-slide.slick-current .project-as-nav-for {
+      .slick-as-nav-for .slick-list .slick-track .slick-slide.slick-current .project-as-nav-for-windows .project-as-nav-for {
         -webkit-filter: opacity(1);
         -moz-filter: opacity(1);
         -ms-filter: opacity(1);
         -o-filter: opacity(1);
         filter: opacity(1); }
+    .slick-as-nav-for .slick-list .slick-track:hover .slick-slide .project-as-nav-for-windows:before {
+      -webkit-transform: translateX(-9px);
+      -moz-transform: translateX(-9px);
+      -ms-transform: translateX(-9px);
+      -o-transform: translateX(-9px);
+      transform: translateX(-9px); }
+    .slick-as-nav-for .slick-list .slick-track:hover .slick-slide .project-as-nav-for-windows:after {
+      -webkit-transform: translateX(9px);
+      -moz-transform: translateX(9px);
+      -ms-transform: translateX(9px);
+      -o-transform: translateX(9px);
+      transform: translateX(9px); }
 
 .hero-note {
   height: 300px;
@@ -12484,7 +12493,7 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
     color: #ee0a23 !important; }
   body.theme-colour.black.is-bottom article.project-article.home .project-thumbnail time.project-year, body.theme-colour.black.is-bottom article.project-article.work .project-thumbnail time.project-year, body.theme-colour.white.is-top article.project-article.home .project-thumbnail time.project-year, body.theme-colour.white.is-top article.project-article.work .project-thumbnail time.project-year, body.theme-colour.contact_me article.project-article.home .project-thumbnail time.project-year, body.theme-colour.contact_me article.project-article.work .project-thumbnail time.project-year {
     color: #EB0082 !important; }
-  body.theme-colour.black.is-bottom .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:before, body.theme-colour.black.is-bottom .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:after, body.theme-colour.white.is-top .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:before, body.theme-colour.white.is-top .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:after, body.theme-colour.contact_me .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:before, body.theme-colour.contact_me .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for:after {
+  body.theme-colour.black.is-bottom .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before, body.theme-colour.black.is-bottom .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after, body.theme-colour.white.is-top .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before, body.theme-colour.white.is-top .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after, body.theme-colour.contact_me .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before, body.theme-colour.contact_me .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after {
     background-color: #FEFEFE; }
   body.theme-colour.black.is-bottom .headline-link, body.theme-colour.white.is-top .headline-link, body.theme-colour.contact_me .headline-link {
     -webkit-text-stroke: 2px #000; }
@@ -12589,18 +12598,19 @@ i.fa.link:hover {
     border-color: #bfbfbf;
     mix-blend-mode: normal; }
     .cursor.hoveredDragSides:before, .cursor.hoveredDragSides:after {
-      width: 6px;
+      width: 5px;
       height: 6px;
-      top: 12.5px;
+      top: 14.5px;
+      font-family: FontAwesome;
       font-size: 14px;
       color: #bfbfbf;
       border: none;
       z-index: 11001; }
     .cursor.hoveredDragSides:before {
-      content: "<";
+      content: "\f0d9";
       left: 10px; }
     .cursor.hoveredDragSides:after {
-      content: ">";
+      content: "\f0da";
       right: 10px;
       left: auto; }
 

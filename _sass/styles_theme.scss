@@ -901,9 +901,19 @@ aside.change-features {
         outline:none;
         cursor:pointer;
         @include transform(translate3d(-1px, 0px, 0px)!important);
-        .project-as-nav-for {
+        .project-as-nav-for-windows {
+          position:relative;
           height:80px;
-          @include filter(opacity(0.6));
+          .project-as-nav-for {
+            position:absolute;
+            margin:auto;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            z-index:103;
+            @include filter(opacity(0.6));
+          }
           &:before, &:after {
             content:'';
             position:absolute;
@@ -912,7 +922,7 @@ aside.change-features {
             width:10px;
             background-color:theme-color('grey-dark');
             pointer-events:none;
-            z-index:103;
+            z-index:104;
             @include transition(all ease-out 0.3s);
             @include transform(translateX(0));
           }
@@ -922,18 +932,26 @@ aside.change-features {
           &:after {
             right:0;
           }
-          &:hover {
-            &:before {
-              @include transform(translateX(-10px));
-            }
-            &:after {
-              @include transform(translateX(10px));
+        }
+        &.slick-current {
+          .project-as-nav-for-windows {
+            .project-as-nav-for {
+              @include filter(opacity(1));
             }
           }
         }
-        &.slick-current {
-          .project-as-nav-for {
-            @include filter(opacity(1));
+      }
+      &:hover {
+        .slick-slide {
+          .project-as-nav-for-windows {
+            .project-as-nav-for {
+            }
+            &:before {
+              @include transform(translateX(-9px));//-10px
+            }
+            &:after {
+              @include transform(translateX(9px));//10px
+            }
           }
         }
       }
@@ -1611,7 +1629,9 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
     .slick-list {
       .slick-track {
         .slick-slide {
-          .project-as-nav-for {
+          .project-as-nav-for-windows {
+            .project-as-nav-for {
+            }
             &:before, &:after {
               background-color:theme-color('grey-light');
             }
@@ -1767,20 +1787,21 @@ i.fa {
     border-color:theme-color('grey-mid');
     mix-blend-mode:normal;
     &:before, &:after {
-      width:6px;
+      width:5px;
       height:6px;
-      top:12.5px;
+      top:14.5px;
+      font-family:FontAwesome;
       font-size:14px;
       color:theme-color('grey-mid');
       border:none;
       z-index:11001;
     }
     &:before {
-      content:"<";
+      content:"\f0d9";
       left:10px;
     }
     &:after {
-      content:">";
+      content:"\f0da";
       right:10px;
       left:auto;
     }
