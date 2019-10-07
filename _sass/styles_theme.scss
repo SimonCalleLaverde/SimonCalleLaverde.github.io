@@ -1024,6 +1024,7 @@ nav.burger-wrapper {
         color:#FFF;
         letter-spacing:1px;
         @include transition(0.2s ease-in-out);
+        //@include transform-origin(50% 50%);
       }
       &:before {
         content:"All";
