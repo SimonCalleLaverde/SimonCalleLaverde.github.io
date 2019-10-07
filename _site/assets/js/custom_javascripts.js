@@ -428,15 +428,7 @@ const scenetlSl = new ScrollMagic.Scene({
 .setTween(tlSl)
  .addTo(controller);
 
-
-
-
-
-
-
-
-
- //---------------------------------MAGNETIC BUTTON---------------------------------//
+//---------------------------------MAGNETIC BUTTON---------------------------------//
 
 $('#burger-menu').mouseleave(function(e){
   TweenMax.to(this, 0.3, {scale: 1});

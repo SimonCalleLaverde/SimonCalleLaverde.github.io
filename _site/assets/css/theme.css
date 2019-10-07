@@ -12135,6 +12135,25 @@ body.home.home-rendering .cursor {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%; }
+  #burger-menu:hover #burger-center:before, #burger-menu:hover #burger-center:after {
+    margin-left: -1px; }
+  #burger-menu:hover #burger-center:before {
+    -webkit-transform: translateX(-33px);
+    -moz-transform: translateX(-33px);
+    -ms-transform: translateX(-33px);
+    -o-transform: translateX(-33px);
+    transform: translateX(-33px); }
+  #burger-menu:hover #burger-center:after {
+    -webkit-transform: translateX(-9px) rotate(0);
+    -moz-transform: translateX(-9px) rotate(0);
+    -ms-transform: translateX(-9px) rotate(0);
+    -o-transform: translateX(-9px) rotate(0);
+    transform: translateX(-9px) rotate(0);
+    -webkit-filter: opacity(1);
+    -moz-filter: opacity(1);
+    -ms-filter: opacity(1);
+    -o-filter: opacity(1);
+    filter: opacity(1); }
   #burger-menu #burger-circle {
     position: absolute;
     width: 40px;
@@ -12160,14 +12179,8 @@ body.home.home-rendering .cursor {
     height: 22px;
     margin: 0 auto;
     pointer-events: none;
-    z-index: 6501;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg); }
-    #burger-menu #burger-center:before {
-      content: "All";
+    z-index: 6501; }
+    #burger-menu #burger-center:before, #burger-menu #burger-center:after {
       position: absolute;
       margin: auto;
       margin-left: -2px;
@@ -12177,7 +12190,26 @@ body.home.home-rendering .cursor {
       left: 0;
       font-size: 14.5px;
       color: #FFF;
-      letter-spacing: 1.5px; }
+      letter-spacing: 1.5px;
+      -webkit-transition: 0.2s ease-in-out;
+      -moz-transition: 0.2s ease-in-out;
+      -ms-transition: 0.2s ease-in-out;
+      -o-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+    #burger-menu #burger-center:before {
+      content: "All";
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    #burger-menu #burger-center:after {
+      content: "Projects";
+      -webkit-filter: opacity(0);
+      -moz-filter: opacity(0);
+      -ms-filter: opacity(0);
+      -o-filter: opacity(0);
+      filter: opacity(0); }
     #burger-menu #burger-center span {
       position: absolute;
       display: block;

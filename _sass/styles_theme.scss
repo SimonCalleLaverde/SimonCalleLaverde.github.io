@@ -1123,6 +1123,26 @@ body.home {
   border:1px dotted transparent;
   z-index:6500;
   @include border-radius(50%);
+
+
+
+  &:hover {
+    #burger-center {
+      &:before, &:after {
+        margin-left:-1px;
+      }
+      &:before {
+        @include transform(translateX(-33px));
+      }
+      &:after {
+        @include transform(translateX(-9px) rotate(0));
+        @include filter(opacity(1));
+      }
+    }
+  }
+
+
+
   #burger-circle {
     position:absolute;
     width:40px;
@@ -1148,12 +1168,10 @@ body.home {
     margin:0 auto;
     pointer-events:none;//initial
     z-index:6501;
-    @include transform(rotate(90deg));
 
 
 
-    &:before {
-      content:"All";
+    &:before, &:after {
       position:absolute;
       margin:auto;
       margin-left:-2px;
@@ -1165,6 +1183,15 @@ body.home {
       color:#FFF;
       letter-spacing:1.5px;
       //text-transform:uppercase;
+      @include transition(0.2s ease-in-out);
+    }
+    &:before {
+      content:"All";
+      @include transform(rotate(90deg));
+    }
+    &:after {
+      content:"Projects";
+      @include filter(opacity(0));
     }
 
 
