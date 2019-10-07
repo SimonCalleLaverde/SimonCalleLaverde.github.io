@@ -1102,14 +1102,6 @@ body.home {
   background:lighten(theme-color('magenta'),40);
 }
 
-
-
-
-
-
-
-
-
 // Magnetic Burger Menu
 #burger-menu {
   position:fixed;//relative
@@ -1123,26 +1115,6 @@ body.home {
   border:1px dotted transparent;
   z-index:6500;
   @include border-radius(50%);
-
-
-
-  &:hover {
-    #burger-center {
-      &:before, &:after {
-        margin-left:-1px;
-      }
-      &:before {
-        @include transform(translateX(-33px));
-      }
-      &:after {
-        @include transform(translateX(-9px) rotate(0));
-        @include filter(opacity(1));
-      }
-    }
-  }
-
-
-
   #burger-circle {
     position:absolute;
     width:40px;
@@ -1168,9 +1140,6 @@ body.home {
     margin:0 auto;
     pointer-events:none;//initial
     z-index:6501;
-
-
-
     &:before, &:after {
       position:absolute;
       margin:auto;
@@ -1181,7 +1150,7 @@ body.home {
       left:0;
       font-size:14.5px;
       color:#FFF;
-      letter-spacing:1.5px;
+      letter-spacing:1px;
       //text-transform:uppercase;
       @include transition(0.2s ease-in-out);
     }
@@ -1193,64 +1162,23 @@ body.home {
       content:"Projects";
       @include filter(opacity(0));
     }
-
-
-
-    span {
-      position:absolute;
-      display:block;
-      width:100%;
-      height:1px;
-      right:0;
-      background-color:#FFF;
-      opacity:1;
-      @include transition(0.2s ease-in-out);
-      @include transform(rotate(0deg));
-    }
-    &.white {
-      span {
-        background-color:#FFF;
+  }
+  &:hover {
+    #burger-center {
+      &:before, &:after {
+        margin-left:-1px;
+        letter-spacing:4px;
       }
-    }
-    span {
-      &:nth-child(1) {
-        top:8px;
+      &:before {
+        @include transform(translateX(-45px));
       }
-      &:nth-child(2) {
-        top:14px;
-      }
-    }
-    &.open, &:hover {
-      span {
-        &:nth-child(1) {
-          top:10px;
-          @include transform(rotate(45deg));
-        }
+      &:after {
+        @include transform(translateX(-17px) rotate(0));
+        @include filter(opacity(1));
       }
     }
   }
 }
-.menu-overlay {
-  #burger-center {
-    display:block;
-  }
-}
-.light-content {
-  #burger-center {
-    span {
-      background-color:#FFF;
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
 
 //----------------------------------Section Styles----------------------------------//
 
