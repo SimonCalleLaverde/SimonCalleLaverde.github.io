@@ -3,7 +3,7 @@ name: The Kimberley Like Nowhere Else
 name_for_thumbnail: The Kimberley
 thumbnail_image: /uploads/site-image-the-kimberley-like-nowhere-else.jpg
 platform: NationBuilder
-theme: Aware V2
+theme: Aware v2
 year: 2016
 roles: Development
 web:

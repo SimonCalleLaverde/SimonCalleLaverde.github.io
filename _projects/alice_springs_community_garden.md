@@ -3,7 +3,7 @@ name: Alice Springs Community Garden
 name_for_thumbnail: ASCG
 thumbnail_image: /uploads/site-image-alice-springs-community-garden.jpg
 platform: NationBuilder
-theme: Aware V2
+theme: Aware v2
 year: 2017
 roles: Development
 web:

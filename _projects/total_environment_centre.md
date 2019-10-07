@@ -3,7 +3,7 @@ name: Total Environment Centre
 name_for_thumbnail: TEC
 thumbnail_image: /uploads/site-image-total-environment-centre.png
 platform: NationBuilder
-theme: Aware V2
+theme: Aware v2
 year: 2016
 roles: Development
 web:

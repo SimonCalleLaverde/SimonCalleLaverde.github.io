@@ -3,7 +3,7 @@ name: El Avispero Mov
 name_for_thumbnail: El Avispero Mov
 thumbnail_image: /uploads/site-image-el-avispero-mov.png
 platform: NationBuilder
-theme: Aware V2
+theme: Aware v2
 year: 2016
 roles: Development # [Development, Other]
 web:

@@ -3,7 +3,7 @@ name: National Apology Foundation
 name_for_thumbnail: Nafia
 thumbnail_image: /uploads/site-image-national-apology-foundation.jpg
 platform: NationBuilder
-theme: Aware V2 # Now changed
+theme: Aware v2 # Now changed
 year: 2016
 roles: Development
 web:
