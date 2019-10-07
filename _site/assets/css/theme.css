@@ -12350,6 +12350,12 @@ section.about-me-section {
 
 section.my-skills-section {
   padding: 30px 20px; }
+  section.my-skills-section .skills-design-image {
+    -webkit-transform: translateY(-45px);
+    -moz-transform: translateY(-45px);
+    -ms-transform: translateY(-45px);
+    -o-transform: translateY(-45px);
+    transform: translateY(-45px); }
   section.my-skills-section .skills-list i.fa {
     font-size: 12px;
     margin: 0 3px; }

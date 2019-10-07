@@ -19,9 +19,9 @@ $(function() {
   $(window).scroll(function() {
     var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollFromBottom >= 120) {
+    if (scrollFromBottom >= 330) {
       body.removeClass("is-bottom").addClass("is-top");
-    } else if (scrollFromBottom <= 120) {
+    } else if (scrollFromBottom <= 330) {
       body.removeClass("is-top").addClass("is-bottom");
     }
   });
