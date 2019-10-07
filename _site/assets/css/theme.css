@@ -11940,6 +11940,8 @@ nav.burger-wrapper {
         -ms-filter: opacity(0);
         -o-filter: opacity(0);
         filter: opacity(0); }
+    nav.burger-wrapper .burger-menu:hover .burger-circle {
+      border: 1px solid transparent; }
     nav.burger-wrapper .burger-menu:hover .burger-center:before, nav.burger-wrapper .burger-menu:hover .burger-center:after {
       margin-left: -1px;
       letter-spacing: 4px; }

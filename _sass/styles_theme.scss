@@ -1017,6 +1017,9 @@ nav.burger-wrapper {
       }
     }
     &:hover {
+      .burger-circle {
+        border:1px solid transparent;//#FFF
+      }
       .burger-center {
         //@include animation(fa-spin 20s linear backwards infinite);
         &:before, &:after {
