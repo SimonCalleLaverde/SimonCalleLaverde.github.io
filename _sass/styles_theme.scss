@@ -1651,16 +1651,23 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
       }
     }
   }
-  // #burger-menu {
-  //   #burger-circle {
-  //     border:1px solid #000;
-  //   }
-  //   #burger-center {
-  //     &:before, &:after {
-  //       color:#000;
-  //     }
-  //   }
-  // }
+  nav.burger-wrapper {
+    .burger-menu {
+      .burger-circle {
+        //border:1px solid #FFF;
+      }
+      .burger-center {
+        &:before, &:after {
+          //color:#FFF;
+        }
+      }
+      &:hover {
+        .burger-circle {
+          border-color:#FFF;
+        }
+      }
+    }
+  }
 }
 
 //----------------------------------Cursor Custom Styles----------------------------------//

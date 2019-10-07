@@ -12497,6 +12497,8 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
     background-color: #1A1A1A; }
   body.theme-colour.black.is-bottom a:hover.text-line-through:after, body.theme-colour.white.is-top a:hover.text-line-through:after, body.theme-colour.contact_me a:hover.text-line-through:after {
     background-color: transparent; }
+  body.theme-colour.black.is-bottom nav.burger-wrapper .burger-menu:hover .burger-circle, body.theme-colour.white.is-top nav.burger-wrapper .burger-menu:hover .burger-circle, body.theme-colour.contact_me nav.burger-wrapper .burger-menu:hover .burger-circle {
+    border-color: #FFF; }
 
 a.link:hover, a > span > i:hover, a > span:hover, a > i:hover, a > u:hover, a > p:hover, a > h1:hover, a > h2:hover, a > h3:hover, a > h4:hover, a > h5:hover, a > h6:hover, a .project-thumbnail:hover, a .logo-interior:hover {
   cursor: none; }
