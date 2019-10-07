@@ -233,14 +233,14 @@ $(document).mousemove(function(e) {
   // }, 50);
 
   const isLink = target.is('a > span > i, a > span, a > i, a > u, a > p, a > h1, a > h2, a > h3, a > h4, a > h5, a > h6, i.fa.link, a .logo-interior, a.link');//a::after, a::before//.nav-social-media//a
-  const isImg = target.is('img, .glitch-img, .parallax-image');
+  //const isImg = target.is('img, .glitch-img, .parallax-image');
   const isProject = target.is('.project-thumbnail');//figure
   const isModal = target.is('.modal, .modal div, .modal p, .modal h1, .modal h2, .modal h3, .modal h4, .modal h5, .modal h6, .modal img, .modal a, .modal button, .modal span');
   const isDragSides = target.is('.project-as-nav-for');
   const isFooter = target.is('footer .container');
 
   const isLinkHovered = cursor.hasClass('hoveredLink');
-  const isImgHovered = cursor.hasClass('hoveredImg');
+  //const isImgHovered = cursor.hasClass('hoveredImg');
   const isProjectHovered = cursor.hasClass('hoveredProject');
   const isModalHovered = cursor.hasClass('hoveredModal');
   const isDragSidesHovered = cursor.hasClass('hoveredDragSides');
@@ -253,11 +253,11 @@ $(document).mousemove(function(e) {
     cursor.removeClass('hoveredLink');
   }
 
-  if(isImg && !isImgHovered) {
-    cursor.addClass('hoveredImg');
-  } else if(!isImg && isImgHovered) {
-    cursor.removeClass('hoveredImg');
-  }
+  // if(isImg && !isImgHovered) {
+  //   cursor.addClass('hoveredImg');
+  // } else if(!isImg && isImgHovered) {
+  //   cursor.removeClass('hoveredImg');
+  // }
 
   if(isProject && !isProjectHovered) {
     cursor.addClass('hoveredProject');
@@ -346,7 +346,7 @@ $(document).mouseenter(function(e) {
 
 //var tl0 = new TimelineMax({onUpdate:updatePercentage});
 var tlMwT = new TimelineMax();
-//var tlAnF = new TimelineMax();
+var tlAnF = new TimelineMax();
 var tlCd = new TimelineMax();
 var tlSc = new TimelineMax();
 var tlAp = new TimelineMax();
@@ -374,7 +374,7 @@ const controller = new ScrollMagic.Controller();
 
 tlMwT.from(".gsap-my-work-title", 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});//opacity:0, scale:0
 
-//tlAnF.from(".gsap-as-nav-for", 3, {x:300, opacity:0, ease:Power2.easeOut});//scale:0
+tlAnF.from(".gsap-as-nav-for", 3, {x:300, opacity:0, ease:Power2.easeOut});//scale:0
 
 tlCd.from(".gsap-content-development", 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});//x:-500//scale:0.5
 
@@ -392,11 +392,11 @@ const sceneMwT = new ScrollMagic.Scene({
 .setTween(tlMwT)
  .addTo(controller);
 
-// const sceneAnF = new ScrollMagic.Scene({
-//   triggerElement: ".magic-trigger-as-nav-for"
-// })
-// .setTween(tlAnF)
-//   .addTo(controller);
+const sceneAnF = new ScrollMagic.Scene({
+  triggerElement: ".magic-trigger-as-nav-for"
+})
+.setTween(tlAnF)
+  .addTo(controller);
 
 const sceneCd = new ScrollMagic.Scene({
  triggerElement: ".magic-trigger-content-development"
@@ -427,3 +427,46 @@ const scenetlSl = new ScrollMagic.Scene({
 })
 .setTween(tlSl)
  .addTo(controller);
+
+
+
+
+
+
+
+
+
+ //---------------------------------MAGNETIC BUTTON---------------------------------//
+
+$('#burger-menu').mouseleave(function(e){
+  TweenMax.to(this, 0.3, {scale: 1});
+  TweenMax.to('#burger-circle, #burger-center', 0.3,{scale: 1, x: 0, y: 0});
+});
+
+$('#burger-menu').mouseenter(function(e){
+  TweenMax.to(this, 0.3, {transformOrigin: '0 0', scale: 1});
+  TweenMax.to('#burger-circle', 0.3,{scale: 1.3});
+});
+
+$('#burger-menu').mousemove(function(e){   
+  callParallax(e);
+});
+
+function callParallax(e){
+  parallaxIt(e, '#burger-circle', 60);
+  parallaxIt(e, '#burger-center', 40);
+}
+
+function parallaxIt(e, target, movement){
+  var $this = $('#burger-menu');
+  var boundingRect = $this[0].getBoundingClientRect();
+  var relX = e.pageX - boundingRect.left;
+  var relY = e.pageY - boundingRect.top;
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  TweenMax.to(target, 0.3, {
+  x: (relX - boundingRect.width/2) / boundingRect.width * movement,
+  y: (relY - boundingRect.height/2 - scrollTop) / boundingRect.width * movement,
+  ease: Power2.easeOut
+  });
+}

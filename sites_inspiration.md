@@ -83,7 +83,6 @@ thumbnail_image: ""
 <a href="..." rel="ugc"></a>
 <a href="..." rel="ugc"></a>
 <a href="..." rel="ugc"></a>
-<a href="..." rel="ugc"></a>
 -->
 
 <h1>Plugins</h1>
@@ -108,6 +107,7 @@ thumbnail_image: ""
 <a href="https://rioukevin.gitlab.io/magnetic_cursor/" rel="ugc">Magnetic Cursor</a>
 <a href="https://codepen.io/mikewagz/pen/VWKemL" rel="ugc">Magnetic Button</a>
 <a href="https://tympanus.net/codrops/2019/07/23/smooth-scrolling-image-effects/" rel="ugc">Images Cool Effects | Mary Lou | # 3</a>
+<a href="https://codepen.io/andrejsharapov/pen/rPyYML" rel="ugc">Nice Menu For Accordion Use</a>
 
 <h1>Platforms</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY" rel="ugc">GitHub Pages</a>

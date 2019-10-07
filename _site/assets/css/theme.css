@@ -12119,6 +12119,103 @@ body.home.home-rendering .cursor {
   /*mozilla firefox*/
   background: #ffb8df; }
 
+#burger-menu {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  right: 2px;
+  bottom: 30px;
+  border: 1px dotted transparent;
+  z-index: 6500;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
+  #burger-menu #burger-circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 1px solid #FFF;
+    cursor: pointer;
+    pointer-events: none;
+    z-index: 6504;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    border-radius: 32px; }
+    #burger-menu #burger-circle.white {
+      border: 2px solid white; }
+  #burger-menu #burger-center {
+    position: relative;
+    width: 14px;
+    height: 22px;
+    margin: 0 auto;
+    pointer-events: none;
+    z-index: 6501;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); }
+    #burger-menu #burger-center:before {
+      content: "All";
+      position: absolute;
+      margin: auto;
+      margin-left: -2px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      font-size: 14.5px;
+      color: #FFF;
+      letter-spacing: 1.5px; }
+    #burger-menu #burger-center span {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 1px;
+      right: 0;
+      background-color: #FFF;
+      opacity: 1;
+      -webkit-transition: 0.2s ease-in-out;
+      -moz-transition: 0.2s ease-in-out;
+      -ms-transition: 0.2s ease-in-out;
+      -o-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg); }
+    #burger-menu #burger-center.white span {
+      background-color: #FFF; }
+    #burger-menu #burger-center span:nth-child(1) {
+      top: 8px; }
+    #burger-menu #burger-center span:nth-child(2) {
+      top: 14px; }
+    #burger-menu #burger-center.open span:nth-child(1), #burger-menu #burger-center:hover span:nth-child(1) {
+      top: 10px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+
+.menu-overlay #burger-center {
+  display: block; }
+
+.light-content #burger-center span {
+  background-color: #FFF; }
+
 a.logo {
   position: fixed;
   top: 30px;
