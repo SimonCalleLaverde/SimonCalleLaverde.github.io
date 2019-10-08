@@ -12389,14 +12389,13 @@ section.my-skills-section {
       -o-filter: opacity(0.5);
       filter: opacity(0.5); }
     section.my-skills-section .text-get-in-touch:before {
+      height: 124px;
       top: 0;
       bottom: auto; }
     section.my-skills-section .text-get-in-touch:after {
+      height: 126px;
       top: auto;
       bottom: 0; }
-
-section.education-section {
-  padding: 30px 20px; }
 
 section.work-section {
   padding: 0 20px; }
@@ -12915,10 +12914,7 @@ body.first-load:after {
       margin-left: -1.5%; }
 
   section.my-skills-section {
-    padding: 100px 0 0; }
-
-  section.education-section {
-    padding: 100px 0 60px; }
+    padding: 100px 0; }
 
   section.work-section {
     padding: 0; }

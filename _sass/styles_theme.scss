@@ -1400,20 +1400,22 @@ section.my-skills-section {
       @include filter(opacity(0.5));
     }
     &:before {
+      height:124px;
       top:0;
       bottom:auto;
     }
     &:after {
+      height:126px;
       top:auto;
       bottom:0;
     }
   }
 }
 
-// Education Section
-section.education-section {
-  padding:30px 20px;//To revise mobile
-}
+// // Education Section
+// section.education-section {
+//   padding:30px 20px;//To revise mobile
+// }
 
 // Work Section
 section.work-section {
