@@ -19,9 +19,9 @@ $(function() {
   $(window).scroll(function() {
     var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollFromBottom >= 330) {
+    if (scrollFromBottom >= 80) {
       body.removeClass("is-bottom").addClass("is-top");
-    } else if (scrollFromBottom <= 330) {
+    } else if (scrollFromBottom <= 80) {
       body.removeClass("is-top").addClass("is-bottom");
     }
   });
@@ -351,7 +351,9 @@ var tlCd = new TimelineMax();
 var tlSc = new TimelineMax();
 var tlAp = new TimelineMax();
 var tlSh = new TimelineMax();
-var tlSl = new TimelineMax();
+var tlSl1 = new TimelineMax();
+var tlSl2 = new TimelineMax();
+var tlSl3 = new TimelineMax();
 
 const controller = new ScrollMagic.Controller();
 
@@ -384,7 +386,11 @@ tlAp.from(".gsap-all-projects" , 2, {y:250, opacity:0, transformStyle:"preserve-
 
 tlSh.from(".gsap-skills-headline" , 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});
 
-tlSl.from(".gsap-skills-list" , 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});
+tlSl1.from(".gsap-skills-list-1" , 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});
+
+tlSl2.from(".gsap-skills-list-2" , 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});
+
+tlSl3.from(".gsap-skills-list-3" , 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});
 
 const sceneMwT = new ScrollMagic.Scene({
  triggerElement: ".magic-trigger-my-work-title"
@@ -422,10 +428,22 @@ const scenetlSh = new ScrollMagic.Scene({
 .setTween(tlSh)
  .addTo(controller);
 
-const scenetlSl = new ScrollMagic.Scene({
- triggerElement: ".magic-trigger-skills-list"
+const scenetlSl1 = new ScrollMagic.Scene({
+ triggerElement: ".magic-trigger-skills-list-1"
 })
-.setTween(tlSl)
+.setTween(tlSl1)
+ .addTo(controller);
+
+const scenetlSl2 = new ScrollMagic.Scene({
+ triggerElement: ".magic-trigger-skills-list-2"
+})
+.setTween(tlSl2)
+ .addTo(controller);
+
+const scenetlSl3 = new ScrollMagic.Scene({
+ triggerElement: ".magic-trigger-skills-list-3"
+})
+.setTween(tlSl3)
  .addTo(controller);
 
 //---------------------------------MAGNETIC BUTTON---------------------------------//

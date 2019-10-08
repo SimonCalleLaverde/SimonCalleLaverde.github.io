@@ -3,14 +3,15 @@
 <header class="hello-header d-flex flex-row align-items-center text-white clearfix" id="hello_section">
   <div class="container">
 
-    <div class="row"><!--lax--><!--data-lax-translate-X="0 0, 50 5, 100 10, 150 15, 200 20, 250 25, 300 30, 350 35, 400 40, 450 45, 500 50, 550 55, 600 60"-->
+    <div class="row">
       <div class="col-md-7 offset-md-1">
-        <h1 class="text-one text-white mb-3" style="font-size:9rem; line-height:1;">{{ page.headline | default:page.title }}</h1>
-        <h1 class="text-two text-stroke-white mb-3" style="position:absolute; top:0; font-size:9rem; line-height:1; z-index:5001;">{{ page.headline | default:page.title }}</h1>
+        <div class="position-relative">
+          <h1 class="text-hero-one text-hero text-white mb-3" style="pointer-events:none;">{{ page.headline | default:page.title }}</h1>
+          <h1 class="text-hero-two position-absolute text-hero text-stroke-white mb-3" style="top:0; left:0; z-index:10;" aria-hidden="true">{{ page.headline | default:page.title }}</h1>
+        </div>
 
         <div class="text-i-am magic-trigger-my-work-title">
           <p class="font-headline text-white text-uppercase mt-3 mb-0">I'm a publicist and web developer,</p>
-
           <p class="font-headline text-white text-uppercase mb-0">and I do <a class="text-branding text-white text-line-through smoothScroll" href="#education_section"><span title="I studied advertisement for 5 years">branding</span></a> & engaging <a class="text-websites text-white text-line-through smoothScroll" href="#my_work"><span title="I create good looking hand-crafted websites">websites</span></a><!--This is a brand built out of coffee, quality, and care--></p>
         </div>
       </div>

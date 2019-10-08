@@ -438,6 +438,10 @@ a {
   color:transparent!important;
   -webkit-text-stroke:2px theme-color('magenta')!important;
 }
+.text-hero {
+  font-size:9rem;
+  line-height:1;
+}
 .text-gigantic, .text-huge, .text-big {
   line-height:1;
   .text-line-through {
@@ -1082,7 +1086,7 @@ body {//body.work, body.contact_me, body.plans, body.sites_inspiration {
 }
 body.home {
   &.imagesloaded {//.rendered
-    .text-one {
+    .text-hero-one {
       span {
         @include filter(opacity(0));
         &.letter-1 {//&:nth-child(1)
@@ -1129,7 +1133,7 @@ body.home {
         }
       }
     }
-    .text-two {
+    .text-hero-two {
       span {
         @include filter(opacity(0));
         &.letter-1 {//&:nth-child(1)
