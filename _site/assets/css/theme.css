@@ -12363,6 +12363,37 @@ section.my-skills-section {
   section.my-skills-section .skills-list i.fa {
     font-size: 12px;
     margin: 0 3px; }
+  section.my-skills-section .text-get-in-touch {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    font-size: 11px;
+    color: #FFF;
+    letter-spacing: 3px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed; }
+    section.my-skills-section .text-get-in-touch:before, section.my-skills-section .text-get-in-touch:after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 125px;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #FFF;
+      -webkit-filter: opacity(0.5);
+      -moz-filter: opacity(0.5);
+      -ms-filter: opacity(0.5);
+      -o-filter: opacity(0.5);
+      filter: opacity(0.5); }
+    section.my-skills-section .text-get-in-touch:before {
+      top: 0;
+      bottom: auto; }
+    section.my-skills-section .text-get-in-touch:after {
+      top: auto;
+      bottom: 0; }
 
 section.education-section {
   padding: 30px 20px; }
@@ -12884,7 +12915,7 @@ body.first-load:after {
       margin-left: -1.5%; }
 
   section.my-skills-section {
-    padding: 100px 0 60px; }
+    padding: 100px 0 0; }
 
   section.education-section {
     padding: 100px 0 60px; }
@@ -12914,7 +12945,7 @@ body.first-load:after {
     min-height: 100vh;
     padding: 0 20px; }
     footer .container {
-      padding-top: 35px;
+      padding-top: 0;
       padding-bottom: 35px; }
     footer .footer-copyright {
       position: absolute;

@@ -160,7 +160,7 @@
 
 	// My Skills Section
 	section.my-skills-section {
-		padding:100px 0 60px;
+		padding:100px 0 0;
 	}
 
 	// Education Section
@@ -196,7 +196,7 @@
 		min-height:100vh;
 		padding:0 20px;
 		.container {
-			padding-top:35px;
+			padding-top:0;//35px
 			padding-bottom:35px;
 		}
 		.footer-copyright {
