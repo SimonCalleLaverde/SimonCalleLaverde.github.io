@@ -112,7 +112,7 @@ $(function() {
 
 // Initialize Slick Carousel
 $(document).ready(function() {
-  $('.slick-carousel').slick({
+  $('.carousel-my-work').slick({
     dots: false,
     infinite: false,
     speed: 300,
@@ -126,17 +126,15 @@ $(document).ready(function() {
     variableWidth: false,
     adaptiveHeight: false,
     //autoplay: true,
-    autoplaySpeed: 10000,
+    //autoplaySpeed: 10000,
     pauseOnHover: false,
     lazyLoad: 'progressive',//'ondemand'
     //pauseOnFocus: true,//default
     //fade: true,
-    //cssEase: 'linear'
-    asNavFor: '.slick-as-nav-for'
-
-
+    //cssEase: 'linear',
+    asNavFor: '.as-nav-for-my-work'
   });
-  $('.slick-as-nav-for').slick({
+  $('.as-nav-for-my-work').slick({
     dots: false,
     infinite: false,
     slidesToShow: 8,
@@ -145,9 +143,25 @@ $(document).ready(function() {
     swipe: true,//default
     swipeToSlide: true,
     arrows: false,
-    //centerMode: true,
     focusOnSelect: true,
-    asNavFor: '.slick-carousel'
+    asNavFor: '.carousel-my-work'
+  });
+  $('.carousel-my-skills').slick({
+    dots: false,
+    infinite: true,
+    //speed: 300,
+    slidesToShow: 1,
+    swipeToSlide: true,
+    arrows: false,
+    variableWidth: false,
+    adaptiveHeight: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    lazyLoad: 'ondemand',
+    fade: true,
+    //cssEase: 'linear'
   });
 });
 

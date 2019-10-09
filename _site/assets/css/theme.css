@@ -11713,11 +11713,11 @@ aside.change-features {
   -o-filter: opacity(0) !important;
   filter: opacity(0) !important; }
 
-.slick-carousel {
+.slick-carousel.carousel-my-work {
   width: calc(100% - 3px);
   margin-left: 1px;
   z-index: 100; }
-  .slick-carousel:after {
+  .slick-carousel.carousel-my-work:after {
     content: '';
     position: absolute;
     right: 0;
@@ -11725,29 +11725,29 @@ aside.change-features {
     bottom: 0;
     width: 20px;
     z-index: 103; }
-  .slick-carousel button.slick-arrow {
+  .slick-carousel.carousel-my-work button.slick-arrow {
     z-index: 101; }
-    .slick-carousel button.slick-arrow.slick-prev, .slick-carousel button.slick-arrow.slick-next {
+    .slick-carousel.carousel-my-work button.slick-arrow.slick-prev, .slick-carousel.carousel-my-work button.slick-arrow.slick-next {
       top: 43%; }
-      .slick-carousel button.slick-arrow.slick-prev:before, .slick-carousel button.slick-arrow.slick-prev:after, .slick-carousel button.slick-arrow.slick-next:before, .slick-carousel button.slick-arrow.slick-next:after {
+      .slick-carousel.carousel-my-work button.slick-arrow.slick-prev:before, .slick-carousel.carousel-my-work button.slick-arrow.slick-prev:after, .slick-carousel.carousel-my-work button.slick-arrow.slick-next:before, .slick-carousel.carousel-my-work button.slick-arrow.slick-next:after {
         font-size: 25px; }
-    .slick-carousel button.slick-arrow.slick-prev {
+    .slick-carousel.carousel-my-work button.slick-arrow.slick-prev {
       right: 195px;
       left: auto; }
-    .slick-carousel button.slick-arrow.slick-next {
+    .slick-carousel.carousel-my-work button.slick-arrow.slick-next {
       right: 145px;
       left: auto; }
-  .slick-carousel .slick-list {
+  .slick-carousel.carousel-my-work .slick-list {
     pointer-events: none;
     z-index: 102; }
-    .slick-carousel .slick-list .slick-track .slick-slide {
+    .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide {
       outline: none;
       -webkit-transform: translate3d(-125px, 0px, 0px);
       -moz-transform: translate3d(-125px, 0px, 0px);
       -ms-transform: translate3d(-125px, 0px, 0px);
       -o-transform: translate3d(-125px, 0px, 0px);
       transform: translate3d(-125px, 0px, 0px); }
-      .slick-carousel .slick-list .slick-track .slick-slide article.project-article {
+      .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide article.project-article {
         position: relative;
         width: 64%;
         margin: 0 auto;
@@ -11759,18 +11759,18 @@ aside.change-features {
         -ms-transition: all ease-out 0.5s;
         -o-transition: all ease-out 0.5s;
         transition: all ease-out 0.5s; }
-        .slick-carousel .slick-list .slick-track .slick-slide article.project-article > a {
+        .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide article.project-article > a {
           pointer-events: none; }
-        .slick-carousel .slick-list .slick-track .slick-slide article.project-article .project-thumbnail {
+        .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide article.project-article .project-thumbnail {
           pointer-events: none;
           -webkit-filter: opacity(0.6);
           -moz-filter: opacity(0.6);
           -ms-filter: opacity(0.6);
           -o-filter: opacity(0.6);
           filter: opacity(0.6); }
-      .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article {
+      .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article {
         pointer-events: all; }
-        .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail {
+        .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail {
           pointer-events: all;
           -webkit-filter: opacity(1);
           -moz-filter: opacity(1);
@@ -11782,7 +11782,7 @@ aside.change-features {
           -ms-transition: all ease-out 1s;
           -o-transition: all ease-out 1s;
           transition: all ease-out 1s; }
-          .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:hover, .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:active, .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:focus {
+          .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:hover, .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:active, .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:focus {
             -webkit-transform: scale(1.03);
             -moz-transform: scale(1.03);
             -ms-transform: scale(1.03);
@@ -11793,18 +11793,18 @@ aside.change-features {
             -ms-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important;
             -o-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important; }
-        .slick-carousel .slick-list .slick-track .slick-slide.slick-current article.project-article > a {
+        .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article > a {
           pointer-events: all; }
 
-.slick-as-nav-for {
+.slick-as-nav-for.as-nav-for-my-work {
   width: calc(100% - 3px);
   margin-left: 1px;
   z-index: 100; }
-  .slick-as-nav-for .slick-list {
+  .slick-as-nav-for.as-nav-for-my-work .slick-list {
     z-index: 102; }
-    .slick-as-nav-for .slick-list.draggable {
+    .slick-as-nav-for.as-nav-for-my-work .slick-list.draggable {
       padding: 0 !important; }
-    .slick-as-nav-for .slick-list .slick-track .slick-slide {
+    .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide {
       outline: none;
       cursor: pointer;
       -webkit-transform: translate3d(-1px, 0px, 0px) !important;
@@ -11812,10 +11812,10 @@ aside.change-features {
       -ms-transform: translate3d(-1px, 0px, 0px) !important;
       -o-transform: translate3d(-1px, 0px, 0px) !important;
       transform: translate3d(-1px, 0px, 0px) !important; }
-      .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows {
+      .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide .project-as-nav-for-windows {
         position: relative;
         height: 80px; }
-        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows .project-as-nav-for {
+        .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide .project-as-nav-for-windows .project-as-nav-for {
           position: absolute;
           margin: auto;
           top: 0;
@@ -11828,7 +11828,7 @@ aside.change-features {
           -ms-filter: opacity(0.6);
           -o-filter: opacity(0.6);
           filter: opacity(0.6); }
-        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before, .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after {
+        .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before, .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after {
           content: '';
           position: absolute;
           top: 0;
@@ -11847,28 +11847,31 @@ aside.change-features {
           -ms-transform: translateX(0);
           -o-transform: translateX(0);
           transform: translateX(0); }
-        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before {
+        .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before {
           left: 0; }
-        .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after {
+        .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after {
           right: 0; }
-      .slick-as-nav-for .slick-list .slick-track .slick-slide.slick-current .project-as-nav-for-windows .project-as-nav-for {
+      .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide.slick-current .project-as-nav-for-windows .project-as-nav-for {
         -webkit-filter: opacity(1);
         -moz-filter: opacity(1);
         -ms-filter: opacity(1);
         -o-filter: opacity(1);
         filter: opacity(1); }
-    .slick-as-nav-for .slick-list .slick-track:hover .slick-slide .project-as-nav-for-windows:before {
+    .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track:hover .slick-slide .project-as-nav-for-windows:before {
       -webkit-transform: translateX(-9px);
       -moz-transform: translateX(-9px);
       -ms-transform: translateX(-9px);
       -o-transform: translateX(-9px);
       transform: translateX(-9px); }
-    .slick-as-nav-for .slick-list .slick-track:hover .slick-slide .project-as-nav-for-windows:after {
+    .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track:hover .slick-slide .project-as-nav-for-windows:after {
       -webkit-transform: translateX(9px);
       -moz-transform: translateX(9px);
       -ms-transform: translateX(9px);
       -o-transform: translateX(9px);
       transform: translateX(9px); }
+
+.carousel-my-skills {
+  z-index: 100; }
 
 .hero-note {
   height: 265px;

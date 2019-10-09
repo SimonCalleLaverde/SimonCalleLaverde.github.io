@@ -13,7 +13,7 @@
     
     <div class="row mt-5 pt-3">
       <div class="col-md-12">
-        <div class="slick-carousel magic-trigger-as-nav-for pt-4" id="slick_carousel">
+        <div class="slick-carousel carousel-my-work magic-trigger-as-nav-for pt-4" id="slick_carousel">
           {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
           {% for project in sorted_projects %}
@@ -31,7 +31,7 @@
           {% endfor %}
         </div>
         
-        <div class="slick-as-nav-for magic-trigger-content-development mt-5">
+        <div class="slick-as-nav-for as-nav-for-my-work magic-trigger-content-development mt-5">
           {% for project in sorted_projects %}
             {% assign project_tags_list = "#" %}
             {% for tag in project.tags %}

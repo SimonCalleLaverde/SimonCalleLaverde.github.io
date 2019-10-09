@@ -826,8 +826,8 @@ aside.change-features {
   @include filter(opacity(0)!important);
 }
 
-// Slick Carousel
-.slick-carousel {
+// Slick Carousel (Carousel My Work)
+.slick-carousel.carousel-my-work {
   width:calc(100% - 3px);
   margin-left:1px;
   z-index:100;
@@ -902,7 +902,7 @@ aside.change-features {
     }
   }
 }
-.slick-as-nav-for  {
+.slick-as-nav-for.as-nav-for-my-work {
   width:calc(100% - 3px);
   margin-left:1px;
   z-index:100;
@@ -972,6 +972,12 @@ aside.change-features {
       }
     }
   }
+}
+
+// Slick Carousel (Carousel My Skills)
+.carousel-my-skills {
+  //width:100%;
+  z-index:100;
 }
 
 // Hero Note
