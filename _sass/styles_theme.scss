@@ -626,6 +626,17 @@ article.project-article {
   }
 }
 
+// General Social Circle Buttons Hover Effect
+a {
+  &:hover, &:active, &:focus {
+    > span.fa-stack {
+      > i.fa {
+        @include animation(fa-spin 0.3s linear);//0.4s
+      }
+    }
+  }
+}
+
 // Nav Social Media
 aside.nav-social-media {
   position:fixed;
@@ -637,6 +648,7 @@ aside.nav-social-media {
   @include border-radius(50%);
   span.fa-stack.custom {
     height:27px;//Was 2em
+    pointer-events:none;
     .fa-stack-2x, .fa-circle {
       font-size:1.8rem;//Was 2em
       color:#FFF!important;
@@ -707,15 +719,6 @@ aside.nav-social-media {
     }
   }
 }//@media
-
-// General Social Circle Buttons Hover Effect
-span.fa-stack {
-  &:hover, &:active, &:focus {
-    i.fa {
-      @include animation(fa-spin 0.3s linear);//0.4s
-    }
-  }
-}
 
 // Text Line Through
 .text-line-through {
@@ -795,7 +798,7 @@ aside.change-features {
   top:40px;
   right:47px;
   font-size:15px;
-  span {
+  .show-message-button {
     cursor:not-allowed;//no-drop
   }
   i.fa {
@@ -973,10 +976,8 @@ aside.change-features {
 
 // Hero Note
 .hero-note {
-  //width:300px;//305px
-  height:300px;//305px
+  height:265px;//285px//300px//305px
   font-size:13px;
-  //text-align:justify;
   writing-mode:vertical-rl;
   text-orientation:mixed;
   //@include transform(rotate(90deg) translateX(-110px));

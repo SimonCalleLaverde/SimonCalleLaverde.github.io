@@ -11525,6 +11525,13 @@ article.project-article.work {
   .modal .modal-content .modal-header button.close:hover, .modal .modal-content .modal-header button.close:active, .modal .modal-content .modal-header button.close:focus {
     outline: none; }
 
+a:hover > span.fa-stack > i.fa, a:active > span.fa-stack > i.fa, a:focus > span.fa-stack > i.fa {
+  -webkit-animation: fa-spin 0.3s linear;
+  -moz-animation: fa-spin 0.3s linear;
+  -ms-animation: fa-spin 0.3s linear;
+  -o-animation: fa-spin 0.3s linear;
+  animation: fa-spin 0.3s linear; }
+
 aside.nav-social-media {
   position: fixed;
   top: 33%;
@@ -11536,7 +11543,8 @@ aside.nav-social-media {
   -o-border-radius: 50%;
   border-radius: 50%; }
   aside.nav-social-media span.fa-stack.custom {
-    height: 27px; }
+    height: 27px;
+    pointer-events: none; }
     aside.nav-social-media span.fa-stack.custom .fa-stack-2x, aside.nav-social-media span.fa-stack.custom .fa-circle {
       font-size: 1.8rem;
       color: #FFF !important;
@@ -11582,13 +11590,6 @@ aside.nav-social-media {
     color: #e75d8c !important; }
   .nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, .nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, .nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, .nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, .nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, .nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest {
     color: #ee0a23 !important; } }
-span.fa-stack:hover i.fa, span.fa-stack:active i.fa, span.fa-stack:focus i.fa {
-  -webkit-animation: fa-spin 0.3s linear;
-  -moz-animation: fa-spin 0.3s linear;
-  -ms-animation: fa-spin 0.3s linear;
-  -o-animation: fa-spin 0.3s linear;
-  animation: fa-spin 0.3s linear; }
-
 .text-line-through {
   position: relative; }
   .text-line-through:before, .text-line-through:after {
@@ -11666,7 +11667,7 @@ aside.change-features {
   top: 40px;
   right: 47px;
   font-size: 15px; }
-  aside.change-features span {
+  aside.change-features .show-message-button {
     cursor: not-allowed; }
   aside.change-features i.fa {
     font-size: 13px; }
@@ -11870,7 +11871,7 @@ aside.change-features {
       transform: translateX(9px); }
 
 .hero-note {
-  height: 300px;
+  height: 265px;
   font-size: 13px;
   writing-mode: vertical-rl;
   text-orientation: mixed; }

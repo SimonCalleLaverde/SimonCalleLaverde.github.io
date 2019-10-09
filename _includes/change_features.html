@@ -1,11 +1,16 @@
 <aside class="change-features">
 	<div class="change-features-interior show-it">
-		<a class="text-grey-mid" href="/"><p class="m-0" title="Lets speak English" style="display:inline-block;">En</p></a><span class="text-grey-mid"> / </span><span class="text-white show-message-button"><p class="text-white m-0" title="Hablemos Español" style="display:inline-block;">Sp</p></span>
+		<a class="link text-grey-mid" href="/" title="Let's speak English">En</a>
+
+		<span class="text-grey-mid"> / </span>
+
+		<a class="text-white show-message-button" title="Hablemos Español">Sp</a><!--Will have class="link" href="..."-->
+
 		{% unless page.slug == "contact_me" or page.slug contains "contact" %}
 			<i class="fa fa-adjust link text-white switch-theme-colour" style="margin-left:5px;"></i>
 		{% endunless %}
 
-		<div class="show-message text-grey-dark hide-it py-1 px-2">
+		<div class="show-message text-grey-dark py-1 px-2 hide-it">
 			Sorry :( this feature will be coming soon
 		</div>
 	</div>
