@@ -11489,12 +11489,12 @@ article.project-article.home figure {
       -ms-transform: translateX(-28px);
       -o-transform: translateX(-28px);
       transform: translateX(-28px); }
-article.project-article.home:hover figure .project-platform .project-platform-translate {
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0); }
+  article.project-article.home figure:hover .project-platform .project-platform-translate {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); }
 article.project-article.work {
   margin-bottom: 104px;
   will-change: scroll-position; }

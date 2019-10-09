@@ -571,12 +571,7 @@ article.project-article {
           @include transform(translateX(-28px));
         }
       }
-    }
-    // time {
-    //   pointer-events:none;
-    // }
-    &:hover {
-      figure {
+      &:hover {
         .project-platform {
           .project-platform-translate {
             @include transform(translateX(0));
@@ -584,6 +579,9 @@ article.project-article {
         }
       }
     }
+    // time {
+    //   pointer-events:none;
+    // }
   }
   &.work {
     margin-bottom:104px;
