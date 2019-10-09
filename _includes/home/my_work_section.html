@@ -11,9 +11,9 @@
       </div>
     </div>
     
-    <div class="row mt-5 pt-5less" id="slick_carousel_scroll">
+    <div class="row mt-5 pt-3">
       <div class="col-md-12">
-        <div class="slick-carousel magic-trigger-as-nav-for">
+        <div class="slick-carousel magic-trigger-as-nav-for pt-4" id="slick_carousel">
           {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
           {% for project in sorted_projects %}
@@ -53,7 +53,7 @@
 
     <div class="row mt-4">
       <div class="col-md-6 offset-md-1">
-        <div class="mt-4 pt-5 column-div gsap-content-development position-relative" id="content_development">
+        <div class="mt-4 pt-5 column-div gsap-content-development position-relative">
           <h6 class="text-grey-light">Check out some of the websites I have <a class="text-grey-light text-underline" href="/work">worked on</a>. For now most of them were done within my time at <a class="text-grey-light text-underline" href="https://www.codenation.com/" target="_blank" title="Check out their amazing work and contact them for any cool campaigning related project">Code Nation</a>, an Australian 5 star rated digital agency specialized in creating and managing campaigning platforms which help big communities engage in big actions. I worked there for the past 4 years. I'm hoping to transitions with time to showcase some more of my independent work and new business and branding related projects.</h6>
 
           {% comment %}
