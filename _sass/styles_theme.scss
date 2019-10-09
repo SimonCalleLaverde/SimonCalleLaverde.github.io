@@ -554,22 +554,33 @@ article.project-article {
           }
         }
       }
-    }
-    .project-info {
-      position:relative;
-      height:28px;
-      margin-top:15%;
-      right:0;
-      overflow:hidden;
-      > div {
-        @include transition(transform ease-out 0.5s);
-        @include transform(translateY(0));
+      .project-platform {
+        position:absolute;
+        height:100%;
+        width:28px;
+        top:0;
+        right:-45px;
+        font-size:8px;
+        overflow:hidden;
+        pointer-events:none;
+        writing-mode:vertical-rl;
+        text-orientation:mixed;
+        .project-platform-translate {
+          pointer-events:none;
+          @include transition(transform ease-out 0.5s);
+          @include transform(translateX(-28px));
+        }
       }
     }
+    // time {
+    //   pointer-events:none;
+    // }
     &:hover {
-      .project-info {
-        > div {
-          @include transform(translateY(-28px));
+      figure {
+        .project-platform {
+          .project-platform-translate {
+            @include transform(translateX(0));
+          }
         }
       }
     }
@@ -1840,11 +1851,11 @@ i.fa {
     }
     &:before {
       content:"\f0d9";
-      left:10px;
+      left:7px;
     }
     &:after {
       content:"\f0da";
-      right:10px;
+      right:7px;
       left:auto;
     }
   }

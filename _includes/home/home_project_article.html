@@ -9,7 +9,7 @@
 		    background-size:cover;
 		  }
 		</style>
-		<figure>
+		<figure class="position-relative">
 			<div class="project-thumbnail bg-image d-flex flex-row justify-content-center align-items-end p-4" id="thumbnail-{{ project.slug }}" type="image" title="{{ project.name }} Website Project"><!--scale-element-->
 				<figcaption class="project-caption mt-3" style="display:inline-block;">
 					<div class="project-name align-self-start mb-2 py-2 px-3">
@@ -23,16 +23,10 @@
 					</div>
 				</figcaption>
 			</div>
-		</figure>
-
-		<div class="project-info mt-3">
-			<div>
-				<time class="project-year font-subtitle text-white">
-					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">{{ project.year }}</h5>
-				</time>
-
-				<div class="project-platform font-subtitle text-white">
-					<h5 class="font-paragraph text-bold m-0" style="font-size:1.25rem;">
+				
+			<div class="project-platform d-flex flex-column align-items-center">
+				<div class="project-platform-translate font-subtitle text-white">
+					<h5 class="font-paragraph text-bold m-0" style="font-size:1rem;">
 						{% for platform in project.platform %}
 							{{ platform }} {% unless forloop.last %}&{% endunless %}
 						{% endfor %}
@@ -40,8 +34,12 @@
 					</h5>
 				</div>
 			</div>
-		</div>
+		</figure>
 	</a>
+
+	<time class="project-year">
+		<h5 class="font-paragraph text-white text-bold mt-3 m-0" style="font-size:1.25rem;">{{ project.year }}</h5>
+	</time>
 
 	<div class="magic-trigger-as-nav-for position-absolute" style="width:0; height:0; margin:auto; top:0; right:0; bottom:0; left:0;"></div>
 </article>
