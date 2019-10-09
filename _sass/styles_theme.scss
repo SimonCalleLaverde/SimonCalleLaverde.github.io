@@ -560,7 +560,6 @@ article.project-article {
         width:28px;
         top:0;
         right:-45px;
-        font-size:8px;
         overflow:hidden;
         pointer-events:none;
         writing-mode:vertical-rl;
@@ -579,7 +578,7 @@ article.project-article {
         }
       }
     }
-    // time {
+    // time.project-year {
     //   pointer-events:none;
     // }
   }
@@ -593,8 +592,8 @@ article.project-article {
         position:absolute;
         top:15%;//80%
         right:0;
-        font-family:$font-subtitle;
-        font-weight:normal;
+        //font-family:$font-subtitle;
+        //font-weight:normal;
         @include transform(rotate(90deg) translateY(-26px));
         //@include transform(skewY(0deg));
       }
@@ -1379,12 +1378,55 @@ section.my-skills-section {
   .skills-design-image {
     @include transform(translateY(-45px));
   }
-  .skills-list {
-    i.fa {
-      font-size:12px;
-      margin:0 3px;
-    }
-  }
+
+
+
+  // .skills-list {
+  //   // i.fa {
+  //   //   font-size:12px;
+  //   //   margin:0 3px;
+  //   // }
+  //   ul {
+  //     li {
+  //       position:relative;
+  //       &:before {
+  //         position:absolute;
+  //         content:'';
+  //         height:100%;
+  //         width:100%;
+  //         top:0;
+  //         right:0;
+  //         bottom:0;
+  //         left:0;
+  //         background-color:theme-color('magenta');
+  //         @include filter(opacity(0.3));
+  //       }
+  //     }
+  //     li:nth-child(1) {
+  //       &:before {
+  //         @include animation(textOverlayAnim 3s ease-in 0 infinite);
+  //       }
+  //     }
+  //     li:nth-child(2) {
+  //       &:before {
+  //         @include animation(textOverlayAnim 3s ease-in 3s infinite);
+  //       }
+  //     }
+  //     li:nth-child(3) {
+  //       &:before {
+  //         @include animation(textOverlayAnim 3s ease-in 6s infinite);
+  //       }
+  //     }
+  //     li:nth-child(4) {
+  //       &:before {
+  //         @include animation(textOverlayAnim 3s ease-in 9s infinite);
+  //       }
+  //     }
+  //   }
+  // }
+
+
+
   .text-get-in-touch {
     position:relative;
     width:100%;

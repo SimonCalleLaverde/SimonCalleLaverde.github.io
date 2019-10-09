@@ -11472,7 +11472,6 @@ article.project-article.home figure {
     width: 28px;
     top: 0;
     right: -45px;
-    font-size: 8px;
     overflow: hidden;
     pointer-events: none;
     writing-mode: vertical-rl;
@@ -11505,8 +11504,6 @@ article.project-article.work {
       position: absolute;
       top: 15%;
       right: 0;
-      font-family: "Playfair Display", serif;
-      font-weight: normal;
       -webkit-transform: rotate(90deg) translateY(-26px);
       -moz-transform: rotate(90deg) translateY(-26px);
       -ms-transform: rotate(90deg) translateY(-26px);
@@ -12366,9 +12363,6 @@ section.my-skills-section {
     -ms-transform: translateY(-45px);
     -o-transform: translateY(-45px);
     transform: translateY(-45px); }
-  section.my-skills-section .skills-list i.fa {
-    font-size: 12px;
-    margin: 0 3px; }
   section.my-skills-section .text-get-in-touch {
     position: relative;
     width: 100%;

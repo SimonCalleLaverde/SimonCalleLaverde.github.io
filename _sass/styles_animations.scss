@@ -124,6 +124,23 @@
 //   }
 // }//@keyframes
 
+// @keyframes textOverlayAnim {
+//   0% {
+//     width:0;
+//     right:auto;
+//   }
+//   40% {
+//     width:100%;
+//   }
+//   40% {
+//     width:100%;
+//   }
+//   100% {
+//     width:0;
+//     right:auto;
+//   }
+// }//@keyframes
+
 @keyframes scaleDotAnim {
   from {
     @include transform(scale(0.1));
