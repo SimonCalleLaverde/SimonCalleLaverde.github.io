@@ -11457,16 +11457,16 @@ a {
     height: 7px; }
 
 ::-webkit-input-placeholder {
-  color: #FFF !important; }
+  color: #FEFEFE !important; }
 
 :-moz-placeholder {
-  color: #FFF !important; }
+  color: #FEFEFE !important; }
 
 ::-moz-placeholder {
-  color: #FFF !important; }
+  color: #FEFEFE !important; }
 
 :-ms-input-placeholder {
-  color: #FFF !important; }
+  color: #FEFEFE !important; }
 
 input.text, textarea.textarea, .form-group > select {
   padding-left: 0;
@@ -11474,7 +11474,7 @@ input.text, textarea.textarea, .form-group > select {
   font-weight: normal;
   font-style: normal;
   font-size: 20px;
-  color: #FEFEFE !important;
+  color: #FFF !important;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #FFF;
@@ -11700,8 +11700,8 @@ a:hover.text-line-through:before {
   z-index: 100002; }
   .mobile-dev-notice .profile-picture {
     display: inline-block;
-    width: 100px;
-    height: 95px;
+    width: 150px;
+    height: 145px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -12472,8 +12472,8 @@ footer {
     text-align: center; }
     footer .footer-profile-picture .profile-picture {
       display: inline-block;
-      width: 195px;
-      height: 190px;
+      width: 205px;
+      height: 200px;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
@@ -12541,15 +12541,15 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
   body.theme-colour.black.is-bottom .intro, body.theme-colour.white.is-top .intro, body.theme-colour.contact_me .intro {
     color: #000; }
   body.theme-colour.black.is-bottom ::-webkit-input-placeholder, body.theme-colour.white.is-top ::-webkit-input-placeholder, body.theme-colour.contact_me ::-webkit-input-placeholder {
-    color: #000 !important; }
+    color: #1A1A1A !important; }
   body.theme-colour.black.is-bottom :-moz-placeholder, body.theme-colour.white.is-top :-moz-placeholder, body.theme-colour.contact_me :-moz-placeholder {
-    color: #000 !important; }
+    color: #1A1A1A !important; }
   body.theme-colour.black.is-bottom ::-moz-placeholder, body.theme-colour.white.is-top ::-moz-placeholder, body.theme-colour.contact_me ::-moz-placeholder {
-    color: #000 !important; }
+    color: #1A1A1A !important; }
   body.theme-colour.black.is-bottom :-ms-input-placeholder, body.theme-colour.white.is-top :-ms-input-placeholder, body.theme-colour.contact_me :-ms-input-placeholder {
-    color: #000 !important; }
+    color: #1A1A1A !important; }
   body.theme-colour.black.is-bottom input.text, body.theme-colour.black.is-bottom textarea.textarea, body.theme-colour.black.is-bottom .form-group > select, body.theme-colour.white.is-top input.text, body.theme-colour.white.is-top textarea.textarea, body.theme-colour.white.is-top .form-group > select, body.theme-colour.contact_me input.text, body.theme-colour.contact_me textarea.textarea, body.theme-colour.contact_me .form-group > select {
-    color: #1A1A1A !important;
+    color: #000 !important;
     border-color: #000; }
   body.theme-colour.black.is-bottom .custom-control-label, body.theme-colour.white.is-top .custom-control-label, body.theme-colour.contact_me .custom-control-label {
     color: #000; }
@@ -12699,7 +12699,7 @@ i.fa.link:hover {
   .cursor.hoveredModal:after {
     border-color: #000; }
   .cursor.hoveredDragSides {
-    border-color: #bfbfbf;
+    border-color: #FFF;
     mix-blend-mode: normal; }
     .cursor.hoveredDragSides:before, .cursor.hoveredDragSides:after {
       width: 5px;
@@ -12707,7 +12707,7 @@ i.fa.link:hover {
       top: 14.5px;
       font-family: FontAwesome;
       font-size: 14px;
-      color: #bfbfbf;
+      color: #FFF;
       border: none;
       z-index: 11001; }
     .cursor.hoveredDragSides:before {

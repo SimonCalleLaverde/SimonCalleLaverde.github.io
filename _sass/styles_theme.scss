@@ -483,16 +483,16 @@ a {
 
 // Forms (Custom | Overiding Bootstrap's)
 ::-webkit-input-placeholder {
-  color:#FFF!important;
+  color:theme-color('grey-light')!important;;
 }
 :-moz-placeholder {//Firefox 18-
-  color:#FFF!important;
+  color:theme-color('grey-light')!important;;
 }
 ::-moz-placeholder {//Firefox 19+
-  color:#FFF!important;
+  color:theme-color('grey-light')!important;;
 }
 :-ms-input-placeholder {
-  color:#FFF!important;
+  color:theme-color('grey-light')!important;;
 }
 input.text, textarea.textarea, .form-group > select {
   padding-left:0;
@@ -500,7 +500,7 @@ input.text, textarea.textarea, .form-group > select {
   font-weight:normal;
   font-style:normal;
   font-size:20px;
-  color:theme-color('grey-light')!important;
+  color:#FFF!important;
   background-color:transparent;
   border:none;
   border-bottom:2px solid #FFF;
@@ -792,8 +792,8 @@ a {
   z-index:100002;
   .profile-picture {
     display:inline-block;
-    width:100px;//150px
-    height:95px;//145px
+    width:150px;
+    height:145px;
     @include border-radius(50%);
     @include filter(grayscale(100%));
   }
@@ -1512,8 +1512,8 @@ footer {
     .profile-picture {
       //position:absolute;
       display:inline-block;
-      width:195px;//205px//var(--glitch-width)
-      height:190px;//200px//var(--glitch-height)
+      width:205px;//var(--glitch-width)
+      height:200px;//var(--glitch-height)
       //--glitch-width:250px;//100px
       //--glitch-height:240px;//95px
       //top:40px;
@@ -1646,19 +1646,19 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
     color:#000;
   }
   ::-webkit-input-placeholder {
-    color:#000!important;
+    color:theme-color('grey-dark')!important;
   }
   :-moz-placeholder {//Firefox 18-
-    color:#000!important;
+    color:theme-color('grey-dark')!important;
   }
   ::-moz-placeholder {//Firefox 19+
-    color:#000!important;
+    color:theme-color('grey-dark')!important;
   }
   :-ms-input-placeholder {
-    color:#000!important;
+    color:theme-color('grey-dark')!important;
   }
   input.text, textarea.textarea, .form-group > select {
-    color:theme-color('grey-dark')!important;
+    color:#000!important;
     border-color:#000;
   }
   .custom-control-label {
@@ -1911,7 +1911,7 @@ i.fa {
     }
   }
   &.hoveredDragSides {
-    border-color:theme-color('grey-mid');
+    border-color:#FFF;
     mix-blend-mode:normal;
     &:before, &:after {
       width:5px;
@@ -1919,7 +1919,7 @@ i.fa {
       top:14.5px;
       font-family:FontAwesome;
       font-size:14px;
-      color:theme-color('grey-mid');
+      color:#FFF;
       border:none;
       z-index:11001;
     }
