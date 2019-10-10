@@ -365,7 +365,9 @@ a {
 
 // Buttons
 .btn {
-  font-weight:bold;
+  font-family:$font-subtitle;
+  font-weight:normal;
+  font-style:normal;
   font-size:20px;
   //text-transform:uppercase;
   white-space:nowrap;
@@ -503,6 +505,10 @@ input.text, textarea.textarea, .form-group > select {
   border:none;
   border-bottom:2px solid #FFF;
   @include border-radius(0);
+  &:focus {
+    outline:none;
+    @include box-shadow(none);
+  }
 }
 input.text .form-group > select {
   height:60px;
@@ -519,11 +525,12 @@ textarea.textarea {
 input[type="submit"] {
 }
 .custom-control-label {
-  // font-family:$font-subtitle;
-  // font-weight:normal;
-  // font-style:normal;
-  // font-size:20px;
+  font-family:$font-subtitle;
+  font-weight:normal;
+  font-style:normal;
+  font-size:20px;
   color:#FFF;
+  line-height:1.3;
 }
 
 // Panels
