@@ -153,7 +153,7 @@ body {
   background-color:#000;
   z-index:1;
   overscroll-behavior-y:none;//WOW!!! (4:44am, trying around 4 diff plugins and ways, and this was the answer for the buggy bounce)
-  @include transition(background-color ease-out 0.5s);
+  @include transition(all ease-out 0.5s);
   &.rendering, &.home-rendering {
     cursor:progress;
     overflow:hidden;
@@ -1566,7 +1566,7 @@ body.page-type-basic.work {
 }
 
 // Theme Colour Black/White | is-top/is-bottom
-body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
+body.theme-colour.white, body.theme-colour.contact_me {//body.theme-colour.black.is-bottom, body.theme-colour.white.is-top
   background-color:#FFF;
   .background-for-color {
     background-color:theme-color('grey-light');

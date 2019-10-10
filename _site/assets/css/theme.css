@@ -11164,11 +11164,11 @@ body {
   background-color: #000;
   z-index: 1;
   overscroll-behavior-y: none;
-  -webkit-transition: background-color ease-out 0.5s;
-  -moz-transition: background-color ease-out 0.5s;
-  -ms-transition: background-color ease-out 0.5s;
-  -o-transition: background-color ease-out 0.5s;
-  transition: background-color ease-out 0.5s; }
+  -webkit-transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -ms-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s; }
   body.rendering, body.home-rendering {
     cursor: progress;
     overflow: hidden; }
@@ -12542,40 +12542,40 @@ body.page-type-feedback a.logo {
 body.page-type-feedback .logo-cover {
   display: none; }
 
-body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
+body.theme-colour.white, body.theme-colour.contact_me {
   background-color: #FFF; }
-  body.theme-colour.black.is-bottom .background-for-color, body.theme-colour.white.is-top .background-for-color, body.theme-colour.contact_me .background-for-color {
+  body.theme-colour.white .background-for-color, body.theme-colour.contact_me .background-for-color {
     background-color: #FEFEFE; }
-  body.theme-colour.black.is-bottom a.logo .logo-interior svg, body.theme-colour.white.is-top a.logo .logo-interior svg, body.theme-colour.contact_me a.logo .logo-interior svg {
+  body.theme-colour.white a.logo .logo-interior svg, body.theme-colour.contact_me a.logo .logo-interior svg {
     fill: #1A1A1A; }
-  body.theme-colour.black.is-bottom .text-white, body.theme-colour.black.is-bottom .text-grey-light, body.theme-colour.black.is-bottom .text-grey-mid, body.theme-colour.white.is-top .text-white, body.theme-colour.white.is-top .text-grey-light, body.theme-colour.white.is-top .text-grey-mid, body.theme-colour.contact_me .text-white, body.theme-colour.contact_me .text-grey-light, body.theme-colour.contact_me .text-grey-mid {
+  body.theme-colour.white .text-white, body.theme-colour.white .text-grey-light, body.theme-colour.white .text-grey-mid, body.theme-colour.contact_me .text-white, body.theme-colour.contact_me .text-grey-light, body.theme-colour.contact_me .text-grey-mid {
     color: #000 !important; }
-  body.theme-colour.black.is-bottom .text-stroke-white, body.theme-colour.white.is-top .text-stroke-white, body.theme-colour.contact_me .text-stroke-white {
+  body.theme-colour.white .text-stroke-white, body.theme-colour.contact_me .text-stroke-white {
     -webkit-text-stroke-color: #1A1A1A !important; }
-  body.theme-colour.black.is-bottom .text-grey-light, body.theme-colour.white.is-top .text-grey-light, body.theme-colour.contact_me .text-grey-light {
+  body.theme-colour.white .text-grey-light, body.theme-colour.contact_me .text-grey-light {
     color: #1A1A1A !important; }
-  body.theme-colour.black.is-bottom .copyright, body.theme-colour.white.is-top .copyright, body.theme-colour.contact_me .copyright {
+  body.theme-colour.white .copyright, body.theme-colour.contact_me .copyright {
     color: #FEFEFE !important; }
-  body.theme-colour.black.is-bottom .intro, body.theme-colour.white.is-top .intro, body.theme-colour.contact_me .intro {
+  body.theme-colour.white .intro, body.theme-colour.contact_me .intro {
     color: #000; }
-  body.theme-colour.black.is-bottom ::-webkit-input-placeholder, body.theme-colour.white.is-top ::-webkit-input-placeholder, body.theme-colour.contact_me ::-webkit-input-placeholder {
+  body.theme-colour.white ::-webkit-input-placeholder, body.theme-colour.contact_me ::-webkit-input-placeholder {
     color: #1A1A1A !important; }
-  body.theme-colour.black.is-bottom :-moz-placeholder, body.theme-colour.white.is-top :-moz-placeholder, body.theme-colour.contact_me :-moz-placeholder {
+  body.theme-colour.white :-moz-placeholder, body.theme-colour.contact_me :-moz-placeholder {
     color: #1A1A1A !important; }
-  body.theme-colour.black.is-bottom ::-moz-placeholder, body.theme-colour.white.is-top ::-moz-placeholder, body.theme-colour.contact_me ::-moz-placeholder {
+  body.theme-colour.white ::-moz-placeholder, body.theme-colour.contact_me ::-moz-placeholder {
     color: #1A1A1A !important; }
-  body.theme-colour.black.is-bottom :-ms-input-placeholder, body.theme-colour.white.is-top :-ms-input-placeholder, body.theme-colour.contact_me :-ms-input-placeholder {
+  body.theme-colour.white :-ms-input-placeholder, body.theme-colour.contact_me :-ms-input-placeholder {
     color: #1A1A1A !important; }
-  body.theme-colour.black.is-bottom input.text, body.theme-colour.black.is-bottom textarea.textarea, body.theme-colour.black.is-bottom .form-group > select, body.theme-colour.white.is-top input.text, body.theme-colour.white.is-top textarea.textarea, body.theme-colour.white.is-top .form-group > select, body.theme-colour.contact_me input.text, body.theme-colour.contact_me textarea.textarea, body.theme-colour.contact_me .form-group > select {
+  body.theme-colour.white input.text, body.theme-colour.white textarea.textarea, body.theme-colour.white .form-group > select, body.theme-colour.contact_me input.text, body.theme-colour.contact_me textarea.textarea, body.theme-colour.contact_me .form-group > select {
     color: #000 !important;
     border-color: #000; }
-  body.theme-colour.black.is-bottom .custom-control-label, body.theme-colour.white.is-top .custom-control-label, body.theme-colour.contact_me .custom-control-label {
+  body.theme-colour.white .custom-control-label, body.theme-colour.contact_me .custom-control-label {
     color: #000; }
-  body.theme-colour.black.is-bottom a.link:hover, body.theme-colour.black.is-bottom a.link div:hover, body.theme-colour.black.is-bottom a.link span:hover, body.theme-colour.black.is-bottom a .project-thumbnail:hover, body.theme-colour.white.is-top a.link:hover, body.theme-colour.white.is-top a.link div:hover, body.theme-colour.white.is-top a.link span:hover, body.theme-colour.white.is-top a .project-thumbnail:hover, body.theme-colour.contact_me a.link:hover, body.theme-colour.contact_me a.link div:hover, body.theme-colour.contact_me a.link span:hover, body.theme-colour.contact_me a .project-thumbnail:hover {
+  body.theme-colour.white a.link:hover, body.theme-colour.white a.link div:hover, body.theme-colour.white a.link span:hover, body.theme-colour.white a .project-thumbnail:hover, body.theme-colour.contact_me a.link:hover, body.theme-colour.contact_me a.link div:hover, body.theme-colour.contact_me a.link span:hover, body.theme-colour.contact_me a .project-thumbnail:hover {
     cursor: pointer; }
-  body.theme-colour.black.is-bottom i.fa.link:hover, body.theme-colour.white.is-top i.fa.link:hover, body.theme-colour.contact_me i.fa.link:hover {
+  body.theme-colour.white i.fa.link:hover, body.theme-colour.contact_me i.fa.link:hover {
     cursor: pointer; }
-  body.theme-colour.black.is-bottom .cursor, body.theme-colour.white.is-top .cursor, body.theme-colour.contact_me .cursor {
+  body.theme-colour.white .cursor, body.theme-colour.contact_me .cursor {
     background-color: transparent;
     border-color: transparent;
     -webkit-box-shadow: none;
@@ -12583,56 +12583,56 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
     -ms-box-shadow: none;
     -o-box-shadow: none;
     box-shadow: none; }
-    body.theme-colour.black.is-bottom .cursor:before, body.theme-colour.black.is-bottom .cursor:after, body.theme-colour.white.is-top .cursor:before, body.theme-colour.white.is-top .cursor:after, body.theme-colour.contact_me .cursor:before, body.theme-colour.contact_me .cursor:after {
+    body.theme-colour.white .cursor:before, body.theme-colour.white .cursor:after, body.theme-colour.contact_me .cursor:before, body.theme-colour.contact_me .cursor:after {
       display: none; }
-    body.theme-colour.black.is-bottom .cursor.hoveredProject:before, body.theme-colour.black.is-bottom .cursor.hoveredProject:after, body.theme-colour.white.is-top .cursor.hoveredProject:before, body.theme-colour.white.is-top .cursor.hoveredProject:after, body.theme-colour.contact_me .cursor.hoveredProject:before, body.theme-colour.contact_me .cursor.hoveredProject:after {
+    body.theme-colour.white .cursor.hoveredProject:before, body.theme-colour.white .cursor.hoveredProject:after, body.theme-colour.contact_me .cursor.hoveredProject:before, body.theme-colour.contact_me .cursor.hoveredProject:after {
       display: block; }
-    body.theme-colour.black.is-bottom .cursor.hoveredFooter:before, body.theme-colour.black.is-bottom .cursor.hoveredFooter:after, body.theme-colour.white.is-top .cursor.hoveredFooter:before, body.theme-colour.white.is-top .cursor.hoveredFooter:after, body.theme-colour.contact_me .cursor.hoveredFooter:before, body.theme-colour.contact_me .cursor.hoveredFooter:after {
+    body.theme-colour.white .cursor.hoveredFooter:before, body.theme-colour.white .cursor.hoveredFooter:after, body.theme-colour.contact_me .cursor.hoveredFooter:before, body.theme-colour.contact_me .cursor.hoveredFooter:after {
       display: block; }
-    body.theme-colour.black.is-bottom .cursor.hoveredFooter:before, body.theme-colour.white.is-top .cursor.hoveredFooter:before, body.theme-colour.contact_me .cursor.hoveredFooter:before {
+    body.theme-colour.white .cursor.hoveredFooter:before, body.theme-colour.contact_me .cursor.hoveredFooter:before {
       background-color: #000;
       border-color: #000;
       color: #FFF; }
-  body.theme-colour.black.is-bottom .footer-profile-picture .profile-picture, body.theme-colour.white.is-top .footer-profile-picture .profile-picture, body.theme-colour.contact_me .footer-profile-picture .profile-picture {
+  body.theme-colour.white .footer-profile-picture .profile-picture, body.theme-colour.contact_me .footer-profile-picture .profile-picture {
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
     -ms-filter: grayscale(0);
     -o-filter: grayscale(0);
     filter: grayscale(0); }
-  body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-circle.text-facebook {
+  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-circle.text-facebook {
     color: #3B5998 !important; }
-  body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-circle.text-instagram {
+  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-circle.text-instagram {
     color: #E1306C !important; }
-  body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-circle.text-pinterest {
+  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-circle.text-pinterest {
     color: #BD081C !important; }
-  body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-stack-1x, body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-facebook, body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media span.fa-stack.custom .fa-instagram, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-stack-1x, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-facebook, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-pinterest, body.theme-colour.white.is-top aside.nav-social-media span.fa-stack.custom .fa-instagram, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-stack-1x, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-facebook, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-pinterest, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-instagram {
+  body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-stack-1x, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-facebook, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-pinterest, body.theme-colour.white aside.nav-social-media span.fa-stack.custom .fa-instagram, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-stack-1x, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-facebook, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-pinterest, body.theme-colour.contact_me aside.nav-social-media span.fa-stack.custom .fa-instagram {
     color: #FFF !important; }
-  body.theme-colour.black.is-bottom aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.black.is-bottom aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.black.is-bottom aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.black.is-bottom aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.black.is-bottom aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.black.is-bottom aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white.is-top aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white.is-top aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white.is-top aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white.is-top aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white.is-top aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white.is-top aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.contact_me aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.contact_me aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.contact_me aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.contact_me aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.contact_me aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.contact_me aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook {
+  body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.contact_me aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.contact_me aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.contact_me aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.contact_me aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-facebook, body.theme-colour.contact_me aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-facebook, body.theme-colour.contact_me aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-facebook {
     color: #4c70ba !important; }
-  body.theme-colour.black.is-bottom aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.black.is-bottom aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.black.is-bottom aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.black.is-bottom aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.black.is-bottom aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.black.is-bottom aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white.is-top aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white.is-top aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white.is-top aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white.is-top aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white.is-top aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white.is-top aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.contact_me aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.contact_me aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.contact_me aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.contact_me aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.contact_me aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.contact_me aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-instagram {
+  body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.contact_me aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.contact_me aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.contact_me aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.contact_me aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-instagram, body.theme-colour.contact_me aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-instagram, body.theme-colour.contact_me aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-instagram {
     color: #e75d8c !important; }
-  body.theme-colour.black.is-bottom aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.black.is-bottom aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white.is-top aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.contact_me aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.contact_me aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.contact_me aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.contact_me aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.contact_me aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.contact_me aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest {
+  body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.white aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.contact_me aside.nav-social-media a:hover span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.contact_me aside.nav-social-media a:hover span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.contact_me aside.nav-social-media a:active span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.contact_me aside.nav-social-media a:active span.fa-stack.custom .fa-circle.text-pinterest, body.theme-colour.contact_me aside.nav-social-media a:focus span.fa-stack.custom .fa-stack-2x.text-pinterest, body.theme-colour.contact_me aside.nav-social-media a:focus span.fa-stack.custom .fa-circle.text-pinterest {
     color: #ee0a23 !important; }
-  body.theme-colour.black.is-bottom article.project-article.home .project-thumbnail time.project-year, body.theme-colour.black.is-bottom article.project-article.work .project-thumbnail time.project-year, body.theme-colour.white.is-top article.project-article.home .project-thumbnail time.project-year, body.theme-colour.white.is-top article.project-article.work .project-thumbnail time.project-year, body.theme-colour.contact_me article.project-article.home .project-thumbnail time.project-year, body.theme-colour.contact_me article.project-article.work .project-thumbnail time.project-year {
+  body.theme-colour.white article.project-article.home .project-thumbnail time.project-year, body.theme-colour.white article.project-article.work .project-thumbnail time.project-year, body.theme-colour.contact_me article.project-article.home .project-thumbnail time.project-year, body.theme-colour.contact_me article.project-article.work .project-thumbnail time.project-year {
     color: #EB0082 !important; }
-  body.theme-colour.black.is-bottom .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before, body.theme-colour.black.is-bottom .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after, body.theme-colour.white.is-top .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before, body.theme-colour.white.is-top .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after, body.theme-colour.contact_me .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before, body.theme-colour.contact_me .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after {
+  body.theme-colour.white .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before, body.theme-colour.white .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after, body.theme-colour.contact_me .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before, body.theme-colour.contact_me .slick-as-nav-for .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after {
     background-color: #FEFEFE; }
-  body.theme-colour.black.is-bottom .headline-link, body.theme-colour.white.is-top .headline-link, body.theme-colour.contact_me .headline-link {
+  body.theme-colour.white .headline-link, body.theme-colour.contact_me .headline-link {
     -webkit-text-stroke: 2px #000; }
-    body.theme-colour.black.is-bottom .headline-link:hover, body.theme-colour.black.is-bottom .headline-link:active, body.theme-colour.black.is-bottom .headline-link:focus, body.theme-colour.white.is-top .headline-link:hover, body.theme-colour.white.is-top .headline-link:active, body.theme-colour.white.is-top .headline-link:focus, body.theme-colour.contact_me .headline-link:hover, body.theme-colour.contact_me .headline-link:active, body.theme-colour.contact_me .headline-link:focus {
+    body.theme-colour.white .headline-link:hover, body.theme-colour.white .headline-link:active, body.theme-colour.white .headline-link:focus, body.theme-colour.contact_me .headline-link:hover, body.theme-colour.contact_me .headline-link:active, body.theme-colour.contact_me .headline-link:focus {
       color: #000 !important;
       -webkit-text-stroke: 2px #000; }
-  body.theme-colour.black.is-bottom .text-stroke-white, body.theme-colour.white.is-top .text-stroke-white, body.theme-colour.contact_me .text-stroke-white {
+  body.theme-colour.white .text-stroke-white, body.theme-colour.contact_me .text-stroke-white {
     -webkit-text-stroke: 2px #000 !important; }
-  body.theme-colour.black.is-bottom .text-line-through:after, body.theme-colour.black.is-bottom .text-line-through:before, body.theme-colour.white.is-top .text-line-through:after, body.theme-colour.white.is-top .text-line-through:before, body.theme-colour.contact_me .text-line-through:after, body.theme-colour.contact_me .text-line-through:before {
+  body.theme-colour.white .text-line-through:after, body.theme-colour.white .text-line-through:before, body.theme-colour.contact_me .text-line-through:after, body.theme-colour.contact_me .text-line-through:before {
     background-color: #1A1A1A; }
-  body.theme-colour.black.is-bottom a:hover.text-line-through:after, body.theme-colour.white.is-top a:hover.text-line-through:after, body.theme-colour.contact_me a:hover.text-line-through:after {
+  body.theme-colour.white a:hover.text-line-through:after, body.theme-colour.contact_me a:hover.text-line-through:after {
     background-color: transparent; }
-  body.theme-colour.black.is-bottom nav.burger-wrapper .burger-menu:hover .burger-circle, body.theme-colour.white.is-top nav.burger-wrapper .burger-menu:hover .burger-circle, body.theme-colour.contact_me nav.burger-wrapper .burger-menu:hover .burger-circle {
+  body.theme-colour.white nav.burger-wrapper .burger-menu:hover .burger-circle, body.theme-colour.contact_me nav.burger-wrapper .burger-menu:hover .burger-circle {
     border-color: #FFF; }
-  body.theme-colour.black.is-bottom .text-get-in-touch, body.theme-colour.white.is-top .text-get-in-touch, body.theme-colour.contact_me .text-get-in-touch {
+  body.theme-colour.white .text-get-in-touch, body.theme-colour.contact_me .text-get-in-touch {
     color: #1A1A1A; }
-    body.theme-colour.black.is-bottom .text-get-in-touch:before, body.theme-colour.black.is-bottom .text-get-in-touch:after, body.theme-colour.white.is-top .text-get-in-touch:before, body.theme-colour.white.is-top .text-get-in-touch:after, body.theme-colour.contact_me .text-get-in-touch:before, body.theme-colour.contact_me .text-get-in-touch:after {
+    body.theme-colour.white .text-get-in-touch:before, body.theme-colour.white .text-get-in-touch:after, body.theme-colour.contact_me .text-get-in-touch:before, body.theme-colour.contact_me .text-get-in-touch:after {
       background-color: #1A1A1A; }
 
 a.link:hover, a.link div:hover, a.link span:hover, a .project-thumbnail:hover {
@@ -13035,13 +13035,13 @@ body.first-load:after {
       left: 35px;
       font-size: 15px; }
 
-  body.theme-colour.black.is-bottom .navbar ul.navbar-nav li.nav-item a.nav-link, body.theme-colour.white.is-top .navbar ul.navbar-nav li.nav-item a.nav-link, body.theme-colour.contact_me .navbar ul.navbar-nav li.nav-item a.nav-link {
+  body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link, body.theme-colour.contact_me .navbar ul.navbar-nav li.nav-item a.nav-link {
     color: #1A1A1A; }
-    body.theme-colour.black.is-bottom .navbar ul.navbar-nav li.nav-item a.nav-link:hover, body.theme-colour.white.is-top .navbar ul.navbar-nav li.nav-item a.nav-link:hover, body.theme-colour.contact_me .navbar ul.navbar-nav li.nav-item a.nav-link:hover {
+    body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link:hover, body.theme-colour.contact_me .navbar ul.navbar-nav li.nav-item a.nav-link:hover {
       color: #000; }
-    body.theme-colour.black.is-bottom .navbar ul.navbar-nav li.nav-item a.nav-link.active:after, body.theme-colour.white.is-top .navbar ul.navbar-nav li.nav-item a.nav-link.active:after, body.theme-colour.contact_me .navbar ul.navbar-nav li.nav-item a.nav-link.active:after {
+    body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link.active:after, body.theme-colour.contact_me .navbar ul.navbar-nav li.nav-item a.nav-link.active:after {
       border: 1.5px solid #EB0082; }
-    body.theme-colour.black.is-bottom .navbar ul.navbar-nav li.nav-item a.nav-link.active.not-active, body.theme-colour.white.is-top .navbar ul.navbar-nav li.nav-item a.nav-link.active.not-active, body.theme-colour.contact_me .navbar ul.navbar-nav li.nav-item a.nav-link.active.not-active {
+    body.theme-colour.white .navbar ul.navbar-nav li.nav-item a.nav-link.active.not-active, body.theme-colour.contact_me .navbar ul.navbar-nav li.nav-item a.nav-link.active.not-active {
       color: #1A1A1A; } }
 @media (min-width: 1200px) {
   .container {
