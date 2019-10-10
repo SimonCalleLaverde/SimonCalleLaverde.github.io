@@ -11969,11 +11969,11 @@ nav.burger-wrapper {
       cursor: pointer;
       pointer-events: none;
       z-index: 6504;
-      -webkit-border-radius: 32px;
-      -moz-border-radius: 32px;
-      -ms-border-radius: 32px;
-      -o-border-radius: 32px;
-      border-radius: 32px; }
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%; }
     nav.burger-wrapper .burger-menu .burger-center {
       position: relative;
       width: 14px;
@@ -11984,6 +11984,7 @@ nav.burger-wrapper {
       nav.burger-wrapper .burger-menu .burger-center:before, nav.burger-wrapper .burger-menu .burger-center:after {
         position: absolute;
         margin: auto;
+        margin-top: 2px;
         margin-left: -2px;
         top: 0;
         right: 0;
@@ -11998,12 +11999,7 @@ nav.burger-wrapper {
         -o-transition: 0.2s ease-in-out;
         transition: 0.2s ease-in-out; }
       nav.burger-wrapper .burger-menu .burger-center:before {
-        content: "All";
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg); }
+        content: "All"; }
       nav.burger-wrapper .burger-menu .burger-center:after {
         content: "Projects";
         -webkit-filter: opacity(0);
@@ -12023,11 +12019,11 @@ nav.burger-wrapper {
       -o-transform: translateX(-44px);
       transform: translateX(-44px); }
     nav.burger-wrapper .burger-menu:hover .burger-center:after {
-      -webkit-transform: translateX(-14px) rotate(0);
-      -moz-transform: translateX(-14px) rotate(0);
-      -ms-transform: translateX(-14px) rotate(0);
-      -o-transform: translateX(-14px) rotate(0);
-      transform: translateX(-14px) rotate(0);
+      -webkit-transform: translateX(-14px);
+      -moz-transform: translateX(-14px);
+      -ms-transform: translateX(-14px);
+      -o-transform: translateX(-14px);
+      transform: translateX(-14px);
       -webkit-filter: opacity(1);
       -moz-filter: opacity(1);
       -ms-filter: opacity(1);
