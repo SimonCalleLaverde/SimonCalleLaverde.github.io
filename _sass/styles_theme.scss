@@ -153,7 +153,7 @@ body {
   background-color:#000;
   z-index:1;
   overscroll-behavior-y:none;//WOW!!! (4:44am, trying around 4 diff plugins and ways, and this was the answer for the buggy bounce)
-  @include transition(all ease-out 0.5s);
+  @include transition(background-color ease-out 0.5s);
   &.rendering, &.home-rendering {
     cursor:progress;
     overflow:hidden;
@@ -162,6 +162,9 @@ body {
     .background-for-color, main {
       @include transform(translateY(100vh));
       @include animation(mainTranslateAnim 0.7s ease-in 1.5s forwards);
+    }
+    .background-for-animation {
+      @include animation(backgroundTranslateAnim 0.7s ease-in 1.1s forwards);
     }
   }
 }
@@ -246,12 +249,10 @@ figure {
 .background-for-color {
   background-color:theme-color('grey-dark');
   z-index:3;
-  @include transition(all ease-in-out 0.3s);
+  @include transition(transform ease-in-out 0.3s, background-color ease-in-out 0.3s);
 }
-.imagesloaded {
-  .background-for-animation {
-    @include animation(backgroundTranslateAnim 0.7s ease-in 1.1s forwards);
-  }
+.background-for-animation {
+  @include transition(transform ease-in-out 0.3s);
 }
 
 // Grid
@@ -294,7 +295,7 @@ main, header, section, footer {
 main {
   text-align:center;
   //z-index:6;
-  @include transition(all ease-in-out 0.3s);
+  @include transition(transform ease-in-out 0.3s);
 }
 header, section, footer {
   //z-index:7;
@@ -479,6 +480,9 @@ a {
       height:7px;
     }
   }
+}
+.text-white, .text-grey-light, .text-grey-mid {
+  @include transition(color ease-out 0.5s);
 }
 
 // Forms (Custom | Overiding Bootstrap's)
@@ -1393,64 +1397,16 @@ section.my-skills-section {
   .skills-design-image {
     @include transform(translateY(-45px));
   }
-
-
-
-  // .skills-list {
-  //   // i.fa {
-  //   //   font-size:12px;
-  //   //   margin:0 3px;
-  //   // }
-  //   ul {
-  //     li {
-  //       position:relative;
-  //       &:before {
-  //         position:absolute;
-  //         content:'';
-  //         height:100%;
-  //         width:100%;
-  //         top:0;
-  //         right:0;
-  //         bottom:0;
-  //         left:0;
-  //         background-color:theme-color('magenta');
-  //         @include filter(opacity(0.3));
-  //       }
-  //     }
-  //     li:nth-child(1) {
-  //       &:before {
-  //         @include animation(textOverlayAnim 3s ease-in 0 infinite);
-  //       }
-  //     }
-  //     li:nth-child(2) {
-  //       &:before {
-  //         @include animation(textOverlayAnim 3s ease-in 3s infinite);
-  //       }
-  //     }
-  //     li:nth-child(3) {
-  //       &:before {
-  //         @include animation(textOverlayAnim 3s ease-in 6s infinite);
-  //       }
-  //     }
-  //     li:nth-child(4) {
-  //       &:before {
-  //         @include animation(textOverlayAnim 3s ease-in 9s infinite);
-  //       }
-  //     }
-  //   }
-  // }
-
-
-
   .text-get-in-touch {
     position:relative;
     width:100%;
     height:400px;
     font-size:11px;
-    color:#FFF;
+    color:theme-color('grey-light');
     letter-spacing:3px;
     writing-mode:vertical-rl;
     text-orientation:mixed;
+    @include transition(all ease-out 0.5s);
     //@include transform(rotate(90deg));
     &:before, &:after {
       content:'';
@@ -1462,7 +1418,7 @@ section.my-skills-section {
       right:0;
       bottom:0;
       left:0;
-      background-color:#FFF;
+      background-color:theme-color('grey-light');
       @include filter(opacity(0.5));
     }
     &:before {
@@ -1521,7 +1477,7 @@ footer {
       //cursor:pointer;
       @include border-radius(50%);
       @include filter(grayscale(100%));
-      @include transition(all ease-out 0.3s);
+      @include transition(all ease-out 0.5s);
       // &:hover, &:active, &:focus {
       //   @include filter(grayscale(0));
       // }
@@ -1767,13 +1723,6 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
       }
     }
   }
-  // .switch-colour-wrap {
-  //   a.switch-theme-colour {
-  //     &:hover {//, &:active, &:focus
-  //       @include box-shadow(0 0 5px rgba(0,0,0,0.5)!important);
-  //     }
-  //   }
-  // }
   .headline-link {
     -webkit-text-stroke:2px #000;
     &:hover, &:active, &:focus {
@@ -1815,6 +1764,21 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
       }
     }
   }
+  .text-get-in-touch {
+    color:theme-color('grey-dark');
+    &:before, &:after {
+      background-color:theme-color('grey-dark');
+    }
+  }
+  // section.my-skills-section {
+  //   .slick-carousel.carousel-my-skills {
+  //     img {
+  //       &:nth-child(3) {
+  //         display:none;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 //----------------------------------Cursor Custom Styles----------------------------------//
