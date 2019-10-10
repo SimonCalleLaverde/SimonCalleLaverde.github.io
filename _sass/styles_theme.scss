@@ -477,7 +477,12 @@ a {
   }
 }
 
-// Forms
+// Forms (Custom | Overriding Bootstrap's)
+
+
+
+
+
 input.text, textarea.textarea, .form-group > select {
   //height:40px;
   //padding:8px 15px;
@@ -491,8 +496,6 @@ input.text, textarea.textarea, .form-group > select {
     }
   }
 }
-
-
 
 
 
@@ -519,6 +522,8 @@ input.text, textarea.textarea, .form-group > select {
 //   color: white;
 //   cursor: pointer
 // }
+
+
 
 
 
@@ -785,8 +790,8 @@ a {
   z-index:100002;
   .profile-picture {
     display:inline-block;
-    width:150px;
-    height:145px;
+    width:100px;//150px
+    height:95px;//145px
     @include border-radius(50%);
     @include filter(grayscale(100%));
   }
@@ -1504,8 +1509,8 @@ footer {
     .profile-picture {
       //position:absolute;
       display:inline-block;
-      width:205px;//var(--glitch-width)
-      height:200px;//var(--glitch-height)
+      width:195px;//205px//var(--glitch-width)
+      height:190px;//200px//var(--glitch-height)
       //--glitch-width:250px;//100px
       //--glitch-height:240px;//95px
       //top:40px;

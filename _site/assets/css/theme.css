@@ -11649,8 +11649,8 @@ a:hover.text-line-through:before {
   z-index: 100002; }
   .mobile-dev-notice .profile-picture {
     display: inline-block;
-    width: 150px;
-    height: 145px;
+    width: 100px;
+    height: 95px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -12425,8 +12425,8 @@ footer {
     text-align: center; }
     footer .footer-profile-picture .profile-picture {
       display: inline-block;
-      width: 205px;
-      height: 200px;
+      width: 195px;
+      height: 190px;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
