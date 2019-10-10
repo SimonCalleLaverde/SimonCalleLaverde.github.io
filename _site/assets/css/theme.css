@@ -11196,7 +11196,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 3px; }
 
 .font-subtitle {
-  font-family: "Playfair Display", serif !important;
+  font-family: "BG regular", "Avenir Next Pro Bold", Sans-serif !important;
   font-weight: normal !important;
   letter-spacing: 1.5px; }
 
@@ -11352,13 +11352,15 @@ a {
     color: #d8d8d8 !important; }
 
 .btn {
+  font-weight: bold;
+  font-size: 20px;
   text-transform: uppercase;
   white-space: nowrap;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
-  border-radius: 0.3rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
   -webkit-transition: all ease-out 0.3s;
   -moz-transition: all ease-out 0.3s;
   -ms-transition: all ease-out 0.3s;
@@ -11384,6 +11386,8 @@ a {
   .btn.btn-100 {
     width: 100%;
     text-align: center; }
+  .btn.btn-gigantic {
+    padding: 2rem 5rem; }
 
 .position-relative {
   position: relative; }
@@ -11450,6 +11454,24 @@ a {
   font-size: 4.5rem; }
   .text-big .text-line-through:before, .text-big .text-line-through:after {
     height: 7px; }
+
+input.text, textarea.textarea, .form-group > select {
+  padding-left: 0;
+  font-family: "BG regular", "Avenir Next Pro Bold", Sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  color: #000;
+  border: none;
+  border-bottom: 2px solid #000;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0; }
+
+input.text .form-group > select {
+  height: 60px; }
 
 .form-group > select:hover, .form-group > select:active, .form-group > select:focus {
   cursor: pointer; }

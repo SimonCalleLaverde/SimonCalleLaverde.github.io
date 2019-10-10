@@ -365,12 +365,11 @@ a {
 
 // Buttons
 .btn {
-  // font-family:$font-subtitle;
-  // font-weight:normal;
-  // font-style:normal;
+  font-weight:bold;
+  font-size:20px;
   text-transform:uppercase;
   white-space:nowrap;
-  @include border-radius(0.3rem);
+  @include border-radius(0);
   @include transition(all ease-out 0.3s);
   &.btn-longer {
     padding-right:2.5em;
@@ -387,6 +386,9 @@ a {
   &.btn-100 {
     width:100%;
     text-align:center;
+  }
+  &.btn-gigantic {
+    padding:2rem 5rem;
   }
 }
 
@@ -477,59 +479,32 @@ a {
   }
 }
 
-// Forms (Custom | Overriding Bootstrap's)
-
-
-
-
-
+// Forms (Custom | Overiding Bootstrap's)
 input.text, textarea.textarea, .form-group > select {
-  //height:40px;
-  //padding:8px 15px;
-  //border:none;//
-  //@include border-radius(0);
+  padding-left:0;
+  font-family:$font-subtitle;
+  font-weight:normal;
+  font-style:normal;
+  font-size:20px;
+  color:#000;
+  border:none;
+  border-bottom:2px solid #000;
+  @include border-radius(0);
+}
+input.text .form-group > select {
+  height:60px;
+}
+textarea.textarea {
 }
 .form-group {
   > select {
     &:hover, &:active, &:focus {
-      cursor:pointer;
+      cursor:pointer;//
     }
   }
 }
-
-
-
-
-
-// input {
-//   border: 1px solid #ccc;
-//   border-radius: 2px;
-//   padding: 1%;
-// }
-
-// /* target an element */
-// input[type="submit"] {
-//   background-color: white;
-//   padding: 1% 5%;
-//   border-color: purple;
-//   color: purple;
-// }
-
-// input[type="submit"]:hover {
-//   background-color: white;
-//   padding: 1% 5%;
-//   border-color: purple;
-//   color: white;
-//   cursor: pointer
-// }
-
-
-
-
-
-
-
-
+input[type="submit"] {
+}
 
 // Panels
 // article {
