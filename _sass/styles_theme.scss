@@ -1898,7 +1898,7 @@ i.fa {
     }
   }
 }
-body.is-bottom {
+//body {//body.is-bottom
   .cursor {
     &.hoveredFooter {
       mix-blend-mode:normal;
@@ -1927,7 +1927,7 @@ body.is-bottom {
       }
     }
   }
-}
+//}
 @media (pointer:coarse) and (hover:none) {
   .cursor {
     display:none!important;

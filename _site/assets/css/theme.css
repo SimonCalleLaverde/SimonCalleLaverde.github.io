@@ -12740,9 +12740,9 @@ i.fa.link:hover {
       right: 7px;
       left: auto; }
 
-body.is-bottom .cursor.hoveredFooter {
+.cursor.hoveredFooter {
   mix-blend-mode: normal; }
-  body.is-bottom .cursor.hoveredFooter:before {
+  .cursor.hoveredFooter:before {
     content: "Let's Talk";
     width: 120px;
     height: 120px;
