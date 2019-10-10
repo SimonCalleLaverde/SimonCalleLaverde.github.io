@@ -500,7 +500,7 @@ input.text, textarea.textarea, .form-group > select {
   font-weight:normal;
   font-style:normal;
   font-size:20px;
-  color:theme-color('magenta')!important;//theme-color('grey-light')
+  color:theme-color('grey-light')!important;
   background-color:transparent;
   border:none;
   border-bottom:2px solid #FFF;
@@ -1658,14 +1658,14 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
     color:#000!important;
   }
   input.text, textarea.textarea, .form-group > select {
-    color:theme-color('magenta')!important;//theme-color('grey-dark')
+    color:theme-color('grey-dark')!important;
     border-color:#000;
   }
   .custom-control-label {
     color:#000;
   }
   a {
-    &.link, > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6, .project-thumbnail, .logo-interior {//> figure
+    &.link, &.link div, &.link span, .project-thumbnail {
       &:hover {
         cursor:pointer;
       }
@@ -1821,7 +1821,7 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
 
 // Cursor
 a {
-  &.link, > span > i, > span, > i, > u, > p, > h1, > h2, > h3, > h4, > h5, > h6, .project-thumbnail, .logo-interior {//> figure
+  &.link, &.link div, &.link span, .project-thumbnail {
     &:hover {
       cursor:none;
     }
