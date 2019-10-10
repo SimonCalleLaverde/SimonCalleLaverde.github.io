@@ -11164,11 +11164,11 @@ body {
   background-color: #000;
   z-index: 1;
   overscroll-behavior-y: none;
-  -webkit-transition: all ease-out 0.5s;
-  -moz-transition: all ease-out 0.5s;
-  -ms-transition: all ease-out 0.5s;
-  -o-transition: all ease-out 0.5s;
-  transition: all ease-out 0.5s; }
+  -webkit-transition: background-color ease-out 0.5s;
+  -moz-transition: background-color ease-out 0.5s;
+  -ms-transition: background-color ease-out 0.5s;
+  -o-transition: background-color ease-out 0.5s;
+  transition: background-color ease-out 0.5s; }
   body.rendering, body.home-rendering {
     cursor: progress;
     overflow: hidden; }
@@ -12973,7 +12973,7 @@ body.first-load:after {
     padding: 50px 0 70px; }
 
   header.hello-header {
-    min-height: calc(100vh - 24px);
+    min-height: 100vh;
     padding: 40px 0; }
 
   section.my-work-section {

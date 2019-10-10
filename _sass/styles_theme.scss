@@ -153,7 +153,7 @@ body {
   background-color:#000;
   z-index:1;
   overscroll-behavior-y:none;//WOW!!! (4:44am, trying around 4 diff plugins and ways, and this was the answer for the buggy bounce)
-  @include transition(all ease-out 0.5s);
+  @include transition(background-color ease-out 0.5s);
   &.rendering, &.home-rendering {
     cursor:progress;
     overflow:hidden;
