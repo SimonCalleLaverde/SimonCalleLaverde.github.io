@@ -18,16 +18,18 @@
 		</div>
 	</div>
 
-	<!--<div class="row">
+	<!--{% comment %}
+	<div class="row">
 		<div class="col-md-12">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_question">Ask me a question...</label>
       	<input class="text form-control form-control-lg" type="text" name="question" placeholder="Ask me a question..." id="feedback_question">
 			</div>
 		</div>
-	</div>-->
+	</div>
+	{% endcomment %}-->
 
-	<div class="row pb-2">
+	<div class="row pt-3">
 		<div class="col-md-12">
 			<div class="custom-control custom-radio"><!--custom-checkbox--><!--form-check-->
 				<input class="custom-control-input" type="radio" name="project_stage" value="start_from_scratch" id="feedback_scratch"><!--form-check-input-->
@@ -36,35 +38,33 @@
 		</div>
 	</div>
 
-	<div class="row pb-3">
+	<div class="row pt-2">
 		<div class="col-md-12">
 			<div class="custom-control custom-radio"><!--custom-checkbox--><!--form-check-->
 				<input class="custom-control-input" type="radio" name="project_stage" value="start_from_design" id="feedback_we_have"><!--form-check-input-->
-				<label class="custom-control-label" for="feedback_we_have"> I have a few mockups or/and a design, we want to make that a reality</label><!--form-check-label-->
+				<label class="custom-control-label" for="feedback_we_have"> I have a few mockups or/and a design, we want to make it a reality</label><!--form-check-label-->
 			</div>
 		</div>
 	</div>
 	
-	<div class="row">
+	<div class="row pt-3">
 		<div class="col-md-12">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_message">Please, tell me more about your project</label>
-				<textarea class="textarea form-control form-control-lg" rows="4" name="message" id="feedback_message" placeholder="Please, tell me more about your project"></textarea>
+				<textarea class="textarea form-control form-control-lg" rows="3" name="message" id="feedback_message" placeholder="Please, tell me more about your project"></textarea>
 			</div>
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-md-12">
+	<div class="row pt-3">
+		<div class="col-md-6">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_budget">What is your estimated budget?</label>
       	<input class="text form-control form-control-lg" type="text" name="question" placeholder="What is your estimated budget?" id="feedback_budget">
 			</div>
 		</div>
-	</div>
 
-	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-6">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_timeframe">What is your timeframe?</label>
       	<input class="text form-control form-control-lg" type="text" name="question" placeholder="What is your timeframe?" id="feedback_timeframe">
@@ -75,8 +75,8 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="form-group">
-				<div class="button-wrap pt-3">
-					<input class="btn btn-magenta btn-gigantic" type="submit" value="Send">
+				<div class="button-wrap pt-5">
+					<input class="btn btn-magenta btn-gigantic" type="submit" value="Send Message">
 					<!--<button class="btn btn-magenta" type="submit">Send</button>--><!--Originnal For Formspree-->
 				</div>
 			</div>

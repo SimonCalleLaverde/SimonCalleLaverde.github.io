@@ -16,14 +16,16 @@
 		</div>
 	</div>
 
-	<!--<div class="row">
+	<!--{% comment %}
+	<div class="row">
 		<div class="col-md-12">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_question">Ask me a question...</label>
       	<input class="text form-control form-control-lg" type="text" name="question" placeholder="Ask me a question..." id="feedback_question">
 			</div>
 		</div>
-	</div>-->
+	</div>
+	{% endcomment %}-->
 
 	<div class="row pb-2">
 		<div class="col-md-12">
@@ -47,22 +49,20 @@
 		<div class="col-md-12">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_message">Please, tell me more about your project</label>
-				<textarea class="textarea form-control form-control-lg" rows="5" name="message" id="feedback_message" placeholder="Please, tell me more about your project"></textarea>
+				<textarea class="textarea form-control form-control-lg" rows="4" name="message" id="feedback_message" placeholder="Please, tell me more about your project"></textarea>
 			</div>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-6">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_budget">What is your estimated budget?</label>
       	<input class="text form-control form-control-lg" type="text" name="question" placeholder="What is your estimated budget?" id="feedback_budget">
 			</div>
 		</div>
-	</div>
 
-	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-6">
 			<div class="form-group">
 				<label class="sr-only" for="feedback_timeframe">What is your timeframe?</label>
       	<input class="text form-control form-control-lg" type="text" name="question" placeholder="What is your timeframe?" id="feedback_timeframe">
@@ -75,7 +75,7 @@
 			<div class="form-group">
 				<div class="button-wrap pt-3">
 					<input class="btn btn-primary" type="submit" value="Send">
-					<!--<button class="btn btn-primary" type="submit">Send</button>--><!--Originnal For Formspree-->
+					<!--<button class="btn btn-magenta" type="submit">Send</button>--><!--Originnal For Formspree-->
 				</div>
 			</div>
 		</div>

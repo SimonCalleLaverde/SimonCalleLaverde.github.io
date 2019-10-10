@@ -367,7 +367,7 @@ a {
 .btn {
   font-weight:bold;
   font-size:20px;
-  text-transform:uppercase;
+  //text-transform:uppercase;
   white-space:nowrap;
   @include border-radius(0);
   @include transition(all ease-out 0.3s);
@@ -388,7 +388,7 @@ a {
     text-align:center;
   }
   &.btn-gigantic {
-    padding:2rem 5rem;
+    padding:2.5rem 3.5rem;//2.5rem 5rem
   }
 }
 
@@ -480,15 +480,28 @@ a {
 }
 
 // Forms (Custom | Overiding Bootstrap's)
+::-webkit-input-placeholder {
+  color:#FFF!important;
+}
+:-moz-placeholder {//Firefox 18-
+  color:#FFF!important;
+}
+::-moz-placeholder {//Firefox 19+
+  color:#FFF!important;
+}
+:-ms-input-placeholder {
+  color:#FFF!important;
+}
 input.text, textarea.textarea, .form-group > select {
   padding-left:0;
   font-family:$font-subtitle;
   font-weight:normal;
   font-style:normal;
   font-size:20px;
-  color:#000;
+  color:theme-color('magenta')!important;//theme-color('grey-light')
+  background-color:transparent;
   border:none;
-  border-bottom:2px solid #000;
+  border-bottom:2px solid #FFF;
   @include border-radius(0);
 }
 input.text .form-group > select {
@@ -504,6 +517,13 @@ textarea.textarea {
   }
 }
 input[type="submit"] {
+}
+.custom-control-label {
+  // font-family:$font-subtitle;
+  // font-weight:normal;
+  // font-style:normal;
+  // font-size:20px;
+  color:#FFF;
 }
 
 // Panels
@@ -1615,6 +1635,25 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
     color:theme-color('grey-light')!important;
   }
   .intro {
+    color:#000;
+  }
+  ::-webkit-input-placeholder {
+    color:#000!important;
+  }
+  :-moz-placeholder {//Firefox 18-
+    color:#000!important;
+  }
+  ::-moz-placeholder {//Firefox 19+
+    color:#000!important;
+  }
+  :-ms-input-placeholder {
+    color:#000!important;
+  }
+  input.text, textarea.textarea, .form-group > select {
+    color:theme-color('magenta')!important;//theme-color('grey-dark')
+    border-color:#000;
+  }
+  .custom-control-label {
     color:#000;
   }
   a {

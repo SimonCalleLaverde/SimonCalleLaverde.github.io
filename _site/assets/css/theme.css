@@ -11354,7 +11354,6 @@ a {
 .btn {
   font-weight: bold;
   font-size: 20px;
-  text-transform: uppercase;
   white-space: nowrap;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -11387,7 +11386,7 @@ a {
     width: 100%;
     text-align: center; }
   .btn.btn-gigantic {
-    padding: 2rem 5rem; }
+    padding: 2.5rem 3.5rem; }
 
 .position-relative {
   position: relative; }
@@ -11455,15 +11454,28 @@ a {
   .text-big .text-line-through:before, .text-big .text-line-through:after {
     height: 7px; }
 
+::-webkit-input-placeholder {
+  color: #FFF !important; }
+
+:-moz-placeholder {
+  color: #FFF !important; }
+
+::-moz-placeholder {
+  color: #FFF !important; }
+
+:-ms-input-placeholder {
+  color: #FFF !important; }
+
 input.text, textarea.textarea, .form-group > select {
   padding-left: 0;
   font-family: "BG regular", "Avenir Next Pro Bold", Sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 20px;
-  color: #000;
+  color: #EB0082 !important;
+  background-color: transparent;
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #FFF;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -11475,6 +11487,9 @@ input.text .form-group > select {
 
 .form-group > select:hover, .form-group > select:active, .form-group > select:focus {
   cursor: pointer; }
+
+.custom-control-label {
+  color: #FFF; }
 
 .mobile-thumbnail-control {
   min-height: 300px; }
@@ -12514,6 +12529,19 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
   body.theme-colour.black.is-bottom .copyright, body.theme-colour.white.is-top .copyright, body.theme-colour.contact_me .copyright {
     color: #FEFEFE !important; }
   body.theme-colour.black.is-bottom .intro, body.theme-colour.white.is-top .intro, body.theme-colour.contact_me .intro {
+    color: #000; }
+  body.theme-colour.black.is-bottom ::-webkit-input-placeholder, body.theme-colour.white.is-top ::-webkit-input-placeholder, body.theme-colour.contact_me ::-webkit-input-placeholder {
+    color: #000 !important; }
+  body.theme-colour.black.is-bottom :-moz-placeholder, body.theme-colour.white.is-top :-moz-placeholder, body.theme-colour.contact_me :-moz-placeholder {
+    color: #000 !important; }
+  body.theme-colour.black.is-bottom ::-moz-placeholder, body.theme-colour.white.is-top ::-moz-placeholder, body.theme-colour.contact_me ::-moz-placeholder {
+    color: #000 !important; }
+  body.theme-colour.black.is-bottom :-ms-input-placeholder, body.theme-colour.white.is-top :-ms-input-placeholder, body.theme-colour.contact_me :-ms-input-placeholder {
+    color: #000 !important; }
+  body.theme-colour.black.is-bottom input.text, body.theme-colour.black.is-bottom textarea.textarea, body.theme-colour.black.is-bottom .form-group > select, body.theme-colour.white.is-top input.text, body.theme-colour.white.is-top textarea.textarea, body.theme-colour.white.is-top .form-group > select, body.theme-colour.contact_me input.text, body.theme-colour.contact_me textarea.textarea, body.theme-colour.contact_me .form-group > select {
+    color: #EB0082 !important;
+    border-color: #000; }
+  body.theme-colour.black.is-bottom .custom-control-label, body.theme-colour.white.is-top .custom-control-label, body.theme-colour.contact_me .custom-control-label {
     color: #000; }
   body.theme-colour.black.is-bottom a.link:hover, body.theme-colour.black.is-bottom a > span > i:hover, body.theme-colour.black.is-bottom a > span:hover, body.theme-colour.black.is-bottom a > i:hover, body.theme-colour.black.is-bottom a > u:hover, body.theme-colour.black.is-bottom a > p:hover, body.theme-colour.black.is-bottom a > h1:hover, body.theme-colour.black.is-bottom a > h2:hover, body.theme-colour.black.is-bottom a > h3:hover, body.theme-colour.black.is-bottom a > h4:hover, body.theme-colour.black.is-bottom a > h5:hover, body.theme-colour.black.is-bottom a > h6:hover, body.theme-colour.black.is-bottom a .project-thumbnail:hover, body.theme-colour.black.is-bottom a .logo-interior:hover, body.theme-colour.white.is-top a.link:hover, body.theme-colour.white.is-top a > span > i:hover, body.theme-colour.white.is-top a > span:hover, body.theme-colour.white.is-top a > i:hover, body.theme-colour.white.is-top a > u:hover, body.theme-colour.white.is-top a > p:hover, body.theme-colour.white.is-top a > h1:hover, body.theme-colour.white.is-top a > h2:hover, body.theme-colour.white.is-top a > h3:hover, body.theme-colour.white.is-top a > h4:hover, body.theme-colour.white.is-top a > h5:hover, body.theme-colour.white.is-top a > h6:hover, body.theme-colour.white.is-top a .project-thumbnail:hover, body.theme-colour.white.is-top a .logo-interior:hover, body.theme-colour.contact_me a.link:hover, body.theme-colour.contact_me a > span > i:hover, body.theme-colour.contact_me a > span:hover, body.theme-colour.contact_me a > i:hover, body.theme-colour.contact_me a > u:hover, body.theme-colour.contact_me a > p:hover, body.theme-colour.contact_me a > h1:hover, body.theme-colour.contact_me a > h2:hover, body.theme-colour.contact_me a > h3:hover, body.theme-colour.contact_me a > h4:hover, body.theme-colour.contact_me a > h5:hover, body.theme-colour.contact_me a > h6:hover, body.theme-colour.contact_me a .project-thumbnail:hover, body.theme-colour.contact_me a .logo-interior:hover {
     cursor: pointer; }
