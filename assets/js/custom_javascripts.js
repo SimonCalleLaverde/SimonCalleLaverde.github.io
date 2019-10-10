@@ -118,7 +118,7 @@ $(document).ready(function() {
     speed: 300,
     slidesToShow: 1,//3
     //slidesToScroll: 1,
-    //draggable: true,//default
+    draggable: true,//default
     //swipe: true,//default
     swipeToSlide: true,
     arrows: true,
@@ -151,12 +151,13 @@ $(document).ready(function() {
     infinite: true,
     //speed: 300,
     slidesToShow: 1,
-    swipeToSlide: true,
+    swipeToSlide: false,
+    draggable: false,
     arrows: false,
     variableWidth: false,
     adaptiveHeight: false,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 10000,
     pauseOnHover: false,
     pauseOnFocus: false,
     lazyLoad: 'ondemand',
