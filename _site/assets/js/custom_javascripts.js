@@ -156,7 +156,7 @@ $(document).ready(function() {
     variableWidth: false,
     adaptiveHeight: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     pauseOnHover: false,
     pauseOnFocus: false,
     lazyLoad: 'ondemand',
