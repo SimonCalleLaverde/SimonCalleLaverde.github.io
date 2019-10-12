@@ -1,4 +1,4 @@
-<article class="project-article work position-relative px-4 pb-4 pb-md-5" id="scroll_to_{{ project.order }}"><!--data-offset="-50"--><!--rellax--><!--data-rellax-speed="{% if posts_count_odd == 1 %}0.35{% elsif posts_count_even == 2 %}-0.35{% endif %}"--><!--data-speed-y="{% if posts_count_odd == 1 %}-2{% elsif posts_count_even == 2 %}2{% endif %}"--><!--luxy-el-->
+<article class="project-article work position-relative px-4 pb-4 pb-md-5" id="scroll_to_{{ project.order }}">
 	<a href="#" data-toggle="modal" data-target="#projectModal_{{ project.slug }}">
 		<style type="text/css">
 		  #thumbnail_{{ project.slug }} {
@@ -10,8 +10,8 @@
 		  }
 		</style>
 		<figure>
-			<div class="project-thumbnail scale-element bg-image d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail_{{ project.slug }}" type="image" title="{{ project.name }} Website Project"><!--loading="lazy"-->
-				<figcaption class="project-caption d-flex flex-column"><!--{% if posts_count_odd == 1 %}fade-up-right{% elsif posts_count_even == 2 %}fade-up-left{% endif %}-->
+			<div class="project-thumbnail scale-element bg-image d-flex flex-row justify-content-start align-items-end p-4 pr-5" id="thumbnail_{{ project.slug }}" type="image" title="{{ project.name }} Website Project">
+				<figcaption class="project-caption d-flex flex-column">
 					<div class="project-name align-self-start mb-2 py-2 px-3">
 						<h3 class="text-uppercase m-0">{{ project.name_for_thumbnail }}</h3>
 					</div>

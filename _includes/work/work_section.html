@@ -1,31 +1,5 @@
-<!--IN DEVELOPMENT | Disclaimer finish/design | Mobile version-->
-
 <section class="work-section clearfix" id="work_section">
   <div class="container">
-
-
-    {% comment %}
-    <div class="row pt-3">
-      <div class="col-md-2 offset-md-1">
-        <h5 class="text-magenta mb-5">Disclaimer:</h5>
-      </div>
-    </div>
-
-    <!--TESTING-->
-    <div class="row pt-4 pb-2">
-      <div class="col-md-8 offset-md-2">
-        <!--Desktop-->
-        <div class="intro text-white column_div d-none d-md-block">
-          {{ index.my_work_section.content }}
-        </div>
-        <!--Mobile-->
-        <div class="intro text-white d-block d-md-none" aria-hidden="true">
-          {{ index.my_work_section.content }}
-        </div>
-      </div>
-    </div>
-    {% endcomment %}
-
 
     {% assign sorted_projects = site.projects | sort:"order" | reverse %}
     
