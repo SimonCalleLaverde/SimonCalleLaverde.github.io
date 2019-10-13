@@ -12293,6 +12293,15 @@ body.home.home-rendering .cursor {
   /*mozilla firefox*/
   background: #ffb8df; }
 
+.custom-control.custom-checkbox input.custom-control-input:checked ~ label.custom-control-label::before, .custom-control.custom-radio input.custom-control-input:checked ~ label.custom-control-label::before {
+  background-color: #EB0082;
+  border-color: #EB0082;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(235, 0, 130, 0.2);
+  -moz-box-shadow: 0 0 0 0.2rem rgba(235, 0, 130, 0.2);
+  -ms-box-shadow: 0 0 0 0.2rem rgba(235, 0, 130, 0.2);
+  -o-box-shadow: 0 0 0 0.2rem rgba(235, 0, 130, 0.2);
+  box-shadow: 0 0 0 0.2rem rgba(235, 0, 130, 0.2); }
+
 a.logo {
   position: fixed;
   top: 35px;

@@ -1236,6 +1236,28 @@ body.home {
   background:lighten(theme-color('magenta'),40);
 }
 
+// Custom Checkboxes & Radio Buttons
+.custom-control {
+  &.custom-checkbox, &.custom-radio {
+    input.custom-control-input:checked ~ label.custom-control-label {
+      &::before {
+        background-color:theme-color('magenta');
+        border-color:theme-color('magenta');
+        @include box-shadow(0 0 0 0.2rem rgba(235,0,130,0.2));
+      }
+    }
+    label {
+      &:before {
+      }
+      &:after {
+        // border:1px solid theme-color('magenta');
+        // @include border-radius(50%);
+      }
+    }
+  }
+}
+
+
 //----------------------------------Section Styles----------------------------------//
 
 // Logo
