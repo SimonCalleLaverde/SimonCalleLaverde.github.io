@@ -1033,14 +1033,14 @@ nav.burger-wrapper {
       cursor:pointer;
       pointer-events:none;
       z-index:6504;
-      @include border-radius(50%);//32px
+      @include border-radius(50%);
     }
     .burger-center {
       position:relative;
       width:14px;
       height:22px;
       margin:0 auto;
-      pointer-events:none;//initial
+      pointer-events:none;
       z-index:6501;
       &:before, &:after {
         position:absolute;
@@ -1074,13 +1074,16 @@ nav.burger-wrapper {
         //@include animation(fa-spin 20s linear backwards infinite);
         &:before, &:after {
           margin-left:-1px;
-          letter-spacing:4px;
+          font-family:$font-headline;
+          font-weight:500;
+          font-size:13.5px;
+          letter-spacing:2px;
         }
         &:before {
-          @include transform(translateX(-44px));
+          @include transform(translateX(-40px));
         }
         &:after {
-          @include transform(translateX(-14px));//rotate(0)
+          @include transform(translateX(-10px));//rotate(0)
           @include filter(opacity(1));
         }
       }

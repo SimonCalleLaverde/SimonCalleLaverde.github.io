@@ -12024,19 +12024,22 @@ nav.burger-wrapper {
       border: 1px solid transparent; }
     nav.burger-wrapper .burger-menu:hover .burger-center:before, nav.burger-wrapper .burger-menu:hover .burger-center:after {
       margin-left: -1px;
-      letter-spacing: 4px; }
+      font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
+      font-weight: 500;
+      font-size: 13.5px;
+      letter-spacing: 2px; }
     nav.burger-wrapper .burger-menu:hover .burger-center:before {
-      -webkit-transform: translateX(-44px);
-      -moz-transform: translateX(-44px);
-      -ms-transform: translateX(-44px);
-      -o-transform: translateX(-44px);
-      transform: translateX(-44px); }
+      -webkit-transform: translateX(-40px);
+      -moz-transform: translateX(-40px);
+      -ms-transform: translateX(-40px);
+      -o-transform: translateX(-40px);
+      transform: translateX(-40px); }
     nav.burger-wrapper .burger-menu:hover .burger-center:after {
-      -webkit-transform: translateX(-14px);
-      -moz-transform: translateX(-14px);
-      -ms-transform: translateX(-14px);
-      -o-transform: translateX(-14px);
-      transform: translateX(-14px);
+      -webkit-transform: translateX(-10px);
+      -moz-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+      -o-transform: translateX(-10px);
+      transform: translateX(-10px);
       -webkit-filter: opacity(1);
       -moz-filter: opacity(1);
       -ms-filter: opacity(1);
