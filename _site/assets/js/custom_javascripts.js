@@ -115,7 +115,7 @@ $(document).ready(function() {
   $('.carousel-my-work').slick({
     dots: false,
     infinite: false,
-    speed: 300,
+    speed: 500,//300
     slidesToShow: 1,//3
     //slidesToScroll: 1,
     draggable: true,//default
@@ -137,6 +137,7 @@ $(document).ready(function() {
   $('.as-nav-for-my-work').slick({
     dots: false,
     infinite: false,
+    speed: 500,//300
     slidesToShow: 8,
     //slidesToScroll: 1,
     draggable: true,//default
