@@ -12029,17 +12029,17 @@ nav.burger-wrapper {
       font-size: 13.5px;
       letter-spacing: 2px; }
     nav.burger-wrapper .burger-menu:hover .burger-center:before {
-      -webkit-transform: translateX(-40px);
-      -moz-transform: translateX(-40px);
-      -ms-transform: translateX(-40px);
-      -o-transform: translateX(-40px);
-      transform: translateX(-40px); }
+      -webkit-transform: translateX(-42px);
+      -moz-transform: translateX(-42px);
+      -ms-transform: translateX(-42px);
+      -o-transform: translateX(-42px);
+      transform: translateX(-42px); }
     nav.burger-wrapper .burger-menu:hover .burger-center:after {
-      -webkit-transform: translateX(-10px);
-      -moz-transform: translateX(-10px);
-      -ms-transform: translateX(-10px);
-      -o-transform: translateX(-10px);
-      transform: translateX(-10px);
+      -webkit-transform: translateX(-12px);
+      -moz-transform: translateX(-12px);
+      -ms-transform: translateX(-12px);
+      -o-transform: translateX(-12px);
+      transform: translateX(-12px);
       -webkit-filter: opacity(1);
       -moz-filter: opacity(1);
       -ms-filter: opacity(1);
@@ -12417,6 +12417,9 @@ header.hello-header {
   padding: 30px 20px; }
 
 section.my-work-section {
+  padding: 30px 20px; }
+
+section.all-projects-section {
   padding: 30px 20px; }
 
 section.about-me-section {
@@ -12981,6 +12984,17 @@ body.first-load:after {
 
   section.my-work-section {
     padding: 130px 0 80px; }
+
+  section.all-projects-section {
+    padding: 130px 0; }
+    section.all-projects-section .all-projects-rails {
+      width: calc(100% - 3px);
+      height: 100px;
+      margin-left: 1px;
+      overflow: hidden; }
+      section.all-projects-section .all-projects-rails .all-projects-link {
+        height: 100px;
+        margin-top: -46.5px; }
 
   section.about-me-section {
     padding: 70px 0 60px; }

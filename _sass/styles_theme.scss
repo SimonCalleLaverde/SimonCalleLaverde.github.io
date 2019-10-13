@@ -1080,10 +1080,10 @@ nav.burger-wrapper {
           letter-spacing:2px;
         }
         &:before {
-          @include transform(translateX(-40px));
+          @include transform(translateX(-42px));
         }
         &:after {
-          @include transform(translateX(-10px));//rotate(0)
+          @include transform(translateX(-12px));//rotate(0)
           @include filter(opacity(1));
         }
       }
@@ -1387,6 +1387,11 @@ section.my-work-section {
     .tag-moving-element {
     }
   }
+}
+
+// All Projects Section
+section.all-projects-section {
+  padding:30px 20px;//To revise mobile
 }
 
 // About Me Section

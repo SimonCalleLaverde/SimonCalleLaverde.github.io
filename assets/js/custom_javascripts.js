@@ -373,7 +373,7 @@ var tlSl3 = new TimelineMax();
 
 const controller = new ScrollMagic.Controller();
 
-//tl0.from(".tag-moving-element", 2, {x:-200});
+//tl0.from(".gsap-all-projects", 2, {x:-200});
 
 // const scene0 = new ScrollMagic.Scene({
 //   triggerElement: ".sticky-section",
@@ -491,8 +491,8 @@ function parallaxIt(e, target, movement){
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   TweenMax.to(target, 0.3, {
-  x: (relX - boundingRect.width/2) / boundingRect.width * movement,
-  y: (relY - boundingRect.height/2 - scrollTop) / boundingRect.width * movement,
-  ease: Power2.easeOut
+    x: (relX - boundingRect.width/2) / boundingRect.width * movement,
+    y: (relY - boundingRect.height/2 - scrollTop) / boundingRect.width * movement,
+    ease: Power2.easeOut
   });
 }

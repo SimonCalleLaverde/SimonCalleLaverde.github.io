@@ -135,6 +135,21 @@
 		padding:130px 0 80px;
 	}
 
+	// All Projects Section
+	section.all-projects-section {
+	  padding:130px 0;
+	  .all-projects-rails {
+	  	width:calc(100% - 3px);
+	  	height:100px;
+	  	margin-left:1px;
+		  overflow:hidden;
+		  .all-projects-link {
+		  	height:100px;
+		  	margin-top:-46.5px;
+		  }
+	  }
+	}
+
 	// About Me Section
 	section.about-me-section {
 		padding:70px 0 60px;
