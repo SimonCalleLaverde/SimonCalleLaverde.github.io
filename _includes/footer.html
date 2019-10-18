@@ -1,5 +1,5 @@
 <a href="/contact_me">
-  <footer class="text-white text-center clearfix">
+  <footer class="text-white d-flex justify-content-center align-items-center clearfix" id="get_in_touch_section">
     <div class="container">
 
       {% comment %}
@@ -22,28 +22,28 @@
           </div>
         </div>
       </div>
+
+      <div class="row mt-5 pt-5">
+        <div class="col-md-4 offset-md-1">
+          {% include footer_profile_picture.html %}
+        </div>
+      </div>
       {% endcomment %}
 
-    	<div class="row mt-5 pt-5" id="get_in_touch">
-    		<div class="col-md-6 offset-md-3">
-    			{% include footer_profile_picture.html %}
-    		</div>
-    	</div>
-
       <div class="row">
-        <div class="col-md-12">
-          <div class="text-center mt-5less">
+        <div class="col-md-10 offset-md-1">
+          <div class="mt-5less mb-4">
             <div class="mb-4more">
-              <h1 class="text-white text-uppercase mb-3">Want to create<br>something special?</h1>
-              <p class="font-headline text-white text-uppercase d-inline-block">Drop me a line</p>
+              <h1 class="text-stroke-white text-uppercase text-big">Want to create<br>something special?</h1>
+              <p class="font-headline text-white text-uppercase mb-3">Drop me a line</p>
             </div>
-
-            <h5 class="footer-drop-me-a-line d-none d-md-inline-block">
-              <i class="fa fa-arrow-right text-stroke-white text-hero" aria-hidden="true" style="line-height:0.8;"></i><!--headline-link--><!--link-->
-            </h5>
           </div>
         </div>
       </div>
+      
+      <h5 class="footer-drop-me-a-line" style="position:absolute; right:160px; bottom:40px;">
+        <i class="fa fa-arrow-right text-stroke-white text-hero" aria-hidden="true" style="line-height:0.8;"></i><!--headline-link--><!--link-->
+      </h5>
 
       {% comment %}
       <div class="row">

@@ -1260,8 +1260,8 @@ body.home {
 //----------------------------------Section Styles----------------------------------//
 
 // Logo
-$logo-width:100px;
-$logo-height:100px;
+$logo-width:90px;
+$logo-height:90px;
 $logo-top:35px;
 $logo-left:15px;
 a.logo {
@@ -1492,7 +1492,7 @@ footer {
     }
   }
   .footer-profile-picture {
-    text-align:center;
+    //text-align:center;
     //@include filter(opacity(0));
     .profile-picture {
       //position:absolute;

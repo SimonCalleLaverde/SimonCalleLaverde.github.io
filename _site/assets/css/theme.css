@@ -12307,8 +12307,8 @@ a.logo {
   top: 35px;
   left: 15px; }
   a.logo .logo-interior {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-color: transparent;
     pointer-events: none;
     -webkit-border-radius: 50%;
@@ -12333,8 +12333,8 @@ a.logo {
 
 .logo-cover {
   position: fixed;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   top: 35px;
   left: 15px;
   z-index: 7000; }
@@ -12501,27 +12501,25 @@ footer {
     padding-bottom: 40px; }
     footer .container div, footer .container a {
       pointer-events: none; }
-  footer .footer-profile-picture {
-    text-align: center; }
-    footer .footer-profile-picture .profile-picture {
-      display: inline-block;
-      width: 205px;
-      height: 200px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-      border-radius: 50%;
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
-      filter: grayscale(100%);
-      -webkit-transition: all ease-out 0.5s;
-      -moz-transition: all ease-out 0.5s;
-      -ms-transition: all ease-out 0.5s;
-      -o-transition: all ease-out 0.5s;
-      transition: all ease-out 0.5s; }
+  footer .footer-profile-picture .profile-picture {
+    display: inline-block;
+    width: 205px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -ms-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+    transition: all ease-out 0.5s; }
   footer .footer-drop-me-a-line {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -12995,7 +12993,7 @@ body.first-load:after {
     padding: 130px 0 80px; }
 
   section.all-projects-section {
-    padding: 130px 0; }
+    padding: 150px 0 140px; }
     section.all-projects-section .all-projects-rails {
       width: calc(100% - 3px);
       height: 100px;
