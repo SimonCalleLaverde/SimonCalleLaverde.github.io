@@ -70,18 +70,18 @@ thumbnail_image: ""
 <a href="https://moves.basicagency.com/" rel="ugc">Moves | Awesome | Sound</a><br>
 <a href="https://www.alexvanzijl.nl/" rel="">Alexvanzijl | Super Cool Folio</a><br>
 <!--
-<a href="..." rel="ugc"></a><br>
-<a href="..." rel="ugc"></a><br>
-<a href="..." rel="ugc"></a><br>
-<a href="..." rel="ugc"></a><br>
-<a href="..." rel="ugc"></a><br>
-<a href="..." rel="ugc"></a><br>
-<a href="..." rel="ugc"></a><br>
-<a href="..." rel="ugc"></a><br>
-<a href="..." rel="ugc"></a><br>
-<a href="..." rel="ugc"></a><br>
-<a href="..." rel="ugc"></a><br>
-<a href="..." rel="ugc"></a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
 -->
 
 <h1>Plugins</h1>
@@ -146,5 +146,31 @@ thumbnail_image: ""
 <a href="https://github.com/gruntjs/grunt-cli/blob/master/bin/grunt" rel="ugc">grunt-cli | ?</a><br>
 <a href="https://github.com/gruntjs/grunt-contrib-sass" rel="ugc">grunt-contrib-sass | ?</a><br>
 <a href="https://closure-compiler.appspot.com/home" rel="ugc">Google Compiler</a><br>
-<!--<a href="..." rel="ugc"></a><br>-->
-<!--<a href="..." rel="ugc"></a><br>-->
+<!--<a href="..." rel="ugc">...</a><br>-->
+<!--<a href="..." rel="ugc">...</a><br>-->
+
+
+
+<!--TO ERRASE-->
+<h1>LINKS OPENED WHEN FORMATTING MAC (For open an review or just close, after reinstalling everything)</h1>
+<a href="https://snipcart.com/blog/jekyll-ecommerce-tutorial" rel="ugc">Snipcart | 6 Deploying your website</a><br>
+<a href="https://app.netlify.com/" rel="ugc">Netlify</a><br>
+<a href="http://www.pmob.co.uk/temp/gallery-hover-stay.htm" rel="ugc">Some tut</a><br>
+<a href="https://help.github.com/en/articles/about-github-pages" rel="ugc">Github Pages</a><br>
+<a href="http://jmcglone.com/guides/github-pages/" rel="ugc">Site Github</a><br>
+<a href="https://tobiasahlin.com/blog/layered-smooth-box-shadows/" rel="ugc">Smoother Shadows</a><br>
+<a href="https://tobiasahlin.com/blog/move-from-jquery-to-vanilla-javascript/#selecting-elements" rel="ugc">Jquery to Vanilla</a><br>
+<a href="https://www.creativebloq.com/web-design/parallax-scrolling-1131762" rel="ugc">Paarllax Websites</a><br>
+<a href="https://greensock.com/get-started/" rel="ugc">GSAP Get Started</a><br>
+<a href="https://greensock.com/get-started/#easing" rel="ugc">GSAP</a><br>
+<a href="https://greensock.com/forums/topic/18196-scrollmagic-parallax-sidebar-navigation/" rel="ugc">Scroll Magic, Parallax</a><br>
+<a href="https://codepen.io/sgorneau/full/qYEKLy" rel="ugc">GSAP</a><br>
+<a href="https://greensock.com/forums/topic/17467-how-to-animate-div-linearly-using-mouse-wheel-scroll/" rel="ugc">GSAP</a><br>
+<a href="https://github.com/janpaepke/ScrollMagic/wiki/Getting-Started-:-How-to-use-ScrollMagic" rel="ugc">Scroll Magic | Defining the controller</a><br>
+<a href="https://jekyllthemes.io/resources/jekyll-contact-forms/" rel="ugc">Jekyll, Contact Forms</a><br>
+<a href="https://made.jekyllthemes.io/" rel="ugc">Made Jekyll Theme</a><br>
+<a href="https://min30327.github.io/luxy.js/" rel="ugc">Luxy | Options</a><br>
+<a href="https://board.jekyllthemes.io/" rel="ugc">Board Jekyll Theme</a><br>
+<a href="https://unsplash.com/s/photos/graphic-design" rel="ugc">Unsplash | Graphic Design</a><br>
+<a href="https://pixabay.com/images/search/ink/?pagi=5" rel="ugc">Pixabay | Ink</a><br>
+<a href="https://www.shutterstock.com/search/Graphic+design" rel="ugc">Shutterstock | Graphic Design</a><br>

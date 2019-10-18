@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Fine Web design
+title: Simon Calle Laverde # Fine Web Design
 email: kyverde88@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hello, I'm Simón Calle Laverde a publicist and web developer from Bogotá,
@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   4 years and now I want to do what I like the most which is front-end
   development and design, as well as the whole branding if needed. I'll be
   working on some freelance projects and I'm happy for you to contact me and
-  let me know what your plans are, so I can help you.
+  let me know what your plans are so I can help you.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
