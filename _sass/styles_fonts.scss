@@ -17,15 +17,15 @@ $FontsPath:"/uploads";//https://s3.amazonaws.com/bogota-bulldogs/uploads
 }
 
 @font-face {
-	font-family:'BG regular';
-	src:url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.eot');
-	src:local('Brandon Grotesque Regular'), local('BrandonGrotesque-Regular'),
-		url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
-		url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.woff2') format('woff2'),
-		url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.woff') format('woff'),
-		url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.ttf') format('truetype');
-	font-weight:normal;
-	font-style:normal;
+  font-family:'BG regular';
+  src:url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.eot');
+  src:local('Brandon Grotesque Regular'), local('BrandonGrotesque-Regular'),
+    url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+    url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.woff2') format('woff2'),
+    url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.woff') format('woff'),
+    url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
 }
 
 // Font Headline

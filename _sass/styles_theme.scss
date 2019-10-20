@@ -1074,16 +1074,16 @@ nav.burger-wrapper {
         //@include animation(fa-spin 20s linear backwards infinite);
         &:before, &:after {
           margin-left:-1px;
-          font-family:$font-headline;
-          font-weight:500;
-          font-size:13.5px;
+          //font-family:$font-headline;
+          //font-weight:500;
+          //font-size:13.5px;
           letter-spacing:2px;
         }
         &:before {
-          @include transform(translateX(-42px));
+          @include transform(translateX(-35px));
         }
         &:after {
-          @include transform(translateX(-12px));//rotate(0)
+          @include transform(translateX(-9px));//rotate(0)
           @include filter(opacity(1));
         }
       }
