@@ -565,26 +565,12 @@ article.project-article {
           }
         }
       }
-      .project-platform {
-        position:absolute;
-        height:100%;
-        width:28px;
-        top:0;
-        right:-45px;
-        overflow:hidden;
-        pointer-events:none;
-        writing-mode:vertical-rl;
-        text-orientation:mixed;
-        .project-platform-translate {
-          pointer-events:none;
-          @include transition(transform ease-out 0.5s);
-          @include transform(translateX(-28px));
-        }
-      }
+    }
+    > a {
       &:hover {
-        .project-platform {
-          .project-platform-translate {
-            @include transform(translateX(0));
+        ~ .project-info {
+          time.project-year, .project-platform {
+            @include transform(translateY(-28px));
           }
         }
       }
@@ -592,6 +578,20 @@ article.project-article {
     // time.project-year {
     //   pointer-events:none;
     // }
+    .project-info {
+      height:28px;
+      overflow:hidden;
+      time.project-year, .project-platform {
+        //pointer-events:none;
+        @include transition(transform ease-out 0.5s);
+        // h1, h2, h3, h4, h5, h6 {
+        //   pointer-events:none;
+        // }
+      }
+      time.project-year {
+        display:block;
+      }
+    }
   }
   &.work {
     margin-bottom:104px;
@@ -854,7 +854,7 @@ aside.change-features {
   button.slick-arrow {
     z-index:101;
     &.slick-prev, &.slick-next {
-      top:43%;
+      top:45%;
       &:before, &:after {
         font-size:25px;
       }
@@ -1827,8 +1827,6 @@ i.fa {
     }
   }
 }
-
-// Cursor
 .cursor {
   display:none;
   position:fixed;
@@ -1877,12 +1875,12 @@ i.fa {
     //@include transition(all ease-out 0.2s);
     &:before {
       content:"View It";
-      width:100px;
-      height:100px;
-      top:-25px;//New | For GSAP Positioning
-      left:-25px;//New | For GSAP Positioning
+      width:120px;
+      height:120px;
+      top:-35px;//New | For GSAP Positioning
+      left:-35px;//New | For GSAP Positioning
       background-color:theme-color('magenta');
-      padding-top:40px;
+      padding-top:49px;
       font-family:$font-headline;
       font-weight:500;
       font-size:13.5px;

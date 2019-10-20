@@ -13,38 +13,38 @@ $theme-color-blue-light:darken(rgba(158,232,248,1),10);//Blue Light
 $theme-color-blue-light:rgba(146,174,245,1);//Blue Pastel//Test
 $theme-color-purple-dark:#880E4F;//Purple Dark//Test
 
-// Map Colours
+// Mapping Colours
 // https://brandcolors.net/
 $theme-colors: (
-	"facebook":#3B5998,//Facebook Official
-	"twitter":#1DA1F2,//Twitter Official
-	"pinterest":#BD081C,//Pinterest Official
-	"youtube":#FF0000,//Youtube Official
-	"linkedin":#0077B5,//LinkedIn Official
-	"google-plus":#DD4B39,//Google Plus Official
-	"instagram":#E1306C,//Instagram Official
-	"paypal":#003087,//PayPal Official
-	"forestry":#20C997,//Forestry
-	"jekyll":#FFCC00,//Jekyll
-	"bootstrap":#563D7C,//Bootstrap
-	"bootstrap-lighten":lighten(#563D7C,20),//Bootstrap Lighten
+  "facebook":#3B5998,//Facebook Official
+  "twitter":#1DA1F2,//Twitter Official
+  "pinterest":#BD081C,//Pinterest Official
+  "youtube":#FF0000,//Youtube Official
+  "linkedin":#0077B5,//LinkedIn Official
+  "google-plus":#DD4B39,//Google Plus Official
+  "instagram":#E1306C,//Instagram Official
+  "paypal":#003087,//PayPal Official
+  "forestry":#20C997,//Forestry
+  "jekyll":#FFCC00,//Jekyll
+  "bootstrap":#563D7C,//Bootstrap
+  "bootstrap-lighten":lighten(#563D7C,20),//Bootstrap Lighten
 
-	"facebook-inverted":#C4A667,//Facebook Inverted
-	"pinterest-inverted":#42F7E3,//Pinterest Inverted
-	"instagram-inverted":#1ECF93,//Instagram Inverted
+  "facebook-inverted":#C4A667,//Facebook Inverted
+  "pinterest-inverted":#42F7E3,//Pinterest Inverted
+  "instagram-inverted":#1ECF93,//Instagram Inverted
 
-	"codenation":#0EDDDD,
+  "codenation":#0EDDDD,
 
-	"black":#000000,
-	"white":#FFFFFF,
+  "black":#000000,
+  "white":#FFFFFF,
 
-	"grey-dark":$theme-color-grey-dark,
-	"grey-mid":$theme-color-grey-mid,
-	"grey-light":$theme-color-grey-light,
-	"magenta":$theme-color-magenta,
-	"blue-light":$theme-color-blue-light,
-	"purple-dark":$theme-color-purple-dark,
-	"goldy":$theme-color-goldy
+  "grey-dark":$theme-color-grey-dark,
+  "grey-mid":$theme-color-grey-mid,
+  "grey-light":$theme-color-grey-light,
+  "magenta":$theme-color-magenta,
+  "blue-light":$theme-color-blue-light,
+  "purple-dark":$theme-color-purple-dark,
+  "goldy":$theme-color-goldy
 );
 
 // Bootstrap 4
@@ -56,4 +56,3 @@ $theme-colors: (
 
 // Plugins
 //@import "styles_videos_and_videomodal";
-@import "styles_settings_icon";

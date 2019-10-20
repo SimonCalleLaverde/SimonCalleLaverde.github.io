@@ -11530,34 +11530,23 @@ article.project-article.home figure {
       background-color: rgba(0, 0, 0, 0.9); }
       article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name h1, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name h2, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name h3, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name h4, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name h5, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-name h6, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles h1, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles h2, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles h3, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles h4, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles h5, article.project-article.home figure .project-thumbnail figcaption.project-caption .project-roles h6 {
         color: #FEFEFE; }
-  article.project-article.home figure .project-platform {
-    position: absolute;
-    height: 100%;
-    width: 28px;
-    top: 0;
-    right: -45px;
-    overflow: hidden;
-    pointer-events: none;
-    writing-mode: vertical-rl;
-    text-orientation: mixed; }
-    article.project-article.home figure .project-platform .project-platform-translate {
-      pointer-events: none;
-      -webkit-transition: transform ease-out 0.5s;
-      -moz-transition: transform ease-out 0.5s;
-      -ms-transition: transform ease-out 0.5s;
-      -o-transition: transform ease-out 0.5s;
-      transition: transform ease-out 0.5s;
-      -webkit-transform: translateX(-28px);
-      -moz-transform: translateX(-28px);
-      -ms-transform: translateX(-28px);
-      -o-transform: translateX(-28px);
-      transform: translateX(-28px); }
-  article.project-article.home figure:hover .project-platform .project-platform-translate {
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0); }
+article.project-article.home > a:hover ~ .project-info time.project-year, article.project-article.home > a:hover ~ .project-info .project-platform {
+  -webkit-transform: translateY(-28px);
+  -moz-transform: translateY(-28px);
+  -ms-transform: translateY(-28px);
+  -o-transform: translateY(-28px);
+  transform: translateY(-28px); }
+article.project-article.home .project-info {
+  height: 28px;
+  overflow: hidden; }
+  article.project-article.home .project-info time.project-year, article.project-article.home .project-info .project-platform {
+    -webkit-transition: transform ease-out 0.5s;
+    -moz-transition: transform ease-out 0.5s;
+    -ms-transition: transform ease-out 0.5s;
+    -o-transition: transform ease-out 0.5s;
+    transition: transform ease-out 0.5s; }
+  article.project-article.home .project-info time.project-year {
+    display: block; }
 article.project-article.work {
   margin-bottom: 104px;
   will-change: scroll-position; }
@@ -11792,7 +11781,7 @@ aside.change-features {
   .slick-carousel.carousel-my-work button.slick-arrow {
     z-index: 101; }
     .slick-carousel.carousel-my-work button.slick-arrow.slick-prev, .slick-carousel.carousel-my-work button.slick-arrow.slick-next {
-      top: 43%; }
+      top: 45%; }
       .slick-carousel.carousel-my-work button.slick-arrow.slick-prev:before, .slick-carousel.carousel-my-work button.slick-arrow.slick-prev:after, .slick-carousel.carousel-my-work button.slick-arrow.slick-next:before, .slick-carousel.carousel-my-work button.slick-arrow.slick-next:after {
         font-size: 25px; }
     .slick-carousel.carousel-my-work button.slick-arrow.slick-prev {
@@ -12707,12 +12696,12 @@ i.fa.link:hover {
     mix-blend-mode: normal; }
     .cursor.hoveredProject:before {
       content: "View It";
-      width: 100px;
-      height: 100px;
-      top: -25px;
-      left: -25px;
+      width: 120px;
+      height: 120px;
+      top: -35px;
+      left: -35px;
       background-color: #EB0082;
-      padding-top: 40px;
+      padding-top: 49px;
       font-family: "Montserrat", "Avenir Next Pro Bold", Helvetica;
       font-weight: 500;
       font-size: 13.5px;
@@ -13067,38 +13056,3 @@ body.first-load:after {
 @media (min-width: 1200px) {
   .container {
     max-width: 1055px; } }
-nav.settings .settings-icon {
-  display: inline-block;
-  width: 40px;
-  height: 40px; }
-nav.settings .settings-icon__line {
-  stroke: var(--color-text);
-  stroke-width: 5px;
-  -webkit-transition: all 0.2s ease 0.05s;
-  -moz-transition: all 0.2s ease 0.05s;
-  -ms-transition: all 0.2s ease 0.05s;
-  -o-transition: all 0.2s ease 0.05s;
-  transition: all 0.2s ease 0.05s; }
-nav.settings .settings-icon__rect {
-  stroke: var(--color-text);
-  fill: var(--color-fill);
-  stroke-width: 5px;
-  -webkit-transition: all 0.2s ease 0.05s;
-  -moz-transition: all 0.2s ease 0.05s;
-  -ms-transition: all 0.2s ease 0.05s;
-  -o-transition: all 0.2s ease 0.05s;
-  transition: all 0.2s ease 0.05s; }
-nav.settings .link:hover .settings-icon__line,
-nav.settings .link:hover .settings-icon__rect {
-  stroke: var(--color-link);
-  -webkit-transition: all 0.2s ease 0.05s;
-  -moz-transition: all 0.2s ease 0.05s;
-  -ms-transition: all 0.2s ease 0.05s;
-  -o-transition: all 0.2s ease 0.05s;
-  transition: all 0.2s ease 0.05s; }
-nav.settings .link:hover .settings-icon__group--1 .settings-icon__rect {
-  transform: translateY(20px); }
-nav.settings .link:hover .settings-icon__group--2 .settings-icon__rect {
-  transform: translateY(-20px); }
-nav.settings .link:hover .settings-icon__group--3 .settings-icon__rect {
-  transform: translateY(25px); }
