@@ -1513,9 +1513,11 @@ footer {
     }
   }
   .footer-drop-me-a-line {
+    pointer-events:none;
     @include transform(rotate(45deg));
     h1, h2, h3, h4, h5, h6 {
       font-size:8rem!important;
+      pointer-events:none;
     }
   }
 

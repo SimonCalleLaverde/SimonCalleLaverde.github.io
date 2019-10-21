@@ -4,41 +4,55 @@
     {% assign sorted_projects = site.projects | sort:"order" | reverse %}
     
     <!--Desktop-->
-    <div class="row pt-3 d-none d-md-block">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-6 mt-md-1 mb-md-1">
-            <div class="work-projects-left-column luxy-el" data-speed-y="-2">
-              {% assign posts_count_odd = 0 %}
-              
-              {% for project in sorted_projects %}
-                {% assign posts_count_odd = posts_count_odd | plus:1 %}
-                {% if posts_count_odd == 1 %}
+    <div class="pt-3 d-none d-md-block">
+      <div class="row">
+        <div class="col-md-6 mt-md-1 mb-md-1">
+          <div class="work-projects-left-column luxy-el" data-speed-y="0.8" style="will-change:transform">
+            {% assign posts_count_desktop = 0 %}
+            
+            {% for project in sorted_projects %}
+              {% assign project_tags_list = "#" %}
+              {% for tag in project.tags %}
+                {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
+              {% endfor %}
+
+              {% unless project_tags_list contains "hidden" %}
+                {% assign posts_count_desktop = posts_count_desktop | plus:1 %}
+
+                {% if posts_count_desktop == 1 %}
                   {% include work/work_project_article.html %}
                 {% endif %}
 
-                {% if posts_count_odd == 2 or forloop.last %}
-                  {% assign posts_count_odd = 0 %}
+                {% if posts_count_desktop == 2 or forloop.last %}
+                  {% assign posts_count_desktop = 0 %}
                 {% endif %}
-              {% endfor %}
-            </div>
+              {% endunless %}
+            {% endfor %}
           </div>
+        </div>
 
-          <div class="col-md-6 mt-md-1 mb-md-1">
-            <div class="work-projects-right-column luxy-el" data-speed-y="2" style="margin-top:96px;">
-              {% assign posts_count_even = 0 %}
+        <div class="col-md-6 mt-md-1 mb-md-1">
+          <div class="work-projects-right-column luxy-el" data-speed-y="-0.8" style="margin-top:96px; will-change:transform">
+            {% assign posts_count_desktop = 0 %}
 
-              {% for project in sorted_projects %}
-                {% assign posts_count_even = posts_count_even | plus:1 %}
-                {% if posts_count_even == 2 %}
+            {% for project in sorted_projects %}
+              {% assign project_tags_list = "#" %}
+              {% for tag in project.tags %}
+                {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
+              {% endfor %}
+
+              {% unless project_tags_list contains "hidden" %}
+                {% assign posts_count_desktop = posts_count_desktop | plus:1 %}
+
+                {% if posts_count_desktop == 2 %}
                   {% include work/work_project_article.html %}
                 {% endif %}
 
-                {% if posts_count_even == 2 or forloop.last %}
-                  {% assign posts_count_even = 0 %}
+                {% if posts_count_desktop == 2 or forloop.last %}
+                  {% assign posts_count_desktop = 0 %}
                 {% endif %}
-              {% endfor %}
-            </div>
+              {% endunless %}
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -47,20 +61,20 @@
     <!--Mobile-->
     <div class="row pt-3 d-block d-md-none">
       <div class="col-md-12">
-        {% assign posts_count = 0 %}
+        {% assign posts_count_mobile = 0 %}
 
         {% for project in sorted_projects %}
-          {% assign posts_count = posts_count | plus:1 %}
+          {% assign posts_count_mobile = posts_count_mobile | plus:1 %}
 
-          {% if posts_count == 1 %}
+          {% if posts_count_mobile == 1 %}
           <div class="row">
           {% endif %}
             <div class="col-6 mt-1 mb-1">
               {% include work/work_project_article.html %}
             </div>
-          {% if posts_count == 2 or forloop.last %}
+          {% if posts_count_mobile == 2 or forloop.last %}
           </div>
-          {% assign posts_count = 0 %}
+          {% assign posts_count_mobile = 0 %}
           {% endif %}
         {% endfor %}
       </div>

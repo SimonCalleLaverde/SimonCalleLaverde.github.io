@@ -22,6 +22,8 @@ thumbnail_image: ""
 <a href="https://jekyllrb.com/docs/collections/" rel="ugc">Collections</a><br>
 <a href="https://snipcart.com/blog/jekyll-ecommerce-tutorial" rel="ugc">Was | 6. Deploying your Jekyll e-commerce website</a><br>
 <a href="https://jekyllrb.com/docs/deployment/third-party/" rel="ugc">Was | GitHub Pages | To Read/Do Netlify</a><br>
+<a href="https://jekyllrb.com/docs/troubleshooting/#no-sudo" rel="ugc">Jekyll No Sudo</a><br>
+<a href="https://www.algolia.com/" rel="ugc">Search or Pagination for Jekyll/Static Sites</a><br>
 
 <h1>Forestry | Jekyll</h1>
 <a href="https://forestry.io/" rel="ugc">Forestry.io</a><br>
@@ -70,7 +72,6 @@ thumbnail_image: ""
 <a href="https://moves.basicagency.com/" rel="ugc">Moves | Awesome | Sound</a><br>
 <a href="https://www.alexvanzijl.nl/" rel="">Alexvanzijl | Super Cool Folio</a><br>
 <!--
-<a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
@@ -146,6 +147,13 @@ thumbnail_image: ""
 <a href="https://github.com/gruntjs/grunt-cli/blob/master/bin/grunt" rel="ugc">grunt-cli | ?</a><br>
 <a href="https://github.com/gruntjs/grunt-contrib-sass" rel="ugc">grunt-contrib-sass | ?</a><br>
 <a href="https://closure-compiler.appspot.com/home" rel="ugc">Google Compiler</a><br>
+<!--<a href="..." rel="ugc">...</a><br>-->
+<!--<a href="..." rel="ugc">...</a><br>-->
+<!--<a href="..." rel="ugc">...</a><br>-->
+<!--<a href="..." rel="ugc">...</a><br>-->
+<!--<a href="..." rel="ugc">...</a><br>-->
+<!--<a href="..." rel="ugc">...</a><br>-->
+<!--<a href="..." rel="ugc">...</a><br>-->
 <!--<a href="..." rel="ugc">...</a><br>-->
 
 <h1>Page Speed</h1>

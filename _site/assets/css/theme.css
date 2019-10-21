@@ -12507,13 +12507,15 @@ footer {
     -o-transition: all ease-out 0.5s;
     transition: all ease-out 0.5s; }
   footer .footer-drop-me-a-line {
+    pointer-events: none;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg); }
     footer .footer-drop-me-a-line h1, footer .footer-drop-me-a-line h2, footer .footer-drop-me-a-line h3, footer .footer-drop-me-a-line h4, footer .footer-drop-me-a-line h5, footer .footer-drop-me-a-line h6 {
-      font-size: 8rem !important; }
+      font-size: 8rem !important;
+      pointer-events: none; }
   footer article iframe {
     pointer-events: none;
     -webkit-border-radius: 0.3rem;
