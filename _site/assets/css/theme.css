@@ -11992,7 +11992,7 @@ nav.burger-wrapper {
         right: 0;
         bottom: 0;
         left: 0;
-        font-size: 14.5px;
+        font-size: 15px;
         color: #FFF;
         letter-spacing: 1px;
         -webkit-transition: 0.2s ease-in-out;
@@ -12015,17 +12015,17 @@ nav.burger-wrapper {
       margin-left: -1px;
       letter-spacing: 2px; }
     nav.burger-wrapper .burger-menu:hover .burger-center:before {
-      -webkit-transform: translateX(-35px);
-      -moz-transform: translateX(-35px);
-      -ms-transform: translateX(-35px);
-      -o-transform: translateX(-35px);
-      transform: translateX(-35px); }
+      -webkit-transform: translateX(-36px);
+      -moz-transform: translateX(-36px);
+      -ms-transform: translateX(-36px);
+      -o-transform: translateX(-36px);
+      transform: translateX(-36px); }
     nav.burger-wrapper .burger-menu:hover .burger-center:after {
-      -webkit-transform: translateX(-9px);
-      -moz-transform: translateX(-9px);
-      -ms-transform: translateX(-9px);
-      -o-transform: translateX(-9px);
-      transform: translateX(-9px);
+      -webkit-transform: translateX(-10px);
+      -moz-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+      -o-transform: translateX(-10px);
+      transform: translateX(-10px);
       -webkit-filter: opacity(1);
       -moz-filter: opacity(1);
       -ms-filter: opacity(1);

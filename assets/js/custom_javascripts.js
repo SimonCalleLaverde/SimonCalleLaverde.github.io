@@ -128,7 +128,7 @@ $(document).ready(function() {
     //autoplay: true,
     //autoplaySpeed: 10000,
     pauseOnHover: false,
-    lazyLoad: 'progressive',//'ondemand'
+    lazyLoad: 'ondemand',//'progressive'
     //pauseOnFocus: true,//default
     //fade: true,
     //cssEase: 'linear',
@@ -145,6 +145,7 @@ $(document).ready(function() {
     swipeToSlide: true,
     arrows: false,
     focusOnSelect: true,
+    lazyLoad: 'ondemand',
     asNavFor: '.carousel-my-work'
   });
   $('.carousel-my-skills').slick({

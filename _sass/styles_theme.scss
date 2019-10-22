@@ -1051,7 +1051,7 @@ nav.burger-wrapper {
         right:0;
         bottom:0;
         left:0;
-        font-size:14.5px;
+        font-size:15px;
         color:#FFF;
         letter-spacing:1px;
         @include transition(0.2s ease-in-out);
@@ -1080,10 +1080,10 @@ nav.burger-wrapper {
           letter-spacing:2px;
         }
         &:before {
-          @include transform(translateX(-35px));
+          @include transform(translateX(-36px));
         }
         &:after {
-          @include transform(translateX(-9px));//rotate(0)
+          @include transform(translateX(-10px));//rotate(0)
           @include filter(opacity(1));
         }
       }
