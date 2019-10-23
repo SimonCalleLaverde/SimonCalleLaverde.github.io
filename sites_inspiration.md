@@ -157,10 +157,8 @@ thumbnail_image: ""
 <!--<a href="..." rel="ugc">...</a><br>-->
 
 <h1>Page Speed</h1>
-<a href="https://developers.google.com/speed/pagespeed/insights/" rel="ugc">...</a><br>
-
-
-
+<a href="https://developers.google.com/speed/pagespeed/insights/" rel="ugc">Google Page Speed</a><br>
+<a href="https://prettydiff.com/" rel="ugc">Minify HTML</a><br>
 
 <!--TO ERRASE-->
 <h1>LINKS OPENED WHEN FORMATTING MAC (For open an review or just close, after reinstalling everything)</h1>

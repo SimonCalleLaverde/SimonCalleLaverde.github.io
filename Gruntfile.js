@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  // Project configuration.
+  // Project Configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
     watch: {
       scripts: {
         files: ['assets/js/_grunt/*.js'],
@@ -37,12 +37,11 @@ module.exports = function(grunt) {
 
   // Load Plugins
   grunt.loadNpmTasks('grunt-contrib-concat');
-  //grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Register Task(s).
-  grunt.registerTask('default', ['concat', 'uglify']);//, 'imagemin'
+  grunt.registerTask('default', ['concat', 'uglify']);
   grunt.registerTask('dev', ['concat', 'watch']);
 
 };
