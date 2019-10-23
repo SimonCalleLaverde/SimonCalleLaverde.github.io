@@ -375,7 +375,7 @@ $(document).mouseenter(function(e) {
 
 //var tl0 = new TimelineMax({onUpdate:updatePercentage});
 var tlMwT = new TimelineMax();
-//var tlAnF = new TimelineMax();
+var tlAnF = new TimelineMax();
 var tlCd = new TimelineMax();
 var tlSc = new TimelineMax();
 var tlAp = new TimelineMax();
@@ -405,7 +405,7 @@ const controller = new ScrollMagic.Controller();
 
 tlMwT.from(".gsap-my-work-title", 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});//opacity:0, scale:0
 
-//tlAnF.from(".gsap-as-nav-for", 3, {x:300, opacity:0, ease:Power2.easeOut});//scale:0
+tlAnF.from(".gsap-as-nav-for", 4, {x:500, opacity:0, ease:Power2.easeOut});//scale:0
 
 tlCd.from(".gsap-content-development", 2, {y:250, opacity:0, transformStyle:"preserve-3d", skewY:15, ease:Power3.easeOut});//x:-500//scale:0.5
 
@@ -427,11 +427,11 @@ const sceneMwT = new ScrollMagic.Scene({
 .setTween(tlMwT)
  .addTo(controller);
 
-// const sceneAnF = new ScrollMagic.Scene({
-//   triggerElement: ".magic-trigger-as-nav-for"
-// })
-// .setTween(tlAnF)
-//   .addTo(controller);
+const sceneAnF = new ScrollMagic.Scene({
+  triggerElement: ".magic-trigger-as-nav-for"
+})
+.setTween(tlAnF)
+  .addTo(controller);
 
 const sceneCd = new ScrollMagic.Scene({
  triggerElement: ".magic-trigger-content-development"

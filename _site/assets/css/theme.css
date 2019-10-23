@@ -11781,7 +11781,8 @@ aside.change-features {
   .slick-carousel.carousel-my-work button.slick-arrow {
     z-index: 101; }
     .slick-carousel.carousel-my-work button.slick-arrow.slick-prev, .slick-carousel.carousel-my-work button.slick-arrow.slick-next {
-      top: 45%; }
+      top: auto;
+      bottom: 0; }
       .slick-carousel.carousel-my-work button.slick-arrow.slick-prev:before, .slick-carousel.carousel-my-work button.slick-arrow.slick-prev:after, .slick-carousel.carousel-my-work button.slick-arrow.slick-next:before, .slick-carousel.carousel-my-work button.slick-arrow.slick-next:after {
         font-size: 25px; }
     .slick-carousel.carousel-my-work button.slick-arrow.slick-prev {

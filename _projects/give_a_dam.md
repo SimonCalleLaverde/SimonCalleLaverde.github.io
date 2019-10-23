@@ -15,4 +15,4 @@ tags: [featured, other]
 order: 24
 ---
 
-Give A Dam is one recent site created using Bootstrap 4 within NationBuilder.
+Give A Dam is a beautiful site where the organization's goals behind it are among protecting the Blue Mountains in Australia; this was one of my latest projects created using Bootstrap 4 within NationBuilder.

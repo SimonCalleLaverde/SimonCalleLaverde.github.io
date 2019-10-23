@@ -854,7 +854,8 @@ aside.change-features {
   button.slick-arrow {
     z-index:101;
     &.slick-prev, &.slick-next {
-      top:45%;
+      top:auto;//45%
+      bottom:0;
       &:before, &:after {
         font-size:25px;
       }
