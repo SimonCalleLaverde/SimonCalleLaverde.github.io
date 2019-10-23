@@ -1,4 +1,4 @@
-//---------------------------------INITS---------------------------------//
+//---------------------------------PLUGINS INIT---------------------------------//
 
 // Init Luxy
 $(function() {
@@ -21,7 +21,7 @@ $(document).ready(function() {
     setTimeout(function(){
       $('html, body').scrollTop(0);
     }, 0);
- });
+  });
 });
 
 // // Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
