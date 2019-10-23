@@ -12476,7 +12476,6 @@ section.plans-section {
 
 footer {
   margin: 0;
-  padding: 0 20px;
   font-size: 16px;
   -webkit-transition: all ease-out 0.3s;
   -moz-transition: all ease-out 0.3s;
@@ -12484,8 +12483,7 @@ footer {
   -o-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s; }
   footer .container {
-    padding-top: 40px;
-    padding-bottom: 40px; }
+    padding: 40px 20px; }
     footer .container div, footer .container a {
       pointer-events: none; }
   footer .footer-profile-picture .profile-picture {
@@ -13036,17 +13034,14 @@ body.first-load:after {
     -o-transition: all ease-out 0.8s;
     transition: all ease-out 0.8s; }
 
-  footer {
+  footer .container {
     min-height: 100vh;
-    padding: 0 20px; }
-    footer .container {
-      padding-top: 0;
-      padding-bottom: 35px; }
-    footer .footer-copyright {
-      position: absolute;
-      bottom: 30px;
-      left: 35px;
-      font-size: 15px; }
+    padding: 0; }
+  footer .footer-copyright {
+    position: absolute;
+    bottom: 30px;
+    left: 35px;
+    font-size: 15px; }
 
   body.theme-colour.black.is-bottom .navbar ul.navbar-nav li.nav-item a.nav-link, body.theme-colour.white.is-top .navbar ul.navbar-nav li.nav-item a.nav-link, body.theme-colour.contact_me .navbar ul.navbar-nav li.nav-item a.nav-link {
     color: #1A1A1A; }

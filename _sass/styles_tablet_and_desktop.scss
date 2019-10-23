@@ -208,11 +208,9 @@
 
   // Footer
   footer {
-    min-height:100vh;
-    padding:0 20px;
     .container {
-      padding-top:0;//35px
-      padding-bottom:35px;
+      min-height:100vh;
+      padding:0;
     }
     .footer-copyright {
       position:absolute;

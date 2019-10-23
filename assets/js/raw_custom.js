@@ -31,9 +31,9 @@ $(function() {
   $(window).scroll(function() {
     var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollFromBottom >= 600) {
+    if (scrollFromBottom >= 550) {
       body.removeClass("is-bottom").addClass("is-top");
-    } else if (scrollFromBottom <= 600) {
+    } else if (scrollFromBottom <= 550) {
       body.removeClass("is-top").addClass("is-bottom");
     }
   });

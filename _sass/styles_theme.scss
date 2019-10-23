@@ -1482,12 +1482,10 @@ section.plans-section {
 // Footer
 footer {
   margin:0;
-  padding:0 20px;//To revise mobile
   font-size:16px;
   @include transition(all ease-out 0.3s);
   .container {
-    padding-top:40px;
-    padding-bottom:40px;
+    padding:40px 20px;//To revise mobile
     div, a {
       pointer-events:none;
     }
