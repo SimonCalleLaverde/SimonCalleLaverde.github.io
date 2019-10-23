@@ -15,8 +15,6 @@ module.exports = function(grunt) {
     },
     
     uglify: {
-      options: {
-      },
       my_target: {
         files: {
           'assets/js/main.js': ['assets/js/main.js']
@@ -27,7 +25,7 @@ module.exports = function(grunt) {
     watch: {
       scripts: {
         files: ['assets/js/_grunt/*.js'],
-        tasks: ['concat'],
+        tasks: ['concat', 'uglify'],
         options: {
           livereload: true,
         },
@@ -39,6 +37,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  // To Test 'grunt-contrib-cssmin'
 
   // Register Task(s).
   grunt.registerTask('default', ['concat', 'uglify']);
