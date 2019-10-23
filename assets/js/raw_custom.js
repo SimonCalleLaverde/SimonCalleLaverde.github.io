@@ -24,20 +24,20 @@ $(document).ready(function() {
   });
 });
 
-// // Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
-// $(function() {
-//   //caches a jQuery object containing the body element
-//   var body = $("body");
-//   $(window).scroll(function() {
-//     var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+// Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
+$(function() {
+  //caches a jQuery object containing the body element
+  var body = $("body");
+  $(window).scroll(function() {
+    var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-//     if (scrollFromBottom >= 600) {
-//       body.removeClass("is-bottom").addClass("is-top");
-//     } else if (scrollFromBottom <= 600) {
-//       body.removeClass("is-top").addClass("is-bottom");
-//     }
-//   });
-// });
+    if (scrollFromBottom >= 600) {
+      body.removeClass("is-bottom").addClass("is-top");
+    } else if (scrollFromBottom <= 600) {
+      body.removeClass("is-top").addClass("is-bottom");
+    }
+  });
+});
 
 // Smooth Scroll Script
 $(function() {
