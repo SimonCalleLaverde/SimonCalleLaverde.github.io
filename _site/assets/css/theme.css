@@ -12476,7 +12476,6 @@ section.plans-section {
 
 footer {
   margin: 0;
-  font-size: 16px;
   -webkit-transition: all ease-out 0.3s;
   -moz-transition: all ease-out 0.3s;
   -ms-transition: all ease-out 0.3s;
@@ -12484,28 +12483,12 @@ footer {
   transition: all ease-out 0.3s; }
   footer .container {
     padding: 40px 20px; }
-    footer .container div, footer .container a {
+    footer .container div {
       pointer-events: none; }
-  footer .footer-profile-picture .profile-picture {
-    display: inline-block;
-    width: 205px;
-    height: 200px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: all ease-out 0.5s;
-    -moz-transition: all ease-out 0.5s;
-    -ms-transition: all ease-out 0.5s;
-    -o-transition: all ease-out 0.5s;
-    transition: all ease-out 0.5s; }
   footer .footer-drop-me-a-line {
+    position: absolute;
+    right: 180px;
+    bottom: 100px;
     pointer-events: none;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -12515,13 +12498,6 @@ footer {
     footer .footer-drop-me-a-line h1, footer .footer-drop-me-a-line h2, footer .footer-drop-me-a-line h3, footer .footer-drop-me-a-line h4, footer .footer-drop-me-a-line h5, footer .footer-drop-me-a-line h6 {
       font-size: 8rem !important;
       pointer-events: none; }
-  footer article iframe {
-    pointer-events: none;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem; }
   footer .see-letter-button {
     cursor: alias; }
 
