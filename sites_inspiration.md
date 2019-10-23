@@ -25,13 +25,13 @@ thumbnail_image: ""
 <a href="https://jekyllrb.com/docs/troubleshooting/#no-sudo" rel="ugc">Jekyll No Sudo</a><br>
 <a href="https://www.algolia.com/" rel="ugc">Search or Pagination for Jekyll/Static Sites</a><br>
 
-<h1>Forestry | Jekyll</h1>
+<h1>Forestry / Jekyll</h1>
 <a href="https://forestry.io/" rel="ugc">Forestry.io</a><br>
 <a href="https://forestry.io/pricing/" rel="ugc">Pricing</a><br>
 <a href="https://forestry.io/blog/hugo-and-jekyll-compared/" rel="ugc">Hugo Vs Jekyll</a><br>
 <a href="https://jekyllthemes.io/free" rel="ugc">Jekyll Themes</a><br>
 
-<h1>Medium | Musli</h1>
+<h1>Medium / Musli</h1>
 <a href="https://medium.muz.li/discovering-font-personality-5-font-psychology-insights-that-will-improve-your-ux-design-fd4eb3ae8413" rel="ugc">About Fonts</a><br>
 <a href="https://colors.muz.li/color-palette-generator/b37400" rel="ugc">Color Palette</a><br>
 <a href="https://search.muz.li/?utm_source=Muzli_medium&utm_medium=muzli_medium_banner&utm_campaign=search_banner_yellow" rel="ugc">Design Inspiration</a><br>
@@ -109,7 +109,7 @@ thumbnail_image: ""
 <a href="https://tympanus.net/codrops/2019/07/23/smooth-scrolling-image-effects/" rel="ugc">Images Cool Effects | Mary Lou | # 3</a><br>
 <a href="https://codepen.io/andrejsharapov/pen/rPyYML" rel="ugc">Nice Menu For Accordion Use</a><br>
 
-<h1>Platforms | Frameworks | CMS's</h1>
+<h1>Platforms / Frameworks / CMS's</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY" rel="ugc">GitHub Pages</a><br>
 <a href="https://webflow.com/cms" rel="ugc">Webflow CMS</a><br>
 <a href="https://barba.js.org/" rel="ugc">Barba.js</a><br>
@@ -120,7 +120,7 @@ thumbnail_image: ""
 <a href="https://mdbootstrap.com/education/bootstrap/" rel="ugc">Bootstrap</a><br>
 <a href="https://mdbootstrap.com/education/javascript/chapter-1-lesson-1/" rel="ugc">Introduction To JavaScript</a><br>
 
-<h1>Videos To Watch | For A Video 'Cool' Sources Blog</h1>
+<h1>Videos To Watch / For A Video 'Cool' Sources Blog</h1>
 <a href="youtube.com/watch?v=dv2TvTXQ4FQ" rel="ugc">SVG Can Do that?</a><br>
 <a href="http://youtube.com/watch?v=dGcsHMXbSOA" rel="ugc">React Tutorial For Beginners</a><br>
 <a href="https://www.youtube.com/watch?v=LmXVxkWjLT8&list=LL4KC8qzHaqFuW7XvQ0fMB2A&index=2&t=1148s" rel="ugc">Practical Tips for Great UI Animation</a><br>
@@ -134,7 +134,7 @@ thumbnail_image: ""
 <h1>SEO</h1>
 <p>Google | Keywords Everywhere and Install for Chrome</p>
 
-<h1>Jekyll, Ruby, NPM, Grunt, Compilers | Related Problems/Documentation</h1>
+<h1>Jekyll, Ruby, NPM, Grunt, Compilers / Related Problems/Documentation</h1>
 <a href="https://gruntjs.com/sample-gruntfile" rel="ugc">sample-gruntfile</a><br>
 <a href="https://gruntjs.com/configuring-tasks" rel="ugc">configuring-tasks</a><br>
 <a href="http://o.zasadnyy.com/blog/optimized-jekyll-site-with-grunt/" rel="ugc">The way I tryied, must follow main sources</a><br>
@@ -147,7 +147,7 @@ thumbnail_image: ""
 <a href="https://github.com/gruntjs/grunt-cli/blob/master/bin/grunt" rel="ugc">grunt-cli | ?</a><br>
 <a href="https://github.com/gruntjs/grunt-contrib-sass" rel="ugc">grunt-contrib-sass | ?</a><br>
 <a href="https://closure-compiler.appspot.com/home" rel="ugc">Google Compiler</a><br>
-<!--<a href="..." rel="ugc">...</a><br>-->
+<a href="https://github.com/gruntjs?utf8=%E2%9C%93&q=jshint&type=&language=" rel="ugc">Grunt Plugins</a><br>
 <!--<a href="..." rel="ugc">...</a><br>-->
 <!--<a href="..." rel="ugc">...</a><br>-->
 <!--<a href="..." rel="ugc">...</a><br>-->
@@ -158,6 +158,7 @@ thumbnail_image: ""
 
 <h1>Page Speed</h1>
 <a href="https://developers.google.com/speed/pagespeed/insights/" rel="ugc">...</a><br>
+
 
 
 
