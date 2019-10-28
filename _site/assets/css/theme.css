@@ -11837,92 +11837,14 @@ aside.change-features {
           -o-transition: all ease-out 1s;
           transition: all ease-out 1s; }
           .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:hover, .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:active, .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:focus {
+            will-change: transform;
             -webkit-transform: scale(1.03);
             -moz-transform: scale(1.03);
             -ms-transform: scale(1.03);
             -o-transform: scale(1.03);
-            transform: scale(1.03);
-            -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important;
-            -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important;
-            -ms-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important;
-            -o-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important; }
+            transform: scale(1.03); }
         .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article > a {
           pointer-events: all; }
-
-.slick-as-nav-for.as-nav-for-my-work {
-  width: calc(100% - 3px);
-  margin-left: 1px;
-  z-index: 100; }
-  .slick-as-nav-for.as-nav-for-my-work .slick-list {
-    z-index: 102; }
-    .slick-as-nav-for.as-nav-for-my-work .slick-list.draggable {
-      padding: 0 !important; }
-    .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide {
-      outline: none;
-      cursor: pointer;
-      -webkit-transform: translate3d(-1px, 0px, 0px) !important;
-      -moz-transform: translate3d(-1px, 0px, 0px) !important;
-      -ms-transform: translate3d(-1px, 0px, 0px) !important;
-      -o-transform: translate3d(-1px, 0px, 0px) !important;
-      transform: translate3d(-1px, 0px, 0px) !important; }
-      .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide .project-as-nav-for-windows {
-        position: relative;
-        height: 80px; }
-        .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide .project-as-nav-for-windows .project-as-nav-for {
-          position: absolute;
-          margin: auto;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          z-index: 103;
-          -webkit-filter: opacity(0.6);
-          -moz-filter: opacity(0.6);
-          -ms-filter: opacity(0.6);
-          -o-filter: opacity(0.6);
-          filter: opacity(0.6); }
-        .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before, .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after {
-          content: '';
-          position: absolute;
-          top: 0;
-          height: 100%;
-          width: 10px;
-          background-color: #1A1A1A;
-          pointer-events: none;
-          z-index: 104;
-          -webkit-transition: all ease-out 0.3s;
-          -moz-transition: all ease-out 0.3s;
-          -ms-transition: all ease-out 0.3s;
-          -o-transition: all ease-out 0.3s;
-          transition: all ease-out 0.3s;
-          -webkit-transform: translateX(0);
-          -moz-transform: translateX(0);
-          -ms-transform: translateX(0);
-          -o-transform: translateX(0);
-          transform: translateX(0); }
-        .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide .project-as-nav-for-windows:before {
-          left: 0; }
-        .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide .project-as-nav-for-windows:after {
-          right: 0; }
-      .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track .slick-slide.slick-current .project-as-nav-for-windows .project-as-nav-for {
-        -webkit-filter: opacity(1);
-        -moz-filter: opacity(1);
-        -ms-filter: opacity(1);
-        -o-filter: opacity(1);
-        filter: opacity(1); }
-    .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track:hover .slick-slide .project-as-nav-for-windows:before {
-      -webkit-transform: translateX(-9px);
-      -moz-transform: translateX(-9px);
-      -ms-transform: translateX(-9px);
-      -o-transform: translateX(-9px);
-      transform: translateX(-9px); }
-    .slick-as-nav-for.as-nav-for-my-work .slick-list .slick-track:hover .slick-slide .project-as-nav-for-windows:after {
-      -webkit-transform: translateX(9px);
-      -moz-transform: translateX(9px);
-      -ms-transform: translateX(9px);
-      -o-transform: translateX(9px);
-      transform: translateX(9px); }
 
 .carousel-my-skills {
   z-index: 100; }

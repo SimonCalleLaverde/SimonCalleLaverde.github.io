@@ -901,8 +901,9 @@ aside.change-features {
               @include filter(opacity(1));
               @include transition(all ease-out 1s);
               &:hover, &:active, &:focus {
+                will-change:transform;//, box-shadow
                 @include transform(scale(1.03));
-                @include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
+                //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
               }
             }
             > a {
@@ -914,77 +915,77 @@ aside.change-features {
     }
   }
 }
-.slick-as-nav-for.as-nav-for-my-work {
-  width:calc(100% - 3px);
-  margin-left:1px;
-  z-index:100;
-  .slick-list {
-    z-index:102;
-    &.draggable {
-      padding:0!important;
-    }
-    .slick-track {
-      .slick-slide {
-        outline:none;
-        cursor:pointer;
-        @include transform(translate3d(-1px, 0px, 0px)!important);
-        .project-as-nav-for-windows {
-          position:relative;
-          height:80px;
-          .project-as-nav-for {
-            position:absolute;
-            margin:auto;
-            top:0;
-            right:0;
-            bottom:0;
-            left:0;
-            z-index:103;
-            @include filter(opacity(0.6));
-          }
-          &:before, &:after {
-            content:'';
-            position:absolute;
-            top:0;
-            height:100%;
-            width:10px;
-            background-color:theme-color('grey-dark');
-            pointer-events:none;
-            z-index:104;
-            @include transition(all ease-out 0.3s);
-            @include transform(translateX(0));
-          }
-          &:before {
-            left:0;
-          }
-          &:after {
-            right:0;
-          }
-        }
-        &.slick-current {
-          .project-as-nav-for-windows {
-            .project-as-nav-for {
-              @include filter(opacity(1));
-            }
-          }
-        }
-      }
-      &:hover {
-        .slick-slide {
-          .project-as-nav-for-windows {
-            .project-as-nav-for {
-            }
-            &:before {
-              @include transform(translateX(-9px));//-10px
-            }
-            &:after {
-              @include transform(translateX(9px));//10px
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .slick-as-nav-for.as-nav-for-my-work {
+//   width:calc(100% - 3px);
+//   margin-left:1px;
+//   z-index:100;
+//   .slick-list {
+//     z-index:102;
+//     &.draggable {
+//       padding:0!important;
+//     }
+//     .slick-track {
+//       .slick-slide {
+//         outline:none;
+//         cursor:pointer;
+//         @include transform(translate3d(-1px, 0px, 0px)!important);
+//         .project-as-nav-for-windows {
+//           position:relative;
+//           height:80px;
+//           .project-as-nav-for {
+//             position:absolute;
+//             margin:auto;
+//             top:0;
+//             right:0;
+//             bottom:0;
+//             left:0;
+//             z-index:103;
+//             @include filter(opacity(0.6));
+//           }
+//           &:before, &:after {
+//             content:'';
+//             position:absolute;
+//             top:0;
+//             height:100%;
+//             width:10px;
+//             background-color:theme-color('grey-dark');
+//             pointer-events:none;
+//             z-index:104;
+//             @include transition(all ease-out 0.3s);
+//             @include transform(translateX(0));
+//           }
+//           &:before {
+//             left:0;
+//           }
+//           &:after {
+//             right:0;
+//           }
+//         }
+//         &.slick-current {
+//           .project-as-nav-for-windows {
+//             .project-as-nav-for {
+//               @include filter(opacity(1));
+//             }
+//           }
+//         }
+//       }
+//       &:hover {
+//         .slick-slide {
+//           .project-as-nav-for-windows {
+//             .project-as-nav-for {
+//             }
+//             &:before {
+//               @include transform(translateX(-9px));//-10px
+//             }
+//             &:after {
+//               @include transform(translateX(9px));//10px
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 // Slick Carousel (Carousel My Skills)
 .carousel-my-skills {
