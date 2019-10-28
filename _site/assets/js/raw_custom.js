@@ -144,22 +144,22 @@ $(document).ready(function() {
     //pauseOnFocus: true,//default
     //fade: true,
     //cssEase: 'linear',
-    asNavFor: '.as-nav-for-my-work'
+    //asNavFor: '.as-nav-for-my-work'
   });
-  $('.as-nav-for-my-work').slick({
-    dots: false,
-    infinite: false,
-    speed: 500,//300
-    slidesToShow: 8,
-    //slidesToScroll: 1,
-    draggable: true,//default
-    swipe: true,//default
-    swipeToSlide: true,
-    arrows: false,
-    focusOnSelect: true,
-    lazyLoad: 'ondemand',
-    asNavFor: '.carousel-my-work'
-  });
+  // $('.as-nav-for-my-work').slick({
+  //   dots: false,
+  //   infinite: false,
+  //   speed: 500,//300
+  //   slidesToShow: 8,
+  //   //slidesToScroll: 1,
+  //   draggable: true,//default
+  //   swipe: true,//default
+  //   swipeToSlide: true,
+  //   arrows: false,
+  //   focusOnSelect: true,
+  //   lazyLoad: 'ondemand',
+  //   asNavFor: '.carousel-my-work'
+  // });
   $('.carousel-my-skills').slick({
     dots: false,
     infinite: true,
