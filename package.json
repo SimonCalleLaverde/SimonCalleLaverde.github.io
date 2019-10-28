@@ -37,10 +37,7 @@
     "url": "https://github.com/SimonCalleLaverde/SimonCalleLaverde.github.io/issues"
   },
   "homepage": "https://github.com/SimonCalleLaverde/SimonCalleLaverde.github.io#readme",
-  "dependencies": {
-    "lax.js": "^1.2.3",
-    "minibarjs": "^0.4.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-contrib-concat": "^0.5.1",
