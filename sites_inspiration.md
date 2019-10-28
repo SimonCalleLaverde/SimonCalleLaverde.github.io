@@ -71,10 +71,14 @@ thumbnail_image: ""
 <a href="https://www.ultranoir.com/en/" rel="ugc">Ultranoir | Awesome Loading | Blend Loading</a><br>
 <a href="https://moves.basicagency.com/" rel="ugc">Moves | Awesome | Sound</a><br>
 <a href="https://www.alexvanzijl.nl/" rel="">Alexvanzijl | Super Cool Folio</a><br>
+<a href="https://www.hugoandmarie.com/artists/mvm/" rel="ugc">Hugo And Marie | Cool Design</a><br>
+<a href="https://mvmprint.bg/" rel="ugc">Mvm Print | Print | Stock Photos</a><br>
+<a href="https://www.reynders.com/en#" rel="ugc">Reynders | Looks Good | Label Printers</a><br>
+<a href="https://loveiko.com/" rel="ugc">Loveiko | Incredible | Love It</a><br>
+<a href="https://www.kiwi-verlag.de/blog/" rel="ugc">Kiwi Verlag | Cool Blog</a><br>
+<a href="https://www.phillip.ch/" rel="ugc">Phillip | Cool Photography</a><br>
+<a href="https://wadach.com/" rel="ugc">Wadach | Nice Folio | Nice Contact</a><br>
 <!--
-<a href="..." rel="ugc">...</a><br>
-<a href="..." rel="ugc">...</a><br>
-<a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
@@ -108,6 +112,7 @@ thumbnail_image: ""
 <a href="https://codepen.io/mikewagz/pen/VWKemL" rel="ugc">Magnetic Button</a><br>
 <a href="https://tympanus.net/codrops/2019/07/23/smooth-scrolling-image-effects/" rel="ugc">Images Cool Effects | Mary Lou | # 3</a><br>
 <a href="https://codepen.io/andrejsharapov/pen/rPyYML" rel="ugc">Nice Menu For Accordion Use</a><br>
+<a href="https://www.cssscript.com/stylish-custom-scrollbar-pure-javascript-minibar/" rel="ugc">Stylish Custom Scrollbar</a><br>
 
 <h1>Platforms / Frameworks / CMS's</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY" rel="ugc">GitHub Pages</a><br>
@@ -164,12 +169,12 @@ thumbnail_image: ""
 <h1>LINKS OPENED WHEN FORMATTING MAC (For open an review or just close, after reinstalling everything)</h1>
 <a href="https://snipcart.com/blog/jekyll-ecommerce-tutorial" rel="ugc">Snipcart | 6 Deploying your website</a><br>
 <a href="https://app.netlify.com/" rel="ugc">Netlify</a><br>
-<a href="http://www.pmob.co.uk/temp/gallery-hover-stay.htm" rel="ugc">Some tut</a><br>
+<a href="http://www.pmob.co.uk/temp/gallery-hover-stay.htm" rel="ugc">Some Tut</a><br>
 <a href="https://help.github.com/en/articles/about-github-pages" rel="ugc">Github Pages</a><br>
 <a href="http://jmcglone.com/guides/github-pages/" rel="ugc">Site Github</a><br>
 <a href="https://tobiasahlin.com/blog/layered-smooth-box-shadows/" rel="ugc">Smoother Shadows</a><br>
 <a href="https://tobiasahlin.com/blog/move-from-jquery-to-vanilla-javascript/#selecting-elements" rel="ugc">Jquery to Vanilla</a><br>
-<a href="https://www.creativebloq.com/web-design/parallax-scrolling-1131762" rel="ugc">Paarllax Websites</a><br>
+<a href="https://www.creativebloq.com/web-design/parallax-scrolling-1131762" rel="ugc">Parallax Websites</a><br>
 <a href="https://greensock.com/get-started/" rel="ugc">GSAP Get Started</a><br>
 <a href="https://greensock.com/get-started/#easing" rel="ugc">GSAP</a><br>
 <a href="https://greensock.com/forums/topic/18196-scrollmagic-parallax-sidebar-navigation/" rel="ugc">Scroll Magic, Parallax</a><br>
@@ -179,7 +184,3 @@ thumbnail_image: ""
 <a href="https://jekyllthemes.io/resources/jekyll-contact-forms/" rel="ugc">Jekyll, Contact Forms</a><br>
 <a href="https://made.jekyllthemes.io/" rel="ugc">Made Jekyll Theme</a><br>
 <a href="https://min30327.github.io/luxy.js/" rel="ugc">Luxy | Options</a><br>
-<a href="https://board.jekyllthemes.io/" rel="ugc">Board Jekyll Theme</a><br>
-<a href="https://unsplash.com/s/photos/graphic-design" rel="ugc">Unsplash | Graphic Design</a><br>
-<a href="https://pixabay.com/images/search/ink/?pagi=5" rel="ugc">Pixabay | Ink</a><br>
-<a href="https://www.shutterstock.com/search/Graphic+design" rel="ugc">Shutterstock | Graphic Design</a><br>
