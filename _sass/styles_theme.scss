@@ -1741,8 +1741,10 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
   article.project-article {
     &.home {
       .project-info {
-        time.project-year {
-          color:theme-color('magenta')!important;
+        time.project-year, .project-platform {
+          h1, h2, h3, h4, h5, h6 {
+            color:theme-color('magenta')!important;
+          }
         }
       }
     }
