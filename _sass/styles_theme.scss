@@ -1739,7 +1739,14 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
     }
   }
   article.project-article {
-    &.home, &.work {
+    &.home {
+      .project-info {
+        time.project-year {
+          color:theme-color('magenta')!important;
+        }
+      }
+    }
+    &.work {
       .project-thumbnail {
         time.project-year {
           color:theme-color('magenta')!important;
