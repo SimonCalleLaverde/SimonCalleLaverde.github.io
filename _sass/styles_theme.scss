@@ -1608,9 +1608,9 @@ body.page-type-basic.work {
 
 // Theme Colour Black/White | is-top/is-bottom
 body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
-  background-color:#FCF9F5;//IvSkaya//#FFF
+  background-color:#FFF;
   .background-for-color {
-    background-color:theme-color('grey-light');
+    background-color:theme-color('beige-light');
   }
   a.logo {
     .logo-interior {
