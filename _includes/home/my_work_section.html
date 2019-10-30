@@ -30,9 +30,9 @@
       </div>
     </div>
 
-    <div class="row mt-5less pt-3">
-      <div class="col-md-12">
-        <div class="slick-carousel carousel-my-work position-relative pt-4more" id="slick_carousel">
+    <div class="row pt-5" id="slick_carousel">
+      <div class="col-md-12 pt-2">
+        <div class="slick-carousel carousel-my-work position-relative pt-4more">
           {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
           {% for project in sorted_projects %}
