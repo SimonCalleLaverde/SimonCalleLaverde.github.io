@@ -1626,13 +1626,10 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
     //}
   }
   .text-white, .text-grey-light, .text-grey-mid {
-    color:#000!important;
+    color:theme-color('grey-dark')!important;
   }
   .text-stroke-white {
     -webkit-text-stroke-color:theme-color('grey-dark')!important;
-  }
-  .text-grey-light {
-    color:theme-color('grey-dark')!important;
   }
   .copyright {
     color:theme-color('grey-light')!important;
@@ -1739,15 +1736,15 @@ body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-co
     }
   }
   article.project-article {
-    &.home {
-      .project-info {
-        time.project-year, .project-platform {
-          h1, h2, h3, h4, h5, h6 {
-            color:theme-color('magenta')!important;
-          }
-        }
-      }
-    }
+    // &.home {
+    //   .project-info {
+    //     time.project-year, .project-platform {
+    //       h1, h2, h3, h4, h5, h6 {
+    //         color:theme-color('magenta')!important;
+    //       }
+    //     }
+    //   }
+    // }
     &.work {
       .project-thumbnail {
         time.project-year {
