@@ -234,6 +234,9 @@ figure {
     pointer-events:none;
   }
 }
+:focus {
+  outline:none!important;
+}
 
 // Background For Animation, Background For Color
 .background-for-animation, .background-for-color {
@@ -887,27 +890,31 @@ aside.change-features {
           > a {
             pointer-events:none;//Can't remove pointer-events to links apparently
           }
-          .project-thumbnail {
-            pointer-events:none;
-            @include filter(opacity(0.6));
+          figure {
+            .project-thumbnail {
+              pointer-events:none;
+              @include filter(opacity(0.6));
+            }
           }
         }
         &.slick-current {
           //pointer-events:all;
           article.project-article {
             pointer-events:all;
-            .project-thumbnail {
-              pointer-events:all;
-              @include filter(opacity(1));
-              @include transition(all ease-out 1s);
-              &:hover, &:active, &:focus {
-                will-change:transform;//, box-shadow
-                @include transform(scale(1.03));
-                //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
-              }
-            }
             > a {
               pointer-events:all;//Can't remove pointer-events to links apparently
+            }
+            figure {
+              .project-thumbnail {
+                pointer-events:all;
+                @include filter(opacity(1));
+                @include transition(all ease-out 1s);
+                &:hover, &:active, &:focus {
+                  will-change:transform;//, box-shadow
+                  @include transform(scale(1.03));
+                  //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
+                }
+              }
             }
           }
         }
@@ -1601,7 +1608,7 @@ body.page-type-basic.work {
 
 // Theme Colour Black/White | is-top/is-bottom
 body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
-  background-color:#FFF;
+  background-color:#FCF9F5;//IvSkaya//#FFF
   .background-for-color {
     background-color:theme-color('grey-light');
   }

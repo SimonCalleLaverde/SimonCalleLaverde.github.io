@@ -11260,6 +11260,9 @@ figure {
   figure figcaption, figure time {
     pointer-events: none; }
 
+:focus {
+  outline: none !important; }
+
 .background-for-animation, .background-for-color {
   position: fixed;
   width: 100vw;
@@ -11815,7 +11818,7 @@ aside.change-features {
         transition: all ease-out 0.5s; }
         .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide article.project-article > a {
           pointer-events: none; }
-        .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide article.project-article .project-thumbnail {
+        .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide article.project-article figure .project-thumbnail {
           pointer-events: none;
           -webkit-filter: opacity(0.6);
           -moz-filter: opacity(0.6);
@@ -11824,7 +11827,9 @@ aside.change-features {
           filter: opacity(0.6); }
       .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article {
         pointer-events: all; }
-        .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail {
+        .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article > a {
+          pointer-events: all; }
+        .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article figure .project-thumbnail {
           pointer-events: all;
           -webkit-filter: opacity(1);
           -moz-filter: opacity(1);
@@ -11836,15 +11841,13 @@ aside.change-features {
           -ms-transition: all ease-out 1s;
           -o-transition: all ease-out 1s;
           transition: all ease-out 1s; }
-          .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:hover, .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:active, .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article .project-thumbnail:focus {
+          .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article figure .project-thumbnail:hover, .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article figure .project-thumbnail:active, .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article figure .project-thumbnail:focus {
             will-change: transform;
             -webkit-transform: scale(1.03);
             -moz-transform: scale(1.03);
             -ms-transform: scale(1.03);
             -o-transform: scale(1.03);
             transform: scale(1.03); }
-        .slick-carousel.carousel-my-work .slick-list .slick-track .slick-slide.slick-current article.project-article > a {
-          pointer-events: all; }
 
 .carousel-my-skills {
   z-index: 100; }
@@ -12441,7 +12444,7 @@ body.page-type-feedback .logo-cover {
   display: none; }
 
 body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
-  background-color: #FFF; }
+  background-color: #FCF9F5; }
   body.theme-colour.black.is-bottom .background-for-color, body.theme-colour.white.is-top .background-for-color, body.theme-colour.contact_me .background-for-color {
     background-color: #FEFEFE; }
   body.theme-colour.black.is-bottom a.logo .logo-interior svg, body.theme-colour.white.is-top a.logo .logo-interior svg, body.theme-colour.contact_me a.logo .logo-interior svg {

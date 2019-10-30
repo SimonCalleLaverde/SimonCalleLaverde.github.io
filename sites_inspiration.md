@@ -35,8 +35,10 @@ thumbnail_image: ""
 <a href="https://medium.muz.li/discovering-font-personality-5-font-psychology-insights-that-will-improve-your-ux-design-fd4eb3ae8413" rel="ugc">About Fonts</a><br>
 <a href="https://colors.muz.li/color-palette-generator/b37400" rel="ugc">Color Palette</a><br>
 <a href="https://search.muz.li/?utm_source=Muzli_medium&utm_medium=muzli_medium_banner&utm_campaign=search_banner_yellow" rel="ugc">Design Inspiration</a><br>
+<a href="https://www.typewolf.com/free-fonts#font-list" rel="ugc">Free Fonts List | 800+ Free Fonts</a><br>
 
-<h1>Portafolios / Awesome Websites</h1>
+<h1>Portfolios / Awesome Websites</h1>
+<a href="https://ivskaya.com/" rel="ugc">Ivskaya</a><br>
 <a href="https://www.jomor.design/work" rel="ugc">Jomor</a><br>
 <a href="https://stuuudio.co/" rel="ugc">Stuuudio</a><br>
 <a href="https://aliceleveque.com/" rel="ugc">Aliceleveque</a><br>
@@ -78,8 +80,11 @@ thumbnail_image: ""
 <a href="https://www.kiwi-verlag.de/blog/" rel="ugc">Kiwi Verlag | Cool Blog</a><br>
 <a href="https://www.phillip.ch/" rel="ugc">Phillip | Cool Photography</a><br>
 <a href="https://wadach.com/" rel="ugc">Wadach | Nice Folio | Nice Contact</a><br>
+<a href="https://smakkstudios.com/" rel="ugc">Smakkstudios | Beautiful and Beautiful Fonts</a><br>
+<a href="https://www.komarekfoundation.org" rel="ugc">Komarekfoundation | Incred | Noise Images</a><br>
+<a href="http://thefloorisjelly.com/" rel="ugc">The Floor Is Jelly | Game</a><br>
+<a href="https://www.aceandtate.com/journal" rel="ugc">Aceandtate</a><br>
 <!--
-<a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
@@ -113,6 +118,8 @@ thumbnail_image: ""
 <a href="https://tympanus.net/codrops/2019/07/23/smooth-scrolling-image-effects/" rel="ugc">Images Cool Effects | Mary Lou | # 3</a><br>
 <a href="https://codepen.io/andrejsharapov/pen/rPyYML" rel="ugc">Nice Menu For Accordion Use</a><br>
 <a href="https://www.cssscript.com/stylish-custom-scrollbar-pure-javascript-minibar/" rel="ugc">Stylish Custom Scrollbar</a><br>
+<a href="https://swiperjs.com/demos/" rel="ugc">Awesome Slider | 3D, Etc</a><br>
+<a href="https://scotch.io/tutorials/drawing-and-animating-jelly-shapes-with-canvas" rel="ugc">Jelly.js | Jelly Forms And Mouse On Edges Effect</a><br>
 
 <h1>Platforms / Frameworks / CMS's</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY" rel="ugc">GitHub Pages</a><br>
@@ -120,6 +127,7 @@ thumbnail_image: ""
 <a href="https://barba.js.org/" rel="ugc">Barba.js</a><br>
 <a href="https://threejs.org/" rel="ugc">Threejs.org</a><br>
 <a href="https://prismic.io/" rel="ugc">Prismic CMS | (For React, Vue, Nuxt, Next)</a><br>
+<a href="https://scotch.io/starters/react/getting-started-with-react-2019-edition?utm_content=in-content" rel="ugc">Learn React</a><br>
 
 <h1>Bootstrap 4</h1>
 <a href="https://mdbootstrap.com/education/bootstrap/" rel="ugc">Bootstrap</a><br>

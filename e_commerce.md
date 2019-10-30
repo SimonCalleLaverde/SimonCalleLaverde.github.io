@@ -21,3 +21,5 @@ thumbnail_image: ""
 <h3>https://webflow.com/, as per my Webflow discovery on Sep 15, 2019, Sunday</h3>
 <h3>Wix</h3>
 <h3>Wordpress</h3>
+
+<h3>https://sidesupply.com/guides/art-of-ecommerce</h3>

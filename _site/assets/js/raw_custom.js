@@ -31,9 +31,9 @@ $(function() {
   $(window).scroll(function() {
     var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollFromBottom >= 600) {
+    if (scrollFromBottom >= 550) {
       body.removeClass("is-bottom").addClass("is-top");
-    } else if (scrollFromBottom <= 600) {
+    } else if (scrollFromBottom <= 550) {
       body.removeClass("is-top").addClass("is-bottom");
     }
   });
@@ -126,7 +126,7 @@ $(function() {
 $(document).ready(function() {
   $('.carousel-my-work').slick({
     dots: false,
-    infinite: false,
+    infinite: true,//false
     speed: 500,//300
     slidesToShow: 1,//3
     //slidesToScroll: 1,
@@ -140,7 +140,7 @@ $(document).ready(function() {
     //autoplay: true,
     //autoplaySpeed: 10000,
     pauseOnHover: false,
-    lazyLoad: 'ondemand',//'progressive'
+    lazyLoad: 'progressive',//'ondemand'
     //pauseOnFocus: true,//default
     //fade: true,
     //cssEase: 'linear',
