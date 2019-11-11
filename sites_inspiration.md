@@ -84,9 +84,8 @@ thumbnail_image: ""
 <a href="https://www.komarekfoundation.org" rel="ugc">Komarekfoundation | Incred | Noise Images</a><br>
 <a href="http://thefloorisjelly.com/" rel="ugc">The Floor Is Jelly | Game</a><br>
 <a href="https://www.aceandtate.com/journal" rel="ugc">Aceandtate</a><br>
+<a href="https://bff.design/" rel="ugc">Bff</a><br>
 <!--
-<a href="..." rel="ugc">...</a><br>
-<a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
@@ -120,6 +119,7 @@ thumbnail_image: ""
 <a href="https://www.cssscript.com/stylish-custom-scrollbar-pure-javascript-minibar/" rel="ugc">Stylish Custom Scrollbar</a><br>
 <a href="https://swiperjs.com/demos/" rel="ugc">Awesome Slider | 3D, Etc</a><br>
 <a href="https://scotch.io/tutorials/drawing-and-animating-jelly-shapes-with-canvas" rel="ugc">Jelly.js | Jelly Forms And Mouse On Edges Effect</a><br>
+<a href="https://kingsora.github.io/OverlayScrollbars/#!overview" rel="ugc">Awesome Custom Scrollbars | But won't work well with luxy, works well alone</a><br>
 
 <h1>Platforms / Frameworks / CMS's</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY" rel="ugc">GitHub Pages</a><br>
@@ -161,7 +161,7 @@ thumbnail_image: ""
 <a href="https://github.com/gruntjs/grunt-contrib-sass" rel="ugc">grunt-contrib-sass | ?</a><br>
 <a href="https://closure-compiler.appspot.com/home" rel="ugc">Google Compiler</a><br>
 <a href="https://github.com/gruntjs?utf8=%E2%9C%93&q=jshint&type=&language=" rel="ugc">Grunt Plugins</a><br>
-<!--<a href="..." rel="ugc">...</a><br>-->
+<a href="https://autoprefixer.github.io/" rel="ugc">Autoprefixer</a><br>
 <!--<a href="..." rel="ugc">...</a><br>-->
 <!--<a href="..." rel="ugc">...</a><br>-->
 <!--<a href="..." rel="ugc">...</a><br>-->

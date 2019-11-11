@@ -11256,8 +11256,6 @@ html {
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: always; }
-  html ::-webkit-scrollbar {
-    display: none; }
 
 body {
   position: relative;

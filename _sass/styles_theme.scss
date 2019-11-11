@@ -140,9 +140,9 @@ html {
   -webkit-font-smoothing:subpixel-antialiased;//-webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   font-smooth:always;
-  ::-webkit-scrollbar {
-    display:none;
-  }
+  // ::-webkit-scrollbar {
+  //   display:none;
+  // }
 }
 body {
   position:relative;//For Scroll Spy
