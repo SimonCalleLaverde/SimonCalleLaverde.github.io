@@ -1,6 +1,171 @@
 <section class="my-work-section d-flex flex-column align-items-center magic-trigger-my-work-title clearfix" id="my_work_section">
   <div class="container">
 
+
+
+
+
+
+
+
+
+
+    <!--Google Maps-->
+    <div class="row mt-5 pt-5">
+      <div class="col-md-10 offset-md-1">
+
+
+
+          <!--The div element for the map-->
+          <div class="mt-2" id="map"></div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        width: 100%;  /* The width is the width of the web page */
+        height: 400px;  /* The height is 400 pixels */
+       }
+    </style>
+
+
+
+
+
+    <!--Google Maps-->
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = {lat: -25.344, lng: 131.036};
+
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru,
+
+
+
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+
+
+
+        });
+
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_aLJEFX2kiZodaTMH7ZiklWlM3dJGqkg&callback=initMap">
+    </script>
+
+
+
+
+
+
+
+
+
+
+
 		<div class="row pt-4 pb-2" id="my_work">
       <div class="col-md-10 offset-md-1">
         <div class="gsap-my-work-title position-relative" style="will-change:transform;">

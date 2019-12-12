@@ -85,7 +85,16 @@ thumbnail_image: ""
 <a href="http://thefloorisjelly.com/" rel="ugc">The Floor Is Jelly | Game</a><br>
 <a href="https://www.aceandtate.com/journal" rel="ugc">Aceandtate</a><br>
 <a href="https://bff.design/" rel="ugc">Bff</a><br>
+<a href="http://www.pariscalling-design.com/en/team/" rel="ugc">Pariscalling | Team | Graphics | Incredible</a><br>
+<a href="https://www.impactblacksheepagency.com/" rel="ugc">Impact Black Sheep Agency</a><br>
+<a href="https://culture.basicagency.com/" rel="ugc">Basic Agency</a><br>
+<a href="http://eric-huguenin.com/" rel="ugc">Eric Huguenin</a><br>
 <!--
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
@@ -143,6 +152,7 @@ thumbnail_image: ""
 <a href="https://www.youtube.com/watch?v=0HzOqyiV3f8" rel="ugc">Websites Design | Top 10 Mistakes & Their Solutions</a><br>
 <a href="https://www.youtube.com/watch?v=Zz6eOVaaelI" rel="ugc">Learn Sass In 20 Minutes | Sass Crash Course</a><br>
 <a href="https://www.youtube.com/watch?v=J7sVJChzMOQ" rel="ugc">Why I Don't Use Adobe Creative Cloud Anymore | Specially because of the alternative programs</a><br>
+<a href="https://www.youtube.com/watch?v=-oyeaIirVC0" rel="ugc">Next-generation web styling (Chrome Dev Summit 2019)</a><br>
 
 <h1>SEO</h1>
 <p>Google | Keywords Everywhere and Install for Chrome</p>
@@ -172,6 +182,18 @@ thumbnail_image: ""
 <h1>Page Speed</h1>
 <a href="https://developers.google.com/speed/pagespeed/insights/" rel="ugc">Google Page Speed</a><br>
 <a href="https://prettydiff.com/" rel="ugc">Minify HTML</a><br>
+
+<h1>Assets</h1>
+<a href="https://iconmonstr.com/" rel="ugc">Icons Alternative</a><br>
+<a href="https://unsplash.com/" rel="ugc">Unsplash</a><br>
+<a href="https://pixabay.com/" rel="ugc">Pixabay</a><br>
+<a href="https://www.pexels.com/" rel="ugc">Pexels</a><br>
+
+
+
+<!--//////////////////////////////////////////////////////-->
+
+
 
 <!--TO ERRASE-->
 <h1>LINKS OPENED WHEN FORMATTING MAC (For open an review or just close, after reinstalling everything)</h1>
