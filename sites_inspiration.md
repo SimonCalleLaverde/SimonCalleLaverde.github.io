@@ -90,7 +90,14 @@ thumbnail_image: ""
 <a href="https://culture.basicagency.com/" rel="ugc">Basic Agency</a><br>
 <a href="http://eric-huguenin.com/" rel="ugc">Eric Huguenin</a><br>
 <a href="http://as.ouiwill.com/" rel="ugc">Magenta, Cyan, Black, Incredible | Fashion, Art, E-Commerce</a><br>
+<a href="http://md-mocktober.webflow.io/" rel="ugc">Circle | Cool Design | Concept Site Made In Webflow</a><br>
+<a href="https://www.mattvbrg.com/" rel="ugc">3D Tilt | Another Awesome | Awesome Header</a><br>
 <!--
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
+<a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
@@ -129,6 +136,9 @@ thumbnail_image: ""
 <a href="https://swiperjs.com/demos/" rel="ugc">Awesome Slider | 3D, Etc</a><br>
 <a href="https://scotch.io/tutorials/drawing-and-animating-jelly-shapes-with-canvas" rel="ugc">Jelly.js | Jelly Forms And Mouse On Edges Effect</a><br>
 <a href="https://kingsora.github.io/OverlayScrollbars/#!overview" rel="ugc">Awesome Custom Scrollbars | But won't work well with luxy, works well alone</a><br>
+<a href="https://codepen.io/waaark/pen/VbgwEM" rel="ugc">Liquid Button | Jelly</a><br>
+<a href="http://manos.malihu.gr/jquery-custom-content-scroller/" rel="ugc">Custom Scrollbars</a><br>
+<a href="https://css-tricks.com/animate-a-container-on-mouse-over-using-perspective-and-transform/" rel="ugc">Tilt Images On Hover/Over</a><br>
 
 <h1>Platforms / Frameworks / CMS's</h1>
 <a href="https://www.youtube.com/watch?v=2MsN8gpT6jY" rel="ugc">GitHub Pages</a><br>
@@ -198,7 +208,6 @@ thumbnail_image: ""
 <!--TO ERRASE-->
 <h1>LINKS OPENED WHEN FORMATTING MAC (For open an review or just close, after reinstalling everything)</h1>
 <a href="https://snipcart.com/blog/jekyll-ecommerce-tutorial" rel="ugc">Snipcart | 6 Deploying your website</a><br>
-<a href="https://app.netlify.com/" rel="ugc">Netlify</a><br>
 <a href="http://www.pmob.co.uk/temp/gallery-hover-stay.htm" rel="ugc">Some Tut</a><br>
 <a href="https://help.github.com/en/articles/about-github-pages" rel="ugc">Github Pages</a><br>
 <a href="http://jmcglone.com/guides/github-pages/" rel="ugc">Site Github</a><br>
@@ -213,4 +222,3 @@ thumbnail_image: ""
 <a href="https://github.com/janpaepke/ScrollMagic/wiki/Getting-Started-:-How-to-use-ScrollMagic" rel="ugc">Scroll Magic | Defining the controller</a><br>
 <a href="https://jekyllthemes.io/resources/jekyll-contact-forms/" rel="ugc">Jekyll, Contact Forms</a><br>
 <a href="https://made.jekyllthemes.io/" rel="ugc">Made Jekyll Theme</a><br>
-<a href="https://min30327.github.io/luxy.js/" rel="ugc">Luxy | Options</a><br>
