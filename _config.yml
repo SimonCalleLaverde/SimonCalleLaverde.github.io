@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Simon Calle Laverde # Fine Web Design
-email: kyverde88@gmail.com
+email: kyverde88@gmail.com # To Create Newer
 description: >- # this means to ignore newlines until "baseurl:"
   Hello, I'm Simón Calle Laverde a publicist and web developer from Bogotá,
   Colombia. I worked with a 5 star rated Australian based agency for the past
@@ -40,19 +40,13 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-exclude: # From Bogota Bulldogs, to review with above original Jekyll example
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - node_modules
+  - node_modules/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
@@ -63,6 +57,7 @@ exclude: # From Bogota Bulldogs, to review with above original Jekyll example
   - README*
   - LICENSE
   - ".gitignore"
+  - raw_custom.js
 
 collections:
   projects:
@@ -74,3 +69,15 @@ collections:
   plans:
     title: Plans
     output: true
+
+sass:
+  style: compressed
+
+compress_html: # As Per: https://alligator.io/jekyll/compress-html/
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
