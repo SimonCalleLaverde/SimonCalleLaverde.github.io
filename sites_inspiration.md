@@ -92,8 +92,8 @@ thumbnail_image: ""
 <a href="http://as.ouiwill.com/" rel="ugc">Magenta, Cyan, Black, Incredible | Fashion, Art, E-Commerce</a><br>
 <a href="http://md-mocktober.webflow.io/" rel="ugc">Circle | Cool Design | Concept Site Made In Webflow</a><br>
 <a href="https://www.mattvbrg.com/" rel="ugc">3D Tilt | Another Awesome | Awesome Header</a><br>
+<a href="https://hellotoday.jp/workflow/" rel="ugc">Hellotoday | Tokyo | Awesome! </a><br>
 <!--
-<a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
