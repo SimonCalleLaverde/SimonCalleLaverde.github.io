@@ -30,6 +30,7 @@ thumbnail_image: ""
 <a href="https://forestry.io/pricing/" rel="ugc">Pricing</a><br>
 <a href="https://forestry.io/blog/hugo-and-jekyll-compared/" rel="ugc">Hugo Vs Jekyll</a><br>
 <a href="https://jekyllthemes.io/free" rel="ugc">Jekyll Themes</a><br>
+<a href="https://forestry.io/docs/settings/fields/" rel="ugc">Forestry Fields</a><br>
 
 <h1>Medium / Musli</h1>
 <a href="https://medium.muz.li/discovering-font-personality-5-font-psychology-insights-that-will-improve-your-ux-design-fd4eb3ae8413" rel="ugc">About Fonts</a><br>
@@ -94,8 +95,6 @@ thumbnail_image: ""
 <a href="https://www.mattvbrg.com/" rel="ugc">3D Tilt | Another Awesome | Awesome Header</a><br>
 <a href="https://hellotoday.jp/workflow/" rel="ugc">Hellotoday | Tokyo | Awesome! </a><br>
 <!--
-<a href="..." rel="ugc">...</a><br>
-<a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
 <a href="..." rel="ugc">...</a><br>
@@ -198,6 +197,9 @@ thumbnail_image: ""
 <a href="https://unsplash.com/" rel="ugc">Unsplash</a><br>
 <a href="https://pixabay.com/" rel="ugc">Pixabay</a><br>
 <a href="https://www.pexels.com/" rel="ugc">Pexels</a><br>
+
+<h1>Browsers Targeting</h1>
+<a href="https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/" rel="ugc">Media Query Browser Target</a><br>
 
 
 
