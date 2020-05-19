@@ -247,3 +247,6 @@ http://vega-template.webflow.io/home/home-1
 
 <!--Media Queries. Target Ie-->
 https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/
+
+<!--Gsap-->
+https://greensock.com/get-started/
