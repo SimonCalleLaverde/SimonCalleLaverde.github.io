@@ -224,3 +224,26 @@ thumbnail_image: ""
 <a href="https://github.com/janpaepke/ScrollMagic/wiki/Getting-Started-:-How-to-use-ScrollMagic" rel="ugc">Scroll Magic | Defining the controller</a><br>
 <a href="https://jekyllthemes.io/resources/jekyll-contact-forms/" rel="ugc">Jekyll, Contact Forms</a><br>
 <a href="https://made.jekyllthemes.io/" rel="ugc">Made Jekyll Theme</a><br>
+
+
+
+<!--/////////////////////////// 2020 Pandemic ///////////////////////////-->
+
+
+
+<!--Freelance-->
+https://sidesupply.com/guides/the-freelance-life#organizing-day
+
+<!--React-->
+https://scotch.io/starters/react/getting-started-with-react-2019-edition?utm_content=in-content
+
+<!--Responsive Images-->
+https://developers.google.com/web/fundamentals/design-and-ux/responsive/images#art_direction_in_responsive_images_with_picture
+https://www.udacity.com/course/responsive-images--ud882
+
+<!--Webflow-->
+https://university.webflow.com/lesson/portfolio-website-part-4
+http://vega-template.webflow.io/home/home-1
+
+<!--Media Queries. Target Ie-->
+https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/
