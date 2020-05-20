@@ -954,8 +954,8 @@ aside.nav-social-media {
         width:17px;
         font-size:1.2rem;
         fill:theme-color('chocolate')!important;//rosybrown
-        @include transition(all ease-out 0.5s);
         z-index:21;
+        @include transition(all ease-out 0.5s);
       }
       &::after {
         content:"";

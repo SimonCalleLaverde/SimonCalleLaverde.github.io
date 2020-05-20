@@ -5304,7 +5304,7 @@ aside.nav-social-media { position: fixed; top: 33.5%; left: 36px; }
 
 aside.nav-social-media a span { position: relative; font-size: 15.5px; pointer-events: none; }
 
-aside.nav-social-media a span svg { position: relative; width: 17px; font-size: 1.2rem; fill: #181008 !important; -webkit-transition: all ease-out 0.5s; -moz-transition: all ease-out 0.5s; -ms-transition: all ease-out 0.5s; -o-transition: all ease-out 0.5s; transition: all ease-out 0.5s; z-index: 21; }
+aside.nav-social-media a span svg { position: relative; width: 17px; font-size: 1.2rem; fill: #181008 !important; z-index: 21; -webkit-transition: all ease-out 0.5s; -moz-transition: all ease-out 0.5s; -ms-transition: all ease-out 0.5s; -o-transition: all ease-out 0.5s; transition: all ease-out 0.5s; }
 
 aside.nav-social-media a span::after { content: ""; position: absolute; width: 27px; height: 27px; top: -0.7px; left: -5px; background-color: #f8c6c6; z-index: 20; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); -webkit-transition: transform ease-out 0.5s; -moz-transition: transform ease-out 0.5s; -ms-transition: transform ease-out 0.5s; -o-transition: transform ease-out 0.5s; transition: transform ease-out 0.5s; }
 
@@ -5453,7 +5453,7 @@ header.home-hello-header .hello-header-caption { will-change: transform, transfo
   .d-md-flex { display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
   #column_div .first.column, .column-div .first.column { padding-right: 20px; }
   #column_div .last.column, .column-div .last.column { padding-left: 20px; }
-  nav.navbar { position: fixed; width: 100vh; height: 55px; left: 100%; pointer-events: none; -webkit-transform: rotateZ(90deg) translateY(10px); -moz-transform: rotateZ(90deg) translateY(10px); -ms-transform: rotateZ(90deg) translateY(10px); -o-transform: rotateZ(90deg) translateY(10px); transform: rotateZ(90deg) translateY(10px); -webkit-transform-origin: 0% 0%; -moz-transform-origin: 0% 0%; -ms-transform-origin: 0% 0%; -o-transform-origin: 0% 0%; transform-origin: 0% 0%; }
+  nav.navbar { position: fixed; width: 100vh; height: 60px; left: 100%; pointer-events: none; -webkit-transform-origin: 0 0; -moz-transform-origin: 0 0; -ms-transform-origin: 0 0; -o-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); }
   nav.navbar ul.navbar-nav li.nav-item a.nav-link { position: relative; padding: 0 0.3rem; font-family: "Brandon Grotesque Light", sans-serif; font-size: 13.5px; color: #f8c6c6; text-transform: uppercase; white-space: nowrap; }
   nav.navbar ul.navbar-nav li.nav-item a.nav-link::after { content: ''; position: absolute; right: calc(50% - 3px); bottom: 3px; width: 6px; height: 6px; border: 1px solid #f8c6c6; pointer-events: none; -webkit-transform: scale(0) rotate(0); -moz-transform: scale(0) rotate(0); -ms-transform: scale(0) rotate(0); -o-transform: scale(0) rotate(0); transform: scale(0) rotate(0); -webkit-transition: all 0.7s ease-out; -moz-transition: all 0.7s ease-out; -ms-transition: all 0.7s ease-out; -o-transition: all 0.7s ease-out; transition: all 0.7s ease-out; }
   nav.navbar ul.navbar-nav li.nav-item a.nav-link.active { color: #aaacdb; }
