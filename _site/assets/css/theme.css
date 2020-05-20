@@ -5306,7 +5306,7 @@ aside.nav-social-media a span { position: relative; font-size: 15.5px; pointer-e
 
 aside.nav-social-media a span svg { position: relative; width: 17px; font-size: 1.2rem; fill: #181008 !important; -webkit-transition: all ease-out 0.5s; -moz-transition: all ease-out 0.5s; -ms-transition: all ease-out 0.5s; -o-transition: all ease-out 0.5s; transition: all ease-out 0.5s; z-index: 21; }
 
-aside.nav-social-media a span::after { content: ""; position: absolute; width: 27px; height: 27px; top: -0.7px; left: -5px; background-color: #f8c6c6; z-index: 20; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); -webkit-transition: transform ease-out 0.5s, border-radius ease-out 0.5s; -moz-transition: transform ease-out 0.5s, border-radius ease-out 0.5s; -ms-transition: transform ease-out 0.5s, border-radius ease-out 0.5s; -o-transition: transform ease-out 0.5s, border-radius ease-out 0.5s; transition: transform ease-out 0.5s, border-radius ease-out 0.5s; }
+aside.nav-social-media a span::after { content: ""; position: absolute; width: 27px; height: 27px; top: -0.7px; left: -5px; background-color: #f8c6c6; z-index: 20; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); -webkit-transition: transform ease-out 0.5s; -moz-transition: transform ease-out 0.5s; -ms-transition: transform ease-out 0.5s; -o-transition: transform ease-out 0.5s; transition: transform ease-out 0.5s; }
 
 aside.nav-social-media a span.icon-facebook svg { width: 16.5px; }
 
@@ -5316,7 +5316,7 @@ aside.nav-social-media a span.icon-behance svg { width: 18px; }
 
 aside.nav-social-media a:hover span svg, aside.nav-social-media a:active span svg, aside.nav-social-media a:focus span svg { fill: #FFF !important; -webkit-filter: opacity(0.8); -moz-filter: opacity(0.8); -ms-filter: opacity(0.8); -o-filter: opacity(0.8); filter: opacity(0.8); }
 
-aside.nav-social-media a:hover span::after, aside.nav-social-media a:active span::after, aside.nav-social-media a:focus span::after { -webkit-transform: rotate(0); -moz-transform: rotate(0); -ms-transform: rotate(0); -o-transform: rotate(0); transform: rotate(0); -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
+aside.nav-social-media a:hover span::after, aside.nav-social-media a:active span::after, aside.nav-social-media a:focus span::after { -webkit-transform: rotate(0); -moz-transform: rotate(0); -ms-transform: rotate(0); -o-transform: rotate(0); transform: rotate(0); }
 
 aside.nav-social-media a:hover span.icon-facebook svg, aside.nav-social-media a:active span.icon-facebook svg, aside.nav-social-media a:focus span.icon-facebook svg { fill: #4c70ba !important; }
 

@@ -967,7 +967,7 @@ aside.nav-social-media {
         background-color:theme-color('rosybrown');
         z-index:20;
         @include transform(rotate(45deg));
-        @include transition(transform ease-out 0.5s, border-radius ease-out 0.5s);//
+        @include transition(transform ease-out 0.5s);//border-radius ease-out 0.5s
       }
       &.icon-facebook {
         svg {
@@ -1004,7 +1004,7 @@ aside.nav-social-media {
         }
         &::after {
           @include transform(rotate(0));
-          @include border-radius(50%);//
+          //@include border-radius(50%);
         }
         &.icon-facebook {
           svg {
