@@ -2,15 +2,15 @@
 name: El Avispero Mov
 name_for_thumbnail: El Avispero Mov
 thumbnail_image: /uploads/site-image-el-avispero-mov.png
-platform: NationBuilder
-theme: Aware v2
+platform: [NationBuilder, Aware v2]
 year: 2016
 roles: Development # [Development, Other]
 web:
   domain: www.elavisperomov
   image: /uploads/site-web-el-avispero-mov.png
   url: http://www.elavisperomov.org/
-category: Code Nation
+type: Campaign Website
+category: developing for Code Nation
 tags: ""
 order: 10
 ---

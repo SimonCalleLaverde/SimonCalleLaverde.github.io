@@ -2,16 +2,16 @@
 name: Australian Religious Response to Climate Change
 name_for_thumbnail: ARRCC # Australian<br>Religious<br>Response to<br>Climate Change
 thumbnail_image: /uploads/site-image-australian-religious-response-to-climate-change.jpg
-platform: NationBuilder
-theme: Aware # V2
+platform: [NationBuilder, Aware]
 year: 2015
 roles: Development
 web:
   domain: www.arrcc.org.au
   image: /uploads/site-web-australian-religious-response-to-climate-change.png
   url: https://www.arrcc.org.au/
-category: Code Nation
-tags: [featured, other]
+type: Campaign Website
+category: developing for Code Nation
+tags: featured
 order: 2
 ---
 

@@ -2,15 +2,15 @@
 name: National Apology Foundation
 name_for_thumbnail: Nafia
 thumbnail_image: /uploads/site-image-national-apology-foundation.jpg
-platform: NationBuilder
-theme: Aware v2 # Now changed
+platform: [NationBuilder, Aware v2]
 year: 2016
 roles: Development
 web:
   domain: www.nafia.org.au
   image: /uploads/site-web-national-apology-foundation.png
   url: https://www.nafia.org.au/
-category: Code Nation
+type: Campaign Website
+category: developing for Code Nation
 tags: ""
 order: 11
 ---

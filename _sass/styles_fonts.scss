@@ -4,39 +4,42 @@
 // Font Face
 $FontsPath:"/uploads";//https://s3.amazonaws.com/bogota-bulldogs/uploads
 
-@font-face {
-  font-family:'BG light';
-  src:url('#{$FontsPath}/hinted-BrandonGrotesque-Light.eot');
-  src:local('Brandon Grotesque Light'), local('BrandonGrotesque-Light'),
-    url('#{$FontsPath}/hinted-BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
-    url('#{$FontsPath}/hinted-BrandonGrotesque-Light.woff2') format('woff2'),
-    url('#{$FontsPath}/hinted-BrandonGrotesque-Light.woff') format('woff'),
-    url('#{$FontsPath}/hinted-BrandonGrotesque-Light.ttf') format('truetype');
-  font-weight:300;
-  font-style:normal;
-}
+// @font-face {
+//   font-family:'Brandon Grotesque Light';
+//   src:url('#{$FontsPath}/hinted-BrandonGrotesque-Light.eot');
+//   src:local('Brandon Grotesque Light'), local('BrandonGrotesque-Light'),
+//     url('#{$FontsPath}/hinted-BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+//     url('#{$FontsPath}/hinted-BrandonGrotesque-Light.woff2') format('woff2'),
+//     url('#{$FontsPath}/hinted-BrandonGrotesque-Light.woff') format('woff'),
+//     url('#{$FontsPath}/hinted-BrandonGrotesque-Light.ttf') format('truetype');
+//   font-weight:300;
+//   font-style:normal;
+// }
 
-@font-face {
-  font-family:'BG regular';
-  src:url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.eot');
-  src:local('Brandon Grotesque Regular'), local('BrandonGrotesque-Regular'),
-    url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
-    url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.woff2') format('woff2'),
-    url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.woff') format('woff'),
-    url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.ttf') format('truetype');
-  font-weight:normal;
-  font-style:normal;
-}
+// @font-face {
+//   font-family:'Brandon Grotesque Regular';
+//   src:url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.eot');
+//   src:local('Brandon Grotesque Regular'), local('BrandonGrotesque-Regular'),
+//     url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+//     url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.woff2') format('woff2'),
+//     url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.woff') format('woff'),
+//     url('#{$FontsPath}/hinted-BrandonGrotesque-Regular.ttf') format('truetype');
+//   font-weight:normal;
+//   font-style:normal;
+// }
 
 // Font Headline
-$font-headline:"Montserrat","Avenir Next Pro Bold",Helvetica;//Could be for Calle --> "Playfair Display",serif;
+$font-headline:'Old Standard TT',serif;
 
 // Font Subtitle
-$font-subtitle:"BG regular","Avenir Next Pro Bold",Sans-serif;//"Montserrat"//"Playfair Display",serif
+$font-subtitle:"Brandon Grotesque Regular",sans-serif;//'Montserrat',sans-serif
 
 // Font Paragraph
-$font-paragraph:"BG light","Avenir Next Pro",Sans-serif;//"Cuprum"
+$font-paragraph:"Brandon Grotesque Light",sans-serif;//'Montserrat',sans-serif
 
 // Cool Fonts
 // - neue-montreal
-// - Steinbeck Regular and Nostra Stream.
+// - Steinbeck Regular and Nostra Stream
+
+// Some Other Fonts
+// - Cuprum

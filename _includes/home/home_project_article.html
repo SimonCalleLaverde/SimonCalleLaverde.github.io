@@ -1,45 +1,58 @@
-<article class="project-article home position-relative text-center">
+<article class="project-article home position-relative {% if projects_count == 1 %}article-left{% else %}article-right{% endif %} mx-5" id="scroll_to_{{ project.order }}">
   <a href="#" data-toggle="modal" data-target="#projectModal_{{ project.slug }}">
-    <style type="text/css">
-      #thumbnail-{{ project.slug }} {
-        background:url('{{ project.thumbnail_image | relative_url }}') no-repeat center center scroll;
-        -webkit-background-size:cover;
-        -moz-background-size:cover;
-        -o-background-size:cover;
-        background-size:cover;
-      }
-    </style>
-    <figure style="overflow:hidden;">
-      <div class="project-thumbnail bg-image d-flex flex-row justify-content-center align-items-end p-4" id="thumbnail-{{ project.slug }}" type="image" title="{{ project.name }} Website Project"><!--scale-element-->
-        <figcaption class="project-caption mt-3" style="display:inline-block;">
-          <div class="project-name align-self-start mb-2 py-2 px-3">
-            <h3 class="text-uppercase m-0">{{ project.name_for_thumbnail }}</h3>
+    <figure>
+      <div>
+        <style type="text/css">
+          #thumbnail_image_{{ project.slug }} {
+            background:url('{{ project.thumbnail_image | relative_url }}') no-repeat center center scroll;
+            -webkit-background-size:cover;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+            background-size:cover;
+          }
+        </style>
+        <div class="project-thumbnail-wrap">
+          <div class="{% if project_tags_list contains 'recent' %}recent-project-thumbnail{% else %}project-thumbnail{% endif %} bg-image" id="thumbnail_image_{{ project.slug }}" type="image" title="{{ project.name }} Website Project"><!--lax--><!--data-lax-translate-y_xs="vh -30, -300 30" data-lax-translate-y_sm="vh -30, -320 30" data-lax-translate-y_md="vh -30, -340 30" data-lax-translate-y_lg="vh -30, -380 30" data-lax-translate-y_xl="vh -30, -400 30" data-lax-anchor="self"-->
           </div>
-
-          <div class="project-roles align-self-start pt-1 px-3">
-            {% for item in project.roles %}
-              <h6 class="font-paragraph text-bold text-uppercase my-2" style="display:inline-block; font-size:0.8rem;">{{ item }}{% unless forloop.last %} <span style="margin-right:1px;">&middot;</span>{% endunless %}</h6>
-            {% endfor %}
-          </div>
-        </figcaption>
+        </div>
       </div>
+
+      <figcaption class="project-caption">
+        <div class="project-side-data text-rosybrown">
+          <time class="project-year">
+            <p class="mx-0">
+              <span class="text-bold">{{ project.year }}</span>
+
+              Made {{ project.category }}
+            </p>
+          </time>
+          
+          <div class="project-info">
+            <p class="mx-0">
+              <span class="text-bold">Created with</span>
+              {% for platform in project.platform %}
+                {{ platform }}{% unless forloop.last %} &middot;{% endunless %}&nbsp;
+              {% endfor %}
+            </p>
+          </div>
+        </div>
+
+        <div class="project-name position-relative">
+          <h3 class="text-huge text-rosybrown text-uppercase mb-0" style="z-index:100;">{{ project.name_for_thumbnail }}</h3>
+
+          <h3 class="position-absolute project-title-stroke text-huge text-stroke-rosybrown text-uppercase mb-0" style="z-index:102;">{{ project.name_for_thumbnail }}</h3>
+        </div>
+        
+        <div class="project-roles">
+          {% for item in project.roles %}
+            <p class="text-bold text-rosybrown mb-0">{{ item }}{% unless forloop.last %} <span>&middot;</span>{% endunless %}</p>
+          {% endfor %}
+
+          <div class="project-type text-rosybrown">
+            {{ project.type }}
+          </div>
+        </div>
+      </figcaption>
     </figure>
   </a>
-
-  <div class="project-info mt-3">  
-    <time class="project-year magic-trigger-all-projects">
-      <h5 class="font-paragraph text-white text-bold mb-0" style="font-size:1.25rem;">{{ project.year }}</h5>
-    </time>
-
-    <div class="project-platform d-flex flex-column align-items-center">
-      <h5 class="font-paragraph text-white text-bold mb-0" style="font-size:1.15rem;">
-        {% for platform in project.platform %}
-          {{ platform }} {% unless forloop.last %}&{% endunless %}
-        {% endfor %}
-        &middot; {{ project.theme }}
-      </h5>
-    </div>
-  </div>
-
-  <div class="magic-trigger-as-nav-for position-absolute" style="width:0; height:0; margin:auto; top:0; right:0; bottom:0; left:0;"></div>
 </article>

@@ -2,15 +2,15 @@
 name: Refugee Council of Australia
 name_for_thumbnail: Refugee Council<br>of Australia
 thumbnail_image: /uploads/site-image-refugee-council-of-australia.png
-platform: NationBuilder
-theme: Bootstrap 4
+platform: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: [Development, Cross Platform]
 web:
   domain: refugeecouncilaus-refugeecouncilaus.nationbuilder.com
   image: /uploads/site-web-refugee-council-of-australia.png
   url: https://refugeecouncilaus-refugeecouncilaus.nationbuilder.com/
-category: Code Nation
+type: Campaign Website
+category: developing for Code Nation
 tags: ""
 order: 25
 ---

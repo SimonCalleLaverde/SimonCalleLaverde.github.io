@@ -2,15 +2,15 @@
 name: Injured Workers Support Network
 name_for_thumbnail: Injured Workers<br>Support Network
 thumbnail_image: /uploads/site-image-injured-workers-support-network-victoria.jpg
-platform: NationBuilder
-theme: Bootstrap 4
+platform: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: Development
 web:
   domain: www.iwsnvic.org.au
   image: /uploads/site-web-injured-workers-support-network-victoria.png
   url: https://www.iwsnvic.org.au/
-category: Code Nation
+type: Campaign Website
+category: developing for Code Nation
 tags: ""
 order: 27
 ---

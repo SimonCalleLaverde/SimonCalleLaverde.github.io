@@ -1,59 +1,57 @@
----
-layout: "compress"
----
-
 <!DOCTYPE html>
 <html lang="{{ page.lang | default:site.lang | default:'en' }}">
 
   {% include head.html %}
 
-  <body class="page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} bg-image theme-colour is-top black loading {% if page.slug == 'home' %}home-rendering{% else %}rendering{% endif %} first-load" data-spy="scroll" data-target="#navbar" data-offset="80">
-    {% include background_for_animation.html %}
-
+  <body class="page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} theme-colour white is-top loading rendering" data-spy="scroll" data-target="#navbar" data-offset="80">
+    {% include loader_quote.html %}
+    
+    {% if page.header_image.size > 0 %}
+      {% include header_image.html %}
+    {% endif %}
+    
     {% include cursor.html %}
-
-    <!-- include logo.html -->
 
     {% include nav_social_media.html %}
 
     {% include copyright.html %}
 
-    {% include change_features.html %}
-
-    {% include nav.html %}
+    {% include nav_desktop.html %}
+    {% include nav_mobile.html %}
 
     {% include aside_covers.html %}
-
-    {% include theme_colour_in.html %}
-
-    {% include burger_menu.html %}
     
-    <div id=""><!--luxy-->
+    <div id="rolly"><!--id="luxy">-->
       <main id="main">
         <h1 class="sr-only">{{ page.title }}</h1>
         
-        {% if page.header_image.size > 0 %}
-          {% include header_image.html %}
-        {% endif %}
-        
         {{ content }}
-
+        
         {% unless page.slug == "contact_me" or page.slug contains "contact" %}
           {% include footer.html %}
         {% endunless %}
       </main>
     </div>
 
-    {% include work/work_project_modal.html %}
 
-    {% include mobile_dev_notice.html %}
+
+
+    <!--<div class="rolly-scroll-bar y-scroll rolly-vertical" style="z-index:1;">
+      <div class="rolly-scroll-bar-thumb">
+      </div>
+    </div>-->
+
+
+
+
+    {% include work/work_project_modal.html %}
     
     {% include scripts.html %}
   </body>
 
   {% if page.background_image.size > 0 %}
     <style type="text/css">
-      #background_for_animation {/*body*/
+      body {
         background:url('{{ page.background_image }}') no-repeat center center fixed;
         -webkit-background-size:cover;
         -moz-background-size:cover;

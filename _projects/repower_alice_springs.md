@@ -2,15 +2,15 @@
 name: Repower Alice Springs
 name_for_thumbnail: Repower Alice<br>Springs
 thumbnail_image: /uploads/site-image-repower-alice-springs.png
-platform: NationBuilder
-theme: Bootstrap 4
+platform: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: Development
 web:
   domain: www.repoweralicesprings.org.au
   image: /uploads/site-web-repower-alice-springs.png
   url: https://www.repoweralicesprings.org.au/
-category: Code Nation
+type: Campaign Website
+category: developing for Code Nation
 tags: ""
 order: 26
 ---

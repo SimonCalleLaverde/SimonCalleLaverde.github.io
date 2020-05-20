@@ -2,16 +2,16 @@
 name: Conservation Council SA
 name_for_thumbnail: CCSA
 thumbnail_image: /uploads/site-image-conservation-council-sa.png
-platform: NationBuilder
-theme: Aware v2
+platform: [NationBuilder, Aware v2]
 year: 2015
 roles: Development
 web:
   domain: www.conservationsa.org.au
   image: /uploads/site-web-conservation-council-sa.png
   url: https://www.conservationsa.org.au/
-category: Code Nation
-tags: [featured, other]
+type: Campaign Website
+category: developing for Code Nation
+tags: featured
 order: 3
 ---
 

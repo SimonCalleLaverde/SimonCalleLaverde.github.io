@@ -5,21 +5,10 @@
   // General
   body {
   }
-  h1, h2, h3, h4, h5, h6 {
-    line-height:1.4;//
-  }
 
-  // Main, Header, Section
-  main, header, section {
+  // Main, Header, Section, Footer
+  main, header, section, footer {
     text-align:left;
-  }
-  main {
-    // .main-frame {
-    //  width:calc(100vw - 24px)!important;
-    //  height:calc(100vh - 24px)!important;
-    //  margin:12px;
-    //  @include border-radius(0.3rem);
-    // }
   }
 
   // Buttons
@@ -29,6 +18,14 @@
     }
   }
 
+  // Flexbox Better Support
+  .d-md-flex {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;//
+    display:flex;
+  }
+  
   // Columnizer
   #column_div, .column-div {
     .first.column {
@@ -37,220 +34,122 @@
     .last.column {
       padding-left:20px;
     }
-    &.column-large {
-      .first.column {
-        width:70%!important;//
-        padding-left:5px;//
-        padding-right:40px;//20px
-      }
-      .last.column {
-        width:30%!important;//
-        padding-left:40px;//20px
-      }
-    }
-  }
-
-  // Flickity Carousel
-  .flickity-carousel {
-    .main-carousel {
-      article.carousel-cell {
-        height:530px;
-      }
-    }
-    .flickity-carousel-bottom-images {
-      display:block;//Desktop
-      .carousel-nav {
-        article.carousel-cell {
-          //float:left;
-          width:11.95%;//12.15%
-          height:100px;
-          margin:0 0.35%;
-        }
-        .flickity-button {
-          display:none;
-        }
-        // Style the selected nav image compared to the others
-        article.carousel-cell {
-          border:3px solid transparent;
-          @include filter(opacity(0.5));
-          &.is-nav-selected {
-            border-color:theme-color("magenta");
-            @include filter(opacity(1));
-          }
-          // > div {
-          //  &:hover, &:active, &:focus {
-           //   @include box-shadow(none);
-           //  }
-          // }
-        }
-      }
-    }
   }
 
   //----------------------------------Section Styles----------------------------------//
 
-  // Work
-  nav.work {
+  // Nav Desktop
+  nav.navbar {
     position:fixed;
-    right:8px;
-    bottom:60px;
-    z-index:10001;
-    a {
-      color:#FFF;
-      @include transform(rotate(90deg));
-      &:hover, &:active, &:focus {
-        color:theme-color('grey-light');
+    width:100vh;//We Will Use Viewport-Height To Apply To The Width
+    height:55px;//62px
+    left:100%;
+    pointer-events:none;
+    @include transform(rotateZ(90deg) translateY(10px));
+    @include transform-origin(0% 0%);
+    //@include transition(all 1000ms cubic-bezier(0.77,0,0.175,1));
+    ul.navbar-nav {
+      li.nav-item {
+        a.nav-link {
+          position:relative;
+          padding:0 0.3rem;
+          font-family:$font-paragraph;//$font-headline
+          font-size:13.5px;//14.5px
+          color:theme-color('rosybrown');
+          text-transform:uppercase;
+          white-space:nowrap;
+          &::after {
+            content:'';
+            position:absolute;
+            right:calc(50% - 3px);//Half ::after width
+            bottom:3px;
+            width:6px;
+            height:6px;
+            border:1px solid theme-color('rosybrown');
+            pointer-events:none;
+            @include transform(scale(0) rotate(0));
+            @include transition(all 0.7s ease-out);
+          }
+          &.active {
+            color:theme-color('blue');
+            //@include transition(all 0.3s ease-out);
+            &::after {
+              bottom:-10px;
+              border-color:theme-color('blue');
+              @include transform(scale(1) rotate(45deg));
+            }
+          }
+          &:hover, &:active, &:focus {
+            color:theme-color('blue');
+            &.active {
+              &::after {
+                border-color:theme-color('blue');
+              }
+            }
+          }
+        }
       }
     }
   }
 
-  // Blog Page
-  section.blog-page {
-    padding:50px 0 25px;
+  // Home Hello Header
+  header.home-hello-header {
+    padding:115px 0 60px;
   }
 
-  // Calendar Page
-  section.calendar-page {
-    padding:50px 0 25px;
+  // Home Recent Projects Section
+  section.home-recent-projects-section {
+    //padding:120px 0 0;//40px 0 0//40px 0
+  }
+
+  // Home Projects Section
+  section.home-projects-section {
+    //padding:0 0 60px;//60px 0
+  }
+
+  // Work Header Section
+  header.work-header-section {
+    min-height:100vh;
+    padding:15px 0;
+  }
+
+  // Work Projects Section
+  section.work-projects-section {
+    padding:80px 0 0;//80px 0
   }
 
   // Feedback Page
   section.feedback-page {
     padding:70px 0 65px;
-    // .feedback-form {
-    //  min-height:600px;
-    //  border:1px dotted theme-color('grey-dark');
-    //  @include border-radius(1rem);
-    // }
-  }
-
-  // Hello Header
-  header.hello-header {
-    min-height:100vh;
-    padding:40px 0;
-  }
-
-  // My Work Section
-  section.my-work-section {
-    padding:130px 0 80px;
-  }
-
-  // All Projects Section
-  section.all-projects-section {
-    padding:150px 0 140px;
-    .all-projects-rails {
-      width:calc(100% - 3px);
-      height:100px;
-      margin-left:1px;
-      overflow:hidden;
-      .all-projects-link {
-        height:100px;
-        //margin-top:-46.5px;
-      }
-    }
-  }
-
-  // About Me Section
-  section.about-me-section {
-    padding:70px 0 60px;
-    .bogota-candelaria-image {
-      width:101.5%;
-      @include transform(translateY(-48px));
-    }
-    .i-am-based-text {
-      margin-top:150px;
-    }
-    .cooffee-image-i {
-      width:106.5%;
-      margin-left:-6.5%;
-    }
-    .cooffee-image-ii {
-      width:106%;
-    }
-    .bogota-image-i {
-      width:101.5%;
-      margin-left:-1.5%;
-    }
-  }
-
-  // My Skills Section
-  section.my-skills-section {
-    padding:100px 0 40px;
-  }
-
-  // // Education Section
-  // section.education-section {
-  //  padding:100px 0 60px;
-  // }
-
-  // Work Section
-  section.work-section {
-    padding:0;
-  }
-
-  // Plans Section
-  section.plans-section {
-    padding:70px 0 60px;
-  }
-
-  // Theme Colour In
-  section.theme-colour-in {
-    position:absolute;
-    width:100vw;
-    height:100vh;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    z-index:105000;
-    @include transition(all ease-out 0.8s);
   }
 
   // Footer
   footer {
-    .container {
+    a.container {
       min-height:100vh;
       padding:0;
-    }
-    .footer-copyright {
-      position:absolute;
-      bottom:40px;
-      left:37px;
-      font-size:15px;
     }
   }
 
   //----------------------------------Page Styles----------------------------------//
 
-  // Theme Colour Black/White | is-top/is-bottom
-  body.theme-colour.black.is-bottom, body.theme-colour.white.is-top, body.theme-colour.contact_me {
-    //padding:0;
-    .navbar {
+  // Basic Page
+  body.page-type-basic {
+  }
+
+  // Basic Page (Home)
+  body.page-type-basic.home {
+    nav.navbar {
       ul.navbar-nav {
         li.nav-item {
           a.nav-link {
-            color:theme-color('grey-dark');
-            &:hover {//, &:active, &:focus
-              color:#000;
-              //@include text-shadow(0 0 20px rgba(0,0,0,0.5), 0 0 20px rgba(235,0,130,0.5));
-            }
-            &.active {
-              //color:theme-color('magenta');
-              //@include text-shadow(0 0 20px rgba(0,0,0,0.5), 0 0 20px rgba(235,0,130,0.5));
-              &:after {
-                border:1.5px solid theme-color('magenta');
-              }
-              &.not-active {
-                color:theme-color('grey-dark');
-                //@include text-shadow(none);
-              }
-            }
+            font-size:12.5px;
           }
         }
       }
     }
   }
-
+  
 }//@media
 
 //----------------------------------Other Media Queries----------------------------------//

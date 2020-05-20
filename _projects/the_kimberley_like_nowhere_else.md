@@ -2,15 +2,15 @@
 name: The Kimberley Like Nowhere Else
 name_for_thumbnail: The Kimberley
 thumbnail_image: /uploads/site-image-the-kimberley-like-nowhere-else.jpg
-platform: NationBuilder
-theme: Aware v2
+platform: [NationBuilder, Aware v2]
 year: 2016
 roles: Development
 web:
   domain: www.likenowhereelse.org.au
   image: /uploads/site-web-the-kimberley-like-nowhere-else.png
   url: https://www.likenowhereelse.org.au/
-category: Code Nation
+type: Campaign Website
+category: developing for Code Nation
 tags: ""
 order: 8
 ---

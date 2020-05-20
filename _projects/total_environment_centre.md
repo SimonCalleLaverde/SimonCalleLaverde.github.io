@@ -2,15 +2,15 @@
 name: Total Environment Centre
 name_for_thumbnail: TEC
 thumbnail_image: /uploads/site-image-total-environment-centre.png
-platform: NationBuilder
-theme: Aware v2
+platform: [NationBuilder, Aware v2]
 year: 2016
 roles: Development
 web:
   domain: www.tec.org.au
   image: /uploads/site-web-total-environment-centre.png
   url: https://www.tec.org.au/
-category: Code Nation
+type: Campaign Website
+category: developing for Code Nation
 tags: ""
 order: 9
 ---

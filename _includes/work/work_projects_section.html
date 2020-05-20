@@ -1,0 +1,88 @@
+<section class="work-projects-section clearfix" id="work_projects_section" data-scene>
+  <div class="container">
+
+    {% assign sorted_projects = site.projects | sort:"order" | reverse %}
+    
+    <!--Desktop-->
+    <div class="pt-3 d-none d-md-block">
+      <div class="row">
+        <div class="col-md-6 my-1">
+          <div class="work-projects-left-column rellax" data-rellax-speed="-1.2" style="will-change:transform"><!--luxy-el--><!--data-speed-y="0.8"-->
+            {% assign projects_count_desktop = 0 %}
+            
+            {% for project in sorted_projects %}
+              {% assign project_tags_list = "#" %}
+              {% for tag in project.tags %}
+                {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
+              {% endfor %}
+
+              {% unless project_tags_list contains "hidden" %}
+                {% assign projects_count_desktop = projects_count_desktop | plus:1 %}
+
+                {% if projects_count_desktop == 1 %}
+                  <div><!--data-scene="rotateZ"-->
+                    {% include work/work_project_article.html %}
+                  </div>
+                {% endif %}
+
+                {% if projects_count_desktop == 2 or forloop.last %}
+                  {% assign projects_count_desktop = 0 %}
+                {% endif %}
+              {% endunless %}
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="col-md-6 my-1">
+          <div class="work-projects-right-column rellax" data-rellax-speed="1.2" style="margin-top:{% if page.slug == 'home' %}170px{% else %}115px{% endif %}; will-change:transform;"><!--luxy-el--><!--data-speed-y="-0.8"--><!--data-offset="{% if page.slug == 'home' %}170{% else %}96{% endif %};"-->
+            {% assign projects_count_desktop = 0 %}
+
+            {% for project in sorted_projects %}
+              {% assign project_tags_list = "#" %}
+              {% for tag in project.tags %}
+                {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
+              {% endfor %}
+
+              {% unless project_tags_list contains "hidden" %}
+                {% assign projects_count_desktop = projects_count_desktop | plus:1 %}
+
+                {% if projects_count_desktop == 2 %}
+                  <div><!--data-scene="rotateZ"-->
+                    {% include work/work_project_article.html %}
+                  </div>
+                {% endif %}
+
+                {% if projects_count_desktop == 2 or forloop.last %}
+                  {% assign projects_count_desktop = 0 %}
+                {% endif %}
+              {% endunless %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Mobile-->
+    <div class="row pt-3 d-block d-md-none">
+      <div class="col-md-12">
+        {% assign projects_count_mobile = 0 %}
+
+        {% for project in sorted_projects %}
+          {% assign projects_count_mobile = projects_count_mobile | plus:1 %}
+
+          {% if projects_count_mobile == 1 %}
+          <div class="row">
+          {% endif %}
+            <div class="col-6 my-1">
+              {% include work/work_project_article.html %}
+            </div>
+          {% if projects_count_mobile == 2 or forloop.last %}
+          </div>
+          {% assign projects_count_mobile = 0 %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,20 +1,20 @@
 ---
 name: Calle Impresores
-name_for_thumbnail: Calle Impresores
+name_for_thumbnail: Calle<br>Impresores
 thumbnail_image: /uploads/site-image-calle-impresores.jpg
-platform: Dreamweaver
-theme: Html Css Php
-year: 2019
-roles: [Design, Development]
+platform: [Jekyll, Bootstrap 4, Forestry]
+year: 2020
+roles: [UI, UX, Design, Development]
 web:
-  domain: site under construction
+  domain: www.calleimpresores.com
   image: /uploads/site-web-calle-impresores.png
   image_2: ""
   image_3: ""
-  url: ""
-category: Tryitdigital Domain
-tags: hidden
-order: 29
+  url: https://calle-impresores.netlify.com
+type: Business Website & Catalogue
+category: as Independent
+tags: recent
+order: 30
 ---
 
 This is a concept project I started in 2015 which I'll be getting into again in September, 2019. I will be creating a new more modern design following some of the UI I had already created and polishing the concept, as well as maintaining the classic brand look established since 1987 but making it shine in a modern website.

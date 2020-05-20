@@ -1,16 +1,16 @@
 ---
 name: Healthy Futures
-name_for_thumbnail: Healthy Futures
+name_for_thumbnail: Healthy<br>Futures
 thumbnail_image: /uploads/site-image-healthy-futures.jpg
-platform: NationBuilder
-theme: Bootstrap 3
+platform: [NationBuilder, Bootstrap 3]
 year: 2016
 roles: Development
 web:
   domain: www.healthyfutures.net.au
   image: /uploads/site-web-healthy-futures.png
   url: http://www.healthyfutures.net.au/
-category: Code Nation
+type: Campaign Website
+category: developing for Code Nation
 tags: [featured, other]
 order: 4
 ---

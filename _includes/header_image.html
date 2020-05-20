@@ -1,3 +1,11 @@
-<header class="header-image clearfix">
-	<img src="{{ page.header_image }}" alt="{{ page.title }} Header Image">
-</header>
+<style type="text/css">
+  #header_image {
+    background:url('{{ page.header_image }}') no-repeat center center scroll;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+  }
+</style>
+<div class="header-image bg-image d-block clearfix" id="header_image" title="{{ page.title }} Header Image">
+</div>

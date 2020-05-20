@@ -2,15 +2,15 @@
 name: Stop Adani Alliance
 name_for_thumbnail: Stop Adani<br>Alliance
 thumbnail_image: /uploads/site-image-stop-adani-alliance.jpg
-platform: [Jekyll, Forestry]
-theme: Slides
+platform: [Jekyll, Slides, Forestry]
 year: 2017
 roles: Development # [Development, Other]
 web:
   domain: www.stopadanialliance.com
   image: /uploads/site-web-stop-adani-alliance.png
   url: http://www.stopadanialliance.com/
-category: Code Nation
+type: Campaign Website
+category: developing for Code Nation
 tags: ""
 order: 14
 ---

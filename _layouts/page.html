@@ -3,15 +3,8 @@ layout: "main"
 ---
 
 {% if page.slug == "work" or page.slug contains "work" %}
-	{% include content_simple.html %}
-	{% include work/work_section.html %}
-
-{% elsif page.slug == "plans" or page.slug contains "plans" %}
-	{% include content_centered.html %}
-	{% include plans/plans_section.html %}
-
-{% elsif page.slug == "sources" or page.slug contains "sources" %}
-	{% include sources/videos_section.html %}
+  {% include work/work_header_section.html %}
+  {% include work/work_projects_section.html %}
 
 {% else %}
 

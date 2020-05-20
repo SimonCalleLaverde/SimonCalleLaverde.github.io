@@ -2,15 +2,15 @@
 name: Bogota Bulldogs
 name_for_thumbnail: Bogota Bulldogs
 thumbnail_image: /uploads/site-image-bogota-bulldogs.jpg
-platform: [Jekyll, Forestry]
-theme: Bootstrap 4
+platform: [Jekyll, Bootstrap 4, Forestry]
 year: 2019
 roles: Development
 web:
   domain: bogota-bulldogs.netlify.com
   image: /uploads/site-web-bogota-bulldogs.png
   url: https://bogota-bulldogs.netlify.com/
-category: Code Nation
+type: Campaign Website
+category: developing for Code Nation
 tags: ""
 order: 28
 ---

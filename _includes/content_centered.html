@@ -1,23 +1,19 @@
-<!--IN DEVELOPMENT | Tags_List after fixing Tags Array issue | Not being able to add array of tags to pages-->
-
-<!-- include liquid_top_variables.html -->
-
-<section class="{{ page.tags | slugify | replace:'-','_' }} content-centered text-white text-center px-4 px-md-0 pt-4more pt-md-5 pb-3 pb-md-4 clearfix" id="content_centered"><!--url_encode-->
+<section class="content-centered text-center px-4 px-md-0 pt-4 pt-md-5 pb-4more clearfix">
   <div class="container">
 
-    <div class="row">
+    <div class="row pt-4">
       <div class="col-md-10 offset-md-1">
 
-        <a class="smoothScroll mb-4more d-none d-md-inline-block" href="#work_section">
-          <h5 class="headline-link {% if page.tags contains 'Admin Headline Magenta' %}text-magenta{% else %}text-yellow{% endif %} text-uppercase" style="font-size:6rem; line-height:1.1;">{{ page.headline | default:page.title }}</h5>
-        </a>
-        
+        <div class="mb-5 pb-2">
+          <h1 class="font-headline text-stroke-grey-dark text-gigantic text-uppercase d-inline-block">{{ page.headline | default:page.title }}</h1>
+        </div>
+
         <div class="intro">
           {{ content }}
         </div>
 
       </div>
     </div>
-
+    
   </div>
 </section>

@@ -2,51 +2,50 @@
 ---
 
 // Brand Colours
-$theme-color-grey-dark:#1A1A1A;
+$theme-color-grey-dark:#1A1A1A;//rgba(26,26,26,1)
 $theme-color-grey-mid:darken(#CCC,5);
-$theme-color-grey-light:#FEFEFE;
-$theme-color-magenta:#EB0082;//rgba(235,0,130,1)//Magenta//Other Option #F83470
-$theme-color-goldy:rgba(235,200,160,1);
-//$theme-color-blue-light:darken(rgba(158,232,248,1),10);//Blue Light
-$theme-color-beige-light:#FCF9F5;//Beige Light (Iv Skaya)
+$theme-color-grey-light:#FEFEFE;//rgba(254,254,254,1)
 
-//$theme-color-magenta:#FF3547;//Red Neon//Test
-$theme-color-blue-light:rgba(146,174,245,1);//Blue Pastel//Test
-$theme-color-purple-dark:#880E4F;//Purple Dark//Test
+$theme-color-chocolate:darken(rgba(101,67,33,1),20);//Dark Brown/Otter Brown//rgba(32,29,22,1)//Vansijl//rgba(35,35,33,1)//Tuatara
+$theme-color-beige-light:rgba(240,217,194,1);//Terminal//#FCF9F5//Beige Light (Iv Skaya)
+$theme-color-mustard:rgba(235,189,48,1);//Mustard
+$theme-color-blue:lighten(rgba(63,67,147,1),35);//#3F4393//Logo Blue      #e0e0f2;//      rgba(37,175,206,1);//Blue (Terminal's Solid)
+$theme-color-rosybrown:rgba(248,198,198,1);//#F8C6C6//Azalea//rgba(188,143,143,1)//#BC8F8F//Rosybrown First
+
+$theme-color-silver:rgba(199,197,195,1);//Silver (Terminal's Silver)
+$theme-color-green-dark:darken(rgba(3,42,28,1),5);//Green Dark
 
 // Mapping Colours
 // https://brandcolors.net/
 $theme-colors: (
   "facebook":#3B5998,//Facebook Official
-  "twitter":#1DA1F2,//Twitter Official
+  "instagram":#E1306C,//Instagram Official
   "pinterest":#BD081C,//Pinterest Official
   "youtube":#FF0000,//Youtube Official
-  "linkedin":#0077B5,//LinkedIn Official
+  "twitter":#1DA1F2,//Twitter Official
   "google-plus":#DD4B39,//Google Plus Official
-  "instagram":#E1306C,//Instagram Official
+  "linkedin":#8d6CAB,//LinkedIn Official//Or #0077B5
+  "behance":#1769FF,//Behance Official
   "paypal":#003087,//PayPal Official
-  "forestry":#20C997,//Forestry
-  "jekyll":#FFCC00,//Jekyll
-  "bootstrap":#563D7C,//Bootstrap
-  "bootstrap-lighten":lighten(#563D7C,20),//Bootstrap Lighten
-
-  "facebook-inverted":#C4A667,//Facebook Inverted
-  "pinterest-inverted":#42F7E3,//Pinterest Inverted
-  "instagram-inverted":#1ECF93,//Instagram Inverted
-
-  "codenation":#0EDDDD,
-
+  "bootstrap":#563D7C,
+  "jekyll":#FFCC00,
+  "forestry":#20C997,
+  
   "black":#000000,
   "white":#FFFFFF,
 
   "grey-dark":$theme-color-grey-dark,
   "grey-mid":$theme-color-grey-mid,
   "grey-light":$theme-color-grey-light,
-  "magenta":$theme-color-magenta,
-  "blue-light":$theme-color-blue-light,
-  "purple-dark":$theme-color-purple-dark,
-  "goldy":$theme-color-goldy,
-  "beige-light":$theme-color-beige-light
+
+  "chocolate":$theme-color-chocolate,
+  "beige-light":$theme-color-beige-light,
+  "mustard":$theme-color-mustard,
+  "blue":$theme-color-blue,
+  "rosybrown":$theme-color-rosybrown,
+
+  "silver":$theme-color-silver,
+  "green-dark":$theme-color-green-dark
 );
 
 // Bootstrap 4

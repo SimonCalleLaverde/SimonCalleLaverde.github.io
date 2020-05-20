@@ -1,16 +1,16 @@
 ---
 name: Cultivate Oregon
-name_for_thumbnail: Cultivate Oregon
+name_for_thumbnail: Cultivate<br>Oregon
 thumbnail_image: /uploads/site-image-cultivate-oregon.jpg
-platform: NationBuilder
-theme: Bootstrap 3
+platform: [NationBuilder, Bootstrap 3]
 year: 2017
 roles: Development
 web:
   domain: www.cultivateoregon.org
   image: /uploads/site-web-cultivate-oregon.png
   url: https://www.cultivateoregon.org/
-category: Code Nation
-tags: [featured, other]
+type: Campaign Website
+category: developing for Code Nation
+tags: featured
 order: 17
 ---

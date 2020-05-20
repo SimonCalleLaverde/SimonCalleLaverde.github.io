@@ -1,4 +1,4 @@
-<section class="content-image-left text-white clearfix">
+<section class="content-image-left clearfix">
 
   <div class="row no-gutters">
     <div class="col-md-5 d-none d-md-block" aria-hidden="true"><!--mobile-thumbnail-control-->
@@ -17,10 +17,7 @@
     
     <div class="col-md-7">
       <div class="mx-0 mx-md-2 pt-4more pb-3 py-lg-5 px-4 px-md-5">
-        <!--Desktop-->
-        <h4 class="headline text-blue-light text-uppercase mb-4 pb-3 d-none d-lg-block">{{ page.headline | default:page.title }}</h4>
-        <!--Mobile-->
-        <h4 class="headline text-blue-light text-uppercase mb-4 d-block d-lg-none" aria-hidden="true">{{ page.headline | default:page.title }}</h4>
+        <h4 class="headline text-grey-dark text-uppercase mb-4 pb-3">{{ page.headline | default:page.title }}</h4>
 
         <div class="intro">
           {{ content }}

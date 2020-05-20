@@ -2,17 +2,17 @@
 name: Freshhold Consulting
 name_for_thumbnail: Freshhold<br>Consulting
 thumbnail_image: /uploads/site-image-freshhold.jpg
-platform: Dreamweaver
-theme: Html Css Php
+platform: [Dreamweaver, Html Css Php]
 year: 2015
-roles: [Design, Development]
+roles: [UI, UX, Design, Development]
 web:
   domain: This concept site is no longer live
   image: /uploads/site-web-freshhold-1.png
   image_2: /uploads/site-web-freshhold-2.png
   image_3: /uploads/site-web-freshhold-3.png
   url: ""
-category: Tryitdigital Domain
+type: Concept Website
+category: as Independent &middot; Concept site for presentation
 tags: featured
 order: 1
 ---
