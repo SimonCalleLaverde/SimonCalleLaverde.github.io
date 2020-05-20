@@ -15,6 +15,38 @@
 
 // Pinterest Light Beige/Caqui //rgba(209,206,190,1) //#D1CEBE
 
+//----------------------------------Mobile Note----------------------------------//
+
+.mobile-note {
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  letter-spacing:2px;
+  z-index:200000;
+}
+@include media-breakpoint-only(xs) {
+  html {
+    overflow:hidden;
+  }
+}
+@include media-breakpoint-only(sm) {
+  html {
+    overflow:hidden;
+  }
+}
+@include media-breakpoint-only(md) {
+  html {
+    overflow:hidden;
+  }
+}
+@include media-breakpoint-only(lg) {
+  html {
+    overflow:hidden;
+  }
+}
+
 //----------------------------------General Styles----------------------------------//
 
 // Fonts
