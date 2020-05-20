@@ -25,8 +25,8 @@ $(function() {
           const { previous, current, transformPrefix } = globalState;
           const { context } = sceneState.cache;
           const delta = current - previous;
-          const rotationZ = delta / 32;//2
-          const skew = delta / 40;//2.5
+          const rotationZ = delta / 24;//2
+          const skew = delta / 30;//2.5
           context.style[transformPrefix] = `translate3d(0, ${transform}px, 0) rotateZ(${rotationZ}deg) skew(${skew}deg)`;
         },
       },

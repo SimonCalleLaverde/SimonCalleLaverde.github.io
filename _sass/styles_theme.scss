@@ -1004,11 +1004,7 @@ aside.nav-social-media {
         }
         &::after {
           @include transform(rotate(0));
-
-
-          @include border-radius(50%);
-
-
+          @include border-radius(50%);//
         }
         &.icon-facebook {
           svg {
