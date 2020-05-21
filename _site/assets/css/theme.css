@@ -5228,7 +5228,7 @@ article.project-article.forloop-last { margin-bottom: 0; }
 
 article.project-article.home { margin-bottom: 235px; }
 
-article.project-article.home a figure { position: relative; height: 400px; }
+article.project-article.home a figure { position: relative; height: 250px; }
 
 article.project-article.home a figure > div { position: absolute; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden; }
 
@@ -5326,7 +5326,7 @@ aside.nav-social-media a span.icon-behance svg { width: 18px; }
 
 aside.nav-social-media a:hover span svg, aside.nav-social-media a:active span svg, aside.nav-social-media a:focus span svg { fill: #FFF !important; -webkit-filter: opacity(0.8); -moz-filter: opacity(0.8); -ms-filter: opacity(0.8); -o-filter: opacity(0.8); filter: opacity(0.8); }
 
-aside.nav-social-media a:hover span::after, aside.nav-social-media a:active span::after, aside.nav-social-media a:focus span::after { -webkit-transform: rotate(0); -moz-transform: rotate(0); -ms-transform: rotate(0); -o-transform: rotate(0); transform: rotate(0); }
+aside.nav-social-media a:hover span::after, aside.nav-social-media a:active span::after, aside.nav-social-media a:focus span::after { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
 
 aside.nav-social-media a:hover span.icon-facebook svg, aside.nav-social-media a:active span.icon-facebook svg, aside.nav-social-media a:focus span.icon-facebook svg { fill: #4c70ba !important; }
 
@@ -5461,11 +5461,12 @@ header.home-hello-header .hello-header-caption { will-change: transform, transfo
 @media (min-width: 768px) { main, header, section, footer { text-align: left; }
   .btn.btn-60 { width: 60%; }
   .d-md-flex { display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  article.project-article.home a figure { height: 400px; }
   #column_div .first.column, .column-div .first.column { padding-right: 20px; }
   #column_div .last.column, .column-div .last.column { padding-left: 20px; }
-  nav.navbar { position: fixed; width: 100vh; height: 60px; left: 100%; pointer-events: none; -webkit-transform-origin: 0 0; -moz-transform-origin: 0 0; -ms-transform-origin: 0 0; -o-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); }
-  nav.navbar ul.navbar-nav li.nav-item a.nav-link { position: relative; padding: 0 0.3rem; font-family: "Brandon Grotesque Light", sans-serif; font-size: 13.5px; color: #f8c6c6; text-transform: uppercase; white-space: nowrap; }
-  nav.navbar ul.navbar-nav li.nav-item a.nav-link::after { content: ''; position: absolute; right: calc(50% - 3px); bottom: 3px; width: 6px; height: 6px; border: 1px solid #f8c6c6; pointer-events: none; -webkit-transform: scale(0) rotate(0); -moz-transform: scale(0) rotate(0); -ms-transform: scale(0) rotate(0); -o-transform: scale(0) rotate(0); transform: scale(0) rotate(0); -webkit-transition: all 0.7s ease-out; -moz-transition: all 0.7s ease-out; -ms-transition: all 0.7s ease-out; -o-transition: all 0.7s ease-out; transition: all 0.7s ease-out; }
+  nav.navbar { position: fixed; padding: 20px; top: 0; right: 0; pointer-events: none; }
+  nav.navbar ul.navbar-nav li.nav-item a.nav-link { display: inline-block; position: relative; padding: 0.3rem 0.5rem; font-family: "Brandon Grotesque Light", sans-serif; font-size: 13.5px; color: #f8c6c6; text-transform: uppercase; white-space: nowrap; }
+  nav.navbar ul.navbar-nav li.nav-item a.nav-link::after { content: ''; position: absolute; top: 13px; left: -9px; width: 6px; height: 6px; border: 1px solid #f8c6c6; pointer-events: none; -webkit-transform: scale(0) rotate(0); -moz-transform: scale(0) rotate(0); -ms-transform: scale(0) rotate(0); -o-transform: scale(0) rotate(0); transform: scale(0) rotate(0); -webkit-transition: all 0.7s ease-out; -moz-transition: all 0.7s ease-out; -ms-transition: all 0.7s ease-out; -o-transition: all 0.7s ease-out; transition: all 0.7s ease-out; }
   nav.navbar ul.navbar-nav li.nav-item a.nav-link.active { color: #aaacdb; }
   nav.navbar ul.navbar-nav li.nav-item a.nav-link.active::after { bottom: -10px; border-color: #aaacdb; -webkit-transform: scale(1) rotate(45deg); -moz-transform: scale(1) rotate(45deg); -ms-transform: scale(1) rotate(45deg); -o-transform: scale(1) rotate(45deg); transform: scale(1) rotate(45deg); }
   nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover, nav.navbar ul.navbar-nav li.nav-item a.nav-link:active, nav.navbar ul.navbar-nav li.nav-item a.nav-link:focus { color: #aaacdb; }
