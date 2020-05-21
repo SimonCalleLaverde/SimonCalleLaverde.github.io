@@ -1,6 +1,6 @@
 ---
 layout: feedback
-title: Contact Me
+title: Drop me a line
 permalink: /contact_me
 slug: contact_me
 type_slug: feedback

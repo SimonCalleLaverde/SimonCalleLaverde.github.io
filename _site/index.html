@@ -131,7 +131,7 @@
 <nav class="navbar text-right" id="navbar">
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="link nav-link active" href="/">
+      <a class="link nav-link active-link" href="/"><!--Class ".active" has a bug I think with "Rolly.js", where when getting to the bottom the class gets removed forever-->
         Home
       </a>
     </li>
@@ -182,14 +182,14 @@
       <main id="main">
         <h1 class="sr-only">Simon's Portfolio</h1>
 
-        <header class="home-hello-header text-rosybrown d-flex flex-row align-items-center clearfix" id="home_hello_header" data-scene><!--data-scene="rotateZ"-->
+        <header class="home-hello-header text-rosybrown d-flex flex-row align-items-center clearfix" id="home_hello_header" data-scene="rotateZ">
   <div class="container">
     
     <div class="row mb-5less mb-md-5 pb-md-5">
       
 
       <div class="col-md-6 offset-md-3 d-flex flex-row align-items-center"><!--col-md-4 offset-md-2-->
-        <div class="position-relative m-4">
+        <div class="hello-header-middle-images position-relative m-4">
 
 
 
@@ -204,14 +204,14 @@
               background-size:cover;
             }
           </style>
-          <div class="header-gif-cover position-absolute" id="header_gif_cover" style="top:0; right:0; bottom:0; left:0;">
+          <div class="header-gif-cover" id="header_gif_cover">
           </div>
 
 
 
 
 
-          <img src="/uploads/websites-gif.gif">
+          <img class="header-gif-gif" src="/uploads/websites-gif.gif">
         </div>
       </div>
     </div>
@@ -1474,20 +1474,14 @@
 
 
         
-          <footer class="clearfix" id="get_in_touch_footer" data-scene><!--data-scene="rotateZ"-->
-  <a class="container d-flex justify-content-center align-items-center" href="/contact_me"><!--text-rosybrown--><!--text-grey-light-->
+          <footer class="clearfix" id="get_in_touch_footer" data-scene="rotateZ">
+  <a class="container d-flex justify-content-center align-items-center" href="/contact_me">
 
     <div class="row">
       <div class="col-md-10 offset-md-1">
-        <h1 class="text-rosybrown text-uppercase text-gigantic text-center"><!--Do you want to create something special?<br>-->Drop me a line</h1><!--text-grey-light-->
+        <h1 class="text-rosybrown text-uppercase text-gigantic text-center mt-4 mb-0">Drop me a line</h1>
       </div>
-
-      
     </div>
-    
-    <!--<div class="footer-drop-me-a-line">
-      <i class="fa fa-arrow-right text-gigantic text-rosybrown" aria-hidden="true"></i>
-    </div>-->
     
     <div class="footer-copyright copyright text-grey-light"><!--beige-light-->
       © 2015-2020<!--MMXX-->

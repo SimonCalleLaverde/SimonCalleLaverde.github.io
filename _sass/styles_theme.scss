@@ -1113,7 +1113,7 @@ aside.nav-social-media {
   bottom:28px;//0
   left:0;
   svg {
-    fill:theme-color('blue');
+    fill:theme-color('grey-light');
     path {
       &:last-child {
         @include animation(mouseScrollAnim 11s ease-out 3s infinite);
@@ -1171,10 +1171,21 @@ header.home-hello-header {
   padding:70px 20px 35px;//To revise mobile//From J.I, To Tweak
 
 
-
-  .header-gif-cover {
-    &:hover {
-      @include filter(opacity(0));
+  .hello-header-middle-images {
+    .header-gif-cover, .header-gif-gif {
+    }
+    .header-gif-cover {
+      position:absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      &:hover {
+        @include filter(opacity(0));
+      }
+    }
+    .header-gif-gif {
+      pointer-events:none;////
     }
   }
 
@@ -1264,21 +1275,21 @@ footer {
     div {
       pointer-events:none;
     }
-    .footer-drop-me-a-line {
-      position:absolute;
-      right:180px;
-      bottom:65px;//55px//70px
-      pointer-events:none;
-      i.fa {
-        line-height:0.8;
-        //@include transform-origin(top);//top left
-        @include transform(rotate(45deg));
-        @include transition(all ease-out 0.5s);
-        color:transparent!important;
-        -webkit-text-stroke:2px theme-color('rosybrown')!important;
-        will-change:color, text-stroke;//transform
-      }
-    }
+    // .footer-drop-me-a-line {
+    //   position:absolute;
+    //   right:180px;
+    //   bottom:65px;//55px//70px
+    //   pointer-events:none;
+    //   i.fa {
+    //     line-height:0.8;
+    //     //@include transform-origin(top);//top left
+    //     @include transform(rotate(45deg));
+    //     @include transition(all ease-out 0.5s);
+    //     color:transparent!important;
+    //     -webkit-text-stroke:2px theme-color('rosybrown')!important;
+    //     will-change:color, text-stroke;//transform
+    //   }
+    // }
     .footer-copyright {
       position:absolute;
       left:63px;

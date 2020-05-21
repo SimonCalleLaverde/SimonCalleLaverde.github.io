@@ -5,19 +5,19 @@
 <nav class="navbar text-right" id="navbar">
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="link nav-link{% if page.slug == 'home' %} active{% endif %}" href="/">
+      <a class="link nav-link{% if page.slug == 'home' %} active-link{% endif %}" href="/"><!--Class ".active" has a bug I think with "Rolly.js", where when getting to the bottom the class gets removed forever-->
         Home
       </a>
     </li>
 
     <li class="nav-item">
-      <a class="link nav-link{% if page.slug == 'work' %} active{% endif %}" href="/work">
+      <a class="link nav-link{% if page.slug == 'work' %} active-link{% endif %}" href="/work">
         <!--<span style="margin-right:3px;">(+)</span> -->All projects
       </a>
     </li>
 
     <li class="nav-item">
-      <a class="link nav-link{% if page.slug == 'contact_me' or page.slug contains 'contact' %} active{% endif %}" href="/contact_me">
+      <a class="link nav-link{% if page.slug == 'contact_me' or page.slug contains 'contact' %} active-link{% endif %}" href="/contact_me">
         Get in touch
       </a>
     </li>
