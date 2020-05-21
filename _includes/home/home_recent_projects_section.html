@@ -11,7 +11,7 @@
   {% if project_tags_list contains "recent" %}
     {% assign projects_count = projects_count | plus:1 %}
 
-    <section class="home-recent-projects-section clearfix" data-scene="rotateZ">
+    <section class="home-recent-projects-section clearfix" data-scene="rotateZ" id="{% if forloop.first %}work_section{% endif %}">
       <div class="container">
 
         <div class="row">

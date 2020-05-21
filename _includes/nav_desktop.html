@@ -4,80 +4,40 @@
 <!--Desktop-->
 <nav class="navbar text-right" id="navbar">
   <ul class="navbar-nav">
-    {% if page.slug == "home" %}
-      <li class="nav-item">
-        <a class="nav-link link smoothScroll" href="#home_hello_header">
-          Hello
-        </a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link link smoothScroll" href="#work_section">
-          Work
-        </a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link link smoothScroll" href="#get_in_touch_footer">
-          Get in touch
-        </a>
-      </li>
+    <li class="nav-item">
+      <a class="link nav-link{% if page.slug == 'home' %} active{% endif %}" href="/">
+        Home
+      </a>
+    </li>
 
-      <li class="nav-item">
-        <a class="nav-link link" href="/work">
-          All projects
-        </a>
-      </li>
+    <li class="nav-item">
+      <a class="link nav-link{% if page.slug == 'work' %} active{% endif %}" href="/work">
+        <!--<span style="margin-right:3px;">(+)</span> -->All projects
+      </a>
+    </li>
 
-    {% elsif page.slug == "work" %}
-      <li class="nav-item">
-        <a class="nav-link link smoothScroll" href="#scroll_to_30">
-          2020
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link link smoothScroll" href="#scroll_to_28">
-          2019
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link link smoothScroll" href="#scroll_to_23">
-          2018
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link link smoothScroll" href="#scroll_to_19">
-          2017
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link link smoothScroll" href="#scroll_to_11">
-          2016
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link link smoothScroll" href="#scroll_to_3">
-          2015
-        </a>
-      </li>
+    <li class="nav-item">
+      <a class="link nav-link{% if page.slug == 'contact_me' or page.slug contains 'contact' %} active{% endif %}" href="/contact_me">
+        Get in touch
+      </a>
+    </li>
     
-    {% elsif page.type_slug == "feedback" %}
-      <li class="nav-item">
-        <a class="nav-link link" href="/">
-          Home
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link link" href="/work">
-          All Projects
-        </a>
-      </li>
-    {% endif %}
+    <!--<li class="nav-item">
+      <a class="nav-link link smoothScroll" href="#home_hello_header">
+        Hello
+      </a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link link smoothScroll" href="#work_section">
+        Work
+      </a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link link smoothScroll" href="#get_in_touch_footer">
+        Get in touch
+      </a>
+    </li>-->
   </ul>
 </nav>
