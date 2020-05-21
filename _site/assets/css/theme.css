@@ -5464,13 +5464,13 @@ header.home-hello-header .hello-header-caption { will-change: transform, transfo
   article.project-article.home a figure { height: 400px; }
   #column_div .first.column, .column-div .first.column { padding-right: 20px; }
   #column_div .last.column, .column-div .last.column { padding-left: 20px; }
-  nav.navbar { position: fixed; padding: 35px; top: 0; right: 0; pointer-events: none; }
+  nav.navbar { position: fixed; padding: 30px; top: 0; right: 0; pointer-events: none; }
   nav.navbar ul.navbar-nav li.nav-item a.nav-link { display: inline-block; position: relative; padding: 0.3rem 0.5rem; font-family: "Brandon Grotesque Light", sans-serif; font-size: 13.5px; color: #f8c6c6; text-transform: uppercase; white-space: nowrap; }
   nav.navbar ul.navbar-nav li.nav-item a.nav-link::after { content: ''; position: absolute; width: 6px; height: 6px; top: 11px; left: -7px; border: 1px solid #f8c6c6; pointer-events: none; -webkit-transform: scale(0) rotate(0); -moz-transform: scale(0) rotate(0); -ms-transform: scale(0) rotate(0); -o-transform: scale(0) rotate(0); transform: scale(0) rotate(0); -webkit-transition: all 0.7s ease-out; -moz-transition: all 0.7s ease-out; -ms-transition: all 0.7s ease-out; -o-transition: all 0.7s ease-out; transition: all 0.7s ease-out; }
-  nav.navbar ul.navbar-nav li.nav-item a.nav-link.active { color: #aaacdb; }
-  nav.navbar ul.navbar-nav li.nav-item a.nav-link.active::after { bottom: -10px; border-color: #aaacdb; -webkit-transform: scale(1) rotate(45deg); -moz-transform: scale(1) rotate(45deg); -ms-transform: scale(1) rotate(45deg); -o-transform: scale(1) rotate(45deg); transform: scale(1) rotate(45deg); }
-  nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover, nav.navbar ul.navbar-nav li.nav-item a.nav-link:active, nav.navbar ul.navbar-nav li.nav-item a.nav-link:focus { color: #aaacdb; }
-  nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover.active::after, nav.navbar ul.navbar-nav li.nav-item a.nav-link:active.active::after, nav.navbar ul.navbar-nav li.nav-item a.nav-link:focus.active::after { border-color: #aaacdb; }
+  nav.navbar ul.navbar-nav li.nav-item a.nav-link.active { color: #FEFEFE; }
+  nav.navbar ul.navbar-nav li.nav-item a.nav-link.active::after { bottom: -10px; border-color: #FEFEFE; -webkit-transform: scale(1) rotate(45deg); -moz-transform: scale(1) rotate(45deg); -ms-transform: scale(1) rotate(45deg); -o-transform: scale(1) rotate(45deg); transform: scale(1) rotate(45deg); }
+  nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover, nav.navbar ul.navbar-nav li.nav-item a.nav-link:active, nav.navbar ul.navbar-nav li.nav-item a.nav-link:focus { color: #FEFEFE; }
+  nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover.active::after, nav.navbar ul.navbar-nav li.nav-item a.nav-link:active.active::after, nav.navbar ul.navbar-nav li.nav-item a.nav-link:focus.active::after { border-color: #FEFEFE; }
   header.home-hello-header { padding: 115px 0 60px; }
   header.work-header-section { min-height: 100vh; padding: 15px 0; }
   section.work-projects-section { padding: 80px 0 0; }

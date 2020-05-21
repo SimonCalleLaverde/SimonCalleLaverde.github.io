@@ -52,7 +52,7 @@
   // Nav Desktop
   nav.navbar {
     position:fixed;
-    padding:35px;
+    padding:30px;
     top:0;
     right:0;
     pointer-events:none;
@@ -80,19 +80,19 @@
             @include transition(all 0.7s ease-out);
           }
           &.active {
-            color:theme-color('blue');
+            color:theme-color('grey-light');
             //@include transition(all 0.3s ease-out);
             &::after {
               bottom:-10px;
-              border-color:theme-color('blue');
+              border-color:theme-color('grey-light');
               @include transform(scale(1) rotate(45deg));
             }
           }
           &:hover, &:active, &:focus {
-            color:theme-color('blue');
+            color:theme-color('grey-light');
             &.active {
               &::after {
-                border-color:theme-color('blue');
+                border-color:theme-color('grey-light');
               }
             }
           }
