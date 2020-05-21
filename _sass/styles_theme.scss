@@ -1172,6 +1172,7 @@ header.home-hello-header {
 
 
   .hello-header-middle-images {
+    pointer-events:none;//
     .header-gif-cover, .header-gif-gif {
     }
     .header-gif-cover {
@@ -1180,12 +1181,13 @@ header.home-hello-header {
       right:0;
       bottom:0;
       left:0;
+      pointer-events:all;//
       &:hover {
         @include filter(opacity(0));
       }
     }
     .header-gif-gif {
-      pointer-events:none;////
+      //pointer-events:none;//
     }
   }
 

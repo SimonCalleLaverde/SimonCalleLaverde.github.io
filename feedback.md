@@ -1,10 +1,10 @@
 ---
 layout: feedback
-title: Drop me a line
+title: Contact Me
 permalink: /contact_me
 slug: contact_me
 type_slug: feedback
-headline: Contact Me
+headline: Drop me a line
 header_image: ""
 background_image: ""
 thumbnail_image: ""

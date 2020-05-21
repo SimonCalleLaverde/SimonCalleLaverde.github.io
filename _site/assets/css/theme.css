@@ -5358,11 +5358,11 @@ aside.nav-social-media a:hover span.icon-behance svg, aside.nav-social-media a:a
 
 header.home-hello-header { padding: 70px 20px 35px; }
 
-header.home-hello-header .hello-header-middle-images .header-gif-cover { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+header.home-hello-header .hello-header-middle-images { pointer-events: none; }
+
+header.home-hello-header .hello-header-middle-images .header-gif-cover { position: absolute; top: 0; right: 0; bottom: 0; left: 0; pointer-events: all; }
 
 header.home-hello-header .hello-header-middle-images .header-gif-cover:hover { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); }
-
-header.home-hello-header .hello-header-middle-images .header-gif-gif { pointer-events: none; }
 
 header.home-hello-header .hello-content a { position: relative; }
 
