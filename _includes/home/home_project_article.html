@@ -18,7 +18,7 @@
       </div>
 
       <figcaption class="project-caption">
-        <div class="project-side-data text-rosybrown">
+        <div class="project-side-data text-rosybrown text-uppercase">
           <time class="project-year">
             <p class="mx-0">
               <span class="text-bold">{{ project.year }}</span>
@@ -31,7 +31,7 @@
             <p class="mx-0">
               <span class="text-bold">Created with</span>
               {% for platform in project.platform %}
-                {{ platform }}{% unless forloop.last %} &middot;{% endunless %}&nbsp;
+                {{ platform }}{% unless forloop.last %} &middot;{% endunless %}<!--&nbsp;-->
               {% endfor %}
             </p>
           </div>
@@ -43,7 +43,7 @@
           <h3 class="position-absolute project-title-stroke text-huge text-stroke-rosybrown text-uppercase mb-0" style="z-index:102;">{{ project.name_for_thumbnail }}</h3>
         </div>
         
-        <div class="project-roles">
+        <div class="project-roles text-uppercase">
           {% for item in project.roles %}
             <p class="text-bold text-rosybrown mb-0">{{ item }}{% unless forloop.last %} <span>&middot;</span>{% endunless %}</p>
           {% endfor %}
