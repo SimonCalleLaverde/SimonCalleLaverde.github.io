@@ -5122,7 +5122,7 @@ a.logo, aside.nav-social-media, .copyright, nav.navbar { z-index: 6000; }
 
 .aside-cover-2 { right: 0; }
 
-a { color: #f0d9c2; -webkit-transition: all ease-out 0.5s; -moz-transition: all ease-out 0.5s; -ms-transition: all ease-out 0.5s; -o-transition: all ease-out 0.5s; transition: all ease-out 0.5s; }
+a { color: #FEFEFE; -webkit-transition: all ease-out 0.5s; -moz-transition: all ease-out 0.5s; -ms-transition: all ease-out 0.5s; -o-transition: all ease-out 0.5s; transition: all ease-out 0.5s; }
 
 a:hover, a:active, a:focus { color: white; text-decoration: none; }
 
@@ -5358,23 +5358,13 @@ aside.nav-social-media a:hover span.icon-behance svg, aside.nav-social-media a:a
 
 header.home-hello-header { padding: 70px 20px 35px; }
 
-header.home-hello-header .hello-header-middle-images { pointer-events: none; }
+header.home-hello-header .hello-header-middle-images .header-gif-cover, header.home-hello-header .hello-header-middle-images img.header-gif-gif { pointer-events: none; user-select: none; }
 
-header.home-hello-header .hello-header-middle-images .header-gif-cover { position: absolute; top: 0; right: 0; bottom: 0; left: 0; pointer-events: all; }
+header.home-hello-header .hello-header-middle-images .header-gif-cover { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
-header.home-hello-header .hello-header-middle-images .header-gif-cover:hover { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); }
+header.home-hello-header .hello-header-middle-images:hover .header-gif-cover { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); }
 
-header.home-hello-header .hello-content a { position: relative; }
-
-header.home-hello-header .hello-content a::after { content: ""; width: 50%; height: 0; right: 0; bottom: 0; border-bottom: 1px solid #aaacdb; }
-
-header.home-hello-header img { pointer-events: none; }
-
-header.home-hello-header .hello-header-img-cover { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
-
-header.home-hello-header .hello-header-caption { position: absolute; bottom: -18px; left: -35px; font-size: 13px; pointer-events: none; }
-
-header.home-hello-header .hello-header-caption span { margin-left: 15px; }
+header.home-hello-header .hello-content a { text-decoration: underline; }
 
 header.work-header-section { padding: 30px 20px; }
 

@@ -364,10 +364,10 @@ a.logo, aside.nav-social-media, .copyright, nav.navbar {
 
 // Link Overrides
 a {
-  color:theme-color('beige-light');
+  color:theme-color('grey-light');
   @include transition(all ease-out 0.5s);
   &:hover, &:active, &:focus {
-    color:lighten(theme-color('beige-light'),15);
+    color:lighten(theme-color('grey-light'),15);
     text-decoration:none;
   }
   &.text-black {
@@ -1169,11 +1169,10 @@ aside.nav-social-media {
 // Home Hello Header
 header.home-hello-header {
   padding:70px 20px 35px;//To revise mobile//From J.I, To Tweak
-
-
   .hello-header-middle-images {
-    pointer-events:none;//
-    .header-gif-cover, .header-gif-gif {
+    .header-gif-cover, img.header-gif-gif {
+      pointer-events:none;
+      user-select:none;
     }
     .header-gif-cover {
       position:absolute;
@@ -1181,67 +1180,18 @@ header.home-hello-header {
       right:0;
       bottom:0;
       left:0;
-      pointer-events:all;//
-      &:hover {
+    }
+    &:hover {
+      .header-gif-cover {
         @include filter(opacity(0));
       }
     }
-    .header-gif-gif {
-      //pointer-events:none;//
-    }
   }
-
-
-
   .hello-content {
     a {
-      //text-decoration:underline;
-      position:relative;
-
-
-
-
-      &::after {
-        content:"";
-        width:50%;
-        height:0;
-        right:0;
-        bottom:0;
-        border-bottom:1px solid theme-color('blue');
-      }
-
-
-      
+      text-decoration:underline;
     }
   }
-
-
-
-
-  img {
-    pointer-events:none;
-  }
-  .hello-header-img-cover {
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-  }
-  .hello-header-caption {
-    position:absolute;
-    bottom:-18px;//-20px
-    left:-35px;
-    font-size:13px;
-    pointer-events:none;
-    span {
-      margin-left:15px;
-    }
-  }
-
-
-
-
 }
 
 // Home Recent Projects Section
