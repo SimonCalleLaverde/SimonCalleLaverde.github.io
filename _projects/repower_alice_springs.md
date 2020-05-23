@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-repower-alice-springs.png
   url: https://www.repoweralicesprings.org.au/
 type: Campaign Website
-category: Working for Code Nation
+category: Working for Code Nation's Team
 tags: ""
 order: 26
 ---

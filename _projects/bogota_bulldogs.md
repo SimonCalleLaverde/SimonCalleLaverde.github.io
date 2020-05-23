@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-bogota-bulldogs.png
   url: https://bogota-bulldogs.netlify.com/
 type: Campaign Website
-category: Working for Code Nation
+category: Working for Code Nation's Team
 tags: ""
 order: 28
 ---

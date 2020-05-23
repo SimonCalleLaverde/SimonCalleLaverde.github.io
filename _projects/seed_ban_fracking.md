@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-seed-ban-fracking.png
   url: https://nt.seedmob.org.au/
 type: Campaign Website
-category: Working for Code Nation
+category: Working for Code Nation's Team
 tags: ""
 order: 15
 ---

@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-injured-workers-support-network-victoria.png
   url: https://www.iwsnvic.org.au/
 type: Campaign Website
-category: Working for Code Nation
+category: Working for Code Nation's Team
 tags: ""
 order: 27
 ---

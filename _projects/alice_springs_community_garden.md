@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-alice-springs-community-garden.png
   url: https://www.alicecommunitygarden.org.au/
 type: Campaign Website
-category: Working for Code Nation
+category: Working for Code Nation's Team
 tags: ""
 order: 12
 ---

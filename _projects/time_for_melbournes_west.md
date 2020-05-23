@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-time-for-melbournes-west.png
   url: http://www.timeforthewest.org.au
 type: Campaign Website
-category: Working for Code Nation
+category: Working for Code Nation's Team
 tags: featured
 order: 16
 ---

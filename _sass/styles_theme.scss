@@ -207,24 +207,6 @@ body {
   font-weight:300;
   font-style:normal;
   font-size:17px;
-
-
-
-
-  background-color:theme-color('chocolate');//green-dark//#FFF
-
-
-
-
-  height: auto;//Rolly, I think
-  overflow: hidden;//Rolly, I think
-
-
-
-
-
-
-
   z-index:0;
   overscroll-behavior-y:none;//To remove bounce on some browsers
   // .background-for-animation {
@@ -678,22 +660,20 @@ article.project-article {
           }
           .project-side-data, .project-roles {
             position:absolute;
+            font-size:14px;
+            overflow:hidden;
             @include transition(all ease-in-out 0.5s);
-
             div.project-year, div.project-info, p.project-tools, div.project-type {
               @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.2s);
             }
-
           }
           .project-side-data {
             width:20px;
             height:calc(100% - 1px);
             right:0;
             bottom:1px;
-            font-size:14px;
             writing-mode:vertical-rl;
             text-orientation:mixed;
-            overflow:hidden;
             pointer-events:none;
             //@include transform-origin(50% 50%);
             @include transform(translateX(40px) rotate(180deg));
@@ -718,9 +698,7 @@ article.project-article {
             width:calc(100% - 1px);
             right:1px;
             bottom:-40px;
-            font-size:14px;
             text-align:right;
-            overflow:hidden;
             p.project-tools, div.project-type {
             }
             p.project-tools {

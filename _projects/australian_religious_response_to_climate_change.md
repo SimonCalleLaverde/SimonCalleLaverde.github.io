@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-australian-religious-response-to-climate-change.png
   url: https://www.arrcc.org.au/
 type: Campaign Website
-category: Working for Code Nation
+category: Working for Code Nation's Team
 tags: featured
 order: 2
 ---

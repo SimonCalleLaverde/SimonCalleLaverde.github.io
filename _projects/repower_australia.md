@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-repower-australia.png
   url: https://www.repoweraustralia.org.au/
 type: Campaign Website
-category: Working for Code Nation
+category: Working for Code Nation's Team
 tags: [featured, other]
 order: 20
 ---
