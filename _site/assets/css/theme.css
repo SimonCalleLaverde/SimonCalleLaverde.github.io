@@ -5370,9 +5370,9 @@ aside.nav-social-media a:hover span.icon-behance svg, aside.nav-social-media a:a
 
 .hide-it { pointer-events: none !important; -webkit-filter: opacity(0) !important; -moz-filter: opacity(0) !important; -ms-filter: opacity(0) !important; -o-filter: opacity(0) !important; filter: opacity(0) !important; }
 
-::selection { background: #f1f2f9; }
+::selection { background-color: rgba(37, 175, 206, 0.7); }
 
-::-moz-selection { background: #f1f2f9; }
+::-moz-selection { background-color: rgba(37, 175, 206, 0.7); }
 
 .mouse-svg { position: absolute; width: 35px; bottom: 28px; left: 0; }
 

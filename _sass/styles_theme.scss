@@ -199,6 +199,7 @@ html {
   //   display:none;
   // }
   //overflow-x:hidden;
+  //@include filter(invert(100) hue-rotate(180deg));
 }
 body {
   position:relative;//For Scroll Spy
@@ -217,6 +218,9 @@ body {
 
   height: auto;//Rolly, I think
   overflow: hidden;//Rolly, I think
+
+
+
 
 
 
@@ -1086,10 +1090,10 @@ aside.nav-social-media {
 
 // Selection Styles
 ::selection {//webkit, opera, IE9
-  background:lighten(theme-color('blue'),20);
+  background-color:rgba(37,175,206,0.7);
 }
 ::-moz-selection {//mozilla firefox
-  background:lighten(theme-color('blue'),20);
+  background-color:rgba(37,175,206,0.7);
 }
 
 // Mouse Svg
