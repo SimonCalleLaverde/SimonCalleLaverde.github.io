@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-kimberley-clean-energy-plan.png
   url: https://www.kimberleycleanenergy.org/
 type: Campaign Website
-category: developing for Code Nation
+category: Working for Code Nation
 tags: ""
 order: 23
 ---

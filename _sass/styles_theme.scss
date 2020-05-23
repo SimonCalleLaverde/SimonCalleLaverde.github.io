@@ -208,13 +208,15 @@ body {
   font-size:17px;
 
 
+
+
   background-color:theme-color('chocolate');//green-dark//#FFF
 
 
 
 
-  height: auto;
-  overflow: hidden;
+  height: auto;//Rolly, I think
+  overflow: hidden;//Rolly, I think
 
 
 
@@ -290,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .font-paragraph {
   font-family:$font-paragraph!important;
-  font-weight:100!important;
+  font-weight:300!important;
 }
 .font-headline, .font-subtitle, .font-paragraph {
   font-style:normal!important;
@@ -364,10 +366,10 @@ a.logo, aside.nav-social-media, .copyright, nav.navbar {
 
 // Link Overrides
 a {
-  color:theme-color('grey-light');
+  color:lighten(theme-color('rosybrown'),10);
   @include transition(all ease-out 0.5s);
   &:hover, &:active, &:focus {
-    color:lighten(theme-color('grey-light'),15);
+    color:lighten(theme-color('rosybrown'),20);
     text-decoration:none;
   }
   &.text-black {
@@ -658,7 +660,7 @@ article.project-article {
           }
         }
         figcaption.project-caption {
-          .project-name {
+          .project-title {
             position:absolute;
             top:-31px;//-88px//0
             left:-40px;//-110px
@@ -673,51 +675,51 @@ article.project-article {
           .project-side-data, .project-roles {
             position:absolute;
             @include transition(all ease-in-out 0.5s);
+
+            div.project-year, div.project-info, p.project-tools, div.project-type {
+              @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.2s);
+            }
+
           }
           .project-side-data {
             width:20px;
+            height:calc(100% - 1px);
             right:0;
-            bottom:1px;//0
+            bottom:1px;
+            font-size:14px;
             writing-mode:vertical-rl;
             text-orientation:mixed;
             overflow:hidden;
             pointer-events:none;
             //@include transform-origin(50% 50%);
             @include transform(translateX(40px) rotate(180deg));
-            time.project-year, div.project-info {
-              p {
-                font-size:14px;//13.5px
-                @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.2s);
-                span {
-                  margin-bottom:15px;
-                }
+            div.project-year, div.project-info {
+              time, span {
+                margin-bottom:15px;
               }
             }
-            time.project-year {
-              p {
-                @include filter(opacity(1));
-                @include transform(translateX(0));
-              }
+            div.project-year {
+              @include filter(opacity(1));
+              @include transform(translateX(0));
             }
             div.project-info {
-              p {
-                @include filter(opacity(0));
-                @include transform(translateX(-20px));
-              }
+              position:absolute;
+              top:0;
+              left:0;
+              @include filter(opacity(0));
+              @include transform(translateX(-20px));
             }
           }
           .project-roles {
-            width:100%;
+            width:calc(100% - 1px);
             right:1px;
             bottom:-40px;
-            font-size:14px;//12px
+            font-size:14px;
             text-align:right;
             overflow:hidden;
-            > p, .project-type {
-              font-size:14px;//13.5px
-              @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.2s);
+            p.project-tools, div.project-type {
             }
-            > p {
+            p.project-tools {
               display:inline-block;
               @include filter(opacity(1));
               @include transform(translateY(0));
@@ -725,7 +727,7 @@ article.project-article {
                 margin-right:1px;
               }
             }
-            .project-type {
+            div.project-type {
               position:absolute;
               top:0;
               right:0;
@@ -746,7 +748,7 @@ article.project-article {
             }
           }
           figcaption.project-caption {
-            .project-name {
+            .project-title {
               .project-title-stroke {
                 color:transparent!important;//theme-color('rosybrown')!important
                 //-webkit-text-stroke-color:theme-color('rosybrown')!important;
@@ -755,30 +757,23 @@ article.project-article {
             .project-side-data {
               right:8px;
               bottom:4px;
-              time.project-year, div.project-info {
-                p {
-                  @include transform(translateX(20px));
-                }
-              }
-              time.project-year {
-                p {
-                  @include filter(opacity(0));
-                }
+              div.project-year {
+                @include filter(opacity(0));
+                @include transform(translateX(20px));
               }
               div.project-info {
-                p {
-                  @include filter(opacity(1));
-                }
+                @include filter(opacity(1));
+                @include transform(translateX(0));
               }
             }
             .project-roles {
               right:9px;
               bottom:-35px;
-              > p {
+              p.project-tools {
                 @include filter(opacity(0));
                 @include transform(translateY(-20px));
               }
-              .project-type {
+              div.project-type {
                 @include filter(opacity(1));
                 @include transform(translateY(0));
               }
@@ -795,7 +790,7 @@ article.project-article {
             }
           }
           figcaption.project-caption {
-            .project-name {
+            .project-title {
               right:-40px;//-110px
               left:auto;
               text-align:right;
@@ -810,21 +805,18 @@ article.project-article {
             .project-side-data {
               left:0;
               @include transform(translateX(-40px) rotate(180deg));
-              time.project-year {
-                p {
-                  @include transform(translateX(0));
-                }
+              div.project-year {
+                @include transform(translateX(0));
               }
               div.project-info {
-                p {
-                  @include transform(translateX(45px));//20px
-                }
+                right:0;
+                @include transform(translateX(20px));
               }
             }
             .project-roles {
               left:1px;
               text-align:left;
-              .project-type {
+              div.project-type {
                 left:0;
               }
             }
@@ -839,15 +831,11 @@ article.project-article {
             figcaption.project-caption {
               .project-side-data {
                 left:8px;
-                time.project-year {
-                  p {
-                    @include transform(translateX(-20px));
-                  }
+                div.project-year {
+                  @include transform(translateX(-20px));
                 }
                 div.project-info {
-                  p {
-                    @include transform(translateX(20px));
-                  }
+                  @include transform(translateX(0));
                 }
               }
               .project-roles {
@@ -868,7 +856,7 @@ article.project-article {
           position:relative;
           height:330px;
           figcaption.project-caption {
-            .project-name, .project-roles {
+            .project-title, .project-roles {
               background-color:rgba(254,254,254,0.7);//theme-color('grey-light')
             }
             .project-roles {
@@ -894,13 +882,13 @@ article.project-article {
           pointer-events:none;
           @include transform(translateX(30px));//translateY(-49%)
           //@include transform(rotate(90deg) translateY(-26px));
-          time.project-year, div.project-info {
+          div.project-year, div.project-info {
             p {
               font-size:13.5px;//0.8rem
               @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.2s);
             }
           }
-          time.project-year {
+          div.project-year {
             p {
               @include filter(opacity(1));
               @include transform(translateX(0));
@@ -919,12 +907,12 @@ article.project-article {
           .project-thumbnail {
           }
           .project-side-data {
-            time.project-year, div.project-info {
+            div.project-year, div.project-info {
               p {
                 @include transform(translateX(20px));
               }
             }
-            time.project-year {
+            div.project-year {
               p {
                 @include filter(opacity(0));
               }
@@ -1189,7 +1177,7 @@ header.home-hello-header {
   }
   .hello-content {
     a {
-      text-decoration:underline;
+      //text-decoration:underline;
     }
   }
 }
@@ -1347,7 +1335,7 @@ body.page-type-feedback {
     font-weight:400;
     font-size:12px;
     background-color:rgba(37,175,206,0.7);//theme-color('blue')
-    color:theme-color('blue');
+    color:theme-color('grey-light');//blue
     text-transform:uppercase;
     letter-spacing:1px;//2px
     white-space:nowrap;

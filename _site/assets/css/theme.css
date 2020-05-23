@@ -5066,7 +5066,7 @@ html.menu-opened, body.menu-opened { overflow-y: hidden; }
 
 html { text-rendering: optimizeLegibility; font-smooth: always; -webkit-font-smoothing: subpixel-antialiased; -moz-osx-font-smoothing: grayscale; }
 
-body { position: relative; font-family: "Brandon Grotesque Light", sans-serif; font-weight: 300; font-style: normal; font-size: 17px; background-color: #181008; height: auto; overflow: hidden; z-index: 0; overscroll-behavior-y: none; }
+body { position: relative; font-family: "Open Sans", sans-serif; font-weight: 300; font-style: normal; font-size: 17px; background-color: #181008; height: auto; overflow: hidden; z-index: 0; overscroll-behavior-y: none; }
 
 img { max-width: 100%; }
 
@@ -5092,9 +5092,9 @@ h1.text-bold, h2.text-bold, h3.text-bold, h4.text-bold, h5.text-bold, h6.text-bo
 
 .font-headline.text-bold { font-weight: 700 !important; }
 
-.font-subtitle { font-family: "Brandon Grotesque Regular", sans-serif !important; font-weight: 400 !important; letter-spacing: 1.5px; }
+.font-subtitle { font-family: "Open Sans", sans-serif !important; font-weight: 400 !important; letter-spacing: 1.5px; }
 
-.font-paragraph { font-family: "Brandon Grotesque Light", sans-serif !important; font-weight: 100 !important; }
+.font-paragraph { font-family: "Open Sans", sans-serif !important; font-weight: 300 !important; }
 
 .font-headline, .font-subtitle, .font-paragraph { font-style: normal !important; }
 
@@ -5122,7 +5122,7 @@ a.logo, aside.nav-social-media, .copyright, nav.navbar { z-index: 6000; }
 
 .aside-cover-2 { right: 0; }
 
-a { color: #FEFEFE; -webkit-transition: all ease-out 0.5s; -moz-transition: all ease-out 0.5s; -ms-transition: all ease-out 0.5s; -o-transition: all ease-out 0.5s; transition: all ease-out 0.5s; }
+a { color: #fef3f3; -webkit-transition: all ease-out 0.5s; -moz-transition: all ease-out 0.5s; -ms-transition: all ease-out 0.5s; -o-transition: all ease-out 0.5s; transition: all ease-out 0.5s; }
 
 a:hover, a:active, a:focus { color: white; text-decoration: none; }
 
@@ -5136,7 +5136,7 @@ a.text-grey-mid:hover, a.text-grey-mid:active, a.text-grey-mid:focus { color: #e
 
 a.text-grey-light:hover, a.text-grey-light:active, a.text-grey-light:focus { color: #d8d8d8 !important; }
 
-.btn { font-family: "Brandon Grotesque Regular", sans-serif; font-weight: normal; font-style: normal; font-size: 20px; -webkit-transition: all ease-out 0.5s; -moz-transition: all ease-out 0.5s; -ms-transition: all ease-out 0.5s; -o-transition: all ease-out 0.5s; transition: all ease-out 0.5s; }
+.btn { font-family: "Open Sans", sans-serif; font-weight: normal; font-style: normal; font-size: 20px; -webkit-transition: all ease-out 0.5s; -moz-transition: all ease-out 0.5s; -ms-transition: all ease-out 0.5s; -o-transition: all ease-out 0.5s; transition: all ease-out 0.5s; }
 
 .btn:hover { -webkit-transform: scale(1.03); -moz-transform: scale(1.03); -ms-transform: scale(1.03); -o-transform: scale(1.03); transform: scale(1.03); -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important; -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important; -ms-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important; -o-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important; }
 
@@ -5206,7 +5206,7 @@ input.text .form-group > select { height: 60px; }
 
 .form-group > select:hover { cursor: pointer; }
 
-.custom-control-label { font-family: "Brandon Grotesque Regular", sans-serif; font-weight: normal; font-style: normal; font-size: 20px; color: #1A1A1A; line-height: 1.3; }
+.custom-control-label { font-family: "Open Sans", sans-serif; font-weight: normal; font-style: normal; font-size: 20px; color: #1A1A1A; line-height: 1.3; }
 
 .form-dark ::-webkit-input-placeholder { color: #f8c6c6 !important; }
 
@@ -5236,73 +5236,69 @@ article.project-article.home a figure > div .project-thumbnail-wrap, article.pro
 
 article.project-article.home a figure > div .project-thumbnail-wrap { overflow: hidden; z-index: 101; }
 
-article.project-article.home a figure figcaption.project-caption .project-name { position: absolute; top: -31px; left: -40px; }
+article.project-article.home a figure figcaption.project-caption .project-title { position: absolute; top: -31px; left: -40px; }
 
-article.project-article.home a figure figcaption.project-caption .project-name .project-title-stroke { top: 0; left: 0; color: #f8c6c6 !important; -webkit-text-stroke: 2px #f8c6c6 !important; -webkit-transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.7s; -moz-transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.7s; -ms-transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.7s; -o-transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.7s; transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.7s; }
+article.project-article.home a figure figcaption.project-caption .project-title .project-title-stroke { top: 0; left: 0; color: #f8c6c6 !important; -webkit-text-stroke: 2px #f8c6c6 !important; -webkit-transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.7s; -moz-transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.7s; -ms-transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.7s; -o-transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.7s; transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.7s; }
 
 article.project-article.home a figure figcaption.project-caption .project-side-data, article.project-article.home a figure figcaption.project-caption .project-roles { position: absolute; -webkit-transition: all ease-in-out 0.5s; -moz-transition: all ease-in-out 0.5s; -ms-transition: all ease-in-out 0.5s; -o-transition: all ease-in-out 0.5s; transition: all ease-in-out 0.5s; }
 
-article.project-article.home a figure figcaption.project-caption .project-side-data { width: 20px; right: 0; bottom: 1px; writing-mode: vertical-rl; text-orientation: mixed; overflow: hidden; pointer-events: none; -webkit-transform: translateX(40px) rotate(180deg); -moz-transform: translateX(40px) rotate(180deg); -ms-transform: translateX(40px) rotate(180deg); -o-transform: translateX(40px) rotate(180deg); transform: translateX(40px) rotate(180deg); }
+article.project-article.home a figure figcaption.project-caption .project-side-data div.project-year, article.project-article.home a figure figcaption.project-caption .project-side-data div.project-info, article.project-article.home a figure figcaption.project-caption .project-side-data p.project-tools, article.project-article.home a figure figcaption.project-caption .project-side-data div.project-type, article.project-article.home a figure figcaption.project-caption .project-roles div.project-year, article.project-article.home a figure figcaption.project-caption .project-roles div.project-info, article.project-article.home a figure figcaption.project-caption .project-roles p.project-tools, article.project-article.home a figure figcaption.project-caption .project-roles div.project-type { -webkit-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -moz-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -ms-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -o-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; }
 
-article.project-article.home a figure figcaption.project-caption .project-side-data time.project-year p, article.project-article.home a figure figcaption.project-caption .project-side-data div.project-info p { font-size: 14px; -webkit-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -moz-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -ms-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -o-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; }
+article.project-article.home a figure figcaption.project-caption .project-side-data { width: 20px; height: calc(100% - 1px); right: 0; bottom: 1px; font-size: 14px; writing-mode: vertical-rl; text-orientation: mixed; overflow: hidden; pointer-events: none; -webkit-transform: translateX(40px) rotate(180deg); -moz-transform: translateX(40px) rotate(180deg); -ms-transform: translateX(40px) rotate(180deg); -o-transform: translateX(40px) rotate(180deg); transform: translateX(40px) rotate(180deg); }
 
-article.project-article.home a figure figcaption.project-caption .project-side-data time.project-year p span, article.project-article.home a figure figcaption.project-caption .project-side-data div.project-info p span { margin-bottom: 15px; }
+article.project-article.home a figure figcaption.project-caption .project-side-data div.project-year time, article.project-article.home a figure figcaption.project-caption .project-side-data div.project-year span, article.project-article.home a figure figcaption.project-caption .project-side-data div.project-info time, article.project-article.home a figure figcaption.project-caption .project-side-data div.project-info span { margin-bottom: 15px; }
 
-article.project-article.home a figure figcaption.project-caption .project-side-data time.project-year p { -webkit-filter: opacity(1); -moz-filter: opacity(1); -ms-filter: opacity(1); -o-filter: opacity(1); filter: opacity(1); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+article.project-article.home a figure figcaption.project-caption .project-side-data div.project-year { -webkit-filter: opacity(1); -moz-filter: opacity(1); -ms-filter: opacity(1); -o-filter: opacity(1); filter: opacity(1); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
 
-article.project-article.home a figure figcaption.project-caption .project-side-data div.project-info p { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); -webkit-transform: translateX(-20px); -moz-transform: translateX(-20px); -ms-transform: translateX(-20px); -o-transform: translateX(-20px); transform: translateX(-20px); }
+article.project-article.home a figure figcaption.project-caption .project-side-data div.project-info { position: absolute; top: 0; left: 0; -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); -webkit-transform: translateX(-20px); -moz-transform: translateX(-20px); -ms-transform: translateX(-20px); -o-transform: translateX(-20px); transform: translateX(-20px); }
 
-article.project-article.home a figure figcaption.project-caption .project-roles { width: 100%; right: 1px; bottom: -40px; font-size: 14px; text-align: right; overflow: hidden; }
+article.project-article.home a figure figcaption.project-caption .project-roles { width: calc(100% - 1px); right: 1px; bottom: -40px; font-size: 14px; text-align: right; overflow: hidden; }
 
-article.project-article.home a figure figcaption.project-caption .project-roles > p, article.project-article.home a figure figcaption.project-caption .project-roles .project-type { font-size: 14px; -webkit-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -moz-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -ms-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -o-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; }
+article.project-article.home a figure figcaption.project-caption .project-roles p.project-tools { display: inline-block; -webkit-filter: opacity(1); -moz-filter: opacity(1); -ms-filter: opacity(1); -o-filter: opacity(1); filter: opacity(1); -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
 
-article.project-article.home a figure figcaption.project-caption .project-roles > p { display: inline-block; -webkit-filter: opacity(1); -moz-filter: opacity(1); -ms-filter: opacity(1); -o-filter: opacity(1); filter: opacity(1); -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
+article.project-article.home a figure figcaption.project-caption .project-roles p.project-tools span { margin-right: 1px; }
 
-article.project-article.home a figure figcaption.project-caption .project-roles > p span { margin-right: 1px; }
-
-article.project-article.home a figure figcaption.project-caption .project-roles .project-type { position: absolute; top: 0; right: 0; -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); -webkit-transform: translateY(20px); -moz-transform: translateY(20px); -ms-transform: translateY(20px); -o-transform: translateY(20px); transform: translateY(20px); }
+article.project-article.home a figure figcaption.project-caption .project-roles div.project-type { position: absolute; top: 0; right: 0; -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); -webkit-transform: translateY(20px); -moz-transform: translateY(20px); -ms-transform: translateY(20px); -o-transform: translateY(20px); transform: translateY(20px); }
 
 article.project-article.home a:hover figure > div .project-thumbnail-wrap, article.project-article.home a:active figure > div .project-thumbnail-wrap, article.project-article.home a:focus figure > div .project-thumbnail-wrap { -webkit-transform: scale(0.98); -moz-transform: scale(0.98); -ms-transform: scale(0.98); -o-transform: scale(0.98); transform: scale(0.98); }
 
 article.project-article.home a:hover figure > div .project-thumbnail-wrap .project-thumbnail, article.project-article.home a:hover figure > div .project-thumbnail-wrap .recent-project-thumbnail, article.project-article.home a:active figure > div .project-thumbnail-wrap .project-thumbnail, article.project-article.home a:active figure > div .project-thumbnail-wrap .recent-project-thumbnail, article.project-article.home a:focus figure > div .project-thumbnail-wrap .project-thumbnail, article.project-article.home a:focus figure > div .project-thumbnail-wrap .recent-project-thumbnail { -webkit-transform: scale(1.08); -moz-transform: scale(1.08); -ms-transform: scale(1.08); -o-transform: scale(1.08); transform: scale(1.08); }
 
-article.project-article.home a:hover figure figcaption.project-caption .project-name .project-title-stroke, article.project-article.home a:active figure figcaption.project-caption .project-name .project-title-stroke, article.project-article.home a:focus figure figcaption.project-caption .project-name .project-title-stroke { color: transparent !important; }
+article.project-article.home a:hover figure figcaption.project-caption .project-title .project-title-stroke, article.project-article.home a:active figure figcaption.project-caption .project-title .project-title-stroke, article.project-article.home a:focus figure figcaption.project-caption .project-title .project-title-stroke { color: transparent !important; }
 
 article.project-article.home a:hover figure figcaption.project-caption .project-side-data, article.project-article.home a:active figure figcaption.project-caption .project-side-data, article.project-article.home a:focus figure figcaption.project-caption .project-side-data { right: 8px; bottom: 4px; }
 
-article.project-article.home a:hover figure figcaption.project-caption .project-side-data time.project-year p, article.project-article.home a:hover figure figcaption.project-caption .project-side-data div.project-info p, article.project-article.home a:active figure figcaption.project-caption .project-side-data time.project-year p, article.project-article.home a:active figure figcaption.project-caption .project-side-data div.project-info p, article.project-article.home a:focus figure figcaption.project-caption .project-side-data time.project-year p, article.project-article.home a:focus figure figcaption.project-caption .project-side-data div.project-info p { -webkit-transform: translateX(20px); -moz-transform: translateX(20px); -ms-transform: translateX(20px); -o-transform: translateX(20px); transform: translateX(20px); }
+article.project-article.home a:hover figure figcaption.project-caption .project-side-data div.project-year, article.project-article.home a:active figure figcaption.project-caption .project-side-data div.project-year, article.project-article.home a:focus figure figcaption.project-caption .project-side-data div.project-year { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); -webkit-transform: translateX(20px); -moz-transform: translateX(20px); -ms-transform: translateX(20px); -o-transform: translateX(20px); transform: translateX(20px); }
 
-article.project-article.home a:hover figure figcaption.project-caption .project-side-data time.project-year p, article.project-article.home a:active figure figcaption.project-caption .project-side-data time.project-year p, article.project-article.home a:focus figure figcaption.project-caption .project-side-data time.project-year p { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); }
-
-article.project-article.home a:hover figure figcaption.project-caption .project-side-data div.project-info p, article.project-article.home a:active figure figcaption.project-caption .project-side-data div.project-info p, article.project-article.home a:focus figure figcaption.project-caption .project-side-data div.project-info p { -webkit-filter: opacity(1); -moz-filter: opacity(1); -ms-filter: opacity(1); -o-filter: opacity(1); filter: opacity(1); }
+article.project-article.home a:hover figure figcaption.project-caption .project-side-data div.project-info, article.project-article.home a:active figure figcaption.project-caption .project-side-data div.project-info, article.project-article.home a:focus figure figcaption.project-caption .project-side-data div.project-info { -webkit-filter: opacity(1); -moz-filter: opacity(1); -ms-filter: opacity(1); -o-filter: opacity(1); filter: opacity(1); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
 
 article.project-article.home a:hover figure figcaption.project-caption .project-roles, article.project-article.home a:active figure figcaption.project-caption .project-roles, article.project-article.home a:focus figure figcaption.project-caption .project-roles { right: 9px; bottom: -35px; }
 
-article.project-article.home a:hover figure figcaption.project-caption .project-roles > p, article.project-article.home a:active figure figcaption.project-caption .project-roles > p, article.project-article.home a:focus figure figcaption.project-caption .project-roles > p { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); -webkit-transform: translateY(-20px); -moz-transform: translateY(-20px); -ms-transform: translateY(-20px); -o-transform: translateY(-20px); transform: translateY(-20px); }
+article.project-article.home a:hover figure figcaption.project-caption .project-roles p.project-tools, article.project-article.home a:active figure figcaption.project-caption .project-roles p.project-tools, article.project-article.home a:focus figure figcaption.project-caption .project-roles p.project-tools { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); -webkit-transform: translateY(-20px); -moz-transform: translateY(-20px); -ms-transform: translateY(-20px); -o-transform: translateY(-20px); transform: translateY(-20px); }
 
-article.project-article.home a:hover figure figcaption.project-caption .project-roles .project-type, article.project-article.home a:active figure figcaption.project-caption .project-roles .project-type, article.project-article.home a:focus figure figcaption.project-caption .project-roles .project-type { -webkit-filter: opacity(1); -moz-filter: opacity(1); -ms-filter: opacity(1); -o-filter: opacity(1); filter: opacity(1); -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
+article.project-article.home a:hover figure figcaption.project-caption .project-roles div.project-type, article.project-article.home a:active figure figcaption.project-caption .project-roles div.project-type, article.project-article.home a:focus figure figcaption.project-caption .project-roles div.project-type { -webkit-filter: opacity(1); -moz-filter: opacity(1); -ms-filter: opacity(1); -o-filter: opacity(1); filter: opacity(1); -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); transform: translateY(0); }
 
-article.project-article.home.article-right a figure figcaption.project-caption .project-name { right: -40px; left: auto; text-align: right; }
+article.project-article.home.article-right a figure figcaption.project-caption .project-title { right: -40px; left: auto; text-align: right; }
 
-article.project-article.home.article-right a figure figcaption.project-caption .project-name .project-title-stroke { right: 0; left: auto; }
+article.project-article.home.article-right a figure figcaption.project-caption .project-title .project-title-stroke { right: 0; left: auto; }
 
 article.project-article.home.article-right a figure figcaption.project-caption .project-side-data, article.project-article.home.article-right a figure figcaption.project-caption .project-roles { right: auto; }
 
 article.project-article.home.article-right a figure figcaption.project-caption .project-side-data { left: 0; -webkit-transform: translateX(-40px) rotate(180deg); -moz-transform: translateX(-40px) rotate(180deg); -ms-transform: translateX(-40px) rotate(180deg); -o-transform: translateX(-40px) rotate(180deg); transform: translateX(-40px) rotate(180deg); }
 
-article.project-article.home.article-right a figure figcaption.project-caption .project-side-data time.project-year p { -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+article.project-article.home.article-right a figure figcaption.project-caption .project-side-data div.project-year { -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
 
-article.project-article.home.article-right a figure figcaption.project-caption .project-side-data div.project-info p { -webkit-transform: translateX(45px); -moz-transform: translateX(45px); -ms-transform: translateX(45px); -o-transform: translateX(45px); transform: translateX(45px); }
+article.project-article.home.article-right a figure figcaption.project-caption .project-side-data div.project-info { right: 0; -webkit-transform: translateX(20px); -moz-transform: translateX(20px); -ms-transform: translateX(20px); -o-transform: translateX(20px); transform: translateX(20px); }
 
 article.project-article.home.article-right a figure figcaption.project-caption .project-roles { left: 1px; text-align: left; }
 
-article.project-article.home.article-right a figure figcaption.project-caption .project-roles .project-type { left: 0; }
+article.project-article.home.article-right a figure figcaption.project-caption .project-roles div.project-type { left: 0; }
 
 article.project-article.home.article-right a:hover figure figcaption.project-caption .project-side-data, article.project-article.home.article-right a:active figure figcaption.project-caption .project-side-data, article.project-article.home.article-right a:focus figure figcaption.project-caption .project-side-data { left: 8px; }
 
-article.project-article.home.article-right a:hover figure figcaption.project-caption .project-side-data time.project-year p, article.project-article.home.article-right a:active figure figcaption.project-caption .project-side-data time.project-year p, article.project-article.home.article-right a:focus figure figcaption.project-caption .project-side-data time.project-year p { -webkit-transform: translateX(-20px); -moz-transform: translateX(-20px); -ms-transform: translateX(-20px); -o-transform: translateX(-20px); transform: translateX(-20px); }
+article.project-article.home.article-right a:hover figure figcaption.project-caption .project-side-data div.project-year, article.project-article.home.article-right a:active figure figcaption.project-caption .project-side-data div.project-year, article.project-article.home.article-right a:focus figure figcaption.project-caption .project-side-data div.project-year { -webkit-transform: translateX(-20px); -moz-transform: translateX(-20px); -ms-transform: translateX(-20px); -o-transform: translateX(-20px); transform: translateX(-20px); }
 
-article.project-article.home.article-right a:hover figure figcaption.project-caption .project-side-data div.project-info p, article.project-article.home.article-right a:active figure figcaption.project-caption .project-side-data div.project-info p, article.project-article.home.article-right a:focus figure figcaption.project-caption .project-side-data div.project-info p { -webkit-transform: translateX(20px); -moz-transform: translateX(20px); -ms-transform: translateX(20px); -o-transform: translateX(20px); transform: translateX(20px); }
+article.project-article.home.article-right a:hover figure figcaption.project-caption .project-side-data div.project-info, article.project-article.home.article-right a:active figure figcaption.project-caption .project-side-data div.project-info, article.project-article.home.article-right a:focus figure figcaption.project-caption .project-side-data div.project-info { -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
 
 article.project-article.home.article-right a:hover figure figcaption.project-caption .project-roles, article.project-article.home.article-right a:active figure figcaption.project-caption .project-roles, article.project-article.home.article-right a:focus figure figcaption.project-caption .project-roles { left: 9px; }
 
@@ -5310,7 +5306,7 @@ article.project-article.work { margin-bottom: 104px; will-change: transform, scr
 
 article.project-article.work a figure .project-thumbnail { position: relative; height: 330px; }
 
-article.project-article.work a figure .project-thumbnail figcaption.project-caption .project-name, article.project-article.work a figure .project-thumbnail figcaption.project-caption .project-roles { background-color: rgba(254, 254, 254, 0.7); }
+article.project-article.work a figure .project-thumbnail figcaption.project-caption .project-title, article.project-article.work a figure .project-thumbnail figcaption.project-caption .project-roles { background-color: rgba(254, 254, 254, 0.7); }
 
 article.project-article.work a figure .project-thumbnail figcaption.project-caption .project-roles p { display: inline-block; font-size: 13.5px; }
 
@@ -5318,15 +5314,15 @@ article.project-article.work a figure .project-thumbnail figcaption.project-capt
 
 article.project-article.work a figure .project-side-data { position: absolute; width: 20px; top: 15px; right: 0; writing-mode: vertical-rl; text-orientation: mixed; overflow: hidden; pointer-events: none; -webkit-transform: translateX(30px); -moz-transform: translateX(30px); -ms-transform: translateX(30px); -o-transform: translateX(30px); transform: translateX(30px); }
 
-article.project-article.work a figure .project-side-data time.project-year p, article.project-article.work a figure .project-side-data div.project-info p { font-size: 13.5px; -webkit-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -moz-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -ms-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -o-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; }
+article.project-article.work a figure .project-side-data div.project-year p, article.project-article.work a figure .project-side-data div.project-info p { font-size: 13.5px; -webkit-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -moz-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -ms-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; -o-transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; transition: transform cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.1s, filter cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s 0.2s; }
 
-article.project-article.work a figure .project-side-data time.project-year p { -webkit-filter: opacity(1); -moz-filter: opacity(1); -ms-filter: opacity(1); -o-filter: opacity(1); filter: opacity(1); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+article.project-article.work a figure .project-side-data div.project-year p { -webkit-filter: opacity(1); -moz-filter: opacity(1); -ms-filter: opacity(1); -o-filter: opacity(1); filter: opacity(1); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
 
 article.project-article.work a figure .project-side-data div.project-info p { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); -webkit-transform: translateX(-20px); -moz-transform: translateX(-20px); -ms-transform: translateX(-20px); -o-transform: translateX(-20px); transform: translateX(-20px); }
 
-article.project-article.work a:hover figure .project-side-data time.project-year p, article.project-article.work a:hover figure .project-side-data div.project-info p, article.project-article.work a:active figure .project-side-data time.project-year p, article.project-article.work a:active figure .project-side-data div.project-info p, article.project-article.work a:focus figure .project-side-data time.project-year p, article.project-article.work a:focus figure .project-side-data div.project-info p { -webkit-transform: translateX(20px); -moz-transform: translateX(20px); -ms-transform: translateX(20px); -o-transform: translateX(20px); transform: translateX(20px); }
+article.project-article.work a:hover figure .project-side-data div.project-year p, article.project-article.work a:hover figure .project-side-data div.project-info p, article.project-article.work a:active figure .project-side-data div.project-year p, article.project-article.work a:active figure .project-side-data div.project-info p, article.project-article.work a:focus figure .project-side-data div.project-year p, article.project-article.work a:focus figure .project-side-data div.project-info p { -webkit-transform: translateX(20px); -moz-transform: translateX(20px); -ms-transform: translateX(20px); -o-transform: translateX(20px); transform: translateX(20px); }
 
-article.project-article.work a:hover figure .project-side-data time.project-year p, article.project-article.work a:active figure .project-side-data time.project-year p, article.project-article.work a:focus figure .project-side-data time.project-year p { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); }
+article.project-article.work a:hover figure .project-side-data div.project-year p, article.project-article.work a:active figure .project-side-data div.project-year p, article.project-article.work a:focus figure .project-side-data div.project-year p { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); }
 
 article.project-article.work a:hover figure .project-side-data div.project-info p, article.project-article.work a:active figure .project-side-data div.project-info p, article.project-article.work a:focus figure .project-side-data div.project-info p { -webkit-filter: opacity(1); -moz-filter: opacity(1); -ms-filter: opacity(1); -o-filter: opacity(1); filter: opacity(1); }
 
@@ -5392,8 +5388,6 @@ header.home-hello-header .hello-header-middle-images .header-gif-cover { positio
 
 header.home-hello-header .hello-header-middle-images:hover .header-gif-cover { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); }
 
-header.home-hello-header .hello-content a { text-decoration: underline; }
-
 header.work-header-section { padding: 30px 20px; }
 
 section.work-projects-section { padding: 30px 20px; }
@@ -5418,7 +5412,7 @@ footer a.container:hover .footer-drop-me-a-line i.fa, footer a.container:focus .
 
 .cursor .cursor-recent-project, .cursor .cursor-project, .cursor .cursor-footer { width: 100px; height: 100px; top: -42.5px; left: -42.5px; text-align: center; z-index: 11002; -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); -webkit-transform: rotate(-180deg) scale(0, 0); -moz-transform: rotate(-180deg) scale(0, 0); -ms-transform: rotate(-180deg) scale(0, 0); -o-transform: rotate(-180deg) scale(0, 0); transform: rotate(-180deg) scale(0, 0); }
 
-.cursor .cursor-recent-project, .cursor .cursor-footer { padding-top: 42px; font-family: "Old Standard TT", serif; font-weight: 400; font-size: 12px; background-color: rgba(37, 175, 206, 0.7); color: #aaacdb; text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+.cursor .cursor-recent-project, .cursor .cursor-footer { padding-top: 42px; font-family: "Old Standard TT", serif; font-weight: 400; font-size: 12px; background-color: rgba(37, 175, 206, 0.7); color: #FEFEFE; text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
 
 .cursor .cursor-footer { width: 150px; height: 150px; padding-top: 68px; top: -67.5px; left: -67.5px; background-color: rgba(240, 217, 194, 0.85); color: #181008; }
 
@@ -5483,7 +5477,7 @@ header.home-hello-header .hello-header-caption { will-change: transform, transfo
   #column_div .first.column, .column-div .first.column { padding-right: 20px; }
   #column_div .last.column, .column-div .last.column { padding-left: 20px; }
   nav.navbar { position: fixed; padding: 30px; top: 0; right: 0; pointer-events: none; }
-  nav.navbar ul.navbar-nav li.nav-item a.nav-link { display: inline-block; position: relative; padding: 0.3rem 0.5rem; font-family: "Brandon Grotesque Light", sans-serif; font-size: 13.5px; color: #FEFEFE; text-transform: uppercase; white-space: nowrap; }
+  nav.navbar ul.navbar-nav li.nav-item a.nav-link { display: inline-block; position: relative; padding: 0.3rem 0.5rem; font-family: "Open Sans", sans-serif; font-size: 13.5px; color: #FEFEFE; text-transform: uppercase; white-space: nowrap; }
   nav.navbar ul.navbar-nav li.nav-item a.nav-link::after { content: ''; position: absolute; width: 6px; height: 6px; top: 11px; left: -7px; border: 1px solid #FEFEFE; pointer-events: none; -webkit-transform: scale(0) rotate(0); -moz-transform: scale(0) rotate(0); -ms-transform: scale(0) rotate(0); -o-transform: scale(0) rotate(0); transform: scale(0) rotate(0); -webkit-transition: all 0.7s ease-out; -moz-transition: all 0.7s ease-out; -ms-transition: all 0.7s ease-out; -o-transition: all 0.7s ease-out; transition: all 0.7s ease-out; }
   nav.navbar ul.navbar-nav li.nav-item a.nav-link.active-link { color: #f8c6c6; }
   nav.navbar ul.navbar-nav li.nav-item a.nav-link.active-link::after { bottom: -10px; border-color: #f8c6c6; -webkit-transform: scale(1) rotate(45deg); -moz-transform: scale(1) rotate(45deg); -ms-transform: scale(1) rotate(45deg); -o-transform: scale(1) rotate(45deg); transform: scale(1) rotate(45deg); }

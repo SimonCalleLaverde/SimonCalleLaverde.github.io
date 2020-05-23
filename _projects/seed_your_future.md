@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-seed-your-future.png
   url: https://www.seedyourfuture.org/
 type: Campaign Website
-category: developing for Code Nation
+category: Working for Code Nation
 tags: [featured, other]
 order: 21
 ---

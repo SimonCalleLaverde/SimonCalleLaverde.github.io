@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-stop-adani-alliance.png
   url: http://www.stopadanialliance.com/
 type: Campaign Website
-category: developing for Code Nation
+category: Working for Code Nation
 tags: ""
 order: 14
 ---

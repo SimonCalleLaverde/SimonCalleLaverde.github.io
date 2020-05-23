@@ -12,7 +12,7 @@ web:
   image_3: ""
   url: https://calle-impresores.netlify.com
 type: Business Website & Catalogue
-category: as Independent
+category: Independent Project
 tags: recent
 order: 30
 ---

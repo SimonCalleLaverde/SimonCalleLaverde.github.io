@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-outback-queensland.png
   url: https://www.outbackqueensland.org.au
 type: Campaign Website
-category: developing for Code Nation
+category: Working for Code Nation
 tags: ""
 order: 18
 ---

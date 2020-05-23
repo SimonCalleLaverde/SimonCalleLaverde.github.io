@@ -12,7 +12,7 @@ web:
   image_3: /uploads/site-web-freshhold-3.png
   url: ""
 type: Concept Website
-category: as Independent &middot; Concept site for presentation
+category: Independent &middot; Concept site for presentation
 tags: featured
 order: 1
 ---

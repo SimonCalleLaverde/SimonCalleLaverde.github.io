@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-el-avispero-mov.png
   url: http://www.elavisperomov.org/
 type: Campaign Website
-category: developing for Code Nation
+category: Working for Code Nation
 tags: ""
 order: 10
 ---

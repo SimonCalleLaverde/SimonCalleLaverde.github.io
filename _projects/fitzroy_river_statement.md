@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-fitzroy-river-statement.png
   url: http://www.fitzroystatement.org
 type: Campaign Website
-category: developing for Code Nation
+category: Working for Code Nation
 tags: featured
 order: 19
 ---

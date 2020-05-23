@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-child-rights-australia.png
   url: https://www.childrightsaustralia.org.au/
 type: Campaign Website
-category: developing for Code Nation
+category: Working for Code Nation
 tags: ""
 order: 13
 ---

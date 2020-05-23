@@ -10,7 +10,7 @@ web:
   image: /uploads/site-web-give-a-dam.png
   url: https://www.giveadam.org.au/
 type: Campaign Website
-category: developing for Code Nation
+category: Working for Code Nation
 tags: [featured, other]
 order: 24
 ---
