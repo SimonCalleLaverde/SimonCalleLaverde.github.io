@@ -41,12 +41,7 @@
     overflow:hidden;
   }
 }
-@include media-breakpoint-only(lg) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-up(xl) {
+@include media-breakpoint-up(lg) {
   html {
     overflow:hidden;
   }
