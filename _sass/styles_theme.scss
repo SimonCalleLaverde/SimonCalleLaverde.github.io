@@ -46,6 +46,11 @@
     overflow:hidden;
   }
 }
+@include media-breakpoint-up(xl) {
+  html {
+    overflow:hidden;
+  }
+}
 
 //----------------------------------General Styles----------------------------------//
 
