@@ -5362,7 +5362,7 @@ aside.nav-social-media a:hover span.icon-linkedin svg, aside.nav-social-media a:
 
 aside.nav-social-media a:hover span.icon-behance svg, aside.nav-social-media a:active span.icon-behance svg, aside.nav-social-media a:focus span.icon-behance svg { fill: #4a8aff !important; }
 
-.copyright { position: fixed; bottom: 48px; left: 55px; font-size: 12px; pointer-events: none; mix-blend-mode: difference; -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -ms-transform: rotate(270deg); -o-transform: rotate(270deg); transform: rotate(270deg); -webkit-transform-origin: left bottom; -moz-transform-origin: left bottom; -ms-transform-origin: left bottom; -o-transform-origin: left bottom; transform-origin: left bottom; }
+.copyright { position: fixed; bottom: 40px; left: 55px; font-size: 12px; pointer-events: none; mix-blend-mode: difference; -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -ms-transform: rotate(270deg); -o-transform: rotate(270deg); transform: rotate(270deg); -webkit-transform-origin: left bottom; -moz-transform-origin: left bottom; -ms-transform-origin: left bottom; -o-transform-origin: left bottom; transform-origin: left bottom; }
 
 .show-it, .hide-it { -webkit-transition: filter ease-out 0.7s; -moz-transition: filter ease-out 0.7s; -ms-transition: filter ease-out 0.7s; -o-transition: filter ease-out 0.7s; transition: filter ease-out 0.7s; }
 
@@ -5400,9 +5400,11 @@ footer a.container { padding: 30px 20px; }
 
 footer a.container div { pointer-events: none; }
 
-footer a.container .footer-copyright { position: absolute; left: 63px; }
+footer a.container hr { position: absolute; right: 0; bottom: 70px; left: 0; border-color: #f8c6c6; }
 
-footer a.container:hover .footer-drop-me-a-line i.fa, footer a.container:focus .footer-drop-me-a-line i.fa, footer a.container:active .footer-drop-me-a-line i.fa { color: #f8c6c6 !important; -webkit-text-stroke: none !important; }
+footer .footer-copyright, footer .footer-created-by { position: absolute; }
+
+footer .footer-created-by { width: 100%; bottom: 35px; font-size: 12px; text-align: center; pointer-events: none; }
 
 .cursor { display: none; position: fixed; width: 25px; height: 25px; top: -12.5px; left: -12.5px; z-index: 250000; pointer-events: none; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; will-change: transform; }
 
