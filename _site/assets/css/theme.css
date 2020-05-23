@@ -5400,11 +5400,11 @@ footer a.container { padding: 30px 20px; }
 
 footer a.container div { pointer-events: none; }
 
-footer a.container hr { position: absolute; right: 0; bottom: 70px; left: 0; border-color: #f8c6c6; }
+footer a.container hr { position: absolute; right: 0; bottom: 60px; left: 0; border-color: #f8c6c6; }
 
 footer .footer-copyright, footer .footer-created-by { position: absolute; }
 
-footer .footer-created-by { width: 100%; bottom: 35px; font-size: 12px; text-align: center; pointer-events: none; }
+footer .footer-created-by { width: 100%; bottom: 30px; font-size: 12px; text-align: center; pointer-events: none; }
 
 .cursor { display: none; position: fixed; width: 25px; height: 25px; top: -12.5px; left: -12.5px; z-index: 250000; pointer-events: none; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; will-change: transform; }
 
