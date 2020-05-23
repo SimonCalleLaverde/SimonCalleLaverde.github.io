@@ -5388,6 +5388,8 @@ header.home-hello-header .hello-header-middle-images .header-gif-cover { positio
 
 header.home-hello-header .hello-header-middle-images:hover .header-gif-cover { -webkit-filter: opacity(0); -moz-filter: opacity(0); -ms-filter: opacity(0); -o-filter: opacity(0); filter: opacity(0); }
 
+header.home-hello-header .hello-content a { text-decoration: underline; }
+
 header.work-header-section { padding: 30px 20px; }
 
 section.work-projects-section { padding: 30px 20px; }
