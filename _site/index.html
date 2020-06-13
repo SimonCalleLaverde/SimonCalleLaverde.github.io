@@ -22,7 +22,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Your awesome title" />
 <script type="application/ld+json">
-{"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","url":"http://localhost:4000/","headline":"Simon’s Portfolio","name":"Your awesome title","@context":"https://schema.org"}</script>
+{"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","url":"http://localhost:4000/","name":"Your awesome title","headline":"Simon’s Portfolio","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <meta property="og:type" content="article">
@@ -36,6 +36,12 @@
   <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
   <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400&display=swap&subset=latin-ext" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+
+
+  <link href="//db.onlinewebfonts.com/c/4c4c08af466e9ad071b6d69cf44093df?family=Saol+Display+Regular" rel="stylesheet" type="text/css"/><!--Testing, cool free site of fonts-->
+
+
 
   <!--Main-->
   <link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
@@ -66,6 +72,72 @@
     
     
     
+
+    <!--<div class="logo">
+	<a href="/" class="link text-rosybrown">
+		<span>Simón</span><br>
+		<span>Calle</span><br>
+		<span>Laverde</span>
+	</a>
+
+	<div class="logo-cover hide-it">
+	</div>
+</div>-->
+
+    <div class="left-info text-rosybrown">
+	Simón Calle Laverde - Based in Bogotá D.C, Colombia.
+</div>
+
+    <div class="copyright text-rosybrown">
+  <div class="copyright-interior show-it" style="will-change:filter;">
+    © 2015 - 2020<!--© 2019 Simón Calle Laverde--><!--© Copyright 2015 - 2020-->
+  </div>
+</div>
+
+    <!--Screenreader-->
+<div class="sr-only">Navigation</div>
+
+<!--Desktop-->
+<nav class="navbar text-right" id="navbar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="link nav-link active-link" href="/"><!--Class ".active" has a bug I think with "Rolly.js", where when getting to the bottom the class gets removed forever-->
+        Home<!--01. -->
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="link nav-link" href="/work">
+        <!--<span style="margin-right:3px;">(+)</span> -->All projects<!--02. -->
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="link nav-link" href="/contact_me">
+        Get in touch<!--03. -->
+      </a>
+    </li>
+    
+    <!--<li class="nav-item">
+      <a class="nav-link link smoothScroll" href="#home_hello_header">
+        Hello
+      </a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link link smoothScroll" href="#work_section">
+        Work
+      </a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link link smoothScroll" href="#get_in_touch_footer">
+        Get in touch
+      </a>
+    </li>-->
+  </ul>
+</nav>
+    <!--Mobile-->
 
     <aside class="nav-social-media">
   <div class="mb-3 pb-1">
@@ -119,57 +191,6 @@
   </div>
 </aside>
 
-    <div class="copyright text-grey-light"><!--text-beige-light-->
-  <div class="copyright-interior show-it" style="will-change:filter;">
-    © 2015 - 2020<!--© 2019 Simón Calle Laverde--><!--© Copyright 2015 - 2020-->
-  </div>
-</div>
-
-    <!--Screenreader-->
-<div class="sr-only">Navigation</div>
-
-<!--Desktop-->
-<nav class="navbar text-right" id="navbar">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="link nav-link active-link" href="/"><!--Class ".active" has a bug I think with "Rolly.js", where when getting to the bottom the class gets removed forever-->
-        01. Home
-      </a>
-    </li>
-
-    <li class="nav-item">
-      <a class="link nav-link" href="/work">
-        <!--<span style="margin-right:3px;">(+)</span> -->02. All projects
-      </a>
-    </li>
-
-    <li class="nav-item">
-      <a class="link nav-link" href="/contact_me">
-        03. Get in touch
-      </a>
-    </li>
-    
-    <!--<li class="nav-item">
-      <a class="nav-link link smoothScroll" href="#home_hello_header">
-        Hello
-      </a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-link link smoothScroll" href="#work_section">
-        Work
-      </a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-link link smoothScroll" href="#get_in_touch_footer">
-        Get in touch
-      </a>
-    </li>-->
-  </ul>
-</nav>
-    <!--Mobile-->
-
     <div class="aside-cover-1">
 </div>
 <div class="aside-cover-2">
@@ -177,7 +198,9 @@
 
     <div class="mobile-note bg-chocolate text-rosybrown text-bold d-flex flex-row justify-content-center align-items-center text-center"><!--bg-beige-light text-grey-dark--><!--d-xl-none-->
       <!--La versión Mobile y Tablet<br>están en construcción<br>05.30.2020-->
-      Este sitio web se encuentra<br>en construcción<br>05.30.2020
+      <div style="max-width:360px;">
+        This website is under development<br><br><span style="font-size:13px;">Note: Because of moving places and solving other issues, it has taken me a bit longer to finalize my portfolio - (Folio. 2020)</span><br><br><span style="font-size:13px;">Coming soon:</span><br>06.20.2020
+      </div>
     </div>
     
     <div id="rolly"><!--id="luxy">-->
@@ -241,7 +264,7 @@
 
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <article class="project-article home position-relative article-left mx-5" id="scroll_to_30">
+            <article class="project-article home position-relative article-left mx-5 py-4more"><!--id="scroll_to_30"-->
   <a href="#" data-toggle="modal" data-target="#projectModal_calle_impresores">
     <figure>
       <div>
@@ -326,7 +349,7 @@
 
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <article class="project-article home position-relative article-right mx-5" id="scroll_to_29">
+            <article class="project-article home position-relative article-right mx-5 py-4more"><!--id="scroll_to_29"-->
   <a href="#" data-toggle="modal" data-target="#projectModal_jomaira_imagen">
     <figure>
       <div>
@@ -587,7 +610,7 @@
 
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <article class="project-article home position-relative article-left mx-5" id="scroll_to_24">
+            <article class="project-article home position-relative article-left mx-5 py-4more"><!--id="scroll_to_24"-->
   <a href="#" data-toggle="modal" data-target="#projectModal_give_a_dam">
     <figure>
       <div>
@@ -674,7 +697,7 @@
 
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <article class="project-article home position-relative article-right mx-5" id="scroll_to_21">
+            <article class="project-article home position-relative article-right mx-5 py-4more"><!--id="scroll_to_21"-->
   <a href="#" data-toggle="modal" data-target="#projectModal_seed_your_future">
     <figure>
       <div>
@@ -751,7 +774,7 @@
 
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <article class="project-article home position-relative article-left mx-5" id="scroll_to_20">
+            <article class="project-article home position-relative article-left mx-5 py-4more"><!--id="scroll_to_20"-->
   <a href="#" data-toggle="modal" data-target="#projectModal_repower_australia">
     <figure>
       <div>
@@ -830,7 +853,7 @@
 
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <article class="project-article home position-relative article-right mx-5" id="scroll_to_19">
+            <article class="project-article home position-relative article-right mx-5 py-4more"><!--id="scroll_to_19"-->
   <a href="#" data-toggle="modal" data-target="#projectModal_fitzroy_river_statement">
     <figure>
       <div>
@@ -914,7 +937,7 @@
 
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <article class="project-article home position-relative article-left mx-5" id="scroll_to_17">
+            <article class="project-article home position-relative article-left mx-5 py-4more"><!--id="scroll_to_17"-->
   <a href="#" data-toggle="modal" data-target="#projectModal_cultivate_oregon">
     <figure>
       <div>
@@ -991,7 +1014,7 @@
 
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <article class="project-article home position-relative article-right mx-5" id="scroll_to_16">
+            <article class="project-article home position-relative article-right mx-5 py-4more"><!--id="scroll_to_16"-->
   <a href="#" data-toggle="modal" data-target="#projectModal_time_for_melbournes_west">
     <figure>
       <div>
@@ -1123,7 +1146,7 @@
 
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <article class="project-article home position-relative article-left mx-5" id="scroll_to_4">
+            <article class="project-article home position-relative article-left mx-5 py-4more"><!--id="scroll_to_4"-->
   <a href="#" data-toggle="modal" data-target="#projectModal_healthy_futures">
     <figure>
       <div>
@@ -1200,7 +1223,7 @@
 
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <article class="project-article home position-relative article-right mx-5" id="scroll_to_3">
+            <article class="project-article home position-relative article-right mx-5 py-4more"><!--id="scroll_to_3"-->
   <a href="#" data-toggle="modal" data-target="#projectModal_conservation_council_sa">
     <figure>
       <div>
@@ -1277,7 +1300,7 @@
 
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <article class="project-article home position-relative article-left mx-5" id="scroll_to_2">
+            <article class="project-article home position-relative article-left mx-5 py-4more"><!--id="scroll_to_2"-->
   <a href="#" data-toggle="modal" data-target="#projectModal_australian_religious_response_to_climate_change">
     <figure>
       <div>
@@ -1354,7 +1377,7 @@
 
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <article class="project-article home position-relative article-right mx-5" id="scroll_to_1">
+            <article class="project-article home position-relative article-right mx-5 py-4more"><!--id="scroll_to_1"-->
   <a href="#" data-toggle="modal" data-target="#projectModal_freshhold">
     <figure>
       <div>
@@ -1455,11 +1478,11 @@
 
   </a>
 
-  <div class="footer-copyright copyright text-grey-light">
+  <div class="footer-copyright copyright text-rosybrown">
     © 2015-2020<!--MMXX-->
   </div>
   
-  <div class="footer-created-by text-rosybrown">
+  <div class="footer-created-by font-headline text-rosybrown">
     Designed & developed by Simón Calle Laverde
   </div>
 </footer>

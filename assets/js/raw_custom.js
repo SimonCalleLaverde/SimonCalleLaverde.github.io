@@ -25,8 +25,8 @@ $(function() {
           const { previous, current, transformPrefix } = globalState;
           const { context } = sceneState.cache;
           const delta = current - previous;
-          const rotationZ = delta / 32;//2
-          const skew = delta / 40;//2.5
+          const rotationZ = delta / 48;//32//2
+          const skew = delta / 60;//40//2.5
           context.style[transformPrefix] = `translate3d(0, ${transform}px, 0) rotateZ(${rotationZ}deg) skew(${skew}deg)`;
         },
       },
@@ -106,8 +106,8 @@ $(document).ready(function() {
 // Change Some Class After Scrolling Some Distance From Top | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
 $(function() {
   //caches a jQuery object containing the body element
-  var hideThisDivs = $(".change-features-interior, .copyright-interior, .logo, .mouse-svg");
-  var showThisDivs = $(".logo-cover");
+  var hideThisDivs = $(".change-features-interior, .copyright-interior, .logo a, .mouse-svg");
+  var showThisDivs = $(".logo .logo-cover");
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
 
@@ -192,7 +192,7 @@ $(function() {
     $('html, body').toggleClass('menu-opened');
     $('.menu-mobile').toggleClass('opened');
     $('.burger-mobile').toggleClass('opened');
-    $('.logo').toggleClass('logo-light');
+    $('.logo a').toggleClass('logo-light');
     //e.preventDefault();
   });
 });

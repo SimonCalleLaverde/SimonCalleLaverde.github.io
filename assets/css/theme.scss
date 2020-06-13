@@ -14,6 +14,7 @@ $theme-color-rosybrown:rgba(248,198,198,1);//#F8C6C6//Azalea//rgba(188,143,143,1
 
 $theme-color-silver:rgba(199,197,195,1);//Silver (Terminal's Silver)
 $theme-color-green-dark:darken(rgba(3,42,28,1),5);//Green Dark
+$theme-color-gold:rgba(206,156,76,1);//Gold Terminal
 
 // Mapping Colours
 // https://brandcolors.net/
@@ -45,7 +46,8 @@ $theme-colors: (
   "rosybrown":$theme-color-rosybrown,
 
   "silver":$theme-color-silver,
-  "green-dark":$theme-color-green-dark
+  "green-dark":$theme-color-green-dark,
+  "gold":$theme-color-gold
 );
 
 // Bootstrap 4

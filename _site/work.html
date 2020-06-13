@@ -37,6 +37,12 @@
   <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400&display=swap&subset=latin-ext" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 
+
+
+  <link href="//db.onlinewebfonts.com/c/4c4c08af466e9ad071b6d69cf44093df?family=Saol+Display+Regular" rel="stylesheet" type="text/css"/><!--Testing, cool free site of fonts-->
+
+
+
   <!--Main-->
   <link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
 
@@ -86,6 +92,72 @@
     </div>
   </div>
 
+
+    <!--<div class="logo">
+	<a href="/" class="link text-rosybrown">
+		<span>Simón</span><br>
+		<span>Calle</span><br>
+		<span>Laverde</span>
+	</a>
+
+	<div class="logo-cover hide-it">
+	</div>
+</div>-->
+
+    <div class="left-info text-rosybrown">
+	Simón Calle Laverde - Based in Bogotá D.C, Colombia.
+</div>
+
+    <div class="copyright text-rosybrown">
+  <div class="copyright-interior show-it" style="will-change:filter;">
+    © 2015 - 2020<!--© 2019 Simón Calle Laverde--><!--© Copyright 2015 - 2020-->
+  </div>
+</div>
+
+    <!--Screenreader-->
+<div class="sr-only">Navigation</div>
+
+<!--Desktop-->
+<nav class="navbar text-right" id="navbar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="link nav-link" href="/"><!--Class ".active" has a bug I think with "Rolly.js", where when getting to the bottom the class gets removed forever-->
+        Home<!--01. -->
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="link nav-link active-link" href="/work">
+        <!--<span style="margin-right:3px;">(+)</span> -->All projects<!--02. -->
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="link nav-link" href="/contact_me">
+        Get in touch<!--03. -->
+      </a>
+    </li>
+    
+    <!--<li class="nav-item">
+      <a class="nav-link link smoothScroll" href="#home_hello_header">
+        Hello
+      </a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link link smoothScroll" href="#work_section">
+        Work
+      </a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link link smoothScroll" href="#get_in_touch_footer">
+        Get in touch
+      </a>
+    </li>-->
+  </ul>
+</nav>
+    <!--Mobile-->
 
     <aside class="nav-social-media">
   <div class="mb-3 pb-1">
@@ -139,57 +211,6 @@
   </div>
 </aside>
 
-    <div class="copyright text-grey-light"><!--text-beige-light-->
-  <div class="copyright-interior show-it" style="will-change:filter;">
-    © 2015 - 2020<!--© 2019 Simón Calle Laverde--><!--© Copyright 2015 - 2020-->
-  </div>
-</div>
-
-    <!--Screenreader-->
-<div class="sr-only">Navigation</div>
-
-<!--Desktop-->
-<nav class="navbar text-right" id="navbar">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="link nav-link" href="/"><!--Class ".active" has a bug I think with "Rolly.js", where when getting to the bottom the class gets removed forever-->
-        01. Home
-      </a>
-    </li>
-
-    <li class="nav-item">
-      <a class="link nav-link active-link" href="/work">
-        <!--<span style="margin-right:3px;">(+)</span> -->02. All projects
-      </a>
-    </li>
-
-    <li class="nav-item">
-      <a class="link nav-link" href="/contact_me">
-        03. Get in touch
-      </a>
-    </li>
-    
-    <!--<li class="nav-item">
-      <a class="nav-link link smoothScroll" href="#home_hello_header">
-        Hello
-      </a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-link link smoothScroll" href="#work_section">
-        Work
-      </a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-link link smoothScroll" href="#get_in_touch_footer">
-        Get in touch
-      </a>
-    </li>-->
-  </ul>
-</nav>
-    <!--Mobile-->
-
     <div class="aside-cover-1">
 </div>
 <div class="aside-cover-2">
@@ -197,7 +218,9 @@
 
     <div class="mobile-note bg-chocolate text-rosybrown text-bold d-flex flex-row justify-content-center align-items-center text-center"><!--bg-beige-light text-grey-dark--><!--d-xl-none-->
       <!--La versión Mobile y Tablet<br>están en construcción<br>05.30.2020-->
-      Este sitio web se encuentra<br>en construcción<br>05.30.2020
+      <div style="max-width:360px;">
+        This website is under development<br><br><span style="font-size:13px;">Note: Because of moving places and solving other issues, it has taken me a bit longer to finalize my portfolio - (Folio. 2020)</span><br><br><span style="font-size:13px;">Coming soon:</span><br>06.20.2020
+      </div>
     </div>
     
     <div id="rolly"><!--id="luxy">-->
@@ -4491,11 +4514,11 @@
 
   </a>
 
-  <div class="footer-copyright copyright text-grey-light">
+  <div class="footer-copyright copyright text-rosybrown">
     © 2015-2020<!--MMXX-->
   </div>
   
-  <div class="footer-created-by text-rosybrown">
+  <div class="footer-created-by font-headline text-rosybrown">
     Designed & developed by Simón Calle Laverde
   </div>
 </footer>

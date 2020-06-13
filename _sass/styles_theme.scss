@@ -41,7 +41,7 @@
     overflow:hidden;
   }
 }
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-only(lg) {
   html {
     overflow:hidden;
   }
@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Intro
 .intro {
-  font-size:22px;
+  font-size:27px;//22px
   p {
   }
   blockquote {
@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
   right:0;
   bottom:0;
   left:0;
-  z-index:1;
+  z-index:10;
   pointer-events:none;
 }
 
@@ -330,8 +330,8 @@ main {
   z-index:3;
 }
 
-// Logo, Nav Social Media, Copyright, Navbar {
-a.logo, aside.nav-social-media, .copyright, nav.navbar {
+// Logo, Left Info, Copyright, Navbar, Nav Social Media {
+div.logo, .left-info, .copyright, nav.navbar, aside.nav-social-media {
   z-index:6000;
 }
 
@@ -381,6 +381,11 @@ a {
   &.text-grey-light {
     &:hover, &:active, &:focus {
       color:darken(theme-color("grey-light"),15)!important;
+    }
+  }
+  &.text-rosybrown {
+    &:hover, &:active, &:focus {
+      color:lighten(theme-color("rosybrown"),10)!important;
     }
   }
 }
@@ -529,7 +534,7 @@ a {
 input.text, textarea.textarea, .form-group > select {
   padding-top:12px;
   padding-left:15px;//25px
-  font-family:$font-headline;//$font-subtitle
+  font-family:$font-subtitle;
   font-weight:normal;
   font-style:normal;
   font-size:20px;
@@ -615,7 +620,7 @@ article.project-article {
     margin-bottom:0;
   }
   &.home {
-    margin-bottom:235px;
+    margin-bottom:185px;//235px
     a {
       figure {
         position:relative;
@@ -943,7 +948,7 @@ a {
 aside.nav-social-media {
   position:fixed;
   top:33.5%;
-  left:36px;
+  right:36px;//left:36px
   //pointer-events:none;
   a {
     span {
@@ -1045,11 +1050,14 @@ aside.nav-social-media {
 // Copyright
 .copyright {
   position:fixed;
-  bottom:40px;//48px//76px
-  left:55px;
-  font-size:12px;//13.5px//12px//13px
+  bottom:35px;
+  left:52px;//36px if vertical-rl, mixed, and rotate 180deg
+  font-size:11px;//12px
   pointer-events:none;
   mix-blend-mode:difference;
+  // writing-mode:vertical-rl;
+  // text-orientation:mixed;
+  // @include transform(rotate(180deg));
   @include transform(rotate(270deg));
   @include transform-origin(left bottom);//0 100%
 }
@@ -1092,49 +1100,66 @@ aside.nav-social-media {
   }
 }
 
+// Left Info
+.left-info {
+  position:fixed;
+  top:30%;//33.5%
+  left:36px;
+  font-size:11px;//12px
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+  pointer-events:none;
+  @include transform(rotate(180deg));
+}
+
 //----------------------------------Section Styles----------------------------------//
 
-// // Logo
-// $logo-width:90px;
-// $logo-height:90px;
-// $logo-top:35px;
-// $logo-left:15px;
-// a.logo {
-//   position:fixed;
-//   top:$logo-top;
-//   left:$logo-left;
-//   .logo-interior {
-//     width:$logo-width;
-//     height:$logo-height;
-//     background-color:transparent;
-//     pointer-events:none;
-//     @include border-radius(50%);
-//     @include transition(all ease-out 0.5s);
-//     svg {
-//       width:47%;
-//       fill:theme-color('grey-dark');
-//       pointer-events:none;
-//       @include transition(all ease-out 0.5s);
-//     }
-//   }
-//   &:hover, &:active, &:focus {
-//     .logo-interior {
-//       background-color:#FFF;
-//       svg {
-//         fill:theme-color('grey-mid');
-//         @include filter(opacity(0.9));
-//       }
-//     }
-//   }
-// }
-// .logo-cover {
-//   position:fixed;
-//   width:$logo-width;
-//   height:$logo-height;
-//   top:$logo-top;
-//   left:$logo-left;
-//   z-index:7000;
-// }
+// Logo
+div.logo {
+  position:fixed;
+  top:35px;
+  left:40px;
+  font-family:$font-headline;
+  font-weight:400;
+  font-size:14px;
+  text-transform:uppercase;
+  line-height:1.5;
+  a {
+    display:block;
+    @include transition(all ease-out 0.5s);
+    span {
+      &:first-of-type {//:first-child
+        letter-spacing:5.7px;
+      }
+      &:nth-of-type(2) {//:nth-child(2)
+        letter-spacing:5.3px;
+      }
+      &:last-of-type {//:last-child
+        letter-spacing:0;
+      }
+    }
+    // svg {
+    //   width:47%;
+    //   fill:theme-color('grey-dark');
+    //   pointer-events:none;
+    //   @include transition(all ease-out 0.5s);
+    // }
+    &:hover, &:active, &:focus {
+      @include filter(opacity(0.8));
+      // svg {
+      //   fill:theme-color('grey-mid');
+      // }
+    }
+  }
+  .logo-cover {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:7000;
+  }
+}
 
 // Home Hello Header
 header.home-hello-header {
@@ -1383,7 +1408,7 @@ body.page-type-feedback {
 
 //----------------------------------General Loading Animation Styles----------------------------------//
 
-a.logo span, aside.nav-social-media, .copyright, nav.navbar, aside.burger-mobile {
+div.logo span, aside.nav-social-media, .left-info, .copyright, nav.navbar, aside.burger-mobile {
   pointer-events:none;
   @include filter(opacity(0));
 }
@@ -1403,7 +1428,7 @@ body {
       @include transform(translateY(100vh));
       @include animation(mainTranslateAnim 1s ease-in-out 1.5s forwards);
     }
-    a.logo span, aside.nav-social-media, .copyright, nav.navbar, aside.burger-mobile {
+    div.logo span, aside.nav-social-media, .left-info, .copyright, nav.navbar, aside.burger-mobile {
       @include animation(fadeInAnim 0.5s ease-in 2.2s forwards);
     }
     .aside-cover-1, .aside-cover-2 {

@@ -52,7 +52,7 @@
   // Nav Desktop
   nav.navbar {
     position:fixed;
-    padding:30px;
+    padding:27px 30px;
     top:0;
     right:0;
     pointer-events:none;
@@ -61,39 +61,43 @@
         a.nav-link {
           display:inline-block;
           position:relative;
-          padding:0.3rem 0.5rem;
+          padding:0.1rem 0.5rem;//0.3rem 0.5rem
           font-family:$font-paragraph;//$font-headline
           font-size:13.5px;
           color:theme-color('grey-light');
           text-transform:uppercase;
           white-space:nowrap;
-          &::after {
+          &::before, &::after {
             content:'';
             position:absolute;
+            pointer-events:none;
+          }
+          &::before {
+            width:0;
+            top:calc(50% - 1px);
+            right:0;
+            //left:0;
+            border-bottom:1px solid theme-color('rosybrown');
+            @include transition(width 0.3s ease-out);
+          }
+          &::after {
             width:6px;
             height:6px;
-            top:11px;
-            left:-7px;
-            border:1px solid theme-color('grey-light');
-            pointer-events:none;
-            @include transform(scale(0) rotate(0));
-            @include transition(all 0.7s ease-out);
+            top:7px;
+            left:-1px;//6px
+            border:1px solid theme-color('rosybrown');
+            @include transform(translateX(0) scale(0) rotate(0));
+            @include transition(all 0.3s ease-out);
           }
-          &.active-link {
+          &:hover, &:active, &:focus, &.active-link {
             color:theme-color('rosybrown');
-            //@include transition(all 0.3s ease-out);
-            &::after {
-              bottom:-10px;
-              border-color:theme-color('rosybrown');
-              @include transform(scale(1) rotate(45deg));
+            //text-decoration:line-through;
+            &::before {
+              width:100%;
             }
-          }
-          &:hover, &:active, &:focus {
-            color:theme-color('rosybrown');
-            &.active-link {
-              &::after {
-                border-color:theme-color('rosybrown');
-              }
+            &::after {
+              @include transform(translateX(-13px) scale(1) rotate(45deg));
+              @include transition(all 0.3s ease-out 0.31s);
             }
           }
         }
