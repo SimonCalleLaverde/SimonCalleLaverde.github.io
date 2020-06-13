@@ -4865,7 +4865,7 @@ a.text-gold:hover, a.text-gold:focus { color: #a1742c !important; }
 
 @media (min-width: 768px) and (max-width: 991.98px) { html { overflow: hidden; } }
 
-@media (min-width: 992px) and (max-width: 1199.98px) { html { overflow: hidden; } }
+@media (min-width: 992px) { html { overflow: hidden; } }
 
 @keyframes fadeInAnim { from { pointer-events: none;
     -webkit-filter: opacity(0);
