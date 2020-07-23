@@ -66,3 +66,15 @@ collections:
   projects:
     title: Portfolio
     output: true
+
+sass:
+  style: compressed
+
+# compress_html: # As Per: https://alligator.io/jekyll/compress-html/
+#   clippings: all
+#   comments: [""]
+#   endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+#   profile: false
+#   blanklines: false
+#   ignore:
+#     envs: []
