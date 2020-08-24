@@ -6,15 +6,20 @@ $theme-color-grey-dark:#1A1A1A;//rgba(26,26,26,1)
 $theme-color-grey-mid:darken(#CCC,5);
 $theme-color-grey-light:#FEFEFE;//rgba(254,254,254,1)
 
-$theme-color-chocolate:rgba(50,1,1,1);//    ......    darken(rgba(101,67,33,1),20);//Dark Brown/Otter Brown//rgba(32,29,22,1)//Vansijl//rgba(35,35,33,1)//Tuatara
+$theme-color-beige-1:rgba(50,1,1,1);//    ......    darken(rgba(101,67,33,1),20);//Dark Brown/Otter Brown//rgba(32,29,22,1)//Vansijl//rgba(35,35,33,1)//Tuatara
 $theme-color-beige-light:rgba(240,217,194,1);//Terminal//#FCF9F5//Beige Light (Iv Skaya)
 $theme-color-mustard:rgba(235,189,48,1);//Mustard
 $theme-color-blue:lighten(rgba(63,67,147,1),35);//#3F4393//Logo Blue      #e0e0f2;//      rgba(37,175,206,1);//Blue (Terminal's Solid)
-$theme-color-rosybrown:rgba(248,198,198,1);//#F8C6C6//Azalea//rgba(188,143,143,1)//#BC8F8F//Rosybrown First
+$theme-color-beige-2:rgba(248,198,198,1);//#F8C6C6//Azalea//rgba(188,143,143,1)//#BC8F8F//Rosybrown First
 
 $theme-color-silver:rgba(199,197,195,1);//Silver (Terminal's Silver)
 $theme-color-green-dark:darken(rgba(3,42,28,1),5);//Green Dark
 $theme-color-gold:rgba(206,156,76,1);//Gold Terminal
+
+
+$theme-color-rosybrown:#FFE8E4;//Beige Backgrounds FINAL //
+$theme-color-chocolate:#B89C92;
+
 
 // Mapping Colours
 // https://brandcolors.net/
@@ -47,7 +52,10 @@ $theme-colors: (
 
   "silver":$theme-color-silver,
   "green-dark":$theme-color-green-dark,
-  "gold":$theme-color-gold
+  "gold":$theme-color-gold,
+
+
+  "beige-1":$theme-color-beige-1,
 );
 
 // Bootstrap 4
