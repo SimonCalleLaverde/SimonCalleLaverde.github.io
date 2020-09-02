@@ -106,20 +106,20 @@ $(document).ready(function() {
 // Change Some Class After Scrolling Some Distance From Top | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
 $(function() {
   //caches a jQuery object containing the body element
-  var hideThisDivs = $(".change-features-interior, .copyright-interior, .logo a, .mouse-svg");
+  var hideThisDivs = $(".logo a, .change-features-interior, .left-info-interior, .copyright-interior, .header-social-media-interior, .mouse-svg");
   var showThisDivs = $(".logo .logo-cover");
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
 
-    if (scrollFromTop >= 100) {
+    if (scrollFromTop >= 30) {
       hideThisDivs.addClass("hide-it").removeClass("show-it");
-    } else if (scrollFromTop <= 100) {
+    } else if (scrollFromTop <= 30) {
       hideThisDivs.removeClass("hide-it").addClass("show-it");
     }
 
-    if (scrollFromTop >= 100) {
+    if (scrollFromTop >= 30) {
       showThisDivs.addClass("show-it").removeClass("hide-it");
-    } else if (scrollFromTop <= 100) {
+    } else if (scrollFromTop <= 30) {
       showThisDivs.removeClass("show-it").addClass("hide-it");
     }
   });

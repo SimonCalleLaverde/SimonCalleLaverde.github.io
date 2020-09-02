@@ -75,8 +75,8 @@
           &::before {
             width:0;
             top:50%;
-            right:0;
-            //left:0;
+            //right:0;
+            left:0;
             border-bottom:1px solid theme-color('rosybrown');
             @include transition(width 0.2s ease-out);
           }
@@ -90,13 +90,13 @@
             @include transition(all 0.2s ease-out);
           }
           &:hover, &:active, &:focus, &.active-link {
+            color:theme-color('chocolate');
             //text-decoration:line-through;
             &::before {
               width:100%;
             }
             &::after {
               @include transform(translateX(-13px) scale(1) rotate(45deg));
-              @include transition(all 0.2s ease-out 0.21s);
             }
           }
           &:hover, &:active, &:focus {
@@ -120,7 +120,7 @@
   // Home Hello Header
   header.home-hello-header {
     min-height:100vh;
-    padding:100px 0;
+    padding:50px 0;
   }
 
   // Home Business Projects Section
