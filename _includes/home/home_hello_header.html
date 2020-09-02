@@ -1,53 +1,50 @@
 <header class="home-hello-header text-rosybrown d-flex flex-row align-items-center clearfix" id="home_hello_header" data-scene="rotateZ">
   <div class="container">
-    
-    <div class="row mb-5less mb-md-5 pb-md-5">
-      {% comment %}
-      <div class="col-md-4 offset-md-1">
-        <div class="top-info text-center mb-md-4more">
-          <div class="text-beige-light mb-md-3 mb-2">
-            {{ page.title }}
-          </div>
 
-          <strong style="font-size:1.3rem;">
-            I am a publicist by profession, with a passion<br>on digital platforms & branding<!--on modern-->
-          </strong>
-        </div>
-        
-        <div class="hello-header-headline text-center">
-          {% if page.headline.size > 0 %}
-            <h1 class="text-italic text-huge text-rosybrown mb-2 d-none d-lg-block">{{ page.headline | default:page.title }}</h1>
-            <h1 class="text-italic text-rosybrown mb-2 d-none d-md-block d-lg-none" aria-hidden="true" style="font-size:4rem;">{{ page.headline | default:page.title }}</h1><!--text-gigantic-->
-            <h1 class="text-italic text-huge text-rosybrown mb-2 d-block d-md-none" aria-hidden="true">{{ page.headline | default:page.title }}</h1>
-          {% endif %}
-        </div>
-      </div>
-      {% endcomment %}
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="p-md-5">
+          <div class="hello-header-middle position-relative m-md-3">
 
-      <div class="col-md-6 offset-md-3 d-flex flex-row align-items-center"><!--col-md-4 offset-md-2-->
-        <div class="hello-header-middle-images position-relative m-4">
-          <style type="text/css">
-            #header_gif_cover {
-              background:url('/uploads/header-gif-cover.jpg') no-repeat center center scroll;
-              -webkit-background-size:cover;
-              -moz-background-size:cover;
-              -o-background-size:cover;
-              background-size:cover;
-            }
-          </style>
-          <div class="header-gif-cover" id="header_gif_cover" title="Header Websites Gif Cover Image" aria-hidden="true">
-          </div>
-          
-          <img class="header-gif-gif" src="/uploads/websites-gif.gif" alt="Header Websites Gif Image">
-        </div>
-      </div>
-    </div>
+            <div class="header-hero hero-left font-headline text-gigantic text-uppercase">
+              Simon
+            </div>
+            <div class="header-hero hero-right font-headline text-gigantic text-uppercase">
+              Calle
+            </div>
+            
+            <div class="area-left position-relative">
+              <style type="text/css">
+                #websites_gif_cover {
+                  background:url('/uploads/websites-gif-cover.jpg') no-repeat center center scroll;
+                  -webkit-background-size:cover;
+                  -moz-background-size:cover;
+                  -o-background-size:cover;
+                  background-size:cover;
+                }
+              </style>
+              <div class="websites-gif-cover" id="websites_gif_cover" aria-hidden="true">
+              </div>
 
-    <div class="row mb-4 mb-md-5 pt-md-4more pb-md-4more">
-      <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-        <div class="hello-content intro column-div"><!--text-center-->
-          <div class="pt-md-5less pb-md-5">
-            {{ content }}
+              <img class="websites-gif-gif" src="/uploads/websites-gif.gif" alt="Gif cycling through various websites I have developed">
+            </div>
+
+            <div class="area-right position-relative">
+              <style type="text/css">
+                #websites_gif_cover {
+                  background:url('/uploads/websites-gif-cover.jpg') no-repeat center center scroll;
+                  -webkit-background-size:cover;
+                  -moz-background-size:cover;
+                  -o-background-size:cover;
+                  background-size:cover;
+                }
+              </style>
+              <div class="websites-gif-cover" id="websites_gif_cover" aria-hidden="true">
+              </div>
+
+              <img class="websites-gif-gif" src="/uploads/websites-gif.gif" alt="Gif cycling through various websites I have developed">
+            </div>
+
           </div>
         </div>
       </div>

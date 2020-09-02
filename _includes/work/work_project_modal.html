@@ -6,24 +6,24 @@
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content bg-white">
         <div class="modal-header pt-2 pt-md-3 pb-0 px-4">
-          <h3 class="modal-title text-chocolate text-uppercase sr-only" id="projectModalLabel">{{ project.headline | default:project.title }}</h3>
+          <h3 class="modal-title text-rosybrown text-uppercase sr-only" id="projectModalLabel">{{ project.headline | default:project.title }}</h3>
           
-          <button type="button" class="close text-chocolate" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close text-rosybrown" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
 
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
-          <h4 class="text-chocolate text-uppercase mb-4">{{ project.name }}</h4>
+          <h4 class="text-rosybrown text-uppercase mb-4">{{ project.name }}</h4>
 
           <!-- if project.content.size > 0 -->
             <!--Desktop-->
-            <div class="text-chocolate d-none d-md-block"><!--intro--><!--column-div--><!--id="column_div"-->
+            <div class="text-rosybrown d-none d-md-block"><!--intro--><!--column-div--><!--id="column_div"-->
               {{ project.content }}
             </div>
 
             <!--Mobile-->
-            <div class="text-chocolate d-block d-md-none" aria-hidden="true"><!--intro-->
+            <div class="text-rosybrown d-block d-md-none" aria-hidden="true"><!--intro-->
               {{ project.content }}
             </div>
           <!-- endif -->

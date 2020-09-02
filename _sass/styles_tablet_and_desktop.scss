@@ -52,20 +52,20 @@
   // Nav Desktop
   nav.navbar {
     position:fixed;
-    padding:27px 30px;
+    padding:23px 25px;
     top:0;
     right:0;
+    line-height:1.2!important;//Was 1.5 from Body
     pointer-events:none;
     ul.navbar-nav {
       li.nav-item {
         a.nav-link {
           display:inline-block;
           position:relative;
-          padding:0.1rem 0.5rem;//0.3rem 0.5rem
-          font-family:$font-paragraph;//$font-headline
-          font-size:13.5px;
-          color:theme-color('grey-light');
-          text-transform:uppercase;
+          padding:0.1rem 0.5rem;
+          font-family:$font-light;
+          font-size:12px;
+          color:rgba(24,16,8,0.8);//theme-color('chocolate')
           white-space:nowrap;
           &::before, &::after {
             content:'';
@@ -74,30 +74,42 @@
           }
           &::before {
             width:0;
-            top:calc(50% - 1px);
+            top:50%;
             right:0;
             //left:0;
             border-bottom:1px solid theme-color('rosybrown');
-            @include transition(width 0.3s ease-out);
+            @include transition(width 0.2s ease-out);
           }
           &::after {
             width:6px;
             height:6px;
             top:7px;
-            left:-1px;//6px
+            left:3px;
             border:1px solid theme-color('rosybrown');
             @include transform(translateX(0) scale(0) rotate(0));
-            @include transition(all 0.3s ease-out);
+            @include transition(all 0.2s ease-out);
           }
           &:hover, &:active, &:focus, &.active-link {
-            color:theme-color('rosybrown');
             //text-decoration:line-through;
             &::before {
               width:100%;
             }
             &::after {
               @include transform(translateX(-13px) scale(1) rotate(45deg));
-              @include transition(all 0.3s ease-out 0.31s);
+              @include transition(all 0.2s ease-out 0.21s);
+            }
+          }
+          &:hover, &:active, &:focus {
+            span {
+              //@include filter(opacity(0.8));
+              @include transition(all 0.2s ease-out);
+            }
+          }
+        }
+        &:nth-child(3) {
+          a.nav-link {
+            &::after {
+              top:6px;
             }
           }
         }
@@ -107,17 +119,23 @@
 
   // Home Hello Header
   header.home-hello-header {
-    padding:115px 0 60px;
+    min-height:100vh;
+    padding:100px 0;
   }
 
-  // Home Recent Projects Section
-  section.home-recent-projects-section {
+  // Home Business Projects Section
+  section.home-business-projects-section {
     //padding:120px 0 0;//40px 0 0//40px 0
   }
 
-  // Home Projects Section
-  section.home-projects-section {
+  // Home Campaign Projects Section
+  section.home-campaign-projects-section {
     //padding:0 0 60px;//60px 0
+  }
+
+  // About Background Section
+  section.background-section {
+    padding:115px 0;
   }
 
   // Work Header Section
@@ -146,21 +164,20 @@
 
   //----------------------------------Page Styles----------------------------------//
 
-  // Basic Page
-  body.page-type-basic {
-  }
-
   // Basic Page (Home)
   body.page-type-basic.home {
-    nav.navbar {
-      ul.navbar-nav {
-        li.nav-item {
-          a.nav-link {
-            font-size:12.5px;
-          }
-        }
-      }
-    }
+  }
+
+  // Basic Page (Background)
+  body.page-type-basic.background {
+  }
+
+  // Basic Page (Work)
+  body.page-type-basic.work {
+  }
+
+  // Feedback Page (Contact Me)
+  body.page-type-feedback {
   }
   
 }//@media

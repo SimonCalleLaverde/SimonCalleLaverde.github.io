@@ -5,7 +5,7 @@ headline: All Projects
 permalink: /work
 slug: work
 type_slug: basic
-header_image: /uploads/home-header.jpg
+header_image: ""
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae tincidunt purus. Quisque a ipsum vel tellus varius varius a at justo. Suspendisse ante leo, bibendum et lectus vel, pretium posuere ante. Maecenas at sapien nec ex accumsan laoreet. Nullam et nisi nec elit rhoncus porta. Suspendisse felis sem, mattis eget sem sit amet, luctus mollis ex. Nullam sodales lectus elementum dui rutrum consequat. Sed sodales dignissim ultricies. Vestibulum laoreet enim nec finibus viverra.

@@ -8,10 +8,10 @@
     {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
   {% endfor %}
 
-  {% if project_tags_list contains "featured" %}
+  {% if project_tags_list contains "recent" %}
     {% assign projects_count = projects_count | plus:1 %}
 
-    <section class="home-projects-section clearfix" data-scene="rotateZ">
+    <section class="home-business-projects-section clearfix" data-scene="rotateZ" id="{% if forloop.first %}work_section{% endif %}">
       <div class="container">
 
         <div class="row">

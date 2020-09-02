@@ -6,6 +6,9 @@ layout: "main"
   {% include work/work_header_section.html %}
   {% include work/work_projects_section.html %}
 
+{% elsif page.slug == "about" or page.slug contains "about" %}
+	{% include about/about_background_section.html %}
+
 {% else %}
 
   {% include content_simple.html %}

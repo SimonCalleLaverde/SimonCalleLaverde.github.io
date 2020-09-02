@@ -1,25 +1,25 @@
 ---
 ---
 
-// Brand Colours
+// Grey Colours
 $theme-color-grey-dark:#1A1A1A;//rgba(26,26,26,1)
 $theme-color-grey-mid:darken(#CCC,5);
 $theme-color-grey-light:#FEFEFE;//rgba(254,254,254,1)
 
-$theme-color-beige-1:rgba(50,1,1,1);//    ......    darken(rgba(101,67,33,1),20);//Dark Brown/Otter Brown//rgba(32,29,22,1)//Vansijl//rgba(35,35,33,1)//Tuatara
-$theme-color-beige-light:rgba(240,217,194,1);//Terminal//#FCF9F5//Beige Light (Iv Skaya)
-$theme-color-mustard:rgba(235,189,48,1);//Mustard
-$theme-color-blue:lighten(rgba(63,67,147,1),35);//#3F4393//Logo Blue      #e0e0f2;//      rgba(37,175,206,1);//Blue (Terminal's Solid)
-$theme-color-beige-2:rgba(248,198,198,1);//#F8C6C6//Azalea//rgba(188,143,143,1)//#BC8F8F//Rosybrown First
+// Brand Colours
+$theme-color-beige:lighten(#B89C92,4);//rgba(184,156,146,1)//Beige Background
+$theme-color-rosybrown:#FFE8E4;//rgba(255,232,228,1)//Rosybrown Texts
+$theme-color-chocolate:#181008;//rgba(24,16,8,1)//Chocolate Highlights
 
-$theme-color-silver:rgba(199,197,195,1);//Silver (Terminal's Silver)
-$theme-color-green-dark:darken(rgba(3,42,28,1),5);//Green Dark
-$theme-color-gold:rgba(206,156,76,1);//Gold Terminal
-
-
-$theme-color-rosybrown:#FFE8E4;//Beige Backgrounds FINAL //
-$theme-color-chocolate:#B89C92;
-
+// Colours For Testing If So
+$theme-color-ivskaya:rgba(240,217,194,1);//Terminal//#FCF9F5//Beige Light (Iv Skaya) (TO TEST COLOURS AND ERRASE ROW)
+$theme-color-mustard:rgba(235,189,48,1);//Mustard (TO TEST COLOURS AND ERRASE ROW)
+$theme-color-azalea:rgba(248,198,198,1);//#F8C6C6//Azalea//rgba(188,143,143,1)//#BC8F8F//Rosybrown First (TO TEST COLOURS AND ERRASE ROW)
+$theme-color-blue:lighten(rgba(63,67,147,1),35);//#3F4393//Logo Blue   #e0e0f2; (TO TEST COLOURS AND ERRASE ROW)
+$theme-color-silver:rgba(199,197,195,1);//Silver (Terminal's Silver) (TO TEST COLOURS AND ERRASE ROW)
+$theme-color-green-dark:darken(rgba(3,42,28,1),5);//Green Dark (TO TEST COLOURS AND ERRASE ROW)
+$theme-color-gold:rgba(206,156,76,1);//Gold Terminal (TO TEST COLOURS AND ERRASE ROW)
+//rgba(50,1,1,1);// .... darken(rgba(101,67,33,1),20);//Dark Brown/Otter Brown//rgba(32,29,22,1)//Vansijl//rgba(35,35,33,1)//Tuatara (TO TEST COLOURS AND ERRASE ROW)
 
 // Mapping Colours
 // https://brandcolors.net/
@@ -44,18 +44,9 @@ $theme-colors: (
   "grey-mid":$theme-color-grey-mid,
   "grey-light":$theme-color-grey-light,
 
-  "chocolate":$theme-color-chocolate,
-  "beige-light":$theme-color-beige-light,
-  "mustard":$theme-color-mustard,
-  "blue":$theme-color-blue,
+  "beige":$theme-color-beige,
   "rosybrown":$theme-color-rosybrown,
-
-  "silver":$theme-color-silver,
-  "green-dark":$theme-color-green-dark,
-  "gold":$theme-color-gold,
-
-
-  "beige-1":$theme-color-beige-1,
+  "chocolate":$theme-color-chocolate
 );
 
 // Bootstrap 4

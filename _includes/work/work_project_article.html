@@ -14,12 +14,12 @@
         <div class="project-thumbnail bg-image d-flex flex-row justify-content-start align-items-end scale-element p-4 pr-5" id="thumbnail_image_{{ project.slug }}" type="image" title="{{ project.name }} Website Project">
           <figcaption class="project-caption d-flex flex-column">
             <div class="project-name align-self-start mb-2 pt-2 px-3 pb-0">
-              <h3 class="text-chocolate text-uppercase mb-0">{{ project.name_for_thumbnail }}</h3>
+              <h3 class="text-rosybrown text-uppercase mb-0">{{ project.name_for_thumbnail }}</h3>
             </div>
 
             <div class="project-roles align-self-start pt-1 px-3">
               {% for item in project.roles %}
-                <p class="text-chocolate text-uppercase my-2">{{ item }}{% unless forloop.last %} <span>&middot;</span>{% endunless %}</p>
+                <p class="text-rosybrown text-uppercase my-2">{{ item }}{% unless forloop.last %} <span>&middot;</span>{% endunless %}</p>
               {% endfor %}
             </div>
           </figcaption>

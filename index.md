@@ -10,7 +10,7 @@ thumbnail_image_top: /uploads/site-image-jomaira-imagen.jpg
 thumbnail_image_bottom: /uploads/site-image-calle-impresores.jpg
 headline: Simon's<br>Port-<br>Folio
 header_image: ""
-background_image: /uploads/home-header.jpg
+background_image: "" # /uploads/home-header.jpg
 thumbnail_image: ""
 ---
 
