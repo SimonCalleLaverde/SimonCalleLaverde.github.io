@@ -474,21 +474,21 @@ a {
 // Headline, Title, Subtitle
 .headline, .title, .subtitle {
 }
-.text-hero {
-  font-size:8.5rem;//9.5rem
-  line-height:0.85;
-}
-.text-gigantic, .text-huge {
-  //line-height:1;
-}
-.text-gigantic {
+.text-hero, .text-gigantic {
   font-size:6.3rem;
 }
+.text-hero {
+  line-height:1.5;//Temporary, can add padding to hero
+}
+.text-gigantic {
+  line-height:0.89;
+}
 .text-huge {
-  font-size:5rem;//6rem
+  font-size:3.8rem;
+  line-height:1.19;//Maybe will have one diff just for main intro. When used on titles on websites I'll see
 }
 .text-big {
-  font-size:4rem;//5rem
+  font-size:2rem;//To define
 }
 .headline-link {
   color:transparent;
@@ -621,7 +621,7 @@ article.project-article {
     margin-bottom:0;
   }
   &.home {
-    margin-bottom:185px;//235px
+    //margin-bottom:185px;//235px
     a {
       figure {
         position:relative;
@@ -640,7 +640,7 @@ article.project-article {
             bottom:0;
             left:0;
             @include transform(scale(1));
-            @include transition(transform ease-in-out 0.5s);
+            @include transition(transform ease-in-out 0.5s 0.1s);
           }
           .project-thumbnail-wrap {
             overflow:hidden;
@@ -668,7 +668,7 @@ article.project-article {
             position:absolute;
             font-size:14px;
             overflow:hidden;
-            @include transition(all ease-in-out 0.5s);
+            @include transition(all ease-in-out 0.5s 0.1s);
             div.project-year, div.project-info, p.project-tools, div.project-type {
               @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.2s);
             }
@@ -725,50 +725,50 @@ article.project-article {
           }
         }
       }
-      &:hover, &:active, &:focus {
-        figure {
-          > div {
-            .project-thumbnail-wrap {
-              @include transform(scale(0.98));
-              .project-thumbnail, .recent-project-thumbnail {
-                @include transform(scale(1.08));
-              }
-            }
-          }
-          figcaption.project-caption {
-            .project-title {
-              .project-title-stroke {
-                color:transparent!important;//theme-color('rosybrown')!important
-                //-webkit-text-stroke-color:theme-color('rosybrown')!important;
-              }
-            }
-            .project-side-data {
-              right:8px;
-              bottom:4px;
-              div.project-year {
-                @include filter(opacity(0));
-                @include transform(translateX(20px));
-              }
-              div.project-info {
-                @include filter(opacity(1));
-                @include transform(translateX(0));
-              }
-            }
-            .project-roles {
-              right:9px;
-              bottom:-35px;
-              p.project-tools {
-                @include filter(opacity(0));
-                @include transform(translateY(-20px));
-              }
-              div.project-type {
-                @include filter(opacity(1));
-                @include transform(translateY(0));
-              }
-            }
-          }
-        }
-      }
+      // &:hover, &:active, &:focus {
+      //   figure {
+      //     > div {
+      //       .project-thumbnail-wrap {
+      //         @include transform(scale(0.98));
+      //         .project-thumbnail, .recent-project-thumbnail {
+      //           @include transform(scale(1.08));
+      //         }
+      //       }
+      //     }
+      //     figcaption.project-caption {
+      //       .project-title {
+      //         .project-title-stroke {
+      //           color:transparent!important;//theme-color('rosybrown')!important
+      //           //-webkit-text-stroke-color:theme-color('rosybrown')!important;
+      //         }
+      //       }
+      //       .project-side-data {
+      //         right:8px;
+      //         bottom:4px;
+      //         div.project-year {
+      //           @include filter(opacity(0));
+      //           @include transform(translateX(20px));
+      //         }
+      //         div.project-info {
+      //           @include filter(opacity(1));
+      //           @include transform(translateX(0));
+      //         }
+      //       }
+      //       .project-roles {
+      //         right:9px;
+      //         bottom:-35px;
+      //         p.project-tools {
+      //           @include filter(opacity(0));
+      //           @include transform(translateY(-20px));
+      //         }
+      //         div.project-type {
+      //           @include filter(opacity(1));
+      //           @include transform(translateY(0));
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
     }
     &.article-right {
       a {
@@ -1119,7 +1119,7 @@ aside.footer-social-media {//To revise as it came from "fixed right" original na
 
 // Show It, Hide It
 .show-it, .hide-it {
-  @include transition(filter ease-out 0.7s);
+  @include transition(filter ease-in-out 0.7s);
 }
 .show-it {
   @include filter(opacity(1)!important);
@@ -1158,7 +1158,7 @@ aside.footer-social-media {//To revise as it came from "fixed right" original na
 // Left Info
 .left-info {
   position:fixed;
-  top:24%;
+  top:27.5%;
   left:25px;
   font-family:$font-ultra-light;
   font-size:11px;
@@ -1174,44 +1174,35 @@ aside.footer-social-media {//To revise as it came from "fixed right" original na
 // Logo
 div.logo {
   position:fixed;
-
-
-
-  top:35px;
-
-
-
-  left:40px;
+  top:30px;
+  left:30px;
   font-family:$font-headline;
-  font-weight:400;
-  font-size:14px;
-  text-transform:uppercase;
-  line-height:1.5;
+  font-size:13px;
+  line-height:1.2;
+  text-transform:capitalize;
   a {
     display:block;
-    @include transition(all ease-out 0.5s);
-    span {
-      &:first-of-type {//:first-child
-        letter-spacing:5.7px;
-      }
-      &:nth-of-type(2) {//:nth-child(2)
-        letter-spacing:5.3px;
-      }
-      &:last-of-type {//:last-child
-        letter-spacing:0;
+    @include transition(all ease-in-out 0.3s);
+    div {
+      padding:5px 5px 2px;
+      border:1px solid theme-color('chocolate');
+      span {
+        letter-spacing:0.5px;
+        &:first-of-type {//:first-child
+        }
+        &:nth-of-type(2) {//:nth-child(2)
+        }
+        &:last-of-type {//:last-child
+        }
+        em {
+          @include transition(all ease-in-out 0.3s);
+        }
       }
     }
-    // svg {
-    //   width:47%;
-    //   fill:theme-color('grey-dark');
-    //   pointer-events:none;
-    //   @include transition(all ease-out 0.5s);
-    // }
     &:hover, &:active, &:focus {
-      @include filter(opacity(0.8));
-      // svg {
-      //   fill:theme-color('grey-mid');
-      // }
+      @include filter(opacity(0.7));
+      em {
+      }
     }
   }
   .logo-cover {
@@ -1220,13 +1211,8 @@ div.logo {
     right:0;
     bottom:0;
     left:0;
-    z-index:7000;
+    //z-index:7000;
   }
-
-
-
-
-
 }
 
 // Home Hello Header
@@ -1240,28 +1226,31 @@ header.home-hello-header {
     font-size:11px;
     line-height:1.3;
     letter-spacing:0.2px;
-    span.icon-globe {
-      margin-left:1px;
-      //vertical-align:top;
-      svg {
-        width:8px;
-        fill:theme-color('rosybrown');
-        //vertical-align:middle;
+    .header-4-plus-years-wrap {
+      margin-left:-15px;
+      span.icon-globe {
+        margin-left:1px;
+        //vertical-align:top;
+        svg {
+          width:8px;
+          fill:theme-color('rosybrown');
+          //vertical-align:middle;
+        }
       }
     }
   }
   .hello-header-middle {
     .header-hero {
       //pointer-events:none;
-      &.hero-left, &.hero-right {
+      .hero-left, .hero-right {
         position:absolute;
         top:24%;
         z-index:11;
       }
-      &.hero-left {
+      .hero-left {
         left:-63%;
       }
-      &.hero-right {
+      .hero-right {
         right:-63%;
       }
     }
@@ -1294,7 +1283,7 @@ header.home-hello-header {
     }
     .area-right {
       margin-top:-242.5px;//267.5px - 25px//267.328px
-      margin-left:calc(50% + 0.5px);//50%
+      margin-left:50%;//calc(50% + 0.5px)
       div.websites-gif-cover, img.websites-gif-gif {
         margin-left:-100%;
       }
@@ -1309,10 +1298,10 @@ header.home-hello-header {
         }
       }
       .area-left {
-        @include transform(translateY(25px));
+        @include transform(translateY(12.5px));//25px
       }
       .area-right {
-        @include transform(translateY(-25px));
+        @include transform(translateY(-12.5px));//-25px
       }
     }
   }
@@ -1327,14 +1316,34 @@ header.home-hello-header {
   }
 }
 
+// Who I Am Section
+section.who-i-am-section {
+  padding:30px 20px;//To revise mobile
+}
+
+// home Businesses Headline Section
+section.home-businesses-headline-section {
+  padding:30px 20px;//To revise mobile
+}
+
 // Home Business Projects Section
 section.home-business-projects-section {
-  //padding:30px 20px;//To revise mobile
+  padding:30px 20px;//To revise mobile
+}
+
+// Home Campaigns Headline Section
+section.home-campaigns-headline-section {
+  padding:30px 20px;//To revise mobile
 }
 
 // Home Campaign Projects Section
 section.home-campaign-projects-section {
-  //padding:30px 20px;//To revise mobile
+  padding:30px 20px;//To revise mobile
+}
+
+// Home I Can Create Section
+section.home-i-can-create-section {
+  padding:30px 20px;//To revise mobile
 }
 
 // About Background Section
@@ -1551,7 +1560,7 @@ body.page-type-feedback {
 
 //----------------------------------General Loading Animation Styles----------------------------------//
 
-div.logo span, aside.header-social-media, .left-info, .copyright, nav.navbar, aside.burger-mobile {
+div.logo a div, aside.header-social-media, .left-info, .copyright, nav.navbar, aside.burger-mobile {
   pointer-events:none;
   @include filter(opacity(0));
 }
@@ -1571,7 +1580,7 @@ body {
       @include transform(translateY(100vh));
       @include animation(mainTranslateAnim 1s ease-in-out 1.5s forwards);
     }
-    div.logo span, aside.header-social-media, .left-info, .copyright, nav.navbar, aside.burger-mobile {
+    div.logo a div, aside.header-social-media, .left-info, .copyright, nav.navbar, aside.burger-mobile {
       @include animation(fadeInAnim 0.5s ease-in 2.2s forwards);
     }
     .aside-cover-1, .aside-cover-2 {
