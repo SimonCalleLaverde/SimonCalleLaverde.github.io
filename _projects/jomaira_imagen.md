@@ -13,8 +13,8 @@ web:
   image_4: /uploads/site-web-jomaira-imagen-4.png
   url: https://www.jomairaimagen.com/
 type: Business Website & Blog
-category: Independent Project
-tags: recent
+category: Recent Independent Project
+tags: [Business Website, Business Recent]
 order: 29
 ---
 

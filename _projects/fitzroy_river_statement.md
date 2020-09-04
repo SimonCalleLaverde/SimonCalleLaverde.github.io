@@ -11,7 +11,7 @@ web:
   url: http://www.fitzroystatement.org
 type: Campaign Website
 category: Working for Code Nation's Team
-tags: featured
+tags: [Campaign Platform, Campaign Featured]
 order: 19
 ---
 

@@ -1,54 +1,60 @@
-<!--IN DEVELOPMENT-->
-
-<article class="project-article home position-relative {% if projects_count == 1 %}article-left{% else %}article-right{% endif %} mx-5 py-4more"><!--id="scroll_to_{{ project.order }}"-->
-  <a href="#" data-toggle="modal" data-target="#projectModal_{{ project.slug }}">
+<article class="project-article home">
+  <a href="#" data-toggle="modal" data-target="#projectModal_{{ project.slug }}"><!--Temporary opening in Modal | Will show in individual "Case Studies" in internal pages, for newest projects-->
     <figure>
-      <div>
-        <style type="text/css">
-          #thumbnail_image_{{ project.slug }} {
-            background:url('{{ project.thumbnail_image | relative_url }}') no-repeat center center scroll;
-            -webkit-background-size:cover;
-            -moz-background-size:cover;
-            -o-background-size:cover;
-            background-size:cover;
-          }
-        </style>
-        <div class="project-thumbnail-wrap">
-          <div class="{% if project_tags_list contains 'recent' %}recent-project-thumbnail{% else %}project-thumbnail{% endif %} bg-image" id="thumbnail_image_{{ project.slug }}" type="image" title="{{ project.name }} Website Project"><!--lax--><!--data-lax-translate-y_xs="vh -30, -300 30" data-lax-translate-y_sm="vh -30, -320 30" data-lax-translate-y_md="vh -30, -340 30" data-lax-translate-y_lg="vh -30, -380 30" data-lax-translate-y_xl="vh -30, -400 30" data-lax-anchor="self"-->
-          </div>
-        </div>
+      <style type="text/css">
+        #project_thumbnail_{{ project.slug }} {
+          background:url('{{ project.thumbnail_image | relative_url }}') no-repeat center center scroll;
+          -webkit-background-size:cover;
+          -moz-background-size:cover;
+          -o-background-size:cover;
+          background-size:cover;
+        }
+      </style>
+      <div class="project-thumbnail bg-image" id="project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.name }}">
       </div>
 
-      <figcaption class="project-caption">
-        <div class="project-title position-relative d-none d-xl-block"><!--Temporary Xs Hidden-->
-          <h3 class="text-huge text-rosybrown text-uppercase mb-0" style="z-index:100;">{{ project.name_for_thumbnail }}</h3>
+      <figcaption class="font-ultra-light text-rosybrown">
+        <div class="project-title">
+          <h3 class="text-huge text-uppercase mb-0">
+            <span class="text-rosybrown">
+              {{ project.name_for_thumbnail }}
+            </span>
 
-          <h3 class="position-absolute project-title-stroke text-huge text-stroke-rosybrown text-uppercase mb-0" style="z-index:102;">{{ project.name_for_thumbnail }}</h3>
+            <span class="title-stroke">
+              {{ project.name_for_thumbnail }}
+            </span>
+          </h3>
+          
+          <div class="project-roles">
+            <div class="project-role">
+              {% for item in project.roles %}
+                {{ item }}{% unless forloop.last %} &middot;{% endunless %}
+              {% endfor %}
+            </div>
+
+            <div class="project-type">
+              {{ project.type }}
+            </div>
+          </div>
         </div>
 
-        <div class="project-side-data text-rosybrown">
-          <div class="project-year text-uppercase">
-            <time class="text-bold">{{ project.year }}</time>
+        <div class="project-info">
+          <div class="project-data">
+            <time class="font-light">
+              {{ project.year }}
+            </time>
 
             {{ project.category }}
           </div>
-          
-          <div class="project-info">
-            <span>Created with</span>
+
+          <div class="project-platforms">
+            <span class="font-light">
+              Created with
+            </span>
 
             {% for platform in project.platform %}
               {{ platform }}{% unless forloop.last %} &middot;{% endunless %}
             {% endfor %}
-          </div>
-        </div>
-
-        <div class="project-roles text-rosybrown">
-          {% for item in project.roles %}
-            <p class="project-tools text-uppercase mb-0">{{ item }}{% unless forloop.last %} <span>&middot;</span>{% endunless %}</p>
-          {% endfor %}
-
-          <div class="project-type">
-            {{ project.type }}
           </div>
         </div>
       </figcaption>

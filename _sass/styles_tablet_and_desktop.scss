@@ -31,7 +31,7 @@
     &.home {
       a {
         figure {
-          height:400px;
+          //height:400px;
         }
       }
     }
@@ -133,9 +133,9 @@
      padding:100px 0 67px;
   }
 
-  // Home Business Projects Section
-  section.home-business-projects-section {
-    padding:27px 0 39px;
+  // Home Business Projects Section, Home Campaign Projects Section
+  section.home-business-projects-section, section.home-campaign-projects-section {
+    padding:59px 0 71px;
   }
 
   // Home Campaigns Headline Section
@@ -143,11 +143,6 @@
     padding:100px 0 67px;
   }
 
-  // Home Campaign Projects Section
-  section.home-campaign-projects-section {
-    padding:27px 0 39px;
-  }
-  
   // Home I Can Create Section
   section.home-i-can-create-section {
   }

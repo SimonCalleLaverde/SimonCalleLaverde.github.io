@@ -11,9 +11,9 @@ web:
   image_2: ""
   image_3: ""
   url: https://calle-impresores.netlify.com
-type: Business Website & Product Catalogue
-category: Independent Project
-tags: recent
+type: Business Website & Catalogue
+category: Recent Independent Project
+tags: [Business Website, Business Recent]
 order: 30
 ---
 

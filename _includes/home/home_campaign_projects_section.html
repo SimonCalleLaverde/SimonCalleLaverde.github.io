@@ -1,8 +1,6 @@
-<!--IN DEVELOPMENT-->
-
 {% assign sorted_projects = site.projects | sort:"order" | reverse %}
 
-{% assign projects_count = 0 %}
+<!--{% assign projects_count = 0 %}-->
 
 {% for project in sorted_projects %}
   {% assign project_tags_list = "#" %}
@@ -10,14 +8,14 @@
     {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
   {% endfor %}
 
-  {% if project_tags_list contains "featured" %}
-    {% assign projects_count = projects_count | plus:1 %}
+  {% if project_tags_list contains "#Campaign Featured#" %}
+    <!--{% assign projects_count = projects_count | plus:1 %}--><!--Was For Placing Text Cycling Right/Left-->
 
-    <section class="home-campaign-projects-section clearfix" data-scene="rotateZ">
+    <section class="home-campaign-projects-section clearfix" id="{% if forloop.first %}home_campaign_projects_section{% endif %}" data-scene="rotateZ">
       <div class="container">
 
         <div class="row">
-          <div class="col-md-10 offset-md-1">
+          <div class="col-md-8 offset-md-2">
             {% include home/home_project_article.html %}
           </div>
         </div>
@@ -25,8 +23,8 @@
       </div>
     </section>
     
-    {% if projects_count == 2 or forloop.last %}
+    <!--{% if projects_count == 2 or forloop.last %}
       {% assign projects_count = 0 %}
-    {% endif %}
+    {% endif %}-->
   {% endif %}
 {% endfor %}

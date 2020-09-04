@@ -11,7 +11,7 @@ web:
   url: https://www.repoweraustralia.org.au/
 type: Campaign Website
 category: Working for Code Nation's Team
-tags: [featured, other]
+tags: [Campaign Platform, Campaign Featured]
 order: 20
 ---
 

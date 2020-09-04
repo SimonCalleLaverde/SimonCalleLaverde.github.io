@@ -11,7 +11,7 @@ web:
   url: https://www.arrcc.org.au/
 type: Campaign Website
 category: Working for Code Nation's Team
-tags: featured
+tags: [Campaign Platform, Campaign Featured]
 order: 2
 ---
 

@@ -478,45 +478,27 @@ a {
   font-size:6.3rem;
 }
 .text-hero {
-  line-height:1.5;//Temporary, can add padding to hero
+  line-height:1.5;
 }
 .text-gigantic {
-  line-height:0.89;
+  line-height:0.88;
+}
+.text-intro, .text-huge {
+  font-size:3.85rem;
+}
+.text-intro {
+  line-height:1.19;
 }
 .text-huge {
-  font-size:3.8rem;
-  line-height:1.19;//Maybe will have one diff just for main intro. When used on titles on websites I'll see
+  line-height:1.02;
 }
 .text-big {
   font-size:2rem;//To define
 }
-.headline-link {
-  color:transparent;
-  -webkit-text-stroke:2px theme-color('grey-dark');
-  //-webkit-text-fill-color:theme-color('blue');//Will Override Color (Regardless Of Order)
-  //-webkit-text-stroke-width:2px;
-  //-webkit-text-stroke-color:theme-color('grey-dark');
-  @include transition(all ease-out 0.5s);
-  &:hover, &:active, &:focus {
-    color:theme-color('grey-dark')!important;//
-    //-webkit-text-fill-color:theme-color('grey-dark');//Will Override Color (Regardless Of Order)
-    -webkit-text-stroke:2px theme-color('grey-dark');
-  }
-}
-.text-stroke-grey-dark {//One Example
-  color:transparent!important;
-  -webkit-text-stroke:2px theme-color('grey-dark')!important;
-}
-.text-stroke-grey-light {//One Example
-  color:transparent!important;
-  -webkit-text-stroke:2px theme-color('grey-light')!important;
-}
-.text-stroke-rosybrown {//One Example
-  color:transparent!important;
-  -webkit-text-stroke:2px theme-color('rosybrown')!important;
-}
-.text-black, .text-grey-dark, .text-grey-mid, .text-grey-light, .text-white {
-  @include transition(color ease-out 0.5s);
+.stroke-link {
+  //-webkit-text-fill-color:theme-color('rosybrown');//Will Override Color (Regardless Of Order)
+  //-webkit-text-stroke-width:1px;
+  //-webkit-text-stroke-color:theme-color('rosybrown');
 }
 
 // Forms (Custom | Overriding Bootstrap's)
@@ -613,221 +595,131 @@ input[type="submit"] {
 }
 
 // Panels
-.mobile-thumbnail-control {
-  min-height:300px;
-}
 article.project-article {
-  &.forloop-last {
-    margin-bottom:0;
-  }
   &.home {
-    //margin-bottom:185px;//235px
     a {
       figure {
         position:relative;
-        height:250px;//400px
-        > div {
+        height:403px;//Mobile 250px
+        width:calc(100% + 30px);
+        margin-left:-15px;
+        .project-thumbnail, figcaption {
           position:absolute;
           top:0;
           right:0;
           bottom:0;
           left:0;
-          overflow:hidden;
-          .project-thumbnail-wrap, .project-thumbnail, .recent-project-thumbnail {
-            position:absolute;
-            top:0;
-            right:0;
-            bottom:0;
-            left:0;
-            @include transform(scale(1));
-            @include transition(transform ease-in-out 0.5s 0.1s);
-          }
-          .project-thumbnail-wrap {
-            overflow:hidden;
-            z-index:101;
-            // .project-thumbnail, .recent-project-thumbnail {
-            //   height:460px;
-            //   margin-top:-30px;
-            // }
-          }
         }
-        figcaption.project-caption {
+        .project-thumbnail {
+          z-index:20;
+        }
+        figcaption {
+          font-size:13px;
+          letter-spacing:0.5px;
+          .project-title, .project-info, .project-roles {
+            position:absolute;
+          }
           .project-title {
-            position:absolute;
-            top:-31px;//-88px//0
-            left:-40px;//-110px
-            .project-title-stroke {
-              top:0;
-              left:0;
-              color:theme-color('rosybrown')!important;//transparent!important
-              -webkit-text-stroke:2px theme-color('rosybrown')!important;
-              @include transition(all cubic-bezier(0.455,0.03,0.515,0.955) 0.7s);
-            }
-          }
-          .project-side-data, .project-roles {
-            position:absolute;
-            font-size:14px;
-            overflow:hidden;
-            @include transition(all ease-in-out 0.5s 0.1s);
-            div.project-year, div.project-info, p.project-tools, div.project-type {
-              @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.2s);
-            }
-          }
-          .project-side-data {
-            width:20px;
-            height:calc(100% - 1px);
-            right:0;
-            bottom:1px;
-            writing-mode:vertical-rl;
-            text-orientation:mixed;
-            pointer-events:none;
-            //@include transform-origin(50% 50%);
-            @include transform(translateX(40px) rotate(180deg));
-            div.project-year, div.project-info {
-              time, span {
-                margin-bottom:15px;
+            bottom:-33px;
+            left:-22px;
+            h1, h2, h3, h4, h5, h6 {
+              span.title-stroke {
+                position:absolute;
+                bottom:0;
+                left:0;
+                color:theme-color('rosybrown');
+                -webkit-text-stroke:1px transparent;
+                z-index:21;
+                @include transition(all cubic-bezier(0.455,0.03,0.515,0.955) 0.3s);
               }
             }
-            div.project-year {
+          }
+          .project-info, .project-roles {
+            > .project-data, > .project-platforms, > .project-role, > .project-type {
+              @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.3s, filter cubic-bezier(0.455,0.03,0.515,0.955) 0.3s);
+            }
+          }
+          .project-info {
+            width:20px;
+            height:calc(100% - 1px);
+            top:1px;
+            right:-28px;
+            writing-mode:vertical-rl;
+            text-orientation:mixed;
+            overflow:hidden;
+            pointer-events:none;
+            //@include transform-origin(50% 50%);
+            > .project-data, > .project-platforms {
+              time, span {
+                margin-bottom:12px;
+              }
+            }
+            > .project-data {
               @include filter(opacity(1));
               @include transform(translateX(0));
             }
-            div.project-info {
+            > .project-platforms {
               position:absolute;
               top:0;
               left:0;
               @include filter(opacity(0));
-              @include transform(translateX(-20px));
+              @include transform(translateX(20px));
             }
           }
           .project-roles {
             width:calc(100% - 1px);
-            right:1px;
-            bottom:-40px;
-            text-align:right;
-            p.project-tools, div.project-type {
-            }
-            p.project-tools {
-              display:inline-block;
+            bottom:-16px;
+            left:1px;
+            text-align:left;
+            > .project-role {
               @include filter(opacity(1));
               @include transform(translateY(0));
-              span {
-                margin-right:1px;
-              }
             }
-            div.project-type {
+            > .project-type {
               position:absolute;
-              top:0;
-              right:0;
+              bottom:0;
+              left:0;
               @include filter(opacity(0));
               @include transform(translateY(20px));
             }
           }
         }
       }
-      // &:hover, &:active, &:focus {
-      //   figure {
-      //     > div {
-      //       .project-thumbnail-wrap {
-      //         @include transform(scale(0.98));
-      //         .project-thumbnail, .recent-project-thumbnail {
-      //           @include transform(scale(1.08));
-      //         }
-      //       }
-      //     }
-      //     figcaption.project-caption {
-      //       .project-title {
-      //         .project-title-stroke {
-      //           color:transparent!important;//theme-color('rosybrown')!important
-      //           //-webkit-text-stroke-color:theme-color('rosybrown')!important;
-      //         }
-      //       }
-      //       .project-side-data {
-      //         right:8px;
-      //         bottom:4px;
-      //         div.project-year {
-      //           @include filter(opacity(0));
-      //           @include transform(translateX(20px));
-      //         }
-      //         div.project-info {
-      //           @include filter(opacity(1));
-      //           @include transform(translateX(0));
-      //         }
-      //       }
-      //       .project-roles {
-      //         right:9px;
-      //         bottom:-35px;
-      //         p.project-tools {
-      //           @include filter(opacity(0));
-      //           @include transform(translateY(-20px));
-      //         }
-      //         div.project-type {
-      //           @include filter(opacity(1));
-      //           @include transform(translateY(0));
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
-    }
-    &.article-right {
-      a {
+      &:hover, &:active, &:focus {
         figure {
-          > div {
-            .project-thumbnail, .recent-project-thumbnail {
-            }
-          }
-          figcaption.project-caption {
+          figcaption {
             .project-title {
-              right:-40px;//-110px
-              left:auto;
-              text-align:right;
-              .project-title-stroke {
-                right:0;
-                left:auto;
+              h1, h2, h3, h4, h5, h6 {
+                span.title-stroke {
+                  color:transparent;
+                  -webkit-text-stroke-color:theme-color('rosybrown');
+                  @include transition(all cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.1s);
+                }
               }
             }
-            .project-side-data, .project-roles {
-              right:auto;
+            .project-info, .project-roles {
+              > .project-data, > .project-platforms, > .project-role, > .project-type {
+                @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 0.3s 0.1s);
+              }
             }
-            .project-side-data {
-              left:0;
-              @include transform(translateX(-40px) rotate(180deg));
-              div.project-year {
+            .project-info {
+              > .project-data {
+                @include filter(opacity(0));
+                @include transform(translateX(-20px));
+              }
+              > .project-platforms {
+                @include filter(opacity(1));
                 @include transform(translateX(0));
-              }
-              div.project-info {
-                right:0;
-                @include transform(translateX(20px));
               }
             }
             .project-roles {
-              left:1px;
-              text-align:left;
-              div.project-type {
-                left:0;
+              > .project-role {
+                @include filter(opacity(0));
+                @include transform(translateY(-20px));
               }
-            }
-          }
-        }
-        &:hover, &:active, &:focus {
-          figure {
-            > div {
-              .project-thumbnail, .recent-project-thumbnail {
-              }
-            }
-            figcaption.project-caption {
-              .project-side-data {
-                left:8px;
-                div.project-year {
-                  @include transform(translateX(-20px));
-                }
-                div.project-info {
-                  @include transform(translateX(0));
-                }
-              }
-              .project-roles {
-                left:9px;
+              > .project-type {
+                @include filter(opacity(1));
+                @include transform(translateY(0));
               }
             }
           }
@@ -843,7 +735,7 @@ article.project-article {
         .project-thumbnail {
           position:relative;
           height:330px;
-          figcaption.project-caption {
+          figcaption {
             .project-title, .project-roles {
               background-color:rgba(254,254,254,0.7);//theme-color('grey-light')
             }
@@ -859,7 +751,7 @@ article.project-article {
             }
           }
         }
-        .project-side-data {
+        .project-data {
           position:absolute;
           width:20px;//30px
           top:15px;
@@ -894,7 +786,7 @@ article.project-article {
         figure {
           .project-thumbnail {
           }
-          .project-side-data {
+          .project-data {
             div.project-year, div.project-info {
               p {
                 @include transform(translateX(20px));
@@ -913,6 +805,9 @@ article.project-article {
           }
         }
       }
+    }
+    &.forloop-last {
+      margin-bottom:0;
     }
   }
 }
@@ -1298,10 +1193,10 @@ header.home-hello-header {
         }
       }
       .area-left {
-        @include transform(translateY(12.5px));//25px
+        @include transform(translateY(25px));//12.5px
       }
       .area-right {
-        @include transform(translateY(-12.5px));//-25px
+        @include transform(translateY(-25px));//-12.5px
       }
     }
   }

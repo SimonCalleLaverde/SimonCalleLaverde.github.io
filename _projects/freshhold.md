@@ -13,7 +13,7 @@ web:
   url: ""
 type: Concept Website
 category: Independent &middot; Concept for presentation
-tags: featured
+tags: [Campaign Platform, Campaign Featured]
 order: 1
 ---
 

@@ -11,6 +11,6 @@ web:
   url: https://www.cultivateoregon.org/
 type: Campaign Website
 category: Working for Code Nation's Team
-tags: featured
+tags: [Campaign Platform, Campaign Featured]
 order: 17
 ---
