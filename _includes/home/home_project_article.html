@@ -10,7 +10,7 @@
           background-size:cover;
         }
       </style>
-      <div class="project-thumbnail bg-image" id="project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.name }}">
+      <div class="project-thumbnail bg-image" id="project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.name }}" loading="lazy">
       </div>
 
       <figcaption class="font-ultra-light text-rosybrown">
@@ -25,15 +25,15 @@
             </span>
           </h3>
           
-          <div class="project-roles">
-            <div class="project-role">
+          <div class="project-details">
+            <div class="project-type">
+              {{ project.type }}
+            </div>
+
+            <div class="project-roles">
               {% for item in project.roles %}
                 {{ item }}{% unless forloop.last %} &middot;{% endunless %}
               {% endfor %}
-            </div>
-
-            <div class="project-type">
-              {{ project.type }}
             </div>
           </div>
         </div>
@@ -59,5 +59,8 @@
         </div>
       </figcaption>
     </figure>
+  </a>
+
+  <a class="project-circle-link d-flex flex-row justify-content-center align-items-center text-center" href="#" data-toggle="modal" data-target="#projectModal_{{ project.slug }}" style="background-color:{{ project.buttons_background }}; color:{{ project.buttons_color }};">View the project
   </a>
 </article>

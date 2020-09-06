@@ -10,8 +10,10 @@ web:
   image: /uploads/site-web-give-a-dam.png
   url: https://www.giveadam.org.au/
 type: Campaign Website
-category: Working for Code Nation's Team
+category: Coded for Code Nation
 tags: [Campaign Platform, Campaign Featured]
+buttons_background: "#24414D"
+buttons_color: "#FFFFFF"
 order: 24
 ---
 

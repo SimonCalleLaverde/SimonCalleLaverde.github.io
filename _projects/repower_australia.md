@@ -9,9 +9,11 @@ web:
   domain: www.repoweraustralia.org.au
   image: /uploads/site-web-repower-australia.png
   url: https://www.repoweraustralia.org.au/
-type: Campaign Website
-category: Working for Code Nation's Team
+type: Campaign & Infographic Website
+category: Coded for Code Nation
 tags: [Campaign Platform, Campaign Featured]
+buttons_background: "rgba(223,173,120,1)"
+buttons_color: "#FFFFFF"
 order: 20
 ---
 

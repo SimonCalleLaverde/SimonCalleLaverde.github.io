@@ -10,8 +10,10 @@ web:
   image: /uploads/site-web-wentworth-for-refugees.png
   url: https://www.wentworth4refugees.org.au/
 type: Campaign Website
-category: Working for Code Nation
-tags: ""
+category: Coded for Code Nation
+tags: [Campaign Platform]
+buttons_background: ""
+buttons_color: ""
 order: 22
 ---
 

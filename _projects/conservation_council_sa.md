@@ -10,8 +10,10 @@ web:
   image: /uploads/site-web-conservation-council-sa.png
   url: https://www.conservationsa.org.au/
 type: Campaign Website
-category: Working for Code Nation's Team
-tags: [Campaign Platform, Campaign Featured]
+category: Coded for Code Nation
+tags: [Campaign Platform]
+buttons_background: ""
+buttons_color: ""
 order: 3
 ---
 

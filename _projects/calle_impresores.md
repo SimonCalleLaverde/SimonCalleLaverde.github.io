@@ -14,6 +14,8 @@ web:
 type: Business Website & Catalogue
 category: Recent Independent Project
 tags: [Business Website, Business Recent]
+buttons_background: "#5F252B"
+buttons_color: "#FFFFFF"
 order: 30
 ---
 

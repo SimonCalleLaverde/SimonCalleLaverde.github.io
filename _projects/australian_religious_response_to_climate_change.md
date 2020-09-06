@@ -9,9 +9,11 @@ web:
   domain: www.arrcc.org.au
   image: /uploads/site-web-australian-religious-response-to-climate-change.png
   url: https://www.arrcc.org.au/
-type: Campaign Website
-category: Working for Code Nation's Team
-tags: [Campaign Platform, Campaign Featured]
+type: Campaign Website & Award Winner
+category: Coded for Code Nation
+tags: [Campaign Platform]
+buttons_background: "#F2B769"
+buttons_color: "#000000"
 order: 2
 ---
 

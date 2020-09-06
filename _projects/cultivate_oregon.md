@@ -10,7 +10,9 @@ web:
   image: /uploads/site-web-cultivate-oregon.png
   url: https://www.cultivateoregon.org/
 type: Campaign Website
-category: Working for Code Nation's Team
-tags: [Campaign Platform, Campaign Featured]
+category: Coded for Code Nation
+tags: [Campaign Platform]
+buttons_background: ""
+buttons_color: ""
 order: 17
 ---

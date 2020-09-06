@@ -17,25 +17,23 @@ layout: compress
     {% include cursor.html %}
 
     {% include logo.html %}
+
+    {% include header_plus_years.html %}
     
     {% include nav_desktop.html %}
     {% include nav_mobile.html %}
 
-    {% include left_info.html %}
+    {% include header_left_info.html %}
 
-    {% include copyright.html %}
+    {% include header_copyright.html %}
 
     {% include header_social_media.html %}
-    
-    <!--{% comment %}
-    {% include nav_social_media.html %}
-    {% endcomment %}-->
 
     {% include aside_covers.html %}
 
     {% include under_development_note.html %}
 
-    <div id="{% if page.slug == 'work' or page_type_slug == 'feedback' %}luxy{% else %}rolly{% endif %}"><!--id="luxy">-->
+    <div id="rolly"><!--id="luxy">--><!--{% if page.slug == 'work' or page_type_slug == 'feedback' %}luxy{% else %}rolly{% endif %}-->
       <main id="main">
         <h1 class="sr-only">{{ page.title }}</h1>
 

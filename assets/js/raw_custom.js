@@ -46,7 +46,7 @@ $(function() {
   });
 });
 
-// Init Fastclick
+// Init Fastclick [Removing Touch Delay On Mobile]
 // $(function() {//Jquery
 //   FastClick.attach(document.body);
 // });
@@ -106,8 +106,8 @@ $(document).ready(function() {
 // Change Some Class After Scrolling Some Distance From Top | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
 $(function() {
   //caches a jQuery object containing the body element
-  var hideThisDivs = $(".logo a, .left-info-interior, .copyright-interior, .header-social-media-interior, .mouse-svg");
-  var showThisDivs = $(".logo .logo-cover");
+  var hideThisDivs = $("aside .show-it, aside .hide-it");//.mouse-svg,//.logo .show-it, .logo .hide-it,
+
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
 
@@ -115,12 +115,6 @@ $(function() {
       hideThisDivs.addClass("hide-it").removeClass("show-it");
     } else if (scrollFromTop <= 30) {
       hideThisDivs.removeClass("hide-it").addClass("show-it");
-    }
-
-    if (scrollFromTop >= 30) {
-      showThisDivs.addClass("show-it").removeClass("hide-it");
-    } else if (scrollFromTop <= 30) {
-      showThisDivs.removeClass("show-it").addClass("hide-it");
     }
   });
 });

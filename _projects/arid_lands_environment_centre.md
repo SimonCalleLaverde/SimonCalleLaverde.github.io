@@ -10,7 +10,9 @@ web:
   image: /uploads/site-web-arid-lands-environment-centre.png
   url: https://www.alec.org.au/
 type: Campaign Website
-category: Working for Code Nation's Team
-tags: ""
+category: Coded for Code Nation
+tags: [Campaign Platform]
+buttons_background: ""
+buttons_color: ""
 order: 6
 ---

@@ -12,8 +12,10 @@ web:
   image_3: /uploads/site-web-freshhold-3.png
   url: ""
 type: Concept Website
-category: Independent &middot; Concept for presentation
-tags: [Campaign Platform, Campaign Featured]
+category: Concept Presentation Site
+tags: [Presentation Website]
+buttons_background: "#566C7B"
+buttons_color: "#FFFFFF"
 order: 1
 ---
 

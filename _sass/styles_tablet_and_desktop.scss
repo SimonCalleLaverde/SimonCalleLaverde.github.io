@@ -123,13 +123,13 @@
     padding:50px 0;
   }
 
-  // Who I Am Section
-  section.who-i-am-section {
-    padding:120px 0 34px;
+  // Home Who I Am Section
+  section.home-who-i-am-section {
+    padding:120px 0 35px;
   }
 
-  // home Businesses Headline Section
-  section.home-businesses-headline-section {
+  // home Businesses Headline Section, Home Campaigns Headline Section, Home Skills Headline Section
+  section.home-businesses-headline-section, section.home-campaigns-headline-section, section.home-skills-headline-section {
      padding:100px 0 67px;
   }
 
@@ -138,23 +138,27 @@
     padding:59px 0 71px;
   }
 
-  // Home Campaigns Headline Section
-  section.home-campaigns-headline-section {
-    padding:100px 0 67px;
+  // Home See All Projects Section
+  section.home-see-all-projects-section {
+    padding:147px 0 71px;
   }
 
-  // Home I Can Create Section
-  section.home-i-can-create-section {
+  // Home I Can Create You Section
+  section.home-i-can-create-you-section {
   }
-
+  
+  // Home Skills Set Section
+  section.home-skills-set-section {
+  }
+  
   // About Background Section
-  section.background-section {
+  section.about-background-section {
     padding:115px 0;
   }
 
   // Work Header Section
   header.work-header-section {
-    min-height:100vh;
+    min-height:60vh;//100vh
     padding:15px 0;
   }
 

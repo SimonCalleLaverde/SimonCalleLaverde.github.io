@@ -66,6 +66,9 @@ collections:
   projects:
     title: Portfolio
     output: true
+  skills:
+    title: Skills Set
+    output: true
 
 sass:
   style: compressed

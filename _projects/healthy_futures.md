@@ -10,8 +10,10 @@ web:
   image: /uploads/site-web-healthy-futures.png
   url: http://www.healthyfutures.net.au/
 type: Campaign Website
-category: Working for Code Nation's Team
+category: Coded for Code Nation
 tags: [Campaign Platform, Campaign Featured]
+buttons_background: "rgba(53,113,138,1)"
+buttons_color: "#FFFFFF"
 order: 4
 ---
 

@@ -10,8 +10,10 @@ web:
   image: /uploads/site-web-the-kimberley-like-nowhere-else.png
   url: https://www.likenowhereelse.org.au/
 type: Campaign Website
-category: Working for Code Nation's Team
-tags: ""
+category: Coded for Code Nation
+tags: [Campaign Platform]
+buttons_background: ""
+buttons_color: ""
 order: 8
 ---
 
