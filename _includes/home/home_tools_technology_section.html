@@ -2,5 +2,36 @@
 
 <section class="home-tools-technology-section clearfix" id="tools_technology_section" data-scene="rotateZ">
 	<div class="container">
+
+		{% assign sorted_tools = site.tools | sort:"order" %}<!--| reverse-->
+		{% assign tools_count = 0 %}
+
+		{% for tool in sorted_tools %}
+			{% assign tools_count = tools_count | plus:1 %}
+
+			{% if tools_count == 1 %}
+			<div class="row">
+			{% endif %}
+				<div class="col-md-4">
+
+					<article class="tool-card text-center">
+						<img class="pb-3" src="{{ tool.image_logo }}" alt="Logo {{ tool.title }}">
+
+						<h4 class="text-rosybrown pb-2">
+							{{ tool.title }}
+						</h4>
+
+						<div class="tool-content font-ultra-light text-rosybrown">
+							{{ tool.content }}
+						</div>
+					</article>
+					
+				</div>
+	    {% if tools_count == 3 or forloop.last %}
+	  	</div>
+	    {% assign tools_count = 0 %}
+	    {% endif %}
+		{% endfor %}
+
 	</div>
 </section>

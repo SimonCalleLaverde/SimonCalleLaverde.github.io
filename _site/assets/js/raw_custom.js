@@ -37,16 +37,22 @@ $(function() {
   r.init();
 });
 
-// Init Luxy
-$(function() {
-  luxy.init({
-    wrapper: '#luxy',
-    targets: '.luxy-el',
-    wrapperSpeed: 0.1//Default 0.08
-  });
-});
+// // Init Luxy
+// $(function() {
+//   luxy.init({
+//     wrapper: '#luxy',
+//     targets: '.luxy-el',
+//     wrapperSpeed: 0.1//Default 0.08
+//   });
+// });
 
 // Init Fastclick [Removing Touch Delay On Mobile]
+if ('addEventListener' in document) {//Github
+  document.addEventListener('DOMContentLoaded', function() {
+    FastClick.attach(document.body);
+  }, false);
+}
+
 // $(function() {//Jquery
 //   FastClick.attach(document.body);
 // });
@@ -54,12 +60,6 @@ $(function() {
 // window.addEventListener('load', function() {//Other example from main page
 //   new FastClick(document.body);
 // }, false);
-
-if ('addEventListener' in document) {//Github
-  document.addEventListener('DOMContentLoaded', function() {
-    FastClick.attach(document.body);
-  }, false);
-}
 
 // Init Rellax
 $(function() {
@@ -107,6 +107,7 @@ $(document).ready(function() {
 $(function() {
   //caches a jQuery object containing the body element
   var hideThisDivs = $("aside .show-it, aside .hide-it");//.mouse-svg,//.logo .show-it, .logo .hide-it,
+  var toggleLogoSize = $(".logo");
 
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
@@ -115,6 +116,12 @@ $(function() {
       hideThisDivs.addClass("hide-it").removeClass("show-it");
     } else if (scrollFromTop <= 30) {
       hideThisDivs.removeClass("hide-it").addClass("show-it");
+    }
+
+    if (scrollFromTop >= 30) {
+      toggleLogoSize.addClass("logo-smaller");
+    } else if (scrollFromTop <= 30) {
+      toggleLogoSize.removeClass("logo-smaller");
     }
   });
 });
