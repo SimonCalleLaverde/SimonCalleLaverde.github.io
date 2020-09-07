@@ -825,13 +825,89 @@ article.project-article {
   }
 }
 article.tool-card {
-  margin-bottom:70px;
-  img {
-    max-width:120px;
-    max-height:70px;
+  $circle-size:150px;
+  position:relative;
+  height:100%;
+  @include border-top-left-radius(0.5rem);
+  @include border-top-right-radius(0.5rem);
+  @include border-bottom-right-radius(0.5rem);
+  @include border-bottom-left-radius(0.5rem);
+  .tool-card-background {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:transparent;
+    border:1px solid theme-color('rosybrown');
+    @include box-shadow(0 5px 15px rgba(24,16,8,0));
+    @include transform(scale(0.9, 0.85));
+    @include transition(background-color ease-in-out 0.5s, border-color ease-in-out 0.5s, box-shadow ease-in-out 0.5s, transform ease-in-out 0.5s);
+  }
+  .tool-card-circle {
+    position:absolute;
+    width:$circle-size;
+    height:$circle-size;
+    margin:auto;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    //margin-top:-65px;//-90px
+    background-color:transparent;
+    border:1px solid theme-color('rosybrown');
+    @include border-radius(50%);
+    @include transform(scale(1) translateY(0));
+    @include transition(background-color ease-in-out 0.5s, transform ease-in-out 0.5s);
+    img {
+      max-width:105px;
+      max-height:55px;
+    }
+  }
+  .tool-card-title {
+    position:absolute;
+    margin:auto;
+    right:0;
+    bottom:-24px;
+    left:0;
+    color:theme-color('rosybrown')!important;
+    @include filter(opacity(0));
+    @include transform(translateY(40px));
+    @include transition(color ease-in-out 0.5s, filter ease-in-out 0.5s, transform ease-in-out 0.5s);
   }
   .tool-content {
-    font-size:13px;
+    padding:135px 30px 50px;
+    > div {
+      font-size:13px;
+      color:theme-color('rosybrown')!important;
+      overflow:hidden;
+      @include filter(opacity(0));
+      @include transform(translateY(200px));
+      @include transition(filter ease-in-out 0.5s, transform ease-in-out 0.5s);
+    }
+  }
+  &:hover, &:active, &:focus {
+    .tool-card-background {
+      background-color:rgba(24,16,8,0.7);
+      border-color:rgba(24,16,8,0.7);
+      @include box-shadow(0 5px 15px rgba(24,16,8,0.4));
+      @include transform(scale(1));
+    }
+    .tool-card-circle {
+      background-color:theme-color('rosybrown');
+      @include transform(scale(0.9) translateY(-168px));
+    }
+    .tool-card-title {
+      color:theme-color('rosybrown')!important;
+      @include filter(opacity(1));
+      @include transform(translateY(0));
+    }
+    .tool-content {
+      > div {
+        @include filter(opacity(1));
+        @include transform(translateY(0));
+      }
+    }
   }
 }
 
@@ -1179,7 +1255,7 @@ header.home-hello-header {
     .area-left, .area-right {
       width:50%;
       overflow:hidden;
-      @include transition(transform ease-out 0.15s);
+      @include transition(transform ease-out 0.7s);
       div.websites-gif-cover, img.websites-gif-gif {
         min-width:320px;
         pointer-events:none;

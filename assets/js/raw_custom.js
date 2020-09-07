@@ -64,7 +64,9 @@ if ('addEventListener' in document) {//Github
 // Init Rellax
 $(function() {
   // Accepts any class name
-  var rellax = new Rellax('.rellax');
+  var rellax = new Rellax('.rellax', {
+    center:true
+  });
 });
 
 // Init Laxxx

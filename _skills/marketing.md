@@ -3,6 +3,6 @@ title: Marketing
 order: 4
 ---
 
-<p>- Advertisement: 5 years of career and experience.</p>
-<p>- Branding: Some experience and many years of learning about branding and identity design.</p>
-<p>- Social media marketing: ……</p>
+<p>- <span class="font-light">Advertisement:</span> 5 years of career and experience.</p>
+<p>- <span class="font-light">Branding:</span> Some experience and many years of learning about branding and identity design.</p>
+<p>- <span class="font-light">Social media marketing:</span> ……</p>

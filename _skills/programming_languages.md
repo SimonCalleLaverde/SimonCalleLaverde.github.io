@@ -3,9 +3,9 @@ title: Markup, Styling, & Programming Languages or Frameworks
 order: 1
 ---
 
-<p>- HTML5: 7 years of experience.</p>
-<p>- CSS3 & SASS <3 7 years of experience.</p>
-<p>- Liquid Code Very good at it; 5 years of experience.</p>
-<p>- Javascript <3 Casual work and currently expanding my knowledge.</p>
-<p>- React Js Currently learning.</p>
-<p>- Greenstock Animation Platform: Currently learning.</p>
+<p>- <span class="font-light">HTML5:</span> 7 years of experience.</p>
+<p>- <span class="font-light">CSS3 & SASS:</span> <3 7 years of experience.</p>
+<p>- <span class="font-light">Liquid Code:</span> Very good at it; 5 years of experience.</p>
+<p>- <span class="font-light">Javascript:</span> <3 Casual work and currently expanding my knowledge.</p>
+<p>- <span class="font-light">React Js:</span> Currently learning.</p>
+<p>- <span class="font-light">Greenstock Animation Platform:</span> Currently learning.</p>
