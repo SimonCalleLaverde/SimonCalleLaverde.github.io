@@ -4,21 +4,40 @@
 <!--Desktop-->
 <nav class="navbar" id="navbar">
   <ul class="navbar-nav">
+    {% comment %}
     <li class="nav-item">
       <a class="link nav-link{% if page.slug == 'home' %} active-link{% endif %}" href="/"><!--Class ".active" has a bug I think with "Rolly.js", where when getting to the bottom the class gets removed forever-->
         <span>Home</span>
       </a>
     </li>
+    {% endcomment %}
 
     <li class="nav-item">
-      <a class="link nav-link{% if page.slug == 'work' %} active-link{% endif %}" href="/work">
+      <a class="link nav-link{% if page.slug == 'all_projects' %} active-link{% endif %}" href="/all_projects">
         <span>All projects</span>
+        
+        {% assign sorted_projects = site.projects %}
+        {% assign projects_total_count = 0 %}
+
+        {% for project in sorted_projects %}
+          {% assign projects_total_count = projects_total_count | plus:1 %}
+        {% endfor %}
+        
+        <small>
+          {<span>{{ projects_total_count }}</span>}
+        </small>
       </a>
     </li>
-    
+
     <li class="nav-item">
-      <a class="link nav-link{% if page.slug == 'about' or page.slug == 'background' %} active-link{% endif %}" href="/background">
-        <span>Background</span>
+      <a class="link nav-link{% if page.slug == 'about' %} active-link{% endif %}" href="/about">
+        <span>About me</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="link nav-link{% if page.slug == 'workflow' %} active-link{% endif %}" href="/the_workflow">
+        <span>The workflow</span>
       </a>
     </li>
 
@@ -27,19 +46,19 @@
         <span>Contact me</span>
       </a>
     </li>
-    
+
     <!--<li class="nav-item">
       <a class="nav-link link smoothScroll" href="#home_hello_header">
         Hello
       </a>
     </li>
-    
+
     <li class="nav-item">
       <a class="nav-link link smoothScroll" href="#home_business_projects_section">
         Work
       </a>
     </li>
-    
+
     <li class="nav-item">
       <a class="nav-link link smoothScroll" href="#get_in_touch_footer">
         Get in touch

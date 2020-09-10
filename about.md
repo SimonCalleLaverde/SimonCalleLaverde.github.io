@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Background
-headline: My Background
-permalink: /background
+title: About
+headline: About me
+permalink: /about
 slug: about
 type_slug: basic
 header_image: ""
 ---
 
-This is the "Background" or "About" page.
+This is the "About" page.

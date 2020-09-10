@@ -16,9 +16,9 @@ thumbnail_image: ""
 
 Hello, I’m Simón
 <br>Calle Laverde,
-<br>A <span style="text-decoration:line-through;">web developer</span>
+<br>A <span>web developer</span>
 <br>with a background
-<br>in <span style="text-decoration:line-through;">marketing</span>:
+<br>in <span>marketing</span>:
 <br>advertisement,
 <br>branding,
 <br>& Copywriting.

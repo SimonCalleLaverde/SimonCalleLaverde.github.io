@@ -204,10 +204,7 @@ html {
 body {
   position:relative;//For Scroll Spy
   font-family:$font-light;
-  font-weight:300;
-  font-style:normal;
   font-size:17px;
-  //line-height:1.4;//Was 1.5
   letter-spacing:0.5px;
   z-index:0;
   overscroll-behavior-y:none;//To remove bounce on some browsers
@@ -336,8 +333,8 @@ main {
   z-index:3;
 }
 
-// Header Plus Years, Header Left Info, Header Copyright, Navbar, Header Social Media {
-aside.header-plus-years, aside.header-left-info, aside.header-copyright, nav.navbar, aside.header-social-media {
+// Header Plus Years, Header Left Info, Header Copyright, Navbar, Header Social Media, Header Scroll Down {
+aside.header-plus-years, aside.header-left-info, aside.header-copyright, nav.navbar, aside.header-social-media, aside.header-scroll-down {
   z-index:100;
 }
 
@@ -651,7 +648,7 @@ article.project-article {
             width:20px;
             height:calc(100% - 1px);
             top:1px;
-            right:-28px;
+            right:-31px;
             writing-mode:vertical-rl;
             text-orientation:mixed;
             overflow:hidden;
@@ -965,37 +962,27 @@ aside.header-plus-years {
 
 // Header Social Media
 aside.header-social-media {
-  position:fixed;//absolute
+  position:fixed;
   right:0;
   bottom:13px;
   left:0;
   a {
     position:relative;
+    font-family:$font-regular;
     font-size:12px;
     color:theme-color('chocolate');
     @include filter(opacity(0.8));
-    &::before {//, &::after
+    &::before {
       content:'';
       position:absolute;
-      pointer-events:none;
-    }
-    &::before {
       width:0;
       top:50%;
       right:0;
       //left:0;
       border-bottom:1px solid theme-color('rosybrown');
-      @include transition(width 0.2s ease-out);
+      pointer-events:none;
+      @include transition(width 0.3s ease-in-out);
     }
-    // &::after {
-    //   width:6px;
-    //   height:6px;
-    //   top:5px;
-    //   left:calc(50% - 3px);
-    //   border:1px solid theme-color('rosybrown');
-    //   @include transform(translateY(0) scale(0) rotate(0));
-    //   @include transition(all 0.2s ease-out);
-    // }
     &:hover, &:active, &:focus {
       @include filter(opacity(1));
       &::before {
@@ -1003,10 +990,6 @@ aside.header-social-media {
         right:auto;
         left:0;
       }
-      // &::after {
-      //   @include transform(translateY(-13px) scale(1) rotate(45deg));
-      //   @include transition(all 0.2s ease-out);
-      // }
     }
   }
 }
@@ -1032,7 +1015,7 @@ aside.footer-social-media {//To revise as it came from "fixed right" original na
         @include transition(all ease-out 0.5s);
       }
       &::after {
-        content:"";
+        content:'';
         position:absolute;
         width:27px;
         height:27px;
@@ -1124,7 +1107,7 @@ aside.header-copyright {
   text-orientation:mixed;
   pointer-events:none;
   //mix-blend-mode:difference;
-  @include filter(opacity(0.7));
+  opacity:(0.7);//@include filter(opacity(0.7));
   @include transform(rotate(180deg));
   //@include transform(rotate(270deg));
   //@include transform-origin(left bottom);//0 100%
@@ -1176,14 +1159,37 @@ aside.header-copyright {
 // Header Left Info
 aside.header-left-info {
   position:fixed;
-  top:33%;
+  top:26%;
   left:25px;
   font-size:11px;
   writing-mode:vertical-rl;
   text-orientation:mixed;
   pointer-events:none;
-  @include filter(opacity(0.7));
+  opacity:(0.6);//@include filter(opacity(0.7))
   @include transform(rotate(180deg));
+}
+
+// Header Scroll Down
+aside.header-scroll-down {
+  position:fixed;
+  right:110px;
+  bottom:35px;
+  overflow-y:hidden;
+  > div {
+    width:1px;
+    height:35px;
+    background-color:theme-color('redish');
+    //overflow:hidden;
+    > div {
+      position:absolute;
+      width:1px;
+      height:35px;
+      top:-35px;
+      right:0;
+      background-color:theme-color('chocolate');
+      @include animation(scrollDownAnim 5s linear 8s infinite);
+    }
+  }
 }
 
 //----------------------------------Section Styles----------------------------------//
@@ -1192,7 +1198,7 @@ aside.header-left-info {
 .logo {
   position:fixed;
   top:30px;
-  left:30px;
+  left:34px;//30px
   font-family:$font-headline;
   font-size:13px;
   line-height:1.2;
@@ -1220,7 +1226,7 @@ aside.header-left-info {
     }
     &:hover, &:active, &:focus {
       span {
-        @include filter(opacity(0.7));
+        @include filter(opacity(0.6));
       }
     }
   }
@@ -1238,11 +1244,11 @@ aside.header-left-info {
 header.home-hello-header {
   padding:40px 20px;//To revise mobile
   .hello-header-middle {
-    .header-hero {
-      //pointer-events:none;
+    .hello-header-hero {
+      pointer-events:none;
       .hero-left, .hero-right {
         position:absolute;
-        top:24%;
+        top:30%;//24%
         z-index:11;
       }
       .hero-left {
@@ -1255,11 +1261,12 @@ header.home-hello-header {
     .area-left, .area-right {
       width:50%;
       overflow:hidden;
-      @include transition(transform ease-out 0.7s);
+      @include transition(transform ease-out 0.5s);
       div.websites-gif-cover, img.websites-gif-gif {
-        min-width:320px;
+        min-width:368px;//320px
         pointer-events:none;
         user-select:none;
+        //@include transition(filter ease-in-out 0.3s);
       }
       div.websites-gif-cover {
         position:absolute;
@@ -1269,7 +1276,6 @@ header.home-hello-header {
         left:0;
         z-index:10;
         @include filter(opacity(1));
-        //@include transition(filter ease-in-out 0.1s);
       }
       img.websites-gif-gif {
         @include filter(opacity(0));
@@ -1280,7 +1286,7 @@ header.home-hello-header {
       margin-left:-0.5px;
     }
     .area-right {
-      margin-top:-242.5px;//267.5px - 25px//267.328px
+      margin-top:-282.5px;//307.438px//267.5px - 25px//267.328px
       margin-left:50%;//calc(50% + 0.5px)
       div.websites-gif-cover, img.websites-gif-gif {
         margin-left:-100%;
@@ -1296,19 +1302,18 @@ header.home-hello-header {
         }
       }
       .area-left {
-        @include transform(translateY(25px));//12.5px
+        @include transform(translateY(12.5px));//25px
       }
       .area-right {
-        @include transform(translateY(-25px));//-12.5px
+        @include transform(translateY(-12.5px));//-25px
       }
     }
   }
   .header-what-i-do {
     position:absolute;
     right:0;
-    bottom:105px;
+    bottom:85px;//105px
     left:0;
-    font-family:$font-ultra-light;
     font-size:23px;
     line-height:1.2;
   }
@@ -1317,15 +1322,27 @@ header.home-hello-header {
 // Home Who I Am Section
 section.home-who-i-am-section {
   padding:30px 20px;//To revise mobile
+  span {
+    position:relative;
+    &::before {
+      content:'';
+      position:absolute;
+      width:100%;
+      height:5px;
+      top:45%;
+      left:0;
+      background-color:theme-color('rosybrown');
+    }
+  }
 }
 
-// home Businesses Headline Section, Home Campaigns Headline Section, Home Skills Headline Section, Home Tools Headline Section
-section.home-businesses-headline-section, section.home-campaigns-headline-section, section.home-skills-headline-section, section.home-tools-headline-section {
+// Home Businesses Headline Section, Home Campaigns Headline Section, Home Skills Headline Section, Workflow Tools Headline Section, Home Lets Create Headline Section
+section.home-businesses-headline-section, section.home-campaigns-headline-section, section.home-skills-headline-section, section.workflow-tools-headline-section, section.home-lets-create-headline-section {
   padding:30px 20px;//To revise mobile
 }
 
-// Home Business Projects Section, Home Campaign Projects Section, Home Skills Set Section, Home Tools Technology Section
-section.home-business-projects-section, section.home-campaign-projects-section, section.home-skills-set-section, section.home-tools-technology-section {
+// Home Business Projects Section, Home Campaign Projects Section, Home Skills Set Section, Workflow Tools Technology Section
+section.home-business-projects-section, section.home-campaign-projects-section, section.home-skills-set-section, section.workflow-tools-technology-section {
   padding:30px 20px;//To revise mobile
 }
 
@@ -1369,7 +1386,7 @@ section.home-skills-set-section {
         border-top:1px solid theme-color('rosybrown');
       }
       .skill-content {
-        text-align:right;
+        //text-align:right;
         p {
           margin-bottom:1px;
           font-size:15px;
@@ -1380,9 +1397,73 @@ section.home-skills-set-section {
   }
 }
 
-// About Background Section
-section.about-background-section {
+// About Header
+header.about-header {
   padding:30px 20px;//To revise mobile
+  .about-header-middle {
+    position:relative;
+    //margin-left:30px;
+    h1, h2, h3, h4, h5, h6 {
+      color:transparent;
+      > div {
+        position:relative;
+        margin-left:147px;
+        > span {
+          display:block;
+          position:absolute;
+          top:11px;
+          left:-98px;
+          font-size:23.5px;
+          line-height:1.24;
+          text-align:right;
+          text-transform:none;
+        }
+      }
+      &:last-of-type {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:10;
+      }
+    }
+  }
+  .about-header-image {
+    width:313px;
+    margin-top:2px;
+    margin-left:-7px;
+    img {
+    }
+    span.about-header-info {
+      display:block;
+      margin-top:12px;
+      margin-right:1px;
+      font-size:13px;
+      line-height:1.7;
+      text-align:right;
+    }
+  }
+}
+
+// About Myself Section
+section.about-myself-section {
+  padding:30px 20px;//To revise mobile
+  .about-intro {
+    font-size:23.5px;
+    line-height:1.6;
+  }
+  .about-postdata {
+    font-size:17px;
+    line-height:1.6;
+  }
+}
+
+// About Lets Work Section
+section.about-lets-work-section {
+  padding:30px 20px;//To revise mobile
+  .about-contact-me {
+    font-size:23.5px;
+    line-height:1.6;
+  }
 }
 
 // Work Header Section
@@ -1438,147 +1519,173 @@ body.page-type-basic {
 body.page-type-basic.home {
 }
 
-// Basic Page (Work)
-body.page-type-basic.work {
+// Basic Page (All Projects)
+body.page-type-basic.all_projects {
 }
 
-// Feedback Page (Contact)
+// Feedback Page (Contact Me)
 body.page-type-feedback {
 }
 
-// //----------------------------------Cursor Custom Styles----------------------------------//
+// Theme Dark
+body.theme-dark {
+  main {
+    background-color:theme-color('chocolate');
+  }
+  .logo {
+    a {
+      color:theme-color('rosybrown')!important;
+      span {
+        border:1px solid theme-color('rosybrown');
+      }
+    }
+  }
+  aside.header-left-info, aside.header-copyright {
+    color:theme-color('rosybrown')!important;
+  }
+  aside.header-social-media {
+    a {
+      color:theme-color('rosybrown');
+      // &::before {
+      //   border-bottom:1px solid theme-color('redish');
+      // }
+    }
+  }
+}
 
-// // Cursor
-// // body {
-// //   cursor:none;
-// // }
-// // a {
-// //   .post-thumbnail, .video-thumbnail {//&.link, &.link div, &.link span
-// //     &:hover {
-// //       cursor:none;
-// //     }
-// //   }
-// // }
-// // i.fa {
-// //   &.link {
-// //     &:hover {
-// //       cursor:none;
-// //     }
-// //   }
-// // }
-// .cursor {
-//   display:none;
-//   position:fixed;
-//   width:25px;
-//   height:25px;
-//   top:-12.5px;//-7.5px
-//   left:-12.5px;//-7.5px
-//   z-index:250000;//10000
-//   pointer-events:none;
-//   @include border-radius(50%);
-//   //mix-blend-mode:difference;
-//   will-change:transform;
-//   .cursor-link, .cursor-recent-project, .cursor-project, .cursor-footer {
-//     position:absolute;
-//     @include border-radius(50%);
-//     @include transition(filter ease-out 0.3s, transform ease-out 0.3s);
-//   }
-//   .cursor-link {
-//     width:25px;//15px
-//     height:25px;//15px
-//     background-color:theme-color('blue');
-//     z-index:11001;
-//     @include filter(opacity(0.75));
-//   }
-//   .cursor-recent-project, .cursor-project, .cursor-footer {
-//     width:100px;
-//     height:100px;
-//     top:-42.5px;
-//     left:-42.5px;
-//     text-align:center;
-//     z-index:11002;
-//     @include filter(opacity(0));
-//     @include transform(rotate(-180deg) scale(0,0));
-//   }
-//   .cursor-recent-project, .cursor-footer {
-//     padding-top:42px;
-//     font-family:$font-headline;
-//     font-weight:400;
-//     font-size:12px;
-//     background-color:rgba(37,175,206,0.7);//theme-color('blue')
-//     color:theme-color('grey-light');//blue
-//     text-transform:uppercase;
-//     letter-spacing:1px;//2px
-//     white-space:nowrap;
-//   }
-//   .cursor-footer {
-//     width:150px;
-//     height:150px;
-//     padding-top:68px;
-//     top:-67.5px;
-//     left:-67.5px;
-//     background-color:rgba(240,217,194,0.85);//theme-color('blue')
-//     color:theme-color('beige');
-//   }
-//   .cursor-project {
-//     padding-top:39px;
-//     background-color:rgba(235,189,48,0.7);//theme-color('mustard')
-//     span {
-//       svg {
-//         width:24px;
-//         height:24px;
-//         fill:theme-color('blue');
-//       }
-//     }
-//   }
-//   &.hoveredLink {
-//     //mix-blend-mode:none;
-//     .cursor-link {
-//       @include filter(opacity(0.5));
-//       @include transform(scale(3,3));
-//     }
-//   }
-//   &.hoveredRecent, &.hoveredProject, &.hoveredFooter {
-//     .cursor-link {
-//       @include filter(opacity(0));
-//     }
-//     .cursor-recent-project, .cursor-project, .cursor-footer {
-//       @include transform(rotate(0) scale(1,1));
-//     }
-//     .cursor-recent-project, .cursor-footer {
-//       @include animation(fa-spin 10s linear infinite);
-//     }
-//   }
-//   &.hoveredRecent {
-//     .cursor-recent-project {
-//       @include filter(opacity(1));
-//     }
-//   }
-//   &.hoveredProject {
-//     .cursor-project {
-//       @include filter(opacity(1));
-//     }
-//   }
-//   &.hoveredFooter {
-//     .cursor-footer {
-//       @include filter(opacity(1));
+//----------------------------------Cursor Custom Styles----------------------------------//
+
+// Cursor
+// body {
+//   cursor:none;
+// }
+// a {
+//   .post-thumbnail, .video-thumbnail {//&.link, &.link div, &.link span
+//     &:hover {
+//       cursor:none;
 //     }
 //   }
 // }
-// @media (pointer:coarse) and (hover:none) {
+// i.fa {
+//   &.link {
+//     &:hover {
+//       cursor:none;
+//     }
+//   }
+// }
+.cursor {
+  display:none;
+  position:fixed;
+  width:25px;
+  height:25px;
+  top:-12.5px;//-7.5px
+  left:-12.5px;//-7.5px
+  z-index:250000;//10000
+  pointer-events:none;
+  @include border-radius(50%);
+  //mix-blend-mode:difference;
+  will-change:transform;
+  .cursor-link, .cursor-recent-project, .cursor-project, .cursor-footer {
+    position:absolute;
+    @include border-radius(50%);
+    @include transition(filter ease-out 0.3s, transform ease-out 0.3s);
+  }
+  .cursor-link {
+    width:25px;//15px
+    height:25px;//15px
+    background-color:theme-color('blue');
+    z-index:11001;
+    @include filter(opacity(0.75));
+  }
+  .cursor-recent-project, .cursor-project, .cursor-footer {
+    width:100px;
+    height:100px;
+    top:-42.5px;
+    left:-42.5px;
+    text-align:center;
+    z-index:11002;
+    @include filter(opacity(0));
+    @include transform(rotate(-180deg) scale(0,0));
+  }
+  .cursor-recent-project, .cursor-footer {
+    padding-top:42px;
+    font-family:$font-headline;
+    font-weight:400;
+    font-size:12px;
+    background-color:rgba(37,175,206,0.7);//theme-color('blue')
+    color:theme-color('grey-light');//blue
+    text-transform:uppercase;
+    letter-spacing:1px;//2px
+    white-space:nowrap;
+  }
+  .cursor-footer {
+    width:150px;
+    height:150px;
+    padding-top:68px;
+    top:-67.5px;
+    left:-67.5px;
+    background-color:rgba(240,217,194,0.85);//theme-color('blue')
+    color:theme-color('beige');
+  }
+  .cursor-project {
+    padding-top:39px;
+    background-color:rgba(235,189,48,0.7);//theme-color('mustard')
+    span {
+      svg {
+        width:24px;
+        height:24px;
+        fill:theme-color('blue');
+      }
+    }
+  }
+  &.hoveredLink {
+    //mix-blend-mode:none;
+    .cursor-link {
+      @include filter(opacity(0.5));
+      @include transform(scale(3,3));
+    }
+  }
+  &.hoveredRecent, &.hoveredProject, &.hoveredFooter {
+    .cursor-link {
+      @include filter(opacity(0));
+    }
+    .cursor-recent-project, .cursor-project, .cursor-footer {
+      @include transform(rotate(0) scale(1,1));
+    }
+    .cursor-recent-project, .cursor-footer {
+      @include animation(fa-spin 10s linear infinite);
+    }
+  }
+  &.hoveredRecent {
+    .cursor-recent-project {
+      @include filter(opacity(1));
+    }
+  }
+  &.hoveredProject {
+    .cursor-project {
+      @include filter(opacity(1));
+    }
+  }
+  &.hoveredFooter {
+    .cursor-footer {
+      @include filter(opacity(1));
+    }
+  }
+}
+@media (pointer:coarse) and (hover:none) {
+  .cursor {
+    display:none!important;
+  }
+}//@media
+// @include media-breakpoint-down(md) {
 //   .cursor {
 //     display:none!important;
 //   }
 // }//@media
-// // @include media-breakpoint-down(md) {
-// //   .cursor {
-// //     display:none!important;
-// //   }
-// // }//@media
 
 //----------------------------------General Loading Animation Styles----------------------------------//
 
-.logo, aside.header-plus-years, aside.header-social-media, aside.header-left-info, aside.header-copyright, nav.navbar, aside.burger-mobile {
+.logo, aside.header-plus-years, nav.navbar, aside.burger-mobile, aside.header-left-info, aside.header-copyright, aside.header-social-media, aside.header-scroll-down {
   pointer-events:none;
   @include filter(opacity(0));
 }
@@ -1597,7 +1704,7 @@ body {
       @include transform(translateY(100vh));
       @include animation(mainTranslateAnim 1s ease-in-out 1.5s forwards);
     }
-    .logo, aside.header-plus-years, aside.header-social-media, aside.header-left-info, aside.header-copyright, nav.navbar, aside.burger-mobile {
+    .logo, aside.header-plus-years, nav.navbar, aside.burger-mobile, aside.header-left-info, aside.header-copyright, aside.header-social-media, aside.header-scroll-down {
       @include animation(fadeInAnim 0.5s ease-in 2.2s forwards);
     }
   }

@@ -2,12 +2,18 @@
 layout: "main"
 ---
 
-{% if page.slug == "work" or page.slug contains "work" %}
+{% if page.slug == "all_projects" %}
   {% include work/work_header_section.html %}
   {% include work/work_projects_section.html %}
 
-{% elsif page.slug == "about" or page.slug contains "about" %}
-	{% include about/about_background_section.html %}
+{% elsif page.slug == "about" %}
+	{% include about/about_header.html %}
+	{% include about/about_myself_section.html %}
+	{% include about/about_lets_work_section.html %}
+
+{% elsif page.slug == "workflow" %}
+	{% include workflow/workflow_tools_headline_section.html %}
+	{% include workflow/workflow_tools_technology_section.html %}
 
 {% else %}
 

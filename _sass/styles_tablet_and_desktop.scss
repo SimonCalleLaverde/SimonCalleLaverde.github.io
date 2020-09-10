@@ -52,7 +52,7 @@
   // Nav Desktop
   nav.navbar {
     position:fixed;
-    padding:23px 25px;
+    padding:23px 30px;//23px 25px
     top:0;
     right:0;
     line-height:1.2!important;//Was 1.5 from Body
@@ -62,54 +62,46 @@
         a.nav-link {
           display:inline-block;
           position:relative;
-          padding:0.1rem 0.5rem;
+          padding:0.1rem 0.2rem;//0.1rem 0.5rem
           font-family:$font-light;
           font-size:12px;
           color:rgba(24,16,8,0.8);//theme-color('chocolate')
           white-space:nowrap;
-          &::before, &::after {
+          &::before {
             content:'';
             position:absolute;
-            pointer-events:none;
-          }
-          &::before {
             width:0;
             top:50%;
-            //right:0;
-            left:0;
+            right:0;
+            //left:0;
             border-bottom:1px solid theme-color('rosybrown');
-            @include transition(width 0.2s ease-out);
+            pointer-events:none;
+            @include transition(width 0.3s ease-in-out);
           }
-          &::after {
-            width:6px;
-            height:6px;
-            top:7px;
-            left:3px;
-            border:1px solid theme-color('rosybrown');
-            @include transform(translateX(0) scale(0) rotate(0));
-            @include transition(all 0.2s ease-out);
+          small {
+            position:absolute;
+            top:4px;
+            right:-20px;
+            display:inline-block;
+            @include transform(translateY(-4px));
+            // span {
+            //   @include animation(change30ColorAnim 20s ease-out forwards);
+            // }
           }
           &:hover, &:active, &:focus, &.active-link {
             color:theme-color('chocolate');
             //text-decoration:line-through;
             &::before {
               width:100%;
-            }
-            &::after {
-              @include transform(translateX(-13px) scale(1) rotate(45deg));
-            }
-          }
-          &:hover, &:active, &:focus {
-            span {
-              //@include filter(opacity(0.8));
-              @include transition(all 0.2s ease-out);
+              right:auto;
+              left:0;
             }
           }
         }
         &:nth-child(3) {
           a.nav-link {
             &::after {
-              top:6px;
+              top:51%;
             }
           }
         }
@@ -128,13 +120,13 @@
     padding:120px 0 35px;
   }
 
-  // home Businesses Headline Section, Home Campaigns Headline Section, Home Skills Headline Section, Home Tools Headline Section
-  section.home-businesses-headline-section, section.home-campaigns-headline-section, section.home-skills-headline-section, section.home-tools-headline-section {
-     padding:100px 0 67px;
+  // Home Businesses Headline Section, Home Campaigns Headline Section, Home Skills Headline Section, Workflow Tools Headline Section, Home Lets Create Headline Section
+  section.home-businesses-headline-section, section.home-campaigns-headline-section, section.home-skills-headline-section, section.workflow-tools-headline-section, section.home-lets-create-headline-section {
+    padding:100px 0 67px;
   }
 
-  // Home Business Projects Section, Home Campaign Projects Section, Home Skills Set Section, Home Tools Technology Section
-  section.home-business-projects-section, section.home-campaign-projects-section, section.home-skills-set-section, section.home-tools-technology-section {
+  // Home Business Projects Section, Home Campaign Projects Section, Home Skills Set Section, Workflow Tools Technology Section
+  section.home-business-projects-section, section.home-campaign-projects-section, section.home-skills-set-section, section.workflow-tools-technology-section {
     padding:59px 0 71px;
   }
 
@@ -147,15 +139,54 @@
   section.home-i-can-create-you-section {
   }
 
-  // About Background Section
-  section.about-background-section {
-    padding:115px 0;
+  // About Header
+  header.about-header {
+    min-height:100vh;
+    padding:162px 0 100px;
+  }
+
+  // About Myself Section
+  section.about-myself-section {
+    padding:83px 0 440px;
+    img {
+      position:absolute;
+    }
+    img.image-candelaria {
+      top:130px;
+      left:-145px;
+      width:496px;
+    }
+    img.image-palm-beach {
+      top:240px;
+      right:-210px;
+      width:170px;
+    }
+    img.image-city-center {
+      top:750px;
+      left:-145px;
+      width:434px;
+    }
+    img.image-old-school {
+      top:100px;
+      left:0;
+      width:310px;
+    }
+    img.image-photography {
+      top:180px;
+      right:-145px;
+      width:200px;
+    }
+  }
+
+  // About Lets Work Section
+  section.about-lets-work-section {
+    padding:80px 0;
   }
 
   // Work Header Section
   header.work-header-section {
-    min-height:60vh;//100vh
-    padding:15px 0;
+    min-height:80vh;//100vh
+    padding:130px 0 105px;
   }
 
   // Work Projects Section
@@ -192,6 +223,25 @@
 
   // Feedback Page (Contact Me)
   body.page-type-feedback {
+  }
+
+  // Theme Dark
+  body.theme-dark {
+    nav.navbar {
+      ul.navbar-nav {
+        li.nav-item {
+          a.nav-link {
+            color:rgba(255,232,228,0.8);//theme-color('rosybrown')
+            // &::before {
+            //   border-bottom-color:theme-color('redish');
+            // }
+            &:hover, &:active, &:focus, &.active-link {
+              color:theme-color('rosybrown');
+            }
+          }
+        }
+      }
+    }
   }
   
 }//@media

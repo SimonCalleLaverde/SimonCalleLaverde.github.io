@@ -1,13 +1,11 @@
 ---
 layout: page
-title: Work
+title: All Projects
 headline: All Projects
-permalink: /work
-slug: work
+permalink: /all_projects
+slug: all_projects
 type_slug: basic
 header_image: ""
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae tincidunt purus. Quisque a ipsum vel tellus varius varius a at justo. Suspendisse ante leo, bibendum et lectus vel, pretium posuere ante. Maecenas at sapien nec ex accumsan laoreet. Nullam et nisi nec elit rhoncus porta. Suspendisse felis sem, mattis eget sem sit amet, luctus mollis ex. Nullam sodales lectus elementum dui rutrum consequat. Sed sodales dignissim ultricies. Vestibulum laoreet enim nec finibus viverra.
-
-Vivamus ac enim ante. Nunc nec nisl id quam eleifend convallis. Aliquam in blandit elit. Nam sit amet lobortis mi. Nam imperdiet enim id cursus ullamcorper. Ut id mollis sapien, non ullamcorper odio. Sed consectetur quam a rutrum ultricies. Mauris id aliquet dolor, eu vestibulum felis. Etiam accumsan nibh vitae pretium viverra. Nunc condimentum, odio eget posuere dictum, ex lacus efficitur nibh, sed gravida nisi quam in odio. Morbi quis lorem lacinia, aliquam erat sit amet, venenatis sapien. Nullam cursus, ex eu pharetra ultrices, libero massa euismod nunc, ac luctus magna odio ut sem. Donec luctus sollicitudin neque, et pulvinar velit porta non. Etiam orci nibh, malesuada id sem id, vestibulum pharetra turpis.
+In my previouw company, we created lots of sites that helped thousands of people and moved hundreds of causes. Now, I want to continue my job of helping people to put their businesses names out there with good design and hight quality websites that show their goals and personality.

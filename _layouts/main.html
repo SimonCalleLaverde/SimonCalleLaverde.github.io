@@ -7,7 +7,7 @@ layout: compress
 
   {% include head.html %}
 
-  <body class="page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} theme-colour white is-top loading rendering" data-spy="scroll" data-target="#navbar" data-offset="80">
+  <body class="page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} {% if page.slug == 'home' %}theme-light{% else %}theme-dark{% endif %} is-top loading rendering" data-spy="scroll" data-target="#navbar" data-offset="80">
     {% include loader_quote.html %}
     
     {% if page.header_image.size > 0 %}
@@ -28,6 +28,8 @@ layout: compress
     {% include header_copyright.html %}
 
     {% include header_social_media.html %}
+
+    {% include header_scroll_down.html %}
 
     {% include aside_covers.html %}
 

@@ -11,7 +11,7 @@ web:
   url: http://www.fitzroystatement.org
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Campaign Featured]
+tags: [Campaign Platform]
 buttons_background: "rgba(170,122,127,1)"
 buttons_color: "#FFFFFF"
 order: 19
