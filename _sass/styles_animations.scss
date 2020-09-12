@@ -45,6 +45,66 @@
   }
 }//@keyframes
 
+@keyframes lineThorughBackAnim {
+  0% {
+    width:100%;
+    right:0;
+    left:auto;
+  }
+  45% {
+    width:0;
+    right:0;
+    left:auto;
+  }
+  55% {
+    width:0;
+    right:auto;
+    left:0;
+  }
+  100% {
+    width:100%;
+    right:auto;
+    left:0;
+  }
+}//@keyframes
+
+@keyframes lineThorughLoopAnim {
+  0% {
+    width:0;
+    right:auto;
+    left:0;
+  }
+  70% {
+    width:0;
+    right:auto;
+    left:0;
+  }
+  80% {
+    width:100%;
+    right:auto;
+    left:0;
+  }
+  90% {
+    width:100%;
+    right:0;
+    left:auto;
+  }
+  100% {
+    width:0;
+    right:0;
+    left:auto;
+  }
+}//@keyframes
+
+@keyframes rotateAnim {
+  from {
+    @include transform(rotate(0));
+  }
+  to {
+    @include transform(rotate(360deg));
+  }
+}//@keyframes
+
 //----------------------------------Mouse Scrolling Animation Styles----------------------------------//
 
 @keyframes mouseScrollAnim {

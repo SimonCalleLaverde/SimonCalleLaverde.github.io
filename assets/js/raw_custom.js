@@ -128,20 +128,20 @@ $(function() {
   });
 });
 
-// // Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
-// $(function() {
-//   //caches a jQuery object containing the body element
-//   var body = $("body");
-//   $(window).scroll(function() {
-//     var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+// Change Some Class After Scrolling Some Distance To Bottom | As Per, But Modified Now (https://stackoverflow.com/questions/12558311/add-remove-class-with-jquery-based-on-vertical-scroll)
+$(function() {
+  //caches a jQuery object containing the body element
+  var body = $("body");
+  $(window).scroll(function() {
+    var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-//     if (scrollFromBottom >= 550) {
-//       body.removeClass("is-bottom").addClass("is-top");
-//     } else if (scrollFromBottom <= 550) {
-//       body.removeClass("is-top").addClass("is-bottom");
-//     }
-//   });
-// });
+    if (scrollFromBottom >= 30) {
+      body.removeClass("is-bottom").addClass("is-top");
+    } else if (scrollFromBottom <= 30) {
+      body.removeClass("is-top").addClass("is-bottom");
+    }
+  });
+});
 
 // // Change Some Class After Scrolling Some Element | As Per, But Modified Now (https://stackoverflow.com/questions/29717119/how-to-change-class-after-scroll-somewhere/29717259)
 // $(function() {
@@ -221,6 +221,13 @@ $(function() {
   });
 });
 
+
+
+
+
+
+
+
 //---------------------------------CURSOR SCRIPTS---------------------------------//
 
 // POSITIONING WITH GSAP AS PER (https://greensock.com/forums/topic/19789-follow-by-mouse/)
@@ -244,30 +251,30 @@ $(document).mousemove(function(e) {
   const target = $(event.target);
   
   // Update position of cursor
-  cursor.css('display', 'block');//cursor.css('left', e.clientX - 25).css('top', e.clientY - 25).css('display', 'block');
+  cursor.css('display', 'block');//cursor.css('left', e.clientX - 62.5px).css('top', e.clientY - 62.5px).css('display', 'block');
   
-  const isLink = target.is('a.link, button.link, input.link, i.fa.link, a.link div, a.link span, a .link');
-  const isRecent = target.is('.recent-project-thumbnail');//figure
-  const isProject = target.is('.project-thumbnail');//figure
+  const isHeader = target.is('header-target-will-go-here');
+  //const isLink = target.is('a.link, button.link, input.link, i.fa.link, a.link div, a.link span, a .link');
+  const isProject = target.is('.project-thumbnail');
   const isFooter = target.is('footer > a.container');
 
-  const isLinkHovered = cursor.hasClass('hoveredLink');
-  const isRecentHovered = cursor.hasClass('hoveredRecent');
+  const isHeaderHovered = cursor.hasClass('hoveredHeader');
+  //const isLinkHovered = cursor.hasClass('hoveredLink');
   const isProjectHovered = cursor.hasClass('hoveredProject');
   const isFooterHovered = cursor.hasClass('hoveredFooter');
 
-  // Toggle the cursor class if necessary 
-  if (isLink && !isLinkHovered) {
-    cursor.addClass('hoveredLink');
-  } else if (!isLink && isLinkHovered) {
-    cursor.removeClass('hoveredLink');
+  // Toggle the cursor class if necessary
+  if (isHeader && !isHeaderHovered) {
+    cursor.addClass('hoveredHeader');
+  } else if (!isHeader && isHeaderHovered) {
+    cursor.removeClass('hoveredHeader');
   }
-
-  if (isRecent && !isRecentHovered) {
-    cursor.addClass('hoveredRecent');
-  } else if (!isRecent && isRecentHovered) {
-    cursor.removeClass('hoveredRecent');
-  }
+  
+  // if (isLink && !isLinkHovered) {
+  //   cursor.addClass('hoveredLink');
+  // } else if (!isLink && isLinkHovered) {
+  //   cursor.removeClass('hoveredLink');
+  // }
 
   if (isProject && !isProjectHovered) {
     cursor.addClass('hoveredProject');
@@ -291,6 +298,14 @@ $(document).mouseenter(function(e) {
   const cursor = $('.cursor');
   cursor.show()
 });
+
+
+
+
+
+
+
+
 
 //---------------------------------FIRST GSAP ATTEMPTS---------------------------------//
 

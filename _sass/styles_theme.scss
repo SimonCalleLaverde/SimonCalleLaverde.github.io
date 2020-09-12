@@ -1,3 +1,7 @@
+// Other (Used In Circle Cursor Before)
+// background-color:rgba(240,217,194,1);//Rose Very Light
+// background-color:rgba(37,175,206,1);//Blue Terminal I Think
+
 // Blue CALLE // #2B5CA4 //rgba(43,92,164,1)
 
 // Blue Calle Logo // rgba(63,67,147,1) //#3f4393
@@ -24,7 +28,7 @@
   bottom:0;
   left:0;
   letter-spacing:2px;
-  z-index:200000;
+  z-index:10000;
 }
 @include media-breakpoint-only(xs) {
   html {
@@ -331,11 +335,15 @@ main {
   min-height:100vh;
   background-color:theme-color('beige');//lighten(theme-color('grey-dark'),5);//blue//silver
   z-index:3;
+  @include transition(background-color ease-in-out 0.3s);
 }
 
 // Header Plus Years, Header Left Info, Header Copyright, Navbar, Header Social Media, Header Scroll Down {
 aside.header-plus-years, aside.header-left-info, aside.header-copyright, nav.navbar, aside.header-social-media, aside.header-scroll-down {
   z-index:100;
+}
+aside.header-left-info, aside.header-copyright {
+  @include transition(color ease-in-out 0.3s);
 }
 
 // Link Overrides
@@ -714,30 +722,30 @@ article.project-article {
         }
       }
     }
-    .project-circle-link {
-      $circle-size:126.5px;
-      position:absolute;
-      width:$circle-size;
-      height:$circle-size;
-      padding:25px;
-      right:-102.5px;
-      bottom:-46px;
-      font-size:13px;
-      background-color:theme-color('rosybrown');
-      color:theme-color('chocolate');
-      line-height:1.1;
-      z-index:22;
-      @include border-radius(50%);
-      @include transform(rotate(28.7deg));
-      @include transition(transform ease-in-out 1s);
-    }
-    &:hover, &:active, &:focus {
-      .project-circle-link {
-        @include transform(rotate(388.7deg));
-      }
-    }
+    // .project-circle-link {
+    //   $circle-size:126.5px;
+    //   position:absolute;
+    //   width:$circle-size;
+    //   height:$circle-size;
+    //   padding:25px;
+    //   right:-102.5px;
+    //   bottom:-46px;
+    //   font-size:13px;
+    //   background-color:theme-color('rosybrown');
+    //   color:theme-color('chocolate');
+    //   line-height:1.1;
+    //   z-index:22;
+    //   @include border-radius(50%);
+    //   @include transform(rotate(28.7deg));
+    //   @include transition(transform ease-in-out 1s);
+    // }
+    // &:hover, &:active, &:focus {
+    //   .project-circle-link {
+    //     @include transform(rotate(388.7deg));
+    //   }
+    // }
   }
-  &.work {
+  &.work {//IN DEVELOPMENT
     margin-bottom:104px;
     will-change:transform, scroll-position;
     a {
@@ -972,6 +980,7 @@ aside.header-social-media {
     font-size:12px;
     color:theme-color('chocolate');
     @include filter(opacity(0.8));
+    @include transition(filter ease-out 0.3s, color ease-in-out 0.3s);
     &::before {
       content:'';
       position:absolute;
@@ -1172,14 +1181,13 @@ aside.header-left-info {
 // Header Scroll Down
 aside.header-scroll-down {
   position:fixed;
-  right:110px;
+  right:30px;
   bottom:35px;
   overflow-y:hidden;
   > div {
     width:1px;
     height:35px;
-    background-color:theme-color('redish');
-    //overflow:hidden;
+    background-color:rgba(24,16,8,0.3);//redish
     > div {
       position:absolute;
       width:1px;
@@ -1187,7 +1195,7 @@ aside.header-scroll-down {
       top:-35px;
       right:0;
       background-color:theme-color('chocolate');
-      @include animation(scrollDownAnim 5s linear 8s infinite);
+      @include animation(scrollDownAnim 5s linear 6s infinite);
     }
   }
 }
@@ -1205,11 +1213,12 @@ aside.header-scroll-down {
   text-transform:capitalize;
   z-index:101;
   a {
+    @include transition(all 0.3s ease-in-out);
     span {
       display:block;
       padding:5px 5px 2px;
       border:1px solid theme-color('chocolate');
-      @include transition(all ease-out 1s);
+      @include transition(filter ease-out 1s, border-color ease-in-out 0.3s);
       > div {
         display:inline-block;
       }
@@ -1248,14 +1257,14 @@ header.home-hello-header {
       pointer-events:none;
       .hero-left, .hero-right {
         position:absolute;
-        top:30%;//24%
+        top:27%;//30%//24%
         z-index:11;
       }
       .hero-left {
-        left:-63%;
+        left:-69.3%;//-55.5%
       }
       .hero-right {
-        right:-63%;
+        right:-69.3%;//-55.5%
       }
     }
     .area-left, .area-right {
@@ -1322,8 +1331,9 @@ header.home-hello-header {
 // Home Who I Am Section
 section.home-who-i-am-section {
   padding:30px 20px;//To revise mobile
-  span {
+  a {
     position:relative;
+    color:theme-color('rosybrown');
     &::before {
       content:'';
       position:absolute;
@@ -1332,6 +1342,60 @@ section.home-who-i-am-section {
       top:45%;
       left:0;
       background-color:theme-color('rosybrown');
+    }
+    &:hover {
+      @include filter(opacity(0.8));
+      &::before {
+        @include animation(lineThorughBackAnim 0.9s linear forwards);
+      }
+      + span.text-development, + span.text-marketing {
+        @include transition (filter ease-out 3s 0.3s);
+      }
+    }
+    &.link-development {
+      &:hover {
+        + span.text-development {
+          @include filter(opacity(1));
+        }
+      }
+    }
+    &.link-marketing {
+      &:hover {
+        + span.text-marketing {
+          @include filter(opacity(1));
+        }
+      }
+    }
+  }
+  span {
+    display:block;
+    position:absolute;
+    font-size:13px;
+    line-height:1.4;
+    text-transform:none;
+    em {
+      position:relative;
+      &::before {
+        content:'';
+        position:absolute;
+        height:1px;
+        top:55%;
+        background-color:theme-color('chocolate');
+        @include animation(lineThorughLoopAnim 3s linear infinite);
+      }
+    }
+    &.text-development, &.text-marketing {
+      pointer-events:none;
+      @include transition (filter ease-out 0.7s);
+      @include filter(opacity(0));
+    }
+    &.text-development {
+      top:145px;
+      left:-150px;
+    }
+    &.text-marketing {
+      top:297px;
+      right:-150px;
     }
   }
 }
@@ -1528,7 +1592,7 @@ body.page-type-feedback {
 }
 
 // Theme Dark
-body.theme-dark {
+body.theme-dark, body.is-bottom {
   main {
     background-color:theme-color('chocolate');
   }
@@ -1559,129 +1623,98 @@ body.theme-dark {
 // body {
 //   cursor:none;
 // }
-// a {
-//   .post-thumbnail, .video-thumbnail {//&.link, &.link div, &.link span
-//     &:hover {
-//       cursor:none;
-//     }
+// .project-thumbnail {
+//   &:hover {
+//     cursor:none;
 //   }
 // }
-// i.fa {
-//   &.link {
-//     &:hover {
-//       cursor:none;
-//     }
-//   }
-// }
-.cursor {
+div.cursor {
   display:none;
   position:fixed;
-  width:25px;
-  height:25px;
-  top:-12.5px;//-7.5px
-  left:-12.5px;//-7.5px
-  z-index:250000;//10000
+  width:125px;
+  height:125px;
+  top:-62.5px;
+  left:-62.5px;
+  font-size:13px;
+  line-height:1.1;
+  text-align:center;
   pointer-events:none;
-  @include border-radius(50%);
+  z-index:15000;
   //mix-blend-mode:difference;
   will-change:transform;
-  .cursor-link, .cursor-recent-project, .cursor-project, .cursor-footer {
+  @include border-radius(50%);
+  .cursor-header, .cursor-project, .cursor-footer {
     position:absolute;
+    width:125px;
+    height:125px;
+    padding-top:48px;
+    top:0;
+    left:0;
     @include border-radius(50%);
-    @include transition(filter ease-out 0.3s, transform ease-out 0.3s);
-  }
-  .cursor-link {
-    width:25px;//15px
-    height:25px;//15px
-    background-color:theme-color('blue');
-    z-index:11001;
-    @include filter(opacity(0.75));
-  }
-  .cursor-recent-project, .cursor-project, .cursor-footer {
-    width:100px;
-    height:100px;
-    top:-42.5px;
-    left:-42.5px;
-    text-align:center;
-    z-index:11002;
     @include filter(opacity(0));
-    @include transform(rotate(-180deg) scale(0,0));
+    @include transform(scale(0));
+    @include transition(filter ease-in 0.3s, transform ease-in 0.3s);
+    span {
+      display:block;
+      @include filter(opacity(0));
+    }
   }
-  .cursor-recent-project, .cursor-footer {
-    padding-top:42px;
-    font-family:$font-headline;
-    font-weight:400;
-    font-size:12px;
-    background-color:rgba(37,175,206,0.7);//theme-color('blue')
-    color:theme-color('grey-light');//blue
-    text-transform:uppercase;
-    letter-spacing:1px;//2px
-    white-space:nowrap;
+  .cursor-header {//To Create & Define
+    background-color:theme-color('rosybrown');
+    color:theme-color('chocolate');
+  }
+  .cursor-project {//Making Colors Dynamic & Different Per Project?
+    background-color:theme-color('rosybrown');
+    color:theme-color('chocolate');
   }
   .cursor-footer {
-    width:150px;
-    height:150px;
-    padding-top:68px;
-    top:-67.5px;
-    left:-67.5px;
-    background-color:rgba(240,217,194,0.85);//theme-color('blue')
-    color:theme-color('beige');
+    padding-top:56px;
+    background-color:theme-color('redish');
+    color:theme-color('rosybrown');
   }
-  .cursor-project {
-    padding-top:39px;
-    background-color:rgba(235,189,48,0.7);//theme-color('mustard')
-    span {
-      svg {
-        width:24px;
-        height:24px;
-        fill:theme-color('blue');
+  &.hoveredHeader, &.hoveredProject, &.hoveredFooter {
+    .cursor-header, .cursor-project, .cursor-footer {
+      span {
+        @include transition(filter ease-in 0.3s);
       }
     }
   }
-  &.hoveredLink {
-    //mix-blend-mode:none;
-    .cursor-link {
-      @include filter(opacity(0.5));
-      @include transform(scale(3,3));
-    }
-  }
-  &.hoveredRecent, &.hoveredProject, &.hoveredFooter {
-    .cursor-link {
-      @include filter(opacity(0));
-    }
-    .cursor-recent-project, .cursor-project, .cursor-footer {
-      @include transform(rotate(0) scale(1,1));
-    }
-    .cursor-recent-project, .cursor-footer {
-      @include animation(fa-spin 10s linear infinite);
-    }
-  }
-  &.hoveredRecent {
-    .cursor-recent-project {
+  &.hoveredHeader {
+    .cursor-header {
       @include filter(opacity(1));
+      @include transform(scale(1));
+      span {
+        @include filter(opacity(1));
+        @include animation(rotateAnim 10s linear infinite);
+      }
     }
   }
   &.hoveredProject {
     .cursor-project {
       @include filter(opacity(1));
+      @include transform(scale(1));
+      span {
+        @include filter(opacity(1));
+        @include animation(rotateAnim 10s linear infinite);
+      }
     }
   }
   &.hoveredFooter {
     .cursor-footer {
       @include filter(opacity(1));
+      @include transform(scale(1));
+      span {
+        @include filter(opacity(1));
+        @include animation(rotateAnim 10s linear infinite);
+      }
     }
   }
 }
-@media (pointer:coarse) and (hover:none) {
-  .cursor {
+@media (pointer:coarse) and (hover:none) {//For Devices Without A Cursor
+  div.cursor {
     display:none!important;
   }
 }//@media
-// @include media-breakpoint-down(md) {
-//   .cursor {
-//     display:none!important;
-//   }
-// }//@media
 
 //----------------------------------General Loading Animation Styles----------------------------------//
 
@@ -1755,7 +1788,7 @@ body {
       right:0;
       bottom:0;
       left:0;
-      z-index:300000;
+      z-index:20000;
       span {
         max-width:80%;
         font-size:2rem;
