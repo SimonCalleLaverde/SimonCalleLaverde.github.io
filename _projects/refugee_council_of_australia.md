@@ -2,9 +2,9 @@
 name: Refugee Council of Australia
 name_for_thumbnail: Refugee Council<br>of Australia
 thumbnail_image: /uploads/site-image-refugee-council-of-australia.png
-platform: [NationBuilder, Bootstrap 4]
+platforms: [NationBuilder, Bootstrap 4]
 year: 2019
-roles: [Development, Cross Platform]
+roles: [Frontend development, Cross platform setup]
 web:
   domain: refugeecouncilaus-refugeecouncilaus.nationbuilder.com
   image: /uploads/site-web-refugee-council-of-australia.png

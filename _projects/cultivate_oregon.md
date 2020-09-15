@@ -2,9 +2,9 @@
 name: Cultivate Oregon
 name_for_thumbnail: Cultivate<br>Oregon
 thumbnail_image: /uploads/site-image-cultivate-oregon.jpg
-platform: [NationBuilder, Bootstrap 3]
+platforms: [NationBuilder, Bootstrap 3]
 year: 2017
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.cultivateoregon.org
   image: /uploads/site-web-cultivate-oregon.png

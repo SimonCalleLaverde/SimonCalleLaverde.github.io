@@ -1,10 +1,10 @@
 ---
 name: Bogota Bulldogs
-name_for_thumbnail: Bogota Bulldogs
+name_for_thumbnail: Bogota<br>Bulldogs
 thumbnail_image: /uploads/site-image-bogota-bulldogs.jpg
-platform: [Jekyll, Bootstrap 4, Forestry]
+platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2019
-roles: Development
+roles: Frontend & backend development
 web:
   domain: bogota-bulldogs.netlify.com
   image: /uploads/site-web-bogota-bulldogs.png

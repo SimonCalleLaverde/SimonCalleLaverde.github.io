@@ -2,9 +2,9 @@
 name: Healthy Futures
 name_for_thumbnail: Healthy<br>Futures
 thumbnail_image: /uploads/site-image-healthy-futures.jpg
-platform: [NationBuilder, Bootstrap 3]
+platforms: [NationBuilder, Bootstrap 3]
 year: 2016
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.healthyfutures.net.au
   image: /uploads/site-web-healthy-futures.png

@@ -2,9 +2,9 @@
 name: Give A Dam
 name_for_thumbnail: Give A<br>Dam
 thumbnail_image: /uploads/site-image-give-a-dam.jpg
-platform: [NationBuilder, Bootstrap 4]
+platforms: [NationBuilder, Bootstrap 4]
 year: 2019
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.giveadam.org.au
   image: /uploads/site-web-give-a-dam.png

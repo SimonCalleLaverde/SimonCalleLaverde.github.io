@@ -2,9 +2,9 @@
 name: Repower Australia
 name_for_thumbnail: Repower<br>Australia
 thumbnail_image: /uploads/site-image-repower-australia.jpg
-platform: [Jekyll, Slides, Forestry]
+platforms: [Jekyll, Slides, Forestry]
 year: 2018
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.repoweraustralia.org.au
   image: /uploads/site-web-repower-australia.png

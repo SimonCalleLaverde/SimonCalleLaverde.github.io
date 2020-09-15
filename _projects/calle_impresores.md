@@ -2,7 +2,7 @@
 name: Calle Impresores
 name_for_thumbnail: Calle<br>Impresores
 thumbnail_image: /uploads/site-image-calle-impresores.jpg
-platform: [Jekyll, Bootstrap 4, Forestry]
+platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2020
 roles: [UI, UX, Design, Development]
 web:

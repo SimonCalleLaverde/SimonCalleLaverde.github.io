@@ -2,9 +2,9 @@
 name: Conservation Council SA
 name_for_thumbnail: CCSA
 thumbnail_image: /uploads/site-image-conservation-council-sa.png
-platform: [NationBuilder, Aware v2]
+platforms: [NationBuilder, Aware v2]
 year: 2015
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.conservationsa.org.au
   image: /uploads/site-web-conservation-council-sa.png

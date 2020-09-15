@@ -2,9 +2,9 @@
 name: Wentworth for Refugees
 name_for_thumbnail: Wentworth for<br>Refugees
 thumbnail_image: /uploads/site-image-wentworth-for-refugees.jpg
-platform: [NationBuilder, Bootstrap 3]
+platforms: [NationBuilder, Bootstrap 3]
 year: 2018
-roles: Development
+roles: Frontend development
 web:
   domain: www.wentworth4refugees.org.au
   image: /uploads/site-web-wentworth-for-refugees.png

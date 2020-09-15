@@ -2,9 +2,9 @@
 name: Farmers for Climate Action
 name_for_thumbnail: Farmers for<br>Climate Action
 thumbnail_image: /uploads/site-image-farmers-for-climate-action.jpg
-platform: [NationBuilder, Aware]
+platforms: [NationBuilder, Aware]
 year: 2016
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.farmersforclimateaction.org.au
   image: /uploads/site-web-farmers-for-climate-action.png

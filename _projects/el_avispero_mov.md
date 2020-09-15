@@ -2,9 +2,9 @@
 name: El Avispero Mov
 name_for_thumbnail: El Avispero Mov
 thumbnail_image: /uploads/site-image-el-avispero-mov.png
-platform: [NationBuilder, Aware v2]
+platforms: [NationBuilder, Aware v2]
 year: 2016
-roles: Development # [Development, Other]
+roles: Frontend & backend development
 web:
   domain: www.elavisperomov
   image: /uploads/site-web-el-avispero-mov.png

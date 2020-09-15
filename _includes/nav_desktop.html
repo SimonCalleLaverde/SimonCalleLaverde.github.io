@@ -13,7 +13,13 @@
     {% endcomment %}
 
     <li class="nav-item">
-      <a class="link nav-link{% if page.slug == 'all_projects' %} active-link{% endif %}" href="/all_projects">
+      <a class="link nav-link{% if page.slug == 'about' %} active-link{% endif %}" href="/about">
+        <span>About me</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="link nav-link{% if page.slug == 'projects' %} active-link{% endif %}" href="/projects">
         <span>All projects</span>
         
         {% assign sorted_projects = site.projects %}
@@ -26,12 +32,6 @@
         <small>
           {<span>{{ projects_total_count }}</span>}
         </small>
-      </a>
-    </li>
-
-    <li class="nav-item">
-      <a class="link nav-link{% if page.slug == 'about' %} active-link{% endif %}" href="/about">
-        <span>About me</span>
       </a>
     </li>
 

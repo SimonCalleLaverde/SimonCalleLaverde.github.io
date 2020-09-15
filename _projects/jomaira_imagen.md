@@ -2,7 +2,7 @@
 name: Jomaira Imagen
 name_for_thumbnail: Jomaira<br>Imagen
 thumbnail_image: /uploads/site-image-jomaira-imagen.jpg
-platform: [Jekyll, Bootstrap 4, Forestry]
+platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2020
 roles: [UI, UX, Design, Development]
 web:

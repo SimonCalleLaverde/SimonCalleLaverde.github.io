@@ -2,9 +2,9 @@
 name: Child Rights Australia
 name_for_thumbnail: Child Rights<br>Australia
 thumbnail_image: /uploads/site-image-child-rights-australia.jpg
-platform: [NationBuilder, Aware v2]
+platforms: [NationBuilder, Aware v2]
 year: 2017
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.childrightsaustralia.org.au
   image: /uploads/site-web-child-rights-australia.png

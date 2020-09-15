@@ -2,9 +2,9 @@
 name: Repower Alice Springs
 name_for_thumbnail: Repower Alice<br>Springs
 thumbnail_image: /uploads/site-image-repower-alice-springs.png
-platform: [NationBuilder, Bootstrap 4]
+platforms: [NationBuilder, Bootstrap 4]
 year: 2019
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.repoweralicesprings.org.au
   image: /uploads/site-web-repower-alice-springs.png

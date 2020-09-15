@@ -183,15 +183,26 @@
     padding:80px 0;
   }
 
-  // Work Header Section
-  header.work-header-section {
-    min-height:80vh;//100vh
-    padding:130px 0 105px;
+  // Projects Header Section
+  header.projects-header-section {
+    min-height:100vh;
+    padding:100px 0;
   }
 
-  // Work Projects Section
-  section.work-projects-section {
-    padding:80px 0 0;//80px 0
+  // Projects Section
+  section.projects-section {
+    position:relative;
+    padding:157px 0 100px;
+    .page-division-line {
+      display:none;
+      // position:absolute;
+      // width:1px;
+      // top:0;
+      // right:auto;
+      // bottom:0;
+      // left:50%;
+      // z-index:10;
+    }
   }
 
   // Feedback Page

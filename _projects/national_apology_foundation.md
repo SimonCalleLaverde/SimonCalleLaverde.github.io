@@ -2,9 +2,9 @@
 name: National Apology Foundation
 name_for_thumbnail: Nafia
 thumbnail_image: /uploads/site-image-national-apology-foundation.jpg
-platform: [NationBuilder, Aware v2]
+platforms: [NationBuilder, Aware v2]
 year: 2016
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.nafia.org.au
   image: /uploads/site-web-national-apology-foundation.png

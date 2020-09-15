@@ -2,7 +2,7 @@
 name: Freshhold Consulting
 name_for_thumbnail: Freshhold<br>Consulting
 thumbnail_image: /uploads/site-image-freshhold.jpg
-platform: [Dreamweaver, Html Css Php]
+platforms: [Dreamweaver, Html Css Php]
 year: 2015
 roles: [UI, UX, Design, Development]
 web:

@@ -1,0 +1,64 @@
+<article class="project-article projects {% if projects_count_desktop == 1 %}article-left mr-5{% else %}article-right ml-5{% endif %} {% if forloop.last %}forloop-last {% endif %}" id="scroll_to_{{ project.order }}">
+  <a href="#" data-toggle="modal" data-target="#projectModal_{{ project.slug }}"><!--Temporary opening in Modal | Will show in individual "Case Studies" in internal pages, for newest projects-->
+    <figure>
+      <style type="text/css">
+        #projects_project_thumbnail_{{ project.slug }} {
+          background:url('{{ project.thumbnail_image | relative_url }}') no-repeat center center scroll;
+          -webkit-background-size:cover;
+          -moz-background-size:cover;
+          -o-background-size:cover;
+          background-size:cover;
+        }
+      </style>
+      <div class="project-thumbnail">
+        <div class="d-flex flex-column align-items-stretch justify-content-end scale-element bg-image" id="projects_project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.name }}" loading="lazy">
+          <div class="project-title-fake text-center p-4" aria-hidden="true"><!--Fake Title For Caption Background Growing, To Fix 1px Gap Issue With Real Title Outside Thumbnail, That Forms When Image Scales-->
+            <h3 class="text-uppercase mb-0"><!--style="color:transparent;"-->
+              {{ project.name_for_thumbnail }}
+            </h3>
+
+            <div class="project-roles"><!--style="color:transparent;"-->
+              {% for item in project.roles %}
+                {{ item }}{% unless forloop.last %} &middot;{% endunless %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <figcaption class="d-flex flex-column align-items-stretch justify-content-end">
+        <div class="project-title text-center p-4">
+          <h3 class="text-chocolate text-uppercase mb-0">
+            {{ project.name_for_thumbnail }}
+          </h3>
+
+          <div class="project-roles text-chocolate">
+            {% for item in project.roles %}
+              {{ item }}{% unless forloop.last %} &middot;{% endunless %}
+            {% endfor %}
+          </div>
+        </div>
+        
+        <div class="project-info font-ultra-light text-rosybrown">
+          <div class="project-data">
+            {{ project.category }}
+          </div>
+
+          <div class="project-platforms">
+            <span class="font-light" style="margin-right:15px;">
+              Created with
+            </span>
+
+            {% for platform in project.platforms %}
+              {{ platform }}{% unless forloop.last %} &middot;{% endunless %}
+            {% endfor %}
+          </div>
+        </div>
+          
+        <time class="font-light text-rosybrown">
+          {{ project.year }}
+        </time>
+      </figcaption>
+    </figure>
+  </a>
+</article>

@@ -2,9 +2,9 @@
 name: Injured Workers Support Network
 name_for_thumbnail: Injured Workers<br>Support Network
 thumbnail_image: /uploads/site-image-injured-workers-support-network-victoria.jpg
-platform: [NationBuilder, Bootstrap 4]
+platforms: [NationBuilder, Bootstrap 4]
 year: 2019
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.iwsnvic.org.au
   image: /uploads/site-web-injured-workers-support-network-victoria.png

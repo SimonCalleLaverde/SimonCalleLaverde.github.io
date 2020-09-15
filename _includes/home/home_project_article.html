@@ -20,7 +20,7 @@
               {{ project.name_for_thumbnail }}
             </span>
 
-            <span class="title-stroke">
+            <span class="title-stroke" aria-hidden="true">
               {{ project.name_for_thumbnail }}
             </span>
           </h3>
@@ -52,7 +52,7 @@
               Created with
             </span>
 
-            {% for platform in project.platform %}
+            {% for platform in project.platforms %}
               {{ platform }}{% unless forloop.last %} &middot;{% endunless %}
             {% endfor %}
           </div>
@@ -60,7 +60,4 @@
       </figcaption>
     </figure>
   </a>
-
-  <!--<a class="project-circle-link d-flex flex-row justify-content-center align-items-center text-center" href="#" data-toggle="modal" data-target="#projectModal_{{ project.slug }}" style="background-color:{{ project.buttons_background }}; color:{{ project.buttons_color }};">View the project
-  </a>-->
 </article>

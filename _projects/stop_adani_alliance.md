@@ -2,9 +2,9 @@
 name: Stop Adani Alliance
 name_for_thumbnail: Stop Adani<br>Alliance
 thumbnail_image: /uploads/site-image-stop-adani-alliance.jpg
-platform: [Jekyll, Slides, Forestry]
+platforms: [Jekyll, Slides, Forestry]
 year: 2017
-roles: Development # [Development, Other]
+roles: Frontend & backend development
 web:
   domain: www.stopadanialliance.com
   image: /uploads/site-web-stop-adani-alliance.png

@@ -1,10 +1,10 @@
 ---
 name: Fitzroy River Statement
-name_for_thumbnail: Fitzroy<br>River<br>Statement
+name_for_thumbnail: Fitzroy River<br>Statement
 thumbnail_image: /uploads/site-image-fitzroy-river-statement.jpg
-platform: [NationBuilder, Bootstrap 3]
+platforms: [NationBuilder, Bootstrap 3]
 year: 2017
-roles: [Development, Design Improvisation]
+roles: [Frontend development, Design improvisation to match client's statement site]
 web:
   domain: www.fitzroystatement.org
   image: /uploads/site-web-fitzroy-river-statement.png

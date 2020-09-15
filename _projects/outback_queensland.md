@@ -2,9 +2,9 @@
 name: Outback Queensland
 name_for_thumbnail: Outback<br>Queensland
 thumbnail_image: /uploads/site-image-outback-queensland.jpg
-platform: [NationBuilder, Aware v2]
+platforms: [NationBuilder, Aware v2]
 year: 2017
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.outbackqueensland.org.au
   image: /uploads/site-web-outback-queensland.png

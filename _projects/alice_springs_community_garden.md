@@ -2,9 +2,9 @@
 name: Alice Springs Community Garden
 name_for_thumbnail: ASCG
 thumbnail_image: /uploads/site-image-alice-springs-community-garden.jpg
-platform: [NationBuilder, Aware v2]
+platforms: [NationBuilder, Aware v2]
 year: 2017
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.alicecommunitygarden.org.au
   image: /uploads/site-web-alice-springs-community-garden.png

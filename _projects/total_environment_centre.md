@@ -2,9 +2,9 @@
 name: Total Environment Centre
 name_for_thumbnail: TEC
 thumbnail_image: /uploads/site-image-total-environment-centre.png
-platform: [NationBuilder, Aware v2]
+platforms: [NationBuilder, Aware v2]
 year: 2016
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.tec.org.au
   image: /uploads/site-web-total-environment-centre.png

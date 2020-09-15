@@ -45,7 +45,7 @@
     overflow:hidden;
   }
 }
-@include media-breakpoint-up(lg) {//only
+@include media-breakpoint-only(lg) {//up
   html {
     overflow:hidden;
   }
@@ -243,8 +243,9 @@ figure {
   outline:none!important;
 }
 .scale-element {
+  will-change:transform;
   //@include box-shadow(0 2px 7px rgba(0,0,0,0.1)!important);//Starting With Slight Shadow (Optional)
-  @include transition(all ease-out 0.5s);
+  @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
   &:hover {
     @include transform(scale(1.03));
     //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
@@ -622,7 +623,7 @@ article.project-article {
                 position:absolute;
                 bottom:0;
                 left:0;
-                color:theme-color('rosybrown');//rgba(255,232,228,0.5)
+                color:theme-color('rosybrown');
                 //-webkit-text-stroke:1px theme-color('rosybrown');
                 z-index:21;
                 @include transition(all cubic-bezier(0.455,0.03,0.515,0.955) 1s);
@@ -722,81 +723,83 @@ article.project-article {
         }
       }
     }
-    // .project-circle-link {
-    //   $circle-size:126.5px;
-    //   position:absolute;
-    //   width:$circle-size;
-    //   height:$circle-size;
-    //   padding:25px;
-    //   right:-102.5px;
-    //   bottom:-46px;
-    //   font-size:13px;
-    //   background-color:theme-color('rosybrown');
-    //   color:theme-color('chocolate');
-    //   line-height:1.1;
-    //   z-index:22;
-    //   @include border-radius(50%);
-    //   @include transform(rotate(28.7deg));
-    //   @include transition(transform ease-in-out 1s);
-    // }
-    // &:hover, &:active, &:focus {
-    //   .project-circle-link {
-    //     @include transform(rotate(388.7deg));
-    //   }
-    // }
   }
-  &.work {//IN DEVELOPMENT
-    margin-bottom:104px;
-    will-change:transform, scroll-position;
+  &.projects {
+    position:relative;
+    margin-bottom:200px;
+    will-change:scroll-position;
     a {
       figure {
-        .project-thumbnail {
-          position:relative;
-          height:330px;
-          figcaption {
-            .project-title, .project-roles {
-              background-color:rgba(254,254,254,0.7);//theme-color('grey-light')
+        position:relative;
+        height:320px;
+        .project-thumbnail, .project-thumbnail > div {
+          position:absolute;
+          top:0;
+          right:0;
+          bottom:0;
+          left:0;
+        }
+        .project-thumbnail, figcaption {
+          .project-title-fake, .project-title {
+            h1, h2, h3, h4, h5, h6 {
+              font-size:30px;
+              line-height:1.2;
             }
             .project-roles {
-              p {
-                display:inline-block;
-                font-size:13.5px;//0.7rem
-                //letter-spacing:2px;
-                span {
-                  margin-right:1px;
-                }
-              }
+              font-size:13px;
             }
+          }
+          .project-title-fake {//To Fix A 1px Gap That Forms When Scaling Image
+            background-color:rgba(255,255,255,0.7);
+            h1, h2, h3, h4, h5, h6, .project-roles {
+              color:transparent;
+            }
+          }
+          .project-title {
+            //background-color:rgba(255,255,255,0.7);
           }
         }
-        .project-data {
-          position:absolute;
-          width:20px;//30px
-          top:15px;
-          right:0;
-          writing-mode:vertical-rl;
-          text-orientation:mixed;
+        .project-thumbnail {
           overflow:hidden;
-          pointer-events:none;
-          @include transform(translateX(30px));//translateY(-49%)
-          //@include transform(rotate(90deg) translateY(-26px));
-          div.project-year, div.project-info {
-            p {
-              font-size:13.5px;//0.8rem
-              @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s);
+        }
+        figcaption {
+          position:absolute;
+          top:0;
+          right:0;
+          bottom:0;
+          left:0;
+          .project-info {
+            position:absolute;
+            width:calc(100% - 1px);
+            height:20px;
+            bottom:-30px;
+            left:1px;
+            font-size:13px;
+            overflow:hidden;
+            pointer-events:none;
+            > .project-data, > .project-platforms {
+              @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 1s);
             }
-          }
-          div.project-year {
-            p {
+            > .project-data {
               @include filter(opacity(1));
-              @include transform(translateX(0));
+              @include transform(translateY(0));
+            }
+            > .project-platforms {
+              position:absolute;
+              top:0;
+              left:0;
+              @include filter(opacity(0));
+              @include transform(translateY(20px));
             }
           }
-          div.project-info {
-            p {
-              @include filter(opacity(0));
-              @include transform(translateX(-20px));
-            }
+          time {
+            position:absolute;
+            top:25px;
+            right:-9.5px;
+            font-size:13px;
+            writing-mode:vertical-rl;
+            text-orientation:mixed;
+            pointer-events:none;
           }
         }
       }
@@ -804,20 +807,15 @@ article.project-article {
         figure {
           .project-thumbnail {
           }
-          .project-data {
-            div.project-year, div.project-info {
-              p {
-                @include transform(translateX(20px));
-              }
-            }
-            div.project-year {
-              p {
+          figcaption {
+            .project-info {
+              > .project-data {
                 @include filter(opacity(0));
+                @include transform(translateY(-20px));
               }
-            }
-            div.project-info {
-              p {
+              > .project-platforms {
                 @include filter(opacity(1));
+                @include transform(translateY(0));
               }
             }
           }
@@ -919,7 +917,9 @@ article.tool-card {
 // Modal
 .modal {
   .modal-content {
-    @include border-radius(0);
+    background-color:rgba(255,255,255,0.5)!important;//rgba(184,156,146,0.5)!important//rgba(199,197,195,0.5)!important
+    backdrop-filter:blur(5px);//@include
+    @include border-radius(0.3rem);
     .modal-header, .modal-footer {
       border:none;
     }
@@ -1530,13 +1530,30 @@ section.about-lets-work-section {
   }
 }
 
-// Work Header Section
-header.work-header-section {
+// Projects Header Section
+header.projects-header-section {
+  position:relative;
   padding:30px 20px;//To revise mobile
+  img.wine-bottle-illustration {
+    position:absolute;
+    width:37%;
+    margin:auto;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+  }
+  .header-timeline {
+    display:inline-block;
+    padding:0 3px 1px;
+    font-size:23px;
+    background-color:theme-color('beige');
+    line-height:1.2;
+  }
 }
 
-// Work Projects Section
-section.work-projects-section {
+// Projects Section
+section.projects-section {
   padding:30px 20px;//To revise mobile
 }
 

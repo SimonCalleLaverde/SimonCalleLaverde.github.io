@@ -2,9 +2,9 @@
 name: Frack Free Future
 name_for_thumbnail: Frack Free<br>Future
 thumbnail_image: /uploads/site-image-frack-free-future.jpg
-platform: [NationBuilder, Aware]
+platforms: [NationBuilder, Aware]
 year: 2016
-roles: Development
+roles: Frontend & backend development
 web:
   domain: www.frackfreefuture.org.au
   image: /uploads/site-web-frack-free-future.png
