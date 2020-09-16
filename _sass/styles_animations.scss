@@ -69,22 +69,17 @@
 }//@keyframes
 
 @keyframes lineThorughLoopAnim {
-  0% {
+  0%, 80% {
     width:0;
     right:auto;
     left:0;
   }
-  70% {
-    width:0;
-    right:auto;
-    left:0;
-  }
-  80% {
+  88% {
     width:100%;
     right:auto;
     left:0;
   }
-  90% {
+  92% {
     width:100%;
     right:0;
     left:auto;

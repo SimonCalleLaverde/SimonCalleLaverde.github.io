@@ -197,7 +197,7 @@
   // Projects Section
   section.projects-section {
     position:relative;
-    padding:157px 0 100px;
+    padding:245px 0 100px;//Should Be, But "rellax" Changes It: 157px 0 100px
     .page-division-line {
       display:none;
       // position:absolute;
@@ -212,7 +212,7 @@
 
   // Feedback Page
   section.feedback-page {
-    padding:70px 0 65px;
+    padding:150px 0 100px;
   }
 
   // Footer

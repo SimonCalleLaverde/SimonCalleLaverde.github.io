@@ -25,8 +25,8 @@ $(function() {
           const { previous, current, transformPrefix } = globalState;
           const { context } = sceneState.cache;
           const delta = current - previous;
-          const rotationZ = delta / 48;//24//32//2
-          const skew = delta / 60;//30//40//2.5
+          const rotationZ = delta / 32;//24//48//2
+          const skew = delta / 40;//30//60//2.5
           context.style[transformPrefix] = `translate3d(0, ${transform}px, 0) rotateZ(${rotationZ}deg) skew(${skew}deg)`;
         },
       },
@@ -135,9 +135,9 @@ $(function() {
   $(window).scroll(function() {
     var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollFromBottom >= 500) {
+    if (scrollFromBottom >= 435) {
       body.removeClass("is-bottom").addClass("is-top");
-    } else if (scrollFromBottom <= 500) {
+    } else if (scrollFromBottom <= 435) {
       body.removeClass("is-top").addClass("is-bottom");
     }
   });

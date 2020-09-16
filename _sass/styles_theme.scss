@@ -640,7 +640,7 @@ article.project-article {
           }
           .project-details {
             width:calc(100% - 1px);
-            bottom:-16px;
+            bottom:-15px;
             left:1px;
             text-align:left;
             overflow:hidden;
@@ -660,7 +660,7 @@ article.project-article {
             width:20px;
             height:calc(100% - 1px);
             top:1px;
-            right:-31px;
+            right:-30px;
             writing-mode:vertical-rl;
             text-orientation:mixed;
             overflow:hidden;
@@ -730,46 +730,18 @@ article.project-article {
   &.projects {
     position:relative;
     margin-bottom:200px;
-    will-change:scroll-position;
+    //will-change:scroll-position;//This literally ruins the scrolling flow
     a {
       figure {
         position:relative;
         height:320px;
-        .project-thumbnail, .project-thumbnail > div {
+        .project-thumbnail {
           position:absolute;
           top:0;
           right:0;
           bottom:0;
           left:0;
-        }
-        .project-thumbnail, figcaption {
-          .project-title-fake, .project-title {
-            h1, h2, h3, h4, h5, h6 {
-              font-size:30px;
-              line-height:1.2;
-            }
-            .project-roles {
-              font-size:13px;
-            }
-          }
-          .project-title-fake {//To Fix A 1px Gap That Forms When Scaling Image
-            background-color:rgba(255,255,255,0.7);
-            h1, h2, h3, h4, h5, h6, .project-roles {
-              color:transparent;
-            }
-          }
-          .project-title {
-            //background-color:rgba(255,255,255,0.7);
-          }
-        }
-        .project-thumbnail {
           overflow:hidden;
-          > div {
-            pointer-events:none;
-            //will-change:transform;
-            @include transform(scale(1));
-            @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
-          }
         }
         figcaption {
           position:absolute;
@@ -777,6 +749,16 @@ article.project-article {
           right:0;
           bottom:0;
           left:0;
+          .project-title {
+            background-color:rgba(255,255,255,0.7);
+            h1, h2, h3, h4, h5, h6 {
+              font-size:30px;
+              line-height:1.2;
+            }
+            > .project-roles {
+              font-size:13px;
+            }
+          }
           .project-info {
             position:absolute;
             width:calc(100% - 1px);
@@ -815,9 +797,6 @@ article.project-article {
       &:hover, &:active, &:focus {
         figure {
           .project-thumbnail {
-            > div {
-              @include transform(scale(1.03));
-            }
           }
           figcaption {
             .project-info {
@@ -1377,7 +1356,7 @@ section.home-who-i-am-section {
         @include animation(lineThorughBackAnim 0.9s linear forwards);
       }
       + span.text-development, + span.text-marketing {
-        @include transition (filter ease-out 3s 0.3s);
+        @include transition (filter ease-out 1s 0.3s);
       }
     }
     &.link-development {
@@ -1398,8 +1377,9 @@ section.home-who-i-am-section {
   span {
     display:block;
     position:absolute;
+    width:90px;//120px
     font-size:13px;
-    line-height:1.4;
+    line-height:1.7;
     text-transform:none;
     em {
       position:relative;
@@ -1409,7 +1389,7 @@ section.home-who-i-am-section {
         height:1px;
         top:55%;
         background-color:theme-color('chocolate');
-        @include animation(lineThorughLoopAnim 3s linear infinite);
+        @include animation(lineThorughLoopAnim 5s linear infinite);
       }
     }
     &.text-development, &.text-marketing {
@@ -1418,12 +1398,12 @@ section.home-who-i-am-section {
       @include filter(opacity(0));
     }
     &.text-development {
-      top:145px;
-      left:-150px;
+      top:141px;
+      left:-180px;
     }
     &.text-marketing {
-      top:297px;
-      right:-150px;
+      top:280px;
+      right:-180px;
     }
   }
 }
@@ -1633,7 +1613,7 @@ body.page-type-feedback {
 }
 
 // Theme Dark
-body.theme-dark, body.is-bottom {
+body.theme-dark, body.is-bottom, body.page-type-feedback {
   main {
     background-color:theme-color('chocolate');
   }

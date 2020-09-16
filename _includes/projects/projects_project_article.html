@@ -10,20 +10,7 @@
           background-size:cover;
         }
       </style>
-      <div class="project-thumbnail">
-        <div class="d-flex flex-column align-items-stretch justify-content-end bg-image" id="projects_project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.name }}" loading="lazy"><!--scale-element-->
-          <div class="project-title-fake text-center p-4" aria-hidden="true"><!--Fake Title For Caption Background Growing, To Fix 1px Gap Issue With Real Title Outside Thumbnail, That Forms When Image Scales-->
-            <h3 class="text-uppercase mb-0"><!--style="color:transparent;"-->
-              {{ project.name_for_thumbnail }}
-            </h3>
-
-            <div class="project-roles"><!--style="color:transparent;"-->
-              {% for item in project.roles %}
-                {{ item }}{% unless forloop.last %} &middot;{% endunless %}
-              {% endfor %}
-            </div>
-          </div>
-        </div>
+      <div class="project-thumbnail bg-image" id="projects_project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.name }}" loading="lazy"><!--scale-element-->
       </div>
 
       <figcaption class="d-flex flex-column align-items-stretch justify-content-end">

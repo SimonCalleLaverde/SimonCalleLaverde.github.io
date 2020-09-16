@@ -17,17 +17,13 @@ thumbnail_image: ""
 Hello, I’m Simón
 <br>Calle Laverde,
 <br>A <a href="#home_business_projects_section" class="link-development smoothScroll"><i>web developer</i></a>
-<span class="text-development font-ultra-light text-chocolate text-left" aria-hidden="true">
-	Scroll down to see
-	<br>my featured
-	<br>projects.
+<span class="text-development font-ultra-light text-chocolate" aria-hidden="true">
+	Scroll down to see my featured projects.
 </span>
 <br>with a background
 <br>in <a href="/about" class="link-marketing"><i>marketing</i></a>:
-<span class="text-marketing font-ultra-light text-chocolate text-right" aria-hidden="true">
-	Read my <em class="font-ultra-light-italic">about</em>
-	<br>page if you want to
-	<br>know a bit more from me.
+<span class="text-marketing font-ultra-light text-chocolate" aria-hidden="true">
+	Read my <em class="font-ultra-light-italic">about</em> page if you want to know some more of me.
 </span>
 <br>advertisement,
 <br>branding,
