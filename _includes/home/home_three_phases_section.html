@@ -1,0 +1,35 @@
+<section class="home-three-phases-section clearfix" id="home_three_phases_section" data-scene="rotateZ">
+  <div class="container">
+
+    {% assign sorted_phases = site.phases | sort:"order" %}<!--| reverse-->
+    {% assign phases_count = 0 %}
+
+    {% for phase in sorted_phases %}
+      {% assign phases_count = phases_count | plus:1 %}
+
+      {% if phases_count == 1 %}
+      <div class="row">
+      {% endif %}
+        <div class="col-md-4">
+
+          <article class="three-phases-article text-rosybrown text-center">
+            <span class="d-inline-flex flex-row justify-content-center align-items-center bg-rosybrown p-4">
+              <img src="{{ phase.image_logo }}">
+            </span>
+
+            <div class="px-4more">
+              <h4 class="text-medium text-rosybrown mt-4more mb-4 pt-1">{{ phase.title }}</h4>
+
+              {{ phase.content }}
+            </div>
+          </article>
+
+        </div>
+      {% if phases_count == 3 or forloop.last %}
+      </div>
+      {% assign phases_count = 0 %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</section>

@@ -66,6 +66,9 @@ collections:
   projects:
     title: Portfolio
     output: true
+  phases:
+    title: Three Phases
+    output: true
   skills:
     title: Skills Set
     output: true

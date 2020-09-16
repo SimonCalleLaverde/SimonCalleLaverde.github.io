@@ -37,14 +37,14 @@ $(function() {
   r.init();
 });
 
-// // Init Luxy
-// $(function() {
-//   luxy.init({
-//     wrapper: '#luxy',
-//     targets: '.luxy-el',
-//     wrapperSpeed: 0.1//Default 0.08
-//   });
-// });
+// Init Luxy
+$(function() {
+  luxy.init({
+    wrapper: '#luxy',
+    targets: '.luxy-el',
+    wrapperSpeed: 0.1//Default 0.08
+  });
+});
 
 // Init Fastclick [Removing Touch Delay On Mobile]
 if ('addEventListener' in document) {//Github
@@ -135,9 +135,9 @@ $(function() {
   $(window).scroll(function() {
     var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollFromBottom >= 300) {
+    if (scrollFromBottom >= 500) {
       body.removeClass("is-bottom").addClass("is-top");
-    } else if (scrollFromBottom <= 300) {
+    } else if (scrollFromBottom <= 500) {
       body.removeClass("is-top").addClass("is-bottom");
     }
   });
@@ -221,13 +221,6 @@ $(function() {
   });
 });
 
-
-
-
-
-
-
-
 //---------------------------------CURSOR SCRIPTS---------------------------------//
 
 // POSITIONING WITH GSAP AS PER (https://greensock.com/forums/topic/19789-follow-by-mouse/)
@@ -298,14 +291,6 @@ $(document).mouseenter(function(e) {
   const cursor = $('.cursor');
   cursor.show()
 });
-
-
-
-
-
-
-
-
 
 //---------------------------------FIRST GSAP ATTEMPTS---------------------------------//
 
