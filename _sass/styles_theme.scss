@@ -45,7 +45,7 @@
     overflow:hidden;
   }
 }
-@include media-breakpoint-up(lg) {//only
+@include media-breakpoint-only(lg) {//up
   html {
     overflow:hidden;
   }
@@ -1393,7 +1393,7 @@ section.home-who-i-am-section {
   span {
     display:block;
     position:absolute;
-    width:90px;//120px
+    width:220px;//90px
     font-size:13px;
     line-height:1.7;
     text-transform:none;
@@ -1414,12 +1414,12 @@ section.home-who-i-am-section {
       @include filter(opacity(0));
     }
     &.text-development {
-      top:141px;
-      left:-180px;
+      top:100px;
+      left:-270px;
     }
     &.text-marketing {
-      top:280px;
-      right:-180px;
+      top:160px;
+      right:-270px;
     }
   }
 }
