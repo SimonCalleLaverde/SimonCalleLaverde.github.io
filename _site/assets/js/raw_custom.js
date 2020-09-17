@@ -162,7 +162,7 @@ $(function() {
 $(function() {
   $('.smoothScroll').click(function(event) {
     event.preventDefault();
-    var target_offset = $(this.hash).offset() ? $(this.hash).offset().top: 10;//0
+    var target_offset = $(this.hash).offset() ? $(this.hash).offset().top: 0;
     var customoffset = 0;//49
     $('html, body').animate({scrollTop:target_offset - customoffset}, 1200);
   });
