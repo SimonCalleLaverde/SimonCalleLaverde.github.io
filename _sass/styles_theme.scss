@@ -626,6 +626,7 @@ article.project-article {
         }
         .project-thumbnail {
           z-index:20;
+          //pointer-events:none;
         }
         figcaption {
           font-size:13px;
@@ -1566,9 +1567,57 @@ section.projects-section {
   padding:30px 20px;//To revise mobile
 }
 
+// Project Header
+section.project-header {
+  padding:30px 20px;//To revise mobile
+  span.page-order {
+    position:absolute;
+    top:-70px;
+    left:0;
+    font-size:22px;
+  }
+  .page-title {
+    white-space:normal;
+  }
+  .page-client, .page-roles, .page-year {
+    font-size:13px;
+    span {
+      display:block;
+      font-size:11px;
+    }
+  }
+  .page-content {
+    font-size:20px;
+  }
+  .page-image-wrapper {
+    position:absolute;
+    height:100vh;
+    top:0;
+    right:0;
+    bottom:auto;
+    left:0;
+    pointer-events:none;
+    .container {
+      .row {
+        > div {
+          height:100vh;
+          .page-project-image {
+            width:100%;
+            height:350px;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Project Page
 section.project-page {
   padding:30px 20px;//To revise mobile
+  .page-content-two {
+    margin-top:3px;
+    font-size:13px;
+  }
 }
 
 // Feedback Page
@@ -1629,7 +1678,7 @@ body.page-type-feedback {
 }
 
 // Theme Dark
-body.theme-dark, body.is-bottom, body.page-type-feedback, body.page-type-case-study {
+body.theme-dark, body.is-bottom, body.page-type-feedback, body.page-type-case-study-dark {
   main {
     background-color:theme-color('chocolate');
   }

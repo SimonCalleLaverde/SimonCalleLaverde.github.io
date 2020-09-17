@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Freshhold Consulting
 name_for_thumbnail: Freshhold<br>Consulting
 thumbnail_image: /uploads/site-image-freshhold.jpg
@@ -6,11 +7,12 @@ platforms: [Dreamweaver, Html Css Php]
 year: 2015
 roles: [UI, UX, Design, Development]
 web:
-  domain: This concept site is no longer live
-  image: /uploads/site-web-freshhold-1.png
-  image_2: /uploads/site-web-freshhold-2.png
-  image_3: /uploads/site-web-freshhold-3.png
-  url: ""
+  domain_pretty: This concept site is no longer live
+  launch_url: ""
+  images:
+    - /uploads/site-web-freshhold-1.png
+    - /uploads/site-web-freshhold-2.png
+    - /uploads/site-web-freshhold-3.png
 type: Concept Website
 category: Concept Presentation Site
 tags: [Presentation Website]

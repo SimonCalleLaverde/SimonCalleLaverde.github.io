@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Seed Your Future
 name_for_thumbnail: Seed Your<br>Future
 thumbnail_image: /uploads/site-image-seed-your-future.jpg
@@ -6,9 +7,10 @@ platforms: [NationBuilder, Bootstrap 3]
 year: 2018
 roles: Frontend & backend development
 web:
-  domain: www.seedyourfuture.org
-  image: /uploads/site-web-seed-your-future.png
-  url: https://www.seedyourfuture.org/
+  domain_pretty: www.seedyourfuture.org
+  launch_url: https://www.seedyourfuture.org/
+  images:
+    - /uploads/site-web-seed-your-future.png
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform, Campaign Featured]

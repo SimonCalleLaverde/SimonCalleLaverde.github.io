@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Refugee Council of Australia
 name_for_thumbnail: Refugee Council<br>of Australia
 thumbnail_image: /uploads/site-image-refugee-council-of-australia.png
@@ -6,9 +7,10 @@ platforms: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: [Frontend development, Cross platform setup]
 web:
-  domain: refugeecouncilaus-refugeecouncilaus.nationbuilder.com
-  image: /uploads/site-web-refugee-council-of-australia.png
-  url: https://refugeecouncilaus-refugeecouncilaus.nationbuilder.com/
+  domain_pretty: refugeecouncilaus-refugeecouncilaus.nationbuilder.com
+  launch_url: https://refugeecouncilaus-refugeecouncilaus.nationbuilder.com/
+  images:
+    - /uploads/site-web-refugee-council-of-australia.png
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform]

@@ -1,14 +1,12 @@
-<!--IN DEVELOPMENT-->
-
 {% assign posts_count = 0 %}
 {% assign sorted_projects = site.projects | sort:"order" %}
 
 {% for project in sorted_projects %}
   <div class="project-modal modal fade text-center" id="projectModal_{{ project.slug }}" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"><!--aria-hidden="true"-->
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-lg" role="document"><!--modal-xl-->
       <div class="modal-content bg-white">
         <div class="modal-header pt-2 pt-md-3 pb-0 px-4">
-          <h3 class="modal-title text-chocolate text-uppercase sr-only" id="projectModalLabel">{{ project.headline | default:project.title }}</h3>
+          <h4 class="modal-title text-big text-chocolate text-uppercase sr-only" id="projectModalLabel">{{ project.headline | default:project.title }}</h4>
           
           <button type="button" class="close text-chocolate" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -16,7 +14,7 @@
         </div>
 
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
-          <h4 class="text-chocolate text-uppercase mb-4">{{ project.name }}</h4>
+          <h4 class="text-big text-chocolate text-uppercase mb-4">{{ project.name }}</h4>
 
           <!-- if project.content.size > 0 -->
             <!--Desktop-->
@@ -30,31 +28,15 @@
             </div>
           <!-- endif -->
 
-          <div class="border mt-5less">
-            <img src="{{ project.web.image }}" alt="{{ project.name }} Image">
-          </div>
-          
-          {% if project.web.image_2.size > 0 %}
-            <div class="border mt-5">
-              <img src="{{ project.web.image_2 }}" alt="{{ project.name }} Image 2">
+          {% for image in project.web.images %}
+            <div class="border mt-5less">
+              <img src="{{ image }}" alt="{{ page.name }} Website Image Screenshot {{ forloop.index }}">
             </div>
-          {% endif %}
-          
-          {% if project.web.image_3.size > 0 %}
-            <div class="border mt-5">
-              <img src="{{ project.web.image_3 }}" alt="{{ project.name }} Image 3">
-            </div>
-          {% endif %}
-
-          {% if project.web.image_4.size > 0 %}
-            <div class="border mt-5">
-              <img src="{{ project.web.image_4 }}" alt="{{ project.name }} Image 4">
-            </div>
-          {% endif %}
+          {% endfor %}
 
           <div class="mt-5less">
-            <a class="text-purple-dark" href="{{ project.web.url }}" target="_blank">
-              <h4 class="font-paragraph">{{ project.web.domain }}</h4>
+            <a class="text-chocolate" href="{{ project.web.launch_url }}" target="_blank">
+              <h5 class="font-paragraph">{{ project.web.domain_pretty }}</h5>
             </a>
           </div>
         </div>

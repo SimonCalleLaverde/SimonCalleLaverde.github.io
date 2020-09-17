@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Bogota Bulldogs
 name_for_thumbnail: Bogota<br>Bulldogs
 thumbnail_image: /uploads/site-image-bogota-bulldogs.jpg
@@ -6,9 +7,10 @@ platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2019
 roles: Frontend & backend development
 web:
-  domain: bogota-bulldogs.netlify.com
-  image: /uploads/site-web-bogota-bulldogs.png
-  url: https://bogota-bulldogs.netlify.com/
+  domain_pretty: bogota-bulldogs.netlify.com
+  launch_url: https://bogota-bulldogs.netlify.com/
+  images:
+    - /uploads/site-web-bogota-bulldogs.png
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform]

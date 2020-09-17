@@ -1,4 +1,5 @@
 ---
+layout: project
 name: National Apology Foundation
 name_for_thumbnail: Nafia
 thumbnail_image: /uploads/site-image-national-apology-foundation.jpg
@@ -6,9 +7,10 @@ platforms: [NationBuilder, Aware v2]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain: www.nafia.org.au
-  image: /uploads/site-web-national-apology-foundation.png
-  url: https://www.nafia.org.au/
+  domain_pretty: www.nafia.org.au
+  launch_url: https://www.nafia.org.au/
+  images:
+    - /uploads/site-web-national-apology-foundation.png
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform]

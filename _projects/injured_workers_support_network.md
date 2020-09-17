@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Injured Workers Support Network
 name_for_thumbnail: Injured Workers<br>Support Network
 thumbnail_image: /uploads/site-image-injured-workers-support-network-victoria.jpg
@@ -6,9 +7,10 @@ platforms: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: Frontend & backend development
 web:
-  domain: www.iwsnvic.org.au
-  image: /uploads/site-web-injured-workers-support-network-victoria.png
-  url: https://www.iwsnvic.org.au/
+  domain_pretty: www.iwsnvic.org.au
+  launch_url: https://www.iwsnvic.org.au/
+  images:
+    - /uploads/site-web-injured-workers-support-network-victoria.png
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform]

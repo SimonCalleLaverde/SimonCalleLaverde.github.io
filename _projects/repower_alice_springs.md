@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Repower Alice Springs
 name_for_thumbnail: Repower Alice<br>Springs
 thumbnail_image: /uploads/site-image-repower-alice-springs.png
@@ -6,9 +7,10 @@ platforms: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: Frontend & backend development
 web:
-  domain: www.repoweralicesprings.org.au
-  image: /uploads/site-web-repower-alice-springs.png
-  url: https://www.repoweralicesprings.org.au/
+  domain_pretty: www.repoweralicesprings.org.au
+  launch_url: https://www.repoweralicesprings.org.au/
+  images:
+    - /uploads/site-web-repower-alice-springs.png
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform]

@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Give A Dam
 name_for_thumbnail: Give A<br>Dam
 thumbnail_image: /uploads/site-image-give-a-dam.jpg
@@ -6,9 +7,10 @@ platforms: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: Frontend & backend development
 web:
-  domain: www.giveadam.org.au
-  image: /uploads/site-web-give-a-dam.png
-  url: https://www.giveadam.org.au/
+  domain_pretty: www.giveadam.org.au
+  launch_url: https://www.giveadam.org.au/
+  images:
+    - /uploads/site-web-give-a-dam.png
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform, Campaign Featured]

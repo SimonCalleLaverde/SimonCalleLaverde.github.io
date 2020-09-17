@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Frack Free Future
 name_for_thumbnail: Frack Free<br>Future
 thumbnail_image: /uploads/site-image-frack-free-future.jpg
@@ -6,9 +7,10 @@ platforms: [NationBuilder, Aware]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain: www.frackfreefuture.org.au
-  image: /uploads/site-web-frack-free-future.png
-  url: http://www.frackfreefuture.org.au/
+  domain_pretty: www.frackfreefuture.org.au
+  launch_url: http://www.frackfreefuture.org.au/
+  images:
+    - /uploads/site-web-frack-free-future.png
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform]

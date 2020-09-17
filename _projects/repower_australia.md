@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Repower Australia
 name_for_thumbnail: Repower<br>Australia
 thumbnail_image: /uploads/site-image-repower-australia.jpg
@@ -6,9 +7,10 @@ platforms: [Jekyll, Slides, Forestry]
 year: 2018
 roles: Frontend & backend development
 web:
-  domain: www.repoweraustralia.org.au
-  image: /uploads/site-web-repower-australia.png
-  url: https://www.repoweraustralia.org.au/
+  domain_pretty: www.repoweraustralia.org.au
+  launch_url: https://www.repoweraustralia.org.au/
+  images:
+    - /uploads/site-web-repower-australia.png
 type: Campaign & Infographic Website
 category: Coded for Code Nation
 tags: [Campaign Platform]

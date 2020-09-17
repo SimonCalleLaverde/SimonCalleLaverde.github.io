@@ -1,0 +1,92 @@
+<section class="project-header text-rosybrown clearfix" id="project_header" data-scene>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-6">
+
+				<div class="position-relative">
+					<span class="page-order font-headline" aria-hidden="true">
+						{{ page.order }}/
+					</span>
+
+					<h1 class="page-title text-huge text-rosybrown text-uppercase">
+						{{ page.name }}
+					</h1>
+				</div>
+
+				<div class="row mt-5less">
+					<div class="col-md-5 offset-md-2">
+						<div class="page-client font-ultra-light mb-3">
+							<span class="font-light">
+								Client
+							</span>
+							{{ page.client }}
+						</div>
+
+						<div class="page-roles font-ultra-light mb-3">
+							<span class="font-light">
+								Roles
+							</span>
+							{% for role in page.roles %}
+                {{ role }}{% unless forloop.last %} &middot;{% endunless %}
+              {% endfor %}
+						</div>
+					</div>
+
+					<div class="col-md-4 offset-md-1">
+						<div class="page-year font-ultra-light">
+							<span class="font-light">
+								Year
+							</span>
+							{{ page.year }}
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-4more">
+					<div class="col-md-8 offset-md-2">
+						<div class="page-launcher font-light">
+							<a class="btn btn-rosybrown" href="{{ page.web.launch_url }}" target="_blank">
+								View the site
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-5">
+					<div class="col-md-8 offset-md-2 mt-3">
+						<div class="page-content font-light">
+							{{ content }}
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="page-image-wrapper">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-6 offset-md-6 d-flex flex-row align-items-end">
+					
+					<style type="text/css">
+		        #page_project_thumbnail_{{ page.slug }} {
+		          background:url('{{ page.thumbnail_image | relative_url }}') no-repeat center center scroll;
+		          -webkit-background-size:cover;
+		          -moz-background-size:cover;
+		          -o-background-size:cover;
+		          background-size:cover;
+		        }
+		      </style>
+					<div class="page-project-image" id="page_project_thumbnail_{{ page.slug }}" type="image" title="Case Study: {{ page.name }}">
+      		</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>

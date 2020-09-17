@@ -210,10 +210,17 @@
     }
   }
 
+  // Project Header
+  section.project-header {
+    min-height:100vh;
+    padding:203px 0 0;
+  }
+
   // Project Page
   section.project-page {
-    min-height:100vh;
-    padding:100px 0;
+    padding:105px 0 100px;
+    img {
+    }
   }
 
   // Feedback Page

@@ -1,4 +1,5 @@
 ---
+layout: project
 name: El Avispero Mov
 name_for_thumbnail: El Avispero Mov
 thumbnail_image: /uploads/site-image-el-avispero-mov.png
@@ -6,9 +7,10 @@ platforms: [NationBuilder, Aware v2]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain: www.elavisperomov
-  image: /uploads/site-web-el-avispero-mov.png
-  url: http://www.elavisperomov.org/
+  domain_pretty: www.elavisperomov
+  launch_url: http://www.elavisperomov.org/
+  images:
+    - /uploads/site-web-el-avispero-mov.png
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform]

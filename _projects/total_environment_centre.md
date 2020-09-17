@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Total Environment Centre
 name_for_thumbnail: TEC
 thumbnail_image: /uploads/site-image-total-environment-centre.png
@@ -6,9 +7,10 @@ platforms: [NationBuilder, Aware v2]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain: www.tec.org.au
-  image: /uploads/site-web-total-environment-centre.png
-  url: https://www.tec.org.au/
+  domain_pretty: www.tec.org.au
+  launch_url: https://www.tec.org.au/
+  images:
+    - /uploads/site-web-total-environment-centre.png
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform]

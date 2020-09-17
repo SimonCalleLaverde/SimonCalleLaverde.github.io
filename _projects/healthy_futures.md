@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Healthy Futures
 name_for_thumbnail: Healthy<br>Futures
 thumbnail_image: /uploads/site-image-healthy-futures.jpg
@@ -6,9 +7,10 @@ platforms: [NationBuilder, Bootstrap 3]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain: www.healthyfutures.net.au
-  image: /uploads/site-web-healthy-futures.png
-  url: http://www.healthyfutures.net.au/
+  domain_pretty: www.healthyfutures.net.au
+  launch_url: http://www.healthyfutures.net.au/
+  images:
+    - /uploads/site-web-healthy-futures.png
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform, Campaign Featured]

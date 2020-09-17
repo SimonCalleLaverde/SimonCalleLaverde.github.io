@@ -1,4 +1,5 @@
 ---
+layout: project
 name: The Kimberley Like Nowhere Else
 name_for_thumbnail: The Kimberley
 thumbnail_image: /uploads/site-image-the-kimberley-like-nowhere-else.jpg
@@ -6,9 +7,10 @@ platforms: [NationBuilder, Aware v2]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain: www.likenowhereelse.org.au
-  image: /uploads/site-web-the-kimberley-like-nowhere-else.png
-  url: https://www.likenowhereelse.org.au/
+  domain_pretty: www.likenowhereelse.org.au
+  launch_url: https://www.likenowhereelse.org.au/
+  images:
+    - /uploads/site-web-the-kimberley-like-nowhere-else.png
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform]

@@ -3,18 +3,21 @@ layout: project
 name: Calle Impresores
 name_for_thumbnail: Calle<br>Impresores
 thumbnail_image: /uploads/site-image-calle-impresores.jpg
+client: Calle Impresores
 platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2020
 roles: [UI, UX, Design, Development]
 web:
-  domain: www.calleimpresores.com
-  image: /uploads/site-web-calle-impresores.png
-  image_2: ""
-  image_3: ""
-  url: https://calle-impresores.netlify.com
+  domain_pretty: www.calleimpresores.com
+  launch_url: https://calle-impresores.netlify.com
+  images:
+    - /uploads/site-web-calle-impresores.png
+  image_fonts: ""
 type: Business Website & Catalogue
 category: Recent Independent Project
-tags: [Business Website, Business Recent, Case Study]
+tags: [Business Website, Business Recent, Case Study Dark]
+content_two_left: ""
+content_two_right: ""
 buttons_background: "#5F252B"
 buttons_color: "#FFFFFF"
 permalink: /calle_impresores
