@@ -1,5 +1,5 @@
 <article class="project-article home">
-  <a href="#" data-toggle="modal" data-target="#projectModal_{{ project.slug }}"><!--Temporary opening in Modal | Will show in individual "Case Studies" in internal pages, for newest projects-->
+  <a href="{% if project_tags_list contains '#case_study#' %}{{ project.url }}{% else %}#{% endif %}" data-toggle="{% unless project_tags_list contains '#case_study#' %}modal{% endunless %}" data-target="{% unless project_tags_list contains '#case_study#' %}#projectModal_{{ project.slug }}{% endunless %}">
     <figure>
       <style type="text/css">
         #project_thumbnail_{{ project.slug }} {

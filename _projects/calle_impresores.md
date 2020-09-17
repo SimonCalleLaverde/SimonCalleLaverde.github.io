@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Calle Impresores
 name_for_thumbnail: Calle<br>Impresores
 thumbnail_image: /uploads/site-image-calle-impresores.jpg
@@ -13,9 +14,10 @@ web:
   url: https://calle-impresores.netlify.com
 type: Business Website & Catalogue
 category: Recent Independent Project
-tags: [Business Website, Business Recent]
+tags: [Business Website, Business Recent, Case Study]
 buttons_background: "#5F252B"
 buttons_color: "#FFFFFF"
+permalink: /calle_impresores
 order: 30
 ---
 

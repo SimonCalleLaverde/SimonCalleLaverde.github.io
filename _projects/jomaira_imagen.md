@@ -1,4 +1,5 @@
 ---
+layout: project
 name: Jomaira Imagen
 name_for_thumbnail: Jomaira<br>Imagen
 thumbnail_image: /uploads/site-image-jomaira-imagen.jpg
@@ -14,9 +15,10 @@ web:
   url: https://www.jomairaimagen.com/
 type: Business Website & Blog
 category: Recent Independent Project
-tags: [Business Website, Business Recent]
+tags: [Business Website, Business Recent, Case Study]
 buttons_background: "#FFE8E4"
 buttons_color: "#000000"
+permalink: /jomaira_imagen
 order: 29
 ---
 

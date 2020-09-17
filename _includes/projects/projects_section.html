@@ -16,10 +16,10 @@
             {% for project in sorted_projects %}
               {% assign project_tags_list = "#" %}
               {% for tag in project.tags %}
-                {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
+                {% assign project_tags_list = "#" | append:tag | downcase | replace:" ","_" | append:project_tags_list %}
               {% endfor %}
 
-              {% unless project_tags_list contains "hidden" %}
+              {% unless project_tags_list contains "#hidden#" %}
                 {% assign projects_count_desktop = projects_count_desktop | plus:1 %}
 
                 {% if projects_count_desktop == 1 %}<!--Prints Just "Odd" Projects-->
@@ -41,10 +41,10 @@
             {% for project in sorted_projects %}
               {% assign project_tags_list = "#" %}
               {% for tag in project.tags %}
-                {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
+                {% assign project_tags_list = "#" | append:tag | downcase | replace:" ","_" | append:project_tags_list %}
               {% endfor %}
 
-              {% unless project_tags_list contains "hidden" %}
+              {% unless project_tags_list contains "#hidden#" %}
                 {% assign projects_count_desktop = projects_count_desktop | plus:1 %}
 
                 {% if projects_count_desktop == 2 %}<!--Prints Just "Even" Projects-->

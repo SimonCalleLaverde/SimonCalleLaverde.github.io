@@ -23,7 +23,7 @@ Hello, I’m Simón
 <br>with a background
 <br>in <a href="/about" class="link-marketing"><i>marketing</i></a>:
 <span class="text-marketing font-ultra-light text-chocolate" aria-hidden="true">
-	Read my <em class="font-ultra-light-italic">about</em> page if you want to know some more of me.
+	Read my <em class="font-ultra-light-italic">about</em> page if you want to know some more from me.
 </span>
 <br>advertisement,
 <br>branding,

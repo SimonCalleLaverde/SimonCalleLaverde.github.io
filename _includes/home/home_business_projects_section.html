@@ -5,10 +5,10 @@
 {% for project in sorted_projects %}
   {% assign project_tags_list = "#" %}
   {% for tag in project.tags %}
-    {% assign project_tags_list = "#" | append:tag | append:project_tags_list %}
+    {% assign project_tags_list = "#" | append:tag | downcase | replace:" ","_" | append:project_tags_list %}
   {% endfor %}
 
-  {% if project_tags_list contains "#Business Recent#" %}
+  {% if project_tags_list contains "#business_recent#" %}
     <!--{% assign projects_count = projects_count | plus:1 %}--><!--Was For Placing Text Cycling Right/Left-->
 
     <section class="home-business-projects-section clearfix" id="{% if forloop.first %}home_business_projects_section{% endif %}" data-scene="rotateZ">

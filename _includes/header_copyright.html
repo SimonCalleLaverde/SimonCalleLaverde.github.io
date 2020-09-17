@@ -1,5 +1,7 @@
-<aside class="header-copyright font-ultra-light text-chocolate">
-  <div class="show-it">
-    <p class="m-0">©</p> {{ "now" | date: "%Y" }}<!--2020-->
-  </div>
-</aside>
+{% unless page.type_slug == 'feedback' %}
+	<aside class="header-copyright font-ultra-light text-chocolate">
+	  <div class="show-it">
+	    <p class="m-0">©</p> {{ "now" | date: "%Y" }}<!--2020-->
+	  </div>
+	</aside>
+{% endunless %}

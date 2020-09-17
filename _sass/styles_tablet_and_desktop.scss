@@ -210,9 +210,15 @@
     }
   }
 
+  // Project Page
+  section.project-page {
+    min-height:100vh;
+    padding:100px 0;
+  }
+
   // Feedback Page
   section.feedback-page {
-    padding:150px 0 100px;
+    padding:120px 0 100px;
   }
 
   // Footer
@@ -242,7 +248,7 @@
   }
 
   // Theme Dark
-  body.theme-dark {
+  body.theme-dark, body.is-bottom, body.page-type-feedback, body.page-type-case-study {
     nav.navbar {
       ul.navbar-nav {
         li.nav-item {

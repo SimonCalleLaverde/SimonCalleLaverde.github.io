@@ -1,34 +1,27 @@
-<section class="feedback-page text-rosybrown clearfix" id="feedback_page" data-scene>
+<section class="feedback-page text-center clearfix" id="feedback_page" data-scene>
 	<div class="container">
 
-		<div class="row">
-      <div class="col-md-10 offset-md-1">
-        <p class="font-headline text-bold text-rosybrown text-uppercase mb-2 pb-1 ml-1">{{ page.headline }}</p><!--I'll be picking on some freelance work.-->
-        <h3 class="text-big text-rosybrown text-uppercase mb-0">{{ content }}</h3>
+    <div class="row mb-5less">
+      <div class="col-md-6 offset-md-3 mb-4more">
+        <h1 class="text-big text-rosybrown">
+          {{ page.headline }}
+        </h1>
+      </div>
+
+      <div class="col-md-4 offset-md-4">
+        <div class="font-ultra-light text-rosybrown">
+          {{ content }}
+        </div>
       </div>
     </div>
 
-    <div class="row mt-5 pt-1">
-      <div class="col-md-10 offset-md-1">
+    <div class="row d-flex flex-row justify-content-center">
+      <div class="col-5">
       	<div class="form-feedback form-formspree form-dark">
-      		{% include feedback/feedback_form.html %}
+          {% include feedback/feedback_form.html %}
       	</div>
       </div>
     </div>
 
-    <div class="row mt-5 pt-1">
-      <div class="col-md-5 offset-md-1">
-        <h5 class="font-subtitle text-rosybrown mb-0">Or just email me</h5>
-        email@emaildomain.com
-      </div>
-
-      <div class="col-md-5">
-        <h5 class="font-subtitle text-rosybrown mb-0">Office</h5>
-        Kr 7F # 145-89<br>
-        110121. Bogotá D.C.<br><!--Código Postal Ampliado: 110121059-->
-        Mobile. +57 310 558 26 38
-      </div>
-    </div>
-    
 	</div>
 </section>

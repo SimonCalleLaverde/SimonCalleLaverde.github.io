@@ -493,47 +493,55 @@ a {
 .text-medium {
   font-size:2.2rem;
 }
-.stroke-link {
-  //-webkit-text-fill-color:theme-color('rosybrown');//Will Override Color (Regardless Of Order)
-  //-webkit-text-stroke-width:1px;
-  //-webkit-text-stroke-color:theme-color('rosybrown');
+.text-small {
+  font-size:1.4rem;
 }
+// .stroke-link {
+//   -webkit-text-fill-color:theme-color('rosybrown');//Will Override Color (Regardless Of Order)
+//   -webkit-text-stroke-width:1px;
+//   -webkit-text-stroke-color:theme-color('rosybrown');
+// }
 
-// Forms (Custom | Overriding Bootstrap's)
+// Forms (Custom | Overriding Default & Bootstrap's)
 ::-webkit-input-placeholder {
-  color:theme-color('grey-dark')!important;;
+  font-family:$font-headline;
+  color:theme-color('chocolate')!important;
 }
 :-moz-placeholder {//Firefox 18-
-  color:theme-color('grey-dark')!important;;
+  font-family:$font-headline;
+  color:theme-color('chocolate')!important;
 }
 ::-moz-placeholder {//Firefox 19+
-  color:theme-color('grey-dark')!important;;
+  font-family:$font-headline;
+  color:theme-color('chocolate')!important;
 }
 :-ms-input-placeholder {
-  color:theme-color('grey-dark')!important;;
+  font-family:$font-headline;
+  color:theme-color('chocolate')!important;
 }
 input.text, textarea.textarea, .form-group > select {
-  padding-top:12px;
-  padding-left:15px;//25px
-  font-family:$font-regular;
-  font-weight:normal;
-  font-style:normal;
-  font-size:20px;
-  color:#000!important;
+  padding-top:10px;
+  padding-left:10px;
+  font-family:$font-headline;
+  //font-weight:normal;
+  //font-style:normal;
+  font-size:13px;
   background-color:transparent;
+  color:theme-color('rosybrown')!important;
   border:none;
-  //border:1px solid theme-color('grey-dark');//2px
-  border-bottom:1px solid theme-color('grey-dark');//2px
-  @include border-radius(0);//1.5rem
+  border-bottom:1px solid theme-color('rosybrown');
+  @include border-radius(0);
   &:focus {
+    background-color:rgba(255,232,228,0.1);
     outline:none;
     @include box-shadow(none);
   }
 }
 input.text .form-group > select {
-  height:60px;
+  height:50px;
 }
 textarea.textarea {
+  //Using "Rows" For Height
 }
 .form-group {
   > select {
@@ -542,17 +550,19 @@ textarea.textarea {
     }
   }
 }
+label.custom-control-label {//Checkboxes
+  font-family:$font-headline;
+  //font-weight:normal;
+  //font-style:normal;
+  font-size:13px;
+  color:theme-color('chocolate');
+}
 input[type="submit"] {
 }
-.custom-control-label {
-  font-family:$font-regular;
-  font-weight:normal;
-  font-style:normal;
-  font-size:20px;
-  color:theme-color('grey-dark');
-  line-height:1.3;
-}
+
+// Form Dark
 .form-dark {
+  color:theme-color('rosybrown');
   ::-webkit-input-placeholder {
     color:theme-color('rosybrown')!important;;
   }
@@ -566,9 +576,13 @@ input[type="submit"] {
     color:theme-color('rosybrown')!important;;
   }
   input.text, textarea.textarea, .form-group > select {
-    border-bottom-color:theme-color('rosybrown');//border-color
+    border-bottom-color:theme-color('rosybrown');
+    &:focus {
+      //background-color:rgba(255,232,228,0.1);
+      border-bottom-color:theme-color('#8F1200');//Red
+    }
   }
-  .custom-control-label {
+  label.custom-control-label {
     color:theme-color('rosybrown');
   }
 }
@@ -576,6 +590,7 @@ input[type="submit"] {
 // Custom Checkboxes & Radio Buttons
 .custom-control {
   &.custom-checkbox, &.custom-radio {
+    text-align:left;
     input.custom-control-input:checked ~ label.custom-control-label {
       &::before {
         background-color:theme-color('rosybrown');
@@ -1496,11 +1511,7 @@ header.about-header {
     span.about-header-short-story {
       display:block;
       margin-top:130px;
-      font-size:25px;
-      //line-height:1.5;
-
-
-      //font-size:23px;
+      font-size:25px;//23px
       line-height:1.2;
     }
   }
@@ -1555,6 +1566,11 @@ section.projects-section {
   padding:30px 20px;//To revise mobile
 }
 
+// Project Page
+section.project-page {
+  padding:30px 20px;//To revise mobile
+}
+
 // Feedback Page
 section.feedback-page {
   padding:30px 20px;//To revise mobile
@@ -1602,7 +1618,7 @@ body.page-type-basic.home {
 body.page-type-basic.projects {
   div.cursor {
     .cursor-project {
-      background-color:theme-color('chocolate');
+      background-color:theme-color('redish');//chocolate
       color:theme-color('rosybrown');
     }
   }
@@ -1613,7 +1629,7 @@ body.page-type-feedback {
 }
 
 // Theme Dark
-body.theme-dark, body.is-bottom, body.page-type-feedback {
+body.theme-dark, body.is-bottom, body.page-type-feedback, body.page-type-case-study {
   main {
     background-color:theme-color('chocolate');
   }

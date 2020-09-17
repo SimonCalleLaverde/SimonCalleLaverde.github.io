@@ -1,10 +1,10 @@
 ---
 layout: e_commerce
 title: Store
+headline: Shop!
 permalink: /store
 slug: store
 type_slug: e_commerce
-headline: Shop!
 header_image: ""
 background_image: ""
 thumbnail_image: ""

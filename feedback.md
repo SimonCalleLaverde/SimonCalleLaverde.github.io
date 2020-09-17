@@ -1,10 +1,10 @@
 ---
 layout: feedback
 title: Contact Me
+headline: Do you want to create a project with me?
 permalink: /contact_me
 slug: contact_me
 type_slug: feedback
-headline: Drop me a line
 header_image: ""
 background_image: ""
 thumbnail_image: ""
@@ -20,4 +20,4 @@ thumbnail_image: ""
 # <h3>https://formkeep.com/</h3>
 ---
 
-Get in touch with me filling the form below.
+Let me know something about your project, your goals, and who you are. Please fill the form below to get in contact with me.

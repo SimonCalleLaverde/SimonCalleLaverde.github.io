@@ -6,8 +6,13 @@ layout: compress
 <html lang="{{ page.lang | default:site.lang | default:'en' }}">
 
   {% include head.html %}
+  
+  {% assign page_tags_list = "#" %}
+  {% for tag in page.tags %}
+    {% assign page_tags_list = "#" | append:tag | downcase | replace:" ","_" | append:page_tags_list %}
+  {% endfor %}
 
-  <body class="page-type-{{ page.type_slug | replace:'_','-' }} {{ page.slug }} is-top loading rendering" data-spy="scroll" data-target="#navbar" data-offset="80">
+  <body class="page-type-{{ page.type_slug | replace:'_','-' }}{% unless page.type_slug.size > 0 %}{% if page_tags_list contains '#case_study#' %}case-study{% endif %}{% endunless %} {{ page.slug }} is-top loading rendering" data-spy="scroll" data-target="#navbar" data-offset="80">
     {% include loader_quote.html %}
     
     {% if page.header_image.size > 0 %}
@@ -35,7 +40,7 @@ layout: compress
 
     {% include under_development_note.html %}
 
-    <div id="rolly"><!--id="luxy">--><!--{% if page.slug == 'projects' %}luxy{% else %}rolly{% endif %}-->
+    <div id="rolly"><!--{% if page.slug == 'projects' %}luxy{% else %}rolly{% endif %}-->
       <main id="main">
         <h1 class="sr-only">{{ page.title }}</h1>
 
