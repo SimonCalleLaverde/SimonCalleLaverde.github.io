@@ -58,6 +58,7 @@
     line-height:1.2!important;//Was 1.5 from Body
     pointer-events:none;
     ul.navbar-nav {
+      @include transition(filter ease-out 0.3s);
       li.nav-item {
         a.nav-link {
           display:inline-block;
@@ -268,7 +269,11 @@
       }
     }
   }
-  
+
+  // Is Bottom
+  body.is-bottom {
+  }
+
 }//@media
 
 //----------------------------------Other Media Queries----------------------------------//

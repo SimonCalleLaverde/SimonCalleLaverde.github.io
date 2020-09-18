@@ -1261,6 +1261,9 @@ aside.header-scroll-down {
   line-height:1.2;
   text-transform:capitalize;
   z-index:101;
+  > div {
+    @include transition(opacity ease-out 0.3s);
+  }
   a {
     @include transition(all 0.3s ease-in-out);
     span {
@@ -1697,6 +1700,77 @@ footer {
         }
       }
     }
+    .footer-business-social, .footer-personal-social {
+      a {
+        &::before {
+          display:none;
+        }
+        > span {
+          position:relative;
+          font-size:15.5px;
+          //pointer-events:none;
+          > svg {
+            position:relative;
+            width:17px;
+            font-size:1.2rem;
+            fill:theme-color('rosybrown')!important;
+            z-index:21;
+            @include transition(all ease-out 0.5s);
+          }
+          &::before {
+            content:'';
+            position:absolute;
+            width:27px;
+            height:27px;
+            top:-2.8px;
+            left:-5px;
+            background-color:theme-color('rosybrown');
+            z-index:20;
+            @include border-radius(50%);
+            @include transform(scale(1,0));
+            @include transform-origin(center bottom);
+            @include transition(transform ease-out 0.5s);
+          }
+          &.icon-facebook {
+            svg {
+              width:16.5px;
+              margin-left:-1px;
+            }
+          }
+          // }
+          // &.icon-instagram {
+          //   svg {
+          //   }
+          // }
+          // &.icon-pinterest {
+          //   svg {
+          //   }
+          // }
+          &.icon-linkedin {
+            svg {
+              width:14px;
+              margin-top:-1px;
+              margin-left:2px;
+            }
+          }
+          &.icon-behance {
+            svg {
+              width:18px;
+            }
+          }
+        }
+        &:hover, &:active, &:focus {
+          span {
+            svg {
+              fill:theme-color('chocolate')!important;
+            }
+            &::before {
+              @include transform(scale(1,1));
+            }
+          }
+        }
+      }
+    }
     .footer-office {
       bottom:220px;
       left:25px;
@@ -1723,27 +1797,28 @@ footer {
     .footer-personal-social {
       right:25px;
       bottom:150px;
+      text-align:right;
     }
-    // nav.footer-nav.navbar {
-    //   padding:0;
-    //   top:auto;
-    //   right:25px;
-    //   bottom:228px;//220px
-    //   line-height:1.5!important;
-    //   text-align:right;
-    //   ul.navbar-nav {
-    //     li.nav-item {
-    //       a.nav-link {
-    //         &::before {
-    //           display:none;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
+    nav.footer-nav.navbar {
+      padding:0;
+      top:auto;
+      right:25px;
+      bottom:228px;//220px
+      line-height:1.5!important;
+      text-align:right;
+      ul.navbar-nav {
+        li.nav-item {
+          a.nav-link {
+            &::before {
+              display:none;
+            }
+          }
+        }
+      }
+    }
     .footer-credits {
       right:25px;
-      bottom:255px;//220px
+      bottom:360px;
       line-height:1.5!important;
       text-align:right;
     }
@@ -1802,13 +1877,23 @@ body.theme-dark, body.is-bottom, body.page-type-feedback, body.page-type-case-st
 
 // Is Bottom
 body.is-bottom {
-  // div.logo {
-  //   pointer-events:none;
-  //   @include animation(none);
-  //   @include filter(opacity(0))!important;
-  //   > .show-it {
-  //   }
-  // }
+  aside.header-social-media {
+    display:none;
+    > div {
+    }
+  }
+  nav.navbar {
+    ul.nav-top-desktop {
+      pointer-events:none;
+      @include filter(opacity(0));
+    }
+  }
+  .logo {
+    > div {
+      pointer-events:none;
+      opacity:0;//@include filter(opacity(0))
+    }
+  }
 }
 
 //----------------------------------General Loading Animation Styles----------------------------------//
