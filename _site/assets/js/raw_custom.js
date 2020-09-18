@@ -37,14 +37,14 @@ $(function() {
   r.init();
 });
 
-// Init Luxy
-$(function() {
-  luxy.init({
-    wrapper: '#luxy',
-    targets: '.luxy-el',
-    wrapperSpeed: 0.1//Default 0.08
-  });
-});
+// // Init Luxy
+// $(function() {
+//   luxy.init({
+//     wrapper: '#luxy',
+//     targets: '.luxy-el',
+//     wrapperSpeed: 0.1//Default 0.08
+//   });
+// });
 
 // Init Fastclick [Removing Touch Delay On Mobile]
 if ('addEventListener' in document) {//Github
@@ -221,76 +221,76 @@ $(function() {
   });
 });
 
-//---------------------------------CURSOR SCRIPTS---------------------------------//
+// //---------------------------------CURSOR SCRIPTS---------------------------------//
 
-// POSITIONING WITH GSAP AS PER (https://greensock.com/forums/topic/19789-follow-by-mouse/)
-// http://ahrengot.com/tutorials/greensock-javascript-animation
-var $cursor = $('.cursor');
+// // POSITIONING WITH GSAP AS PER (https://greensock.com/forums/topic/19789-follow-by-mouse/)
+// // http://ahrengot.com/tutorials/greensock-javascript-animation
+// var $cursor = $('.cursor');
 
-function moveCircle(e) {
-    TweenLite.to($cursor, 0.2, {//0.3
-    css: {
-      x: e.clientX,
-      y: e.clientY
-    }
-  });
-}
+// function moveCircle(e) {
+//     TweenLite.to($cursor, 0.2, {//0.3
+//     css: {
+//       x: e.clientX,
+//       y: e.clientY
+//     }
+//   });
+// }
 
-$(window).on('mousemove', moveCircle);
+// $(window).on('mousemove', moveCircle);
 
-// HOVER STATES AS PER (https://stackoverflow.com/questions/51281666/animate-custom-cursor-when-hovering-on-a-link)
-$(document).mousemove(function(e) {
-  const cursor = $('.cursor');
-  const target = $(event.target);
+// // HOVER STATES AS PER (https://stackoverflow.com/questions/51281666/animate-custom-cursor-when-hovering-on-a-link)
+// $(document).mousemove(function(e) {
+//   const cursor = $('.cursor');
+//   const target = $(event.target);
   
-  // Update position of cursor
-  cursor.css('display', 'block');//cursor.css('left', e.clientX - 62.5px).css('top', e.clientY - 62.5px).css('display', 'block');
+//   // Update position of cursor
+//   cursor.css('display', 'block');//cursor.css('left', e.clientX - 62.5px).css('top', e.clientY - 62.5px).css('display', 'block');
   
-  const isHeader = target.is('header-target-will-go-here');
-  //const isLink = target.is('a.link, button.link, input.link, i.fa.link, a.link div, a.link span, a .link');
-  const isProject = target.is('.project-thumbnail');
-  const isFooter = target.is('footer > a.container');
+//   const isHeader = target.is('header-target-will-go-here');
+//   //const isLink = target.is('a.link, button.link, input.link, i.fa.link, a.link div, a.link span, a .link');
+//   const isProject = target.is('.project-thumbnail');
+//   const isFooter = target.is('footer > a.container');
 
-  const isHeaderHovered = cursor.hasClass('hoveredHeader');
-  //const isLinkHovered = cursor.hasClass('hoveredLink');
-  const isProjectHovered = cursor.hasClass('hoveredProject');
-  const isFooterHovered = cursor.hasClass('hoveredFooter');
+//   const isHeaderHovered = cursor.hasClass('hoveredHeader');
+//   //const isLinkHovered = cursor.hasClass('hoveredLink');
+//   const isProjectHovered = cursor.hasClass('hoveredProject');
+//   const isFooterHovered = cursor.hasClass('hoveredFooter');
 
-  // Toggle the cursor class if necessary
-  if (isHeader && !isHeaderHovered) {
-    cursor.addClass('hoveredHeader');
-  } else if (!isHeader && isHeaderHovered) {
-    cursor.removeClass('hoveredHeader');
-  }
+//   // Toggle the cursor class if necessary
+//   if (isHeader && !isHeaderHovered) {
+//     cursor.addClass('hoveredHeader');
+//   } else if (!isHeader && isHeaderHovered) {
+//     cursor.removeClass('hoveredHeader');
+//   }
   
-  // if (isLink && !isLinkHovered) {
-  //   cursor.addClass('hoveredLink');
-  // } else if (!isLink && isLinkHovered) {
-  //   cursor.removeClass('hoveredLink');
-  // }
+//   // if (isLink && !isLinkHovered) {
+//   //   cursor.addClass('hoveredLink');
+//   // } else if (!isLink && isLinkHovered) {
+//   //   cursor.removeClass('hoveredLink');
+//   // }
 
-  if (isProject && !isProjectHovered) {
-    cursor.addClass('hoveredProject');
-  } else if (!isProject && isProjectHovered) {
-    cursor.removeClass('hoveredProject');
-  }
+//   if (isProject && !isProjectHovered) {
+//     cursor.addClass('hoveredProject');
+//   } else if (!isProject && isProjectHovered) {
+//     cursor.removeClass('hoveredProject');
+//   }
 
-  if (isFooter && !isFooterHovered) {
-    cursor.addClass('hoveredFooter');
-  } else if (!isFooter && isFooterHovered) {
-    cursor.removeClass('hoveredFooter');
-  }
-});
+//   if (isFooter && !isFooterHovered) {
+//     cursor.addClass('hoveredFooter');
+//   } else if (!isFooter && isFooterHovered) {
+//     cursor.removeClass('hoveredFooter');
+//   }
+// });
 
-$(document).mouseleave(function(e) {
-  const cursor = $('.cursor');
-  cursor.hide()
-});
+// $(document).mouseleave(function(e) {
+//   const cursor = $('.cursor');
+//   cursor.hide()
+// });
 
-$(document).mouseenter(function(e) {
-  const cursor = $('.cursor');
-  cursor.show()
-});
+// $(document).mouseenter(function(e) {
+//   const cursor = $('.cursor');
+//   cursor.show()
+// });
 
 //---------------------------------FIRST GSAP ATTEMPTS---------------------------------//
 

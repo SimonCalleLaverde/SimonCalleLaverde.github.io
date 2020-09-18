@@ -14,8 +14,6 @@ web:
 type: Campaign & Infographic Website
 category: Coded for Code Nation
 tags: [Campaign Platform]
-buttons_background: "rgba(223,173,120,1)"
-buttons_color: "#FFFFFF"
 order: 20
 ---
 

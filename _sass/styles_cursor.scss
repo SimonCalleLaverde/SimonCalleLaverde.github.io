@@ -1,0 +1,279 @@
+//----------------------------------Cursor Custom Styles----------------------------------//
+
+// Cursor
+// body {
+//   cursor:none;
+// }
+// .project-thumbnail {
+//   &:hover {
+//     cursor:none;
+//   }
+// }
+div.cursor {
+  display:none;
+  position:fixed;
+  width:125px;
+  height:125px;
+  top:-62.5px;
+  left:-62.5px;
+  font-size:13px;
+  line-height:1.1;
+  text-align:center;
+  pointer-events:none;
+  z-index:15000;
+  //mix-blend-mode:difference;
+  will-change:transform;
+  @include border-radius(50%);
+  .cursor-header, .cursor-project, .cursor-footer {
+    position:absolute;
+    width:125px;
+    height:125px;
+    padding-top:48px;
+    top:0;
+    left:0;
+    @include border-radius(50%);
+    @include filter(opacity(0));
+    @include transform(scale(0));
+    @include transition(background-color ease-in 0.3s, color ease-in 0.3s, filter ease-in 0.3s, transform ease-in 0.3s);
+    span {
+      display:block;
+      @include filter(opacity(0));
+    }
+  }
+  .cursor-header {//To Create & Define
+    background-color:theme-color('rosybrown');
+    color:theme-color('chocolate');
+  }
+  .cursor-project {//Making Colors Dynamic & Different Per Project?
+    background-color:transparent;//theme-color('rosybrown')
+    color:theme-color('chocolate');
+  }
+  .cursor-footer {
+    padding-top:56px;
+    background-color:theme-color('redish');
+    color:theme-color('rosybrown');
+  }
+  &.hoveredHeader, &.hoveredProject, &.hoveredFooter {
+    .cursor-header, .cursor-project, .cursor-footer {
+      @include transition(background-color ease-in 0.3s 0.1s, color ease-in 0.3s 0.1s, filter ease-in 0.3s 0.1s, transform ease-in 0.3s 0.1s);
+      span {
+        @include transition(filter ease-in 0.3s 0.1s);
+      }
+    }
+  }
+  &.hoveredHeader {
+    .cursor-header {
+      @include filter(opacity(1));
+      @include transform(scale(1));
+      span {
+        @include filter(opacity(1));
+        @include animation(rotateAnim 10s linear infinite 0.1s);
+      }
+    }
+  }
+  &.hoveredProject {
+    .cursor-project {
+      @include filter(opacity(1));
+      @include transform(scale(1));
+      span {
+        @include filter(opacity(1));
+        @include animation(rotateAnim 10s linear infinite 0.1s);
+      }
+    }
+    &.hovered01 {
+      .cursor-project {
+        background-color:#566C7B;
+        color:#FFFFFF;
+      }
+    }
+    &.hovered02 {
+      .cursor-project {
+        background-color:#F2B769;
+        color:#000000;
+      }
+    }
+    &.hovered03 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered04 {
+      .cursor-project {
+        background-color:rgba(53,113,138,1);
+        color:#FFFFFF;
+      }
+    }
+    &.hovered05 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered06 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered07 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered08 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered09 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered10 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered11 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered12 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered13 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered14 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered15 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered16 {
+      .cursor-project {
+        background-color:rgba(74,84,68,1);
+        color:#FFFFFF;
+      }
+    }
+    &.hovered17 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered18 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered19 {
+      .cursor-project {
+        background-color:rgba(170,122,127,1);
+        color:#FFFFFF;
+      }
+    }
+    &.hovered20 {
+      .cursor-project {
+        background-color:rgba(223,173,120,1);
+        color:#FFFFFF;
+      }
+    }
+    &.hovered21 {
+      .cursor-project {
+        background-color:#A1AA04;
+        color:#FFFFFF;
+      }
+    }
+    &.hovered22 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered23 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered24 {
+      .cursor-project {
+        background-color:#24414D;
+        color:#FFFFFF;
+      }
+    }
+    &.hovered25 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered26 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered27 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered28 {
+      .cursor-project {
+        background-color:theme-color('rosybrown');
+        color:theme-color('chocolate');
+      }
+    }
+    &.hovered29 {
+      .cursor-project {
+        background-color:#FFE8E4;
+        color:#000000;
+      }
+    }
+    &.hovered30 {
+      .cursor-project {
+        background-color:#5F252B;
+        color:#FFFFFF;
+      }
+    }
+  }
+  &.hoveredFooter {
+    .cursor-footer {
+      @include filter(opacity(1));
+      @include transform(scale(1));
+      span {
+        @include filter(opacity(1));
+        @include animation(rotateAnim 10s linear infinite 0.1s);
+      }
+    }
+  }
+}
+@media (pointer:coarse) and (hover:none) {//For Devices Without A Cursor
+  div.cursor {
+    display:none!important;
+  }
+}//@media

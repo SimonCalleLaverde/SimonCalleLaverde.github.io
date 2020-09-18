@@ -14,7 +14,5 @@ web:
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform]
-buttons_background: ""
-buttons_color: ""
 order: 15
 ---

@@ -33,8 +33,6 @@ content_two_right: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pra
   hendrerit lorem, nec cursus dui. Phasellus ullamcorper tempor enim in auctor.
   Vivamus semper ante non finibus ullamcorper. Curabitur elementum eget metus
   consequat blandit."
-buttons_background: "#FFE8E4"
-buttons_color: "#000000"
 permalink: /jomaira_imagen
 order: 29
 ---

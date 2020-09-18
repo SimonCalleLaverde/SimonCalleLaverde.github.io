@@ -16,8 +16,6 @@ web:
 type: Concept Website
 category: Concept Presentation Site
 tags: [Presentation Website]
-buttons_background: "#566C7B"
-buttons_color: "#FFFFFF"
 order: 1
 ---
 

@@ -188,6 +188,9 @@
 // Rolly
 @import "styles_rolly";
 
+// Cursor
+@import "styles_cursor";
+
 // General
 html, body {
   &.menu-opened {
@@ -1162,7 +1165,7 @@ aside.header-copyright {
   text-orientation:mixed;
   pointer-events:none;
   //mix-blend-mode:difference;
-  opacity:(0.7);//@include filter(opacity(0.7));
+  opacity:(0.8);//@include filter(opacity(0.8));
   @include transform(rotate(180deg));
   //@include transform(rotate(270deg));
   //@include transform-origin(left bottom);//0 100%
@@ -1220,7 +1223,7 @@ aside.header-left-info {
   writing-mode:vertical-rl;
   text-orientation:mixed;
   pointer-events:none;
-  opacity:(0.6);//@include filter(opacity(0.7))
+  opacity:(0.8);//@include filter(opacity(0.8))
   @include transform(rotate(180deg));
 }
 
@@ -1726,12 +1729,12 @@ body.page-type-basic.home {
 
 // Basic Page (Projects)
 body.page-type-basic.projects {
-  div.cursor {
-    .cursor-project {
-      background-color:theme-color('redish');//chocolate
-      color:theme-color('rosybrown');
-    }
-  }
+  // div.cursor {
+  //   .cursor-project {
+  //     background-color:theme-color('redish');//chocolate
+  //     color:theme-color('rosybrown');
+  //   }
+  // }
 }
 
 // Feedback Page (Contact Me)
@@ -1763,106 +1766,6 @@ body.theme-dark, body.is-bottom, body.page-type-feedback, body.page-type-case-st
     }
   }
 }
-
-//----------------------------------Cursor Custom Styles----------------------------------//
-
-// Cursor
-// body {
-//   cursor:none;
-// }
-// .project-thumbnail {
-//   &:hover {
-//     cursor:none;
-//   }
-// }
-div.cursor {
-  display:none;
-  position:fixed;
-  width:125px;
-  height:125px;
-  top:-62.5px;
-  left:-62.5px;
-  font-size:13px;
-  line-height:1.1;
-  text-align:center;
-  pointer-events:none;
-  z-index:15000;
-  //mix-blend-mode:difference;
-  will-change:transform;
-  @include border-radius(50%);
-  .cursor-header, .cursor-project, .cursor-footer {
-    position:absolute;
-    width:125px;
-    height:125px;
-    padding-top:48px;
-    top:0;
-    left:0;
-    @include border-radius(50%);
-    @include filter(opacity(0));
-    @include transform(scale(0));
-    @include transition(filter ease-in 0.3s, transform ease-in 0.3s);
-    span {
-      display:block;
-      @include filter(opacity(0));
-    }
-  }
-  .cursor-header {//To Create & Define
-    background-color:theme-color('rosybrown');
-    color:theme-color('chocolate');
-  }
-  .cursor-project {//Making Colors Dynamic & Different Per Project?
-    background-color:theme-color('rosybrown');
-    color:theme-color('chocolate');
-  }
-  .cursor-footer {
-    padding-top:56px;
-    background-color:theme-color('redish');
-    color:theme-color('rosybrown');
-  }
-  &.hoveredHeader, &.hoveredProject, &.hoveredFooter {
-    .cursor-header, .cursor-project, .cursor-footer {
-      @include transition(filter ease-in 0.3s 0.1s, transform ease-in 0.3s 0.1s);
-      span {
-        @include transition(filter ease-in 0.3s 0.1s);
-      }
-    }
-  }
-  &.hoveredHeader {
-    .cursor-header {
-      @include filter(opacity(1));
-      @include transform(scale(1));
-      span {
-        @include filter(opacity(1));
-        @include animation(rotateAnim 10s linear infinite 0.1s);
-      }
-    }
-  }
-  &.hoveredProject {
-    .cursor-project {
-      @include filter(opacity(1));
-      @include transform(scale(1));
-      span {
-        @include filter(opacity(1));
-        @include animation(rotateAnim 10s linear infinite 0.1s);
-      }
-    }
-  }
-  &.hoveredFooter {
-    .cursor-footer {
-      @include filter(opacity(1));
-      @include transform(scale(1));
-      span {
-        @include filter(opacity(1));
-        @include animation(rotateAnim 10s linear infinite 0.1s);
-      }
-    }
-  }
-}
-@media (pointer:coarse) and (hover:none) {//For Devices Without A Cursor
-  div.cursor {
-    display:none!important;
-  }
-}//@media
 
 //----------------------------------General Loading Animation Styles----------------------------------//
 

@@ -18,8 +18,6 @@ category: Recent Independent Project
 tags: [Business Website, Business Recent, Case Study Dark]
 content_two_left: ""
 content_two_right: ""
-buttons_background: "#5F252B"
-buttons_color: "#FFFFFF"
 permalink: /calle_impresores
 order: 30
 ---

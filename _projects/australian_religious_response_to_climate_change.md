@@ -14,8 +14,6 @@ web:
 type: Campaign Website & Award Winner
 category: Coded for Code Nation
 tags: [Campaign Platform]
-buttons_background: "#F2B769"
-buttons_color: "#000000"
 order: 2
 ---
 

@@ -14,8 +14,6 @@ web:
 type: Campaign Website
 category: Coded for Code Nation
 tags: [Campaign Platform, Campaign Featured]
-buttons_background: "rgba(53,113,138,1)"
-buttons_color: "#FFFFFF"
 order: 4
 ---
 
