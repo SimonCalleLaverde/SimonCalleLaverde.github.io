@@ -389,7 +389,9 @@ a {
 
 // Buttons
 .btn {
+  $btn-normal-padding:0.5rem 1rem;
   position:relative;
+  padding:$btn-normal-padding;
   font-family:$font-light;
   font-size:12px;
   background-color:transparent;
@@ -400,7 +402,7 @@ a {
   &::before {
     content:"View the site";
     position:absolute;
-    padding:0.375rem 0.6rem;//Same As Button
+    padding:$btn-normal-padding;//Same As Button
     top:0;
     right:0;
     bottom:0;
@@ -414,11 +416,11 @@ a {
   }
   &:hover {
     background-color:transparent;
-    //border-color:lighten(theme-color('rosybrown'),10);
+    border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
     //@include transform(scale(1.03));
     //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
     &::before {
-      //border-color:lighten(theme-color('rosybrown'),10);
+      border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
       @include transform(translate(0,0));
     }
   }
