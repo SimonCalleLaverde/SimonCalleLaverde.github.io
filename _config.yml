@@ -19,16 +19,27 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Portfolio - Simón Calle Laverde - 2020
+client_name: Simón Calle Laverde
 email: simoncallelaverde@gmail.com
+phone_number: +(57) 310 558 2638
 description: >- # this means to ignore newlines until "baseurl:"
   Hello, I'm a web developer and web designer with 5 years of experience,
   I build hand-crafted websites that standout! I have a background in
   branding, marketing and advertisement. I use design and copywriting to
   create modern websites that sell.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "simoncallelaverde.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_repository: SimonCalleLaverde/SimonCalleLaverde.github.io
+
+# Social Media & Communication [Simón Calle Laverde]
+google_maps_api_key: ""
+facebook_username: https://www.facebook.com/simoncio/
+instagram_username: https://www.instagram.com/simons_pic_tures/
+pinterest_username: https://pinterest.com # MISSING I have one
+linkedin_username: https://www.linkedin.com/ # URGENT to create
+behance_username: https://www.behance.net/ # URGENT to create
+github_username: SimonCalleLaverde # jekyll
+twitter_username: "" # jekyllrb # Never Probably
 
 # Build settings
 theme: minima
@@ -59,6 +70,7 @@ exclude:
   - Gruntfile.js
   - README*
   - LICENSE
+  - ".gitignore"
   - raw_custom.js
   - .DS_Store
 

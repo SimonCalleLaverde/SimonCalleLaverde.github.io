@@ -1671,7 +1671,7 @@ footer {
     }
   }
   aside.footer-info-elements {
-    .footer-office, .footer-business-social, .footer-copyright, .footer-email-and-phone, .footer-created-by, .footer-personal-social, nav.footer-nav, .footer-credits {
+    .footer-office, .footer-business-social, .footer-copyright, .footer-email-or-call, .footer-created-by, .footer-personal-social, nav.footer-nav, .footer-credits {
       position:absolute;
       font-size:12px;
       opacity:(0.9);//@include filter(opacity(0.9))
@@ -1711,6 +1711,9 @@ footer {
     }
     .footer-email-or-call {
       bottom:30px;
+      left:50%;
+      text-align:center;
+      @include transform(translateX(-50%));
     }
     .footer-created-by {
       right:25px;
