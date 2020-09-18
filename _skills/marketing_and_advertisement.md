@@ -1,0 +1,8 @@
+---
+title: Marketing & Advertisement
+order: 4
+---
+
+<p>- <span class="font-light">Marketing & Advertisement:</span> I have a 5 year carrer in marketing and advertisement, which included hundreds of exercises on branding and campaigning, many public presentations and uncountable individual and groupal projects, a lot of analisys and learning around psychology, persuation, ads, slogans and text analysis. Learning semiotics, linguistic, and how to comunicate and display to generate action and emotions which translate in sales; working with real brands, and reading a lot of texts, and books.</p>
+<p>- <span class="font-light">Branding:</span> Branding is a branch of marketing, as well as advertisement is. I have the same experience with a career of 5 years, which significate many years of learning about branding and identity design, creating concept brands, ads, campaigns, logos, and more. Learning about brand conceptual identity and visual identity, as well as announcements and full ATL, BTL, and social media campaigns that create action.</p>
+<p>- <span class="font-light">Copywriting</span> Not only I have always liked to write well, following gramatical rules if the time is given and more if it is for the image of a project or brand, because one word can change everything. Also, if I mess my grammar, will I mess your work? I try my best to type accordingly if it is possible. In colledge I also had linguistic entire semesters and projects around writing well. Copywriting is basically writing to create sales. My native language is Spanish tho.</p>
