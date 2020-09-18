@@ -389,16 +389,38 @@ a {
 
 // Buttons
 .btn {
-  font-family:$font-regular;
-  font-weight:normal;
-  font-style:normal;
-  font-size:20px;
-  //white-space:nowrap;
-  //@include border-radius(0);
-  @include transition(all ease-out 0.5s);
+  position:relative;
+  font-family:$font-light;
+  font-size:12px;
+  background-color:transparent;
+  color:transparent;//theme-color('rosybrown');
+  border:1px solid theme-color('rosybrown');
+  @include border-radius(0);
+  @include transition(all ease-in-out 0.5s);
+  &::before {
+    content:"View the site";
+    position:absolute;
+    padding:0.375rem 0.6rem;//Same As Button
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    color:theme-color('rosybrown');
+    border:1px solid theme-color('rosybrown');
+    text-align:center;
+    white-space:nowrap;
+    @include transform(translate(5px,5px));
+    @include transition(all ease-in-out 0.5s);
+  }
   &:hover {
-    @include transform(scale(1.03));
-    @include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
+    background-color:transparent;
+    //border-color:lighten(theme-color('rosybrown'),10);
+    //@include transform(scale(1.03));
+    //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
+    &::before {
+      //border-color:lighten(theme-color('rosybrown'),10);
+      @include transform(translate(0,0));
+    }
   }
   &.btn-longer {
     padding-right:2.5em;
@@ -411,9 +433,6 @@ a {
   &.btn-100 {
     width:100%;
     text-align:center;
-  }
-  &.btn-gigantic {
-    padding:2.5rem 3.5rem;
   }
 }
 
