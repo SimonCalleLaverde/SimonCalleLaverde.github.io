@@ -6,7 +6,18 @@
 
 				<div class="position-relative">
 					<span class="page-order font-headline" aria-hidden="true">
-						{{ page.order }}/
+						{{ page.order }}
+
+						{% assign sorted_projects = site.projects %}
+		        {% assign projects_total_count = 0 %}
+
+		        {% for project in sorted_projects %}
+		          {% assign projects_total_count = projects_total_count | plus:1 %}
+		        {% endfor %}
+
+		        <small class="font-ultra-light">
+		          /{{ projects_total_count }}
+		        </small>
 					</span>
 
 					<h1 class="page-title text-huge text-rosybrown text-uppercase">
@@ -16,14 +27,14 @@
 
 				<div class="row mt-5less">
 					<div class="col-md-5 offset-md-2">
-						<div class="page-client font-ultra-light mb-3">
+						<div class="page-client font-ultra-light mb-2 pb-1">
 							<span class="font-light">
 								Client
 							</span>
 							{{ page.client }}
 						</div>
 
-						<div class="page-roles font-ultra-light mb-3">
+						<div class="page-roles font-ultra-light mb-2 pb-1">
 							<span class="font-light">
 								Roles
 							</span>

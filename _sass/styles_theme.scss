@@ -389,16 +389,16 @@ a {
 
 // Buttons
 .btn {
-  $btn-normal-padding:0.5rem 1rem;
+  $btn-normal-padding:0.5rem 1.3rem;
   position:relative;
   padding:$btn-normal-padding;
   font-family:$font-light;
-  font-size:12px;
+  font-size:11.5px;
   background-color:transparent;
   color:transparent;//theme-color('rosybrown');
   border:1px solid theme-color('rosybrown');
   @include border-radius(0);
-  @include transition(all ease-in-out 0.5s);
+  @include transition(all ease-out 0.5s);
   &::before {
     content:"View the site";
     position:absolute;
@@ -412,13 +412,15 @@ a {
     text-align:center;
     white-space:nowrap;
     @include transform(translate(5px,5px));
-    @include transition(all ease-in-out 0.5s);
+    @include transition(all ease-out 0.5s);
   }
-  &:hover {
-    background-color:transparent;
+  &:hover, &:active, &:focus {
+    background-color:transparent!important;
+    color:transparent;
     border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
     //@include transform(scale(1.03));
     //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
+    @include box-shadow(none!important);
     &::before {
       border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
       @include transform(translate(0,0));
@@ -1597,6 +1599,9 @@ section.project-header {
     top:-70px;
     left:0;
     font-size:22px;
+    small {
+      font-size:13px;
+    }
   }
   .page-title {
     white-space:normal;
@@ -1650,28 +1655,61 @@ section.feedback-page {
 // Footer
 footer {
   margin:0;
-  a.container {
-    padding:30px 20px;//To revise mobile
-    div {
+  > a.container {
+    min-height:100vh;
+    > div {//From "row", To All Elements Inside <a>
       pointer-events:none;
-    }
-    hr {
-      position:absolute;
-      right:0;
-      bottom:60px;
-      left:0;
-      border-color:theme-color('rosybrown');
+      h1, h2, h3, h4, h5, h6 {
+      }
+      p {
+        font-size:23px;
+        line-height:1.2;
+      }
     }
   }
-  .footer-copyright, .footer-created-by {
-    position:absolute;
+  aside.footer-info-elements {
+    .footer-office, .footer-business-social, .footer-copyright, .footer-email-and-phone, .footer-created-by, .footer-personal-social, nav.footer-nav {
+      position:absolute;
+      font-size:12px;
+      opacity:(0.9);//@include filter(opacity(0.9))
+    }
+  }
+  .footer-office {
+    bottom:220px;
+    left:25px;
+  }
+  .footer-business-social {
+    bottom:135px;
+    left:25px;
+  }
+  .footer-copyright {
+    bottom:30px;
+    left:25px;
   }
   .footer-created-by {
-    width:100%;
-    bottom:29px;
-    font-size:12px;
-    text-align:center;
-    pointer-events:none;
+    right:25px;
+    bottom:30px;
+    text-align:right;
+  }
+  .footer-personal-social {
+    right:25px;
+    bottom:135px;
+  }
+  nav.footer-nav.navbar {
+    padding:0;
+    top:auto;
+    right:25px;
+    bottom:240px;//220px
+    text-align:right;
+    ul.navbar-nav {
+      li.nav-item {
+        a.nav-link {
+          &::before {
+            display:none;
+          }
+        }
+      }
+    }
   }
 }
 
