@@ -8,7 +8,7 @@ platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2020
 roles: [UI, UX, Design, Development]
 web:
-  domain_pretty: www.jomairaimagen.com
+  domain_pretty: https://jomaira-moda.netlify.com/ # www.jomairaimagen.com
   launch_url: https://www.jomairaimagen.com/
   images:
     - /uploads/site-web-jomaira-imagen.png
