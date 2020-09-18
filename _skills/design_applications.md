@@ -1,5 +1,5 @@
 ---
-title: Design Applications
+title: Design<br>Applications
 order: 2
 ---
 

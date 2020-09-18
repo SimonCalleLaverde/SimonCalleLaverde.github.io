@@ -1,5 +1,5 @@
 ---
-title: Video Applications
+title: Video<br>Applications
 order: 3
 ---
 
