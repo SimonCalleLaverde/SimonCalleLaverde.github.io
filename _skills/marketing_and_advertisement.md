@@ -1,5 +1,5 @@
 ---
-title: Marketing<br>& Advertise-<br>ment
+title: Marketing<br>& Adverti-<br>sement
 order: 4
 ---
 
