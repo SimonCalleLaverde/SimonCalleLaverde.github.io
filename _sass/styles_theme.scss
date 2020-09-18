@@ -1321,7 +1321,7 @@ header.home-hello-header {
       overflow:hidden;
       @include transition(transform ease-out 0.5s);
       div.websites-gif-cover, img.websites-gif-gif {
-        min-width:368px;//320px
+        min-width:352px;//368px//320px
         pointer-events:none;
         user-select:none;
         //@include transition(filter ease-in-out 0.3s);
@@ -1344,7 +1344,7 @@ header.home-hello-header {
       margin-left:-0.5px;
     }
     .area-right {
-      margin-top:-282.5px;//307.438px//267.5px - 25px//267.328px
+      margin-top:-269px;//294.062px//307.438px//267.5px - 25px//267.328px
       margin-left:50%;//calc(50% + 0.5px)
       div.websites-gif-cover, img.websites-gif-gif {
         margin-left:-100%;
