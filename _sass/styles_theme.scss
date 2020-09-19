@@ -1674,7 +1674,7 @@ footer {
     }
   }
   aside.footer-info-elements {
-    .footer-office, .footer-business-social, .footer-copyright, .footer-email-or-call, .footer-created-by, .footer-personal-social, nav.footer-nav, .footer-credits {
+    .footer-hello, .footer-office, .footer-business-social, .footer-copyright, .footer-email-or-call, .footer-created-by, .footer-personal-social, nav.footer-nav, .footer-credits {
       position:absolute;
       font-size:12px;
       opacity:(0.9);//@include filter(opacity(0.9))
@@ -1771,12 +1771,17 @@ footer {
         }
       }
     }
+    .footer-hello {
+      bottom:370px;
+      left:25px;
+      line-height:1.5;
+    }
     .footer-office {
       bottom:220px;
       left:25px;
     }
     .footer-business-social {
-      bottom:150px;
+      bottom:120px;
       left:25px;
     }
     .footer-copyright {
@@ -1796,14 +1801,14 @@ footer {
     }
     .footer-personal-social {
       right:25px;
-      bottom:150px;
+      bottom:120px;
       text-align:right;
     }
     nav.footer-nav.navbar {
       padding:0;
       top:auto;
       right:25px;
-      bottom:228px;//220px
+      bottom:228px;
       line-height:1.5!important;
       text-align:right;
       ul.navbar-nav {
@@ -1818,8 +1823,8 @@ footer {
     }
     .footer-credits {
       right:25px;
-      bottom:360px;
-      line-height:1.5!important;
+      bottom:370px;
+      line-height:1.5;
       text-align:right;
     }
   }
