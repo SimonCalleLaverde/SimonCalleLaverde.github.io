@@ -16,7 +16,7 @@ thumbnail_image: ""
 
 Hello, I’m Simón
 <br>Calle Laverde,
-<br>A <a href="#home_businesses_headline_section" class="link-development smoothScroll"><i>web developer</i></a>
+<br>A <a class="link-development"><i>web developer</i></a><!--smoothScroll--><!--href="#home_businesses_headline_section"-->
 <span class="text-development font-ultra-light text-chocolate" aria-hidden="true">
 	I have more than 6 years since I started in the web development industry, 4 years of which I worked for an awesome five star rated international digital agency: Code Nation, based in Australia.
 	<br><br>Scroll down to see my featured projects and newest independently created websites with a bit of experimentation and modern fully responsive layouts that generate emotions which translate into sales.
