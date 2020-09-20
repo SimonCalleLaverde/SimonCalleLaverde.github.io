@@ -1729,7 +1729,7 @@ footer {
             @include border-radius(50%);
             @include transform(scale(1,0));
             @include transform-origin(center bottom);
-            @include transition(transform ease-out 0.5s);
+            @include transition(transform ease-out 0.4s);
           }
           &.icon-facebook {
             svg {
