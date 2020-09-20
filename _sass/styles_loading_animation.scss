@@ -1,0 +1,223 @@
+//----------------------------------General Loading Animation Styles----------------------------------//
+
+.logo, aside.header-plus-years, nav.navbar, aside.burger-mobile, aside.header-left-info, aside.header-copyright, aside.header-social-media, aside.header-scroll-down {
+  pointer-events:none;
+  @include filter(opacity(0));
+}
+body {
+  .header-image, main {
+    will-change:transform;
+  }
+  .header-image {
+    @include transform(translateY(0) scale(1.1));
+  }
+  &.imagesloaded {
+    .header-image {
+      @include animation(headerTranslateAnim 1s ease-in-out 1.1s forwards);
+    }
+    main {
+      @include transform(translateY(100vh));
+      @include animation(mainTranslateAnim 1s ease-in-out 1.5s forwards);
+    }
+    .logo, aside.header-plus-years, nav.navbar, aside.burger-mobile, aside.header-left-info, aside.header-copyright, aside.header-social-media, aside.header-scroll-down {
+      @include animation(fadeInAnim 0.5s ease-in 2.2s forwards);
+    }
+  }
+  &.rendering {
+    cursor:progress;
+    overflow-y:hidden;
+    .cursor {
+      @include filter(opacity(0));
+    }
+  }
+}
+
+//----------------------------------Loader Quote Animation Styles----------------------------------//
+
+body {
+  .loader-quote {
+    display:none;
+  }
+  &.rendering {
+    .loader-quote {
+      display:block;
+      position:fixed;
+      // FLEXBOX REVISED 100%
+      // display:flex;
+      // flex-direction:row;
+      // align-items:center;
+      // justify-content:center;
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:-webkit-flex;//
+      display:flex;
+      -webkit-box-orient:horizontal;
+      -webkit-box-direction:normal;
+      -ms-flex-direction:row;
+      flex-direction:row;
+      -webkit-box-pack:center;
+      -ms-flex-pack:center;
+      -webkit-justify-content:center;//
+      justify-content:center;
+      -webkit-box-align:center;
+      -ms-flex-align:center;
+      -webkit-align-items:center;//
+      align-items:center;
+      width:100%;
+      height:100%;
+      padding:30px;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      z-index:20000;
+      span {
+        max-width:80%;
+        font-size:2rem;
+        line-height:1.1;
+        text-align:center;
+        pointer-events:none;
+        will-change:filter, transform;
+        @include filter(opacity(0));//Optional To Remove Or Add Opacity(1) For Instant Text Appear
+        // &.letter-1 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.1s forwards);
+        // }
+        // &.letter-2 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.15s forwards);
+        // }
+        // &.letter-3 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.2s forwards);
+        // }
+        // &.letter-4 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.25s forwards);
+        // }
+        // &.letter-5 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.3s forwards);
+        // }
+        // &.letter-6 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.35s forwards);
+        // }
+        // &.letter-7 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.4s forwards);
+        // }
+        // &.letter-8 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.45s forwards);
+        // }
+        // &.letter-9 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.5s forwards);
+        // }
+        // &.letter-10 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.55s forwards);
+        // }
+        // &.letter-11 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.6s forwards);
+        // }
+        // &.letter-12 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.65s forwards);
+        // }
+        // &.letter-13 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.7s forwards);
+        // }
+        // &.letter-14 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.75s forwards);
+        // }
+        // &.letter-15 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.8s forwards);
+        // }
+        // &.letter-16 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.85s forwards);
+        // }
+        // &.letter-17 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.9s forwards);
+        // }
+        // &.letter-18 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 0.95s forwards);
+        // }
+        // &.letter-19 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1s forwards);
+        // }
+        // &.letter-20 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.05s forwards);
+        // }
+        // &.letter-21 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.1s forwards);
+        // }
+        // &.letter-22 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.15s forwards);
+        // }
+        // &.letter-23 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.2s forwards);
+        // }
+        // &.letter-24 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.25s forwards);
+        // }
+        // &.letter-25 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.3s forwards);
+        // }
+        // &.letter-26 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.35s forwards);
+        // }
+        // &.letter-27 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.4s forwards);
+        // }
+        // &.letter-28 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.45s forwards);
+        // }
+        // &.letter-29 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.5s forwards);
+        // }
+        // &.letter-30 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.55s forwards);
+        // }
+        // &.letter-31 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.6s forwards);
+        // }
+        // &.letter-32 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.65s forwards);
+        // }
+        // &.letter-33 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.7s forwards);
+        // }
+        // &.letter-34 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.75s forwards);
+        // }
+        // &.letter-35 {
+        //   @include animation(loaderQuoteAnim 1.8s ease-out 1.8s forwards);
+        // }
+      }
+    }
+  }
+  &.imagesloaded {
+    .loader-quote {
+      @include animation(loaderQuoteBackgroundGoAnim 1.5s cubic-bezier(.89,.41,.89,.41) forwards);
+    }
+  }
+}
+
+//----------------------------------Loader Header Elements Animation Styles----------------------------------//
+
+header.home-hello-header {
+  .top-info, .hello-header-headline {
+    transform-style:preserve-3d;
+    will-change:filter, transform;
+    @include filter(opacity(0));
+    @include transform(translate3d(0,100px,0) skewY(10deg));
+    @include animation(loadingHeadlineAnim 0.7s cubic-bezier(0.455,0.03,0.515,0.955) 4.4s forwards);
+  }
+  .hello-header-img {
+    will-change:filter;
+    @include filter(opacity(0));
+    @include animation(fadeInAnim 0.7s cubic-bezier(0.455,0.03,0.515,0.955) 4.4s forwards);
+  }
+  .hello-header-img-cover {
+    will-change:transform;
+    @include transform(translateY(0));
+    @include animation(loadingImageCoverAnim 0.5s cubic-bezier(0.455,0.03,0.515,0.955) 4.3s forwards);
+  }
+  .hello-header-caption {
+    will-change:transform, transform-origin;
+    @include transform-origin(0 0);
+    @include transform(rotate(270deg));
+    @include animation(fadeInAnim 0.7s cubic-bezier(0.455,0.03,0.515,0.955) 4.4s forwards);
+  }
+}
