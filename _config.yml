@@ -18,15 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Portfolio - Simón Calle Laverde - 2020
+title: Simón Calle Laverde - Portfolio 2020
 client_name: Simón Calle Laverde
 email: simoncallelaverde@gmail.com
 phone_number: +(57) 310 558 2638
 description: >- # this means to ignore newlines until "baseurl:"
-  Hello, I'm a web developer and web designer with 5 years of experience,
-  I build hand-crafted websites that standout! I have a background in
-  branding, marketing and advertisement. I use design and copywriting to
-  create modern websites that sell.
+  Hello, I'm Simón Calle Laverde, a web developer and web designer with 5
+  years of experience in web development and 5 years of studies in marketing
+  and advertisement. I build modern hand-crafted websites that stand out! I
+  have a background in marketing and advertisement, including branding and
+  copywriting. I use design, copy, and the latest technologies in 2020
+  to create awesome websites that are thought to sell.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "simoncallelaverde.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_repository: SimonCalleLaverde/SimonCalleLaverde.github.io
