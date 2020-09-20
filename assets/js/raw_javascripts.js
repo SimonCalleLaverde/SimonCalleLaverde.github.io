@@ -25,8 +25,8 @@ $(function() {
           const { previous, current, transformPrefix } = globalState;
           const { context } = sceneState.cache;
           const delta = current - previous;
-          const rotationZ = delta / 32;//24//48//2
-          const skew = delta / 40;//30//60//2.5
+          const rotationZ = delta / 40;//32//24//48//2
+          const skew = delta / 50;//40//30//60//2.5
           context.style[transformPrefix] = `translate3d(0, ${transform}px, 0) rotateZ(${rotationZ}deg) skew(${skew}deg)`;
         },
       },
@@ -220,91 +220,3 @@ $(function() {
     setTimeout(() => loaderHeader.removeClass("d-block").addClass("d-none"), 4600);//New
   });
 });
-
-// //---------------------------------CURSOR SCRIPTS---------------------------------//
-
-// // POSITIONING WITH GSAP AS PER (https://greensock.com/forums/topic/19789-follow-by-mouse/)
-// // http://ahrengot.com/tutorials/greensock-javascript-animation
-// var $cursor = $('.cursor');
-
-// function moveCircle(e) {
-//     TweenLite.to($cursor, 0.2, {//0.3
-//     css: {
-//       x: e.clientX,
-//       y: e.clientY
-//     }
-//   });
-// }
-
-// $(window).on('mousemove', moveCircle);
-
-// // HOVER STATES AS PER (https://stackoverflow.com/questions/51281666/animate-custom-cursor-when-hovering-on-a-link)
-// $(document).mousemove(function(e) {
-//   const cursor = $('.cursor');
-//   const target = $(event.target);
-  
-//   // Update position of cursor
-//   cursor.css('display', 'block');//cursor.css('left', e.clientX - 62.5px).css('top', e.clientY - 62.5px).css('display', 'block');
-  
-//   const isHeader = target.is('header-target-will-go-here');
-//   //const isLink = target.is('a.link, button.link, input.link, i.fa.link, a.link div, a.link span, a .link');
-//   const isProject = target.is('.project-thumbnail');
-//   const isFooter = target.is('footer > a.container');
-
-//   const isHeaderHovered = cursor.hasClass('hoveredHeader');
-//   //const isLinkHovered = cursor.hasClass('hoveredLink');
-//   const isProjectHovered = cursor.hasClass('hoveredProject');
-//   const isFooterHovered = cursor.hasClass('hoveredFooter');
-
-//   // Toggle the cursor class if necessary
-//   if (isHeader && !isHeaderHovered) {
-//     cursor.addClass('hoveredHeader');
-//   } else if (!isHeader && isHeaderHovered) {
-//     cursor.removeClass('hoveredHeader');
-//   }
-  
-//   // if (isLink && !isLinkHovered) {
-//   //   cursor.addClass('hoveredLink');
-//   // } else if (!isLink && isLinkHovered) {
-//   //   cursor.removeClass('hoveredLink');
-//   // }
-
-//   if (isProject && !isProjectHovered) {
-//     cursor.addClass('hoveredProject');
-//   } else if (!isProject && isProjectHovered) {
-//     cursor.removeClass('hoveredProject');
-//   }
-
-//   if (isFooter && !isFooterHovered) {
-//     cursor.addClass('hoveredFooter');
-//   } else if (!isFooter && isFooterHovered) {
-//     cursor.removeClass('hoveredFooter');
-//   }
-// });
-
-// $(document).mouseleave(function(e) {
-//   const cursor = $('.cursor');
-//   cursor.hide()
-// });
-
-// $(document).mouseenter(function(e) {
-//   const cursor = $('.cursor');
-//   cursor.show()
-// });
-
-//---------------------------------FIRST GSAP ATTEMPTS---------------------------------//
-
-// TweenMax.from('.header-image', 2, {css:{opacity:0}});
-
-//---------------------------------MAGICSCROLL AS PER DOCS | https://scrollmagic.io/docs/index.html---------------------------------//
-
-// // init controller
-// var controller = new ScrollMagic.Controller();
-
-// // create a scene
-// new ScrollMagic.Scene({
-//     duration: 100,    // the scene should last for a scroll distance of 100px
-//     offset: 50    // start this scene after scrolling for 50px
-// })
-// .setPin("#my-sticky-element") // pins the element for the the scene's duration
-// .addTo(controller); // assign the scene to the controller
