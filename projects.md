@@ -5,7 +5,7 @@ headline: All Projects
 permalink: /projects
 slug: projects
 type_slug: basic
-header_image: ""
+header_image: "/uploads/header-image-projects.jpg"
 ---
 
 In my previous company, we created lots of sites that helped thousands of people and moved hundreds of causes. Now, I want to continue my job of helping people to put their businesses names out there with good design and hight quality websites that show their goals and personality.

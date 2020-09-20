@@ -1,17 +1,11 @@
 ---
 layout: home
-title: Simon's Portfolio
-headline: Simon's<br>Port-<br>Folio
+title: Simón Calle Laverde - Portfolio 2020
+headline: Simón Calle Laverde
 permalink: /
 slug: home
 type_slug: basic
-header_image: /uploads/home-header.jpg
-thumbnail_image_top: /uploads/site-image-jomaira-imagen.jpg
-thumbnail_image_bottom: /uploads/site-image-calle-impresores.jpg
-headline: Simon's<br>Port-<br>Folio
-header_image: ""
-background_image: "" # /uploads/home-header.jpg
-thumbnail_image: ""
+header_image: "/uploads/header-image-home.jpg"
 ---
 
 Hello, I’m Simón

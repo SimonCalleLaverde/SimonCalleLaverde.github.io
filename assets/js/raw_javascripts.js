@@ -204,19 +204,17 @@ $(function() {
 
 $(function() {
   var body = $("body");
-  var loaderHeader = $(".header-image");//New
+  var loadingHeader = $(".header-image, .loader-area");//New
   var allImages = $("img, .bg-image");//New
 
   imagesLoaded(allImages, { background:true }, () => {
-    // document.body.classList.remove('loading');
-    // document.body.classList.add('imagesloaded');
-    
+    document.body.classList.remove('loading');
+    document.body.classList.add('imagesloaded');
+    //setTimeout(() => document.body.classList.remove('loading').add('imagesloaded'), 2000);
+
+    document.body.classList.add('rendering');
     setTimeout(() => document.body.classList.remove('rendering'), 4700);
-    //setTimeout(() => document.body.classList.add('complete'), 4700);
 
-    setTimeout(() => document.body.classList.remove('loading'), 2000);
-    setTimeout(() => document.body.classList.add('imagesloaded'), 2000);
-
-    setTimeout(() => loaderHeader.removeClass("d-block").addClass("d-none"), 4600);//New
+    setTimeout(() => loadingHeader.addClass("d-none"), 4600);//New//Removing Header-Image After Site's Loading Animation
   });
 });

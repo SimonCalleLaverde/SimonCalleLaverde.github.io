@@ -6,8 +6,6 @@ permalink: /store
 slug: store
 type_slug: e_commerce
 header_image: ""
-background_image: ""
-thumbnail_image: ""
 ---
 
 <h1>E-Commerce | Jekyll Option</h1>

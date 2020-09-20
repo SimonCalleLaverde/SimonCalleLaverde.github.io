@@ -9,19 +9,19 @@ layout: compress
   
   {% include liquid_top_variables.html %}
 
-  <body class="page-type-{{ page.type_slug | replace:'_','-' }}{% unless page.type_slug.size > 0 %}{% if page_tags_list contains '#case_study_dark#' %}case-study-dark{% endif %}{% endunless %} {{ page.slug }} is-top loading rendering" data-spy="scroll" data-target="#navbar" data-offset="80">
-    {% include loader_quote.html %}
-    
+  <body class="page-type-{{ page.type_slug | replace:'_','-' }}{% unless page.type_slug.size > 0 %}{% if page_tags_list contains '#case_study_dark#' %}case-study-dark{% endif %}{% endunless %} {{ page.slug }} is-top loading" data-spy="scroll" data-target="#navbar" data-offset="80">
+    {% include loader_area.html %}
+
     {% if page.header_image.size > 0 %}
       {% include header_image.html %}
     {% endif %}
-    
+
     {% include cursor.html %}
 
     {% include logo.html %}
 
     {% include header_plus_years.html %}
-    
+
     {% include nav_desktop.html %}
     {% include nav_mobile.html %}
 
@@ -39,11 +39,13 @@ layout: compress
 
     <div id="rolly"><!--{% if page.slug == 'projects' %}luxy{% else %}rolly{% endif %}-->
       <main id="main">
-        <h1 class="sr-only">{{ page.title }}</h1>
+        <h1 class="sr-only">
+          {{ page.title }}
+        </h1>
 
         {{ content }}
 
-        {% unless page.slug == "contact_me" or page.slug contains "contact" %}
+        {% unless page.type_slug == "feedback" %}
           {% include footer.html %}
         {% endunless %}
       </main>

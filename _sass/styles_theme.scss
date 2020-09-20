@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
   right:0;
   bottom:0;
   left:0;
-  z-index:10;
+  //z-index:10;
   pointer-events:none;
 }
 
@@ -342,7 +342,7 @@ main {
   min-height:100vh;
   background-color:theme-color('beige');//lighten(theme-color('grey-dark'),5);//blue//silver
   z-index:3;
-  @include transition(background-color ease-in-out 0.3s);
+  @include transition(background-color ease-in-out 0.3s, transform ease-in-out 0.3s);
 }
 
 // Header Plus Years, Header Left Info, Header Copyright, Navbar, Header Social Media, Header Scroll Down {
@@ -466,7 +466,11 @@ a {
   text-decoration:underline!important;
 }
 
-// Flexbox Better Support
+// Flexbox Better Support (FLEXBOX REVISED 100%)
+// display:flex;
+// flex-direction:row;
+// align-items:center;
+// justify-content:center;
 .d-flex {
   display:-webkit-box;
   display:-ms-flexbox;
@@ -644,7 +648,7 @@ article.project-article {
       figure {
         position:relative;
         width:calc(100% + 30px);
-        height:403px;//Mobile 250px
+        height:403px;//450px With col-md-10//Mobile 250px
         margin-left:-15px;
         .project-thumbnail, figcaption {
           position:absolute;
@@ -1255,7 +1259,7 @@ aside.header-scroll-down {
 //----------------------------------Section Styles----------------------------------//
 
 // Logo
-.logo {
+aside.logo {
   position:fixed;
   top:30px;
   left:34px;//30px
@@ -1704,6 +1708,7 @@ footer {
       }
     }
     .footer-business-social, .footer-personal-social {
+      overflow:hidden;
       a {
         &::before {
           display:none;
@@ -1730,9 +1735,10 @@ footer {
             background-color:theme-color('rosybrown');
             z-index:20;
             @include border-radius(50%);
-            @include transform(scale(1,0));
-            @include transform-origin(center bottom);
-            @include transition(transform ease-out 0.4s);
+            @include filter(opacity(0));
+            @include transform(translateY(30px));
+            //@include transform-origin(center bottom);
+            @include transition(filter ease-out 0.5s, transform ease-out 0.5s);
           }
           &.icon-facebook {
             svg {
@@ -1768,7 +1774,8 @@ footer {
               fill:theme-color('chocolate')!important;
             }
             &::before {
-              @include transform(scale(1,1));
+              @include filter(opacity(1));
+              @include transform(translateY(0));
             }
           }
         }
@@ -1784,8 +1791,9 @@ footer {
       left:25px;
     }
     .footer-business-social {
-      bottom:120px;
-      left:25px;
+      padding:0 5px 5px;
+      bottom:115px;//120px
+      left:20px;//25px
     }
     .footer-copyright {
       bottom:30px;
@@ -1803,8 +1811,9 @@ footer {
       text-align:right;
     }
     .footer-personal-social {
-      right:25px;
-      bottom:120px;
+      padding:0 5px 5px;
+      right:20px;//25px
+      bottom:115px;//120px
       text-align:right;
     }
     nav.footer-nav.navbar {
@@ -1862,7 +1871,7 @@ body.theme-dark, body.is-bottom, body.page-type-feedback, body.page-type-case-st
   main {
     background-color:theme-color('chocolate');
   }
-  .logo {
+  aside.logo {
     a {
       color:theme-color('rosybrown')!important;
       span {
@@ -1896,7 +1905,7 @@ body.is-bottom {
       @include filter(opacity(0));
     }
   }
-  .logo {
+  aside.logo {
     > div {
       pointer-events:none;
       opacity:0;//@include filter(opacity(0))

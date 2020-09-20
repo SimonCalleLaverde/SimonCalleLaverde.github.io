@@ -5,9 +5,7 @@ headline: Do you want to create a project with me?
 permalink: /contact_me
 slug: contact_me
 type_slug: feedback
-header_image: ""
-background_image: ""
-thumbnail_image: ""
+header_image: "/uploads/header-image-feedback.jpg"
 
 # <h1>Jekyll Contact Forms | Recommended As Per Jekyll Page Below</h1>
 # <h3>https://jekyllthemes.io/resources/jekyll-contact-forms/</h3>
