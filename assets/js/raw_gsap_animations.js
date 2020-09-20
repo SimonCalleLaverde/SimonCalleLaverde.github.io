@@ -38,6 +38,4 @@ new ScrollMagic.Scene({
 
 
 
-
-
 //---------------------------------SCROLL EFFECTS, GSAP (Gsap 3, September 2020)---------------------------------//
