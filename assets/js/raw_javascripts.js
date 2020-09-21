@@ -216,6 +216,6 @@ $(function() {
     document.body.classList.add('rendering');
     setTimeout(() => document.body.classList.remove('rendering'), 5500);
 
-    setTimeout(() => loadingHeader.addClass("d-none"), 5400);//New//Removing Header-Image After Site's Loading Animation
+    setTimeout(() => loadingHeader.addClass("d-none"), 6000);//New//Removing Header-Image After Site's Loading Animation
   });
 });

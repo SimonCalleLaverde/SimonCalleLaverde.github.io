@@ -69,19 +69,11 @@ body {
           }
         }
       }
-
-
-
-
-
-
-
-
       > small {
         > i {
           > span {
             display:inline-block;
-            @include filter(opacity(0));//Optional To Remove Or Add Opacity(1) For Instant Text Appear
+            @include filter(opacity(0));//Remove If Using GSAP's Line Of Code, & Remove :nth-childs and translateY
             @include transform(translateY(30px));
             &:nth-child(1) {
               @include animation(loaderQuoteAnim 1.3s ease-out 1.36s forwards);
@@ -245,15 +237,6 @@ body {
           }
         }
       }
-
-
-
-
-
-
-
-
-
     }
   }
   &.imagesloaded {
@@ -270,13 +253,13 @@ body {
 
 // cubic-bezier(0.455,0.03,0.515,0.955)
 
-// Example From (J.I)
-header.home-hello-header-j-i {
-  .hello-header-headline-j-i {
-    transform-style:preserve-3d;
-    will-change:filter, transform;
-    @include filter(opacity(0));
-    @include transform(translate3d(0,100px,0) skewY(10deg));
-    @include animation(loadingHeadlineAnim 0.7s cubic-bezier(0.455,0.03,0.515,0.955) 4.4s forwards);
-  }
-}
+// // Example From (J.I)
+// header.home-hello-header-j-i {
+//   .hello-header-headline-j-i {
+//     transform-style:preserve-3d;
+//     will-change:filter, transform;
+//     @include filter(opacity(0));
+//     @include transform(translate3d(0,100px,0) skewY(10deg));
+//     @include animation(loadingHeadlineAnim 0.7s cubic-bezier(0.455,0.03,0.515,0.955) 4.4s forwards);
+//   }
+// }

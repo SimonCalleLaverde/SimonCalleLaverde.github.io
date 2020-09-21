@@ -100,7 +100,7 @@
   }
 }//@keyframes
 
-//----------------------------------Loader Quote Animation Styles----------------------------------//
+//----------------------------------Loader Area Animation Styles----------------------------------//
 
 @keyframes loaderQuoteAnim {
   0% {
@@ -149,22 +149,22 @@
 
 //----------------------------------Loader Header Image Animation Styles----------------------------------//
 
-@keyframes loadingHeadlineAnim {
-  from {
-    @include filter(opacity(0));
-    @include transform(translate3d(0,100px,0) skewY(10deg));
-  }
-  to {
-    @include filter(opacity(1));
-    @include transform(translate3d(0,0,0) skewY(0));
-  }
-}//@keyframes
+// @keyframes loadingHeadlineAnim {
+//   from {
+//     @include filter(opacity(0));
+//     @include transform(translate3d(0,100px,0) skewY(10deg));
+//   }
+//   to {
+//     @include filter(opacity(1));
+//     @include transform(translate3d(0,0,0) skewY(0));
+//   }
+// }//@keyframes
 
-@keyframes loadingImageCoverAnim {
-  from {
-    @include transform(translateY(0));
-  }
-  to {
-    @include transform(translateY(-100%));
-  }
-}//@keyframes
+// @keyframes loadingImageCoverAnim {
+//   from {
+//     @include transform(translateY(0));
+//   }
+//   to {
+//     @include transform(translateY(-100%));
+//   }
+// }//@keyframes

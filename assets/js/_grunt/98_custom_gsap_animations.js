@@ -1,0 +1,1 @@
+var tl=gsap.timeline({defaults:{ease:"power1.out"}});tl.to(".loader-area > .loader-center > span > .loading-quote",{y:"0%",duration:2,stagger:.1});tl.to(".loader-area > .loader-center",{opacity:"0",duration:2,delay:.1});
