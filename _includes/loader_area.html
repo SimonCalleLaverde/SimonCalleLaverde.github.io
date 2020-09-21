@@ -1,19 +1,21 @@
 <div class="loader-area d-flex flex-row justify-content-center align-items-center bg-chocolate text-rosybrown" aria-hidden="true">
-  <div class="text-huge">
 
+	{% comment %}
 
+	{% if page.slug == "home" %}
+		<div>
+		  <div class="text-big"><!--modern websites and digital platforms-->
+			  I build modern websites
+			  <br>for modern organizations
+			  <br>& business people.
+		  </div>
 
+		  <small class="d-block text-uppercase mt-5" style="font-size:13px;"><span>B</span><span>e</span><span>c</span><span>a</span><span>u</span><span>s</span><span>e</span> <span>t</span><span>o</span><span>d</span><span>a</span><span>y</span> <span>a</span> <span>b</span><span>u</span><span>s</span><span>i</span><span>n</span><span>e</span><span>s</span><span>s</span> <span>w</span><span>i</span><span>t</span><span>h</span><span>o</span><span>u</span><span>t</span> <span>a</span> <span>w</span><span>e</span><span>b</span><span>s</span><span>i</span><span>t</span><span>e</span><span>,</span> <span>d</span><span>o</span><span>e</span><span>s</span> <span>n</span><span>o</span><span>t</span> <span>e</span><span>x</span><span>i</span><span>s</span><span>t</span><span>.</span></small>
+		</div>
+	{% else %}
+		<span>{{ page.title }}</span>
+	{% endif %}
 
+	{% endcomment %}
 
-  <!-- {% if page.slug == "home" %}
-    <span>I'</span><span>m</span><span> </span><span>a</span><span>n</span><span> </span><span>a</span><span>d</span><span>v</span><span>e</span><span>r</span><span>t</span><span>i</span><span>s</span><span>e</span><span>r</span><span> </span> <span>&</span> <span>w</span><span>e</span><span>b</span> <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
-  {% else %}
-    <span>{{ page.title }}</span>
-  {% endif %} -->
-
-
-
-
-
-  </div>
 </div>

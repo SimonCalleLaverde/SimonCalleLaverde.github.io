@@ -221,17 +221,6 @@ body {
   .text-italic {
     font-family:$font-light-italic!important;
   }
-  // .background-for-animation {
-  //   position:absolute;//fixed
-  //   width:100vw;
-  //   height:100vh;
-  //   top:0;
-  //   right:0;
-  //   bottom:0;
-  //   left:0;
-  //   z-index:1;
-  //   @include transition(transform ease-in-out 0.3s);
-  // }
 }
 img {
   max-width:100%;
@@ -1259,7 +1248,7 @@ aside.header-scroll-down {
 //----------------------------------Section Styles----------------------------------//
 
 // Logo
-aside.logo {
+.logo {
   position:fixed;
   top:30px;
   left:34px;//30px
@@ -1871,7 +1860,7 @@ body.theme-dark, body.is-bottom, body.page-type-feedback, body.page-type-case-st
   main {
     background-color:theme-color('chocolate');
   }
-  aside.logo {
+  .logo {
     a {
       color:theme-color('rosybrown')!important;
       span {
@@ -1905,7 +1894,7 @@ body.is-bottom {
       @include filter(opacity(0));
     }
   }
-  aside.logo {
+  .logo {
     > div {
       pointer-events:none;
       opacity:0;//@include filter(opacity(0))
