@@ -17,6 +17,10 @@
 //     .setPin('#my-sticky-element') // pins the element for the scene's duration
 //     .addTo(controller); // assign the scene to the controller
 
+//---------------------------------SCROLL EFFECTS, GSAP (Gsap 3, September 2020)---------------------------------//
+
+// Using Magic Scroll + Gsap For Elements Entering While Scrolling
+
 //---------------------------------LOADING ANIMATION, GSAP (Gsap 3, September 2020)---------------------------------//
 
 // Loading Animation (Some Elements)
@@ -27,5 +31,3 @@ tl.to('.loader-area > .loader-center > span > .loading-quote', {y:"0%", duration
 //tl.fromTo('.loader-area > .loader-center > small > i > span', {opacity:"0"}, {opacity:"1", duration:0.65, stagger:0.01}, "-=0.5");
 
 tl.to('.loader-area > .loader-center', {opacity:"0", duration:2, delay:0.1});
-
-//---------------------------------SCROLL EFFECTS, GSAP (Gsap 3, September 2020)---------------------------------//
