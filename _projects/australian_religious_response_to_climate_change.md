@@ -13,7 +13,7 @@ web:
     - /uploads/site-web-australian-religious-response-to-climate-change.png
 type: Campaign Website & Award Winner
 category: Coded for Code Nation
-tags: [Campaign Platform]
+tags: [Campaign Platform, Case Study Dark]
 order: 2
 ---
 

@@ -18,7 +18,7 @@ web:
   image_fonts: ""
 type: Business Website & Blog
 category: Recent Independent Project
-tags: [Business Website, Business Recent, Case Study Dark]
+tags: [Business Website, Business Recent]
 content_two_left: "Nam efficitur dolor sed vulputate ultrices. Ut auctor vestibulum nibh, ac semper
   risus aliquam sed. Fusce lobortis nulla in feugiat pellentesque. Nullam urna leo,
   venenatis in pellentesque sodales, interdum eget elit. Etiam elementum lorem sapien,

@@ -13,7 +13,7 @@ web:
     - /uploads/site-web-stop-adani-alliance.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform]
+tags: [Campaign Platform, Case Study Dark]
 order: 14
 ---
 

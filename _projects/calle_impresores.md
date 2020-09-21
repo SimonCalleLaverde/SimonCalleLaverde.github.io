@@ -15,7 +15,7 @@ web:
   image_fonts: ""
 type: Business Website & Catalogue
 category: Recent Independent Project
-tags: [Business Website, Business Recent, Case Study Dark]
+tags: [Business Website, Business Recent]
 content_two_left: ""
 content_two_right: ""
 permalink: /calle_impresores

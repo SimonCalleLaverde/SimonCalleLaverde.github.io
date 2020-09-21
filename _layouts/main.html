@@ -62,6 +62,10 @@ layout: compress
 
 
 
+    {% if page.slug == "home" %}
+      {% include home/home_phase_modal.html %}
+    {% endif %}
+
     {% comment %}
     {% include projects/projects_project_modal.html %}
     {% endcomment %}

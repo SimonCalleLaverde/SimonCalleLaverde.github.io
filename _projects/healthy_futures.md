@@ -13,7 +13,7 @@ web:
     - /uploads/site-web-healthy-futures.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Campaign Featured]
+tags: [Campaign Platform, Campaign Featured, Case Study Dark]
 order: 4
 ---
 

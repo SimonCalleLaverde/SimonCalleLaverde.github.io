@@ -215,6 +215,7 @@ body {
   position:relative;//For Scroll Spy
   font-family:$font-light;
   font-size:17px;
+  background-color:theme-color('chocolate');//In Case, While Loading
   letter-spacing:0.5px;
   z-index:0;
   overscroll-behavior-y:none;//To remove bounce on some browsers
@@ -388,7 +389,7 @@ a {
   position:relative;
   padding:$btn-normal-padding;
   font-family:$font-light;
-  font-size:11.5px;
+  font-size:13px;//11.5px
   background-color:transparent;
   color:transparent;//theme-color('rosybrown');
   border:1px solid theme-color('rosybrown');
@@ -409,7 +410,17 @@ a {
     @include transform(translate(5px,5px));
     @include transition(all ease-out 0.5s);
   }
-  &:hover, &:active, &:focus {
+  &.btn-view-the-site {
+    &::before {
+      content:"View the site";
+    }
+  }
+  &.btn-read-more {
+    &::before {
+      content:"Read more";
+    }
+  }
+  &:hover {//, &:active, &:focus
     background-color:transparent!important;
     color:transparent;
     border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
@@ -948,13 +959,23 @@ article.tool-card {
 article.three-phases-article {
   $phase-size:185px;
   font-size:13px;
-  > span {
-    //display:inline-flex;//inline-block
-    width:$phase-size;
-    height:$phase-size;
-    @include border-radius(50%);
-    img {
-      width:80%;
+  a {
+    span {
+      //display:inline-flex;//inline-block
+      width:$phase-size;
+      height:$phase-size;
+      @include border-radius(50%);
+      @include transform(scale(1));
+      @include transition(transform ease-out 0.5s, box-shadow ease-out 0.5s);
+      img {
+        width:80%;
+      }
+    }
+    &:hover, &:active, &:focus {
+      span {
+        @include transform(scale(1.03));
+        @include box-shadow(0 5px 15px rgba(24,16,8,0.2));
+      }
     }
   }
 }

@@ -56,7 +56,7 @@
     top:0;
     right:0;
     line-height:1.2!important;//Was 1.5 from Body
-    pointer-events:none;
+    //pointer-events:none;
     ul.navbar-nav {
       @include transition(filter ease-out 0.3s);
       li.nav-item {

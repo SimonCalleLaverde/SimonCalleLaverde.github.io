@@ -13,6 +13,6 @@ web:
     - /uploads/site-web-alice-springs-community-garden.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform]
+tags: [Campaign Platform, Case Study Dark]
 order: 12
 ---

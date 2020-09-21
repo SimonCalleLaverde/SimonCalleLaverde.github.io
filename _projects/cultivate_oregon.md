@@ -13,6 +13,6 @@ web:
     - /uploads/site-web-cultivate-oregon.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform]
+tags: [Campaign Platform, Case Study Dark]
 order: 17
 ---

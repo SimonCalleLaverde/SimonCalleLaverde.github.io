@@ -13,15 +13,29 @@
         <div class="col-md-4">
 
           <article class="three-phases-article text-rosybrown text-center">
-            <span class="d-inline-flex flex-row justify-content-center align-items-center bg-rosybrown p-4">
-              <img src="{{ phase.image_logo }}">
-            </span>
+            <a href="#" data-toggle="modal" data-target="#phaseModal_{{ phase.slug }}">
+              <span class="d-inline-flex flex-row justify-content-center align-items-center bg-rosybrown p-4">
+                <img src="{{ phase.image_logo }}" alt="{{ phase.title }} Logo" loading="lazy">
+              </span>
+            </a>
+            
+            <div class="px-3">
+              <h4 class="text-medium text-rosybrown mt-4more mb-4 pt-1">
+                {{ phase.title }}
+              </h4>
 
-            <div class="px-4more">
-              <h4 class="text-medium text-rosybrown mt-4more mb-4 pt-1">{{ phase.title }}</h4>
+              <!--Screen Readers Not-->
+              <div aria-hidden="true">
+                {{ phase.content | strip_html | truncatewords:50 }}
+              </div>
 
-              {{ phase.content }}
+              <!--Screen Readers Only-->
+              <div class="sr-only">
+                {{ phase.content }}
+              </div>
             </div>
+
+            <a class="btn btn-read-more mt-4more" href="#" data-toggle="modal" data-target="#phaseModal_{{ phase.slug }}" aria-hidden="true">Read more</a>
           </article>
 
         </div>

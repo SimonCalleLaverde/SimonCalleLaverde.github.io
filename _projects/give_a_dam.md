@@ -13,7 +13,7 @@ web:
     - /uploads/site-web-give-a-dam.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Campaign Featured]
+tags: [Campaign Platform, Campaign Featured, Case Study Dark]
 order: 24
 ---
 

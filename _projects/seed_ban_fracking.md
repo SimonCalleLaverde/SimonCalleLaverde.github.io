@@ -13,6 +13,6 @@ web:
     - /uploads/site-web-seed-ban-fracking.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform]
+tags: [Campaign Platform, Case Study Dark]
 order: 15
 ---

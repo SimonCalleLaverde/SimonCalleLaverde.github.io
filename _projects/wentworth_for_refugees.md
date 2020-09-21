@@ -13,7 +13,7 @@ web:
     - /uploads/site-web-wentworth-for-refugees.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform]
+tags: [Campaign Platform, Case Study Dark]
 order: 22
 ---
 
