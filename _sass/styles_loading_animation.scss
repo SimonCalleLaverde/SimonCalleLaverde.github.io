@@ -37,7 +37,7 @@ body {
 body {
   &.loading, &.rendering {
     cursor:progress;
-    overflow-y:hidden!important;//
+    overflow-y:hidden!important;
     // .cursor {
     //   @include filter(opacity(0));
     // }
@@ -60,192 +60,191 @@ body {
     pointer-events:none;
     > .loader-center {
       //display:none;
-
-
-
-
       > span {
         display:block;
         overflow:hidden;
         h1, h2, h3, h4, h5, h6 {
           &.loading-quote {
-            @include transform(translateY(150px));
+            @include transform(translateY(150px));//GSAP Moves In
           }
         }
       }
+
+
+
 
 
 
 
 
       > small {
-        span {
-          @include filter(opacity(0));//Optional To Remove Or Add Opacity(1) For Instant Text Appear
-          &:nth-child(1) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.36s forwards);
-          }
-          &:nth-child(2) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.38s forwards);
-          }
-          &:nth-child(3) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.4s forwards);
-          }
-          &:nth-child(4) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.42s forwards);
-          }
-          &:nth-child(5) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.44s forwards);
-          }
-          &:nth-child(6) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.46s forwards);
-          }
-          &:nth-child(7) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.48s forwards);
-          }
-          &:nth-child(8) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.5s forwards);
-          }
-          &:nth-child(9) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.52s forwards);
-          }
-          &:nth-child(10) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.54s forwards);
-          }
-          &:nth-child(11) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.56s forwards);
-          }
-          &:nth-child(12) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.58s forwards);
-          }
-          &:nth-child(13) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.6s forwards);
-          }
-          &:nth-child(14) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.62s forwards);
-          }
-          &:nth-child(15) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.64s forwards);
-          }
-          &:nth-child(16) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.66s forwards);
-          }
-          &:nth-child(17) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.68s forwards);
-          }
-          &:nth-child(18) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.7s forwards);
-          }
-          &:nth-child(19) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.72s forwards);
-          }
-          &:nth-child(20) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.74s forwards);
-          }
-          &:nth-child(21) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.76s forwards);
-          }
-          &:nth-child(22) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.78s forwards);
-          }
-          &:nth-child(23) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.8s forwards);
-          }
-          &:nth-child(24) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.82s forwards);
-          }
-          &:nth-child(25) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.84s forwards);
-          }
-          &:nth-child(26) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.86s forwards);
-          }
-          &:nth-child(27) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.88s forwards);
-          }
-          &:nth-child(28) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.9s forwards);
-          }
-          &:nth-child(29) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.92s forwards);
-          }
-          &:nth-child(30) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.94s forwards);
-          }
-          &:nth-child(31) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.96s forwards);
-          }
-          &:nth-child(32) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 1.98s forwards);
-          }
-          &:nth-child(33) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2s forwards);
-          }
-          &:nth-child(34) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.02s forwards);
-          }
-          &:nth-child(35) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.04s forwards);
-          }
-          &:nth-child(36) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.06s forwards);
-          }
-          &:nth-child(37) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.08s forwards);
-          }
-          &:nth-child(38) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.1s forwards);
-          }
-          &:nth-child(39) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.12s forwards);
-          }
-          &:nth-child(40) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.14s forwards);
-          }
-          &:nth-child(41) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.16s forwards);
-          }
-          &:nth-child(42) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.18s forwards);
-          }
-          &:nth-child(43) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.2s forwards);
-          }
-          &:nth-child(44) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.22s forwards);
-          }
-          &:nth-child(45) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.24s forwards);
-          }
-          &:nth-child(46) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.26s forwards);
-          }
-          &:nth-child(47) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.28s forwards);
-          }
-          &:nth-child(48) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.3s forwards);
-          }
-          &:nth-child(49) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.32s forwards);
-          }
-          &:nth-child(50) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.34s forwards);
-          }
-          &:nth-child(51) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.36s forwards);
-          }
-          &:nth-child(52) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.38s forwards);
-          }
-          &:nth-child(53) {
-            @include animation(loaderQuoteAnim 1.3s ease-out 2.4s forwards);
+        > i {
+          > span {
+            display:inline-block;
+            @include filter(opacity(0));//Optional To Remove Or Add Opacity(1) For Instant Text Appear
+            @include transform(translateY(30px));
+            &:nth-child(1) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.36s forwards);
+            }
+            &:nth-child(2) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.38s forwards);
+            }
+            &:nth-child(3) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.4s forwards);
+            }
+            &:nth-child(4) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.42s forwards);
+            }
+            &:nth-child(5) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.44s forwards);
+            }
+            &:nth-child(6) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.46s forwards);
+            }
+            &:nth-child(7) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.48s forwards);
+            }
+            &:nth-child(8) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.5s forwards);
+            }
+            &:nth-child(9) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.52s forwards);
+            }
+            &:nth-child(10) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.54s forwards);
+            }
+            &:nth-child(11) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.56s forwards);
+            }
+            &:nth-child(12) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.58s forwards);
+            }
+            &:nth-child(13) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.6s forwards);
+            }
+            &:nth-child(14) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.62s forwards);
+            }
+            &:nth-child(15) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.64s forwards);
+            }
+            &:nth-child(16) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.66s forwards);
+            }
+            &:nth-child(17) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.68s forwards);
+            }
+            &:nth-child(18) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.7s forwards);
+            }
+            &:nth-child(19) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.72s forwards);
+            }
+            &:nth-child(20) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.74s forwards);
+            }
+            &:nth-child(21) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.76s forwards);
+            }
+            &:nth-child(22) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.78s forwards);
+            }
+            &:nth-child(23) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.8s forwards);
+            }
+            &:nth-child(24) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.82s forwards);
+            }
+            &:nth-child(25) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.84s forwards);
+            }
+            &:nth-child(26) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.86s forwards);
+            }
+            &:nth-child(27) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.88s forwards);
+            }
+            &:nth-child(28) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.9s forwards);
+            }
+            &:nth-child(29) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.92s forwards);
+            }
+            &:nth-child(30) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.94s forwards);
+            }
+            &:nth-child(31) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.96s forwards);
+            }
+            &:nth-child(32) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 1.98s forwards);
+            }
+            &:nth-child(33) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2s forwards);
+            }
+            &:nth-child(34) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.02s forwards);
+            }
+            &:nth-child(35) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.04s forwards);
+            }
+            &:nth-child(36) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.06s forwards);
+            }
+            &:nth-child(37) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.08s forwards);
+            }
+            &:nth-child(38) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.1s forwards);
+            }
+            &:nth-child(39) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.12s forwards);
+            }
+            &:nth-child(40) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.14s forwards);
+            }
+            &:nth-child(41) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.16s forwards);
+            }
+            &:nth-child(42) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.18s forwards);
+            }
+            &:nth-child(43) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.2s forwards);
+            }
+            &:nth-child(44) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.22s forwards);
+            }
+            &:nth-child(45) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.24s forwards);
+            }
+            &:nth-child(46) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.26s forwards);
+            }
+            &:nth-child(47) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.28s forwards);
+            }
+            &:nth-child(48) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.3s forwards);
+            }
+            &:nth-child(49) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.32s forwards);
+            }
+            &:nth-child(50) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.34s forwards);
+            }
+            &:nth-child(51) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.36s forwards);
+            }
+            &:nth-child(52) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.38s forwards);
+            }
+            &:nth-child(53) {
+              @include animation(loaderQuoteAnim 1.3s ease-out 2.4s forwards);
+            }
           }
         }
       }
-
-
-
-
 
 
 

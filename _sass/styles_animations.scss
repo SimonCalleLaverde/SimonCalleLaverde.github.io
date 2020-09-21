@@ -113,7 +113,7 @@
   }
   100% {
     @include filter(opacity(0));
-    @include transform(translateY(-30px));
+    @include transform(translateY(-20px));
   }
 }//@keyframes
 
