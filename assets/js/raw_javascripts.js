@@ -213,8 +213,8 @@ $(function() {
     //setTimeout(() => document.body.classList.remove('loading').add('imagesloaded'), 2000);
 
     document.body.classList.add('rendering');
-    setTimeout(() => document.body.classList.remove('rendering'), 4700);
+    setTimeout(() => document.body.classList.remove('rendering'), 4900);
 
-    setTimeout(() => loadingHeader.addClass("d-none"), 4600);//New//Removing Header-Image After Site's Loading Animation
+    setTimeout(() => loadingHeader.addClass("d-none"), 4800);//New//Removing Header-Image After Site's Loading Animation
   });
 });

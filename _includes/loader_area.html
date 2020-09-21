@@ -1,21 +1,45 @@
 <div class="loader-area d-flex flex-row justify-content-center align-items-center bg-chocolate text-rosybrown" aria-hidden="true">
+	<div class="loader-center">
 
-	{% comment %}
 
-	{% if page.slug == "home" %}
-		<div>
+
+
+
+
+
+		{% if page.slug == "home" %}
 		  <div class="text-big"><!--modern websites and digital platforms-->
-			  I build modern websites
-			  <br>for modern organizations
-			  <br>& business people.
+		  	<span>
+			  	<h1 class="loading-quote">
+			  		I build modern websites
+			  	</h1>
+		  	</span>
+		  	<span>
+			  	<h1 class="loading-quote">
+			  		for modern organizations
+			  	</h1>
+		  	</span>
+		  	<span>
+			  	<h1 class="loading-quote">
+			  		& business people.
+			  	</h1>
+		  	</span>
 		  </div>
 
-		  <small class="d-block text-uppercase mt-5" style="font-size:13px;"><span>B</span><span>e</span><span>c</span><span>a</span><span>u</span><span>s</span><span>e</span> <span>t</span><span>o</span><span>d</span><span>a</span><span>y</span> <span>a</span> <span>b</span><span>u</span><span>s</span><span>i</span><span>n</span><span>e</span><span>s</span><span>s</span> <span>w</span><span>i</span><span>t</span><span>h</span><span>o</span><span>u</span><span>t</span> <span>a</span> <span>w</span><span>e</span><span>b</span><span>s</span><span>i</span><span>t</span><span>e</span><span>,</span> <span>d</span><span>o</span><span>e</span><span>s</span> <span>n</span><span>o</span><span>t</span> <span>e</span><span>x</span><span>i</span><span>s</span><span>t</span><span>.</span></small>
-		</div>
-	{% else %}
-		<span>{{ page.title }}</span>
-	{% endif %}
+		  <small class="d-block text-uppercase mt-5" style="font-size:13px;">
+		  	<i class="font-ultra-light-italic">
+		  		<span>B</span><span>e</span><span>c</span><span>a</span><span>u</span><span>s</span><span>e</span> <span>a</span> <span>b</span><span>u</span><span>s</span><span>i</span><span>n</span><span>e</span><span>s</span><span>s</span> <span>w</span><span>i</span><span>t</span><span>h</span><span>o</span><span>u</span><span>t</span> <span>a</span> <span>w</span><span>e</span><span>b</span><span>s</span><span>i</span><span>t</span><span>e</span><span>,</span> <span>d</span><span>o</span><span>e</span><span>s</span> <span>n</span><span>o</span><span>t</span> <span>e</span><span>x</span><span>i</span><span>s</span><span>t</span><span>.</span>
+		  	</i>
+		  </small>
+		{% else %}
+			<span>{{ page.title }}</span>
+		{% endif %}
 
-	{% endcomment %}
 
+
+
+
+
+
+	</div>
 </div>
