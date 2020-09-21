@@ -210,11 +210,12 @@ $(function() {
   imagesLoaded(allImages, { background:true }, () => {
     document.body.classList.remove('loading');
     document.body.classList.add('imagesloaded');
-    //setTimeout(() => document.body.classList.remove('loading').add('imagesloaded'), 2000);
+    //setTimeout(() => document.body.classList.remove('loading'), 2000);
+    //setTimeout(() => document.body.classList.add('imagesloaded'), 2000);
 
     document.body.classList.add('rendering');
-    setTimeout(() => document.body.classList.remove('rendering'), 4900);
+    setTimeout(() => document.body.classList.remove('rendering'), 5500);
 
-    setTimeout(() => loadingHeader.addClass("d-none"), 4800);//New//Removing Header-Image After Site's Loading Animation
+    setTimeout(() => loadingHeader.addClass("d-none"), 5400);//New//Removing Header-Image After Site's Loading Animation
   });
 });

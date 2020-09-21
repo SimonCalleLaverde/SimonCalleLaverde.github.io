@@ -24,14 +24,14 @@
 
 //----------------------------------Other Animation Styles----------------------------------//
 
-@keyframes change30ColorAnim {
-  from {
-    color:theme-color('rosybrown')!important;
-  }
-  to {
-    color:theme-color('chocolate')!important;
-  }
-}//@keyframes
+// @keyframes change30ColorAnim {
+//   from {
+//     color:theme-color('rosybrown')!important;
+//   }
+//   to {
+//     color:theme-color('chocolate')!important;
+//   }
+// }//@keyframes
 
 @keyframes scrollDownAnim {
   0% {
@@ -100,74 +100,6 @@
   }
 }//@keyframes
 
-//----------------------------------Mouse Scrolling Animation Styles----------------------------------//
-
-@keyframes mouseScrollAnim {
-  0% {
-    @include transform(translateY(10px));
-  }
-  5% {
-    @include transform(translateY(10px));
-  }
-  10% {
-    @include transform(translateY(10px));
-  }
-  15% {
-    @include transform(translateY(10px));
-  }
-  20% {
-    @include transform(translateY(10px));
-  }
-  25% {
-    @include transform(translateY(10px));
-  }
-  30% {
-    @include transform(translateY(10px));
-  }
-  35% {
-    @include transform(translateY(10px));
-  }
-  40% {
-    @include transform(translateY(10px));
-  }
-  45% {
-    @include transform(translateY(53%));
-  }
-  50% {
-    @include transform(translateY(10px));
-  }
-  55% {
-    @include transform(translateY(10px));
-  }
-  60% {
-    @include transform(translateY(10px));
-  }
-  65% {
-    @include transform(translateY(10px));
-  }
-  70% {
-    @include transform(translateY(10px));
-  }
-  75% {
-    @include transform(translateY(10px));
-  }
-  80% {
-    @include transform(translateY(10px));
-  }
-  85% {
-    @include transform(translateY(10px));
-  }
-  90% {
-    @include transform(translateY(10px));
-  }
-  95% {
-    @include transform(translateY(53%));
-  }
-  100% {
-    @include transform(translateY(10px));
-  }
-}//@keyframes
-
 //----------------------------------Loader Quote Animation Styles----------------------------------//
 
 @keyframes loaderQuoteAnim {
@@ -185,7 +117,7 @@
   }
 }//@keyframes
 
-@keyframes loaderQuoteBackgroundGoAnim {
+@keyframes loaderTranslateOutAnim {
   0%, 60% {
     @include transform(translateY(0));
   }
@@ -194,7 +126,7 @@
   }
 }//@keyframes
 
-@keyframes headerTranslateAnim {
+@keyframes headerTranslateHalfOutAnim {
   0% {
     @include transform(translateY(0) scale(1.1));
   }
@@ -206,7 +138,7 @@
   }
 }//@keyframes
 
-@keyframes mainTranslateAnim {
+@keyframes mainTranslateInAnim {
   from {
     @include transform(translateY(100vh));
   }
