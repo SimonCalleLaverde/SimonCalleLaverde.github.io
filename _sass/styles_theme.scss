@@ -1433,26 +1433,18 @@ section.home-who-i-am-section {
       &::before {
         @include animation(lineThorughBackAnim 0.9s linear forwards);
       }
-      ~ span.text-development, ~ span.text-marketing {
-        @include transition (filter ease-out 1s 0.5s);
+      + img {
+        @include transition (filter ease-out 1s 0.1s);
       }
-    }
-    &.link-development, &.link-marketing {
-      &:hover {
-        + img {
-          @include transition (filter ease-out 0.7s);
-        }
+      ~ span {
+        @include transition (filter ease-out 1s 0.3s);
       }
-    }
-    &.link-development {
-      &:hover {
+      &.link-development {
         + img, ~ span.text-development {
           @include filter(opacity(0.9));
         }
       }
-    }
-    &.link-marketing {
-      &:hover {
+      &.link-marketing {
         + img, ~ span.text-marketing {
           @include filter(opacity(0.9));
         }
@@ -1484,7 +1476,10 @@ section.home-who-i-am-section {
     font-size:13px;
     line-height:1.7;
     text-transform:none;
+    pointer-events:none;
     //z-index:18;
+    @include transition (filter ease-out 0.7s);
+    @include filter(opacity(0));
     em {
       position:relative;
       &::before {
@@ -1495,11 +1490,6 @@ section.home-who-i-am-section {
         background-color:theme-color('chocolate');
         @include animation(lineThorughLoopAnim 5s linear infinite);
       }
-    }
-    &.text-development, &.text-marketing {
-      pointer-events:none;
-      @include transition (filter ease-out 0.7s);
-      @include filter(opacity(0));
     }
     &.text-development {
       width:220px;
