@@ -532,13 +532,13 @@ a {
   font-size:1.4rem;
 }
 .text-stroke-rosybrown {
-  color:transparent;
+  color:transparent!important;
   -webkit-text-fill-color:theme-color('transparent');//Will Override Color (Regardless Of Order)
   -webkit-text-stroke-width:1px;
   -webkit-text-stroke-color:theme-color('rosybrown');
 }
 .text-stroke-chocolate {
-  color:transparent;
+  color:transparent!important;
   -webkit-text-fill-color:theme-color('transparent');//Will Override Color (Regardless Of Order)
   -webkit-text-stroke-width:1px;
   -webkit-text-stroke-color:theme-color('chocolate');
@@ -1415,7 +1415,7 @@ section.home-who-i-am-section {
   padding:30px 20px;//To revise mobile
   a, a:not([href]):not([tabindex]) {
     position:relative;
-    color:transparent;//theme-color('rosybrown')
+    color:theme-color('rosybrown');
     z-index:17;
     &::before {
       content:'';
@@ -1434,10 +1434,10 @@ section.home-who-i-am-section {
         @include animation(lineThorughBackAnim 0.9s linear forwards);
       }
       + img {
-        @include transition (filter ease-out 1s 0.1s);
+        @include transition (filter ease-out 1s 0.3s);
       }
       ~ span {
-        @include transition (filter ease-out 1s 0.3s);
+        @include transition (filter ease-out 1s 0.6s);
       }
       &.link-development {
         + img, ~ span.text-development {
@@ -1460,6 +1460,7 @@ section.home-who-i-am-section {
     @include filter(opacity(0));
     @include transition (filter ease-out 0.3s);
     &.gif-development {
+      max-width:90%;
       top:3%;
       left:5%;
       @include transform(rotate(-5deg));
