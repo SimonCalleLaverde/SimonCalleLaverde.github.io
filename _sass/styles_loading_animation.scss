@@ -48,7 +48,7 @@ body {
 //----------------------------------Loading Animation (Cursor Default & Cursor Custom) Styles----------------------------------//
 
 body {
-  &.loading, &.rendering {
+  &.loading, &.home.rendering, &.rendering-internal {
     cursor:progress;
     overflow-y:hidden!important;
     // .cursor {

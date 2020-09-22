@@ -214,7 +214,9 @@ $(function() {
     //setTimeout(() => document.body.classList.add('imagesloaded'), 2000);
 
     document.body.classList.add('rendering');
+    document.body.classList.add('rendering-internal');
     setTimeout(() => document.body.classList.remove('rendering'), 5500);
+    setTimeout(() => document.body.classList.remove('rendering-internal'), 3000);
 
     setTimeout(() => loadingHeader.addClass("d-none"), 6000);//New//Removing Header-Image After Site's Loading Animation
   });

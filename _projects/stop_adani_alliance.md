@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Stop Adani Alliance
+title: Stop Adani Alliance
 name_for_thumbnail: Stop Adani<br>Alliance
 thumbnail_image: /uploads/site-image-stop-adani-alliance.jpg
+header_image: /uploads/site-image-stop-adani-alliance.jpg
 platforms: [Jekyll, Slides, Forestry]
 year: 2017
 roles: Frontend & backend development
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-stop-adani-alliance.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 14
 ---
 

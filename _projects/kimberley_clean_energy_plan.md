@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Kimberley Clean Energy Plan
+title: Kimberley Clean Energy Plan
 name_for_thumbnail: Kimberley Clean<br>Energy Plan
 thumbnail_image: /uploads/site-image-kimberley-clean-energy-plan.jpg
+header_image: /uploads/site-image-kimberley-clean-energy-plan.jpg
 platforms: [NationBuilder, Bootstrap 4]
 year: 2018
 roles: Frontend & backend development
@@ -13,6 +14,7 @@ web:
     - /uploads/site-web-kimberley-clean-energy-plan.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 23
 ---

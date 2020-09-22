@@ -1,8 +1,9 @@
 ---
 layout: project
-name: National Apology Foundation
+title: National Apology Foundation
 name_for_thumbnail: Nafia
 thumbnail_image: /uploads/site-image-national-apology-foundation.jpg
+header_image: /uploads/site-image-national-apology-foundation.jpg
 platforms: [NationBuilder, Aware v2]
 year: 2016
 roles: Frontend & backend development
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-national-apology-foundation.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 11
 ---
 

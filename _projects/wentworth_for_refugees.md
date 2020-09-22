@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Wentworth for Refugees
+title: Wentworth for Refugees
 name_for_thumbnail: Wentworth for<br>Refugees
 thumbnail_image: /uploads/site-image-wentworth-for-refugees.jpg
+header_image: /uploads/site-image-wentworth-for-refugees.jpg
 platforms: [NationBuilder, Bootstrap 3]
 year: 2018
 roles: Frontend development
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-wentworth-for-refugees.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 22
 ---
 

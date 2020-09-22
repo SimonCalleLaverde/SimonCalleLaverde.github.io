@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Conservation Council SA
+title: Conservation Council SA
 name_for_thumbnail: CCSA
 thumbnail_image: /uploads/site-image-conservation-council-sa.png
+header_image: /uploads/site-image-conservation-council-sa.png
 platforms: [NationBuilder, Aware v2]
 year: 2015
 roles: Frontend & backend development
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-conservation-council-sa.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 3
 ---
 

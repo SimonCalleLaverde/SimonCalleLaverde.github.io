@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Give A Dam
+title: Give A Dam
 name_for_thumbnail: Give A<br>Dam
 thumbnail_image: /uploads/site-image-give-a-dam.jpg
+header_image: /uploads/site-image-give-a-dam.jpg
 platforms: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: Frontend & backend development
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-give-a-dam.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Campaign Featured, Case Study Dark]
+tags: [Campaign Platform, Campaign Featured, Theme Dark]
+type_slug: project
 order: 24
 ---
 

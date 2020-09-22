@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Repower Alice Springs
+title: Repower Alice Springs
 name_for_thumbnail: Repower Alice<br>Springs
 thumbnail_image: /uploads/site-image-repower-alice-springs.png
+header_image: /uploads/site-image-repower-alice-springs.png
 platforms: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: Frontend & backend development
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-repower-alice-springs.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 26
 ---
 

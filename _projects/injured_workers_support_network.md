@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Injured Workers Support Network
+title: Injured Workers Support Network
 name_for_thumbnail: Injured Workers<br>Support Network
 thumbnail_image: /uploads/site-image-injured-workers-support-network-victoria.jpg
+header_image: /uploads/site-image-injured-workers-support-network-victoria.jpg
 platforms: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: Frontend & backend development
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-injured-workers-support-network-victoria.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 27
 ---
 

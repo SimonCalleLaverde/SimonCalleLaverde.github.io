@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Calle Impresores
+title: Calle Impresores
 name_for_thumbnail: Calle<br>Impresores
 thumbnail_image: /uploads/site-image-calle-impresores.jpg
+header_image: /uploads/site-image-calle-impresores.jpg
 client: Calle Impresores
 platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2020
@@ -19,6 +20,7 @@ tags: [Business Website, Business Recent]
 content_two_left: ""
 content_two_right: ""
 permalink: /calle_impresores
+type_slug: project
 order: 30
 ---
 

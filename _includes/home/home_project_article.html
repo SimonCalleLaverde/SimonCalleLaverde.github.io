@@ -11,7 +11,7 @@
           background-size:cover;
         }
       </style>
-      <div class="project-thumbnail project-{{ project.order }} bg-image" id="project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.name }}" loading="lazy">
+      <div class="project-thumbnail project-{{ project.order }} bg-image" id="project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.title }}" loading="lazy">
       </div>
 
       <figcaption class="font-ultra-light text-rosybrown">
@@ -50,7 +50,7 @@
 
           <div class="project-platforms">
             <span class="font-light">
-              Created with
+              Created using
             </span>
 
             {% for platform in project.platforms %}

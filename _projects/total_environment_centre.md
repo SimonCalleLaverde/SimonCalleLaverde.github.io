@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Total Environment Centre
+title: Total Environment Centre
 name_for_thumbnail: TEC
 thumbnail_image: /uploads/site-image-total-environment-centre.png
+header_image: /uploads/site-image-total-environment-centre.png
 platforms: [NationBuilder, Aware v2]
 year: 2016
 roles: Frontend & backend development
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-total-environment-centre.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 9
 ---
 

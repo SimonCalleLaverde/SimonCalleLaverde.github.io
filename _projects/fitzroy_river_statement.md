@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Fitzroy River Statement
+title: Fitzroy River Statement
 name_for_thumbnail: Fitzroy River<br>Statement
 thumbnail_image: /uploads/site-image-fitzroy-river-statement.jpg
+header_image: /uploads/site-image-fitzroy-river-statement.jpg
 platforms: [NationBuilder, Bootstrap 3]
 year: 2017
 roles: [Frontend development, Design improvisation to match client's statement site]
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-fitzroy-river-statement.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 19
 ---
 

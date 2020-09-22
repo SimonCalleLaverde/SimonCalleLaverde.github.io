@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Freshhold Consulting
+title: Freshhold Consulting
 name_for_thumbnail: Freshhold<br>Consulting
 thumbnail_image: /uploads/site-image-freshhold.jpg
+header_image: /uploads/site-image-freshhold.jpg
 platforms: [Dreamweaver, Html Css Php]
 year: 2015
 roles: [UI, UX, Design, Development]
@@ -15,7 +16,8 @@ web:
     - /uploads/site-web-freshhold-3.png
 type: Concept Website
 category: Concept Presentation Site
-tags: [Presentation Website, Case Study Dark]
+tags: [Presentation Website, Theme Dark]
+type_slug: project
 order: 1
 ---
 

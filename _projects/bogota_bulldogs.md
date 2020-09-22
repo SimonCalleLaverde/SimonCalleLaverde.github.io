@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Bogota Bulldogs
+title: Bogota Bulldogs
 name_for_thumbnail: Bogota<br>Bulldogs
 thumbnail_image: /uploads/site-image-bogota-bulldogs.jpg
+header_image: /uploads/site-image-bogota-bulldogs.jpg
 platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2019
 roles: Frontend & backend development
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-bogota-bulldogs.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 28
 ---
 

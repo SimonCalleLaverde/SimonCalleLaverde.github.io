@@ -14,7 +14,7 @@
         </div>
 
         <div class="modal-body pt-0 pt-md-2 pb-2 px-4 px-md-5">
-          <h4 class="text-big text-chocolate text-uppercase mb-4">{{ project.name }}</h4>
+          <h4 class="text-big text-chocolate text-uppercase mb-4">{{ project.title }}</h4>
 
           <!-- if project.content.size > 0 -->
             <!--Desktop-->
@@ -30,7 +30,7 @@
 
           {% for image in project.web.images %}
             <div class="border mt-5less">
-              <img src="{{ image }}" alt="{{ page.name }} Website Image Screenshot {{ forloop.index }}">
+              <img src="{{ image }}" alt="{{ page.title }} Website Image Screenshot {{ forloop.index }}">
             </div>
           {% endfor %}
 

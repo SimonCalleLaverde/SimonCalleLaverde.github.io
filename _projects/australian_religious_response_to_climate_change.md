@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Australian Religious Response to Climate Change
+title: Australian Religious Response to Climate Change
 name_for_thumbnail: ARRCC # Australian<br>Religious<br>Response to<br>Climate Change
 thumbnail_image: /uploads/site-image-australian-religious-response-to-climate-change.jpg
+header_image: /uploads/site-image-australian-religious-response-to-climate-change.jpg
 platforms: [NationBuilder, Aware]
 year: 2015
 roles: Frontend & backend development
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-australian-religious-response-to-climate-change.png
 type: Campaign Website & Award Winner
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 2
 ---
 

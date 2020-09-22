@@ -1,8 +1,9 @@
 ---
 layout: project
-name: The Kimberley Like Nowhere Else
+title: The Kimberley Like Nowhere Else
 name_for_thumbnail: The Kimberley
 thumbnail_image: /uploads/site-image-the-kimberley-like-nowhere-else.jpg
+header_image: /uploads/site-image-the-kimberley-like-nowhere-else.jpg
 platforms: [NationBuilder, Aware v2]
 year: 2016
 roles: Frontend & backend development
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-the-kimberley-like-nowhere-else.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 8
 ---
 

@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Jomaira Imagen
+title: Jomaira Imagen
 name_for_thumbnail: Jomaira<br>Imagen
 thumbnail_image: /uploads/site-image-jomaira-imagen.jpg
+header_image: /uploads/site-image-jomaira-imagen.jpg
 client: Jomaira Laverde
 platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2020
@@ -34,6 +35,7 @@ content_two_right: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pra
   Vivamus semper ante non finibus ullamcorper. Curabitur elementum eget metus
   consequat blandit."
 permalink: /jomaira_imagen
+type_slug: project
 order: 29
 ---
 

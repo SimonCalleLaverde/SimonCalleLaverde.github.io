@@ -1,8 +1,9 @@
 ---
 layout: project
-name: Refugee Council of Australia
+title: Refugee Council of Australia
 name_for_thumbnail: Refugee Council<br>of Australia
 thumbnail_image: /uploads/site-image-refugee-council-of-australia.png
+header_image: /uploads/site-image-refugee-council-of-australia.png
 platforms: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: [Frontend development, Cross platform setup]
@@ -13,7 +14,8 @@ web:
     - /uploads/site-web-refugee-council-of-australia.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Case Study Dark]
+tags: [Campaign Platform, Theme Dark]
+type_slug: project
 order: 25
 ---
 

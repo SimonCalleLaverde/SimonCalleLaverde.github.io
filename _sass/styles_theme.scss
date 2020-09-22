@@ -320,6 +320,7 @@ h1, h2, h3, h4, h5, h6 {
   right:0;
   bottom:0;
   left:0;
+  background-color:theme-color('chocolate');
   //z-index:10;
   pointer-events:none;
 }
@@ -530,12 +531,14 @@ a {
 .text-small {
   font-size:1.4rem;
 }
-.link-stroke-rosybrown {
+.text-stroke-rosybrown {
+  color:transparent;
   -webkit-text-fill-color:theme-color('transparent');//Will Override Color (Regardless Of Order)
   -webkit-text-stroke-width:1px;
   -webkit-text-stroke-color:theme-color('rosybrown');
 }
-.link-stroke-chocolate {
+.text-stroke-chocolate {
+  color:transparent;
   -webkit-text-fill-color:theme-color('transparent');//Will Override Color (Regardless Of Order)
   -webkit-text-stroke-width:1px;
   -webkit-text-stroke-color:theme-color('chocolate');
@@ -841,7 +844,7 @@ article.project-article {
           time {
             position:absolute;
             top:25px;
-            right:-9.5px;
+            right:-11.5px;//-9.5px
             font-size:13px;
             writing-mode:vertical-rl;
             text-orientation:mixed;
@@ -991,7 +994,7 @@ article.three-phases-article {
   .modal-content {
     background-color:rgba(255,255,255,0.7)!important;//rgba(184,156,146,0.5)!important//rgba(199,197,195,0.5)!important
     backdrop-filter:blur(5px);//@include
-    @include border-radius(0.3rem);
+    @include border-radius(0.8rem);
     .modal-header, .modal-footer {
       border:none;
     }
@@ -1001,6 +1004,10 @@ article.three-phases-article {
           outline:none;
         }
       }
+    }
+    .modal-body {
+      font-size:15px;
+      line-height:1.8;
     }
   }
 }
@@ -1409,6 +1416,7 @@ section.home-who-i-am-section {
   a, a:not([href]):not([tabindex]) {
     position:relative;
     color:transparent;//theme-color('rosybrown')
+    z-index:17;
     &::before {
       content:'';
       position:absolute;
@@ -1418,29 +1426,56 @@ section.home-who-i-am-section {
       left:0;
       background-color:theme-color('rosybrown');
       pointer-events:none;
+      //z-index:17;
     }
     &:hover {
-      @include filter(opacity(0.8));
+      @include filter(opacity(0.9));
       &::before {
         @include animation(lineThorughBackAnim 0.9s linear forwards);
       }
-      + span.text-development, + span.text-marketing {
-        @include transition (filter ease-out 1s 0.3s);
+      ~ span.text-development, ~ span.text-marketing {
+        @include transition (filter ease-out 1s 0.5s);
+      }
+    }
+    &.link-development, &.link-marketing {
+      &:hover {
+        + img {
+          @include transition (filter ease-out 0.7s);
+        }
       }
     }
     &.link-development {
       &:hover {
-        + span.text-development {
-          @include filter(opacity(1));
+        + img, ~ span.text-development {
+          @include filter(opacity(0.9));
         }
       }
     }
     &.link-marketing {
       &:hover {
-        + span.text-marketing {
-          @include filter(opacity(1));
+        + img, ~ span.text-marketing {
+          @include filter(opacity(0.9));
         }
       }
+    }
+  }
+  img {
+    position:absolute;
+    //max-width:100%;//90%
+    pointer-events:none;
+    z-index:15;
+    @include border-radius(0.3rem);
+    @include filter(opacity(0));
+    @include transition (filter ease-out 0.3s);
+    &.gif-development {
+      top:3%;
+      left:5%;
+      @include transform(rotate(-5deg));
+    }
+    &.gif-universities {
+      top:25%;
+      right:5%;
+      @include transform(rotate(5deg));
     }
   }
   span {
@@ -1449,6 +1484,7 @@ section.home-who-i-am-section {
     font-size:13px;
     line-height:1.7;
     text-transform:none;
+    //z-index:18;
     em {
       position:relative;
       &::before {
@@ -1475,6 +1511,13 @@ section.home-who-i-am-section {
       top:170px;
       right:-275px;
     }
+  }
+  div.intro-overlay {
+    position:absolute;
+    top:0;
+    left:4px;
+    pointer-events:none;
+    z-index:16;
   }
 }
 
@@ -1884,7 +1927,7 @@ body.page-type-feedback {
 }
 
 // Theme Dark
-body.theme-dark, body.is-bottom, body.page-type-feedback, body.page-type-case-study-dark {
+body.theme-dark, body.is-bottom, body.page-type-feedback {
   main {
     background-color:theme-color('chocolate');
   }
