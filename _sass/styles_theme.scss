@@ -216,6 +216,7 @@ body {
   font-family:$font-light;
   font-size:17px;
   background-color:theme-color('chocolate');//In Case, While Loading
+  line-height:1.8;////
   letter-spacing:0.5px;
   z-index:0;
   overscroll-behavior-y:none;//To remove bounce on some browsers
@@ -529,11 +530,16 @@ a {
 .text-small {
   font-size:1.4rem;
 }
-// .stroke-link {
-//   -webkit-text-fill-color:theme-color('rosybrown');//Will Override Color (Regardless Of Order)
-//   -webkit-text-stroke-width:1px;
-//   -webkit-text-stroke-color:theme-color('rosybrown');
-// }
+.link-stroke-rosybrown {
+  -webkit-text-fill-color:theme-color('transparent');//Will Override Color (Regardless Of Order)
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:theme-color('rosybrown');
+}
+.link-stroke-chocolate {
+  -webkit-text-fill-color:theme-color('transparent');//Will Override Color (Regardless Of Order)
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:theme-color('chocolate');
+}
 
 // Forms (Custom | Overriding Default & Bootstrap's)
 ::-webkit-input-placeholder {
@@ -1400,9 +1406,9 @@ header.home-hello-header {
 // Home Who I Am Section
 section.home-who-i-am-section {
   padding:30px 20px;//To revise mobile
-  a {
+  a, a:not([href]):not([tabindex]) {
     position:relative;
-    color:theme-color('rosybrown');
+    color:transparent;//theme-color('rosybrown')
     &::before {
       content:'';
       position:absolute;

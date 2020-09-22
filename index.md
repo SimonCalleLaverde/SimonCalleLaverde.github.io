@@ -10,13 +10,13 @@ header_image: "/uploads/header-image-home.jpg"
 
 Hello, I’m Simón
 <br>Calle Laverde,
-<br>A <a class="link-development"><i>web developer</i></a><!--smoothScroll--><!--href="#home_businesses_headline_section"-->
+<br>A <a class="link-development link-stroke-rosybrown"><i>web developer</i></a><!--smoothScroll--><!--href="#home_businesses_headline_section"-->
 <span class="text-development font-ultra-light text-chocolate" aria-hidden="true">
 	I have more than 6 years since I started in the web development industry, 4 years of which I worked for an awesome five star rated international digital agency: Code Nation, based in Australia.
 	<br><br>Scroll down to see my featured projects and newest independently created websites with a bit of experimentation and modern fully responsive layouts that generate emotions which translate into sales.
 </span>
 <br>with a background
-<br>in <a href="/about" class="link-marketing"><i>marketing</i></a>:
+<br>in <a href="/about" class="link-marketing link-stroke-rosybrown"><i>marketing</i></a>:
 <span class="text-marketing font-ultra-light text-chocolate" aria-hidden="true">
 	I studied marketing and advertisement for 5 years of my life, which included hundreds of exercises on branding and campaigning, many public presentations and uncountable individual and groupal projects, a lot of analisys and learning around psychology, persuation, ads, slogans and text analysis.
 	<br><br>I learned semiotics, linguistic, and how to comunicate and display to generate action and emotions; working with real brands, and reading a lot of texts, and books.
