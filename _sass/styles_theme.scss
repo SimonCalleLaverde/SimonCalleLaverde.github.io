@@ -1617,23 +1617,51 @@ header.about-header {
 // About Myself Section
 section.about-myself-section {
   padding:30px 20px;//To revise mobile
+  .about-intro, .about-postdata {
+    a {
+      display:inline-block;
+      position:relative;
+      color:theme-color('rosybrown');
+      &::before {
+        content:'';
+        position:absolute;
+        width:100%;
+        height:3px;
+        bottom:7.5px;
+        left:0;
+        background-color:theme-color('rosybrown');
+        pointer-events:none;
+        border-top:1px solid theme-color('beige');
+        border-bottom:1px solid theme-color('beige');
+      }
+      &:hover {
+        @include filter(opacity(0.9));
+        &::before {
+          @include animation(lineThorughBackAnim 0.9s linear forwards);
+        }
+      }
+    }
+  }
   .about-intro {
-    font-size:23.5px;
-    line-height:1.6;
+    font-size:25px;
+    line-height:1.65;
   }
   .about-postdata {
     font-size:17px;
-    line-height:1.6;
+    line-height:1.65;
+    > div {
+      width:46%;
+    }
   }
 }
 
 // About Lets Work Section
 section.about-lets-work-section {
   padding:30px 20px;//To revise mobile
-  .about-contact-me {
-    font-size:23.5px;
-    line-height:1.6;
-  }
+  // .about-contact-me {
+  //   font-size:25px;
+  //   line-height:1.65;
+  // }
 }
 
 // Projects Header Section
