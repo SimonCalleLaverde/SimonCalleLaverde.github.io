@@ -1469,7 +1469,6 @@ section.home-who-i-am-section {
     @include filter(opacity(0));
     @include transition (filter ease-out 0.3s);
     &.gif-development {
-      max-width:90%;
       top:3%;
       left:5%;
       @include transform(rotate(-5deg));
