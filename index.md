@@ -22,7 +22,7 @@ Hello, I’m Simón
 <span class="text-marketing font-ultra-light text-chocolate" aria-hidden="true">
 	I studied marketing and advertisement for 5 years of my life, which included hundreds of exercises on branding and campaigning, many public presentations, uncountable individual and group projects, analysing and learning about psychology, persuasion, ads, slogans and text analysis.
 	<br><br>I learned semiotics, linguistic, and how to comunicate and display to generate action and emotions; working with real brands, and reading a lot of texts, and books.
-	<br><br>Read my <em class="font-ultra-light-italic">about</em> page if you want to know a bit more of me.
+	<br><br>Read my <em class="font-ultra-light-italic">about</em> page if you want to know a bit more about me.
 </span>
 <br>including
 <br>advertisement,
