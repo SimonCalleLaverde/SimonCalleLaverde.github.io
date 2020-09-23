@@ -80,10 +80,11 @@
             @include transition(width 0.3s ease-in-out);
           }
           small {
+            display:inline-block;
             position:absolute;
             top:4px;
             right:-20px;
-            display:inline-block;
+            font-size:10px;
             @include transform(translateY(-4px));
             // span {
             //   @include animation(change30ColorAnim 20s ease-out forwards);
