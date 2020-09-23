@@ -8,7 +8,7 @@
         <label for="feedback_name"><!--class="sr-only"-->
           <h4 class="text-small mb-2">Name or name of the company</h4>
         </label>
-        <input class="text form-control form-control-lg" type="text" name="name" id="feedback_name" placeholder="Pepito Perez & Company">
+        <input class="text form-control form-control-lg" type="text" name="name" id="feedback_name" placeholder="Name or name of the company">
       </div>
     </div>
   </div>
@@ -19,7 +19,40 @@
         <label for="feedback_email"><!--class="sr-only"-->
           <h4 class="text-small mb-2">Contact e-mail</h4>
         </label>
-        <input class="text form-control form-control-lg" type="email" name="email" id="feedback_email" placeholder="pepitoperezco@gmail.com">
+        <input class="text form-control form-control-lg" type="email" name="email" id="feedback_email" placeholder="Contact e-mail">
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4more">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label for="feedback_timeframe"><!--class="sr-only"-->
+          <h4 class="text-small mb-2">What's an expected timeframe you want to have your project?</h4>
+        </label>
+        <input class="text form-control form-control-lg" type="text" name="what_is_your_timeframe" placeholder="What's an expected timeframe you want to have your project?" id="feedback_timeframe">
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4more">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label for="feedback_budget"><!--class="sr-only"-->
+          <h4 class="text-small mb-2">What's an approximate budget to spend in this project?</h4>
+        </label>
+        <input class="text form-control form-control-lg" type="text" name="what_is_your_estimated_budget" placeholder="What's an approximate budget to spend in this project?" id="feedback_budget">
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4more">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label for="feedback_message"><!--class="sr-only"-->
+          <h4 class="text-small mb-2">Please, tell me more about your project as a first rough brief, to understand your needs and objectives.</h4>
+        </label>
+        <textarea class="textarea form-control form-control-lg" rows="3" name="more_about_the_project" id="feedback_message" placeholder="Please, tell me more about your project as a first rough brief, to understand your needs and objectives."></textarea>
       </div>
     </div>
   </div>
@@ -30,7 +63,7 @@
         <label for="feedback_question"><!--class="sr-only"-->
           <h4 class="text-small mb-2">Do you have any specific question?</h4>
         </label>
-        <input class="text form-control form-control-lg" type="text" name="question" placeholder="Do you have any specific question?" id="feedback_question">
+        <textarea class="textarea form-control form-control-lg" rows="2" name="question" id="feedback_question" placeholder="Do you have any specific question?"></textarea>
       </div>
     </div>
   </div>
@@ -45,6 +78,8 @@
 
 
 
+
+  {% comment %}
   <div class="row pt-4">
     <div class="col-md-12">
       <div class="custom-control custom-radio"><!--custom-checkbox--><!--form-check-->
@@ -62,59 +97,29 @@
       </div>
     </div>
   </div>
+  {% endcomment %}
   
-  <div class="row pt-4">
-    <div class="col-md-12">
-      <div class="form-group">
-        <label for="feedback_message"><!--class="sr-only"-->
-          <h4 class="text-small mb-2">Please, tell me more about your project</h4>
-        </label>
-        <textarea class="textarea form-control form-control-lg" rows="3" name="more_about_the_project" id="feedback_message" placeholder="Please, tell me more about your project"></textarea>
-      </div>
-    </div>
-  </div>
 
-  <div class="row pt-4">
-    <div class="col-md-12">
-      <div class="form-group">
-        <label for="feedback_budget"><!--class="sr-only"-->
-          <h4 class="text-small mb-2">What is your estimated budget?</h4>
-        </label>
-        <input class="text form-control form-control-lg" type="text" name="what_is_your_estimated_budget" placeholder="What is your estimated budget?" id="feedback_budget">
-      </div>
-    </div>
-  </div>
 
-  <div class="row pt-4">
-    <div class="col-md-12">
-      <div class="form-group">
-        <label for="feedback_timeframe"><!--class="sr-only"-->
-          <h4 class="text-small mb-2">What is your timeframe?</h4>
-        </label>
-        <input class="text form-control form-control-lg" type="text" name="what_is_your_timeframe" placeholder="What is your timeframe?" id="feedback_timeframe">
-      </div>
-    </div>
-  </div>
+
+
+
+
+
+
+
+
 
   <div class="row pt-5">
     <div class="col-md-12">
       <div class="form-group">
         <div class="button-wrap pt-2">
-          <input class="btn btn-send-message" type="submit" value="Send Message"><!--btn-gigantic-->
-          <!--<button class="btn btn-rosybrown" type="submit">Send</button>--><!--Original From Formspree-->
+          <!--<input class="btn btn-send-message" type="submit" value="Send Message">-->
+          <button class="btn btn-send-message" type="submit">Send Message</button><!--Original From Formspree-->
         </div>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
 </form>
 
 
