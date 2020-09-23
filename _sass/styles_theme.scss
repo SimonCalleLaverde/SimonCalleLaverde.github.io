@@ -393,39 +393,46 @@ a {
   font-family:$font-light;
   font-size:13px;//11.5px
   background-color:transparent;
-  color:transparent;//theme-color('rosybrown');
+  color:theme-color('rosybrown');//transparent
   border:1px solid theme-color('rosybrown');
   @include border-radius(0);
+  @include filter(opacity(1));
   @include transition(all ease-out 0.5s);
   &::before {
-    content:"View the site";
+    content:"";
     position:absolute;
     padding:$btn-normal-padding;//Same As Button
     top:0;
-    right:0;
-    bottom:0;
+    right:-2px;
+    bottom:-2px;
     left:0;
-    color:theme-color('rosybrown');
+    color:transparent;//theme-color('rosybrown')
     border:1px solid theme-color('rosybrown');
     text-align:center;
     white-space:nowrap;
-    @include transform(translate(5px,5px));
+    @include transform(translate(3px,3px));
     @include transition(all ease-out 0.5s);
   }
-  &.btn-view-the-site {
-    &::before {
-      content:"View the site";
-    }
-  }
-  &.btn-read-more {
-    &::before {
-      content:"Read more";
-    }
-  }
+  // &.btn-view-the-site {
+  //   &::before {
+  //     content:"View the site";
+  //   }
+  // }
+  // &.btn-read-more {
+  //   &::before {
+  //     content:"Read more";
+  //   }
+  // }
+  // &.btn-send-message {
+  //   &::before {
+  //     content:"Send Message";
+  //   }
+  // }
   &:hover {//, &:active, &:focus
     background-color:transparent!important;
-    color:transparent;
+    color:theme-color('rosybrown');//transparent
     border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
+    @include filter(opacity(0.8));
     //@include transform(scale(1.03));
     //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
     @include box-shadow(none!important);
