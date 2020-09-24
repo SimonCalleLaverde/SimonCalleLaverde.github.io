@@ -639,6 +639,7 @@ input[type="submit"] {
     color:theme-color('rosybrown')!important;;
   }
   input.text, textarea.textarea, .form-group > select {
+    //background-color:transparent;
     border-bottom-color:theme-color('rosybrown');
     &:focus {
       //background-color:rgba(255,232,228,0.1);
@@ -647,6 +648,9 @@ input[type="submit"] {
   }
   label.custom-control-label {
     color:theme-color('rosybrown');
+  }
+  input:-internal-autofill-selected {
+    background-color:transparent!important;
   }
 }
 
