@@ -714,12 +714,16 @@ input[type="submit"] {
           border-color:theme-color('rosybrown');
           text-align:center;
           white-space:nowrap;
+          pointer-events:none;
           @include border-radius(0);
           @include transform(translate(3px,3px));
           @include transition(all ease-out 0.5s);
         }
         &::after {
           display:none;
+        }
+        &:hover {
+          cursor:crosshair;
         }
       }
     }
@@ -1056,6 +1060,9 @@ article.three-phases-article {
       img {
         width:80%;
       }
+      &:hover {
+        cursor:zoom-in;
+      }
     }
     &:hover, &:active, &:focus {
       span {
@@ -1064,6 +1071,11 @@ article.three-phases-article {
       }
     }
   }
+  // .btn {
+  //   &:hover {
+  //     cursor:zoom-in;
+  //   }
+  // }
 }
 
 // Modal
@@ -1071,7 +1083,7 @@ article.three-phases-article {
   .modal-content {
     background-color:rgba(255,255,255,0.7)!important;//rgba(184,156,146,0.5)!important//rgba(199,197,195,0.5)!important
     backdrop-filter:blur(5px);//@include
-    @include border-radius(0.8rem);
+    @include border-radius(0.6rem);
     .modal-header, .modal-footer {
       border:none;
     }
@@ -1820,6 +1832,11 @@ section.project-page {
 // Feedback Page
 section.feedback-page {
   padding:30px 20px;//To revise mobile
+  // .btn {
+  //   &:hover {
+  //     cursor:zoom-in;
+  //   }
+  // }
 }
 
 // Footer

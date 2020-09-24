@@ -73,7 +73,7 @@ body {
     pointer-events:none;
     > .loader-center {
       //display:none;
-      @include filter(opacity(0.9));
+      @include filter(opacity(0.95));
       > span {
         display:block;
         overflow:hidden;
