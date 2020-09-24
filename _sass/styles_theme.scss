@@ -1719,9 +1719,9 @@ section.about-myself-section {
         bottom:7.5px;
         left:0;
         background-color:theme-color('rosybrown');
-        pointer-events:none;
         border-top:1px solid theme-color('beige');
         border-bottom:1px solid theme-color('beige');
+        pointer-events:none;
       }
       &:hover {
         @include filter(opacity(0.9));
@@ -2076,6 +2076,31 @@ body.theme-dark, body.is-bottom, body.page-type-feedback {
       background-color:theme-color('beige');//rgba(24,16,8,0.7)
       .modal-header, .modal-body, .modal-footer {
         color:theme-color('rosybrown');
+      }
+      .modal-body {
+        a {
+          position:relative;
+          //text-decoration:underline;
+          &::before {
+            content:'';
+            position:absolute;
+            width:100%;
+            height:3px;
+            bottom:-1px;
+            left:0;
+            background-color:theme-color('rosybrown');
+            border-top:1px solid theme-color('beige');
+            border-bottom:1px solid theme-color('beige');
+            pointer-events:none;
+          }
+          &:hover {
+            color:lighten(theme-color('rosybrown'),5);
+            @include filter(opacity(0.9));
+            &::before {
+              @include animation(lineThorughBackAnim 0.9s linear forwards);
+            }
+          }
+        }
       }
       .modal-footer {//New
         padding-top:1.6rem;//Was 1rem
