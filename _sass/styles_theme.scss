@@ -220,6 +220,9 @@ body {
   letter-spacing:0.5px;
   z-index:0;
   overscroll-behavior-y:none;//To remove bounce on some browsers
+  &.modal-open {
+    overflow-y:hidden!important;
+  }
   .text-italic {
     font-family:$font-light-italic!important;
   }
@@ -411,6 +414,7 @@ $btn-lg-padding:1rem 2.6rem;
     border:1px solid theme-color('rosybrown');
     text-align:center;
     white-space:nowrap;
+    pointer-events:none;
     @include transform(translate(3px,3px));
     @include transition(all ease-out 0.5s);
   }
@@ -1081,9 +1085,12 @@ article.three-phases-article {
 // Modal
 .modal {
   .modal-content {
-    background-color:rgba(255,255,255,0.7)!important;//rgba(184,156,146,0.5)!important//rgba(199,197,195,0.5)!important
+    background-color:rgba(255,255,255,0.7);//rgba(184,156,146,0.7)//rgba(199,197,195,0.7)
     backdrop-filter:blur(5px);//@include
     @include border-radius(0.6rem);
+    .modal-header, .modal-body, .modal-footer {
+      color:theme-color('chocolate');
+    }
     .modal-header, .modal-footer {
       border:none;
     }
@@ -2066,11 +2073,14 @@ body.theme-dark, body.is-bottom, body.page-type-feedback {
   }
   .modal {
     .modal-content {
-      background-color:rgba(24,16,8,0.7)!important;
-    }
-    .modal-footer {//New
-      padding-top:1.6rem;//Was 1rem
-      padding-bottom:4rem;//1.6rem//Was 1rem
+      background-color:theme-color('beige');//rgba(24,16,8,0.7)
+      .modal-header, .modal-body, .modal-footer {
+        color:theme-color('rosybrown');
+      }
+      .modal-footer {//New
+        padding-top:1.6rem;//Was 1rem
+        padding-bottom:4rem;//1.6rem//Was 1rem
+      }
     }
   }
 }
