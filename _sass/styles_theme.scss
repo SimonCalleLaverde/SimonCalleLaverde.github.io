@@ -704,6 +704,7 @@ input[type="submit"] {
         padding:$btn-normal-padding;
         background-color:transparent;
         border:1px solid theme-color('rosybrown');
+        @include transition(background-color ease-out 0.5s);
         &::before {
           //content:'';
           position:absolute;
