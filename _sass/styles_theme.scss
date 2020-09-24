@@ -386,8 +386,9 @@ a {
 }
 
 // Buttons
+$btn-normal-padding:0.5rem 1.3rem;
+$btn-lg-padding:1rem 2.6rem;
 .btn {
-  $btn-normal-padding:0.5rem 1.3rem;
   position:relative;
   padding:$btn-normal-padding;
   font-family:$font-light;
@@ -423,9 +424,9 @@ a {
   //     content:"Read more";
   //   }
   // }
-  // &.btn-send-message {
+  // &.btn-send {
   //   &::before {
-  //     content:"Send Message";
+  //     content:"Send";
   //   }
   // }
   &:hover {//, &:active, &:focus
@@ -437,13 +438,22 @@ a {
     //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
     @include box-shadow(none!important);
     &::before {
+      right:0;
+      bottom:0;
       border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
       @include transform(translate(0,0));
     }
   }
   &.btn-longer {
-    padding-right:2.5em;
-    padding-left:2.5em;
+    padding-right:2em;
+    padding-left:2em;
+  }
+  &.btn-lg {
+    padding:$btn-lg-padding;
+    &.btn-longer {
+      padding-right:3em;
+      padding-left:3em;
+    }
   }
   &.btn-60 {
     width:100%;//Mobile
@@ -651,6 +661,66 @@ input[type="submit"] {
       &::before {
       }
       &::after {
+      }
+    }
+  }
+}
+.custom-checkbox-squared {//Buttons With Double Line Using ::before, As Per Rest Of Site
+  > .custom-control {
+    &.custom-checkbox, &.custom-radio {
+      text-align:center;
+      input.custom-control-input {
+        &:hover, &:checked {//, &:active, &:focus
+          ~ label.custom-control-label {
+            &::before {
+              right:0;
+              bottom:0;
+              //border-color:theme-color('rosybrown');
+              @include transform(translate(0,0));
+            }
+          }
+        }
+      }
+      input.custom-control-input {
+        &:checked {
+          ~ label.custom-control-label {
+            background-color:theme-color('rosybrown');
+            color:theme-color('chocolate');
+            &::before {
+              background-color:transparent;
+              color:transparent;
+              //@include box-shadow(0 0 0 0.2rem rgba(235,0,130,0.2));
+              @include box-shadow(none);
+            }
+          }
+        }
+      }
+      label.custom-control-label {
+        position:relative;
+        padding:$btn-normal-padding;
+        background-color:transparent;
+        border:1px solid theme-color('rosybrown');
+        &::before {
+          //content:'';
+          position:absolute;
+          width:auto;
+          height:auto;
+          top:0;
+          right:-2px;
+          bottom:-2px;
+          left:0;
+          background-color:transparent;
+          color:transparent;
+          border-color:theme-color('rosybrown');
+          text-align:center;
+          white-space:nowrap;
+          @include border-radius(0);
+          @include transform(translate(3px,3px));
+          @include transition(all ease-out 0.5s);
+        }
+        &::after {
+          display:none;
+        }
       }
     }
   }
@@ -1975,6 +2045,15 @@ body.theme-dark, body.is-bottom, body.page-type-feedback {
       // &::before {
       //   border-bottom:1px solid theme-color('redish');
       // }
+    }
+  }
+  .modal {
+    .modal-content {
+      background-color:rgba(24,16,8,0.7)!important;
+    }
+    .modal-footer {//New
+      padding-top:1.6rem;//Was 1rem
+      padding-bottom:4rem;//1.6rem//Was 1rem
     }
   }
 }

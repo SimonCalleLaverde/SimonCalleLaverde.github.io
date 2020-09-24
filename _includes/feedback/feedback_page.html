@@ -1,18 +1,28 @@
 <section class="feedback-page text-center clearfix" id="feedback_page" data-scene>
 	<div class="container">
 
-    <div class="row">
-      <div class="col-md-6 offset-md-3 mb-4more">
+    <div class="row mb-4"><!--mb-4more-->
+      <div class="col-md-6 offset-md-3">
         <h1 class="text-big text-rosybrown">
           {{ page.headline }}
         </h1>
       </div>
     </div>
 
-    <div class="row d-flex flex-row justify-content-center mb-5less">
-      <div class="col-5"><!--col-md-4 offset-md-4-->
-        <div class="font-ultra-light text-rosybrown">
+    <div class="row mb-5 pb-3"><!--d-flex flex-row justify-content-center-->
+      <div class="col-md-6 offset-md-3"><!--col-5--><!--col-md-4 offset-md-4-->
+        <div class="font-ultra-light text-rosybrown px-md-3">
+          {{ page.description }}
+
+          <!--{% comment %}
           {{ content }}
+          {% endcomment %}-->
+
+          <div class="mt-4more">
+            <a class="btn btn-lg" href="#" data-toggle="modal" data-target="#plansModal_feedback_plans">
+              See prices chart
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,30 @@
-<!--IN DEVELOPMENT-->
-
 <!--Formspree | https://test.formspree.io/ | https://codepen.io/jonathanbarreto/pen/NAjPQW-->
 <form method="POST" action="https://formspree.io/simoncallelaverde@gmail.com">
+  <div class="row mb-5less pb-1">
+    <div class="col-md-12">
+      <h4 class="text-small mb-4 pb-1">
+        What services do you need?
+      </h4>
+
+      <div class="custom-checkbox-squared d-flex flex-row justify-content-around"><!--justify-content-between-->
+        <div class="custom-control custom-checkbox"><!--custom-radio--><!--form-check-->
+          <input class="custom-control-input" type="checkbox" name="project_needs_strategy" value="starting_with_strategy" id="feedback_strategy"><!--form-check-input-->
+          <label class="custom-control-label" for="feedback_strategy"> Strategy</label><!--form-check-label-->
+        </div>
+
+        <div class="custom-control custom-checkbox"><!--custom-radio--><!--form-check-->
+          <input class="custom-control-input" type="checkbox" name="project_needs_design" value="starting_with_design" id="feedback_design"><!--form-check-input-->
+          <label class="custom-control-label" for="feedback_design"> Design</label><!--form-check-label-->
+        </div>
+
+        <div class="custom-control custom-checkbox"><!--custom-radio--><!--form-check-->
+          <input class="custom-control-input" type="checkbox" name="project_needs_development" value="starting_with_development" id="feedback_development"><!--form-check-input-->
+          <label class="custom-control-label" for="feedback_development"> Development</label><!--form-check-label-->
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="row mb-4more">
     <div class="col-md-12">
       <div class="form-group">
@@ -68,19 +91,8 @@
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
   {% comment %}
-  <div class="row pt-4">
+  <div class="row">
     <div class="col-md-12">
       <div class="custom-control custom-radio"><!--custom-checkbox--><!--form-check-->
         <input class="custom-control-input" type="radio" name="project_stage" value="starting_from_scratch" id="feedback_scratch"><!--form-check-input-->
@@ -89,7 +101,7 @@
     </div>
   </div>
 
-  <div class="row pt-2">
+  <div class="row">
     <div class="col-md-12">
       <div class="custom-control custom-radio"><!--custom-checkbox--><!--form-check-->
         <input class="custom-control-input" type="radio" name="project_stage" value="starting_from_design" id="feedback_design"><!--form-check-input-->
@@ -98,38 +110,13 @@
     </div>
   </div>
   {% endcomment %}
-  
 
-
-
-
-
-
-
-
-
-
-
-  <div class="row pt-5">
+  <div class="row">
     <div class="col-md-12">
       <div class="form-group">
-        <div class="button-wrap pt-2">
-          <!--<input class="btn btn-send-message" type="submit" value="Send Message">-->
-          <button class="btn btn-send-message" type="submit">Send Message</button><!--Original From Formspree-->
-        </div>
+        <!--<input class="btn btn-send" type="submit" value="Send">-->
+        <button class="btn btn-lg btn-send" type="submit">Send</button><!--Original From Formspree-->
       </div>
     </div>
   </div>
 </form>
-
-
-
-{% comment %}
-
-1. This will allow me to add plugins with licences without extra cost, use (better/more specialized) stock galleries like 'shutterstock', or even allow me to outsource work like logo development to a designer, still being me in charge of the strategy and identity concept, if we are doing a logo for your brand.
-
-
-<div>
-  My websites round up anywhere from USD $1'000 to $10'000, depending on the project and the resources, the time required and the tools involved.
-</div>
-{% endcomment %}
