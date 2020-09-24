@@ -676,6 +676,7 @@ input[type="submit"] {
       input.custom-control-input {
         &:hover, &:checked {//, &:active, &:focus
           ~ label.custom-control-label {
+            @include filter(opacity(0.8));
             &::before {
               right:0;
               bottom:0;
@@ -704,7 +705,7 @@ input[type="submit"] {
         padding:$btn-normal-padding;
         background-color:transparent;
         border:1px solid theme-color('rosybrown');
-        @include transition(background-color ease-out 0.5s);
+        @include transition(background-color ease-out 0.5s, filter ease-out 0.5s);
         &::before {
           //content:'';
           position:absolute;
