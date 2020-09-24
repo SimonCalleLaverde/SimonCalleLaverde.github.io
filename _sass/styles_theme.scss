@@ -691,6 +691,7 @@ input[type="submit"] {
           ~ label.custom-control-label {
             background-color:theme-color('rosybrown');
             color:theme-color('chocolate');
+            @include filter(opacity(0.95));
             &::before {
               background-color:transparent;
               color:transparent;
@@ -705,7 +706,7 @@ input[type="submit"] {
         padding:$btn-normal-padding;
         background-color:transparent;
         border:1px solid theme-color('rosybrown');
-        @include transition(background-color ease-out 0.5s, filter ease-out 0.5s);
+        @include transition(background-color ease-out 0.5s, color ease-out 0.5s, filter ease-out 0.5s);
         &::before {
           //content:'';
           position:absolute;
