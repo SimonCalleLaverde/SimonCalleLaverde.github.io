@@ -191,6 +191,9 @@
 // Loading Animation
 @import "styles_loading_animation";
 
+// Hero Rotate Animation
+@import "styles_hero_rotate_animation";
+
 // Cursor
 @import "styles_cursor";
 
@@ -1447,10 +1450,10 @@ header.home-hello-header {
         z-index:11;
       }
       .hero-left {
-        left:-72.7%;//-69.3%//-55.5%
+        left:-73.5%;//-72.7%//-69.3%//-55.5%
       }
       .hero-right {
-        right:-72.7%;//-69.3%//-55.5%
+        right:-73.5%;//-72.7%//-69.3%//-55.5%
       }
     }
     .area-left, .area-right {
@@ -1507,9 +1510,9 @@ header.home-hello-header {
   .header-what-i-do {
     position:absolute;
     right:0;
-    bottom:85px;//105px
+    bottom:90px;//85px//105px
     left:0;
-    font-size:23px;
+    font-size:22px;//23px
     line-height:1.2;
   }
 }
