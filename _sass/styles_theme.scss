@@ -2095,12 +2095,12 @@ body.theme-dark, body.is-bottom, body.page-type-feedback {
             content:'';
             position:absolute;
             width:100%;
-            height:3px;
-            bottom:-1px;
+            height:1px;//3px
+            bottom:1px;
             left:0;
             background-color:theme-color('rosybrown');
-            border-top:1px solid theme-color('beige');
-            border-bottom:1px solid theme-color('beige');
+            //border-top:1px solid theme-color('beige');
+            //border-bottom:1px solid theme-color('beige');
             pointer-events:none;
           }
           &:hover {
