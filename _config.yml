@@ -23,12 +23,14 @@ client_name: Simón Calle Laverde
 email: simoncallelaverde@gmail.com
 phone_number: +(57) 310 558 2638
 description: >- # this means to ignore newlines until "baseurl:"
-  Hello, I'm Simón Calle Laverde, a web developer and web designer with 5
-  years of experience in web development and 5 years of studies in marketing
-  and advertisement. I build modern hand-crafted websites that stand out! I
-  have a background in marketing and advertisement, including branding and
-  copywriting. I use design, copy, and the latest technologies in 2020
-  to create awesome websites that are thought to sell.
+  I create modern and experimental successful websites designed to sell and
+  persuade using copywriting, design, and strategy for people to take action.
+  I'm a web developer and web designer with 6 years of experience in web
+  development, and 5 years of studies in marketing and advertisement. I build
+  high quality hand-crafted websites that stand out! I have a background that
+  includes campaigning, branding, linguistics, semiotics, and psichology to
+  create sales. I use the latest technologies in 2020 to create awesome
+  fastspeed and engaging websites.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "simoncallelaverde.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_repository: SimonCalleLaverde/SimonCalleLaverde.github.io
