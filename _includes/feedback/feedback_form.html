@@ -51,13 +51,14 @@
     <div class="col-md-12">
       <div class="form-group">
         <label for="feedback_timeframe"><!--class="sr-only"-->
-          <h4 class="text-small mb-2">What's an expected timeframe to have your project?</h4>
+          <h4 class="text-small mb-2">What's an expected timeframe you want to have your project?</h4>
         </label>
-        <input class="text form-control form-control-lg" type="text" name="what_is_your_timeframe" placeholder="What's an expected timeframe to have your project?" id="feedback_timeframe">
+        <input class="text form-control form-control-lg" type="text" name="what_is_your_timeframe" placeholder="What's an expected timeframe you want to have your project?" id="feedback_timeframe">
       </div>
     </div>
   </div>
 
+  {% comment %}
   <div class="row mb-4more">
     <div class="col-md-12">
       <div class="form-group">
@@ -68,14 +69,26 @@
       </div>
     </div>
   </div>
+  {% endcomment %}
+
+  <div class="row mb-4more">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label for="feedback_budget"><!--class="sr-only"-->
+          <h4 class="text-small mb-2">What's the approximate plan or budget frame where you will like to work? (See prices and plans).</h4>
+        </label>
+        <input class="text form-control form-control-lg" type="text" name="what_is_your_estimated_budget" placeholder="What's the approximate plan or budget frame where you will like to work? (See prices and plans)." id="feedback_budget">
+      </div>
+    </div>
+  </div>
 
   <div class="row mb-4more">
     <div class="col-md-12">
       <div class="form-group">
         <label for="feedback_message"><!--class="sr-only"-->
-          <h4 class="text-small mb-2">Please, tell me more about your project as a first rough brief, to understand your needs and objectives.</h4>
+          <h4 class="text-small mb-2">Please, tell me more about your project as a first rough brief, to understand what you need and what are your objectives.</h4>
         </label>
-        <textarea class="textarea form-control form-control-lg" rows="3" name="more_about_the_project" id="feedback_message" placeholder="Please, tell me more about your project as a first rough brief, to understand your needs and objectives."></textarea>
+        <textarea class="textarea form-control form-control-lg" rows="3" name="more_about_the_project" id="feedback_message" placeholder="Please, tell me more about your project as a first rough brief, to understand what you need and what are your objectives."></textarea>
       </div>
     </div>
   </div>
