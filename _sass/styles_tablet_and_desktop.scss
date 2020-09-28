@@ -52,7 +52,7 @@
   // Nav Desktop
   nav.navbar {
     position:fixed;
-    padding:23px 30px;//23px 25px
+    padding:23px 32px;//23px 25px
     top:0;
     right:0;
     line-height:1.2!important;//Was 1.5 from Body
@@ -82,7 +82,7 @@
           small {
             display:inline-block;
             position:absolute;
-            top:5px;//4px
+            top:4px;
             right:-20px;
             font-size:10px;
             @include transform(translateY(-4px));

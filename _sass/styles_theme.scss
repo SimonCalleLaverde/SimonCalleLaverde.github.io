@@ -1974,21 +1974,21 @@ footer {
     }
     .footer-hello {
       bottom:370px;
-      left:25px;
+      left:37px;
       line-height:1.5;
     }
     .footer-office {
       bottom:220px;
-      left:25px;
+      left:37px;
     }
     .footer-business-social {
       padding:0 5px 5px;
       bottom:115px;//120px
-      left:20px;//25px
+      left:32px;//37px
     }
     .footer-copyright {
       bottom:30px;
-      left:25px;
+      left:37px;
     }
     .footer-email-or-call {
       bottom:30px;
@@ -1997,20 +1997,20 @@ footer {
       @include transform(translateX(-50%));
     }
     .footer-created-by {
-      right:25px;
+      right:37px;
       bottom:30px;
       text-align:right;
     }
     .footer-personal-social {
       padding:0 5px 5px;
-      right:20px;//25px
+      right:32px;//37px
       bottom:115px;//120px
       text-align:right;
     }
     nav.footer-nav.navbar {
       padding:0;
       top:auto;
-      right:25px;
+      right:37px;
       bottom:228px;
       line-height:1.5!important;
       text-align:right;
@@ -2025,7 +2025,7 @@ footer {
       }
     }
     .footer-credits {
-      right:25px;
+      right:37px;
       bottom:370px;
       line-height:1.5;
       text-align:right;
