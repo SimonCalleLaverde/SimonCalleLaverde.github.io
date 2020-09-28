@@ -119,31 +119,31 @@
 
 @keyframes loaderTranslateOutAnim {
   0%, 60% {
-    @include transform(translateY(0));
+    @include transform(translateX(0));
   }
   100% {
-    @include transform(translateY(-100vh));
+    @include transform(translateX(-100vw));
   }
 }//@keyframes
 
 @keyframes headerTranslateHalfOutAnim {
   0% {
-    @include transform(translateY(0) scale(1.1));
+    @include transform(translateX(0) scale(1.1));
   }
   60% {
-    @include transform(translateY(0) scale(1));
+    @include transform(translateX(0) scale(1));
   }
   100% {
-    @include transform(translateY(-25%) scale(1));
+    @include transform(translateX(-25%) scale(1));
   }
 }//@keyframes
 
 @keyframes mainTranslateInAnim {
   from {
-    @include transform(translateY(100vh));
+    @include transform(translateX(100vw));
   }
   to {
-    @include transform(translateY(0));
+    @include transform(translateX(0));
   }
 }//@keyframes
 

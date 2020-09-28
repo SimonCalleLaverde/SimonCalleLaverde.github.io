@@ -23,7 +23,7 @@ body {
 //   will-change:transform;
 // }
 .header-image {
-  @include transform(translateY(0) scale(1.1));
+  @include transform(translateX(0) scale(1.1));
 }
 body {
   &.imagesloaded {
@@ -31,7 +31,7 @@ body {
       @include animation(headerTranslateHalfOutAnim ease-in-out 1s forwards 1.4s);
     }
     main {
-      @include transform(translateY(100vh));
+      @include transform(translateX(100vw));
       @include animation(mainTranslateInAnim ease-in-out 1s forwards 1.8s);
     }
   }
