@@ -1613,7 +1613,8 @@ section.home-who-i-am-section {
   div.intro-overlay {
     position:absolute;
     top:0;
-    left:4px;
+    right:0;
+    left:0;//4px
     pointer-events:none;
     z-index:16;
   }
