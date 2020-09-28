@@ -21,9 +21,9 @@
   <aside class="footer-info-elements text-rosybrown">
 
     <div class="footer-hello">
-      <br>Available
+      <br>Available for
       <span class="font-ultra-light">
-        <br>Freelance work /
+        <br>Freelance work/
         <br>Part time job.
       </span>
     </div>
@@ -37,7 +37,7 @@
         <br>Colombia.-->
         
         <br>Calle 10 # 2 Este 40,
-        <br>Int 8 Flat 404, Chía,
+        <br>Tr 8 Apt 404, Chía,
         <br>Cundinamarca,
         <br>Colombia.
       </span>
@@ -119,14 +119,20 @@
     <nav class="footer-nav navbar">
       <ul class="navbar-nav">
         <li class="nav-item">
+          <a class="link nav-link link-page-load{% if page.slug == 'home' %} active-link{% endif %}" href="javascript:delay('/')">
+            <span>Home</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
           <a class="link nav-link link-page-load{% if page.slug == 'about' %} active-link{% endif %}" href="javascript:delay('/about')">
-            <span>About me</span>
+            <span>About Me</span>
           </a>
         </li>
 
         <li class="nav-item">
           <a class="link nav-link link-page-load{% if page.slug == 'projects' %} active-link{% endif %}" href="javascript:delay('/projects')">
-            <span>All projects</span>
+            <span>All Projects</span>
           </a>
         </li>
 
@@ -138,7 +144,7 @@
 
         <li class="nav-item">
           <a class="link nav-link link-page-load{% if page.type_slug == 'feedback' %} active-link{% endif %}" href="javascript:delay('/contact_me')">
-            <span>Contact me</span>
+            <span>Contact Me</span>
           </a>
         </li>
       </ul>
