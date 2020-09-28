@@ -1506,14 +1506,14 @@ header.home-hello-header {
         @include transform(translateY(-12.5px));//-25px
       }
     }
-  }
-  .header-what-i-do {
-    position:absolute;
-    right:0;
-    bottom:90px;//85px//105px
-    left:0;
-    font-size:22px;//23px
-    line-height:1.2;
+    span.header-what-i-do {
+      position:absolute;
+      right:0;
+      bottom:-97px;
+      left:0;
+      font-size:22px;
+      line-height:1.2;
+    }
   }
 }
 
@@ -1697,19 +1697,26 @@ header.about-header {
       right:0;
       bottom:0;
       left:0;
-      img {
+      > div {
+        position:relative;
+        img {
+        }
+        span {
+          position:absolute;
+        }
+        span.about-header-info {
+          right:18px;
+          bottom:-12px;
+          font-size:13px;
+        }
+        span.about-header-short-story {
+          right:0;
+          bottom:-115px;
+          left:0;
+          font-size:22px;
+          line-height:1.2;
+        }
       }
-      span.about-header-info {
-        display:block;
-        margin-top:11px;
-        font-size:13px;
-      }
-    }
-    span.about-header-short-story {
-      display:block;
-      margin-top:130px;
-      font-size:25px;//23px
-      line-height:1.2;
     }
   }
 }
