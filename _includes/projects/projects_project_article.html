@@ -1,6 +1,6 @@
 <article class="project-article projects {% if projects_count_desktop == 1 %}article-left mr-5{% else %}article-right ml-5{% endif %} {% if forloop.last %}forloop-last {% endif %}" id="scroll_to_{{ project.order }}">
   <!--<a href="{% if project_tags_list contains '#case_study#' %}{{ project.url }}{% else %}#{% endif %}" data-toggle="{% unless project_tags_list contains '#case_study#' %}modal{% endunless %}" data-target="{% unless project_tags_list contains '#case_study#' %}#projectModal_{{ project.slug }}{% endunless %}">-->
-  <a href="{{ project.url }}">
+  <a class="link-page-load" href="javascript:delay('{{ project.url }}')">
     <figure>
       <style type="text/css">
         #projects_project_thumbnail_{{ project.slug }} {

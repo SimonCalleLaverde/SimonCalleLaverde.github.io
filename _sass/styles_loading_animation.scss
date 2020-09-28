@@ -62,14 +62,14 @@ body {
 body {
   > .loader-area {
     position:fixed;
-    width:100%;
-    height:100%;
+    width:100vw;
+    height:100vh;
     padding:25px;//For Mobile Specially
     top:0;
     right:0;
     bottom:0;
     left:0;
-    z-index:20000;//Greatest Z-Index In Site
+    z-index:20000;//Greatest Z-Index In Site //Both "Loader-area" (loader in) & ".loader-out" use the same
     pointer-events:none;
     > .loader-center {
       //display:none;
@@ -255,7 +255,7 @@ body {
   }
   &.imagesloaded {
     > .loader-area {
-      @include animation(loaderTranslateOutAnim 1.5s cubic-bezier(.89,.41,.89,.41) forwards 0.3s);
+      @include animation(loaderTranslateOutAnim 1.5s ease-in forwards 0.3s);//cubic-bezier(.89,.41,.89,.41)
       > .loader-center {
         //display:block;
       }
@@ -263,7 +263,31 @@ body {
   }
   &.home.imagesloaded {
     > .loader-area {
-      @include animation(loaderTranslateOutAnim 1.5s cubic-bezier(.89,.41,.89,.41) forwards 2.8s);
+      @include animation(loaderTranslateOutAnim 1.5s ease-in forwards 2.8s);//cubic-bezier(.89,.41,.89,.41)
+    }
+  }
+}
+
+//----------------------------------Loading Animation (Loader Out) Styles----------------------------------//
+
+body {
+  > .loader-out {
+    display:none;
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:20000;//Greatest Z-Index In Site //Both "Loader-area" (loader in) & ".loader-out" use the same
+    pointer-events:none;
+    @include transform(translateX(100vw));
+  }
+  &.load-out {
+    > .loader-out {
+      display:block;
+      @include animation(loaderTranslateInAnim 1s ease-out forwards 0s);//cubic-bezier(.89,.41,.89,.41)
     }
   }
 }

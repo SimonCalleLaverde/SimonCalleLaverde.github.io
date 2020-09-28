@@ -17,7 +17,7 @@ Hello, I’m Simón
 	<br><br>Scroll down to see my featured projects and newest independently created websites with a bit of experimentation and modern fully responsive layouts that generate emotions which can translate into sales.
 </span>
 <br>with a background
-<br>in <a href="/about" class="link-marketing"><i>marketing</i></a>:
+<br>in <a class="link-marketing link-page-load" href="javascript:delay('/about')"><i>marketing</i></a>:
 <img class="gif-universities" src="/uploads/home-gif-universities.gif" alt="A gif of colombian universities I studied and took courses in: Tadeo, Javeriana">
 <span class="text-marketing font-ultra-light text-chocolate" aria-hidden="true">
 	I studied marketing and advertisement for 5 years of my life, which included hundreds of exercises on branding and campaigning, many public presentations, uncountable individual and group projects, analysing and learning about psychology, persuasion, ads, slogans and text analysis.

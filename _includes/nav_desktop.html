@@ -6,21 +6,21 @@
   <ul class="navbar-nav nav-top-desktop">
     {% comment %}
     <li class="nav-item">
-      <a class="link nav-link{% if page.slug == 'home' %} active-link{% endif %}" href="/"><!--Class ".active" has a bug I think with "Rolly.js", where when getting to the bottom the class gets removed forever-->
+      <a class="link nav-link{% if page.slug == 'home' %} active-link{% endif %} link-page-load" href="javascript:delay('/')"><!--Class ".active" has a bug I think with "Rolly.js", where when getting to the bottom the class gets removed forever-->
         <span>Home</span>
       </a>
     </li>
     {% endcomment %}
 
     <li class="nav-item">
-      <a class="link nav-link{% if page.slug == 'about' %} active-link{% endif %}" href="/about">
-        <span>About me</span>
+      <a class="link nav-link{% if page.slug == 'about' %} active-link{% endif %} link-page-load" href="javascript:delay('/about')">
+        <span>About Me</span>
       </a>
     </li>
 
     <li class="nav-item">
-      <a class="link nav-link{% if page.slug == 'projects' %} active-link{% endif %}" href="/projects">
-        <span>All projects</span>
+      <a class="link nav-link{% if page.slug == 'projects' %} active-link{% endif %} link-page-load" href="javascript:delay('/projects')">
+        <span>All Projects</span>
         
         {% assign sorted_projects = site.projects %}
         {% assign projects_total_count = 0 %}
@@ -36,14 +36,14 @@
     </li>
 
     <!--<li class="nav-item">
-      <a class="link nav-link{% if page.slug == 'workflow' %} active-link{% endif %}" href="/the_workflow">
+      <a class="link nav-link{% if page.slug == 'workflow' %} active-link{% endif %} link-page-load" href="javascript:delay('/the_workflow')">
         <span>The workflow</span>
       </a>
     </li>-->
 
     <li class="nav-item">
-      <a class="link nav-link{% if page_type_slug == 'feedback' %} active-link{% endif %}" href="/contact_me">
-        <span>Contact me</span>
+      <a class="link nav-link{% if page.type_slug == 'feedback' %} active-link{% endif %} link-page-load" href="javascript:delay('/contact_me')">
+        <span>Contact Me</span>
       </a>
     </li>
 

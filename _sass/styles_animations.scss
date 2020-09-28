@@ -147,6 +147,15 @@
   }
 }//@keyframes
 
+@keyframes loaderTranslateInAnim {
+  0% {
+    @include transform(translateX(100vw));
+  }
+  100% {
+    @include transform(translateX(0));
+  }
+}//@keyframes
+
 //----------------------------------Loader Header Image Animation Styles----------------------------------//
 
 // @keyframes loadingHeadlineAnim {

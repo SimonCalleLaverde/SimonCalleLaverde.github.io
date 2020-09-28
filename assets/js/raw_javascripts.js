@@ -200,6 +200,29 @@ $(function() {
   });
 });
 
+// As Per: https://stackoverflow.com/questions/14434604/i-want-to-delay-a-link-for-a-period-of-500-with-javascript
+// Delay Some Links To Page Load // Set your href attribute as href="javascript:delay('URL')" and JavaScript:
+function delay (URL) {
+  setTimeout( function() { window.location = URL }, 1000 );
+}
+
+// Custom Code | Should Go Together With The Above
+// Open Page Transition Loader When Clicking "link-page-load" Buttons
+$(function() {
+  $('.link-page-load').on('click', function() {//e
+    $('body').addClass("load-out");
+
+    //e.preventDefault();
+  });
+});
+
+// // As Per: https://forum.webflow.com/t/javascript-delay-on-page-links/38852
+// // Didn't Really Work As It Is
+// $('.link-page-load').click(function(e) {
+//   e.preventDefault();
+//   setTimeout(function(url) { window.location = url }, 1000, this.href);
+// });
+
 //---------------------------------IMAGESLOADED---------------------------------//
 
 $(function() {

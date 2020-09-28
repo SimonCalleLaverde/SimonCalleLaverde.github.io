@@ -18,6 +18,11 @@
 <!--Imagesloaded | imagesloaded.desandro.com-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script><!--integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"-->
 
+<!--Hero Rotate Animation (Only For Home)-->
+{% if page.slug == "home" %}
+	<script src="{{ '/assets/js/hero_rotate_animation.js' | relative_url }}" type="text/javascript"></script>
+{% endif %}
+
 <!--Main (After Grunt)-->
 <script src="{{ '/assets/js/main.js' | relative_url }}" type="text/javascript"></script>
 

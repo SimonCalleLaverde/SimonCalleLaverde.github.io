@@ -1,6 +1,6 @@
 <article class="project-article home">
   <!--<a href="{% if project_tags_list contains '#case_study#' %}{{ project.url }}{% else %}#{% endif %}" data-toggle="{% unless project_tags_list contains '#case_study#' %}modal{% endunless %}" data-target="{% unless project_tags_list contains '#case_study#' %}#projectModal_{{ project.slug }}{% endunless %}">-->
-  <a href="{{ project.url }}">
+  <a class="link-page-load" href="javascript:delay('{{ project.url }}')">
     <figure>
       <style type="text/css">
         #project_thumbnail_{{ project.slug }} {
