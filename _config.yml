@@ -18,19 +18,32 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Simón Calle Laverde - Portfolio 2020
+title: Simón Calle Laverde - Portfolio 2020 - Modern Web & Design
 client_name: Simón Calle Laverde
 email: simoncallelaverde@gmail.com
 phone_number: +(57) 310 558 2638
-description: >- # this means to ignore newlines until "baseurl:"
-  I create modern and experimental successful websites designed to sell and
-  persuade using copywriting, design, and strategy for people to take action.
+description: >- # this means to ignore newlines until "description_short_facebook_2_4_sentences:"
+  I create modern and experimental websites designed to create conversion
+  and persuade using copywriting, good design, and strategy for people to
+  take action. I'm a web developer and web designer with 6 years of
+  experience in web development, and 5 years of studies in marketing and
+  advertisement. I build high quality hand-crafted professional websites
+  that stand out! I have a background that includes campaigning, branding,
+  linguistics, semiotics, and psichology to create sales. I use the latest
+  technologies in 2020 to create awesome fastspeed and engaging websites.
+description_short_facebook_2_4_sentences: >- # this means to ignore newlines until "description_short_twitter_200_characters:"
+  I create modern and experimental websites designed to create conversion.
   I'm a web developer and web designer with 6 years of experience in web
-  development, and 5 years of studies in marketing and advertisement. I build
-  high quality hand-crafted professional websites that stand out! I have a
-  background that includes campaigning, branding, linguistics, semiotics, and
-  psichology to create sales. I use the latest technologies in 2020 to create
-  awesome fastspeed and engaging websites.
+  development, and 5 years of studies in marketing and advertisement. I
+  have a background that includes campaigning, branding, linguistics,
+  semiotics, and psichology to create sales. I use copywriting, good
+  design, and strategy to persuade people to take action.
+description_short_twitter_200_characters: >- # this means to ignore newlines until "baseurl:"
+  I create modern and experimental websites designed to create conversion.
+  I'm a web developer and web designer with 6 years of experience in web
+  development, and 5 years of studies in marketing and advertisement. I
+  use copywriting, good design, and strategy to persuade people to take
+  action.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://simonsweb.design" # the base hostname & protocol for your site, e.g. http://example.com
 github_repository: SimonCalleLaverde/SimonCalleLaverde.github.io

@@ -10,12 +10,54 @@
   {% feed_meta %}<!--TO SEE DOCUMENTATION-->
   {% seo %}<!--TO SEE DOCUMENTATION | To Do Better S.E.O-->
 
+  <!--Reconciling Both As Per: (Same Css-Tricks Bellow) | This gives us the following, which could be considered the bare minimum of <meta> tags necessary to make a web page amenable for sharing on social media-->
+  <meta property="og:title" content="{{ site.title }}">
+  <!--<meta property="og:description" content="{{ site.description_short_200 }}">-->
+  <meta property="og:image" content="/uploads/share.png">
+  <!--<meta property="og:url" content="{{ site.url }}">
+  <meta name="twitter:card" content="summary_large_image">-->
+
+  <!--Facebook Sharing | As Per: https://css-tricks.com/essential-meta-tags-social-media/ (& As Per: Open Graph's Protocol | Link In Css-Tricks Article)-->
+  <!--<meta property="og:title" content="{{ site.title }}">-->
+  <meta property="og:description" content="{{ site.description_short_facebook_2_4_sentences }}">
+  <!--<meta property="og:image" content="/uploads/share.png">-->
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:type" content="article"><!--From Jekyll Example-->
+
+  <!--Twitter Sharing | As Per: https://css-tricks.com/essential-meta-tags-social-media/ (As Per Twitters Own Protocol)-->
+  <!--<meta name="twitter:title" content="{{ site.title }}">-->
+  <meta name="twitter:description" content="{{ site.description_short_twitter_200_characters }}">
+  <!--<meta name="twitter:image" content="/uploads/share.png">-->
+  <meta name="twitter:domain" content="{{ site.url }}"><!--From Jekyll Example-->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!--Non-Essential, But Recommended-->
+  <!--Facebook Recommends | Denotes the name of the Web site in which the shared page resides-->
+  <meta property="og:site_name" content="Simons Web Design">
+  <!--Twitter Suggests | This provides an alternative image description for those who are visually impaired-->
+  <meta name="twitter:image:alt" content="Display image of Simons Web Design portfolio {{ 'now' | date: '%Y' }}">
+
+  {% comment %}
+  <!--Non-Essential, But Required For Analytics | For Use With Facebook Domain Insights (Facebook Analytics Tool) & Twitter Card Analytics (Twitter Analytics Tool)-->
+  <!--https://developers.facebook.com/docs/platforminsights/domains-->
+  <!--https://developer.twitter.com/es/cards/analytics-->
+  <meta property="fb:app_id" content="your_app_id">
+  <meta name="twitter:site" content="@website-username">
+  {% endcomment %}
+
+  <!--Debugging And Validating Tools-->
+  <!--https://developers.facebook.com/tools/debug/-->
+  <!--https://twitter.com/login?redirect_after_login=https%3A%2F%2Fcards-dev.twitter.com%2Fvalidator-->
+
+  <!--Original Social Media Meta For Sharing | Examples By Jekyll-->
+  <!--{% comment %}
   <meta property="og:type" content="article">
-  <meta name="twitter:image" content="/uploads/share.png"><!--jpg-->
+  <meta name="twitter:image" content="/uploads/share.png">
   <meta name="twitter:title" content="{{ site.title }}">
   <meta name="twitter:domain" content="">
   <meta name="twitter:description" content="{{ site.description }}">
-
+  {% endcomment %}-->
+  
   <!--Font Awesome-->
   <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">-->
 
