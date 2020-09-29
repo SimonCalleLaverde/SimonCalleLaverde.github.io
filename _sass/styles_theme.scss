@@ -588,7 +588,7 @@ $btn-lg-padding:1rem 2.6rem;
 input.text, textarea.textarea, .form-group > select {
   padding-top:10px;
   padding-left:10px;
-  font-family:$font-headline;
+  font-family:$font-light;//$font-headline
   //font-weight:normal;
   //font-style:normal;
   font-size:13px;
@@ -1786,9 +1786,9 @@ header.projects-header-section {
   }
   .header-timeline {
     display:inline-block;
-    padding:0 3px 1px;
+    padding:3px 7px 5px;
     font-size:23px;
-    background-color:theme-color('beige');
+    background-color:rgba(192,167,158,0.95);//rgba(184,156,146,1)//theme-color('beige')
     line-height:1.2;
   }
 }
