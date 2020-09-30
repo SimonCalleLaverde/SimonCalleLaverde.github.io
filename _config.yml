@@ -50,14 +50,14 @@ github_repository: SimonCalleLaverde/SimonCalleLaverde.github.io
 
 # Social Media & Communication [Simón Calle Laverde]
 google_maps_api_key: ""
-facebook_username: https://www.facebook.com/simoncio/
-instagram_username: https://www.instagram.com/simons_pic_tures/
-pinterest_username: https://pinterest.com # MISSING I have one
 linkedin_username: https://www.linkedin.com/ # URGENT to create
 behance_username: https://www.behance.net/ # URGENT to create
-github_username: https://github.com/SimonCalleLaverde
-twitter_username: "" # jekyllrb # Never Probably
 angel_username: "https://angel.co/u/simon-calle-laverde"
+github_username: https://github.com/SimonCalleLaverde
+pinterest_username: https://co.pinterest.com/callelaverde
+instagram_username: https://www.instagram.com/simons_pic_tures/
+facebook_username: https://www.facebook.com/simoncio/
+twitter_username: "" # jekyllrb # Never Probably
 
 # Build settings
 theme: minima
