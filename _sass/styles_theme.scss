@@ -1939,21 +1939,6 @@ footer {
             //@include transform-origin(center bottom);
             @include transition(filter ease-out 0.5s, transform ease-out 0.5s);
           }
-          &.icon-facebook {
-            svg {
-              width:16.5px;
-              margin-left:-1px;
-            }
-          }
-          // }
-          // &.icon-instagram {
-          //   svg {
-          //   }
-          // }
-          // &.icon-pinterest {
-          //   svg {
-          //   }
-          // }
           &.icon-linkedin {
             svg {
               width:14px;
@@ -1964,6 +1949,30 @@ footer {
           &.icon-behance {
             svg {
               width:18px;
+            }
+          }
+          &.icon-angel {
+            svg {
+              width:14px;
+              margin-left:1px;
+            }
+          }
+          // &.icon-github {
+          //   svg {
+          //   }
+          // }
+          // &.icon-pinterest {
+          //   svg {
+          //   }
+          // }
+          // }
+          // &.icon-instagram {
+          //   svg {
+          //   }
+          // }
+          &.icon-facebook {
+            svg {
+              width:16px;
             }
           }
         }
@@ -1990,9 +1999,9 @@ footer {
       left:37px;
     }
     .footer-business-social {
-      padding:0 5px 5px;
+      padding:0 7px 5px;
       bottom:115px;//120px
-      left:32px;//37px
+      left:30px;//37px
     }
     .footer-copyright {
       bottom:30px;
@@ -2010,8 +2019,8 @@ footer {
       text-align:right;
     }
     .footer-personal-social {
-      padding:0 5px 5px;
-      right:32px;//37px
+      padding:0 7px 5px;
+      right:30px;//37px
       bottom:115px;//120px
       text-align:right;
     }
