@@ -1189,109 +1189,6 @@ aside.header-social-media {
   }
 }
 
-// Footer Social Media
-aside.footer-social-media {//To revise as it came from "fixed right" original nav I made. Just to maintain rombus
-  position:fixed;
-  top:33.5%;
-  right:36px;//left:36px
-  //pointer-events:none;
-  a {
-    span {
-      position:relative;
-      font-size:15.5px;//17px;
-      //background-color:#FFF;
-      pointer-events:none;
-      svg {
-        position:relative;
-        width:17px;
-        font-size:1.2rem;
-        fill:theme-color('beige')!important;//rosybrown
-        z-index:21;
-        @include transition(all ease-out 0.5s);
-      }
-      &::after {
-        content:'';
-        position:absolute;
-        width:27px;
-        height:27px;
-        top:-0.7px;
-        left:-5px;
-        background-color:theme-color('rosybrown');
-        z-index:20;
-        @include transform(rotate(45deg));
-        @include transition(transform ease-out 0.5s);//border-radius ease-out 0.5s
-      }
-      &.icon-facebook {
-        svg {
-          width:16.5px;
-        }
-      }
-      // }
-      // &.icon-instagram {
-      //   svg {
-      //   }
-      // }
-      // &.icon-pinterest {
-      //   svg {
-      //   }
-      // }
-      &.icon-linkedin {
-        svg {
-          width:14px;
-          margin-top:-1px;
-          margin-left:2px;
-        }
-      }
-      &.icon-behance {
-        svg {
-          width:18px;
-        }
-      }
-    }
-    &:hover, &:active, &:focus {
-      span {
-        svg {
-          fill:#FFF!important;
-          @include filter(opacity(0.8));
-        }
-        &::after {
-          @include transform(rotate(180deg));//0
-          //@include border-radius(50%);
-        }
-        &.icon-facebook {
-          svg {
-            fill:lighten(theme-color('facebook'),10)!important;
-          }
-        }
-        &.icon-instagram {
-          svg {
-            fill:lighten(theme-color('instagram'),10)!important;
-          }
-        }
-        &.icon-pinterest {
-          svg {
-            fill:lighten(theme-color('pinterest'),10)!important;
-          }
-        }
-        &.icon-linkedin {
-          svg {
-            fill:lighten(theme-color('linkedin'),10)!important;
-          }
-        }
-        &.icon-behance {
-          svg {
-            fill:lighten(theme-color('behance'),10)!important;
-          }
-        }
-      }
-    }
-  }
-}
-@media (pointer:coarse) and (hover:none) {
-  aside.header-social-media {
-  }
-}//@media
-
 // Header Copyright
 aside.header-copyright {
   position:fixed;
@@ -1958,6 +1855,10 @@ footer {
             }
           }
           // &.icon-github {
+          //   svg {
+          //   }
+          // }
+          // &.icon-dribbble {
           //   svg {
           //   }
           // }
