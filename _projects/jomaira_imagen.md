@@ -12,10 +12,12 @@ web:
   domain_pretty: https://jomaira-moda.netlify.com/ # www.jomairaimagen.com
   launch_url: https://www.jomairaimagen.com/
   images:
-    - /uploads/site-web-jomaira-imagen.png
+    - /uploads/site-web-jomaira-imagen-1.png
     - /uploads/site-web-jomaira-imagen-2.png
     - /uploads/site-web-jomaira-imagen-3.png
     - /uploads/site-web-jomaira-imagen-4.png
+    - /uploads/site-web-jomaira-imagen-5.png
+    - /uploads/site-web-jomaira-imagen-6.png
   image_fonts: ""
 type: Business Website & Blog
 category: Recent Independent Project

@@ -12,7 +12,8 @@ web:
   domain_pretty: www.calleimpresores.com
   launch_url: https://calle-impresores.netlify.com
   images:
-    - /uploads/site-web-calle-impresores.png
+    - /uploads/site-web-calle-impresores-1.png
+    - /uploads/site-web-calle-impresores-2.png
   image_fonts: ""
 type: Business Website & Catalogue
 category: Recent Independent Project
