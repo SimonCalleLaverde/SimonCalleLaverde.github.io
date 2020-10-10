@@ -58,7 +58,7 @@
 //   }
 
 //   changeWordOne();
-//   setInterval(changeWordOne, 9000);
+//   setInterval(changeWordOne, 8000);
 
 // });
 
@@ -118,13 +118,13 @@
 //   }
 
 //   changeWordTwo();
-//   setTimeout(() => setInterval(changeWordTwo, 9000), 300);//setTimeout(() => //, 300)
+//   setTimeout(() => setInterval(changeWordTwo, 8000), 300);//setTimeout(() => //, 300)
 
 // });
 
 //----------------------------------CLOSURE COMPILE SERVICE (MINIFIED)----------------------------------//
 
 $(function(){function l(){for(var c=e[d],a=d==f.length-1?e[0]:e[d+1],b=0;b<c.length;b++)m(c,b);for(b=0;b<a.length;b++)a[b].className="letter-one behind",a[0].parentElement.style.opacity=1,n(a,b);d=d==e.length-1?0:d+1}function m(c,a){setTimeout(function(){c[a].className="letter-one out"},80*a)}function n(c,a){setTimeout(function(){c[a].className="letter-one in"},340+80*a)}function p(c){var a=c.innerHTML;c.innerHTML="";for(var b=[],h=0;h<a.length;h++){var g=document.createElement("span");g.className=
-"letter-one";g.innerHTML=a.charAt(h);c.appendChild(g);b.push(g)}e.push(b)}var f=document.getElementsByClassName("word-rotate-1"),e=[],d=0;f[d].style.opacity=1;for(var k=0;k<f.length;k++)p(f[k]);l();setInterval(l,9E3)});
+"letter-one";g.innerHTML=a.charAt(h);c.appendChild(g);b.push(g)}e.push(b)}var f=document.getElementsByClassName("word-rotate-1"),e=[],d=0;f[d].style.opacity=1;for(var k=0;k<f.length;k++)p(f[k]);l();setInterval(l,8E3)});
 $(function(){function l(){for(var c=e[d],a=d==f.length-1?e[0]:e[d+1],b=0;b<c.length;b++)m(c,b);for(b=0;b<a.length;b++)a[b].className="letter-two behind",a[0].parentElement.style.opacity=1,n(a,b);d=d==e.length-1?0:d+1}function m(c,a){setTimeout(function(){c[a].className="letter-two out"},80*a)}function n(c,a){setTimeout(function(){c[a].className="letter-two in"},340+80*a)}function p(c){var a=c.innerHTML;c.innerHTML="";for(var b=[],h=0;h<a.length;h++){var g=document.createElement("span");g.className=
-"letter-two";g.innerHTML=a.charAt(h);c.appendChild(g);b.push(g)}e.push(b)}var f=document.getElementsByClassName("word-rotate-2"),e=[],d=0;f[d].style.opacity=1;for(var k=0;k<f.length;k++)p(f[k]);l();setTimeout(function(){return setInterval(l,9E3)},300)});
+"letter-two";g.innerHTML=a.charAt(h);c.appendChild(g);b.push(g)}e.push(b)}var f=document.getElementsByClassName("word-rotate-2"),e=[],d=0;f[d].style.opacity=1;for(var k=0;k<f.length;k++)p(f[k]);l();setTimeout(function(){return setInterval(l,8E3)},300)});
