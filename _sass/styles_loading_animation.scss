@@ -296,7 +296,6 @@ body {
 
 .loader-circle, .loader-line {
   position:absolute;
-  @include filter(opacity(0));
 }
 .loader-circle {
   $circle-size:17px;
@@ -305,19 +304,33 @@ body {
   right:22.5px;
   bottom:43.5px;
   background-color:theme-color("chocolate");
-  border:1px solid theme-color("rosybrown");//dotted
   z-index:11;
   @include border-radius(50%);
-  @include animation(fadeInAnim 2s ease-in 2.5s forwards, rotateAnim 2.5s linear infinite);
-  &::before {
+  @include animation(rotateAnim 2.5s linear infinite);
+  &::before, &::after {
     content:"";
     position:absolute;
+  }
+  &::before {
+    width:$circle-size;
+    height:$circle-size;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    border:1px dotted theme-color("rosybrown");
+    z-index:12;
+    @include border-radius(50%);
+    @include filter(opacity(0));
+    @include animation(fadeInAnim 3s ease-in 2s forwards);
+  }
+  &::after {
     width:4px;
     height:4px;
     top:-2px;
     left:5px;
     background-color:theme-color("chocolate");
-    z-index:12;
+    z-index:13;
   }
 }
 .loader-line {
@@ -328,7 +341,8 @@ body {
   border-right:1px solid theme-color("rosybrown");//redish
   z-index:10;
   opacity:0.8;//Doesn't Disturb With Filter Anim
-  @include animation(fadeInAnim 2.5s ease-in 2s forwards);
+  @include filter(opacity(0));
+  @include animation(fadeInAnim 3s ease-in 3s forwards);
 }
 
 //----------------------------------Loader Header Elements Animation Styles----------------------------------//
