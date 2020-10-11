@@ -52,7 +52,7 @@
   // Nav Desktop
   nav.navbar {
     position:fixed;
-    padding:23px 32px;//23px 25px
+    padding:23px 37px;//23px 25px
     top:0;
     right:0;
     line-height:1.2!important;//Was 1.5 from Body
@@ -63,7 +63,7 @@
         a.nav-link {
           display:inline-block;
           position:relative;
-          padding:0.1rem 0.2rem;//0.1rem 0.5rem
+          padding:0.1rem;//0.1rem 0.5rem
           font-family:$font-light;
           font-size:12px;
           color:rgba(24,16,8,0.8);//theme-color('chocolate')
@@ -82,10 +82,9 @@
           small {
             display:inline-block;
             position:absolute;
-            top:7px;//4px
-            right:-19px;//-20px
+            top:3px;
+            right:-21px;
             font-size:10px;
-            @include transform(translateY(-4px));
             // span {
             //   @include animation(change30ColorAnim 20s ease-out forwards);
             // }
