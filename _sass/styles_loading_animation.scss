@@ -292,6 +292,45 @@ body {
   }
 }
 
+//----------------------------------Loading Animation (Loader Circle Small) Styles----------------------------------//
+
+.loader-circle, .loader-line {
+  position:absolute;
+  @include filter(opacity(0));
+}
+.loader-circle {
+  $circle-size:17px;
+  width:$circle-size;
+  height:$circle-size;
+  right:22.5px;
+  bottom:43.5px;
+  background-color:theme-color("chocolate");
+  border:1px dotted theme-color("rosybrown");
+  z-index:11;
+  @include border-radius(50%);
+  @include animation(fadeInAnim 2s ease-in 2.5s forwards, rotateAnim 2.5s linear infinite);
+  &::before {
+    content:"";
+    position:absolute;
+    width:4px;
+    height:4px;
+    top:-2px;
+    left:5px;
+    background-color:theme-color("chocolate");
+    z-index:12;
+  }
+}
+.loader-line {
+  width:0;
+  height:35px;
+  right:30px;
+  bottom:35px;
+  border-right:1px solid theme-color("rosybrown");//redish
+  z-index:10;
+  opacity:0.8;//Doesn't Disturb With Filter Anim
+  @include animation(fadeInAnim 2.5s ease-in 2s forwards);
+}
+
 //----------------------------------Loader Header Elements Animation Styles----------------------------------//
 
 // cubic-bezier(0.455,0.03,0.515,0.955)
