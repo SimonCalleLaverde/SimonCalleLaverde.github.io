@@ -82,8 +82,8 @@
           small {
             display:inline-block;
             position:absolute;
-            top:4px;
-            right:-20px;
+            top:7px;//4px
+            right:-19px;//-20px
             font-size:10px;
             @include transform(translateY(-4px));
             // span {
