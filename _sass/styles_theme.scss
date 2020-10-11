@@ -1471,12 +1471,12 @@ section.home-who-i-am-section {
     &.gif-development {
       top:3%;
       left:5%;
-      @include transform(rotate(-5deg));
+      @include transform(rotate(-3deg));
     }
     &.gif-universities {
       top:25%;
       right:5%;
-      @include transform(rotate(5deg));
+      @include transform(rotate(3deg));
     }
   }
   span {
