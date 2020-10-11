@@ -322,7 +322,7 @@ body {
     z-index:12;
     @include border-radius(50%);
     @include filter(opacity(0));
-    @include animation(fadeInAnim 3s ease-in 2s forwards);
+    @include animation(fadeInAnim 3s ease-in 1s forwards);
   }
   &::after {
     width:4px;
@@ -342,7 +342,7 @@ body {
   z-index:10;
   opacity:0.8;//Doesn't Disturb With Filter Anim
   @include filter(opacity(0));
-  @include animation(fadeInAnim 3s ease-in 3s forwards);
+  @include animation(fadeInAnim 3s ease-in 2s forwards);
 }
 
 //----------------------------------Loader Header Elements Animation Styles----------------------------------//
