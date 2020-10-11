@@ -305,7 +305,7 @@ body {
   right:22.5px;
   bottom:43.5px;
   background-color:theme-color("chocolate");
-  border:1px dotted theme-color("rosybrown");
+  border:1px solid theme-color("rosybrown");//dotted
   z-index:11;
   @include border-radius(50%);
   @include animation(fadeInAnim 2s ease-in 2.5s forwards, rotateAnim 2.5s linear infinite);
