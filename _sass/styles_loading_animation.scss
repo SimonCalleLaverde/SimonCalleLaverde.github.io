@@ -10,11 +10,11 @@ body {
       @include animation(fadeInAnim ease-in 0.5s forwards 2.8s);
     }
   }
-  // &.home.imagesloaded {
-  //   .logo, aside.header-plus-years, nav.navbar, aside.burger-mobile, aside.header-left-info, aside.header-copyright, aside.header-social-media, aside.header-scroll-down {
-  //     @include animation(fadeInAnim ease-in 0.5s forwards 5.3s);
-  //   }
-  // }
+  &.home.imagesloaded {
+    .logo, aside.header-plus-years, nav.navbar, aside.burger-mobile, aside.header-left-info, aside.header-copyright, aside.header-social-media, aside.header-scroll-down {
+      @include animation(fadeInAnim ease-in 0.5s forwards 5.3s);
+    }
+  }
 }
 
 //----------------------------------Loading Animation (Header Image & Main) Styles----------------------------------//
@@ -35,20 +35,20 @@ body {
       @include animation(mainTranslateInAnim ease-in-out 1s forwards 1.8s);
     }
   }
-  // &.home.imagesloaded {
-  //   .header-image {
-  //     @include animation(headerTranslateHalfOutAnim ease-in-out 1s forwards 3.9s);
-  //   }
-  //   main {
-  //     @include animation(mainTranslateInAnim ease-in-out 1s forwards 4.3s);
-  //   }
-  // }
+  &.home.imagesloaded {
+    .header-image {
+      @include animation(headerTranslateHalfOutAnim ease-in-out 1s forwards 3.9s);
+    }
+    main {
+      @include animation(mainTranslateInAnim ease-in-out 1s forwards 4.3s);
+    }
+  }
 }
 
 //----------------------------------Loading Animation (Cursor Default & Cursor Custom) Styles----------------------------------//
 
 body {
-  &.loading, &.rendering-internal {//&.home.rendering
+  &.loading, &.rendering-quick, &.home.rendering {
     cursor:progress;
     overflow-y:hidden!important;
     // .cursor {
@@ -73,7 +73,7 @@ body {
     pointer-events:none;
     > .loader-center {
       //display:none;
-      //@include filter(opacity(0.95));
+      @include filter(opacity(0.9));
       > span {
         display:block;
         overflow:hidden;
@@ -261,11 +261,11 @@ body {
       }
     }
   }
-  // &.home.imagesloaded {
-  //   > .loader-area {
-  //     @include animation(loaderTranslateOutAnim 1.5s ease-in forwards 2.8s);//cubic-bezier(.89,.41,.89,.41)
-  //   }
-  // }
+  &.home.imagesloaded {
+    > .loader-area {
+      @include animation(loaderTranslateOutAnim 1.5s ease-in forwards 2.8s);//cubic-bezier(.89,.41,.89,.41)
+    }
+  }
 }
 
 //----------------------------------Loading Animation (Loader Out) Styles----------------------------------//
