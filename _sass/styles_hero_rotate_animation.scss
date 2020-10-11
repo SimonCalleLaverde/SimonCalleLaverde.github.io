@@ -2,18 +2,18 @@
 .hero-left, .hero-right {
   .word-rotate-1, .word-rotate-2 {
     opacity:0;
-    &:last-of-type {
+    &:nth-of-type(1), &:nth-of-type(3) {//&:last-of-type
       position:absolute;
       top:0;
     }
   }
   .word-rotate-1 {
-    &:last-of-type {
+    &:nth-of-type(1), &:nth-of-type(3) {//&:last-of-type
       left:0;
     }
   }
   .word-rotate-2 {
-    &:last-of-type {
+    &:nth-of-type(1), &:nth-of-type(3) {//&:last-of-type
       right:0;
     }
   }
