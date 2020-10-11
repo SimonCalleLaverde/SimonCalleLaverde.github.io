@@ -318,11 +318,11 @@ body {
     right:0;
     bottom:0;
     left:0;
-    border:1px dotted theme-color("rosybrown");
+    border:1px solid theme-color("rosybrown");//dotted
     z-index:12;
     @include border-radius(50%);
     @include filter(opacity(0));
-    @include animation(fadeInAnim 3s ease-in 1s forwards);
+    @include animation(fadeInAnim 3s ease-in forwards);
   }
   &::after {
     width:4px;
@@ -342,7 +342,7 @@ body {
   z-index:10;
   opacity:0.8;//Doesn't Disturb With Filter Anim
   @include filter(opacity(0));
-  @include animation(fadeInAnim 3s ease-in 2s forwards);
+  @include animation(fadeInAnim 3s ease-in 1s forwards);
 }
 
 //----------------------------------Loader Header Elements Animation Styles----------------------------------//
