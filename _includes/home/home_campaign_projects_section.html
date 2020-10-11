@@ -11,7 +11,7 @@
   {% if project_tags_list contains "#campaign_featured#" %}
     <!--{% assign projects_count = projects_count | plus:1 %}--><!--Was For Placing Text Cycling Right/Left-->
 
-    <section class="home-campaign-projects-section clearfix" id="{% if forloop.first %}home_campaign_projects_section{% endif %}" data-scene="rotateZ">
+    <section class="home-campaign-projects-section clearfix" id="{% if forloop.first %}home_campaign_projects_section{% endif %}" data-scene><!--data-scene="rotateZ"-->
       <div class="container">
 
         <div class="row">
