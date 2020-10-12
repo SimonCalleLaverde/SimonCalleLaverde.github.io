@@ -28,7 +28,7 @@
 
   // Headline, Title, Subtitle
   .text-hero, .text-gigantic {
-    font-size:6.3rem;
+    font-size:4.3rem;
   }
   .text-hero {
     line-height:1.5;
@@ -37,22 +37,67 @@
     line-height:0.88;
   }
   .text-intro, .text-huge {
-    font-size:3.85rem;
+    font-size:2.3rem;
   }
   .text-intro {
-    line-height:1.19;
+    line-height:1.23;
   }
   .text-huge {
     line-height:1.02;
   }
   .text-big {
-    font-size:2.5rem;
+    font-size:1.5rem;
   }
   .text-medium {
-    font-size:2.2rem;
+    font-size:1.2rem;
   }
   .text-small {
-    font-size:1.4rem;
+    font-size:0.7rem;
+  }
+  @media only screen and (min-width:850px) {
+    .text-hero, .text-gigantic {
+      font-size:5.3rem;
+    }
+    .text-intro, .text-huge {
+      font-size:2.85rem;
+    }
+    .text-intro {
+      line-height:1.19;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .text-hero, .text-gigantic {
+      font-size:5.8rem;
+    }
+    .text-intro, .text-huge {
+      font-size:3.35rem;
+    }
+    .text-big {
+      font-size:2rem;
+    }
+    .text-medium {
+      font-size:1.7rem;
+    }
+    .text-small {
+      font-size:0.9rem;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    .text-hero, .text-gigantic {
+      font-size:6.3rem;
+    }
+    .text-intro, .text-huge {
+      font-size:3.85rem;
+    }
+    .text-big {
+      font-size:2.5rem;
+    }
+    .text-medium {
+      font-size:2.2rem;
+    }
+    .text-small {
+      font-size:1.4rem;
+    }
   }
 
   // Panels
@@ -73,6 +118,24 @@
     }
     .last.column {
       padding-left:20px;
+    }
+  }
+
+  // Header Social Media
+  aside.header-social-media {
+    top:auto;
+    right:20%;
+    bottom:13px;
+    left:20%;
+    a {
+      font-family:$font-regular;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    aside.header-social-media {
+      a {
+        font-size:12px;
+      }
     }
   }
 
@@ -142,13 +205,106 @@
   // Home Hello Header
   header.home-hello-header {
     padding:50px 0;
-
-
-
-
-
-
-
+    .hello-header-middle {
+      .hello-header-hero {
+        .hero-left, .hero-right {
+          top:33%;
+          right:auto;
+          left:auto;
+        }
+        .hero-left {
+          left:-57%;
+          text-align:left;
+        }
+        .hero-right {
+          right:-57%;
+          text-align:right;
+        }
+      }
+      .area-left, .area-right {
+        div.websites-gif-cover, img.websites-gif-gif {
+          min-width:306px;
+        }
+      }
+      .area-right {
+        margin-top:-230.5px;//255.641px - 25px
+      }
+      &:hover {
+        .area-left {
+          @include transform(translateY(12.5px));//25px
+        }
+        .area-right {
+          @include transform(translateY(-12.5px));//-25px
+        }
+      }
+      span.header-what-i-do {
+        bottom:-97px;
+      }
+    }
+  }
+  @media only screen and (min-width:850px) {
+    header.home-hello-header {
+      .hello-header-middle {
+        .hello-header-hero {
+          .hero-left, .hero-right {
+            top:27%;
+          }
+          .hero-left {
+            left:-71.5%;
+          }
+          .hero-right {
+            right:-71.5%;
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    header.home-hello-header {
+      .hello-header-middle {
+        .hello-header-hero {
+          .hero-left {
+            left:-70.5%;
+          }
+          .hero-right {
+            right:-70.5%;
+          }
+        }
+        .area-left, .area-right {
+          div.websites-gif-cover, img.websites-gif-gif {
+            min-width:338px;//352px
+          }
+        }
+        .area-right {
+          margin-top:-257.5px;//282.375px - 25px
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    header.home-hello-header {
+      .hello-header-middle {
+        .hello-header-hero {
+          .hero-left {
+            left:-73.5%;//-72.7%//-69.3%//-55.5%
+          }
+          .hero-right {
+            right:-73.5%;//-72.7%//-69.3%//-55.5%
+          }
+        }
+        .area-left, .area-right {
+          div.websites-gif-cover, img.websites-gif-gif {
+            min-width:352px;//368px//320px
+          }
+        }
+        .area-left {
+          margin-left:-0.5px;
+        }
+        .area-right {
+          margin-top:-269px;//294.062px//307.438px//267.5px - 25px//267.328px
+        }
+      }
+    }
   }
 
   // Home Who I Am Section

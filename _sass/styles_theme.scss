@@ -30,26 +30,26 @@
   letter-spacing:2px;
   z-index:10000;
 }
-@include media-breakpoint-only(xs) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-only(sm) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-only(md) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-only(lg) {//up
-  html {
-    overflow:hidden;
-  }
-}
+// @include media-breakpoint-only(xs) {
+//   html {
+//     overflow:hidden;
+//   }
+// }
+// @include media-breakpoint-only(sm) {
+//   html {
+//     overflow:hidden;
+//   }
+// }
+// @include media-breakpoint-only(md) {
+//   html {
+//     overflow:hidden;
+//   }
+// }
+// @include media-breakpoint-only(lg) {//up
+//   html {
+//     overflow:hidden;
+//   }
+// }
 
 //----------------------------------General Styles----------------------------------//
 
@@ -566,6 +566,11 @@ $btn-lg-padding:1rem 2.6rem;
   -webkit-text-fill-color:theme-color('transparent');//Will Override Color (Regardless Of Order)
   -webkit-text-stroke-width:1px;
   -webkit-text-stroke-color:theme-color('chocolate');
+}
+@include media-breakpoint-down(xs) {//Down
+  .text-hero, .text-gigantic {
+    font-size:3.4rem;
+  }
 }
 
 // Forms (Custom | Overriding Default & Bootstrap's)
@@ -1143,31 +1148,34 @@ aside.header-plus-years {
   font-size:11px;
   line-height:1.3;
   letter-spacing:0.2;
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+  pointer-events:none;
+  opacity:(0.8);//So It Doesn't Disturb With Filter Opacity
   i {
     display:block;
     margin-left:-15px;
-    span.icon-globe {
-      margin-left:1px;
-      //vertical-align:top;
-      svg {
-        width:8px;
-        fill:theme-color('rosybrown');
-        //vertical-align:middle;
-      }
-    }
+    // span.icon-globe {
+    //   margin-left:1px;
+    //   //vertical-align:top;
+    //   svg {
+    //     width:8px;
+    //     fill:theme-color('rosybrown');
+    //     //vertical-align:middle;
+    //   }
+    // }
   }
 }
 
 // Header Social Media
 aside.header-social-media {
   position:fixed;
-  right:20%;
-  bottom:13px;
-  left:20%;
+  //top:26%;
+  //right:25px;
   a {
     position:relative;
-    font-family:$font-regular;
-    font-size:12px;
+    font-family:$font-ultra-light;
+    font-size:11px;
     color:theme-color('chocolate');
     @include filter(opacity(0.8));
     @include transition(filter ease-out 0.3s, color ease-in-out 0.3s);
@@ -1190,6 +1198,14 @@ aside.header-social-media {
         left:0;
       }
     }
+  }
+}
+@include media-breakpoint-down(sm) {//Down
+  aside.header-social-media {
+    width:100vh;//We Will Use Viewport-Height To Apply To The Width
+    left:100%;
+    @include transform-origin(0 0);
+    @include transform(rotate(90deg));
   }
 }
 
@@ -1342,20 +1358,23 @@ aside.header-scroll-down {
 // Home Hello Header
 header.home-hello-header {
   min-height:100vh;
-  padding:40px 20px;//To revise mobile
+  padding:50px 20px;
   .hello-header-middle {
     .hello-header-hero {
       pointer-events:none;
       .hero-left, .hero-right {
         position:absolute;
-        top:27%;//30%//24%
+        //top:27%;
+        right:-10%;//0
+        left:-10%;//0
+        text-align:center;
         z-index:11;
       }
       .hero-left {
-        left:-73.5%;//-72.7%//-69.3%//-55.5%
+        top:-13.8%;
       }
       .hero-right {
-        right:-73.5%;//-72.7%//-69.3%//-55.5%
+        bottom:-17.5%;
       }
     }
     .area-left, .area-right {
@@ -1363,7 +1382,7 @@ header.home-hello-header {
       overflow:hidden;
       @include transition(transform ease-out 0.5s);
       div.websites-gif-cover, img.websites-gif-gif {
-        min-width:352px;//368px//320px
+        min-width:311px;
         pointer-events:none;
         user-select:none;
         //@include transition(filter ease-in-out 0.3s);
@@ -1383,11 +1402,10 @@ header.home-hello-header {
     }
     .area-left {
       margin-top:0;
-      margin-left:-0.5px;
     }
     .area-right {
-      margin-top:-269px;//294.062px//307.438px//267.5px - 25px//267.328px
-      margin-left:50%;//calc(50% + 0.5px)
+      margin-top:-260px;//259.812px;
+      margin-left:50%;
       div.websites-gif-cover, img.websites-gif-gif {
         margin-left:-100%;
       }
@@ -1402,20 +1420,50 @@ header.home-hello-header {
         }
       }
       .area-left {
-        @include transform(translateY(12.5px));//25px
+        @include transform(translateY(25px));
       }
       .area-right {
-        @include transform(translateY(-12.5px));//-25px
+        @include transform(translateY(-25px));
       }
     }
     span.header-what-i-do {
       position:absolute;
-      right:0;
-      bottom:-97px;
-      left:0;
+      right:-10%;
+      bottom:-157px;
+      left:-10%;
       font-size:22px;
       line-height:1.2;
       pointer-events:none;
+    }
+  }
+}
+@include media-breakpoint-up(sm) {
+  header.home-hello-header {
+    .hello-header-middle {
+      .hello-header-hero {
+        .hero-left {
+          top:-18%;
+        }
+        .hero-right {
+          bottom:-22%;
+        }
+      }
+      .area-left, .area-right {
+        div.websites-gif-cover, img.websites-gif-gif {
+          min-width:308px;
+        }
+      }
+      .area-right {
+        margin-top:-257.5px;//Removing Alternate Style//-232.5px//257.312px - 25px
+      }
+      &:hover {
+        .area-left {
+          @include transform(translateY(30px));//25px
+        }
+        .area-right {
+          @include transform(translateY(-30px));//-25px
+        }
+      }
     }
   }
 }
