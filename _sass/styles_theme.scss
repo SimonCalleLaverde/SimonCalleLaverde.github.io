@@ -529,7 +529,7 @@ $btn-lg-padding:1rem 2.6rem;
 .headline, .title, .subtitle {
 }
 .text-hero, .text-gigantic {
-  font-size:6.3rem;
+  font-size:4.3rem;
 }
 .text-hero {
   line-height:1.5;
@@ -538,7 +538,7 @@ $btn-lg-padding:1rem 2.6rem;
   line-height:0.88;
 }
 .text-intro, .text-huge {
-  font-size:3.85rem;
+  font-size:2.85rem;
 }
 .text-intro {
   line-height:1.19;
@@ -547,13 +547,13 @@ $btn-lg-padding:1rem 2.6rem;
   line-height:1.02;
 }
 .text-big {
-  font-size:2.5rem;
+  font-size:1.5rem;
 }
 .text-medium {
-  font-size:2.2rem;
+  font-size:1.2rem;
 }
 .text-small {
-  font-size:1.4rem;
+  font-size:0.4rem;
 }
 .text-stroke-rosybrown {
   color:transparent!important;
@@ -1341,6 +1341,7 @@ aside.header-scroll-down {
 
 // Home Hello Header
 header.home-hello-header {
+  min-height:100vh;
   padding:40px 20px;//To revise mobile
   .hello-header-middle {
     .hello-header-hero {
@@ -1441,13 +1442,13 @@ section.home-who-i-am-section {
     &:hover {
       @include filter(opacity(0.9));
       &::before {
-        @include animation(lineThorughBackAnim 0.9s linear forwards);
+        @include animation(lineThorughBackAnim 0.9s linear 0.1s forwards);
       }
       + img {
-        @include transition (filter ease-out 1s 0.3s);
+        @include transition(filter ease-out 1s 0.3s);
       }
       ~ span {
-        @include transition (filter ease-out 1s 0.6s);
+        @include transition(filter ease-out 1s 0.6s);
       }
       &.link-development {
         + img, ~ span.text-development {

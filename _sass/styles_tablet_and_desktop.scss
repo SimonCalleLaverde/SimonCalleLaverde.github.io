@@ -26,6 +26,35 @@
     display:flex;
   }
 
+  // Headline, Title, Subtitle
+  .text-hero, .text-gigantic {
+    font-size:6.3rem;
+  }
+  .text-hero {
+    line-height:1.5;
+  }
+  .text-gigantic {
+    line-height:0.88;
+  }
+  .text-intro, .text-huge {
+    font-size:3.85rem;
+  }
+  .text-intro {
+    line-height:1.19;
+  }
+  .text-huge {
+    line-height:1.02;
+  }
+  .text-big {
+    font-size:2.5rem;
+  }
+  .text-medium {
+    font-size:2.2rem;
+  }
+  .text-small {
+    font-size:1.4rem;
+  }
+
   // Panels
   article.project-article {
     &.home {
@@ -112,8 +141,14 @@
 
   // Home Hello Header
   header.home-hello-header {
-    min-height:100vh;
     padding:50px 0;
+
+
+
+
+
+
+
   }
 
   // Home Who I Am Section

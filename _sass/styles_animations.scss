@@ -22,6 +22,18 @@
   }
 }//@keyframes
 
+@keyframes fadeInOutAnim {
+  0% {
+    @include filter(opacity(0));
+  }
+  50%, 80% {
+    @include filter(opacity(1));
+  }
+  100% {
+    @include filter(opacity(0));
+  }
+}//@keyframes
+
 //----------------------------------Other Animation Styles----------------------------------//
 
 // @keyframes change30ColorAnim {
