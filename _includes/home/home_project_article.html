@@ -11,19 +11,22 @@
           background-size:cover;
         }
       </style>
-      <div class="project-thumbnail project-{{ project.order }} bg-image" id="project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.title }}" loading="lazy">
+      <div class="project-thumbnail project-{{ project.order }} bg-image" id="project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.title }}" loading="lazy"><!--Lazy won't work in bg images-->
       </div>
 
       <figcaption class="font-ultra-light text-rosybrown">
-        <div class="project-title">
+        <!--Desktop | Screen Readers-->
+        <div class="project-title d-none d-md-block">
           <h3 class="text-huge text-uppercase mb-0">
             <span class="text-rosybrown">
               {{ project.name_for_thumbnail }}
             </span>
 
+            <!--{% comment %}
             <span class="title-stroke" aria-hidden="true">
               {{ project.name_for_thumbnail }}
             </span>
+            {% endcomment %}-->
           </h3>
           
           <div class="project-details">
@@ -40,7 +43,8 @@
         </div>
 
         <div class="project-info">
-          <div class="project-data">
+          <!--Desktop | Screen Readers-->
+          <div class="project-data d-none d-md-block">
             <time class="font-light">
               {{ project.year }}
             </time>
@@ -48,9 +52,16 @@
             {{ project.category }}
           </div>
 
-          <div class="project-platforms">
+          <!--Mobile-->
+          <div class="project-data d-block d-md-none">
+            <time class="font-light">
+              {{ project.year }}
+            </time>
+          </div>
+
+          <div class="project-platforms d-none d-md-block">
             <span class="font-light">
-              Created using
+              Made with<!--Created using-->
             </span>
 
             {% for platform in project.platforms %}
@@ -60,5 +71,32 @@
         </div>
       </figcaption>
     </figure>
+
+    <!--Mobile-->
+    <div class="project-title-mobile d-block d-md-none font-ultra-light text-rosybrown" aria-hidden="true">
+      <h3 class="text-huge text-uppercase mb-0">
+        <span class="text-rosybrown">
+          {{ project.name_for_thumbnail }}
+        </span>
+
+        <span class="title-stroke" aria-hidden="true"><!--No Longer Stroke-->
+          {{ project.name_for_thumbnail }}
+        </span>
+      </h3>
+      
+      <div class="project-details">
+        <!--{% comment %}
+        <div class="project-type">
+          {{ project.type }}
+        </div>
+        {% endcomment %}-->
+
+        <div class="project-roles">
+          {% for item in project.roles %}
+            {{ item }}{% unless forloop.last %} &middot;{% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </a>
 </article>

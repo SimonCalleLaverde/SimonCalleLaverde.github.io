@@ -135,9 +135,9 @@ $(function() {
   $(window).scroll(function() {
     var scrollFromBottom = $(document).height() - $(window).height() - $(window).scrollTop();
 
-    if (scrollFromBottom >= 435) {
+    if (scrollFromBottom >= 300) {
       body.removeClass("is-bottom").addClass("is-top");
-    } else if (scrollFromBottom <= 435) {
+    } else if (scrollFromBottom <= 300) {
       body.removeClass("is-top").addClass("is-bottom");
     }
   });

@@ -12,7 +12,7 @@
       {% endif %}
         <div class="col-md-4">
 
-          <article class="three-phases-article text-rosybrown text-center">
+          <article class="three-phases-article text-rosybrown text-center{% unless forloop.last %} mb-5 pb-3{% endunless %}">
             <a href="#" data-toggle="modal" data-target="#phaseModal_{{ phase.slug }}">
               <span class="d-inline-flex flex-row justify-content-center align-items-center bg-rosybrown p-4">
                 <img src="{{ phase.image_logo }}" alt="{{ phase.title }} Logo" loading="lazy">
@@ -20,7 +20,13 @@
             </a>
             
             <div class="px-3">
-              <h4 class="text-medium text-rosybrown mt-4more mb-4 pt-1">
+              <!--Desktop | Screen Readers-->
+              <h4 class="text-medium text-rosybrown mt-4more mb-4 pt-1 d-none d-md-block">
+                {{ phase.title }}
+              </h4>
+
+              <!--Mobile-->
+              <h4 class="text-huge text-rosybrown mt-4more mb-4 pt-1 d-block d-md-none" aria-hidden="true">
                 {{ phase.title }}
               </h4>
 

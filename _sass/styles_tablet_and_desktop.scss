@@ -105,7 +105,108 @@
     &.home {
       a {
         figure {
-          //height:400px;
+          width:calc(100% + 30px);
+          height:403px;//450px With col-md-10//Mobile 250px
+          margin-left:-15px;
+          figcaption {
+            .project-title {
+              position:absolute;
+              margin-top:0;
+              right:auto;
+              bottom:-33px;
+              left:-22px;
+              z-index:21;//After Removing "span.title-stroke"
+              // h1, h2, h3, h4, h5, h6 {
+              //   span.title-stroke {
+              //     right:auto;
+              //   }
+              // }
+            }
+            .project-details, .project-info {
+              overflow:hidden;
+              > .project-data, > .project-platforms, > .project-type, > .project-roles {
+                @include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
+              }
+            }
+            .project-details {
+              position:absolute;
+              width:calc(100% - 1px);
+              left:1px;
+              text-align:left;
+              > .project-type {
+                @include filter(opacity(1));
+                @include transform(translateY(0));
+              }
+              > .project-roles {
+                position:absolute;
+                top:0;
+                right:0;//auto
+                bottom:0;
+                left:0;
+                @include filter(opacity(0));
+                @include transform(translateY(20px));
+              }
+            }
+            .project-info {
+              height:calc(100% - 1px);
+              padding-top:0;
+              top:1px;
+              right:-30px;
+              > .project-data {
+                @include filter(opacity(1));
+                @include transform(translateX(0));
+              }
+              > .project-platforms {
+                position:absolute;
+                top:0;
+                right:0;
+                bottom:0;
+                left:0;
+                @include filter(opacity(0));
+                @include transform(translateX(20px));
+              }
+            }
+          }
+        }
+        &:hover, &:active, &:focus {
+          figure {
+            figcaption {
+              .project-title {
+                // h1, h2, h3, h4, h5, h6 {
+                //   span.title-stroke {
+                //     color:theme-color('rosybrown');
+                //     //-webkit-text-stroke-color:transparent;
+                //     //@include transition(all cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s);
+                //   }
+                // }
+              }
+              .project-details, .project-info {
+                > .project-data, > .project-platforms, > .project-type, > .project-roles {
+                  @include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s);
+                }
+              }
+              .project-details {
+                > .project-type {
+                  @include filter(opacity(0));
+                  @include transform(translateY(-20px));
+                }
+                > .project-roles {
+                  @include filter(opacity(1));
+                  @include transform(translateY(0));
+                }
+              }
+              .project-info {
+                > .project-data {
+                  @include filter(opacity(0));
+                  @include transform(translateX(-20px));
+                }
+                > .project-platforms {
+                  @include filter(opacity(1));
+                  @include transform(translateX(0));
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -137,6 +238,11 @@
         font-size:12px;
       }
     }
+  }
+  
+  // Header Copyright, Header Left Info
+  aside.header-copyright, aside.header-left-info {
+    font-family:$font-ultra-light;
   }
 
   //----------------------------------Section Styles----------------------------------//
@@ -334,6 +440,14 @@
 
   // Home I Can Create You Section
   section.home-i-can-create-you-section {
+  }
+
+  // Home Skills Set Section
+  section.home-skills-set-section {
+    .skills-set-table {
+      .skill-row {
+      }
+    }
   }
 
   // About Header
