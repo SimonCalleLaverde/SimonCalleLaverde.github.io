@@ -1148,8 +1148,6 @@ aside.header-plus-years {
   font-size:11px;
   line-height:1.3;
   letter-spacing:0.2;
-  writing-mode:vertical-rl;
-  text-orientation:mixed;
   pointer-events:none;
   opacity:(0.8);//So It Doesn't Disturb With Filter Opacity
   i {
@@ -1309,7 +1307,7 @@ aside.header-scroll-down {
 .logo {
   position:fixed;
   top:30px;
-  left:34px;//30px
+  left:34px;
   font-family:$font-headline;
   font-size:13px;
   line-height:1.2;
@@ -1353,6 +1351,17 @@ aside.header-scroll-down {
   //     }
   //   }
   // }
+}
+@include media-breakpoint-down(sm) {//Down
+  .logo {
+    @include transform-origin(top left);
+    @include transform(scale(0.9));
+  }
+}
+@include media-breakpoint-down(xs) {//Down
+  .logo {
+    @include transform(scale(0.85));
+  }
 }
 
 // Home Hello Header
@@ -1726,21 +1735,16 @@ section.about-lets-work-section {
 header.projects-header-section {
   position:relative;
   padding:30px 20px;//To revise mobile
-  img.header-illustration {
-    position:absolute;
-    width:37%;
-    margin:auto;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-  }
-  .header-timeline {
-    display:inline-block;
-    padding:3px 7px 5px;
-    font-size:23px;
-    background-color:rgba(192,167,158,0.95);//rgba(184,156,146,1)//theme-color('beige')
+  .projects-header-timeline {
+    font-size:22px;
     line-height:1.2;
+    span {
+      display:block;
+    }
+  }
+  img.projects-header-illustration {
+    min-width:106%;
+    margin-left:-3%;
   }
 }
 
