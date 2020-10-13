@@ -296,7 +296,7 @@ body {
 
 .loader-circle, .loader-line {
   position:fixed;//absolute
-  opacity:0.7;//So It Doesn't Disturb With Filter Anim
+  opacity:0.9;//So It Doesn't Disturb With Filter Anim
   @include filter(opacity(0));
   @include animation(fadeInOutAnim 3s ease-in-out forwards);
 }
