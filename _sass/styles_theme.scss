@@ -1271,7 +1271,7 @@ aside.header-scroll-down {
     @include transition(all 0.3s ease-in-out);
     span {
       display:block;
-      padding:5px 7px 2px;//5px 5px 2px
+      padding:5px 5px 2px;//5px 7px 2px
       border:1px solid theme-color('chocolate');
       @include transition(filter ease-out 1s, border-color ease-in-out 0.3s);
       > div {
@@ -1433,6 +1433,8 @@ header.home-hello-header {
 @media only screen and (max-width:400px) {//Down
   header.home-hello-header {
     .hello-header-middle {
+      padding-right:0!important;
+      padding-left:0!important;
       .hello-header-hero {
         .hero-left {
           top:-15.5%;
