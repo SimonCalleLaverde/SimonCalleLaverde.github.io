@@ -18,6 +18,8 @@ web:
     - /uploads/site-web-jomaira-imagen-4.png
     - /uploads/site-web-jomaira-imagen-5.png
     - /uploads/site-web-jomaira-imagen-6.png
+    - /uploads/site-web-jomaira-imagen-7.png
+    - /uploads/site-web-jomaira-imagen-8.png
   image_fonts: ""
 type: Business Website & Blog
 category: Recent Independent Project
@@ -28,7 +30,7 @@ content_two_right: "planned launch a bit. We will later set the site live in the
   https://www.jomairaimagen.com/."
 permalink: /jomaira_imagen
 type_slug: project
-order: 29
+order: 30
 ---
 
 Jomaira Imagen is the brand of Jomaira Laverde, who has worked for more than 20 years in fashion, image consulting, fashion design, and personal image courses and lessons with individuals and big companies. The website is a way to put Jomaira Imagen online and in the view of possible contractors or students of personal image lessons and courses. The website is a portfolio that shows biography, available courses, articles related to fashion and image, and commemorative videos of previous classes, conferences and experiences lived by the students and the company and owner.

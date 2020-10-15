@@ -22,7 +22,7 @@ content_two_left: ""
 content_two_right: ""
 permalink: /calle_impresores
 type_slug: project
-order: 30
+order: 29
 ---
 
 Calle Impresores is a graphic and print company with 30 years in the industry. I re-made their website with a modern interface, adaptable to any device and with an easier user experience and contact methods. The whole website is very easy to consume, with contrasted sections and colors that help accessibility. With a much better S.E.O research to help the company find more clients online through rough times.
