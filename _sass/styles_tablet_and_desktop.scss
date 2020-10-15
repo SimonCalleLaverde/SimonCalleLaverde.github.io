@@ -566,6 +566,11 @@
             // &::before {
             //   border-bottom-color:theme-color('redish');
             // }
+            small {
+              span, i {
+                font-family:$font-ultra-light-italic!important;
+              }
+            }
             &:hover, &:active, &:focus, &.active-link {
               color:theme-color('rosybrown');
             }
