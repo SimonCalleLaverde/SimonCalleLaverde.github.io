@@ -111,6 +111,7 @@
           figcaption {
             .project-title {
               position:absolute;
+              min-width:50%;//So Text Bellow Doesn't Fall If Title Is Short
               margin-top:0;
               right:auto;
               bottom:-33px;
