@@ -280,10 +280,10 @@
           small {
             display:inline-block;
             position:absolute;
-            top:3px;
-            right:-21px;
-            font-size:10px;
-            // span {
+            top:4px;//3px
+            right:-19px;//-21px
+            //font-size:10px;
+            // span, i {
             //   @include animation(change30ColorAnim 20s ease-out forwards);
             // }
           }
