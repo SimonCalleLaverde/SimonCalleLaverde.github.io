@@ -1,5 +1,5 @@
 <!--Formspree | https://test.formspree.io/ | https://codepen.io/jonathanbarreto/pen/NAjPQW-->
-<form method="POST" action="https://formspree.io/simoncallelaverde@gmail.com">
+<form method="POST" id="contact_form"><!--action="https://formspree.io/simoncallelaverde@gmail.com"-->
   <div class="row mb-5less pb-1">
     <div class="col-md-12">
       <h4 class="text-small mb-4 pb-1">
@@ -133,3 +133,9 @@
     </div>
   </div>
 </form>
+
+<!--Small Security For Auto Spam-->
+<script>
+  var contactFormSecurity = document.getElementById('contact_form');
+  contactFormSecurity.setAttribute('action', 'https://formspree.io/' + 'simoncallelaverde' + '@' + 'gmail' + '.' + 'com');
+</script>
