@@ -424,8 +424,8 @@
     padding:100px 0 67px;
   }
 
-  // Home Business Projects Section, Home Campaign Projects Section, Home Skills Set Section, Workflow Tools Technology Section, Home Three Phases Section
-  section.home-business-projects-section, section.home-campaign-projects-section, section.home-skills-set-section, section.workflow-tools-technology-section, section.home-three-phases-section {
+  // Home Business Projects Section, Home Campaign Projects Section, Home Three Phases Section, Home Skills Set Section, Workflow Tools Technology Section
+  section.home-business-projects-section, section.home-campaign-projects-section, section.home-three-phases-section, section.home-skills-set-section, section.workflow-tools-technology-section {
     padding:59px 0 91px;//59px 0 71px
   }
 
@@ -436,19 +436,20 @@
 
   // Home Three Phases Section {
   section.home-three-phases-section {
-    padding:59px 0 51px;
-  }
-
-  // Home I Can Create You Section
-  section.home-i-can-create-you-section {
+    padding-bottom:21px;//51px
   }
 
   // Home Skills Set Section
   section.home-skills-set-section {
+    padding-bottom:31px;//51px
     .skills-set-table {
       .skill-row {
       }
     }
+  }
+
+  // Home I Can Create You Section
+  section.home-i-can-create-you-section {
   }
 
   // About Header
