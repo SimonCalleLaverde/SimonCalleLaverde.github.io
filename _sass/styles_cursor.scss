@@ -250,7 +250,7 @@ div.cursor {
     }
     &.hovered29 {
       .cursor-project {
-        background-color:#FFE8E4;
+        background-color:lighten(rgba(221,168,163,1),5);//#FFE8E4
         color:theme-color('chocolate');
       }
     }

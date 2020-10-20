@@ -1271,7 +1271,7 @@ aside.header-scroll-down {
     @include transition(all 0.3s ease-in-out);
     span {
       display:block;
-      padding:3px 7px 2px;//5px 7px 2px//5px 5px 2px
+      padding:3px 7px 1px;//5px 7px 2px//5px 5px 2px
       border:1px solid theme-color('chocolate');
       @include transition(filter ease-out 1s, border-color ease-in-out 0.3s);
       > div {
