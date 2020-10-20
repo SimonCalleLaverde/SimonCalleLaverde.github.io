@@ -16,7 +16,7 @@ web:
     - /uploads/site-web-freshhold-3.png
 type: Concept Website
 category: Concept Presentation Site
-tags: [Presentation Website, Theme Dark]
+tags: [Presentation Website, Campaign Featured, Theme Dark]
 type_slug: project
 order: 1
 ---

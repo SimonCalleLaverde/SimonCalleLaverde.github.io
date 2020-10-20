@@ -250,14 +250,14 @@ div.cursor {
     }
     &.hovered29 {
       .cursor-project {
-        background-color:#5F252B;
-        color:theme-color('rosybrown');
+        background-color:lighten(rgba(221,168,163,1),5);//#FFE8E4
+        color:theme-color('chocolate');
       }
     }
     &.hovered30 {
       .cursor-project {
-        background-color:lighten(rgba(221,168,163,1),5);//#FFE8E4
-        color:theme-color('chocolate');
+        background-color:#5F252B;
+        color:theme-color('rosybrown');
       }
     }
   }

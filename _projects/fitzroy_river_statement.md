@@ -14,7 +14,7 @@ web:
     - /uploads/site-web-fitzroy-river-statement.png
 type: Campaign Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Theme Dark]
+tags: [Campaign Platform, Campaign Featured, Theme Dark]
 type_slug: project
 order: 19
 ---
