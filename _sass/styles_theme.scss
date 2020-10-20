@@ -1271,20 +1271,30 @@ aside.header-scroll-down {
     @include transition(all 0.3s ease-in-out);
     span {
       display:block;
-      padding:3px 7px 1px;//5px 7px 2px//5px 5px 2px
+      padding:3px 5px 1px;//5px 7px 2px//5px 5px 2px
       border:1px solid theme-color('chocolate');
       @include transition(filter ease-out 1s, border-color ease-in-out 0.3s);
-      > div {
-        display:inline-block;
-      }
+      // > div {
+      //   display:inline-block;
+      // }
       b {
         letter-spacing:0.5px;
         @include transition(filter ease-out 0.5s);
         &:first-of-type {
         }
         &:nth-of-type(2) {
+          // &::before {
+          //   content:"";
+          //   position:absolute;
+          //   top:50%;
+          //   right:8.3px;
+          //   width:9px;
+          //   height:1px;
+          //   background-color:theme-color('chocolate');
+          // }
         }
         &:last-of-type {
+          //letter-spacing:1.2px;
         }
       }
     }
