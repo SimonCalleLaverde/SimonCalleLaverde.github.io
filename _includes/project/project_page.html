@@ -5,7 +5,7 @@
 			<div class="col-md-10 offset-md-1">
 				{% for image in page.web.images %}
 					<div class="mb-5 pb-5">
-						<img class="mb-5less" src="{{ image }}" alt="A display of a section of the Website: Image Screenshot {{ forloop.index }}">
+						<img class="{% if forloop.last %}mb-4{% else %}mb-5less{% endif %}" src="{{ image }}" alt="A display of a section of the Website: Image Screenshot {{ forloop.index }}">
 					</div>
 				{% endfor %}
 			</div>
