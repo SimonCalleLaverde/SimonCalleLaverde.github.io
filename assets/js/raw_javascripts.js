@@ -193,9 +193,9 @@ $(function() {
 $(function() {
   $('.burger-mobile').on('click', function() {//(e)
     $('html, body').toggleClass('menu-opened');
-    $('.menu-mobile').toggleClass('opened');
     $('.burger-mobile').toggleClass('opened');
-    $('.logo a').toggleClass('logo-light');
+    $('.menu-mobile').toggleClass('opened');
+    $('.logo').toggleClass('logo-light');
     //e.preventDefault();
   });
 });

@@ -1352,6 +1352,265 @@ aside.header-scroll-down {
   }
 }
 
+// Burger Mobile
+aside.burger-mobile {
+  $burger-size:40px;
+  position:fixed;
+  width:$burger-size;
+  height:$burger-size;
+  top:30px;
+  right:34px;
+  border:1px solid theme-color('chocolate');
+  cursor:pointer;
+  z-index:101;
+  @include border-radius(50%);
+  @include transition(border-color ease-out 0.5s, transform ease-out 0.5s);
+  .burger-dot {
+    position:absolute;
+    background-color:theme-color('chocolate');
+    width:2px;
+    height:2px;
+    margin:auto;
+    will-change:background-color, filter, transform;
+    @include transition(background-color ease-out 0.5s, filter ease-out 0.5s, transform ease-out 0.5s);
+    &:nth-child(1) {
+      top:13px;
+      left:13px;
+      @include transform-origin(top left);
+    }
+    &:nth-child(2) {
+      top:13px;
+      right:0;
+      left:0;
+      @include transform-origin(top center);
+    }
+    &:nth-child(3) {
+      top:13px;
+      right:13px;
+      @include transform-origin(top right);
+    }
+    &:nth-child(4) {
+      top:0;
+      right:13px;
+      bottom:0;
+      @include transform-origin(center right);
+    }
+    &:nth-child(5) {
+      right:13px;
+      bottom:13px;
+      @include transform-origin(bottom right);
+    }
+    &:nth-child(6) {
+      right:0;
+      bottom:13px;
+      left:0;
+      @include transform-origin(bottom center);
+    }
+    &:nth-child(7) {
+      bottom:13px;
+      left:13px;
+      @include transform-origin(bottom left);
+    }
+    &:nth-child(8) {
+      top:0;
+      bottom:0;
+      left:13px;
+      @include transform-origin(center left);
+    }
+    &:nth-child(9) {
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      @include transform-origin(center center);
+    }
+  }
+  &.opened {
+    border-color:theme-color('beige');
+    @include transform(rotate(90deg));
+    .burger-dot {
+      background-color:theme-color('beige');
+      &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8) {
+        @include filter(opacity(0))
+      }
+
+
+
+
+      &:nth-child(1) {
+        @include transform(translate(-0.5px,-0.5px));
+      }
+      &:nth-child(3) {
+        @include transform(translate(0.5px,-0.5px));
+      }
+      &:nth-child(5) {
+        @include transform(translate(0.5px,0.5px));
+      }
+      &:nth-child(7) {
+        @include transform(translate(-0.5px,0.5px));
+      }
+
+
+
+
+
+    }
+  }
+}
+
+// Menu Mobile
+div.menu-mobile {
+  position:fixed;
+  width:100vw;
+  height:100vh;
+  top:0;
+  left:100vw;//0
+  z-index:200000;
+  //@include transform(translateX(100vw));
+  .menu-mobile-slice {
+    position:absolute;
+    width:100vw;
+    height:33.333vh;
+    top:0;
+    left:0;
+    background-color:theme-color('grey-dark');
+    &:nth-child(1) {
+      @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
+    }
+    &:nth-child(2) {
+      top:33.333vh;
+      @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.2s);
+    }
+    &:nth-child(3) {
+      top:66.666vh;
+      @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.3s);
+    }
+    &:nth-child(2), &:nth-child(3) {
+      &::before {
+        content:"";
+        position:absolute;
+        width:100%;
+        height:2px;
+        top:-1px;
+        right:0;
+        left:0;
+        background-color:theme-color('grey-dark');
+      }
+    }
+  }
+  nav.nav-mobile, nav.nav-mobile-social-media {
+    @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
+  }
+  nav.nav-mobile {
+    > div {
+      overflow:hidden;
+      a.nav-mobile-link {
+        h1, h2, h3, h4, h5, h6 {
+          color:theme-color('beige-light');
+          @include filter(opacity(0));
+          @include transform(translateY(-50px));
+          &::after {
+            content:"";
+            position:absolute;
+            width:0;
+            right:0;
+            bottom:-2px;
+            border-bottom:1px solid theme-color('beige-light');
+            @include transition(width ease-out 0.3s);
+          }
+        }
+        &:hover, &:active, &:focus, &.active {
+          h1, h2, h3, h4, h5, h6 {
+            &::after {
+              width:100%;
+              right:auto;
+              left:0;
+            }
+          }
+        }
+      }
+    }
+  }
+  nav.nav-mobile-social-media {
+    position:absolute;
+    margin:auto;
+    right:0;
+    bottom:90px;
+    left:0;
+    text-align:center;
+    z-index:250000;
+    > div {
+      display:inline-block;
+      @include filter(opacity(0));
+      @include transform(translateY(-50px));
+      a {
+        svg {
+          width:22px;
+          fill:red;////////
+          pointer-events:none;
+          @include transition(fill ease-in-out 0.5s);
+        }
+        &:hover, &:active, &:focus {
+          &.link-facebook {
+            svg {
+              fill:lighten(theme-color('facebook'),20)!important;//20 in black
+            }
+          }
+          &.link-instagram {
+            svg {
+              fill:lighten(theme-color('instagram'),20)!important;//20 in black
+            }
+          }
+          &.link-pinterest {
+            svg {
+              fill:lighten(theme-color('pinterest'),30)!important;//30 in black
+            }
+          }
+        }
+      }
+    }
+  }
+  &.opened {
+    .menu-mobile-slice, nav.nav-mobile, nav.nav-mobile-social-media {
+      @include transform(translateX(-100vw));
+    }
+    nav.nav-mobile {
+      > div {
+        a.nav-mobile-link {
+          h1, h2, h3, h4, h5, h6 {
+            @include filter(opacity(1));
+            @include transform(translateY(0));
+            @include transition(all ease-in-out 0.5s 0.7s);//Leaving transition only under (&.opened) so it always starts from 0 even if cancelling an pressing button reppeatedly
+          }
+        }
+      }
+    }
+    nav.nav-mobile-social-media {
+      > div {
+        @include filter(opacity(1));
+        @include transform(translateY(0));
+        &:nth-child(1) {
+          @include transition(all ease-in-out 0.5s 0.8s);
+        }
+        &:nth-child(2) {
+          @include transition(all ease-in-out 0.5s 0.9s);
+        }
+        &:nth-child(3) {
+          @include transition(all ease-in-out 0.5s 1s);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 // Home Hello Header
 header.home-hello-header {
   min-height:100vh;

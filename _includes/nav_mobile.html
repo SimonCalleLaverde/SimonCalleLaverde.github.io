@@ -1,1 +1,93 @@
+<!--IN DEVELOPMENT-->
+
 <!--Mobile-->
+<aside class="burger-mobile d-block d-md-none" id="navbar_mobile" aria-hidden="true">
+  <div class="burger-dot">
+  </div>
+  <div class="burger-dot">
+  </div>
+  <div class="burger-dot">
+  </div>
+  <div class="burger-dot">
+  </div>
+  <div class="burger-dot">
+  </div>
+  <div class="burger-dot">
+  </div>
+  <div class="burger-dot">
+  </div>
+  <div class="burger-dot">
+  </div>
+  <div class="burger-dot">
+  </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+<div class="menu-mobile d-flex flex-row justify-content-center align-items-center d-md-none" aria-hidden="true">
+  <div class="menu-mobile-slice">
+  </div>
+  <div class="menu-mobile-slice">
+  </div>
+  <div class="menu-mobile-slice">
+  </div>
+  
+  <nav class="nav-mobile d-flex flex-column justify-content-around align-items-center d-md-none mb-5 pb-2">
+    <div class="py-3">
+      <a class="nav-mobile-link" href="/sobre_mi">
+        <h2 class="link mb-0{% if page.slug == 'sobre_mi' %} active{% endif %}">Sobre mí</h2>
+      </a>
+    </div>
+    <div class="py-3">
+      <a class="nav-mobile-link" href="/blog">
+        <h2 class="link mb-0{% if page.slug == 'blog' %} active{% endif %}">Artículos</h2>
+      </a>
+    </div>
+    <div class="py-3">
+      <a class="nav-mobile-link" href="/videos">
+        <h2 class="link mb-0{% if page.slug == 'videos' %} active{% endif %}">Videos</h2>
+      </a>
+    </div>
+    <div class="py-3">
+      <a class="nav-mobile-link" href="/contactame">
+        <h2 class="link mb-0{% if page.slug == 'contactame' %} active{% endif %}">Contáctame</h2>
+      </a>
+    </div>
+  </nav>
+
+
+
+
+
+  <nav class="nav-mobile-social-media">
+    <div class="pr-3">
+      <a class="link link-facebook" href="{{ site.facebook_username }}" target="_blank">
+        <!-- include icon_facebook.xml -->
+      </a>
+    </div>
+    <div class="pr-3">
+      <a class="link link-instagram" href="{{ site.instagram_username }}" target="_blank">
+        <!-- include icon_instagram.xml -->
+      </a>
+    </div>
+    <!--{% comment %}
+    <div class="pr-3">
+      <a class="link link-pinterest" href="{{ site.pinterest_username }}" target="_blank">
+        {% include icon_pinterest.xml %}
+      </a>
+    </div>
+    {% endcomment %}-->
+    <div>
+      <a class="link link-youtube" href="{{ site.youtube_username }}" target="_blank">
+        <!-- include icon_youtube.xml -->
+      </a>
+    </div>
+  </nav>
+</div>
