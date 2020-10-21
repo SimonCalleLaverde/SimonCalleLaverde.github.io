@@ -1270,14 +1270,16 @@ aside.header-scroll-down {
   a {
     @include transition(all 0.3s ease-in-out);
     span {
+      //position:relative;
       display:block;
+      //width:56px;
+      //height:50px;
       padding:3px 5px 1px;//5px 7px 2px//5px 5px 2px
-      border:1px solid theme-color('chocolate');
+      border:1px solid theme-color('chocolate');//2px
       @include transition(filter ease-out 1s, border-color ease-in-out 0.3s);
-      // > div {
-      //   display:inline-block;
-      // }
       b {
+        //position:absolute;
+        //font-size:22.5px;
         letter-spacing:0.5px;
         @include transition(filter ease-out 0.5s);
         &:first-of-type {
@@ -1296,7 +1298,32 @@ aside.header-scroll-down {
         &:last-of-type {
           //letter-spacing:1.2px;
         }
+        // &:nth-of-type(1) {
+        //   top:2.4px;
+        //   left:7.5px;
+        // }
+        // &:nth-of-type(2) {
+        //   top:2.4px;
+        //   right:6.5px;
+        // }
+        // &:nth-of-type(3) {
+        //   bottom:-1.8px;
+        //   left:7.2px;
+        // }
+        // &:nth-of-type(4) {
+        //   right:9.2px;
+        //   bottom:-1.8px;
+        // }
       }
+    }
+    img {
+      position:absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      //z-index:101;
+      @include filter(opacity(0));
     }
     &:hover, &:active, &:focus {
       span {
