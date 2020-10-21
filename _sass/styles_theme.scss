@@ -2108,6 +2108,10 @@ body.theme-dark, body.is-bottom, body.page-type-feedback {
       }
     }
   }
+  .loader-out {
+    background-color:lighten(theme-color('chocolate'),0.5)!important;//theme-color('beige')!important
+    //border-left:0.5px solid theme-color('beige');
+  }
 }
 
 // Is Bottom
