@@ -2,6 +2,7 @@
 layout: project
 title: Farmers for Climate Action
 name_for_thumbnail: Farmers for<br>Climate Action
+client: FFCA
 thumbnail_image: /uploads/site-image-farmers-for-climate-action.jpg
 header_image: /uploads/site-image-farmers-for-climate-action.jpg
 platforms: [NationBuilder, Aware]

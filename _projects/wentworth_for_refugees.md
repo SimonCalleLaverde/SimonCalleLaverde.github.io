@@ -2,6 +2,7 @@
 layout: project
 title: Wentworth for Refugees
 name_for_thumbnail: Wentworth for<br>Refugees
+client: Wentworth for Refugees
 thumbnail_image: /uploads/site-image-wentworth-for-refugees.jpg
 header_image: /uploads/site-image-wentworth-for-refugees.jpg
 platforms: [NationBuilder, Bootstrap 3]

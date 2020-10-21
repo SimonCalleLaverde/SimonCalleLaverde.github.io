@@ -2,6 +2,7 @@
 layout: project
 title: Bogota Bulldogs
 name_for_thumbnail: Bogota<br>Bulldogs
+client: The Bogota Bulldogs Team of Australia
 thumbnail_image: /uploads/site-image-bogota-bulldogs.jpg
 header_image: /uploads/site-image-bogota-bulldogs.jpg
 platforms: [Jekyll, Bootstrap 4, Forestry]

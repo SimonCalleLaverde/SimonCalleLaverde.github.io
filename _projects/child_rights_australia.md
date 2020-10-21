@@ -2,6 +2,7 @@
 layout: project
 title: Child Rights Australia
 name_for_thumbnail: Child Rights<br>Australia
+client: Child Rights Australia
 thumbnail_image: /uploads/site-image-child-rights-australia.jpg
 header_image: /uploads/site-image-child-rights-australia.jpg
 platforms: [NationBuilder, Aware v2]

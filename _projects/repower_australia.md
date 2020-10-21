@@ -2,6 +2,7 @@
 layout: project
 title: Repower Australia
 name_for_thumbnail: Repower<br>Australia
+client: Repower Australia
 thumbnail_image: /uploads/site-image-repower-australia.jpg
 header_image: /uploads/site-image-repower-australia.jpg
 platforms: [Jekyll, Slides, Forestry]
@@ -14,7 +15,7 @@ web:
     - /uploads/site-web-repower-australia.png
 type: Campaign & Infographic Website
 category: Coded for Code Nation
-tags: [Campaign Platform, Theme Dark]
+tags: [Campaign Platform, Theme Dark, Award Winner Website]
 type_slug: project
 order: 20
 ---

@@ -30,6 +30,10 @@
         <div class="project-info font-ultra-light text-rosybrown">
           <div class="project-data">
             {{ project.category }}
+
+            {% if project_tags_list contains "#campaign_platform#" %}
+              & {% if project.client.size > 0 %}{{ project.client }}{% else %}{{ project.title }}{% endif %}
+            {% endif %}
           </div>
 
           <div class="project-platforms">

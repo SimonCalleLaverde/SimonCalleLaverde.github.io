@@ -2,6 +2,7 @@
 layout: project
 title: Seed Your Future
 name_for_thumbnail: Seed Your<br>Future
+client: Seed Your Future
 thumbnail_image: /uploads/site-image-seed-your-future.jpg
 header_image: /uploads/site-image-seed-your-future.jpg
 platforms: [NationBuilder, Bootstrap 3]

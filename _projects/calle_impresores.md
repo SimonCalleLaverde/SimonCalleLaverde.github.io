@@ -2,9 +2,9 @@
 layout: project
 title: Calle Impresores
 name_for_thumbnail: Calle<br>Impresores
+client: Calle Impresores SAS
 thumbnail_image: /uploads/site-image-calle-impresores.jpg
 header_image: /uploads/site-image-calle-impresores.jpg
-client: Calle Impresores
 platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2020
 roles: [UI, UX, Design, Development]

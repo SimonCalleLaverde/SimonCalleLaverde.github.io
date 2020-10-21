@@ -2,6 +2,7 @@
 layout: project
 title: Seed Ban Fracking
 name_for_thumbnail: Seed Ban<br>Fracking
+client: Seed Ban Fracking
 thumbnail_image: /uploads/site-image-seed-ban-fracking.png
 header_image: /uploads/site-image-seed-ban-fracking.png
 platforms: [NationBuilder, Aware v2]

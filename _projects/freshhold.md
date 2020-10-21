@@ -2,6 +2,7 @@
 layout: project
 title: Freshhold Consulting
 name_for_thumbnail: Freshhold<br>Consulting
+client: Freshhold
 thumbnail_image: /uploads/site-image-freshhold.jpg
 header_image: /uploads/site-image-freshhold.jpg
 platforms: [Dreamweaver, Html Css Php]

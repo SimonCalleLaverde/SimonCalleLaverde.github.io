@@ -50,6 +50,10 @@
             </time>
 
             {{ project.category }}
+
+            {% if project_tags_list contains "#campaign_platform#" %}
+              & {% if project.client.size > 0 %}{{ project.client }}{% else %}{{ project.title }}{% endif %}
+            {% endif %}
           </div>
 
           <!--Mobile-->

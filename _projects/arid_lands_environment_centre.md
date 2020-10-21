@@ -2,6 +2,7 @@
 layout: project
 title: Arid Lands Environment Centre
 name_for_thumbnail: Arid Lands<br>Environment<br>Centre
+client: Arid Lands Environment Centre
 thumbnail_image: /uploads/site-image-arid-lands-environment-centre.jpg
 header_image: /uploads/site-image-arid-lands-environment-centre.jpg
 platforms: [NationBuilder, Aware]

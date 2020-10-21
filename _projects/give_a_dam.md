@@ -2,6 +2,7 @@
 layout: project
 title: Give A Dam
 name_for_thumbnail: Give A<br>Dam
+client: Give A Dam
 thumbnail_image: /uploads/site-image-give-a-dam.jpg
 header_image: /uploads/site-image-give-a-dam.jpg
 platforms: [NationBuilder, Bootstrap 4]

@@ -2,6 +2,7 @@
 layout: project
 title: El Avispero Mov
 name_for_thumbnail: El Avispero Mov
+client: El Avispero Mov
 thumbnail_image: /uploads/site-image-el-avispero-mov.png
 header_image: /uploads/site-image-el-avispero-mov.png
 platforms: [NationBuilder, Aware v2]

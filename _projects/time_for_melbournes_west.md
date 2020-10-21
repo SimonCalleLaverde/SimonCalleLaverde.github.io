@@ -2,6 +2,7 @@
 layout: project
 title: Time for Melbourne's West
 name_for_thumbnail: Time for<br>Melbourne's<br>West
+client: Time For The West
 thumbnail_image: /uploads/site-image-time-for-melbournes-west.jpg
 header_image: /uploads/site-image-time-for-melbournes-west.jpg
 platforms: [NationBuilder, Bootstrap 3]

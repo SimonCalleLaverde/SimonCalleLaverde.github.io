@@ -2,6 +2,7 @@
 layout: project
 title: Healthy Futures
 name_for_thumbnail: Healthy<br>Futures
+client: Healthy Futures
 thumbnail_image: /uploads/site-image-healthy-futures.jpg
 header_image: /uploads/site-image-healthy-futures.jpg
 platforms: [NationBuilder, Bootstrap 3]

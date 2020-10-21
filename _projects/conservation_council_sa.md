@@ -2,6 +2,7 @@
 layout: project
 title: Conservation Council SA
 name_for_thumbnail: CCSA
+client: CCSA
 thumbnail_image: /uploads/site-image-conservation-council-sa.png
 header_image: /uploads/site-image-conservation-council-sa.png
 platforms: [NationBuilder, Aware v2]

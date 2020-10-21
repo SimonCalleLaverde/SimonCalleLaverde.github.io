@@ -2,6 +2,7 @@
 layout: project
 title: Fitzroy River Statement
 name_for_thumbnail: Fitzroy River<br>Statement
+client: The Fitzroy River Statement
 thumbnail_image: /uploads/site-image-fitzroy-river-statement.jpg
 header_image: /uploads/site-image-fitzroy-river-statement.jpg
 platforms: [NationBuilder, Bootstrap 3]

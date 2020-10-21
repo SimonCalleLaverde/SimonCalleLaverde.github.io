@@ -2,6 +2,7 @@
 layout: project
 title: Australian Religious Response to Climate Change
 name_for_thumbnail: ARRCC # Australian<br>Religious<br>Response to<br>Climate Change
+client: ARRCC
 thumbnail_image: /uploads/site-image-australian-religious-response-to-climate-change.jpg
 header_image: /uploads/site-image-australian-religious-response-to-climate-change.jpg
 platforms: [NationBuilder, Aware]

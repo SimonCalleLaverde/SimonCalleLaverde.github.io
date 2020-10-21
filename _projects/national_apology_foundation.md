@@ -2,6 +2,7 @@
 layout: project
 title: National Apology Foundation
 name_for_thumbnail: Nafia
+client: NAF
 thumbnail_image: /uploads/site-image-national-apology-foundation.jpg
 header_image: /uploads/site-image-national-apology-foundation.jpg
 platforms: [NationBuilder, Aware v2]

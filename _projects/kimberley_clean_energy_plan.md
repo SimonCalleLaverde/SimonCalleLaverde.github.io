@@ -2,6 +2,7 @@
 layout: project
 title: Kimberley Clean Energy Plan
 name_for_thumbnail: Kimberley Clean<br>Energy Plan
+client: The Kimberley
 thumbnail_image: /uploads/site-image-kimberley-clean-energy-plan.jpg
 header_image: /uploads/site-image-kimberley-clean-energy-plan.jpg
 platforms: [NationBuilder, Bootstrap 4]

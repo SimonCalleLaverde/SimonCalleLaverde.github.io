@@ -2,6 +2,7 @@
 layout: project
 title: Cultivate Oregon
 name_for_thumbnail: Cultivate<br>Oregon
+client: Cultivate Oregon
 thumbnail_image: /uploads/site-image-cultivate-oregon.jpg
 header_image: /uploads/site-image-cultivate-oregon.jpg
 platforms: [NationBuilder, Bootstrap 3]

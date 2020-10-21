@@ -2,6 +2,7 @@
 layout: project
 title: Refugee Council of Australia
 name_for_thumbnail: Refugee Council<br>of Australia
+client: The Refugee Council of Australia
 thumbnail_image: /uploads/site-image-refugee-council-of-australia.png
 header_image: /uploads/site-image-refugee-council-of-australia.png
 platforms: [NationBuilder, Bootstrap 4]

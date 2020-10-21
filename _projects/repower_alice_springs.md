@@ -2,6 +2,7 @@
 layout: project
 title: Repower Alice Springs
 name_for_thumbnail: Repower Alice<br>Springs
+client: Repower Alice Springs
 thumbnail_image: /uploads/site-image-repower-alice-springs.png
 header_image: /uploads/site-image-repower-alice-springs.png
 platforms: [NationBuilder, Bootstrap 4]

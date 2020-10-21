@@ -2,6 +2,7 @@
 layout: project
 title: Total Environment Centre
 name_for_thumbnail: TEC
+client: TEC
 thumbnail_image: /uploads/site-image-total-environment-centre.png
 header_image: /uploads/site-image-total-environment-centre.png
 platforms: [NationBuilder, Aware v2]

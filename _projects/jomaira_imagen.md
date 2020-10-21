@@ -2,9 +2,9 @@
 layout: project
 title: Jomaira Imagen
 name_for_thumbnail: Jomaira<br>Imagen
+client: Jomaira Laverde
 thumbnail_image: /uploads/site-image-jomaira-imagen.jpg
 header_image: /uploads/site-image-jomaira-imagen.jpg
-client: Jomaira Laverde
 platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2020
 roles: [UI, UX, Design, Development]

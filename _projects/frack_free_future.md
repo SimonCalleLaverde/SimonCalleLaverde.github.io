@@ -2,6 +2,7 @@
 layout: project
 title: Frack Free Future
 name_for_thumbnail: Frack Free<br>Future
+client: Frack Free Future
 thumbnail_image: /uploads/site-image-frack-free-future.jpg
 header_image: /uploads/site-image-frack-free-future.jpg
 platforms: [NationBuilder, Aware]

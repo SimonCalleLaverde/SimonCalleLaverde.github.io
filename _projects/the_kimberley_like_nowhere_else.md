@@ -2,6 +2,7 @@
 layout: project
 title: The Kimberley Like Nowhere Else
 name_for_thumbnail: The Kimberley
+client: The Kimberley
 thumbnail_image: /uploads/site-image-the-kimberley-like-nowhere-else.jpg
 header_image: /uploads/site-image-the-kimberley-like-nowhere-else.jpg
 platforms: [NationBuilder, Aware v2]
