@@ -1360,14 +1360,14 @@ aside.burger-mobile {
   height:$burger-size;
   top:30px;
   right:34px;
-  border:1px solid theme-color('chocolate');
+  background-color:theme-color('chocolate');
   cursor:pointer;
   z-index:101;
   @include border-radius(50%);
-  @include transition(border-color ease-out 0.5s, transform ease-out 0.5s);
+  @include transition(transform ease-out 0.5s);
   .burger-dot {
     position:absolute;
-    background-color:theme-color('chocolate');
+    background-color:theme-color('beige');
     width:2px;
     height:2px;
     margin:auto;
@@ -1426,13 +1426,13 @@ aside.burger-mobile {
     }
   }
   &.opened {
-    border-color:theme-color('beige');
     @include transform(rotate(90deg));
     .burger-dot {
       background-color:theme-color('beige');
       &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8) {
         @include filter(opacity(0))
       }
+
 
 
 
@@ -1460,12 +1460,17 @@ aside.burger-mobile {
 
 // Menu Mobile
 div.menu-mobile {
+
+
+
+
+
   position:fixed;
   width:100vw;
   height:100vh;
   top:0;
   left:100vw;//0
-  z-index:200000;
+  z-index:100;
   //@include transform(translateX(100vw));
   .menu-mobile-slice {
     position:absolute;
@@ -1538,7 +1543,7 @@ div.menu-mobile {
     bottom:90px;
     left:0;
     text-align:center;
-    z-index:250000;
+    z-index:102;
     > div {
       display:inline-block;
       @include filter(opacity(0));
@@ -1601,15 +1606,13 @@ div.menu-mobile {
       }
     }
   }
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
-
 
 // Home Hello Header
 header.home-hello-header {
@@ -1927,7 +1930,7 @@ section.home-skills-set-section {
       .skill-content {
         text-align:left;
         p {
-          margin-bottom:1px;
+          margin-bottom:15px;//1px
           font-size:15px;
           line-height:1.9;
         }
