@@ -1123,7 +1123,7 @@ aside.header-social-media {
     position:relative;
     font-family:$font-light;
     font-size:11px;
-    color:theme-color('chocolate');
+    color:rgba(26,26,26,0.7);//theme-color('rosybrown')//aqua//chocolate
     @include filter(opacity(0.8));
     @include transition(filter ease-out 0.3s, color ease-in-out 0.3s);
     &::before {
