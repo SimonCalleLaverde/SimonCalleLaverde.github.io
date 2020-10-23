@@ -73,6 +73,7 @@ body {
     pointer-events:none;
     > .loader-center {
       //display:none;
+      text-align:center;
       @include filter(opacity(0.9));
       > span {
         display:block;
@@ -264,6 +265,15 @@ body {
   &.home.imagesloaded {
     > .loader-area {
       @include animation(loaderTranslateOutAnim 1.5s ease-in forwards 2.8s);//cubic-bezier(.89,.41,.89,.41)
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  body {
+    > .loader-area {
+      > .loader-center {
+        text-align:left;
+      }
     }
   }
 }
