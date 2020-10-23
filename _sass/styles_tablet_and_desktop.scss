@@ -261,23 +261,8 @@
       li.nav-item {
         a.nav-link {
           display:inline-block;
-          position:relative;
-          padding:0.1rem;//0.1rem 0.5rem
-          font-family:$font-light;
-          font-size:12px;
           color:rgba(24,16,8,0.8);//theme-color('chocolate')
           white-space:nowrap;
-          &::before {
-            content:'';
-            position:absolute;
-            width:0;
-            top:50%;
-            right:0;
-            //left:0;
-            border-bottom:1px solid theme-color('rosybrown');
-            pointer-events:none;
-            @include transition(width 0.3s ease-in-out);
-          }
           small {
             display:inline-block;
             position:absolute;
@@ -291,11 +276,6 @@
           &:hover, &:active, &:focus, &.active-link {
             color:theme-color('chocolate');
             //text-decoration:line-through;
-            &::before {
-              width:100%;
-              right:auto;
-              left:0;
-            }
           }
         }
         &:nth-child(3) {
@@ -444,6 +424,7 @@
     padding-bottom:31px;//51px
     .skills-set-table {
       .skill-row {
+        padding:55px 0 35px;
       }
     }
   }
@@ -538,6 +519,40 @@
 
   // Footer
   footer {
+    > a.container {
+      > div {//From "row", To All Elements Inside <a>
+        pointer-events:none;
+      }
+    }
+    aside.footer-info-elements {
+      .footer-hello {
+        bottom:370px;
+      }
+      .footer-office {
+        bottom:220px;
+      }
+      .footer-business-social {
+        bottom:115px;//120px
+      }
+      .footer-copyright {
+        bottom:30px;
+      }
+      .footer-email-or-call {
+        bottom:30px;
+      }
+      .footer-created-by {
+        bottom:30px;
+      }
+      .footer-personal-social {
+        bottom:115px;//120px
+      }
+      nav.footer-nav.navbar {
+        bottom:228px;
+      }
+      .footer-credits {
+        bottom:370px;
+      }
+    }
   }
 
   //----------------------------------Page Styles----------------------------------//

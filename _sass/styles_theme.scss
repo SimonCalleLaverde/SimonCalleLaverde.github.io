@@ -1254,6 +1254,39 @@ aside.header-scroll-down {
 
 //----------------------------------Section Styles----------------------------------//
 
+// Nav Desktop & Nav Footer Mobile/Desktop
+nav.navbar {
+  ul.navbar-nav {
+    li.nav-item {
+      a.nav-link {//For Both Nav & Footer Nav
+        position:relative;
+        padding:0.1rem;//0.1rem 0.5rem
+        font-family:$font-light;
+        font-size:12px;
+        color:theme-color('rosybrown');
+        &::before {
+          content:'';
+          position:absolute;
+          width:0;
+          top:50%;
+          right:0;
+          //left:0;
+          border-bottom:1px solid theme-color('rosybrown');
+          pointer-events:none;
+          @include transition(width 0.3s ease-in-out);
+        }
+        &:hover, &:active, &:focus, &.active-link {
+          &::before {
+            width:100%;
+            right:auto;
+            left:0;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Logo
 .logo {
   position:fixed;
@@ -1360,20 +1393,20 @@ aside.burger-mobile {
   height:$burger-size;
   top:30px;
   right:34px;
-  background-color:theme-color('chocolate');
+  background-color:rgba(26,26,26,0.9);//theme-color('chocolate')
   cursor:pointer;
   z-index:102;
   @include border-radius(50%);
-  @include transition(transform ease-out 0.5s);
+  @include transition(background-color ease-out 0.5s, transform ease-out 0.5s);
   .burger-dot {
     position:absolute;
     background-color:theme-color('beige');
     width:1px;
     height:1px;
     margin:auto;
-    will-change:background-color, filter, transform;
+    will-change:filter, transform;//background-color
     @include transform(translate(-0.5px,-0.5px));
-    @include transition(background-color ease-out 0.5s, filter ease-out 0.5s, transform ease-out 0.5s);
+    @include transition(filter ease-out 0.5s, transform ease-out 0.5s);//background-color ease-out 0.5s
     &:nth-child(1) {
       top:14px;
       left:14px;
@@ -1427,9 +1460,9 @@ aside.burger-mobile {
     }
   }
   &.opened {
+    background-color:transparent;
     @include transform(rotate(90deg));
     .burger-dot {
-      background-color:theme-color('beige');
       &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8) {
         @include filter(opacity(0))
       }
@@ -1452,10 +1485,11 @@ aside.burger-mobile {
 // Menu Mobile
 div.menu-mobile {
   position:fixed;
+  display:none;
   width:100vw;
   height:100vh;
   top:0;
-  left:100vw;
+  left:0;//100vw
   z-index:100;
   //@include transform(translateX(100vw));
   .menu-mobile-circle-grow {
@@ -1488,8 +1522,8 @@ div.menu-mobile {
             content:"";
             position:absolute;
             width:0;
+            top:49%;
             right:0;
-            bottom:-2px;
             border-bottom:1px solid theme-color('rosybrown');
             @include transition(width ease-out 0.3s);
           }
@@ -1560,17 +1594,18 @@ div.menu-mobile {
     }
   }
   &.opened {
+    display:block;
     .menu-mobile-circle-grow {
-      $burger-size:150vh;
+      $burger-size:170vh;
       width:$burger-size;
       height:$burger-size;
       background-color:theme-color('chocolate');
       //@include transform(scale(50));
-      @include transform(translate(35vh,-35vh));
+      @include transform(translate(40vh,-40vh));
       @include transition(width cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, height cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, background-color cubic-bezier(0.455,0.03,0.515,0.955) 0s 0s, transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
     }
     nav.nav-mobile, nav.nav-mobile-social-media {
-      @include transform(translateX(-100vw));
+      //@include transform(translateX(-100vw));
     }
     nav.nav-mobile {
       > div {
@@ -1583,14 +1618,14 @@ div.menu-mobile {
         &:nth-of-type(1) {
           a.nav-mobile-link {
             h1, h2, h3, h4, h5, h6 {
-              @include transition(all ease-in-out 0.5s 0.5s);//Leaving transition only under (&.opened) so it always starts from 0 even if cancelling an pressing button reppeatedly
+              @include transition(all ease-in-out 0.5s 0.3s);//Leaving transition only under (&.opened) so it always starts from 0 even if cancelling an pressing button reppeatedly
             }
           }
         }
         &:nth-of-type(2) {
           a.nav-mobile-link {
             h1, h2, h3, h4, h5, h6 {
-              @include transition(all ease-in-out 0.5s 0.6s);//Leaving transition only under (&.opened) so it always starts from 0 even if cancelling an pressing button reppeatedly
+              @include transition(all ease-in-out 0.5s 0.5s);//Leaving transition only under (&.opened) so it always starts from 0 even if cancelling an pressing button reppeatedly
             }
           }
         }
@@ -1608,13 +1643,13 @@ div.menu-mobile {
         @include filter(opacity(1));
         @include transform(translateX(0));
         &:nth-child(1) {
-          @include transition(all ease-in-out 0.5s 0.8s);
+          @include transition(all ease-in-out 0.5s 0.6s);
         }
         &:nth-child(2) {
-          @include transition(all ease-in-out 0.5s 1s);
+          @include transition(all ease-in-out 0.5s 0.8s);
         }
         &:nth-child(3) {
-          @include transition(all ease-in-out 0.5s 1.2s);
+          @include transition(all ease-in-out 0.5s 1s);
         }
       }
     }
@@ -1885,14 +1920,14 @@ section.home-businesses-headline-section {
   padding-top:10px;
 }
 
-// Home Business Projects Section, Home Campaign Projects Section, Home Skills Set Section, Workflow Tools Technology Section, Home Three Phases Section
-section.home-business-projects-section, section.home-campaign-projects-section, section.home-skills-set-section, section.workflow-tools-technology-section, section.home-three-phases-section {
+// Home Business Projects Section, Home Campaign Projects Section, Home Three Phases Section, Home Skills Set Section, Workflow Tools Technology Section
+section.home-business-projects-section, section.home-campaign-projects-section, section.home-three-phases-section, section.home-skills-set-section, section.workflow-tools-technology-section {
   padding:25px 20px 90px;
 }
 
 // Home Business Projects Section, Home Campaign Projects Section
 section.home-business-projects-section, section.home-campaign-projects-section {
-  padding-bottom:30px;
+  padding-bottom:35px;
 }
 
 // Home See All Projects Section
@@ -1922,14 +1957,18 @@ section.home-see-all-projects-section {
 section.home-i-can-create-you-section {
 }
 
+// Home Three Phases Section, Home Skills Set Section
+section.home-three-phases-section, section.home-skills-set-section {
+  padding-bottom:60px;
+}
+
 // Home Skills Set Section
 section.home-skills-set-section {
-  padding-bottom:50px;
   .skills-set-table {
     // width:calc(100% + 30px);
     // margin-left:-15px;
     .skill-row {
-      padding:55px 0 35px;
+      padding:55px 0 30px;
       border-bottom:1px solid theme-color('rosybrown');
       &:first-child {
         border-top:1px solid theme-color('rosybrown');
@@ -1944,11 +1983,6 @@ section.home-skills-set-section {
       }
     }
   }
-}
-
-// Home Three Phases Section
-section.home-three-phases-section {
-  //padding-bottom:0;
 }
 
 // About Header
@@ -2135,7 +2169,6 @@ footer {
   > a.container {
     min-height:100vh;
     > div {//From "row", To All Elements Inside <a>
-      pointer-events:none;
       h1, h2, h3, h4, h5, h6 {
       }
       p {
@@ -2259,22 +2292,25 @@ footer {
       }
     }
     .footer-hello {
-      bottom:370px;
+      bottom:310px;
       left:37px;
       line-height:1.5;
+      text-align:left;
     }
     .footer-office {
-      bottom:220px;
+      bottom:180px;
       left:37px;
+      text-align:left;
     }
     .footer-business-social {
       padding:0 7px 5px;
-      bottom:115px;//120px
+      bottom:95px;
       left:30px;//37px
     }
     .footer-copyright {
       bottom:30px;
       left:37px;
+      text-align:left;
     }
     .footer-email-or-call {
       bottom:30px;
@@ -2290,14 +2326,14 @@ footer {
     .footer-personal-social {
       padding:0 7px 5px;
       right:30px;//37px
-      bottom:115px;//120px
+      bottom:95px;
       text-align:right;
     }
     nav.footer-nav.navbar {
       padding:0;
       top:auto;
       right:37px;
-      bottom:228px;
+      bottom:188px;
       line-height:1.5!important;
       text-align:right;
       ul.navbar-nav {
@@ -2312,7 +2348,7 @@ footer {
     }
     .footer-credits {
       right:37px;
-      bottom:370px;
+      bottom:310px;
       line-height:1.5;
       text-align:right;
     }

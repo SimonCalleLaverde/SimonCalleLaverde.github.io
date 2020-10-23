@@ -1,7 +1,7 @@
 <footer class="clearfix" data-scene>
-  <a class="container link-page-load d-flex flex-row justify-content-center align-items-center text-center" href="javascript:delay('/contact_me')">
+  <a class="container link-page-load d-flex flex-row justify-content-center align-items-start align-items-md-center text-center" href="javascript:delay('/contact_me')">
 
-    <div class="row">
+    <div class="row mt-4more mt-md-0 pt-2 pt-md-0">
       <div class="col-md-12">
         <h3 class="text-huge text-rosybrown text-uppercase mb-0">
           Let's create
@@ -16,7 +16,7 @@
 
         <p class="font-ultra-light text-rosybrown">
           Contact me to start
-          <br>a new project.
+          <br>a project with me.<!--a new project.-->
         </p>
       </div>
     </div>
@@ -76,11 +76,21 @@
       </div>
     </div>
 
-    <div class="footer-copyright font-ultra-light">
+    <!--Desktop | Screen Readers-->
+    <div class="footer-copyright font-ultra-light d-none d-md-block">
       © {{ "now" | date: "%Y" }} simonsweb.design<!--MMXX--><!--{{ site.url | remove:"https://" | remove:"http://" }}-->
     </div>
 
-    <div class="footer-email-or-call">
+    <!--Mobile-->
+    <div class="footer-copyright font-light d-block d-md-none" aria-hidden="true">
+      Copyright © {{ "now" | date: "%Y" }}
+      <span class="font-ultra-light">
+        <br>simonsweb.design
+      </span>
+    </div>
+
+    <!--Desktop-->
+    <div class="footer-email-or-call d-none d-md-block">
       Or just email me or call me
       <span class="font-ultra-light">
         <br>{{ site.phone_number }}
@@ -88,10 +98,19 @@
       </span>
     </div>
 
-    <div class="footer-created-by">
+    <!--Desktop | Screen Readers-->
+    <div class="footer-created-by d-none d-md-block">
       Designed & developed by
       <span class="font-ultra-light">
         <br><a class="text-rosybrown" href="/">{{ site.client_name }}</a>
+      </span>
+    </div>
+
+    <!--Mobile-->
+    <div class="footer-created-by d-block d-md-none" aria-hidden="true">
+      Designed & developed
+      <span class="font-ultra-light">
+        <br><a class="text-rosybrown" href="/">by {{ site.client_name }}</a>
       </span>
     </div>
 
@@ -150,12 +169,6 @@
             <span>All Projects</span>
           </a>
         </li>
-
-        <!--<li class="nav-item">
-          <a class="link nav-link link-page-load{% if page.slug == 'workflow' %} active-link{% endif %}" href="javascript:delay('/the_workflow')">
-            <span>The workflow</span>
-          </a>
-        </li>-->
 
         <li class="nav-item">
           <a class="link nav-link link-page-load{% if page.type_slug == 'feedback' %} active-link{% endif %}" href="javascript:delay('/contact_me')">
