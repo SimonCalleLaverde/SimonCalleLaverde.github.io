@@ -231,6 +231,7 @@
     left:20%;
     a {
       //font-family:$font-regular;
+      color:rgba(26,26,26,0.7);//theme-color('chocolate')//aqua
     }
   }
   @include media-breakpoint-up(lg) {

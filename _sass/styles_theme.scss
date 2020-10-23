@@ -1123,7 +1123,7 @@ aside.header-social-media {
     position:relative;
     font-family:$font-light;
     font-size:11px;
-    color:rgba(26,26,26,0.7);//theme-color('rosybrown')//aqua//chocolate
+    color:theme-color('chocolate');
     @include filter(opacity(0.8));
     @include transition(filter ease-out 0.3s, color ease-in-out 0.3s);
     &::before {
@@ -1393,14 +1393,14 @@ aside.burger-mobile {
   height:$burger-size;
   top:30px;
   right:34px;
-  background-color:#004743;//////////rgba(26,26,26,0.9);//theme-color('chocolate')
+  background-color:darken(theme-color('beige'),30);//theme-color('aqua')//////////rgba(26,26,26,0.9);//theme-color('chocolate')
   cursor:pointer;
   z-index:102;
   @include border-radius(50%);
   @include transition(background-color ease-out 0.5s, transform ease-out 0.5s);
   .burger-dot {
     position:absolute;
-    background-color:theme-color('beige');
+    background-color:theme-color('rosybrown');
     width:1px;
     height:1px;
     margin:auto;
@@ -2391,6 +2391,9 @@ body.theme-dark, body.is-bottom, body.page-type-feedback {
         border:1px solid theme-color('rosybrown');
       }
     }
+  }
+  aside.burger-mobile {
+    background-color:theme-color('chocolate');
   }
   aside.header-left-info, aside.header-copyright {
     color:theme-color('rosybrown')!important;
