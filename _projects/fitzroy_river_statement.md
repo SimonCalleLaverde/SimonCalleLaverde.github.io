@@ -9,7 +9,6 @@ platforms: [NationBuilder, Bootstrap 3]
 year: 2017
 roles: [Frontend development, Design improvised to match feel of client's statement site]
 web:
-  domain_pretty: www.fitzroystatement.org
   launch_url: http://www.fitzroystatement.org
   images:
     - /uploads/site-web-fitzroy-river-statement.png

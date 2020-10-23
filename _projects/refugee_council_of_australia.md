@@ -9,7 +9,6 @@ platforms: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: [Frontend development, Cross platform setup]
 web:
-  domain_pretty: refugeecouncilaus-refugeecouncilaus.nationbuilder.com
   launch_url: https://refugeecouncilaus-refugeecouncilaus.nationbuilder.com/
   images:
     - /uploads/site-web-refugee-council-of-australia.png

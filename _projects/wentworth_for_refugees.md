@@ -9,7 +9,6 @@ platforms: [NationBuilder, Bootstrap 3]
 year: 2018
 roles: Frontend development
 web:
-  domain_pretty: www.wentworth4refugees.org.au
   launch_url: https://www.wentworth4refugees.org.au/
   images:
     - /uploads/site-web-wentworth-for-refugees.png

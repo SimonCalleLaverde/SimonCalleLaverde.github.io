@@ -7,10 +7,9 @@ thumbnail_image: /uploads/site-image-calle-impresores.jpg
 header_image: /uploads/site-image-calle-impresores.jpg
 platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2020
-roles: [UI, UX, Design, Development]
+roles: [UX, UI, Design, Development]
 web:
-  domain_pretty: www.calleimpresores.com
-  launch_url: https://calle-impresores.netlify.com
+  launch_url: https://calle-impresores.netlify.com # https://www.calleimpresores.com
   images:
     - /uploads/site-web-calle-impresores-1.png
     - /uploads/site-web-calle-impresores-2.png
@@ -22,7 +21,7 @@ web:
     - /uploads/site-web-calle-impresores-8.png
   image_fonts: ""
 type: Business Website & Catalogue
-category: Recent Independent Project
+category: Independent Project
 tags: [Business Website, Business Recent, Theme Dark]
 content_two_left: "The site is almost ready to launch, having had a delay as some of the client's team members where outside the city of Bogotá during covid's quarantine time. I already delivered the site and back-end to them,"
 content_two_right: "they are organizing some photos, content, and real catalogue material to later set the site live in their current domain: https://www.calleimpresores.com/."

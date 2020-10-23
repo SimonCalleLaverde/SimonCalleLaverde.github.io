@@ -9,7 +9,6 @@ platforms: [NationBuilder, Bootstrap 3]
 year: 2018
 roles: Frontend & backend development
 web:
-  domain_pretty: www.seedyourfuture.org
   launch_url: https://www.seedyourfuture.org/
   images:
     - /uploads/site-web-seed-your-future.png

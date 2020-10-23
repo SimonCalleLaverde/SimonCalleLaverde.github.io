@@ -9,7 +9,6 @@ platforms: [NationBuilder, Aware]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain_pretty: www.alec.org.au
   launch_url: https://www.alec.org.au/
   images:
     - /uploads/site-web-arid-lands-environment-centre.png

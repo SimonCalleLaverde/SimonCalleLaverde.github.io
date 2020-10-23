@@ -9,7 +9,6 @@ platforms: [Jekyll, Slides, Forestry]
 year: 2018
 roles: Frontend & backend development
 web:
-  domain_pretty: www.repoweraustralia.org.au
   launch_url: https://www.repoweraustralia.org.au/
   images:
     - /uploads/site-web-repower-australia.png

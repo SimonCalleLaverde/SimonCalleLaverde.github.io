@@ -9,7 +9,6 @@ platforms: [NationBuilder, Aware v2]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain_pretty: www.nafia.org.au
   launch_url: https://www.nafia.org.au/
   images:
     - /uploads/site-web-national-apology-foundation.png

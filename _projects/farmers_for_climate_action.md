@@ -9,7 +9,6 @@ platforms: [NationBuilder, Aware]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain_pretty: www.farmersforclimateaction.org.au
   launch_url: https://www.farmersforclimateaction.org.au
   images:
     - /uploads/site-web-farmers-for-climate-action.png

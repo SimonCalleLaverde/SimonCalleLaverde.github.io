@@ -9,7 +9,6 @@ platforms: [NationBuilder, Bootstrap 3]
 year: 2017
 roles: Frontend & backend development
 web:
-  domain_pretty: www.cultivateoregon.org
   launch_url: https://www.cultivateoregon.org/
   images:
     - /uploads/site-web-cultivate-oregon.png

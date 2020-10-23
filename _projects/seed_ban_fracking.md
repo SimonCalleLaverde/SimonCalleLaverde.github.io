@@ -9,7 +9,6 @@ platforms: [NationBuilder, Aware v2]
 year: 2017
 roles: Frontend & backend development
 web:
-  domain_pretty: nt.seedmob.org.au
   launch_url: https://nt.seedmob.org.au/
   images:
     - /uploads/site-web-seed-ban-fracking.png

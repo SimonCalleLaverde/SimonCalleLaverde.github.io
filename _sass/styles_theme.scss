@@ -1393,7 +1393,7 @@ aside.burger-mobile {
   height:$burger-size;
   top:30px;
   right:34px;
-  background-color:rgba(26,26,26,0.9);//theme-color('chocolate')
+  background-color:#004743;//////////rgba(26,26,26,0.9);//theme-color('chocolate')
   cursor:pointer;
   z-index:102;
   @include border-radius(50%);
@@ -1485,11 +1485,11 @@ aside.burger-mobile {
 // Menu Mobile
 div.menu-mobile {
   position:fixed;
-  display:none;
+  //display:none;
   width:100vw;
   height:100vh;
   top:0;
-  left:0;//100vw
+  left:100vw;//0
   z-index:100;
   //@include transform(translateX(100vw));
   .menu-mobile-circle-grow {
@@ -1507,7 +1507,7 @@ div.menu-mobile {
     @include transition(width cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, height cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, background-color cubic-bezier(0.455,0.03,0.515,0.955) 0s 0.6s, transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
   }
   nav.nav-mobile, nav.nav-mobile-social-media {
-    @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
+    @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.1s 0s);
   }
   nav.nav-mobile {
     z-index:103;
@@ -1594,7 +1594,7 @@ div.menu-mobile {
     }
   }
   &.opened {
-    display:block;
+    //display:block;
     .menu-mobile-circle-grow {
       $burger-size:170vh;
       width:$burger-size;
@@ -1605,7 +1605,7 @@ div.menu-mobile {
       @include transition(width cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, height cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, background-color cubic-bezier(0.455,0.03,0.515,0.955) 0s 0s, transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
     }
     nav.nav-mobile, nav.nav-mobile-social-media {
-      //@include transform(translateX(-100vw));
+      @include transform(translateX(-100vw));
     }
     nav.nav-mobile {
       > div {
@@ -1734,7 +1734,7 @@ header.home-hello-header {
       left:-10%;
       font-size:22px;
       line-height:1.2;
-      pointer-events:none;
+      //pointer-events:none;
     }
   }
 }

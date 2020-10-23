@@ -7,9 +7,8 @@ thumbnail_image: /uploads/site-image-jomaira-imagen.jpg
 header_image: /uploads/site-image-jomaira-imagen.jpg
 platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2020
-roles: [UI, UX, Design, Development]
+roles: [UX, UI, Design, Development]
 web:
-  domain_pretty: https://jomaira-moda.netlify.com/ # www.jomairaimagen.com
   launch_url: https://www.jomairaimagen.com/
   images:
     - /uploads/site-web-jomaira-imagen-1.png
@@ -22,7 +21,7 @@ web:
     - /uploads/site-web-jomaira-imagen-8.png
   image_fonts: ""
 type: Business Website & Blog
-category: Recent Independent Project
+category: Independent Project
 tags: [Business Website, Business Recent, Theme Dark]
 content_two_left: "The site is almost ready to launch. I delivered the site and backend, the owner
   is organizing some articles, videos, photos, and content, with the lockdown having delayed the"

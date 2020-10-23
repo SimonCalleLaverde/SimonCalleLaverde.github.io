@@ -9,7 +9,6 @@ platforms: [NationBuilder, Aware v2]
 year: 2017
 roles: Frontend & backend development
 web:
-  domain_pretty: www.outbackqueensland.org.au
   launch_url: https://www.outbackqueensland.org.au
   images:
     - /uploads/site-web-outback-queensland.png

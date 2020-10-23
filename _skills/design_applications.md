@@ -3,7 +3,7 @@ title: Design<br>Applications
 order: 2
 ---
 
-<p><span class="font-light">Adobe XD</span><br>From the Adobe family, this is the primary tool I use for designing the websites.</p>
+<p><span class="font-light">Adobe XD</span><br>From the Adobe family, this is the primary tool I use for designing websites.</p>
 
 <p><span class="font-light">Adobe Illustrator</span><br>A tool I have used extensively from the beginning of my career<!--, though less in the recent past-->.</p>
 

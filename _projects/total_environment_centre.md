@@ -9,7 +9,6 @@ platforms: [NationBuilder, Aware v2]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain_pretty: www.tec.org.au
   launch_url: https://www.tec.org.au/
   images:
     - /uploads/site-web-total-environment-centre.png

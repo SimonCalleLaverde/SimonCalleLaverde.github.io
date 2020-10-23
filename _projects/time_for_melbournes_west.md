@@ -9,7 +9,6 @@ platforms: [NationBuilder, Bootstrap 3]
 year: 2017
 roles: Frontend & backend development
 web:
-  domain_pretty: www.timeforthewest.org.au
   launch_url: http://www.timeforthewest.org.au
   images:
     - /uploads/site-web-time-for-melbournes-west.png

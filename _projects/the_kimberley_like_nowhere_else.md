@@ -9,7 +9,6 @@ platforms: [NationBuilder, Aware v2]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain_pretty: www.likenowhereelse.org.au
   launch_url: https://www.likenowhereelse.org.au/
   images:
     - /uploads/site-web-the-kimberley-like-nowhere-else.png

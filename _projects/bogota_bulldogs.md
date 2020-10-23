@@ -9,7 +9,6 @@ platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2019
 roles: Frontend & backend development
 web:
-  domain_pretty: bogota-bulldogs.netlify.com
   launch_url: https://bogota-bulldogs.netlify.com/
   images:
     - /uploads/site-web-bogota-bulldogs.png

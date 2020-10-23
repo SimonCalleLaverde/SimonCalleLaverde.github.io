@@ -9,7 +9,6 @@ platforms: [Jekyll, Slides, Forestry]
 year: 2017
 roles: Frontend & backend development
 web:
-  domain_pretty: www.stopadanialliance.com
   launch_url: http://www.stopadanialliance.com/
   images:
     - /uploads/site-web-stop-adani-alliance.png

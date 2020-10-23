@@ -9,7 +9,6 @@ platforms: [NationBuilder, Bootstrap 3]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain_pretty: www.healthyfutures.net.au
   launch_url: http://www.healthyfutures.net.au/
   images:
     - /uploads/site-web-healthy-futures.png

@@ -9,7 +9,6 @@ platforms: [NationBuilder, Aware v2]
 year: 2017
 roles: Frontend & backend development
 web:
-  domain_pretty: www.alicecommunitygarden.org.au
   launch_url: https://www.alicecommunitygarden.org.au/
   images:
     - /uploads/site-web-alice-springs-community-garden.png

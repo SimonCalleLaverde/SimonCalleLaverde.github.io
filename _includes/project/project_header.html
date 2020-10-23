@@ -58,13 +58,17 @@
 					</div>
 				</div>
 
-				<div class="row mt-5less">
-					<div class="col-md-8 offset-md-2">
-						<div class="page-launcher font-light">
-							<a class="btn btn-xs btn-rosybrown" href="{{ page.web.launch_url }}" target="_blank">View the site</a>
+				{% if page.web.launch_url.size > 0 %}
+					<div class="row mt-5less">
+						<div class="col-md-8 offset-md-2">
+							<div class="page-launcher font-light">
+								<a class="btn btn-xs btn-rosybrown" href="{{ page.web.launch_url }}" target="_blank">
+									View the site
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
+				{% endif %}
 
 				<div class="row mt-5">
 					<div class="col-md-10 mt-2"><!--col-md-8 offset-md-2-->

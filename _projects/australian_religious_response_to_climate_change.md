@@ -9,7 +9,6 @@ platforms: [NationBuilder, Aware]
 year: 2015
 roles: Frontend & backend development
 web:
-  domain_pretty: www.arrcc.org.au
   launch_url: https://www.arrcc.org.au/
   images:
     - /uploads/site-web-australian-religious-response-to-climate-change.png

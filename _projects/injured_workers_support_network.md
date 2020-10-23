@@ -9,7 +9,6 @@ platforms: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: Frontend & backend development
 web:
-  domain_pretty: www.iwsnvic.org.au
   launch_url: https://www.iwsnvic.org.au/
   images:
     - /uploads/site-web-injured-workers-support-network-victoria.png

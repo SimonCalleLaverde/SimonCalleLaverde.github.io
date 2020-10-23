@@ -9,7 +9,6 @@ platforms: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: Frontend & backend development
 web:
-  domain_pretty: www.giveadam.org.au
   launch_url: https://www.giveadam.org.au/
   images:
     - /uploads/site-web-give-a-dam.png

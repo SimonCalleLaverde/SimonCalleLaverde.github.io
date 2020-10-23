@@ -9,7 +9,6 @@ platforms: [NationBuilder, Bootstrap 4]
 year: 2018
 roles: Frontend & backend development
 web:
-  domain_pretty: www.kimberleycleanenergy.org
   launch_url: https://www.kimberleycleanenergy.org/
   images:
     - /uploads/site-web-kimberley-clean-energy-plan.png

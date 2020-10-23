@@ -9,7 +9,6 @@ platforms: [Dreamweaver, Html Css Php]
 year: 2015
 roles: [UI, UX, Design, Development]
 web:
-  domain_pretty: This concept site is no longer live
   launch_url: ""
   images:
     - /uploads/site-web-freshhold-1.png

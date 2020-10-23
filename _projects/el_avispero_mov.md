@@ -9,7 +9,6 @@ platforms: [NationBuilder, Aware v2]
 year: 2016
 roles: Frontend & backend development
 web:
-  domain_pretty: www.elavisperomov
   launch_url: http://www.elavisperomov.org/
   images:
     - /uploads/site-web-el-avispero-mov.png

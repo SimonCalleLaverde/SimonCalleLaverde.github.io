@@ -9,7 +9,6 @@ platforms: [NationBuilder, Aware v2]
 year: 2017
 roles: Frontend & backend development
 web:
-  domain_pretty: www.childrightsaustralia.org.au
   launch_url: https://www.childrightsaustralia.org.au/
   images:
     - /uploads/site-web-child-rights-australia.png

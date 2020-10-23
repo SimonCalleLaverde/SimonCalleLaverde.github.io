@@ -9,7 +9,6 @@ platforms: [NationBuilder, Bootstrap 4]
 year: 2019
 roles: Frontend & backend development
 web:
-  domain_pretty: www.repoweralicesprings.org.au
   launch_url: https://www.repoweralicesprings.org.au/
   images:
     - /uploads/site-web-repower-alice-springs.png
