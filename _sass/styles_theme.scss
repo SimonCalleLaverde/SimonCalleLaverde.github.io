@@ -1660,7 +1660,14 @@ div.menu-mobile {
 header.home-hello-header {
   min-height:100vh;
   padding:50px 20px;
+  //perspective:1000px;
   .hello-header-middle {
+    .header-3d-effect-wrapper {
+      perspective:1000px;
+      .header-3d {
+        transform-style:preserve-3d;
+      }
+    }
     .hello-header-hero {
       pointer-events:none;
       .hero-left, .hero-right {
