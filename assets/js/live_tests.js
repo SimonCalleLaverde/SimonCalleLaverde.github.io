@@ -14,13 +14,13 @@ container.addEventListener("mousemove", (e) => {
 
 // Animate In
 container.addEventListener("mouseenter", (e) => {
-	card.style.transition = "all 1s ease";//card.style.transition = "none";
+	card.style.transition = "all 0.5s ease-out";//card.style.transition = "none";
 });
 
 // Animate Out
 container.addEventListener("mouseleave", (e) => {
 	card.style.transform = `rotateY(0deg) rotateX(0deg)`;
-	card.style.transition = "all 0.5s ease";
+	card.style.transition = "all 0.5s ease-in";
 });
 
 
