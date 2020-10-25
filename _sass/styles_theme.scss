@@ -1747,7 +1747,7 @@ header.home-hello-header {
 @include media-breakpoint-down(xs) {//Down
   header.home-hello-header {
     .hello-header-middle-wrapper {
-      padding:4rem!important;
+      padding:4.5rem!important;
     }
     .hello-header-middle {
       .hello-header-hero {
@@ -1772,7 +1772,14 @@ header.home-hello-header {
     }
   }
 }
-@media only screen and (max-width:600px) {//Down
+@media only screen and (max-width:550px) {//Down
+  header.home-hello-header {
+    .hello-header-middle-wrapper {
+      padding:3.5rem!important;
+    }
+  }
+}
+@media only screen and (max-width:530px) {//Down
   header.home-hello-header {
     .hello-header-middle-wrapper {
       padding:3rem!important;
@@ -1782,7 +1789,21 @@ header.home-hello-header {
 @media only screen and (max-width:500px) {//Down
   header.home-hello-header {
     .hello-header-middle-wrapper {
-      padding:2rem!important;
+      padding:2.4rem!important;
+    }
+  }
+}
+@media only screen and (max-width:470px) {//Down
+  header.home-hello-header {
+    .hello-header-middle-wrapper {
+      padding:2.1rem!important;
+    }
+  }
+}
+@media only screen and (max-width:430px) {//Down
+  header.home-hello-header {
+    .hello-header-middle-wrapper {
+      padding:1.8rem!important;
     }
   }
 }
