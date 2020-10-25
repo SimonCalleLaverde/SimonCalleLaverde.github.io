@@ -19,4 +19,4 @@ type_slug: project
 order: 3
 ---
 
-The second site I developed in Code Nation in 2015 and I still love it. Designed by Lully Duque, with the team at Conservation Council SA being very engaged with the platform throught the years, creating actions and petitions and filling the website with inspirational images and content.
+The second site I developed it at Code Nation in 2015 and I still love it. Designed by Lully Duque, with the team at Conservation Council SA being very engaged with the platform throught the years, creating actions and petitions and filling the website with inspirational images and content.

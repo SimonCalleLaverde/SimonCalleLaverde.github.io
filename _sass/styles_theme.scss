@@ -775,20 +775,21 @@ article.project-article {
           letter-spacing:0.5px;
           .project-details {
             width:100%;
-            bottom:-15px;
+            bottom:-16px;//-15px
           }
           .project-info {
             position:absolute;
             width:20px;
             height:100%;
             padding-top:25px;
-            right:-12px;
+            right:-10px;//-12px
             text-align:left;
             writing-mode:vertical-rl;
             text-orientation:mixed;
             pointer-events:none;
             z-index:21;
             //@include transform-origin(50% 50%);
+            @include transform(rotate(180deg));
             > .project-data, > .project-platforms {
               time, span {
                 margin-bottom:12px;
@@ -1662,25 +1663,19 @@ header.home-hello-header {
   padding:50px 20px;
   //perspective:1000px;
   .hello-header-middle {
-    .header-3d-effect-wrapper {
-      perspective:1000px;
-      .header-3d {
-        transform-style:preserve-3d;
-      }
-    }
     .hello-header-hero {
       pointer-events:none;
-      .hero-left, .hero-right {
+      .hero-top, .hero-bottom {
         position:absolute;
         right:-20%;//0//To Compensate If Text Gets Longer
         left:-20%;//0//To Compensate If Text Gets Longer
         text-align:center;
         z-index:11;
       }
-      .hero-left {
+      .hero-top {
         top:-18%;
       }
-      .hero-right {
+      .hero-bottom {
         bottom:-22%;
       }
     }

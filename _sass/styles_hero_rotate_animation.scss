@@ -1,6 +1,6 @@
-// Basic styles for the text rotator.
-.hero-left, .hero-right {
-  .word-rotate-1, .word-rotate-2 {
+// [Mobile] | Basic Styles For The Text Rotator
+.hero-top, .hero-bottom {
+  .word-rotate-3, .word-rotate-4 {
     opacity:0;
     &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {//&:last-of-type
       position:absolute;
@@ -9,38 +9,22 @@
       z-index:100;
     }
   }
-  .word-rotate-1 {
+  .word-rotate-3 {
     &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {//&:last-of-type
       right:0;
       left:0;
     }
   }
-  .word-rotate-2 {
+  .word-rotate-4 {
     &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {//&:last-of-type
       right:0;
       left:0;
-    }
-  }
-}
-@include media-breakpoint-up(md) {
-  .hero-left, .hero-right {
-    .word-rotate-1 {
-      &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {//&:last-of-type
-        right:auto;
-        //left:0;
-      }
-    }
-    .word-rotate-2 {
-      &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {//&:last-of-type
-        //right:0;
-        left:auto;
-      }
     }
   }
 }
 
-// Word Rotate Animation
-.letter-one, .letter-two {
+// [Mobile] | Word Rotate Animation
+.letter-three, .letter-four {
   display:inline-block;
   //margin:0 -0.32px;
   @include transform-origin(50% 50% 25px);
@@ -57,3 +41,51 @@
     @include transition(transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275));
   }
 }
+
+@include media-breakpoint-up(md) {
+
+  // [Desktop] | Basic Styles For The Text Rotator
+  .hero-left, .hero-right {
+    .word-rotate-1, .word-rotate-2 {
+      opacity:0;
+      &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {//&:last-of-type
+        position:absolute;
+        top:0;
+        white-space:nowrap;
+        z-index:100;
+      }
+    }
+    .word-rotate-1 {
+      &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {//&:last-of-type
+        right:auto;
+        left:0;
+      }
+    }
+    .word-rotate-2 {
+      &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {//&:last-of-type
+        right:0;
+        left:auto;
+      }
+    }
+  }
+
+  // [Desktop] | Word Rotate Animation
+  .letter-one, .letter-two {
+    display:inline-block;
+    //margin:0 -0.32px;
+    @include transform-origin(50% 50% 25px);
+    @include transform(translateZ(25px));
+    &.out {
+      @include transform(rotateX(90deg));
+      @include transition(transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19));
+    }
+    &.behind {
+      @include transform(rotateX(-90deg));
+    }
+    &.in {
+      @include transform(rotateX(0deg));
+      @include transition(transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275));
+    }
+  }
+
+}//@media
