@@ -21,7 +21,7 @@ web:
     - /uploads/site-web-jomaira-imagen-8.png
   image_fonts: ""
 type: Business Website & Blog
-category: Independent Project
+category: Recent Independent Project
 tags: [Business Website, Business Recent, Theme Dark]
 content_two_left: "The site is almost ready to launch. I delivered the site and backend, the owner
   is organizing some articles, videos, photos, and content, with the lockdown having delayed the"

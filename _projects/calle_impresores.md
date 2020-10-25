@@ -21,7 +21,7 @@ web:
     - /uploads/site-web-calle-impresores-8.png
   image_fonts: ""
 type: Business Website & Catalogue
-category: Independent Project
+category: Recent Independent Project
 tags: [Business Website, Business Recent, Theme Dark]
 content_two_left: "The site is almost ready to launch, having had a delay as some of the client's team members where outside the city of Bogotá during covid's quarantine time. I already delivered the site and back-end to them,"
 content_two_right: "they are organizing some photos, content, and real catalogue material to later set the site live in their current domain: https://www.calleimpresores.com/."
