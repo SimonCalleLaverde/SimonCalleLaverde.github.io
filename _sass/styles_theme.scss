@@ -1772,6 +1772,13 @@ header.home-hello-header {
     }
   }
 }
+@media only screen and (max-width:600px) {//Down
+  header.home-hello-header {
+    .hello-header-middle-wrapper {
+      padding:3rem!important;
+    }
+  }
+}
 @media only screen and (max-width:500px) {//Down
   header.home-hello-header {
     .hello-header-middle-wrapper {
@@ -1782,7 +1789,7 @@ header.home-hello-header {
 @media only screen and (max-width:400px) {//Down
   header.home-hello-header {
     .hello-header-middle-wrapper {
-      padding:0rem!important;
+      padding:1rem!important;
     }
     .hello-header-middle {
       //padding-right:0!important;
