@@ -1676,15 +1676,12 @@ header.home-hello-header {
         top:-18%;
       }
       .hero-bottom {
-        bottom:-22%;
+        bottom:-22.4%;
       }
     }
-    .area-left, .area-right {
-      width:50%;
-      overflow:hidden;
-      @include transition(transform ease-out 0.5s);
+    .area-middle, .area-left, .area-right {
       div.websites-gif-cover, img.websites-gif-gif {
-        min-width:308px;
+        //min-width:308px;
         pointer-events:none;
         user-select:none;
         //@include transition(filter ease-in-out 0.3s);
@@ -1702,18 +1699,8 @@ header.home-hello-header {
         @include filter(opacity(0));
       }
     }
-    .area-left {
-      margin-top:0;
-    }
-    .area-right {
-      margin-top:-257.5px;//Removing Alternate Style//-232.5px//257.312px - 25px
-      margin-left:50%;
-      div.websites-gif-cover, img.websites-gif-gif {
-        margin-left:-100%;
-      }
-    }
     &:hover {
-      .area-left, .area-right {
+      .area-middle, .area-left, .area-right {
         div.websites-gif-cover {
           @include filter(opacity(0));
         }
@@ -1746,20 +1733,20 @@ header.home-hello-header {
     }
     .hello-header-middle {
       .hello-header-hero {
-        .hero-left {
-          top:-12%;//-13.8%
+        .hero-top {
+          top:-36px;//-12%//-13.8%
         }
-        .hero-right {
-          bottom:-14.9%;//-17.5%
+        .hero-bottom {
+          bottom:-45.5px;//-14.9%//-17.5%
         }
       }
       .area-left, .area-right {
         div.websites-gif-cover, img.websites-gif-gif {
-          min-width:361px;//311px
+          //min-width:361px;//311px
         }
       }
       .area-right {
-        margin-top:-301.594px;//259.812px
+        //margin-top:-301.594px;//259.812px
       }
       span.header-what-i-do {
         bottom:-140px;
@@ -1784,7 +1771,7 @@ header.home-hello-header {
 @media only screen and (max-width:500px) {//Down
   header.home-hello-header {
     .hello-header-middle-wrapper {
-      padding:2.4rem!important;
+      padding:2.5rem!important;
     }
   }
 }
@@ -1805,38 +1792,19 @@ header.home-hello-header {
 @media only screen and (max-width:400px) {//Down
   header.home-hello-header {
     .hello-header-middle-wrapper {
-      padding:1rem!important;
+      padding:1.3rem!important;
     }
     .hello-header-middle {
-      //padding-right:0!important;
-      //padding-left:0!important;
-      .hello-header-hero {
-        .hero-left {
-          //top:-15.5%;
-        }
-        .hero-right {
-          //bottom:-19.5%;
-        }
-      }
-      .area-left, .area-right {
-        div.websites-gif-cover, img.websites-gif-gif {
-          //min-width:280px;
-        }
-      }
-      .area-right {
-        //margin-top:-233.922px;
-      }
-      &:hover {
-        .area-left {
-          //@include transform(translateY(33px));
-        }
-        .area-right {
-          //@include transform(translateY(-33px));
-        }
-      }
       span.header-what-i-do {
-        //bottom:-135px;
+        bottom:-130px;
       }
+    }
+  }
+}
+@media only screen and (max-width:370px) {//Down
+  header.home-hello-header {
+    .hello-header-middle-wrapper {
+      padding:1rem!important;
     }
   }
 }
@@ -1951,7 +1919,7 @@ section.home-businesses-headline-section, section.home-campaigns-headline-sectio
 
 // Home Businesses Headline Section
 section.home-businesses-headline-section {
-  padding-top:10px;
+  //padding-top:10px;
 }
 
 // Home Business Projects Section, Home Campaign Projects Section, Home Three Phases Section, Home Skills Set Section, Workflow Tools Technology Section

@@ -318,12 +318,19 @@
         }
       }
       .area-left, .area-right {
+        width:50%;
+        overflow:hidden;
+        @include transition(transform ease-out 0.5s);
         div.websites-gif-cover, img.websites-gif-gif {
           min-width:306px;
         }
       }
       .area-right {
         margin-top:-230.5px;//255.641px - 25px
+        margin-left:50%;
+        div.websites-gif-cover, img.websites-gif-gif {
+          margin-left:-100%;
+        }
       }
       &:hover {
         .area-left {
