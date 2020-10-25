@@ -1672,17 +1672,16 @@ header.home-hello-header {
       pointer-events:none;
       .hero-left, .hero-right {
         position:absolute;
-        //top:27%;
-        right:-10%;//0
-        left:-10%;//0
+        right:-20%;//0//To Compensate If Text Gets Longer
+        left:-20%;//0//To Compensate If Text Gets Longer
         text-align:center;
         z-index:11;
       }
       .hero-left {
-        top:-13.8%;
+        top:-18%;
       }
       .hero-right {
-        bottom:-17.5%;
+        bottom:-22%;
       }
     }
     .area-left, .area-right {
@@ -1690,7 +1689,7 @@ header.home-hello-header {
       overflow:hidden;
       @include transition(transform ease-out 0.5s);
       div.websites-gif-cover, img.websites-gif-gif {
-        min-width:311px;
+        min-width:308px;
         pointer-events:none;
         user-select:none;
         //@include transition(filter ease-in-out 0.3s);
@@ -1712,7 +1711,7 @@ header.home-hello-header {
       margin-top:0;
     }
     .area-right {
-      margin-top:-260px;//259.812px;
+      margin-top:-257.5px;//Removing Alternate Style//-232.5px//257.312px - 25px
       margin-left:50%;
       div.websites-gif-cover, img.websites-gif-gif {
         margin-left:-100%;
@@ -1728,16 +1727,16 @@ header.home-hello-header {
         }
       }
       .area-left {
-        @include transform(translateY(25px));
+        //@include transform(translateY(30px));//25px
       }
       .area-right {
-        @include transform(translateY(-25px));
+        //@include transform(translateY(-30px));//-25px
       }
     }
     span.header-what-i-do {
       position:absolute;
       right:-10%;
-      bottom:-140px;
+      bottom:-145px;
       left:-10%;
       font-size:22px;
       line-height:1.2;
@@ -1745,70 +1744,68 @@ header.home-hello-header {
     }
   }
 }
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-down(xs) {//Down
   header.home-hello-header {
+    .hello-header-middle-wrapper {
+      padding:4rem!important;
+    }
     .hello-header-middle {
       .hello-header-hero {
         .hero-left {
-          top:-18%;
+          top:-12%;//-13.8%
         }
         .hero-right {
-          bottom:-22%;
+          bottom:-14.9%;//-17.5%
         }
       }
       .area-left, .area-right {
         div.websites-gif-cover, img.websites-gif-gif {
-          min-width:308px;
+          min-width:361px;//311px
         }
       }
       .area-right {
-        margin-top:-257.5px;//Removing Alternate Style//-232.5px//257.312px - 25px
-      }
-      &:hover {
-        .area-left {
-          @include transform(translateY(30px));//25px
-        }
-        .area-right {
-          @include transform(translateY(-30px));//-25px
-        }
+        margin-top:-301.594px;//259.812px
       }
       span.header-what-i-do {
-        bottom:-145px;
+        bottom:-140px;
       }
     }
   }
 }
-@media only screen and (max-width:400px) {//Down
+@media only screen and (max-width:500) {//Down      //400px
   header.home-hello-header {
+    .hello-header-middle-wrapper {
+      padding:5rem!important;
+    }
     .hello-header-middle {
-      padding-right:0!important;
-      padding-left:0!important;
+      //padding-right:0!important;
+      //padding-left:0!important;
       .hello-header-hero {
         .hero-left {
-          top:-15.5%;
+          //top:-15.5%;
         }
         .hero-right {
-          bottom:-19.5%;
+          //bottom:-19.5%;
         }
       }
       .area-left, .area-right {
         div.websites-gif-cover, img.websites-gif-gif {
-          min-width:280px;
+          //min-width:280px;
         }
       }
       .area-right {
-        margin-top:-233.922px;
+        //margin-top:-233.922px;
       }
       &:hover {
         .area-left {
-          @include transform(translateY(33px));
+          //@include transform(translateY(33px));
         }
         .area-right {
-          @include transform(translateY(-33px));
+          //@include transform(translateY(-33px));
         }
       }
       span.header-what-i-do {
-        bottom:-135px;
+        //bottom:-135px;
       }
     }
   }
