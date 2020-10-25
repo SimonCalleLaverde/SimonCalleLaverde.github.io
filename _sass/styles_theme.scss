@@ -1772,7 +1772,14 @@ header.home-hello-header {
     }
   }
 }
-@media only screen and (max-width:500) {//Down      //400px
+@media only screen and (max-width:500px) {//Down
+  header.home-hello-header {
+    .hello-header-middle-wrapper {
+      padding:2rem!important;
+    }
+  }
+}
+@media only screen and (max-width:400px) {//Down
   header.home-hello-header {
     .hello-header-middle-wrapper {
       padding:0rem!important;
