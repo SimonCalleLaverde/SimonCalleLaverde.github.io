@@ -5,7 +5,7 @@ name_for_thumbnail: Outback<br>Queensland
 client: Outback Queensland
 thumbnail_image: /uploads/site-image-outback-queensland.jpg
 header_image: /uploads/site-image-outback-queensland.jpg
-platforms: [NationBuilder, Aware v2]
+platforms: [NationBuilder, Bootstrap 3]
 year: 2017
 roles: Frontend & backend development
 web:
