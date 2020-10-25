@@ -30,26 +30,26 @@
   letter-spacing:2px;
   z-index:10000;
 }
-@include media-breakpoint-only(xs) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-only(sm) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-only(md) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-only(lg) {//up
-  html {
-    overflow:hidden;
-  }
-}
+// @include media-breakpoint-only(xs) {
+//   html {
+//     overflow:hidden;
+//   }
+// }
+// @include media-breakpoint-only(sm) {
+//   html {
+//     overflow:hidden;
+//   }
+// }
+// @include media-breakpoint-only(md) {
+//   html {
+//     overflow:hidden;
+//   }
+// }
+// @include media-breakpoint-only(lg) {//up
+//   html {
+//     overflow:hidden;
+//   }
+// }
 
 //----------------------------------General Styles----------------------------------//
 
@@ -1599,7 +1599,7 @@ div.menu-mobile {
       $burger-size:170vh;
       width:$burger-size;
       height:$burger-size;
-      background-color:theme-color('chocolate');
+      background-color:darken(theme-color('beige'),30);//theme-color('redish');//chocolate
       //@include transform(scale(50));
       @include transform(translate(40vh,-40vh));
       @include transition(width cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, height cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, background-color cubic-bezier(0.455,0.03,0.515,0.955) 0s 0s, transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
@@ -1994,7 +1994,8 @@ section.home-skills-set-section {
 
 // About Header
 header.about-header {
-  padding:30px 20px;//To revise mobile
+  min-height:100vh;
+  padding:50px 20px;
   .about-header-middle {
     position:relative;
     h1, h2, h3, h4, h5, h6 {
