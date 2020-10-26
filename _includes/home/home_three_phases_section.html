@@ -20,16 +20,10 @@
             </a>
             
             <div class="px-3">
-              <!--Desktop | Screen Readers-->
-              <h4 class="text-medium text-rosybrown mt-4more mb-4 pt-1 d-none d-md-block">
+              <h4 class="text-medium text-rosybrown mt-4more mb-4 pt-1">
                 {{ phase.title }}
               </h4>
-
-              <!--Mobile-->
-              <h4 class="text-huge text-rosybrown mt-4more mb-4 pt-1 d-block d-md-none" aria-hidden="true">
-                {{ phase.title }}
-              </h4>
-
+              
               <!--Screen Readers Not-->
               <div aria-hidden="true">
                 {{ phase.content | strip_html | truncatewords:49 }}

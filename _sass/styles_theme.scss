@@ -547,10 +547,10 @@ $btn-lg-padding:1rem 2.6rem;
   line-height:1.02;
 }
 .text-big {
-  font-size:1.5rem;
+  font-size:2rem;
 }
 .text-medium {
-  font-size:1.2rem;
+  font-size:1.7rem;//1.2rem
 }
 .text-small {
   font-size:0.4rem;
@@ -573,6 +573,15 @@ $btn-lg-padding:1rem 2.6rem;
   }
   .text-gigantic {
     line-height:1;
+  }
+  .text-intro, .text-huge {
+    font-size:2.5rem;
+  }
+  .text-big {
+    font-size:1.8rem;
+  }
+  .text-medium {
+    font-size:1.6rem;
   }
 }
 
@@ -781,8 +790,8 @@ article.project-article {
             position:absolute;
             width:20px;
             height:100%;
-            padding-top:25px;
-            right:-10px;//-12px
+            padding-bottom:25px;//padding-top
+            right:-8.5px;//-12px
             text-align:left;
             writing-mode:vertical-rl;
             text-orientation:mixed;
@@ -799,7 +808,7 @@ article.project-article {
         }
       }
       .project-title-mobile {
-        margin-top:-19px;
+        margin-top:-18.5px;
         font-size:13px;
         letter-spacing:0.5px;
         h1, h2, h3, h4, h5, h6 {
