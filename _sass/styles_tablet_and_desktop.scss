@@ -271,6 +271,7 @@
     line-height:1.2!important;//Was 1.5 from Body
     //pointer-events:none;
     ul.navbar-nav {
+      @include filter(opacity(0.8));
       @include transition(filter ease-out 0.3s);
       li.nav-item {
         a.nav-link {
@@ -495,51 +496,6 @@
   // About Header
   header.about-header {
     padding:100px 0;
-    .about-header-middle {
-      h1, h2, h3, h4, h5, h6 {
-        white-space:nowrap;
-      }
-      > div {
-        position:absolute;
-        width:210px;
-        //margin:auto;
-        top:-80px;
-        right:0;
-        //bottom:0;
-        left:0;
-        img {
-        }
-  
-
-
-        span {
-          position:absolute;
-        }
-        span.about-header-info {
-          top:auto;
-          right:18px;
-          bottom:-12px;
-          @include transform(rotate(0));
-        }
-        span.about-header-short-story {
-          bottom:-100px;
-        }
-
-
-      }
-    }
-  }
-  @include media-breakpoint-up(lg) {
-    header.about-header {
-      .about-header-middle {
-        > div {
-          top:-70px;
-          span.about-header-short-story {
-            bottom:-115px;
-          }
-        }
-      }
-    }
   }
 
   // About Myself Section
