@@ -2093,11 +2093,27 @@ header.about-header {
       }
       > div {
         span.about-header-info {
-          right:-25px;//-23px
+          right:-24px;//-23px
           bottom:26px;//11px
           //color:theme-color('chocolate')!important;
           mix-blend-mode:difference;
           @include transform(rotate(90deg));
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:400px) {//Down
+  header.about-header {
+    .about-header-middle {
+      h1, h2, h3, h4, h5, h6 {
+        > div {
+          &:first-of-type {
+            top:-16.5px;
+          }
+          &:last-of-type {
+            bottom:-23px;
+          }
         }
       }
     }
