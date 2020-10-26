@@ -584,6 +584,11 @@ $btn-lg-padding:1rem 2.6rem;
     font-size:1.6rem;
   }
 }
+@media only screen and (max-width:400px) {//Down
+  .text-hero, .text-gigantic {
+    font-size:3rem;
+  }
+}
 
 // Forms (Custom | Overriding Default & Bootstrap's)
 ::-webkit-input-placeholder {
@@ -2368,7 +2373,6 @@ footer {
   }
 }
 @media only screen and (max-width:400px) {//Down
-
   footer {
     aside.footer-info-elements {
       .footer-hello, .footer-office, .footer-business-social, .footer-copyright, .footer-email-or-call, .footer-created-by, .footer-personal-social, nav.footer-nav, .footer-credits {
@@ -2376,7 +2380,6 @@ footer {
       }
     }
   }
-
 }
 
 //----------------------------------Page Styles----------------------------------//
