@@ -2180,7 +2180,8 @@ footer {
   margin:0;
   > a.container {
     min-height:100vh;
-    > div {//From "row", To All Elements Inside <a>
+    > div {
+      pointer-events:none;//From "row", To All Elements Inside <a>
       h1, h2, h3, h4, h5, h6 {
       }
       p {
@@ -2365,6 +2366,17 @@ footer {
       text-align:right;
     }
   }
+}
+@media only screen and (max-width:400px) {//Down
+
+  footer {
+    aside.footer-info-elements {
+      .footer-hello, .footer-office, .footer-business-social, .footer-copyright, .footer-email-or-call, .footer-created-by, .footer-personal-social, nav.footer-nav, .footer-credits {
+        font-size:11px;
+      }
+    }
+  }
+
 }
 
 //----------------------------------Page Styles----------------------------------//

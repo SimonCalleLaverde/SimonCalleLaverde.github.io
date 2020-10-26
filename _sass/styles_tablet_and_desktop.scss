@@ -577,11 +577,6 @@
 
   // Footer
   footer {
-    > a.container {
-      > div {//From "row", To All Elements Inside <a>
-        pointer-events:none;
-      }
-    }
     aside.footer-info-elements {
       .footer-hello {
         bottom:370px;
