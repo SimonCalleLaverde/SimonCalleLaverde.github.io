@@ -13,7 +13,7 @@ web:
   images:
     - /uploads/site-web-repower-australia.png
 type: Campaign & Infographic Website
-category: Coded for Code Nation
+category: Coded for Code Nation Australia
 tags: [Campaign Platform, Theme Dark, Award Winner Website]
 type_slug: project
 order: 20

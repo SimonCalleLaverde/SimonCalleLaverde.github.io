@@ -13,7 +13,7 @@ web:
   images:
     - /uploads/site-web-bogota-bulldogs.png
 type: Campaign Website
-category: Coded for Code Nation
+category: Coded for Code Nation Australia
 tags: [Campaign Platform, Theme Dark]
 type_slug: project
 order: 28

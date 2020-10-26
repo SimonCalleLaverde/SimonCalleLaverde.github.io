@@ -30,26 +30,26 @@
   letter-spacing:2px;
   z-index:10000;
 }
-// @include media-breakpoint-only(xs) {
-//   html {
-//     overflow:hidden;
-//   }
-// }
-// @include media-breakpoint-only(sm) {
-//   html {
-//     overflow:hidden;
-//   }
-// }
-// @include media-breakpoint-only(md) {
-//   html {
-//     overflow:hidden;
-//   }
-// }
-// @include media-breakpoint-only(lg) {//up
-//   html {
-//     overflow:hidden;
-//   }
-// }
+@include media-breakpoint-only(xs) {
+  html {
+    overflow:hidden;
+  }
+}
+@include media-breakpoint-only(sm) {
+  html {
+    overflow:hidden;
+  }
+}
+@include media-breakpoint-only(md) {
+  html {
+    overflow:hidden;
+  }
+}
+@include media-breakpoint-only(lg) {//up
+  html {
+    overflow:hidden;
+  }
+}
 
 //----------------------------------General Styles----------------------------------//
 
@@ -2007,36 +2007,71 @@ header.about-header {
   padding:50px 20px;
   .about-header-middle {
     position:relative;
+
+
     h1, h2, h3, h4, h5, h6 {
-      white-space:nowrap;
-    }
-    > div {
-      position:absolute;
-      width:210px;
-      margin:auto;
-      top:-70px;
-      right:0;
-      bottom:0;
-      left:0;
       > div {
-        position:relative;
-        img {
+        &:first-child {
         }
-        span {
-          position:absolute;
+        &:last-child {
         }
-        span.about-header-info {
-          right:18px;
-          bottom:-12px;
-          font-size:13px;
+      }
+    }
+
+    
+    > div {
+      width:210px;////
+      margin:0 auto;
+      img {
+      }
+      span {
+        position:absolute;
+      }
+      span.about-header-info {
+        top:15px;
+        right:-12px;
+        font-size:13px;
+        @include transform(rotate(90deg));
+      }
+      span.about-header-short-story {
+        right:0;
+        bottom:-130px;//-115px
+        left:0;
+        font-size:22px;
+        line-height:1.2;
+      }
+    }
+
+
+  }
+}
+@include media-breakpoint-down(sm) {//down
+  header.about-header {
+    .about-header-middle {
+      h1, h2, h3, h4, h5, h6 {
+
+
+
+        position:absolute;
+        //position:relative;
+        margin:auto;//
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        z-index:10;
+        > div {
+          position:relative;
+          &:first-of-type {
+            top:-15px;
+          }
+          &:last-of-type {
+            bottom:-15px;
+          }
         }
-        span.about-header-short-story {
-          right:0;
-          bottom:-115px;
-          left:0;
-          font-size:22px;
-          line-height:1.2;
-        }
+
+
+
       }
     }
   }

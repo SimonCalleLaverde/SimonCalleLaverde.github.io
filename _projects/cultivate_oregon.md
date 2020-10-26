@@ -13,7 +13,7 @@ web:
   images:
     - /uploads/site-web-cultivate-oregon.png
 type: Campaign Website
-category: Coded for Code Nation
+category: Coded for Code Nation Australia
 tags: [Campaign Platform, Campaign Featured, Theme Dark]
 type_slug: project
 order: 17
