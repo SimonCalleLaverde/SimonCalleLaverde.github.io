@@ -500,40 +500,58 @@
 
   // About Myself Section
   section.about-myself-section {
-    padding:83px 0 440px;
+    padding:83px 0 450px;
     img {
       position:absolute;
     }
     img.image-candelaria {
-      top:130px;
+      width:475px;
+      top:75px;
       left:-145px;
-      width:496px;
     }
     img.image-palm-beach {
-      top:240px;
-      right:-210px;
       width:170px;
+      top:260px;
+      right:-170px
     }
-    img.image-city-center {
-      top:650px;//750px
+    img.image-england-port {
+      width:392px;
+      top:525px;
       left:-145px;
-      width:434px;
     }
-    img.image-old-school {
-      top:150px;//100px
-      left:0;
-      width:310px;
+    img.image-bogota-colombia {
+      width:305px;//328px Cooler But
+      top:95px;//85px Cooler But
+      left:-305px;//0 Cooler But
     }
-    img.image-photography {
-      top:180px;
-      right:-145px;
-      width:200px;
+    img.image-england-park {
+      width:411px;//475px
+      top:110px;
+      right:0;//-147px
     }
   }
 
   // About Lets Work Section
   section.about-lets-work-section {
-    padding:80px 0;
+    padding:70px 0 500px;
+    img {
+      position:absolute;
+    }
+    img.image-england-castle {
+      width:465px;
+      top:70px;
+      left:-549px;
+    }
+    img.image-villa-de-leyva {
+      width:391px;
+      top:60px;
+      left:-145px;
+    }
+    img.image-turkey-cats {
+      width:226px;
+      top:90px;
+      right:-145px;
+    }
   }
 
   // Projects Header Section

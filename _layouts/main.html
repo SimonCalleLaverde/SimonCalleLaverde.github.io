@@ -10,6 +10,8 @@ layout: compress
   {% include liquid_top_variables.html %}
 
   <body class="{% if page.type_slug.size > 0 %}page-type-{{ page.type_slug | replace:'_','-' }} {% endif %}{% if page_tags_list contains '#theme_dark#' %}theme-dark {% endif %}{{ page.slug }} is-top loading" data-spy="scroll" data-target="#navbar" data-offset="80">
+    {% include grid_display.html %}
+    
     {% include loader_area.html %}
 
     {% include loader_out.html %}
