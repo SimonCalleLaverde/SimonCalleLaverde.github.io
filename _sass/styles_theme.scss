@@ -2148,17 +2148,14 @@ section.about-myself-section {
       }
     }
   }
-  .about-intro {
-    font-size:21px;//24px//25px
+  .about-intro, .about-postdata {
     line-height:1.65;
+  }
+  .about-intro {
+    font-size:21px;
   }
   .about-postdata {
     font-size:17px;
-    line-height:1.65;
-    > div {
-      width:60%;
-      margin:0 auto;
-    }
   }
 
 
@@ -2188,12 +2185,21 @@ section.about-myself-section {
     }
   }
 }
-@include media-breakpoint-up(md) {
+@include media-breakpoint-down(xs) {//Down
   section.about-myself-section {
     .about-postdata {
       > div {
-        width:46%;
-        margin:auto;
+        width:65%;
+        margin:0 auto;
+      }
+    }
+  }
+}
+@media only screen and (max-width:400px) {//Down
+  section.about-myself-section {
+    .about-postdata {
+      > div {
+        width:80%;
       }
     }
   }

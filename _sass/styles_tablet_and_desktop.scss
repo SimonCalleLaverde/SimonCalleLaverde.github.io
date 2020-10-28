@@ -501,6 +501,11 @@
   // About Myself Section
   section.about-myself-section {
     padding:83px 0 240px;
+    .about-postdata {
+      > div {
+        width:46%;
+      }
+    }
     img {
       position:absolute;
     }
