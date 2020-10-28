@@ -1818,14 +1818,6 @@ header.home-hello-header {
       padding:1.3rem!important;
     }
     .hello-header-middle {
-      .hello-header-hero {
-        .hero-top {
-          top:-38.5px;
-        }
-        .hero-bottom {
-          bottom:-43.5px;
-        }
-      }
       span.header-what-i-do {
         bottom:-130px;
       }
@@ -2101,10 +2093,10 @@ header.about-header {
             left:0;
           }
           &:first-of-type {
-            top:-21.5px;
+            top:-24px;//-21.5px
           }
           &:last-of-type {
-            bottom:-33px;
+            bottom:-35px;//-33px
           }
         }
       }
