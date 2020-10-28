@@ -2168,20 +2168,12 @@ section.about-myself-section {
     img {
       margin:0 auto;
     }
-    img.image-candelaria {
+  }
+}
+@include media-breakpoint-only(sm) {//Only
+  section.about-myself-section {
+    img.image-candelaria, img.image-england-port, img.image-england-park {//img.image-palm-beach, img.image-bogota-colombia
       width:67.5%;
-    }
-    // img.image-palm-beach {
-    //   width:20%;
-    // }
-    img.image-england-port {
-      width:67.5%;
-    }
-    // img.image-bogota-colombia {
-    //   width:40%;
-    // }
-    img.image-england-park {
-      width:71%;
     }
   }
 }
@@ -2218,16 +2210,20 @@ section.about-lets-work-section {
     img {
       margin:0 auto;
     }
-    img.image-england-castle {
-      width:67.5%;
-    }
     img.image-villa-de-leyva {
-      width:58.5%;
+      width:68.5%;//58.5%
       margin:0 auto 0 0;
     }
     img.image-turkey-cats {
-      width:50%;
+      width:60%;//50%
       margin:0 0 0 auto;
+    }
+  }
+}
+@include media-breakpoint-only(sm) {//Only
+  section.about-lets-work-section {
+    img.image-england-castle {
+      width:67.5%;
     }
   }
 }
