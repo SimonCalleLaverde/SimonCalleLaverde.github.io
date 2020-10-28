@@ -2093,10 +2093,10 @@ header.about-header {
             left:0;
           }
           &:first-of-type {
-            top:-24px;//-21.5px
+            top:-21.5px;
           }
           &:last-of-type {
-            bottom:-35px;//-33px
+            bottom:-33px;
           }
         }
       }
@@ -2118,10 +2118,10 @@ header.about-header {
       h1, h2, h3, h4, h5, h6 {
         > div {
           &:first-of-type {
-            top:-16.5px;
+            top:-19px;//-16.5px
           }
           &:last-of-type {
-            bottom:-23px;
+            bottom:-21px;//-23px
           }
         }
       }
