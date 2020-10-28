@@ -586,10 +586,16 @@ $btn-lg-padding:1rem 2.6rem;
 }
 @media only screen and (max-width:400px) {//Down
   .text-hero, .text-gigantic {
-    font-size:2.5rem;//3rem
+    font-size:2.5rem;
   }
   .text-intro, .text-huge {
-    font-size:2rem;
+    font-size:1.8rem;
+  }
+  .text-big {
+    font-size:1.6rem;
+  }
+  .text-medium {
+    font-size:1.4rem;
   }
 }
 
