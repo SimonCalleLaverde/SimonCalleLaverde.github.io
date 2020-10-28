@@ -1814,29 +1814,18 @@ header.home-hello-header {
 }
 @media only screen and (max-width:400px) {//Down
   header.home-hello-header {
-
-
-
-
-    
+    .hello-header-middle-wrapper {
+      padding:1.3rem!important;
+    }
     .hello-header-middle {
       .hello-header-hero {
         .hero-top {
-          top:-38px;
+          top:-38.5px;
         }
         .hero-bottom {
           bottom:-43.5px;
         }
       }
-    }
-
-
-
-
-    .hello-header-middle-wrapper {
-      padding:1.3rem!important;
-    }
-    .hello-header-middle {
       span.header-what-i-do {
         bottom:-130px;
       }
