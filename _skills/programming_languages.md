@@ -5,7 +5,7 @@ order: 1
 
 <p><span class="font-light">HTML5</span><br>I have over 7 years of experience working with this markup language and I have worked on more than 40 sites, with a selection displayed in this portfolio.</p>
 
-<p><span class="font-light">CSS3 & SASS</span><br>This is a language I have 7 years of experience at. I have experience working with pure CSS and especially with CSS preprocessor languages like SASS<!-- or Less-->. CSS, when used to its full extent can be very powerful.</p><!--Knowing and using CSS well can be very, very powerful.-->
+<p><span class="font-light">CSS3 & SASS</span><br>This is a language I have 7 years of experience at. I have experience working with pure CSS and especially with CSS preprocessor languages like SASS<!-- or Less-->. CSS, when used to its full extent can be very powerful. You may want to re-size your screen and check-out this portfolio site in responsive, that will show some of my CSS skills. I love CSS, I'm a CSS evangelist.</p><!--Knowing and using CSS well can be very, very powerful.-->
 
 <p><span class="font-light">Liquid Code</span><br>This is a language used to create dynamic websites. It is used in Shopify e-commerce websites, NationBuilder campaigning platforms and some static site generators. I have 5 years of experience with this language building dozens of dynamic sites.</p><!--My experience using this language has meant I am able to accomplish more than the regular.-->
 

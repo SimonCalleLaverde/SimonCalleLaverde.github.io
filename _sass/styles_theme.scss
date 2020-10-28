@@ -30,26 +30,26 @@
   letter-spacing:2px;
   z-index:10000;
 }
-@include media-breakpoint-only(xs) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-only(sm) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-only(md) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-only(lg) {//up
-  html {
-    overflow:hidden;
-  }
-}
+// @include media-breakpoint-only(xs) {
+//   html {
+//     overflow:hidden;
+//   }
+// }
+// @include media-breakpoint-only(sm) {
+//   html {
+//     overflow:hidden;
+//   }
+// }
+// @include media-breakpoint-only(md) {
+//   html {
+//     overflow:hidden;
+//   }
+// }
+// @include media-breakpoint-only(lg) {//up
+//   html {
+//     overflow:hidden;
+//   }
+// }
 
 //----------------------------------General Styles----------------------------------//
 
@@ -2122,7 +2122,7 @@ header.about-header {
 
 // About Myself Section
 section.about-myself-section {
-  padding:30px 20px;//To revise mobile
+  padding:20px 20px 25px;
   .about-intro, .about-postdata {
     a {
       display:inline-block;
@@ -2156,18 +2156,74 @@ section.about-myself-section {
     font-size:17px;
     line-height:1.65;
     > div {
-      width:46%;
+      width:60%;
+      margin:0 auto;
+    }
+  }
+
+
+
+
+
+}
+@include media-breakpoint-down(sm) {//Down
+  section.about-myself-section {
+    img {
+      margin:0 auto;
+    }
+    img.image-candelaria {
+      width:67.5%;
+    }
+    // img.image-palm-beach {
+    //   width:20%;
+    // }
+    img.image-england-port {
+      width:67.5%;
+    }
+    // img.image-bogota-colombia {
+    //   width:40%;
+    // }
+    img.image-england-park {
+      width:71%;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  section.about-myself-section {
+    .about-postdata {
+      > div {
+        width:46%;
+        margin:auto;
+      }
     }
   }
 }
 
 // About Lets Work Section
 section.about-lets-work-section {
-  padding:30px 20px;//To revise mobile
-  // .about-contact-me {
-  //   font-size:25px;
-  //   line-height:1.65;
-  // }
+  padding:30px 20px 40px;////pad-bott
+
+
+
+
+}
+@include media-breakpoint-down(sm) {//Down
+  section.about-lets-work-section {
+    img {
+      margin:0 auto;
+    }
+    img.image-england-castle {
+      width:67.5%;
+    }
+    img.image-villa-de-leyva {
+      width:58.5%;
+      margin:0 auto 0 0;
+    }
+    img.image-turkey-cats {
+      width:50%;
+      margin:0 0 0 auto;
+    }
+  }
 }
 
 // Projects Header Section

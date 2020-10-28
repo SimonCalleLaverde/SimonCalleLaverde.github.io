@@ -500,57 +500,257 @@
 
   // About Myself Section
   section.about-myself-section {
-    padding:83px 0 450px;
+    padding:83px 0 240px;
     img {
       position:absolute;
     }
     img.image-candelaria {
-      width:475px;
-      top:75px;
-      left:-145px;
+      width:296px;
+      top:163px;
+      left:0;
     }
     img.image-palm-beach {
-      width:170px;
+      width:118px;
       top:260px;
-      right:-170px
+      right:-64px;
     }
     img.image-england-port {
-      width:392px;
-      top:525px;
-      left:-145px;
+      width:263px;
+      top:620px;
+      left:0;
     }
     img.image-bogota-colombia {
-      width:305px;//328px Cooler But
-      top:95px;//85px Cooler But
-      left:-305px;//0 Cooler But
+      width:300px;
+      bottom:370px;
+      left:-157px;
     }
     img.image-england-park {
-      width:411px;//475px
-      top:110px;
-      right:0;//-147px
+      width:298px;
+      top:42px;
+      right:1px;
+    }
+  }
+  @media only screen and (min-width:880px) {//√√√√√√√
+    section.about-myself-section {
+      padding:83px 0 300px;
+      img.image-candelaria {
+        width:375px;
+        top:163px;
+        left:0;
+      }
+      img.image-palm-beach {
+        width:170px;
+        top:260px;
+        right:-35px;//-170px
+      }
+      img.image-england-port {
+        width:315px;//392px
+        top:600px;
+        left:0;
+      }
+      img.image-bogota-colombia {
+        width:285px;
+        bottom:395px;
+        left:-149px;
+      }
+      img.image-england-park {
+        width:358px;//411px
+        top:50px;
+        right:1px;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {//√√√√√√√
+    section.about-myself-section {
+      padding:83px 0 400px;
+      img.image-candelaria {
+        width:378px;//438px//475px
+        top:163px;
+        left:0;
+      }
+      img.image-palm-beach {
+        width:120px;//144px//170px
+        top:345.5px;
+        right:-62px;//-24px//-91px
+      }
+      img.image-england-port {
+        width:336px;//358px//392px
+        top:628.5px;//608.5px
+        left:0;
+      }
+      img.image-bogota-colombia {
+        width:293px;//338px//255px
+        bottom:87px;//117px
+        left:-154px;//-176px//-135px//0 Cooler But
+      }
+      img.image-england-park {
+        width:400px;
+        top:90px;
+        right:1px;
+      }
+    }
+  }
+  @media only screen and (min-width:1100px) {//√√√√√√√
+    section.about-myself-section {
+      padding:83px 0 400px;
+      img.image-candelaria {
+        width:438px;//475px
+        top:163px;
+        left:0;
+      }
+      img.image-palm-beach {
+        width:144px;//170px
+        top:345.5px;
+        right:-24px;//-91px
+      }
+      img.image-england-port {
+        width:358px;//392px
+        top:628.5px;//608.5px
+        left:0;
+      }
+      img.image-bogota-colombia {
+        width:338px;//255px
+        bottom:87px;//117px
+        left:-176px;//-135px//0 Cooler But
+      }
+      img.image-england-park {
+        width:400px;
+        top:90px;
+        right:1px;
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {//√√√√√√√
+    section.about-myself-section {
+      padding:83px 0 450px;
+      img.image-candelaria {
+        width:475px;
+        top:163px;
+        left:0;
+      }
+      img.image-palm-beach {
+        width:170px;
+        top:345.5px;
+        right:-24px;
+      }
+      img.image-england-port {
+        width:392px;
+        top:608.5px;
+        left:0;
+      }
+      img.image-bogota-colombia {
+        width:305px;
+        bottom:127px;
+        left:-159px;//0 Cooler But
+      }
+      img.image-england-park {
+        width:411px;
+        top:110px;
+        right:1px;
+      }
     }
   }
 
   // About Lets Work Section
   section.about-lets-work-section {
-    padding:70px 0 460px;
+    padding:70px 0 300px;
     img {
       position:absolute;
     }
     img.image-england-castle {
-      width:465px;
-      top:70px;
-      left:-549px;
+      width:381px;
+      top:140px;
+      left:-238px;
     }
     img.image-villa-de-leyva {
-      width:391px;
-      top:70px;
-      left:-145px;
+      width:203px;
+      bottom:40px;
+      left:0;
     }
     img.image-turkey-cats {
-      width:226px;
-      top:50px;
-      right:-145px;
+      width:173px;
+      right:0;
+      bottom:10px;
+    }
+  }
+  @media only screen and (min-width:880px) {
+    section.about-lets-work-section {
+      padding:70px 0 350px;
+      img.image-england-castle {
+        width:433px;//465px
+        top:150px;
+        left:-238px;
+      }
+      img.image-villa-de-leyva {
+        width:315px;//391px
+        bottom:40px;
+        left:0;
+      }
+      img.image-turkey-cats {
+        width:194px;//227px
+        right:0;
+        bottom:10px;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {//√√√√√√√
+    section.about-lets-work-section {
+      padding:70px 0 400px;
+      img.image-england-castle {
+        width:376px;//436px
+        top:170px;//140px
+        left:-238px;
+      }
+      img.image-villa-de-leyva {
+        width:297px;//322px
+        bottom:50px;
+        left:0;
+      }
+      img.image-turkey-cats {
+        width:176px;//227px
+        right:0;
+        bottom:11px;
+      }
+    }
+  }
+  @media only screen and (min-width:1100px) {//√√√√√√√
+    section.about-lets-work-section {
+      padding:70px 0 400px;
+      img.image-england-castle {
+        width:436px;
+        top:140px;
+        left:-238px;
+      }
+      img.image-villa-de-leyva {
+        width:322px;
+        bottom:30px;
+        left:0;
+      }
+      img.image-turkey-cats {
+        width:227px;
+        right:0;
+        bottom:11px;
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {//√√√√√√√
+    section.about-lets-work-section {
+      padding:70px 0 465px;
+      img.image-england-castle {
+        width:465px;
+        top:141px;
+        left:-238px;
+      }
+      img.image-villa-de-leyva {
+        width:391px;
+        bottom:100px;
+        left:0;
+      }
+      img.image-turkey-cats {
+        width:227px;
+        right:0;
+        bottom:11px;
+      }
     }
   }
 
