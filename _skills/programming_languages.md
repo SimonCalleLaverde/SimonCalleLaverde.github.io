@@ -3,7 +3,7 @@ title: Markup &<br>Programming<br>Languages
 order: 1
 ---
 
-<p><span class="font-light">HTML5</span><br>I have over 7 years of experience working with this markup language and I have worked on more than 40 sites, with a selection displayed in this portfolio.</p>
+<p><span class="font-light">HTML5</span><br>I have over 7 years of experience working with this markup language and I have worked on more than 40 sites, with a selection displayed in this portfolio. I love using good HTML semantics, coherent, organized, and hierarchical markup, and I'm trying to think always in accessibility first when writing the HTML.</p>
 
 <p><span class="font-light">CSS3 & SASS</span><br>This is a language I have 7 years of experience at. I have experience working with pure CSS and especially with CSS preprocessor languages like SASS<!-- or Less-->. CSS, when used to its full extent can be very powerful. You may want to re-size your screen and check-out this portfolio site in responsive, that will show some of my CSS skills. I love CSS, I'm a CSS evangelist.</p><!--Knowing and using CSS well can be very, very powerful.-->
 

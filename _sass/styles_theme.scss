@@ -265,6 +265,20 @@ figure {
 // p {
 //   max-width:70ch;//"ch" is width of the "0" of a given font. (Means, 70 characters "width" approx)
 // }
+.landscape-small-none {
+  display:none;
+}
+.landscape-small-block {
+  display:block;
+}
+@media only screen and (min-height:600px) {
+  .landscape-small-none {
+    display:block;
+  }
+  .landscape-small-block {
+    display:none;
+  }
+}
 
 // Fonts
 h1, h2, h3, h4, h5, h6, .font-headline {
@@ -1252,6 +1266,9 @@ aside.header-left-info {
   pointer-events:none;
   opacity:(0.8);//@include filter(opacity(0.8))
   @include transform(rotate(180deg));
+  &.landscape-small-block {
+    top:34%;
+  }
 }
 
 // Header Scroll Down
