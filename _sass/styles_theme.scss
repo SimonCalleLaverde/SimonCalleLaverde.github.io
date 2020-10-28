@@ -1814,6 +1814,25 @@ header.home-hello-header {
 }
 @media only screen and (max-width:400px) {//Down
   header.home-hello-header {
+
+
+
+
+    
+    .hello-header-middle {
+      .hello-header-hero {
+        .hero-top {
+          top:-38px;
+        }
+        .hero-bottom {
+          bottom:-43.5px;
+        }
+      }
+    }
+
+
+
+
     .hello-header-middle-wrapper {
       padding:1.3rem!important;
     }
