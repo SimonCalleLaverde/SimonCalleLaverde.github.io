@@ -785,12 +785,48 @@
   section.project-header {
     min-height:100vh;
     padding:203px 0 0;
+    span.page-order {
+      //top:-70px;
+      right:auto;
+      //left:0;
+    }
+    .page-image-wrapper {
+      .container {
+        .row {
+          > div {
+            .page-project-image {
+              height:320px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    section.project-header {
+      .page-image-wrapper {
+        .container {
+          .row {
+            > div {
+              .page-project-image {
+                height:350px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   // Project Page
   section.project-page {
-    padding:105px 0 100px;
+    padding:65px 0 100px;
     img {
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    section.project-page {
+      padding:105px 0 100px;
     }
   }
 

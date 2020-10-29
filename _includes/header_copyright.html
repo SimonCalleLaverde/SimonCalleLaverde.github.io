@@ -1,4 +1,4 @@
-{% unless page.type_slug == 'feedback' %}
+{% unless page.type_slug == "feedback" or page.type_slug == "project" %}
 	<aside class="header-copyright text-chocolate">
 	  <div class="show-it">
 	    <p class="m-0">©</p> {{ "now" | date: "%Y" }}<!--2020-->

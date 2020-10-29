@@ -4,29 +4,33 @@
 		<div class="row">
 			<div class="col-md-6">
 
-				<div class="position-relative">
-					<span class="page-order font-headline" aria-hidden="true">
-						{{ page.order }}
+				<div class="row">
+					<div class="col-8 offset-2 col-md-10 col-lg-8 offset-lg-1 col-xl-12">
+						<div class="position-relative">
+							<span class="page-order font-headline" aria-hidden="true">
+								{{ page.order }}
 
-						{% assign sorted_projects = site.projects %}
-		        {% assign projects_total_count = 0 %}
+								{% assign sorted_projects = site.projects %}
+				        {% assign projects_total_count = 0 %}
 
-		        {% for project in sorted_projects %}
-		          {% assign projects_total_count = projects_total_count | plus:1 %}
-		        {% endfor %}
+				        {% for project in sorted_projects %}
+				          {% assign projects_total_count = projects_total_count | plus:1 %}
+				        {% endfor %}
 
-		        <small class="font-ultra-light">
-		          /{{ projects_total_count }}
-		        </small>
-					</span>
+				        <small class="font-ultra-light">
+				          /{{ projects_total_count }}
+				        </small>
+							</span>
+						</div>
 
-					<h1 class="page-title text-huge text-rosybrown text-uppercase">
-						{{ page.title }}
-					</h1>
+						<h1 class="page-title text-huge text-rosybrown text-uppercase">
+							{{ page.title }}
+						</h1>
+					</div>
 				</div>
 
-				<div class="row mt-5less">
-					<div class="col-md-5 offset-md-2">
+				<div class="row text-left mt-5less">
+					<div class="col-5 offset-2">
 						<div class="page-client font-ultra-light mb-2 pb-1">
 							<span class="font-light">
 								Client
@@ -48,7 +52,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-4 offset-md-1">
+					<div class="col-4 offset-1">
 						<div class="page-year font-ultra-light">
 							<span class="font-light">
 								Year
@@ -70,8 +74,9 @@
 					</div>
 				{% endif %}
 
-				<div class="row mt-5">
-					<div class="col-md-10 mt-2"><!--col-md-8 offset-md-2-->
+				<!--Desktop Lg | Screen Readers-->
+				<div class="row mt-5 d-none d-lg-block">
+					<div class="col-md-12 col-lg-10 offset-lg-1 col-xl-10 mt-2"><!--col-md-8 offset-md-2-->
 						<div class="page-content font-ultra-light">
 							{{ content }}
 						</div>
@@ -83,7 +88,8 @@
 
 	</div>
 
-	<div class="page-image-wrapper">
+	<!--Desktop Lg | Screen Readers-->
+	<div class="page-image-wrapper d-none d-md-block">
 		<div class="container">
 
 			<div class="row">
@@ -98,12 +104,32 @@
 		          background-size:cover;
 		        }
 		      </style>
-					<div class="page-project-image" id="page_project_thumbnail_{{ page.slug }}" type="image" title="Case Study: {{ page.title }}">
+					<div class="page-project-image" id="page_project_thumbnail_{{ page.slug }}" type="image" title="Main Image Case Study: {{ page.title }}">
       		</div>
 
 				</div>
 			</div>
 
+		</div>
+	</div>
+
+	<!--Mobile-->
+	<div class="container d-block d-md-none mt-5 pt-3">
+		<div class="row">
+			<div class="col-12">
+				<img src="{{ page.thumbnail_image | relative_url }}" alt="Main Image Case Study: {{ page.title }}">
+			</div>
+		</div>
+	</div>
+
+	<!--Mobile Lg-->
+	<div class="container d-block d-lg-none mt-5 pt-3" aria-hidden="true">
+		<div class="row">
+			<div class="col-md-8 col-lg-10 offset-lg-1 col-xl-10"><!--col-md-8 offset-md-2-->
+				<div class="page-content font-ultra-light">
+					{{ content }}
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

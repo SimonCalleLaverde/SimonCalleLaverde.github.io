@@ -4,8 +4,8 @@
 		<div class="row">
 			<div class="col-md-10 offset-md-1">
 				{% for image in page.web.images %}
-					<div class="mb-5 pb-5">
-						<img class="{% if forloop.last %}mb-4{% else %}mb-5less{% endif %}" src="{{ image }}" alt="A display of a section of the Website: Image Screenshot {{ forloop.index }}">
+					<div class="mb-5 pb-3 pb-md-4more pb-lg-5">
+						<img class="{% if forloop.last %}mb-1 mb-md-1 mb-lg-4{% else %}mb-2 mb-md-3 mb-lg-5less{% endif %}" src="{{ image }}" alt="A display of a section of the Website: Image Screenshot {{ forloop.index }}">
 					</div>
 				{% endfor %}
 			</div>
@@ -22,18 +22,26 @@
 		{% if page.content_two_left.size > 0 or page.content_two_right.size > 0 %}
 			<div class="row page-content-two text-rosybrown">
 				{% if page.content_two_left.size > 0 and page.content_two_right.size > 0 %}
-					<div class="col-md-4 offset-md-2">
+					<!--Desktop Lg | Screen Readers-->
+					<div class="col-md-4 offset-md-2 d-none d-lg-block">
 						<div class="pr-4">
 							{{ page.content_two_left }}
 						</div>
 					</div>
 					
-					<div class="col-md-4">
+					<div class="col-md-4 d-none d-lg-block">
 						<div class="pl-4">
 							{{ page.content_two_right }}
 						</div>
 					</div>
 
+					<!--Mobile Lg-->
+					<div class="col-md-8 offset-md-2 d-block d-lg-none" aria-hidden="true">
+						{{ page.content_two_left }}
+						
+						{{ page.content_two_right }}
+					</div>
+					
 				{% elsif page.content_two_left.size > 0 %}
 					<div class="col-md-6 offset-md-3">
 						{{ page.content_two_left }}
