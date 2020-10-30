@@ -874,7 +874,7 @@ article.project-article {
           .project-title {
             position:absolute;
             right:0;
-            bottom:-57px;//-59px
+            bottom:-60px;
             left:0;
             h1, h2, h3, h4, h5, h6 {
               font-size:35px;//30px
@@ -2239,21 +2239,30 @@ section.about-lets-work-section {
   }
 }
 
-// Projects Header Section
-header.projects-header-section {
+// Projects Header
+header.projects-header {
   position:relative;
-  padding:30px 20px;//To revise mobile
+  min-height:100vh;
+  padding:50px 20px;
+  img {
+    width:260px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    position:absolute;
+    top:-43.5px;
+    right:0;
+    left:0;
+  }
   .projects-header-timeline {
     font-size:22px;
     line-height:1.2;
-    span {
+    span, i {
       display:block;
     }
   }
-  img.projects-header-illustration {
-    min-width:106%;
-    //margin-left:-3%;
-  }
+  // img.projects-header-illustration {
+  //   min-width:106%;
+  // }
 }
 
 // Projects Section

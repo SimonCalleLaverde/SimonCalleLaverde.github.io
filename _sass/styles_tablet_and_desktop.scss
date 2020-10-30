@@ -762,26 +762,15 @@
     }
   }
 
-  // Projects Header Section
-  header.projects-header-section {
-    min-height:100vh;
-    padding:75px 0 100px;
+  // Projects Header
+  header.projects-header {
+    padding:100px 0;
   }
 
   // Projects Section
   section.projects-section {
     position:relative;
     padding:235px 0 100px;//245px 0 100px//Should Be, But "rellax" Changes It: 157px 0 100px
-    .page-division-line {
-      display:none;
-      // position:absolute;
-      // width:1px;
-      // top:0;
-      // right:auto;
-      // bottom:0;
-      // left:50%;
-      // z-index:10;
-    }
   }
 
   // Project Header
