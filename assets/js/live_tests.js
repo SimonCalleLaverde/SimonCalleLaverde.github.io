@@ -20,7 +20,7 @@ container.addEventListener("mouseenter", (e) => {
 // Animate Out
 container.addEventListener("mouseleave", (e) => {
 	card.style.transform = `rotateY(0deg) rotateX(0deg)`;
-	card.style.transition = "all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.5)";//ease-in
+	card.style.transition = "all 0.5s ease-in";//cubic-bezier(0.215, 0.610, 0.355, 1.5)
 });
 
 
