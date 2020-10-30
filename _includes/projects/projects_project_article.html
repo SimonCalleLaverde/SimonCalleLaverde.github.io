@@ -1,5 +1,4 @@
 <article class="project-article projects {% if projects_count_desktop == 1 %}article-left mr-5{% else %}article-right ml-5{% endif %} {% if forloop.last %}forloop-last {% endif %}" id="scroll_to_{{ project.order }}">
-  <!--<a href="{% if project_tags_list contains '#case_study#' %}{{ project.url }}{% else %}#{% endif %}" data-toggle="{% unless project_tags_list contains '#case_study#' %}modal{% endunless %}" data-target="{% unless project_tags_list contains '#case_study#' %}#projectModal_{{ project.slug }}{% endunless %}">-->
   <a class="link-page-load" href="javascript:delay('{{ project.url }}')">
     <figure>
       <style type="text/css">
@@ -11,46 +10,59 @@
           background-size:cover;
         }
       </style>
-      <div class="project-thumbnail project-{{ project.order }} bg-image" id="projects_project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.title }}" loading="lazy"><!--scale-element-->
+      <div class="project-thumbnail project-{{ project.order }} bg-image" id="projects_project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.title }}"><!--loading="lazy"-->
       </div>
 
-      <figcaption class="d-flex flex-column align-items-stretch justify-content-end">
-        <div class="project-title text-center p-4">
-          <h3 class="text-chocolate text-uppercase mb-0">
+      <figcaption><!--d-flex flex-column align-items-stretch justify-content-end-->
+        <div class="project-title text-center pt-4 px-4 pb-3">
+          <h3 class="text-big text-rosybrown text-uppercase mb-0">
             {{ project.name_for_thumbnail }}
           </h3>
 
-          <div class="project-roles text-chocolate">
-            {% for item in project.roles %}
-              {{ item }}{% unless forloop.last %} &middot;{% endunless %}
-            {% endfor %}
+          <div class="project-details font-ultra-light text-rosybrown">
+            <div class="project-roles">
+              {% for item in project.roles %}
+                {{ item }}{% unless forloop.last %} &middot;{% endunless %}
+              {% endfor %}
+            </div>
+
+            <div class="project-data">
+              {{ project.category }}
+            </div>
           </div>
         </div>
-        
-        <div class="project-info font-ultra-light text-rosybrown">
-          <div class="project-data">
-            {{ project.category }}
 
-            {% if project_tags_list contains "#campaign_platform#" %}
-              & {% if project.client.size > 0 %}{{ project.client }}{% else %}{{ project.title }}{% endif %}
-            {% endif %}
-          </div>
-
-          <div class="project-platforms">
-            <span class="font-light" style="margin-right:15px;">
-              Created with
-            </span>
-
-            {% for platform in project.platforms %}
-              {{ platform }}{% unless forloop.last %} &middot;{% endunless %}
-            {% endfor %}
-          </div>
-        </div>
-          
         <time class="font-light text-rosybrown">
           {{ project.year }}
         </time>
       </figcaption>
     </figure>
+
+
+
+
+
+
+    <!--Mobile | From "Home"-->
+    <div class="project-title-mobile d-block d-md-none font-ultra-light text-rosybrown" aria-hidden="true">
+      <h3 class="text-huge text-uppercase mb-0">
+        <span class="text-rosybrown">
+          {{ project.name_for_thumbnail }}
+        </span>
+      </h3>
+      
+      <div class="project-details">
+        <div class="project-roles">
+          {% for item in project.roles %}
+            {{ item }}{% unless forloop.last %} &middot;{% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+
+
+
+
   </a>
 </article>

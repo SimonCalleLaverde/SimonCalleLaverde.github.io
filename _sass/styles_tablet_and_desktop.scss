@@ -105,9 +105,7 @@
     &.home {
       a {
         figure {
-          //width:calc(100% + 30px);
           height:320px;
-          //margin-left:-15px;
           figcaption {
             .project-title {
               position:absolute;
@@ -116,12 +114,7 @@
               right:auto;
               bottom:-33px;
               left:-22px;
-              z-index:21;//After Removing "span.title-stroke"
-              // h1, h2, h3, h4, h5, h6 {
-              //   span.title-stroke {
-              //     right:auto;
-              //   }
-              // }
+              z-index:21;
             }
             .project-details, .project-info {
               overflow:hidden;
@@ -152,7 +145,8 @@
               height:calc(100% - 1px);
               padding-top:0;
               top:1px;
-              right:-29px;
+              right:-32px;
+              @include transform(rotate(180deg));
               > .project-data {
                 @include filter(opacity(1));
                 @include transform(translateX(0));
@@ -211,6 +205,9 @@
         }
       }
     }
+    &.projects {
+      margin-bottom:200px;
+    }
   }
   @include media-breakpoint-up(lg) {
     article.project-article {
@@ -222,6 +219,8 @@
             margin-left:-15px;
           }
         }
+      }
+      &.projects {
       }
     }
   }
@@ -276,14 +275,18 @@
       li.nav-item {
         a.nav-link {
           display:inline-block;
+          padding:0.2rem 0.1rem;//0.1rem 0.5rem
           color:rgba(24,16,8,0.8);//theme-color('chocolate')
+          font-size:10.5px;//12px
+          letter-spacing:0.2px;
+          text-transform:uppercase;
           white-space:nowrap;
           small {
             display:inline-block;
             position:absolute;
-            top:4px;//3px
-            right:-20px;//-21px
-            //font-size:10px;
+            top:4.5px;
+            right:-19.5px;
+            font-size:9px;
             // span, i {
             //   @include animation(change30ColorAnim 20s ease-out forwards);
             // }

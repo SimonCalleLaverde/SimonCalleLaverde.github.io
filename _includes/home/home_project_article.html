@@ -10,7 +10,7 @@
           background-size:cover;
         }
       </style>
-      <div class="project-thumbnail project-{{ project.order }} bg-image" id="project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.title }}" loading="lazy"><!--Lazy won't work in bg images-->
+      <div class="project-thumbnail project-{{ project.order }} bg-image" id="project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.title }}"><!--loading="lazy"-->
       </div>
 
       <figcaption class="font-ultra-light text-rosybrown">
@@ -20,12 +20,6 @@
             <span class="text-rosybrown">
               {{ project.name_for_thumbnail }}
             </span>
-
-            <!--{% comment %}
-            <span class="title-stroke" aria-hidden="true">
-              {{ project.name_for_thumbnail }}
-            </span>
-            {% endcomment %}-->
           </h3>
           
           <div class="project-details">
@@ -49,16 +43,10 @@
             </time>
 
             {{ project.category }}
-
-            <!--{% comment %}
-            {% if project_tags_list contains "#campaign_platform#" %}
-              & {% if project.client.size > 0 %}{{ project.client }}{% else %}{{ project.title }}{% endif %}
-            {% endif %}
-            {% endcomment %}-->
           </div>
 
           <!--Mobile-->
-          <div class="project-data text-right d-block d-md-none" aria-hidden="true">
+          <div class="project-data text-left d-block d-md-none" aria-hidden="true"><!--text-right-->
             <time class="font-light mb-0">
               {{ project.year }}
             </time>
@@ -67,7 +55,7 @@
           <!--Desktop | Screen Readers-->
           <div class="project-platforms d-none d-md-block">
             <span class="font-light">
-              Created with
+              Using
             </span>
 
             {% for platform in project.platforms %}
@@ -82,10 +70,6 @@
     <div class="project-title-mobile d-block d-md-none font-ultra-light text-rosybrown" aria-hidden="true">
       <h3 class="text-huge text-uppercase mb-0">
         <span class="text-rosybrown">
-          {{ project.name_for_thumbnail }}
-        </span>
-
-        <span class="title-stroke" aria-hidden="true"><!--No Longer Stroke-->
           {{ project.name_for_thumbnail }}
         </span>
       </h3>
