@@ -207,6 +207,15 @@
     }
     &.projects {
       margin-bottom:200px;
+
+
+      a {
+        figure {
+          height:250px;
+        }
+      }
+
+
     }
   }
   @include media-breakpoint-up(lg) {
@@ -221,6 +230,34 @@
         }
       }
       &.projects {
+
+
+
+        a {
+          figure {
+            height:300px;
+          }
+        }
+
+
+
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    article.project-article {
+      &.projects {
+
+
+
+        a {
+          figure {
+            height:320px;
+          }
+        }
+
+
+
       }
     }
   }
