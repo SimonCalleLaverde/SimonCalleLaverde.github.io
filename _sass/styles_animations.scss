@@ -36,15 +36,6 @@
 
 //----------------------------------Other Animation Styles----------------------------------//
 
-// @keyframes change30ColorAnim {
-//   from {
-//     color:theme-color('rosybrown')!important;
-//   }
-//   to {
-//     color:theme-color('chocolate')!important;
-//   }
-// }//@keyframes
-
 @keyframes scrollDownAnim {
   0% {
     @include transform(translateY(0));
