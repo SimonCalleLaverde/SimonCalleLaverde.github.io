@@ -808,25 +808,24 @@ article.project-article {
           z-index:20;
         }
         figcaption {
-          font-size:13px;
-          letter-spacing:0.5px;
+          font-size:11px;
+          letter-spacing:0.8px;
+          text-transform:uppercase;
           .project-details {
             width:100%;
-            bottom:-17px;//-15px
+            bottom:-17px;
           }
           .project-info {
             position:absolute;
             width:20px;
             height:100%;
-            padding-bottom:25px;//padding-top
-            right:-8.5px;//-12px
+            padding-top:25px;
+            right:-9.5px;
             text-align:left;
             writing-mode:vertical-rl;
             text-orientation:mixed;
             pointer-events:none;
             z-index:21;
-            //@include transform-origin(50% 50%);
-            @include transform(rotate(180deg));
             > .project-data, > .project-platforms {
               time, span {
                 margin-bottom:12px;
@@ -841,21 +840,8 @@ article.project-article {
         letter-spacing:0.5px;
         h1, h2, h3, h4, h5, h6 {
           position:relative;
+          z-index:21;
           span {
-            &:first-child {
-              @include filter(opacity(0));
-            }
-            &.title-stroke {
-              position:absolute;
-              top:0;
-              right:0;
-              bottom:0;
-              left:0;
-              color:theme-color('rosybrown');
-              //-webkit-text-stroke:1px theme-color('rosybrown');
-              z-index:21;
-              //@include transition(all cubic-bezier(0.455,0.03,0.515,0.955) 1s);
-            }
           }
         }
       }
@@ -863,8 +849,7 @@ article.project-article {
   }
   &.projects {
     position:relative;
-    margin-bottom:200px;
-    //will-change:scroll-position;//This literally ruins the scrolling flow
+    margin-bottom:100px;
     a {
       figure {
         position:relative;
@@ -875,7 +860,6 @@ article.project-article {
           right:0;
           bottom:0;
           left:0;
-          overflow:hidden;
         }
         figcaption {
           position:absolute;
@@ -883,48 +867,49 @@ article.project-article {
           right:0;
           bottom:0;
           left:0;
+          font-size:11px;
+          letter-spacing:0.8px;
+          text-transform:uppercase;
+          pointer-events:none;
           .project-title {
-            background-color:rgba(255,255,255,0.7);
+            position:absolute;
+            right:0;
+            bottom:-57px;//-59px
+            left:0;
             h1, h2, h3, h4, h5, h6 {
-              font-size:30px;
+              font-size:35px;//30px
               line-height:1.2;
             }
-            > .project-roles {
-              font-size:13px;
-            }
-          }
-          .project-info {
-            position:absolute;
-            width:calc(100% - 1px);
-            height:20px;
-            bottom:-30px;
-            left:1px;
-            font-size:13px;
-            overflow:hidden;
-            pointer-events:none;
-            > .project-data, > .project-platforms {
-              @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 1s);
-            }
-            > .project-data {
-              @include filter(opacity(1));
-              @include transform(translateY(0));
-            }
-            > .project-platforms {
-              position:absolute;
-              top:0;
-              left:0;
-              @include filter(opacity(0));
-              @include transform(translateY(20px));
+            .project-details {
+              position:relative;
+              width:100%;
+              height:20px;
+              overflow:hidden;
+              > .project-roles, > .project-data {
+                @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 1s);
+              }
+              > .project-roles {
+                @include filter(opacity(1));
+                @include transform(translateY(0));
+              }
+              > .project-data {
+                position:absolute;
+                top:0;
+                right:0;
+                bottom:0;
+                left:0;
+                @include filter(opacity(0));
+                @include transform(translateY(-20px));
+              }
             }
           }
           time {
             position:absolute;
             top:25px;
-            right:-11.5px;//-9.5px
+            right:-11.5px;
             font-size:13px;
             writing-mode:vertical-rl;
             text-orientation:mixed;
-            pointer-events:none;
           }
         }
       }
@@ -933,15 +918,15 @@ article.project-article {
           .project-thumbnail {
           }
           figcaption {
-            .project-info {
-              > .project-data, > .project-platforms {
+            .project-details {
+               > .project-roles, > .project-data {
                 @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s);
               }
-              > .project-data {
+              > .project-roles {
                 @include filter(opacity(0));
-                @include transform(translateY(-20px));
+                @include transform(translateY(20px));
               }
-              > .project-platforms {
+              > .project-data {
                 @include filter(opacity(1));
                 @include transform(translateY(0));
               }
@@ -1301,7 +1286,7 @@ nav.navbar {
     li.nav-item {
       a.nav-link {//For Both Nav & Footer Nav
         position:relative;
-        padding:0.1rem;//0.1rem 0.5rem
+        padding:0.1rem;
         font-family:$font-light;
         font-size:12px;
         color:theme-color('rosybrown');
@@ -2273,7 +2258,7 @@ header.projects-header-section {
 
 // Projects Section
 section.projects-section {
-  padding:30px 20px;//To revise mobile
+  padding:30px 20px 60px;
 }
 
 // Project Header
