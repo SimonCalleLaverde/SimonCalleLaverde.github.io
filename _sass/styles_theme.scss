@@ -1171,12 +1171,34 @@ aside.header-social-media {
     }
   }
 }
-@include media-breakpoint-down(sm) {//Down
+@include media-breakpoint-down(md) {//Down//sm
   aside.header-social-media {
     width:100vh;//We Will Use Viewport-Height To Apply To The Width
     left:100%;
     @include transform-origin(0 0);
     @include transform(rotate(90deg));
+  }
+}
+
+
+  // Header Social Media (AS IT WAS IN TABLET AND DESKTOP before battery going off)
+@include media-breakpoint-up(lg) {//md
+  aside.header-social-media {
+    top:auto;
+    right:20%;
+    bottom:13px;
+    left:20%;
+    a {
+      //font-family:$font-regular;
+      color:rgba(26,26,26,0.7);//theme-color('chocolate')//aqua
+    }
+  }
+  @include media-breakpoint-up(lg) {//TO CHANGE AS WRAPPER MEDIA QUERY CHANGED
+    aside.header-social-media {
+      a {
+        font-size:12px;
+      }
+    }
   }
 }
 
@@ -2244,17 +2266,17 @@ section.about-lets-work-section {
 
 // Projects Header
 header.projects-header {
-  position:relative;
+  //position:relative;
   min-height:100vh;
   padding:50px 20px;
   .projects-header-middle {
     position:relative;
     img {
-      width:263px;
+      width:200px;
     }
     h1, h2, h3, h4, h5, h6 {
       position:absolute;
-      top:-75px;//-82px;
+      top:-75px;
       right:0;
       left:0;
     }

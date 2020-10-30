@@ -235,24 +235,24 @@
     }
   }
 
-  // Header Social Media
-  aside.header-social-media {
-    top:auto;
-    right:20%;
-    bottom:13px;
-    left:20%;
-    a {
-      //font-family:$font-regular;
-      color:rgba(26,26,26,0.7);//theme-color('chocolate')//aqua
-    }
-  }
-  @include media-breakpoint-up(lg) {
-    aside.header-social-media {
-      a {
-        font-size:12px;
-      }
-    }
-  }
+  // // Header Social Media
+  // aside.header-social-media {
+  //   top:auto;
+  //   right:20%;
+  //   bottom:13px;
+  //   left:20%;
+  //   a {
+  //     //font-family:$font-regular;
+  //     color:rgba(26,26,26,0.7);//theme-color('chocolate')//aqua
+  //   }
+  // }
+  // @include media-breakpoint-up(lg) {
+  //   aside.header-social-media {
+  //     a {
+  //       font-size:12px;
+  //     }
+  //   }
+  // }
   
   // Header Copyright, Header Left Info
   aside.header-copyright, aside.header-left-info {
@@ -763,7 +763,50 @@
 
   // Projects Header
   header.projects-header {
-    padding:100px 0;
+    padding:50px 0;
+    .projects-header-middle {
+      img {
+        width:200px;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        top:-68px;
+      }
+    }
+  }
+  @media only screen and (min-width:850px) {
+    header.projects-header {
+      .projects-header-middle {
+        h1, h2, h3, h4, h5, h6 {
+          top:-87px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    header.projects-header {
+      padding:80px 0;
+      .projects-header-middle {
+        img {
+          width:210px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+          top:-65px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    header.projects-header {
+      padding:100px 0;
+      .projects-header-middle {
+        img {
+          width:263px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+          top:-75px;
+        }
+      }
+    }
   }
 
   // Projects Section
