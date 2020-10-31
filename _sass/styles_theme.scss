@@ -1502,8 +1502,8 @@ aside.burger-mobile {
   width:$burger-size;
   height:$burger-size;
   top:30px;
-  right:34px;
-  background-color:darken(theme-color('aqua'),5);//theme-color('aqua')//////////rgba(26,26,26,0.9);//theme-color('chocolate')
+  right:31px;//34px
+  background-color:darken(theme-color('aqua'),5);//rgba(26,26,26,0.9);//theme-color('chocolate')
   cursor:pointer;
   z-index:102;
   @include border-radius(50%);
@@ -1602,13 +1602,15 @@ div.menu-mobile {
   left:100vw;//0
   z-index:100;
   //@include transform(translateX(100vw));
+
+
   .menu-mobile-circle-grow {
     $burger-size:40px;
     position:fixed;
     width:$burger-size;
     height:$burger-size;
     top:30px;
-    right:34px;
+    right:31px;//34px
     background-color:transparent;
     z-index:101;
     will-change:width, height, background-color, transform;
@@ -1616,6 +1618,8 @@ div.menu-mobile {
     @include transform-origin(top right);
     @include transition(width cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, height cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, background-color cubic-bezier(0.455,0.03,0.515,0.955) 0s 0.6s, transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
   }
+
+
   nav.nav-mobile, nav.nav-mobile-social-media {
     @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.1s 0s);
   }
@@ -1706,7 +1710,7 @@ div.menu-mobile {
   &.opened {
     //display:block;
     .menu-mobile-circle-grow {
-      $burger-size:170vh;
+      $burger-size:200vh;
       width:$burger-size;
       height:$burger-size;
       background-color:theme-color('aqua');//theme-color('redish');//chocolate
@@ -1765,6 +1769,11 @@ div.menu-mobile {
     }
   }
 }
+
+
+
+
+
 
 // Home Hello Header
 header.home-hello-header {
