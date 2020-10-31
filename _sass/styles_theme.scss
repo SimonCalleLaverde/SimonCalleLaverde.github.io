@@ -226,6 +226,27 @@ body {
   &.modal-open {
     overflow-y:hidden!important;
   }
+  &.menu-opened {
+    .logo {
+      a {
+        span {
+          color:theme-color('rosybrown');
+          border-color:theme-color('rosybrown');
+        }
+      }
+    }
+    aside.header-left-info, aside.header-social-media a, aside.header-copyright {
+      color:theme-color('rosybrown');
+    }
+    aside.header-scroll-down {
+      > div {
+        background-color:rgba(255,232,228,0.3);
+        > div {
+          background-color:theme-color('chocolate');
+        }
+      }
+    }
+  }
   .text-italic {
     font-family:$font-light-italic!important;
   }
@@ -1148,7 +1169,7 @@ aside.header-social-media {
     font-size:11px;
     color:theme-color('chocolate');
     @include filter(opacity(0.8));
-    @include transition(filter ease-out 0.3s, color ease-in-out 0.3s);
+    @include transition(filter ease-out 0.3s, color ease-in-out 0.5s);
     &::before {
       content:'';
       position:absolute;
@@ -1209,6 +1230,7 @@ aside.header-copyright {
   left:25px;
   font-family:$font-light;
   font-size:11px;
+  color:theme-color('chocolate');
   writing-mode:vertical-rl;
   text-orientation:mixed;
   pointer-events:none;
@@ -1217,6 +1239,7 @@ aside.header-copyright {
   @include transform(rotate(180deg));
   //@include transform(rotate(270deg));
   //@include transform-origin(left bottom);//0 100%
+  @include transition(color ease-in-out 0.5s);
   p {
     display:inline-block;
     @include transform(rotate(90deg));
@@ -1269,11 +1292,13 @@ aside.header-left-info {
   left:25px;
   font-family:$font-light;
   font-size:11px;
+  color:theme-color('chocolate');
   writing-mode:vertical-rl;
   text-orientation:mixed;
   pointer-events:none;
   opacity:(0.8);//@include filter(opacity(0.8))
   @include transform(rotate(180deg));
+  @include transition(color ease-in-out 0.5s);
   &.landscape-small-block {
     top:34%;
   }
@@ -1296,6 +1321,7 @@ aside.header-scroll-down {
       top:-35px;
       right:0;
       background-color:theme-color('chocolate');
+      @include transition(color ease-in-out 0.5s);
       @include animation(scrollDownAnim 5s linear 6s infinite);
     }
   }
@@ -1359,8 +1385,9 @@ nav.navbar {
       //width:56px;
       //height:50px;
       padding:3px 5px 1px;//5px 7px 2px//5px 5px 2px
+      color:theme-color('chocolate');
       border:1px solid theme-color('chocolate');//2px
-      @include transition(filter ease-out 1s, border-color ease-in-out 0.3s);
+      @include transition(filter ease-out 1s, color ease-in-out 0.5s, border-color ease-in-out 0.5s);
       b {
         //position:absolute;
         //font-size:22.5px;
