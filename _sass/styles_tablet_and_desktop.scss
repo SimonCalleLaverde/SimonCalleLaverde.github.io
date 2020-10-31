@@ -12,9 +12,18 @@
   }
 
   // Buttons
+  $btn-normal-padding:0.5rem 1.3rem;
+  $btn-lg-padding:1rem 2.6rem;
   .btn {
+    padding:$btn-normal-padding;
+    &::before {
+      padding:$btn-normal-padding;//Same As Button
+    }
     &.btn-60 {
       width:60%;
+    }
+    &.btn-lg {
+      padding:$btn-lg-padding;
     }
   }
 
@@ -97,6 +106,17 @@
     }
     .text-small {
       font-size:1.4rem;
+    }
+  }
+
+  // Custom Checkboxes & Radio Buttons
+  .custom-checkbox-squared {//Buttons With Double Line Using ::before, As Per Rest Of Site
+    > .custom-control {
+      &.custom-checkbox, &.custom-radio {
+        label.custom-control-label {
+          padding:$btn-normal-padding;
+        }
+      }
     }
   }
 
@@ -962,6 +982,7 @@
   body.theme-dark, body.is-bottom, body.page-type-feedback {
     nav.navbar {
       ul.navbar-nav {
+        @include filter(opacity(1));
         li.nav-item {
           a.nav-link {
             color:rgba(255,232,228,0.8);//theme-color('rosybrown');
