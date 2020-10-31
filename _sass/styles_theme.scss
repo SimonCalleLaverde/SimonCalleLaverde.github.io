@@ -262,7 +262,8 @@ body {
     nav.navbar {
       ul.nav-top-desktop {
         pointer-events:none;
-        @include filter(opacity(0));
+        opacity:0;
+        //@include filter(opacity(0));
       }
     }
     aside.burger-mobile.nav-top-mobile {
@@ -921,7 +922,7 @@ article.project-article {
             bottom:-60px;
             left:0;
             h1, h2, h3, h4, h5, h6 {
-              font-size:35px;//30px
+              font-size:35px;
               line-height:1.2;
             }
             .project-details {

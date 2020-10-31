@@ -1,4 +1,4 @@
-<article class="project-article projects {% if projects_count_desktop == 1 %}article-left mr-5{% else %}article-right ml-5{% endif %} {% if forloop.last %}forloop-last {% endif %}" id="scroll_to_{{ project.order }}">
+<article class="project-article projects {% if projects_count_desktop == 1 %}article-left ml-md-3 mr-md-3 ml-xl-0 mr-xl-5{% else %}article-right ml-md-3 mr-md-3 ml-xl-5 mr-xl-0{% endif %} {% if forloop.last %}forloop-last {% endif %}" id="scroll_to_{{ project.order }}">
   <a class="link-page-load" href="javascript:delay('{{ project.url }}')">
     <figure>
       <style type="text/css">
@@ -14,10 +14,18 @@
       </div>
 
       <figcaption><!--d-flex flex-column align-items-stretch justify-content-end-->
-        <div class="project-title text-center pt-4 px-4 pb-3">
-          <h3 class="text-big text-rosybrown text-uppercase mb-0">
+        <div class="project-title pt-4 px-4 pb-3"><!--text-center-->
+          
+
+
+
+          <!---->
+          <h3 class="text-big text-rosybrown text-uppercase mb-0"><!--TO REMOVE MOBILE AT THE END, WHEN BELOW ONE IS SET-UP-->
             {{ project.name_for_thumbnail }}
           </h3>
+
+
+
 
           <div class="project-details font-ultra-light text-rosybrown">
             <div class="project-roles">

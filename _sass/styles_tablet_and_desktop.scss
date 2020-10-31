@@ -187,13 +187,8 @@
           figure {
             figcaption {
               .project-title {
-                // h1, h2, h3, h4, h5, h6 {
-                //   span.title-stroke {
-                //     color:theme-color('rosybrown');
-                //     //-webkit-text-stroke-color:transparent;
-                //     //@include transition(all cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s);
-                //   }
-                // }
+                h1, h2, h3, h4, h5, h6 {
+                }
               }
               .project-details, .project-info {
                 > .project-data, > .project-platforms, > .project-type, > .project-roles {
@@ -226,14 +221,16 @@
       }
     }
     &.projects {
-      margin-bottom:200px;
+      margin-bottom:150px;////
+
 
 
       a {
         figure {
-          height:220px;
+          height:250px;////
         }
       }
+
 
 
     }
@@ -250,34 +247,74 @@
         }
       }
       &.projects {
-
-
-
+        margin-bottom:200px;
         a {
           figure {
-            height:270px;
+            height:300px;
+            figcaption {
+              .project-title {
+                bottom:-60.5px;
+                left:-43px;
+                h1, h2, h3, h4, h5, h6 {
+                  font-size:37px;//45px
+                }
+              }
+            }
           }
         }
-
-
-
       }
     }
   }
   @include media-breakpoint-up(xl) {
     article.project-article {
       &.projects {
-
-
-
         a {
           figure {
             height:320px;
           }
         }
-
-
-
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {//Down
+    article.project-article {
+      &.projects {
+        &.article-left {
+          margin-left:15px!important;
+          margin-right:35px!important;
+        }
+        &.article-right {
+          margin-left:35px!important;
+          margin-right:15px!important;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width:1100px) {//Down
+    article.project-article {
+      &.projects {
+        &.article-left {
+          margin-left:25px!important;
+          margin-right:15px!important;
+        }
+        &.article-right {
+          margin-left:15px!important;
+          margin-right:25px!important;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {//Down
+    article.project-article {
+      &.projects {
+        &.article-left {
+          margin-left:0!important;
+          margin-right:10px!important;
+        }
+        &.article-right {
+          margin-left:10px!important;
+          margin-right:0!important;
+        }
       }
     }
   }
@@ -333,7 +370,7 @@
     //pointer-events:none;
     ul.navbar-nav {
       @include filter(opacity(0.8));
-      @include transition(filter ease-out 0.3s);
+      @include transition(opacity ease-in-out 0.5s, filter ease-out 0.3s);
       li.nav-item {
         a.nav-link {
           display:inline-block;
@@ -875,6 +912,12 @@
   // Projects Section
   section.projects-section {
     position:relative;
+    padding:205px 0 0;
+  }
+  @include media-breakpoint-up(lg) {
+    padding:225px 0 20px;
+  }
+  @include media-breakpoint-up(xl) {
     padding:235px 0 30px;//Should Be, But "rellax" Changes It: 157px 0 30px
   }
 
