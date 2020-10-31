@@ -30,26 +30,26 @@
   letter-spacing:2px;
   z-index:10000;
 }
-// @include media-breakpoint-only(xs) {
-//   html {
-//     overflow:hidden;
-//   }
-// }
-// @include media-breakpoint-only(sm) {
-//   html {
-//     overflow:hidden;
-//   }
-// }
-// @include media-breakpoint-only(md) {
-//   html {
-//     overflow:hidden;
-//   }
-// }
-// @include media-breakpoint-only(lg) {//up
-//   html {
-//     overflow:hidden;
-//   }
-// }
+@include media-breakpoint-only(xs) {
+  html {
+    overflow:hidden;
+  }
+}
+@include media-breakpoint-only(sm) {
+  html {
+    overflow:hidden;
+  }
+}
+@include media-breakpoint-only(md) {
+  html {
+    overflow:hidden;
+  }
+}
+@include media-breakpoint-only(lg) {//up
+  html {
+    overflow:hidden;
+  }
+}
 
 //----------------------------------General Styles----------------------------------//
 
@@ -2266,9 +2266,8 @@ section.about-lets-work-section {
 
 // Projects Header
 header.projects-header {
-  //position:relative;
   min-height:100vh;
-  padding:50px 20px;
+  padding:30px 20px;
   .projects-header-middle {
     position:relative;
     img {
@@ -2276,7 +2275,7 @@ header.projects-header {
     }
     h1, h2, h3, h4, h5, h6 {
       position:absolute;
-      top:-75px;
+      top:-67px;
       right:0;
       left:0;
     }
@@ -2294,6 +2293,30 @@ header.projects-header {
   // img.projects-header-illustration {
   //   min-width:106%;
   // }
+}
+@include media-breakpoint-down(xs) {//Down
+  header.projects-header {
+    .projects-header-middle {
+      img {
+        width:180px;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        top:-59px;
+      }
+    }
+  }
+}
+@media only screen and (max-width:400px) {//Down
+  header.projects-header {
+    .projects-header-middle {
+      img {
+        width:150px;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        top:-41px;
+      }
+    }
+  }
 }
 
 // Projects Section

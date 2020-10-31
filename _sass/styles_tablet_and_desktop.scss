@@ -800,21 +800,22 @@
 
   // Projects Header
   header.projects-header {
-    padding:50px 0;
+    padding:50px 0;//30px 0
     .projects-header-middle {
       img {
         width:200px;
       }
       h1, h2, h3, h4, h5, h6 {
-        top:-68px;
+        top:-36px;
       }
     }
   }
   @media only screen and (min-width:850px) {
     header.projects-header {
+      //padding:50px 0;
       .projects-header-middle {
         h1, h2, h3, h4, h5, h6 {
-          top:-87px;
+          top:-55px;
         }
       }
     }
@@ -849,7 +850,7 @@
   // Projects Section
   section.projects-section {
     position:relative;
-    padding:235px 0 50px;//235px 0 100px//245px 0 100px//Should Be, But "rellax" Changes It: 157px 0 100px
+    padding:235px 0 50px;//Should Be, But "rellax" Changes It: 157px 0 50px
   }
 
   // Project Header
