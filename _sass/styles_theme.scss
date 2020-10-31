@@ -30,26 +30,26 @@
   letter-spacing:2px;
   z-index:10000;
 }
-// @include media-breakpoint-only(xs) {
-//   html {
-//     overflow:hidden;
-//   }
-// }
-// @include media-breakpoint-only(sm) {
-//   html {
-//     overflow:hidden;
-//   }
-// }
-// @include media-breakpoint-only(md) {
-//   html {
-//     overflow:hidden;
-//   }
-// }
-// @include media-breakpoint-only(lg) {//up
-//   html {
-//     overflow:hidden;
-//   }
-// }
+@include media-breakpoint-only(xs) {
+  html {
+    overflow:hidden;
+  }
+}
+@include media-breakpoint-only(sm) {
+  html {
+    overflow:hidden;
+  }
+}
+@include media-breakpoint-only(md) {
+  html {
+    overflow:hidden;
+  }
+}
+@include media-breakpoint-only(lg) {//up
+  html {
+    overflow:hidden;
+  }
+}
 
 //----------------------------------General Styles----------------------------------//
 
@@ -1471,7 +1471,7 @@ aside.burger-mobile {
   height:$burger-size;
   top:30px;
   right:34px;
-  background-color:lighten(theme-color('chocolate'),20);//theme-color('aqua')//////////rgba(26,26,26,0.9);//theme-color('chocolate')
+  background-color:darken(theme-color('aqua'),5);//theme-color('aqua')//////////rgba(26,26,26,0.9);//theme-color('chocolate')
   cursor:pointer;
   z-index:102;
   @include border-radius(50%);
