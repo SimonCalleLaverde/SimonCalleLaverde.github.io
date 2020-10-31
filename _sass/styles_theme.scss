@@ -30,26 +30,26 @@
   letter-spacing:2px;
   z-index:10000;
 }
-@include media-breakpoint-only(xs) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-only(sm) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-only(md) {
-  html {
-    overflow:hidden;
-  }
-}
-@include media-breakpoint-only(lg) {//up
-  html {
-    overflow:hidden;
-  }
-}
+// @include media-breakpoint-only(xs) {
+//   html {
+//     overflow:hidden;
+//   }
+// }
+// @include media-breakpoint-only(sm) {
+//   html {
+//     overflow:hidden;
+//   }
+// }
+// @include media-breakpoint-only(md) {
+//   html {
+//     overflow:hidden;
+//   }
+// }
+// @include media-breakpoint-only(lg) {//up
+//   html {
+//     overflow:hidden;
+//   }
+// }
 
 //----------------------------------General Styles----------------------------------//
 
@@ -242,7 +242,7 @@ body {
       > div {
         background-color:rgba(255,232,228,0.3);
         > div {
-          background-color:theme-color('chocolate');
+          background-color:theme-color('rosybrown');
         }
       }
     }
@@ -1471,7 +1471,7 @@ aside.burger-mobile {
   height:$burger-size;
   top:30px;
   right:34px;
-  background-color:darken(theme-color('beige'),30);//theme-color('aqua')//////////rgba(26,26,26,0.9);//theme-color('chocolate')
+  background-color:lighten(theme-color('chocolate'),20);//theme-color('aqua')//////////rgba(26,26,26,0.9);//theme-color('chocolate')
   cursor:pointer;
   z-index:102;
   @include border-radius(50%);
@@ -1677,7 +1677,7 @@ div.menu-mobile {
       $burger-size:170vh;
       width:$burger-size;
       height:$burger-size;
-      background-color:darken(theme-color('beige'),30);//theme-color('redish');//chocolate
+      background-color:theme-color('aqua');//theme-color('redish');//chocolate
       //@include transform(scale(50));
       @include transform(translate(40vh,-40vh));
       @include transition(width cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, height cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, background-color cubic-bezier(0.455,0.03,0.515,0.955) 0s 0s, transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
