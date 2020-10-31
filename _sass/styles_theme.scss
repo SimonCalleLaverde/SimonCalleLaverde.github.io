@@ -247,6 +247,34 @@ body {
       }
     }
   }
+
+
+  &.is-bottom {
+    .logo {
+      > div {
+        pointer-events:none;
+        opacity:0;//@include filter(opacity(0))
+      }
+    }
+    aside.header-social-media {
+      display:none;
+      > div {
+      }
+    }
+    nav.navbar {
+      ul.nav-top-desktop {
+        pointer-events:none;
+        @include filter(opacity(0));
+      }
+    }
+    aside.burger-mobile.nav-top-mobile {
+      pointer-events:none;
+      opacity:0;//@include filter(opacity(0))
+    }
+  }
+
+
+
   .text-italic {
     font-family:$font-light-italic!important;
   }
@@ -1375,7 +1403,7 @@ nav.navbar {
   text-transform:capitalize;
   z-index:101;
   > div {
-    @include transition(opacity ease-out 0.3s);
+    @include transition(opacity ease-in-out 0.5s);
   }
   a {
     @include transition(all 0.3s ease-in-out);
@@ -1475,7 +1503,7 @@ aside.burger-mobile {
   cursor:pointer;
   z-index:102;
   @include border-radius(50%);
-  @include transition(background-color ease-out 0.5s, transform ease-out 0.5s);
+  @include transition(background-color ease-out 0.5s, opacity ease-in-out 0.5s, transform ease-out 0.5s);
   .burger-dot {
     position:absolute;
     background-color:theme-color('rosybrown');
@@ -2713,26 +2741,5 @@ body.theme-dark, body.is-bottom, body.page-type-feedback {
   .loader-out {
     background-color:lighten(theme-color('chocolate'),0.5)!important;//theme-color('beige')!important
     //border-left:0.5px solid theme-color('beige');
-  }
-}
-
-// Is Bottom
-body.is-bottom {
-  aside.header-social-media {
-    display:none;
-    > div {
-    }
-  }
-  nav.navbar {
-    ul.nav-top-desktop {
-      pointer-events:none;
-      @include filter(opacity(0));
-    }
-  }
-  .logo {
-    > div {
-      pointer-events:none;
-      opacity:0;//@include filter(opacity(0))
-    }
   }
 }
