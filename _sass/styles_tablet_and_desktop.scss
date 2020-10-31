@@ -61,7 +61,7 @@
     font-size:1.7rem;//1.2rem
   }
   .text-small {
-    font-size:0.7rem;
+    font-size:1.2rem;
   }
   @media only screen and (min-width:850px) {
     .text-hero, .text-gigantic {
@@ -87,9 +87,9 @@
     .text-medium {
       font-size:1.7rem;
     }
-    .text-small {
-      font-size:0.9rem;
-    }
+    // .text-small {
+    //   font-size:1.2rem;
+    // }
   }
   @include media-breakpoint-up(xl) {
     .text-hero, .text-gigantic {
@@ -924,7 +924,12 @@
 
   // Feedback Page
   section.feedback-page {
-    padding:120px 0 100px;
+    padding:100px 0 80px;
+  }
+  @include media-breakpoint-up(lg) {
+    section.feedback-page {
+      padding:120px 0 100px;
+    }
   }
 
   // Footer
