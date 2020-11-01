@@ -530,6 +530,23 @@ $btn-lg-padding:0.7rem 2.3rem;
     text-align:center;
   }
 }
+@media only screen and (max-width:400px) {//Down
+  $btn-normal-padding:0.2rem 0.7rem;
+  $btn-lg-padding:0.7rem 1.5rem;
+  .btn {
+    padding:$btn-normal-padding;
+    &::before {
+      padding:$btn-normal-padding;//Same As Button
+    }
+    &.btn-lg {
+      padding:$btn-lg-padding;
+      &.btn-longer {
+        padding-right:2rem;
+        padding-left:2rem;
+      }
+    }
+  }
+}
 
 // Bootstrap Complements
 .position-relative {
