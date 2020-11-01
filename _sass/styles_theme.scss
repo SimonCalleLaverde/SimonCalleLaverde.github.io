@@ -1613,6 +1613,7 @@ div.menu-mobile {
     @include border-radius(50%);
     @include transform-origin(top right);
     @include transition(width cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, height cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, background-color cubic-bezier(0.455,0.03,0.515,0.955) 0s 0.6s, transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
+    @include animation(navCircleShrinkAnim 0.5s ease-out forwards);
   }
   nav.nav-mobile, nav.nav-mobile-social-media {
     @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.1s 0s);
@@ -1700,14 +1701,15 @@ div.menu-mobile {
     }
   }
   &.opened {
-    $burger-size:200vh;
+    //$burger-size:2000px;//250vh
     &::before {//.burger-circle-grow
-      width:$burger-size;
-      height:$burger-size;
+      //width:$burger-size;
+      //height:$burger-size;
       background-color:theme-color('aqua');//redish//chocolate
       //@include transform(scale(50));//"Scale" Makes Anim Pixelated, So Used "Width/Height"
-      @include transform(translate(40vh,-40vh));
+      //@include transform(translate(450px,-450px));//100vh,-100vh
       @include transition(width cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, height cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, background-color cubic-bezier(0.455,0.03,0.515,0.955) 0s 0s, transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
+      @include animation(navCircleGrowAnim 0.5s ease-out forwards);
     }
     nav.nav-mobile, nav.nav-mobile-social-media {
       @include transform(translateX(-100vw));
@@ -1760,11 +1762,30 @@ div.menu-mobile {
     }
   }
 }
-
-
-
-
-
+@keyframes navCircleGrowAnim {
+  from {
+    width:$burger-size;
+    height:$burger-size;
+    @include transform(translate(0,0));
+  }
+  to {
+    width:2000px;//$burger-size;
+    height:2000px;//$burger-size;
+    @include transform(translate(450px,-450px));
+  }
+}
+@keyframes navCircleShrinkAnim {
+  from {
+    width:2000px;//$burger-size;
+    height:2000px;//$burger-size;
+    @include transform(translate(450px,-450px));
+  }
+  to {
+    width:$burger-size;
+    height:$burger-size;
+    @include transform(translate(0,0));
+  }
+}
 
 // Home Hello Header
 header.home-hello-header {
