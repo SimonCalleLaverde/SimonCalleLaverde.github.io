@@ -531,8 +531,8 @@ $btn-lg-padding:0.7rem 2.3rem;
   }
 }
 @media only screen and (max-width:400px) {//Down
-  $btn-normal-padding:0.2rem 0.7rem;
-  $btn-lg-padding:0.7rem 1.5rem;
+  $btn-normal-padding:0.1rem 0.5rem;
+  $btn-lg-padding:0.6rem 1.5rem;
   .btn {
     padding:$btn-normal-padding;
     &::before {
@@ -785,6 +785,7 @@ input[type="submit"] {
 }
 .custom-checkbox-squared {//Buttons With Double Line Using ::before, As Per Rest Of Site
   > .custom-control {
+    padding-left:0;
     &.custom-checkbox, &.custom-radio {
       text-align:center;
       input.custom-control-input {
