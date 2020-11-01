@@ -531,7 +531,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   }
 }
 @media only screen and (max-width:400px) {//Down
-  $btn-normal-padding:0.1rem 0.3rem;
+  $btn-normal-padding:0.2rem 0.15rem 0rem;
   $btn-lg-padding:0.6rem 1.4rem;
   .btn {
     padding:$btn-normal-padding;
@@ -786,8 +786,8 @@ input[type="submit"] {
 }
 .custom-checkbox-squared {//Buttons With Double Line Using ::before, As Per Rest Of Site
   > .custom-control {
-    padding-right:5px;
-    padding-left:5px;
+    padding-right:10px;
+    padding-left:10px;
     &.custom-checkbox, &.custom-radio {
       text-align:center;
       input.custom-control-input {
@@ -2542,7 +2542,7 @@ section.feedback-page {
 }
 @media only screen and (max-width:400px) {//Down
   section.feedback-page {
-    padding:80px 20px 50px;
+    padding:90px 20px 40px;
   }
 }
 
