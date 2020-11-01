@@ -221,18 +221,12 @@
       }
     }
     &.projects {
-      margin-bottom:150px;////
-
-
-
+      margin-bottom:150px;
       a {
         figure {
-          height:250px;////
+          height:250px;
         }
       }
-
-
-
     }
   }
   @include media-breakpoint-up(lg) {

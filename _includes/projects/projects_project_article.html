@@ -14,18 +14,11 @@
       </div>
 
       <figcaption><!--d-flex flex-column align-items-stretch justify-content-end-->
-        <div class="project-title pt-4 px-4 pb-3"><!--text-center-->
-          
-
-
-
-          <!---->
-          <h3 class="text-big text-rosybrown text-uppercase mb-0"><!--TO REMOVE MOBILE AT THE END, WHEN BELOW ONE IS SET-UP-->
+        <!--Desktop | Screen Readers-->
+        <div class="project-title pt-4 px-4 pb-3 d-none d-md-block"><!--text-center-->
+          <h3 class="text-big text-rosybrown text-uppercase mb-0">
             {{ project.name_for_thumbnail }}
           </h3>
-
-
-
 
           <div class="project-details font-ultra-light text-rosybrown">
             <div class="project-roles">
@@ -46,31 +39,19 @@
       </figcaption>
     </figure>
 
-
-
-
-
-
-    <!--Mobile | From "Home"-->
-    <div class="project-title-mobile d-block d-md-none font-ultra-light text-rosybrown" aria-hidden="true">
-      <h3 class="text-huge text-uppercase mb-0">
-        <span class="text-rosybrown">
-          {{ project.name_for_thumbnail }}
-        </span>
+    <!--Mobile-->
+    <div class="project-title-mobile d-block d-md-none" aria-hidden="true">
+      <h3 class="text-huge text-rosybrown text-uppercase mb-0"><!--text-big-->
+        {{ project.name_for_thumbnail }}
       </h3>
-      
+
       <div class="project-details">
-        <div class="project-roles">
+        <div class="project-roles font-ultra-light text-rosybrown">
           {% for item in project.roles %}
             {{ item }}{% unless forloop.last %} &middot;{% endunless %}
           {% endfor %}
         </div>
       </div>
     </div>
-
-
-
-
-
   </a>
 </article>
