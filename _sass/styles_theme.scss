@@ -1497,8 +1497,8 @@ nav.navbar {
 }
 
 // Burger Mobile
+$burger-size:40px;
 aside.burger-mobile {
-  $burger-size:40px;
   position:fixed;
   width:$burger-size;
   height:$burger-size;
@@ -1506,7 +1506,7 @@ aside.burger-mobile {
   right:31px;//34px
   background-color:darken(theme-color('aqua'),5);//rgba(26,26,26,0.9);//theme-color('chocolate')
   cursor:pointer;
-  z-index:102;
+  z-index:101;
   @include border-radius(50%);
   @include transition(background-color ease-out 0.5s, opacity ease-in-out 0.5s, transform ease-out 0.5s);
   .burger-dot {
@@ -1596,36 +1596,28 @@ aside.burger-mobile {
 // Menu Mobile
 div.menu-mobile {
   position:fixed;
-  //display:none;
   width:100vw;
   height:100vh;
   top:0;
   left:100vw;//0
   z-index:100;
-  //@include transform(translateX(100vw));
-
-
-  .menu-mobile-circle-grow {
-    $burger-size:40px;
+  &::before {//.burger-circle-grow
+    content:"";
     position:fixed;
     width:$burger-size;
     height:$burger-size;
     top:30px;
     right:31px;//34px
     background-color:transparent;
-    z-index:101;
     will-change:width, height, background-color, transform;
     @include border-radius(50%);
     @include transform-origin(top right);
     @include transition(width cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, height cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, background-color cubic-bezier(0.455,0.03,0.515,0.955) 0s 0.6s, transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
   }
-
-
   nav.nav-mobile, nav.nav-mobile-social-media {
     @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 0.1s 0s);
   }
   nav.nav-mobile {
-    z-index:103;
     > div {
       overflow:hidden;
       a.nav-mobile-link {
@@ -1662,7 +1654,6 @@ div.menu-mobile {
     bottom:90px;
     left:0;
     text-align:center;
-    z-index:103;
     > div {
       display:inline-block;
       @include filter(opacity(0));
@@ -1709,13 +1700,12 @@ div.menu-mobile {
     }
   }
   &.opened {
-    //display:block;
-    .menu-mobile-circle-grow {
-      $burger-size:200vh;
+    $burger-size:200vh;
+    &::before {//.burger-circle-grow
       width:$burger-size;
       height:$burger-size;
-      background-color:theme-color('aqua');//theme-color('redish');//chocolate
-      //@include transform(scale(50));
+      background-color:theme-color('aqua');//redish//chocolate
+      //@include transform(scale(50));//"Scale" Makes Anim Pixelated, So Used "Width/Height"
       @include transform(translate(40vh,-40vh));
       @include transition(width cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, height cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, background-color cubic-bezier(0.455,0.03,0.515,0.955) 0s 0s, transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
     }
