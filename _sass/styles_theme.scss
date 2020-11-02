@@ -409,7 +409,7 @@ main {
 
 // Header Plus Years, Header Left Info, Header Copyright, Navbar, Header Social Media, Header Scroll Down {
 aside.header-plus-years, aside.header-left-info, aside.header-copyright, nav.navbar, aside.header-social-media, aside.header-scroll-down {
-  z-index:100;
+  z-index:99;//100//Below Nav Mobile
 }
 aside.header-left-info, aside.header-copyright {
   @include transition(color ease-in-out 0.3s);
@@ -2126,13 +2126,18 @@ section.home-business-projects-section, section.home-campaign-projects-section, 
 section.home-business-projects-section, section.home-campaign-projects-section {
   padding-bottom:35px;
 }
-@include media-breakpoint-down(md) {//Down
-  section.home-business-projects-section
+@include media-breakpoint-down(sm) {//Down
+  section.home-businesses-headline-section {
+    padding-top:20px;
+  }
+}
+@include media-breakpoint-down(xs) {//Down
+  section.home-businesses-headline-section {
     padding-top:10px;
   }
 }
 @media only screen and (max-width:400px) {//Down
-  section.home-business-projects-section
+  section.home-businesses-headline-section {
     padding-top:0;
   }
 }
@@ -2834,6 +2839,14 @@ body.theme-dark, body.is-bottom, body.page-type-feedback, body.theme-dark-mobile
       // &::before {
       //   border-bottom:1px solid theme-color('redish');
       // }
+    }
+  }
+  aside.header-scroll-down {
+    > div {
+      background-color:rgba(255,232,228,0.3);
+      > div {
+        background-color:theme-color('rosybrown');
+      }
     }
   }
   .modal {

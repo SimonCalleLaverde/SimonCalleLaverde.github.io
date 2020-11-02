@@ -73,7 +73,7 @@ body {
     pointer-events:none;
     > .loader-center {
       //display:none;
-      text-align:center;
+      text-align:left;//center
       @include filter(opacity(0.9));
       > span {
         display:block;
