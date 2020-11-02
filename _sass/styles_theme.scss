@@ -680,14 +680,17 @@ $btn-lg-padding:0.7rem 2.3rem;
   .text-hero, .text-gigantic {
     font-size:2.5rem;
   }
-  .text-intro, .text-huge {
+  .text-intro {//, .text-huge
     font-size:1.8rem;
   }
-  .text-big {
+  .text-huge {//.text-intro,
     font-size:1.6rem;
   }
-  .text-medium {
+  .text-big {
     font-size:1.4rem;
+  }
+  .text-medium {
+    font-size:1.2rem;
   }
 }
 
