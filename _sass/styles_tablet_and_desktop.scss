@@ -374,6 +374,18 @@
           letter-spacing:0.2px;
           text-transform:uppercase;
           white-space:nowrap;
+          &::before {
+            content:'';
+            position:absolute;
+            width:0;
+            top:50%;
+            right:0;
+            //left:0;
+            border-bottom:1px solid theme-color('rosybrown');
+            pointer-events:none;
+            @include filter(opacity(0.8));
+            @include transition(width 0.3s ease-in-out);
+          }
           small {
             display:inline-block;
             position:absolute;
@@ -386,6 +398,11 @@
             color:darken(theme-color('chocolate'),10);//color:theme-color('chocolate')
             //@include filter(opacity(1));
             //text-decoration:line-through;
+            &::before {
+              width:100%;
+              right:auto;
+              left:0;
+            }
           }
         }
         &:nth-child(3) {
