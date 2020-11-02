@@ -78,6 +78,26 @@ jQuery(document).ready(function($) {
   alterClass();
 });
 
+// This Code Goes Together With "Rolly Init Just In Desktop"
+// Removing #Rolly Id On Mobile (BETTER CODE HERE) | But Rolly Still Inits, So New Code Is At The Top Of File
+jQuery(document).ready(function($) {
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww < 768) {//400
+      //$('.rolly-on-off').removeClass('blue');
+      $(".rolly-on-off").removeAttr("id");
+    } else if (ww >= 768) {//401
+      //$('.rolly-on-off').addClass('blue');
+      $(".rolly-on-off").attr("id", "rolly");
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  //Fire it when the page first loads:
+  alterClass();
+});
+
 // // Init Luxy
 // $(function() {
 //   luxy.init({
@@ -264,7 +284,7 @@ $(function() {
 //   setTimeout(function(url) { window.location = url }, 1000, this.href);
 // });
 
-// // Removing .Rolly Class On Mobile (BETTER CODE BELOW)
+// // Removing .Rolly Class On Mobile (BETTER CODE ABOVE)
 // $(window).resize(function() {//jQuery
 //  var screen = $(window);
 
@@ -275,7 +295,7 @@ $(function() {
 //  }
 // });
 
-// // Removing #Rolly Id On Mobile (BETTER CODE BELOW)
+// // Removing #Rolly Id On Mobile (BETTER CODE ABOVE)
 // $(window).resize(function() {//jQuery(window)
 //   var screen = $(window);
 
@@ -297,26 +317,6 @@ $(function() {
 // // Using jQuery
 // $(".rolly-on-off").attr("id", "rolly");
 // $(".rolly-on-off").removeAttr("id");
-
-// // This Code Can Totally Be Commented/Removed, But Better To Keep It Removing Id Too (This Way It Won't Init "Rolly" When Re-Sizing To Bigger Screen, But Will Keep As It Loaded First)
-// // Removing #Rolly Id On Mobile (BETTER CODE HERE) | But Rolly Still Inits, So New Code Is At The Top Of File
-// jQuery(document).ready(function($) {
-//   var alterClass = function() {
-//     var ww = document.body.clientWidth;
-//     if (ww < 768) {//400
-//       //$('.rolly-on-off').removeClass('blue');
-//       $(".rolly-on-off").removeAttr("id");
-//     } else if (ww >= 768) {//401
-//       //$('.rolly-on-off').addClass('blue');
-//       $(".rolly-on-off").attr("id", "rolly");
-//     };
-//   };
-//   $(window).resize(function(){
-//     alterClass();
-//   });
-//   //Fire it when the page first loads:
-//   alterClass();
-// });
 
 //---------------------------------IMAGESLOADED---------------------------------//
 
