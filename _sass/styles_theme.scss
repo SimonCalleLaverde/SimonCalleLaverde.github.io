@@ -1681,6 +1681,7 @@ div.menu-mobile {
         display:block;
         @include filter(opacity(0));
         @include transform(translateY(50px));
+        @include transition(none);
         h1, h2, h3, h4, h5, h6 {
           color:theme-color('rosybrown');
           @include transition(letter-spacing ease-out 0.3s);
@@ -2285,10 +2286,10 @@ header.about-header {
             left:0;
           }
           &:first-of-type {
-            top:-21.5px;
+            top:-20px;
           }
           &:last-of-type {
-            bottom:-33px;
+            bottom:-30px;
           }
         }
       }
@@ -2358,11 +2359,6 @@ section.about-myself-section {
   .about-postdata {
     font-size:17px;
   }
-
-
-
-
-
 }
 @include media-breakpoint-down(sm) {//Down
   section.about-myself-section {
@@ -2401,10 +2397,6 @@ section.about-myself-section {
 // About Lets Work Section
 section.about-lets-work-section {
   padding:30px 20px 40px;////pad-bott
-
-
-
-
 }
 @include media-breakpoint-down(sm) {//Down
   section.about-lets-work-section {
@@ -2436,7 +2428,7 @@ header.projects-header {
   .projects-header-middle {
     position:relative;
     img {
-      width:200px;
+      max-width:220px;
     }
     h1, h2, h3, h4, h5, h6 {
       position:absolute;
@@ -2464,7 +2456,7 @@ header.projects-header {
   header.projects-header {
     .projects-header-middle {
       img {
-        width:180px;
+        max-width:210px;//180px
       }
       h1, h2, h3, h4, h5, h6 {
         top:-59px;
@@ -2475,11 +2467,11 @@ header.projects-header {
 @media only screen and (max-width:400px) {//Down
   header.projects-header {
     .projects-header-middle {
-      img {
-        width:150px;
-      }
+      // img {
+      //   max-width:180px;
+      // }
       h1, h2, h3, h4, h5, h6 {
-        top:-41px;
+        top:-9.5%;//-41px
       }
     }
   }
