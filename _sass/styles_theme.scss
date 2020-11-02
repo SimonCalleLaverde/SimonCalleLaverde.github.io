@@ -275,6 +275,11 @@ body {
     font-family:$font-light-italic!important;
   }
 }
+@include media-breakpoint-down(sm) {//Down
+  body {
+    overflow-x:hidden;
+  }
+}
 img {
   max-width:100%;
 }
