@@ -2126,6 +2126,16 @@ section.home-business-projects-section, section.home-campaign-projects-section, 
 section.home-business-projects-section, section.home-campaign-projects-section {
   padding-bottom:35px;
 }
+@include media-breakpoint-down(md) {//Down
+  section.home-business-projects-section
+    padding-top:10px;
+  }
+}
+@media only screen and (max-width:400px) {//Down
+  section.home-business-projects-section
+    padding-top:0;
+  }
+}
 
 // Home See All Projects Section
 section.home-see-all-projects-section {
