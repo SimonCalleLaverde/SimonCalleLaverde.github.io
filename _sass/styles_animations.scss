@@ -103,6 +103,18 @@
   }
 }//@keyframes
 
+@keyframes letterSpaceAnim {
+  0% {
+    letter-spacing:0;
+  }
+  50% {
+    letter-spacing:2px;
+  }
+  100% {
+    letter-spacing:0;
+  }
+}//@keyframes
+
 //----------------------------------Loader Area Animation Styles----------------------------------//
 
 @keyframes loaderQuoteAnim {

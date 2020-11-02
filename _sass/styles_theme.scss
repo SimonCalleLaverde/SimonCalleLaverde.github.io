@@ -1684,7 +1684,7 @@ div.menu-mobile {
         @include transition(none);
         h1, h2, h3, h4, h5, h6 {
           color:theme-color('rosybrown');
-          @include transition(letter-spacing ease-out 0.3s);
+          @include transition(color ease-out 0.3s, letter-spacing ease-out 0.3s);
           // &::after {
           //   content:"";
           //   position:absolute;
@@ -1697,7 +1697,9 @@ div.menu-mobile {
         }
         &:hover, &:active, &:focus, &.active {
           h1, h2, h3, h4, h5, h6 {
+            color:theme-color('white');
             letter-spacing:2px;
+            @include animation(letterSpaceAnim 0.5s ease-out forwards);
             // &::after {
             //   width:100%;
             //   right:auto;
