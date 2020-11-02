@@ -531,7 +531,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   }
 }
 @media only screen and (max-width:400px) {//Down
-  $btn-normal-padding:0.2rem 0.15rem 0rem;
+  $btn-normal-padding:0.3rem 0.1rem 0rem;
   $btn-lg-padding:0.6rem 1.4rem;
   .btn {
     padding:$btn-normal-padding;
@@ -544,6 +544,16 @@ $btn-lg-padding:0.7rem 2.3rem;
       &.btn-longer {
         padding-right:2rem;
         padding-left:2rem;
+      }
+    }
+  }
+  .custom-checkbox-squared {//Buttons With Double Line Using ::before, As Per Rest Of Site
+    > .custom-control {
+      &.custom-checkbox, &.custom-radio {
+        label.custom-control-label {
+          padding:$btn-normal-padding;
+          font-size:13px;
+        }
       }
     }
   }
