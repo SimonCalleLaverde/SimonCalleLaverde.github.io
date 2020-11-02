@@ -8,13 +8,15 @@ container.addEventListener("mousemove", (e) => {
   let xAxis = (window.innerWidth / 2 - e.pageX) / 15;
   let yAxis = (window.innerHeight / 2 - e.pageY) / 15;
 
+  xAxis = xAxis * (-1);//Making "xAxis" Negative (I'm Noob, But)
+
   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 
 });
 
 // Animate In
 container.addEventListener("mouseenter", (e) => {
-  card.style.transition = "all 0.5s ease-out";//card.style.transition = "none";
+  card.style.transition = "all 0.3s ease-out";//card.style.transition = "none";
 });
 
 // Animate Out
