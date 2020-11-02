@@ -14,7 +14,6 @@ function moveCircle(e) {
 }
 
 $(window).on('mousemove', moveCircle);
-$(window).on('scroll', moveCircle);
 
 // HOVER STATES AS PER (https://stackoverflow.com/questions/51281666/animate-custom-cursor-when-hovering-on-a-link)
 $(document).mousemove(function(e) {
