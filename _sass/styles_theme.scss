@@ -1523,12 +1523,22 @@ nav.navbar {
 }
 @include media-breakpoint-down(sm) {//Down
   .logo {
+    a {
+      span {
+        padding:3px 5px 2px;
+      }
+    }
     @include transform-origin(top left);
     @include transform(scale(0.9));
   }
 }
 @include media-breakpoint-down(xs) {//Down
   .logo {
+    a {
+      span {
+        padding:3px 5px;
+      }
+    }
     @include transform(scale(0.85));
   }
 }
