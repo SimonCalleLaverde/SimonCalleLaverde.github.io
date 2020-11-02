@@ -1043,7 +1043,7 @@
   }
 
   // Theme Dark
-  body.theme-dark, body.is-bottom, body.page-type-feedback {
+  body.theme-dark, body.is-bottom, body.page-type-feedback, body.theme-dark-mobile-wide {
     nav.navbar {
       ul.navbar-nav {
         @include filter(opacity(1));

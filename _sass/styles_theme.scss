@@ -536,7 +536,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   }
 }
 @media only screen and (max-width:400px) {//Down
-  $btn-normal-padding:0.3rem 0.6rem 0.1rem;
+  $btn-normal-padding:0.4rem 0.6rem 0.2rem;
   $btn-lg-padding:0.6rem 1.5rem;
   .btn {
     padding:$btn-normal-padding;
@@ -1981,7 +1981,7 @@ header.home-hello-header {
           top:-30px;//Revision In Phone
         }
         .hero-bottom {
-          bottom:-28px;//Revision In Phone
+          bottom:-30px;//Revision In Phone
         }
       }
       span.header-what-i-do {
@@ -2794,7 +2794,7 @@ body.page-type-feedback {
 }
 
 // Theme Dark
-body.theme-dark, body.is-bottom, body.page-type-feedback {
+body.theme-dark, body.is-bottom, body.page-type-feedback, body.theme-dark-mobile-wide {
   main {
     background-color:theme-color('chocolate');
   }
