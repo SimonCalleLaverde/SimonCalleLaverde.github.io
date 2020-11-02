@@ -1972,19 +1972,15 @@ header.home-hello-header {
     .hello-header-middle-wrapper {
       padding:1.3rem!important;
     }
-
-    
-    .hello-header-hero {
-      .hero-top {
-        top:-32px;//Revision In Phone
-      }
-      .hero-bottom {
-        bottom:-38px;//Revision In Phone
-      }
-    }
-
-
     .hello-header-middle {
+      .hello-header-hero {
+        .hero-top {
+          top:-32px;//Revision In Phone
+        }
+        .hero-bottom {
+          bottom:-38px;//Revision In Phone
+        }
+      }
       span.header-what-i-do {
         bottom:-130px;
       }
