@@ -86,9 +86,11 @@ jQuery(document).ready(function($) {
     if (ww < 768) {//400
       //$('.rolly-on-off').removeClass('blue');
       $(".rolly-on-off").removeAttr("id");
+      $('body').addClass('theme-dark-mobile-wide');//Theme Dark All In Mobile
     } else if (ww >= 768) {//401
       //$('.rolly-on-off').addClass('blue');
       $(".rolly-on-off").attr("id", "rolly");
+      $('body').removeClass('theme-dark-mobile-wide');//Theme Dark All In Mobile
     };
   };
   $(window).resize(function(){
