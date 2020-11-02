@@ -677,8 +677,11 @@ $btn-lg-padding:0.7rem 2.3rem;
   }
 }
 @media only screen and (max-width:400px) {//Down
-  .text-hero, .text-gigantic {
+  .text-hero {//, .text-gigantic
     font-size:2.5rem;
+  }
+  .text-gigantic {//.text-hero,
+    font-size:2.3rem;
   }
   .text-intro {//, .text-huge
     font-size:1.8rem;
