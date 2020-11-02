@@ -1,40 +1,81 @@
 //---------------------------------PLUGINS INIT---------------------------------//
 
-// Init Rolly
-$(function() {
-  //import rolly from 'rolly.js';
+// // Init Rolly
+// $(function() {
+//   //import rolly from 'rolly.js';
 
-  // const view = document.querySelector('#rolly');
-  // const r = rolly({
-  //   view,
-  //   native: true,
-  //   // other options
-  // });
-  // r.init();
+//   // const view = document.querySelector('#rolly');
+//   // const r = rolly({
+//   //   view,
+//   //   native: true,
+//   //   // other options
+//   // });
+//   // r.init();
   
-  const config = {
-    view: document.querySelector('#rolly'),
-    preload: true,
-    native: true,//false
-    change(state) {
-      document.documentElement.style.backgroundColor = `hsl(${(state.current / state.bounding) * 360}, 100%, 95%)`;
-    },
-    scenes: {
-      rotateZ: {
-        transform({ globalState, sceneState, transform }) {
-          const { previous, current, transformPrefix } = globalState;
-          const { context } = sceneState.cache;
-          const delta = current - previous;
-          const rotationZ = delta / 40;//32//24//48//2
-          const skew = delta / 50;//40//30//60//2.5
-          context.style[transformPrefix] = `translate3d(0, ${transform}px, 0) rotateZ(${rotationZ}deg) skew(${skew}deg)`;
-        },
-      },
-    },
-  };
+//   const config = {
+//     view: document.querySelector('#rolly'),
+//     preload: true,
+//     native: true,//false
+//     change(state) {
+//       document.documentElement.style.backgroundColor = `hsl(${(state.current / state.bounding) * 360}, 100%, 95%)`;
+//     },
+//     scenes: {
+//       rotateZ: {
+//         transform({ globalState, sceneState, transform }) {
+//           const { previous, current, transformPrefix } = globalState;
+//           const { context } = sceneState.cache;
+//           const delta = current - previous;
+//           const rotationZ = delta / 40;//32//24//48//2
+//           const skew = delta / 50;//40//30//60//2.5
+//           context.style[transformPrefix] = `translate3d(0, ${transform}px, 0) rotateZ(${rotationZ}deg) skew(${skew}deg)`;
+//         },
+//       },
+//     },
+//   };
 
-  const r = window.rolly(config);
-  r.init();
+//   const r = window.rolly(config);
+//   r.init();
+// });
+
+// Init Rolly (JUST IN DESKTOP)
+jQuery(document).ready(function($) {
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww >= 768) {//400
+      
+      // Initializing Rolly (Just In Desktop) [Start]
+      const config = {
+        view: document.querySelector('#rolly'),
+        preload: true,
+        native: true,//false
+        change(state) {
+          document.documentElement.style.backgroundColor = `hsl(${(state.current / state.bounding) * 360}, 100%, 95%)`;
+        },
+        scenes: {
+          rotateZ: {
+            transform({ globalState, sceneState, transform }) {
+              const { previous, current, transformPrefix } = globalState;
+              const { context } = sceneState.cache;
+              const delta = current - previous;
+              const rotationZ = delta / 40;//32//24//48//2
+              const skew = delta / 50;//40//30//60//2.5
+              context.style[transformPrefix] = `translate3d(0, ${transform}px, 0) rotateZ(${rotationZ}deg) skew(${skew}deg)`;
+            },
+          },
+        },
+      };
+
+      const r = window.rolly(config);
+      r.init();
+      // Initializing Rolly (Just In Desktop) [End]
+
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  //Fire it when the page first loads:
+  alterClass();
 });
 
 // // Init Luxy
@@ -222,6 +263,60 @@ $(function() {
 //   e.preventDefault();
 //   setTimeout(function(url) { window.location = url }, 1000, this.href);
 // });
+
+// // Removing .Rolly Class On Mobile (BETTER CODE BELOW)
+// $(window).resize(function() {//jQuery
+//  var screen = $(window);
+
+//  if (screen.width < 768) {
+//    $(".rolly-on-off").removeClass("rolly");
+//  } else {
+//    $(".rolly-on-off").addClass("rolly");
+//  }
+// });
+
+// // Removing #Rolly Id On Mobile (BETTER CODE BELOW)
+// $(window).resize(function() {//jQuery(window)
+//   var screen = $(window);
+
+//   if (screen.width < 768) {
+//     $(".rolly-on-off").removeAttr("id");
+//   } else {
+//     $(".rolly-on-off").attr("id", "rolly");
+//   }
+// });
+
+// // Setting and unsetting the "Id" ("Id"s are single strings)
+// // To add new "Id"
+// document.querySelector(".rolly-on-off").id = "rolly";
+// // Or
+// document.querySelector(".rolly-on-off").setAttribute("id", "rolly");
+// // And to remove (Removing the attribute is best way)
+// document.querySelector(".rolly-on-off").removeAttribute("id");
+// document.querySelector(".rolly-on-off").setAttribute("id", "");
+// // Using jQuery
+// $(".rolly-on-off").attr("id", "rolly");
+// $(".rolly-on-off").removeAttr("id");
+
+// This Code Can Totally Be Commented/Removed, But Better To Keep It Removing Id Too (This Way It Won't Init "Rolly" When Re-Sizing To Bigger Screen, But Will Keep As It Loaded First)
+// Removing #Rolly Id On Mobile (BETTER CODE HERE) | But Rolly Still Inits, So New Code Is At The Top Of File
+jQuery(document).ready(function($) {
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww < 768) {//400
+      //$('.rolly-on-off').removeClass('blue');
+      $(".rolly-on-off").removeAttr("id");
+    } else if (ww >= 768) {//401
+      //$('.rolly-on-off').addClass('blue');
+      $(".rolly-on-off").attr("id", "rolly");
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  //Fire it when the page first loads:
+  alterClass();
+});
 
 //---------------------------------IMAGESLOADED---------------------------------//
 
