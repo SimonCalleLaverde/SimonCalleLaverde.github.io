@@ -536,7 +536,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   }
 }
 @media only screen and (max-width:400px) {//Down
-  $btn-normal-padding:0.3rem 0.7rem 0.1rem;
+  $btn-normal-padding:0.3rem 0.6rem 0.1rem;
   $btn-lg-padding:0.6rem 1.5rem;
   .btn {
     padding:$btn-normal-padding;
@@ -557,7 +557,7 @@ $btn-lg-padding:0.7rem 2.3rem;
       &.custom-checkbox, &.custom-radio {
         label.custom-control-label {
           padding:$btn-normal-padding;
-          font-size:13px;
+          font-size:12px;//13px
         }
       }
     }
@@ -1536,7 +1536,7 @@ nav.navbar {
   .logo {
     a {
       span {
-        padding:3px 5px;
+        padding:3px 5px 3.3px;
       }
     }
     @include transform(scale(0.85));
@@ -1673,23 +1673,23 @@ div.menu-mobile {
           color:theme-color('rosybrown');
           @include filter(opacity(0));
           @include transform(translateY(50px));
-          &::after {
-            content:"";
-            position:absolute;
-            width:0;
-            top:49%;
-            right:0;
-            border-bottom:1px solid theme-color('rosybrown');
-            @include transition(width ease-out 0.3s);
-          }
+          // &::after {
+          //   content:"";
+          //   position:absolute;
+          //   width:0;
+          //   top:49%;
+          //   right:0;
+          //   border-bottom:1px solid theme-color('rosybrown');
+          //   @include transition(width ease-out 0.3s);
+          // }
         }
         &:hover, &:active, &:focus, &.active {
           h1, h2, h3, h4, h5, h6 {
-            &::after {
-              width:100%;
-              right:auto;
-              left:0;
-            }
+            // &::after {
+            //   width:100%;
+            //   right:auto;
+            //   left:0;
+            // }
           }
         }
       }
@@ -1900,7 +1900,7 @@ header.home-hello-header {
       font-size:22px;
       line-height:1.3;
       pointer-events:none;
-      @include filter(opacity(0.5));
+      @include filter(opacity(0.6));
     }
   }
 }
@@ -1972,6 +1972,18 @@ header.home-hello-header {
     .hello-header-middle-wrapper {
       padding:1.3rem!important;
     }
+
+    
+    .hello-header-hero {
+      .hero-top {
+        top:-32px;//Revision In Phone
+      }
+      .hero-bottom {
+        bottom:-38px;//Revision In Phone
+      }
+    }
+
+
     .hello-header-middle {
       span.header-what-i-do {
         bottom:-130px;
@@ -2194,7 +2206,7 @@ header.about-header {
         left:0;
         font-size:22px;
         line-height:1.3;
-        @include filter(opacity(0.5));
+        @include filter(opacity(0.6));
       }
     }
   }
@@ -2412,8 +2424,9 @@ header.projects-header {
     .projects-header-timeline {
       font-size:22px;
       line-height:1.3;
+      @include filter(opacity(0.6));
       span {
-        @include filter(opacity(0.5));
+        //@include filter(opacity(0.6));
       }
       time, i {
         display:block;
