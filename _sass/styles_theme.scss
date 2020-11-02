@@ -533,12 +533,6 @@ $btn-lg-padding:0.7rem 2.3rem;
 @media only screen and (max-width:400px) {//Down
   $btn-normal-padding:0.2rem 0.5rem;
   $btn-lg-padding:0.6rem 1.5rem;
-
-
-
-
-
-
   .btn {
     padding:$btn-normal-padding;
     font-size:13px;
@@ -837,6 +831,8 @@ input[type="submit"] {
       label.custom-control-label {
         position:relative;
         padding:$btn-normal-padding;
+        font-family:$font-light;
+        font-size:14px;
         background-color:transparent;
         border:1px solid theme-color('rosybrown');
         @include transition(background-color ease-out 0.5s, color ease-out 0.5s, filter ease-out 0.5s);
