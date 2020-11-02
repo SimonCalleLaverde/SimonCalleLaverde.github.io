@@ -349,6 +349,13 @@ body {
     }
   }
 }
+@include media-breakpoint-down(xs) {//Down//sm
+  .loader-circle {
+    margin:auto;
+    right:0;
+    left:0;
+  }
+}
 
 //----------------------------------Loader Header Elements Animation Styles----------------------------------//
 
