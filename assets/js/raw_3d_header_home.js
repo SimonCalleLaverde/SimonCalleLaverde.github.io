@@ -8,7 +8,8 @@ container.addEventListener("mousemove", (e) => {
   let xAxis = (window.innerWidth / 2 - e.pageX) / 15;
   let yAxis = (window.innerHeight / 2 - e.pageY) / 15;
 
-  xAxis = xAxis * (-1);//Making "xAxis" Negative (I'm Noob, But)
+  //xAxis = xAxis * (-1);//Making "xAxis" Negative
+  yAxis = yAxis * (-1);//Making "yAxis" Negative//Inverted Y Axis
 
   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 
