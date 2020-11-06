@@ -48,7 +48,7 @@ body {
 //----------------------------------Loading Animation (Cursor Default & Cursor Custom) Styles----------------------------------//
 
 body {
-  &.loading, &.rendering-quick, &.home.rendering {
+  &.loading, &.rendering-internal, &.home.rendering {
     cursor:progress;
     overflow-y:hidden!important;
     // .cursor {
@@ -80,7 +80,7 @@ body {
         overflow:hidden;
         h1, h2, h3, h4, h5, h6 {
           &.loading-quote {
-            @include transform(translateY(150px));//GSAP Moves In
+            @include transform(translateY(150px));//skewY(10deg)//GSAP Moves In
           }
         }
       }
@@ -304,17 +304,17 @@ body {
 
 //----------------------------------Loading Animation (Loader Circle Small) Styles----------------------------------//
 
-.loader-circle, .loader-line {
-  position:fixed;//absolute
-  opacity:0.9;//So It Doesn't Disturb With Filter Anim
-  @include filter(opacity(0));
-  @include animation(fadeInOutAnim 3s ease-in-out forwards);
-}
 .loader-circle, .loader-circle > div {
   $circle-size:17px;
   width:$circle-size;
   height:$circle-size;
   @include border-radius(50%);
+}
+.loader-circle, .loader-line {
+  position:fixed;//absolute
+  opacity:0;//0.9//So It Doesn't Disturb With Filter Anim
+  //@include filter(opacity(0));
+  //@include animation(fadeInAnim 3s ease-in-out forwards 0);
 }
 // .loader-line {
 //   width:0;
@@ -349,6 +349,13 @@ body {
     }
   }
 }
+body {
+  &.imagesloaded {
+    .loader-circle, .loader-line {
+      @include animation(fadeOutAnim 2s ease-in-out forwards 2.2s);
+    }
+  }
+}
 @include media-breakpoint-down(xs) {//Down//sm
   .loader-circle {
     margin:auto;
@@ -361,7 +368,7 @@ body {
 
 // cubic-bezier(0.455,0.03,0.515,0.955)
 
-// // Example From (J.I)
+// // Example From (Jomaira Imagen)
 // header.home-hello-header-j-i {
 //   .hello-header-headline-j-i {
 //     transform-style:preserve-3d;
