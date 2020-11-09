@@ -17,7 +17,7 @@ container.addEventListener("mousemove", (e) => {
 
 // Animate In
 container.addEventListener("mouseenter", (e) => {
-  card.style.transition = "all 0.3s ease-out";//card.style.transition = "none";
+  card.style.transition = "all 0.5s ease-out";//card.style.transition = "none";
 });
 
 // Animate Out

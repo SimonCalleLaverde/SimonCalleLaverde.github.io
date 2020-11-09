@@ -1,0 +1,1 @@
+var animation=gsap.timeline({defaults:{ease:"power1.out"}});animation.to(".loader-area > .loader-center > span > .loading-quote",{y:"0%",duration:1.5,stagger:.3});animation.to(".loader-circle",{opacity:"100%",duration:4});animation.to(".loader-area > .loader-center",{opacity:"0",duration:1,delay:0},"-=2.5");
