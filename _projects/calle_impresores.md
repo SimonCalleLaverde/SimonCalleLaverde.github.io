@@ -19,7 +19,7 @@ web:
     - /uploads/site-web-calle-impresores-6.png
     - /uploads/site-web-calle-impresores-7.png
     - /uploads/site-web-calle-impresores-8.png
-  image_fonts: ""
+  image_fonts: /uploads/style-guide-image-calle-impresores.png
 type: Business Website & Catalogue
 category: Recent Independent Project
 tags: [Business Website, Business Recent, Theme Dark]

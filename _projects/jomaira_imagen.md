@@ -19,7 +19,7 @@ web:
     - /uploads/site-web-jomaira-imagen-6.png
     - /uploads/site-web-jomaira-imagen-7.png
     - /uploads/site-web-jomaira-imagen-8.png
-  image_fonts: ""
+  image_fonts: /uploads/style-guide-image-jomaira-imagen.png
 type: Business Website & Blog
 category: Recent Independent Project
 tags: [Business Website, Business Recent, Theme Dark]
