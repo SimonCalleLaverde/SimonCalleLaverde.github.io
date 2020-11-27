@@ -136,30 +136,30 @@
               bottom:-33px;
               left:-22px;
               z-index:21;
+              .project-details {
+                position:absolute;
+                width:calc(100% - 1px);
+                left:1px;
+                text-align:left;
+                > .project-type {
+                  @include filter(opacity(1));
+                  @include transform(translateY(0));
+                }
+                > .project-roles {
+                  position:absolute;
+                  top:0;
+                  right:0;//auto
+                  bottom:0;
+                  left:0;
+                  @include filter(opacity(0));
+                  @include transform(translateY(-20px));
+                }
+              }
             }
             .project-details, .project-info {
               overflow:hidden;
               > .project-data, > .project-platforms, > .project-type, > .project-roles {
                 @include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
-              }
-            }
-            .project-details {
-              position:absolute;
-              width:calc(100% - 1px);
-              left:1px;
-              text-align:left;
-              > .project-type {
-                @include filter(opacity(1));
-                @include transform(translateY(0));
-              }
-              > .project-roles {
-                position:absolute;
-                top:0;
-                right:0;//auto
-                bottom:0;
-                left:0;
-                @include filter(opacity(0));
-                @include transform(translateY(-20px));
               }
             }
             .project-info {
@@ -948,13 +948,17 @@
   // Projects Section
   section.projects-section {
     position:relative;
-    padding:205px 0 0;
+    padding:100px 0 0;//205px 0 0//"rellax" Changes It A Bit If Active
   }
   @include media-breakpoint-up(lg) {
-    padding:225px 0 20px;
+    section.projects-section {
+      padding:100px 0 0;
+    }
   }
   @include media-breakpoint-up(xl) {
-    padding:235px 0 30px;//Should Be, But "rellax" Changes It: 157px 0 30px
+    section.projects-section {
+      padding:100px 0 0;
+    }
   }
 
   // Project Header

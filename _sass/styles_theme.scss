@@ -909,9 +909,15 @@ article.project-article {
           font-size:11px;
           letter-spacing:0.8px;
           text-transform:uppercase;
-          .project-details {
-            width:100%;
-            bottom:-17px;
+          .project-title {
+            mix-blend-mode:screen;//luminosity//hard-light//exclusion//color-dodge//difference
+            h1, h2, h3, h4, h5, h6 {
+              //mix-blend-mode:screen;
+            }
+            .project-details {
+              width:100%;
+              bottom:-17px;
+            }
           }
           .project-info {
             position:absolute;
@@ -974,6 +980,7 @@ article.project-article {
             right:0;
             bottom:-60px;
             left:0;
+            mix-blend-mode:screen;//luminosity//hard-light//exclusion//color-dodge//difference
             h1, h2, h3, h4, h5, h6 {
               // font-size:35px;
               // line-height:1.2;
