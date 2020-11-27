@@ -468,7 +468,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   border:1px solid theme-color('rosybrown');
   @include border-radius(0);
   @include filter(opacity(1));
-  @include transition(all ease-out 0.5s);
+  @include transition(all ease-out 0.4s);
   &::before {
     content:"";
     position:absolute;
@@ -483,7 +483,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     white-space:nowrap;
     pointer-events:none;
     @include transform(translate(3px,3px));
-    @include transition(all ease-out 0.5s);
+    @include transition(all ease-out 0.4s);
   }
   // &.btn-view-the-site {
   //   &::before {
@@ -823,8 +823,6 @@ input[type="submit"] {
             }
           }
         }
-      }
-      input.custom-control-input {
         &:checked {
           ~ label.custom-control-label {
             background-color:theme-color('rosybrown');
@@ -846,7 +844,7 @@ input[type="submit"] {
         font-size:14px;
         background-color:transparent;
         border:1px solid theme-color('rosybrown');
-        @include transition(background-color ease-out 0.5s, color ease-out 0.5s, filter ease-out 0.5s);
+        @include transition(background-color ease-out 0.4s, color ease-out 0.4s, filter ease-out 0.4s);
         &::before {
           //content:'';
           position:absolute;
@@ -864,7 +862,7 @@ input[type="submit"] {
           pointer-events:none;
           @include border-radius(0);
           @include transform(translate(3px,3px));
-          @include transition(all ease-out 0.5s);
+          @include transition(background-color ease-out 0.4s, color ease-out 0.4s, transform ease-out 0.4s);
         }
         &::after {
           display:none;
