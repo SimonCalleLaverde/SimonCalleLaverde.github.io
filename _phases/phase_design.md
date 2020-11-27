@@ -1,5 +1,5 @@
 ---
-title: Design
+title: UI&nbsp;Design
 image_logo: "/uploads/absurd-illustrations-design.png"
 order: 2
 ---
