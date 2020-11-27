@@ -95,12 +95,10 @@
     .text-hero {
       font-size:6.3rem;
     }
-
     .text-gigantic {
       font-size:5.5rem;
       line-height:0.93;
     }
-
     .text-intro, .text-huge {
       font-size:3.85rem;
     }
@@ -553,7 +551,7 @@
   }
   @include media-breakpoint-up(lg) {
     section.home-businesses-headline-section, section.home-campaigns-headline-section, section.home-skills-headline-section, section.workflow-tools-headline-section, section.home-lets-create-headline-section, section.home-three-phases-headline-section {
-      padding:100px 0 67px;
+      padding:100px 0 37px;//100px 0 67px
     }
   }
 
@@ -570,6 +568,9 @@
   // Home See All Projects Section
   section.home-see-all-projects-section {
     padding:57px 0 51px;
+    .see-all-projects-link-track.text-hero {
+      line-height:0.88;
+    }
   }
   @include media-breakpoint-up(lg) {
     section.home-see-all-projects-section {
