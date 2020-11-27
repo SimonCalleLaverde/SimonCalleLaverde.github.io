@@ -87,16 +87,13 @@
     .text-medium {
       font-size:1.7rem;
     }
-    // .text-small {
-    //   font-size:1.2rem;
-    // }
   }
   @include media-breakpoint-up(xl) {
     .text-hero {
       font-size:6.3rem;
     }
     .text-gigantic {
-      font-size:5.5rem;
+      font-size:5.3rem;
       line-height:0.93;
     }
     .text-intro, .text-huge {
