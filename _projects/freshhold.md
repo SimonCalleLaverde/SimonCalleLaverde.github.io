@@ -7,7 +7,7 @@ thumbnail_image: /uploads/site-image-freshhold.jpg
 header_image: /uploads/site-image-freshhold.jpg
 platforms: [Dreamweaver, Html Css Php]
 year: 2015
-roles: [UI, UX, Design, Development]
+roles: [UI, Design, Development]
 web:
   launch_url: ""
   images:
