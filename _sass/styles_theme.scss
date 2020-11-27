@@ -515,6 +515,10 @@ $btn-lg-padding:0.7rem 2.3rem;
       @include transform(translate(0,0));
     }
   }
+  &:hover, &:active, &:focus {
+    outline:none;
+    @include box-shadow(none);
+  }
   &.btn-longer {
     padding-right:2em;
     padding-left:2em;
@@ -812,6 +816,14 @@ input[type="submit"] {
     &.custom-checkbox, &.custom-radio {
       text-align:center;
       input.custom-control-input {
+        &:hover, &:active, &:focus, &:checked {
+          ~ label.custom-control-label {
+            &::before {
+              outline:none;
+              @include box-shadow(none);
+            }
+          }
+        }
         &:hover, &:checked {//, &:active, &:focus
           ~ label.custom-control-label {
             @include filter(opacity(0.8));
