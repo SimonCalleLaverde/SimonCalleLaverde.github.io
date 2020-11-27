@@ -92,9 +92,15 @@
     // }
   }
   @include media-breakpoint-up(xl) {
-    .text-hero, .text-gigantic {
+    .text-hero {
       font-size:6.3rem;
     }
+
+    .text-gigantic {
+      font-size:5.5rem;
+      line-height:0.93;
+    }
+
     .text-intro, .text-huge {
       font-size:3.85rem;
     }
@@ -608,6 +614,27 @@
   // About Header
   header.about-header {
     padding:100px 0;
+  }
+  @include media-breakpoint-up(lg) {
+    header.about-header {
+      .about-header-middle {
+        > div {
+          top:-41px;
+          span.about-header-short-story {
+            bottom:-115px;
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    header.about-header {
+      .about-header-middle {
+        > div {
+          top:-39px;//-70px
+        }
+      }
+    }
   }
 
   // About Myself Section

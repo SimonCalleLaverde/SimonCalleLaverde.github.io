@@ -1530,7 +1530,7 @@ nav.navbar {
     }
     &:hover, &:active, &:focus {
       span {
-        @include filter(opacity(0.6));
+        @include filter(opacity(0.7));
       }
     }
   }
@@ -2250,7 +2250,7 @@ header.about-header {
     }
   }
 }
-@include media-breakpoint-up(sm) {//Down
+@include media-breakpoint-up(sm) {
   header.about-header {
     .about-header-middle {
       h1, h2, h3, h4, h5, h6 {
@@ -2260,24 +2260,12 @@ header.about-header {
         position:absolute;
         //width:210px;
         //margin:auto;
-        top:-80px;
+        top:-53px;//-80px
         right:0;
         //bottom:0;
         left:0;
         span.about-header-short-story {
           bottom:-100px;
-        }
-      }
-    }
-  }
-  @include media-breakpoint-up(lg) {
-    header.about-header {
-      .about-header-middle {
-        > div {
-          top:-70px;
-          span.about-header-short-story {
-            bottom:-115px;
-          }
         }
       }
     }
