@@ -334,7 +334,7 @@ body {
     right:0;
     bottom:0;
     left:0;
-    background-color:theme-color("chocolate");
+    background-color:theme-color("aqua");//chocolate
     border:1px solid theme-color("rosybrown");//dashed
     @include animation(rotateAnim 2.5s linear infinite);
     &::before {
@@ -344,7 +344,7 @@ body {
       height:2px;
       top:-1px;
       left:5px;
-      background-color:theme-color("chocolate");
+      background-color:theme-color("aqua");//chocolate
       z-index:20012;
     }
   }
