@@ -2661,7 +2661,7 @@ footer {
             @include filter(opacity(0));
             @include transform(translateY(30px));
             //@include transform-origin(center bottom);
-            @include transition(filter ease-out 0.5s, transform ease-out 0.5s);
+            @include transition(filter ease-out 0.4s, transform ease-out 0.4s);
           }
           &.icon-linkedin {
             svg {
