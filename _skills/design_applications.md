@@ -3,10 +3,10 @@ title: Design<br>Applications
 order: 2
 ---
 
-<p><span class="font-light">Adobe XD</span><br>From the Adobe family, this is the primary tool I use for designing websites.</p>
+<p><span class="font-light">Adobe XD & Figma</span><br>Adobe XD is the primary tool I use for designing websites, although I've been learning some around Figma too as it is more useful for collaboration sceneries, for presenting a project, and for getting feedback.</p>
 
-<p><span class="font-light">Adobe Illustrator</span><br>A tool I have used extensively from the beginning of my career<!--, though less in the recent past-->.</p>
+<p><span class="font-light">Adobe Illustrator</span><br>A tool I have used extensively from the beginning of my career for vector based elements.</p>
 
-<p><span class="font-light">Adobe Photoshop</span><br>A complimentary tool to be used in conjunction with Illustrator. I used it extensively specially at university.
+<p><span class="font-light">Adobe Photoshop</span><br>A complimentary tool for photo edition to be used in conjunction with Illustrator. I used it extensively specially at university. I also took a course in photography for 6 years since school and worked in a photography studio, I created a thesis project around advertising photography, so I had to learn a lot of photo edition.
 
-<p><span class="font-light">CorelDRAW</span><br>Coming from a family that works in the graphic arts / design and print industry, I have used this editor since I was a child.</p>
+<p><span class="font-light">CorelDRAW</span><br>Coming from a family that works in the graphic arts, design, and print industry, I have used this editor since I was a child, which also mixes some of Illustrator and Photoshop capabilities but much less widely used.</p>
