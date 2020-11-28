@@ -158,12 +158,6 @@
     <nav class="footer-nav navbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="link nav-link link-page-load{% if page.slug == 'home' %} active-link{% endif %}" href="javascript:delay('/')">
-            <span>Home</span>
-          </a>
-        </li>
-
-        <li class="nav-item">
           <a class="link nav-link link-page-load{% if page.slug == 'about' %} active-link{% endif %}" href="javascript:delay('/about')">
             <span>About Me</span>
           </a>
@@ -176,7 +170,13 @@
         </li>
 
         <li class="nav-item">
-          <a class="link nav-link link-page-load{% if page.type_slug == 'feedback' %} active-link{% endif %}" href="javascript:delay('/contact_me')">
+          <a class="link nav-link link-page-load{% if page.slug == 'create_a_project_with_me' %} active-link{% endif %}" href="javascript:delay('/create_a_project_with_me')">
+            <span>For Freelance</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="link nav-link link-page-load{% if page.slug == 'contact_me' %} active-link{% endif %}" href="javascript:delay('/contact_me')"><!--{% if page.type_slug == 'feedback' %}-->
             <span>Contact Me</span>
           </a>
         </li>

@@ -2851,7 +2851,7 @@ body.page-type-feedback {
 }
 
 // Theme Dark
-body.theme-dark, body.is-bottom, body.page-type-feedback, body.theme-dark-mobile-wide {
+body.theme-dark, body.is-bottom.page-type-basic, body.is-bottom.page-type-project, body.page-type-feedback.create_a_project_with_me, body.theme-dark-mobile-wide {
   main {
     background-color:theme-color('chocolate');
   }
