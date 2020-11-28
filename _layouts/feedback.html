@@ -2,4 +2,9 @@
 layout: "main"
 ---
 
-{% include feedback/feedback_page.html %}
+{% if page.slug == "create_a_project_with_me" %}
+	{% include feedback/feedback_create_a_project_with_me_page.html %}
+
+{% elsif page.slug == "contact_me" %}
+	{% include feedback/feedback_page.html %}
+{% endif %}

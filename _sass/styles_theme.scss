@@ -1825,6 +1825,13 @@ div.menu-mobile {
             }
           }
         }
+        &:nth-of-type(4) {
+          a.nav-mobile-link {
+            @include transition(filter ease-in-out 0.5s 0.9s, transform ease-in-out 0.5s 0.9s);//Leaving transition only under (&.opened) so it always starts from 0 even if cancelling an pressing button reppeatedly
+            h1, h2, h3, h4, h5, h6 {
+            }
+          }
+        }
       }
     }
     nav.nav-mobile-social-media {
@@ -1839,6 +1846,9 @@ div.menu-mobile {
         }
         &:nth-child(3) {
           @include transition(all ease-in-out 0.5s 1s);
+        }
+        &:nth-child(4) {
+          @include transition(all ease-in-out 0.5s 1.2s);
         }
       }
     }
