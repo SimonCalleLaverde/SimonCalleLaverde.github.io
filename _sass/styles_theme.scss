@@ -614,7 +614,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   font-size:4.3rem;
 }
 .text-gigantic {
-  font-size:3.9rem;
+  font-size:3.7rem;
 }
 .text-hero {
   line-height:1.5;
@@ -653,8 +653,11 @@ $btn-lg-padding:0.7rem 2.3rem;
   -webkit-text-stroke-color:theme-color('chocolate');
 }
 @include media-breakpoint-down(xs) {//Down
-  .text-hero, .text-gigantic {
+  .text-hero {
     font-size:3.4rem;
+  }
+  .text-gigantic {
+    font-size:3rem;
   }
   .text-gigantic {
     line-height:1;
