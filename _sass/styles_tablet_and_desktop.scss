@@ -390,9 +390,9 @@
           small {
             display:inline-block;
             position:absolute;
-            top:4.5px;
-            right:-19.5px;
-            font-size:9px;
+            top:-1px;//4.5px
+            right:-20px;//-19.5px;
+            font-size:10px;//9px
             color:theme-color('chocolate');
           }
           &:hover, &:active, &:focus, &.active-link {
