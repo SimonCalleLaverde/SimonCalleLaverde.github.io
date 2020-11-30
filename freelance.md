@@ -3,8 +3,8 @@ layout: feedback
 title: Freelance
 headline: Do you want to create a project with me?
 description: "Let me know something more about your project, your goals, and who you are. Please fill the form below to get in contact with me."
-permalink: /create_a_project_with_me
-slug: create_a_project_with_me
+permalink: /hire_a_project
+slug: hire_a_project
 type_slug: feedback
 header_image: "/uploads/header-image-feedback.jpg"
 ---
