@@ -610,8 +610,11 @@ $btn-lg-padding:0.7rem 2.3rem;
 // Headline, Title, Subtitle
 .headline, .title, .subtitle {
 }
-.text-hero, .text-gigantic {
+.text-hero {
   font-size:4.3rem;
+}
+.text-gigantic {
+  font-size:3.9rem;
 }
 .text-hero {
   line-height:1.5;
@@ -2468,6 +2471,10 @@ header.projects-header {
         @include animation(lineThorughBackAnim 0.9s linear forwards);
       }
     }
+  }
+  .projects-header-headline, .projects-header-intro {
+    padding-left:30px;
+    padding-right:30px;
   }
   .projects-header-middle {
     position:relative;

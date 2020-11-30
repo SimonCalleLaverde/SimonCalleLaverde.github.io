@@ -371,7 +371,7 @@
           display:inline-block;
           padding:0.1rem;//0.2rem 0.1rem//0.1rem 0.5rem
           color:rgba(35,31,32,0.8);//theme-color('chocolate')
-          font-size:10.5px;//12px
+          font-size:10px;//10.5px//12px
           letter-spacing:0.2px;
           text-transform:uppercase;
           white-space:nowrap;
@@ -390,8 +390,8 @@
           small {
             display:inline-block;
             position:absolute;
-            top:0;//4.5px
-            right:-20px;//-19.5px;
+            top:-0.5px;//4.5px
+            right:-20.5px;//-19.5px;
             font-size:10px;//9px
             color:theme-color('chocolate');
           }
@@ -898,7 +898,7 @@
 
   // Projects Header
   header.projects-header {
-    padding:50px 0;//30px 0
+    padding:70px 0 50px;//50px 0//30px 0
     .projects-header-middle {
       img {
         width:200px;
@@ -910,11 +910,15 @@
   }
   @media only screen and (min-width:850px) {
     header.projects-header {
-      //padding:50px 0;
+      padding:90px 0 80px;
       .projects-header-middle {
         h1, h2, h3, h4, h5, h6 {
           top:-55px;
         }
+      }
+      .projects-header-headline, .projects-header-intro {
+        padding-left:0;
+        padding-right:0;
       }
     }
   }
@@ -948,17 +952,7 @@
   // Projects Section
   section.projects-section {
     position:relative;
-    padding:100px 0 0;//205px 0 0//"rellax" Changes It A Bit If Active
-  }
-  @include media-breakpoint-up(lg) {
-    section.projects-section {
-      padding:100px 0 0;
-    }
-  }
-  @include media-breakpoint-up(xl) {
-    section.projects-section {
-      padding:100px 0 0;
-    }
+    padding:100px 0 0;//"rellax" Changes It A Bit If Active
   }
 
   // Project Header
