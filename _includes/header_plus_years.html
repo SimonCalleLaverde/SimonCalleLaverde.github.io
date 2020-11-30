@@ -1,4 +1,5 @@
-{% unless page.type_slug == 'feedback' or page.layout == "project" %}
+{% if page.slug == "home" %}
+<!-- unless page.type_slug == 'feedback' or page.layout == "project" -->
   <aside class="header-plus-years d-none d-md-block">
     <div class="show-it">
       <div class="container">
@@ -8,7 +9,7 @@
             <i class="font-ultra-light text-italic text-chocolate">
               I worked remotely for more
               <br>than 4 years for awesome
-              <br>people around the world<!--.-->
+              <br>people around the world
 
               <!-- 4+ years working for
               <br>awesome people
@@ -30,4 +31,5 @@
       </div>
     </div>
   </aside>
-{% endunless %}
+<!-- endunless -->
+{% endif %}

@@ -315,20 +315,6 @@ figure {
 // p {
 //   max-width:70ch;//"ch" is width of the "0" of a given font. (Means, 70 characters "width" approx)
 // }
-.landscape-small-none {
-  display:none;
-}
-.landscape-small-block {
-  display:block;
-}
-@media only screen and (min-height:600px) {
-  .landscape-small-none {
-    display:block;
-  }
-  .landscape-small-block {
-    display:none;
-  }
-}
 
 // Fonts
 h1, h2, h3, h4, h5, h6, .font-headline {
@@ -1420,7 +1406,23 @@ aside.header-left-info {
   @include transform(rotate(180deg));
   @include transition(color ease-in-out 0.5s);
   &.landscape-small-block {
-    top:34%;
+    top:36%;//34%
+  }
+}
+.landscape-small-none {
+  display:none;
+}
+.landscape-small-block {
+  display:block;
+}
+@include media-breakpoint-up(lg) {
+  @media only screen and (min-height:600px) {//Just If Height Isn't Too Small
+    .landscape-small-none {
+      display:block;
+    }
+    .landscape-small-block {
+      display:none;
+    }
   }
 }
 
