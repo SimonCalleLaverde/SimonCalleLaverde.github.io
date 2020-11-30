@@ -1945,7 +1945,7 @@ header.home-hello-header {
       right:-10%;
       bottom:-145px;
       left:-10%;
-      font-size:22px;
+      font-size:20px;//22px
       line-height:1.3;
       pointer-events:none;
       @include filter(opacity(0.6));
@@ -2263,7 +2263,7 @@ header.about-header {
         right:0;
         bottom:-130px;
         left:0;
-        font-size:22px;
+        font-size:20px;//22px
         line-height:1.3;
         @include filter(opacity(0.6));
       }
@@ -2481,7 +2481,7 @@ header.projects-header {
       left:0;
     }
     .projects-header-timeline {
-      font-size:22px;
+      font-size:20px;//22px
       line-height:1.3;
       @include filter(opacity(0.6));
       span {
