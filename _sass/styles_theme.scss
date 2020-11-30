@@ -1394,7 +1394,7 @@ aside.header-copyright {
 // Header Left Info
 aside.header-left-info {
   position:fixed;
-  top:26%;
+  top:50%;//26%
   left:25px;
   font-family:$font-light;
   font-size:11px;
@@ -1403,10 +1403,10 @@ aside.header-left-info {
   text-orientation:mixed;
   pointer-events:none;
   opacity:(0.8);//@include filter(opacity(0.8))
-  @include transform(rotate(180deg));
+  @include transform(rotate(180deg) translateY(50%));
   @include transition(color ease-in-out 0.5s);
   &.landscape-small-block {
-    top:39%;//34%
+    //top:39%;//34%
   }
 }
 .landscape-small-none {
