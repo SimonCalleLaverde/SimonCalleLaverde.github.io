@@ -1286,6 +1286,7 @@ aside.header-social-media {
       border-bottom:1px solid theme-color('rosybrown');
       pointer-events:none;
       @include filter(opacity(0.8));
+      @include transform(translateY(-50%));
       @include transition(width 0.3s ease-in-out);
     }
     &:hover, &:active, &:focus {
