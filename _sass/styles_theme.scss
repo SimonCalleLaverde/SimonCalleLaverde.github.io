@@ -1725,7 +1725,7 @@ div.menu-mobile {
           h1, h2, h3, h4, h5, h6 {
             color:theme-color('white');
             letter-spacing:2px;
-            @include animation(letterSpaceAnim 0.5s ease-out forwards);
+            @include animation(letterSpaceAnim 0.8s ease-out forwards);
             // &::after {
             //   width:100%;
             //   right:auto;
@@ -2592,7 +2592,7 @@ section.project-page {
 
 // Feedback Page
 section.feedback-page {
-  padding:70px 20px 50px;
+  padding:110px 20px 50px;//70px 20px 50px
   // .btn {
   //   &:hover {
   //     cursor:zoom-in;
@@ -2910,5 +2910,23 @@ body.theme-dark, body.is-bottom.page-type-basic, body.is-bottom.page-type-projec
   .loader-out {
     background-color:lighten(theme-color('chocolate'),0.5)!important;//theme-color('beige')!important
     //border-left:0.5px solid theme-color('beige');
+  }
+  header.projects-header {
+    a {
+      &::before {
+        border-top:1px solid theme-color('chocolate');
+        border-bottom:1px solid theme-color('chocolate');
+      }
+    }
+  }
+  section.about-myself-section {
+    .about-intro, .about-postdata {
+      a {
+        &::before {
+          border-top:1px solid theme-color('chocolate');
+          border-bottom:1px solid theme-color('chocolate');
+        }
+      }
+    }
   }
 }
