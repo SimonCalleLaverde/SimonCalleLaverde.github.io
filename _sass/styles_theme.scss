@@ -247,7 +247,7 @@ body {
       }
     }
   }
-  &.is-bottom {
+  &.is-bottom.page-type-basic {
     .logo {
       > div {
         pointer-events:none;
