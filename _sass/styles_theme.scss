@@ -931,7 +931,7 @@ article.project-article {
         }
       }
       .project-title-mobile {
-        margin-top:-18.5px;
+        margin-top:-19px;//-18.5px
         font-size:13px;
         letter-spacing:0.5px;
         h1, h2, h3, h4, h5, h6 {
@@ -2315,10 +2315,10 @@ header.about-header {
             left:0;
           }
           &:first-of-type {
-            top:-20px;
+            top:-36px;//-20px
           }
           &:last-of-type {
-            bottom:-30px;
+            bottom:-45px;//-30px
           }
         }
       }
