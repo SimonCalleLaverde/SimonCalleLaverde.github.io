@@ -931,7 +931,7 @@ article.project-article {
         }
       }
       .project-title-mobile {
-        margin-top:-19px;//-18.5px
+        margin-top:-19.5px;//-18.5px
         font-size:13px;
         letter-spacing:0.5px;
         h1, h2, h3, h4, h5, h6 {
@@ -2325,9 +2325,10 @@ header.about-header {
       > div {
         span.about-header-info {
           right:-24px;//-23px
-          bottom:26px;//11px
+          top:55px;//bottom:26px//11px
+          bottom:auto;
           //color:theme-color('chocolate')!important;
-          mix-blend-mode:difference;
+          //mix-blend-mode:difference;
           @include transform(rotate(90deg));
         }
       }
