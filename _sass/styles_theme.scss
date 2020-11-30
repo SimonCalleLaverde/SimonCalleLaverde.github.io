@@ -1407,7 +1407,7 @@ aside.header-left-info {
   @include transition(color ease-in-out 0.5s);
   &.landscape-small-block {
     //top:39%;//34%
-    @include transform(rotate(180deg) translateY(35%));//50%
+    @include transform(rotate(180deg) translateY(33%));//50%
   }
 }
 .landscape-small-none {
