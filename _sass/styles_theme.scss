@@ -1403,7 +1403,7 @@ aside.header-left-info {
   text-orientation:mixed;
   pointer-events:none;
   opacity:(0.8);//@include filter(opacity(0.8))
-  @include transform(rotate(180deg) translateY(40%));//50%
+  @include transform(rotate(180deg) translateY(30%));//50%
   @include transition(color ease-in-out 0.5s);
   &.landscape-small-block {
     //top:39%;//34%
