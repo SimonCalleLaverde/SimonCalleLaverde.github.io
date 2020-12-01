@@ -1400,7 +1400,8 @@ aside.header-copyright {
 // Header Left Info
 aside.header-left-info {
   position:fixed;
-  top:50%;//26%
+  height:100vh;//
+  top:0;//50%//26%
   left:25px;
   font-family:$font-light;
   font-size:11px;
@@ -1408,12 +1409,14 @@ aside.header-left-info {
   writing-mode:vertical-rl;
   text-orientation:mixed;
   pointer-events:none;
+  text-align:center;
   opacity:(0.8);//@include filter(opacity(0.8))
-  @include transform(rotate(180deg) translateY(50%));
+  @include transform(rotate(180deg));//translateY(50%)
   @include transition(color ease-in-out 0.5s);
   &.landscape-small-block {
     //top:39%;//34%
-    @include transform(rotate(180deg) translateY(33%));//50%
+    //@include transform-origin(0 0);
+    //@include transform(rotate(180deg));//translateY(33%)//50%
   }
 }
 .landscape-small-none {
