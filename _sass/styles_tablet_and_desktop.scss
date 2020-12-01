@@ -329,25 +329,21 @@
     }
   }
 
-  // // Header Social Media
-  // aside.header-social-media {
-  //   top:auto;
-  //   right:20%;
-  //   bottom:13px;
-  //   left:20%;
-  //   a {
-  //     //font-family:$font-regular;
-  //     color:rgba(26,26,26,0.7);//theme-color('chocolate')//aqua
-  //   }
-  // }
-  // @include media-breakpoint-up(lg) {
-  //   aside.header-social-media {
-  //     a {
-  //       font-size:12px;
-  //     }
-  //   }
-  // }
-  
+  // Header Social Media
+  @include media-breakpoint-up(lg) {//md
+    aside.header-social-media {
+      top:auto;
+      right:20%;
+      bottom:13px;
+      left:20%;
+      a {
+        //font-family:$font-regular;
+        font-size:12px;
+        color:rgba(26,26,26,0.7);//theme-color('chocolate')//aqua
+      }
+    }
+  }
+
   // Header Copyright, Header Left Info
   aside.header-copyright, aside.header-left-info {
     font-family:$font-ultra-light;

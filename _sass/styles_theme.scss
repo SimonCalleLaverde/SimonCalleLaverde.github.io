@@ -1312,26 +1312,9 @@ aside.header-social-media {
     @include transform(rotate(90deg));
   }
 }
-
-
-  // Header Social Media (AS IT WAS IN TABLET AND DESKTOP before battery going off)
-@include media-breakpoint-up(lg) {//md
+@media only screen and (max-width:400px) {//Down
   aside.header-social-media {
-    top:auto;
-    right:20%;
-    bottom:13px;
-    left:20%;
-    a {
-      //font-family:$font-regular;
-      color:rgba(26,26,26,0.7);//theme-color('chocolate')//aqua
-    }
-  }
-  @include media-breakpoint-up(lg) {//TO CHANGE AS WRAPPER MEDIA QUERY CHANGED
-    aside.header-social-media {
-      a {
-        font-size:12px;
-      }
-    }
+    left:calc(100% + 5px);
   }
 }
 
@@ -1433,6 +1416,11 @@ aside.header-left-info {
     .landscape-small-block {
       display:none;
     }
+  }
+}
+@media only screen and (max-width:400px) {//Down
+  aside.header-left-info {
+    left:20px;
   }
 }
 
@@ -1583,6 +1571,11 @@ nav.navbar {
     @include transform(scale(0.85));
   }
 }
+@media only screen and (max-width:400px) {//Down
+  .logo {
+    left:29px;//34px
+  }
+}
 
 // Burger Mobile
 $burger-size:40px;
@@ -1591,7 +1584,7 @@ aside.burger-mobile {
   width:$burger-size;
   height:$burger-size;
   top:30px;
-  right:31px;//34px
+  right:21px;//31px//34px
   background-color:darken(theme-color('aqua'),5);//rgba(26,26,26,0.9);//theme-color('chocolate')
   cursor:pointer;
   z-index:101;
@@ -1695,7 +1688,7 @@ div.menu-mobile {
     width:$burger-size;
     height:$burger-size;
     top:30px;
-    right:31px;//34px
+    right:21px;//31px//34px
     background-color:transparent;
     will-change:width, height, background-color, transform;
     @include border-radius(50%);
@@ -2533,8 +2526,8 @@ header.projects-header {
       }
     }
     .projects-header-headline, .projects-header-intro {
-      padding-left:25px;
-      padding-right:25px;
+      padding-left:20px;
+      padding-right:20px;
     }
   }
 }
