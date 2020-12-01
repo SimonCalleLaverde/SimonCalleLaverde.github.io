@@ -1056,7 +1056,7 @@ article.project-article {
           height:180px;
         }
         .project-title-mobile {
-          margin-top:-12px;
+          margin-top:-13px;//-12px
         }
       }
     }
@@ -1067,7 +1067,7 @@ article.project-article {
           height:180px;
         }
         .project-title-mobile {
-          margin-top:-12px;
+          margin-top:-13px;//-12px
         }
       }
     }
@@ -2532,6 +2532,10 @@ header.projects-header {
         top:-9.7%;//-41px
       }
     }
+    .projects-header-headline, .projects-header-intro {
+      padding-left:25px;
+      padding-right:25px;
+    }
   }
 }
 
@@ -2917,6 +2921,13 @@ body.theme-dark, body.is-bottom.page-type-basic, body.is-bottom.page-type-projec
   .loader-out {
     background-color:lighten(theme-color('chocolate'),0.5)!important;//theme-color('beige')!important
     //border-left:0.5px solid theme-color('beige');
+  }
+  header.home-hello-header, header.about-header {
+    .hello-header-middle, .about-header-middle {
+      span.header-what-i-do, span.about-header-short-story {
+        color:theme-color('rosybrown')!important;
+      }
+    }
   }
   header.projects-header {
     a {
