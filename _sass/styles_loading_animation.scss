@@ -74,7 +74,7 @@ body {
     > .loader-center {
       //display:none;
       text-align:left;//center
-      @include filter(opacity(0.9));
+      //@include filter(opacity(0.9));
       > span {
         display:block;
         overflow:hidden;
@@ -328,7 +328,7 @@ body {
   right:22.5px;
   bottom:35px;//43.5px
   z-index:20011;
-  @include filter(opacity(0.8));
+  @include filter(opacity(0.9));//0.8
   > div {
     position:absolute;
     top:0;

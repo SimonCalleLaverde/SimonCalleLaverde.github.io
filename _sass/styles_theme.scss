@@ -1199,11 +1199,12 @@ article.three-phases-article {
 .modal {
   text-align:center;
   .modal-content {
-    background-color:rgba(255,255,255,0.8);//rgba(184,156,146,0.7)//rgba(199,197,195,0.7)
-    backdrop-filter:blur(5px);//@include
+    background-color:theme-color('beige');//rgba(184,156,146,0.95)
+    border:none;
+    //backdrop-filter:blur(5px);//@include
     @include border-radius(0.6rem);
     .modal-header, .modal-body, .modal-footer {
-      color:theme-color('chocolate');
+      color:theme-color('rosybrown');
     }
     .modal-header, .modal-footer {
       border:none;
@@ -1219,6 +1220,15 @@ article.three-phases-article {
     .modal-body {
       font-size:15px;
       line-height:1.8;
+    }
+  }
+  &.home-phase-modal {
+    .modal-content {
+      .modal-body {
+        img {
+          @include filter(brightness(150%));//invert(0.5)
+        }
+      }
     }
   }
 }
@@ -2602,35 +2612,6 @@ section.feedback-page {
   //     cursor:zoom-in;
   //   }
   // }
-  .modal {
-    .modal-content {
-      .modal-body {
-        a {
-          position:relative;
-          //text-decoration:underline;
-          &::before {
-            content:'';
-            position:absolute;
-            width:100%;
-            height:1px;//3px
-            bottom:1px;
-            left:0;
-            background-color:theme-color('rosybrown');
-            //border-top:1px solid theme-color('beige');
-            //border-bottom:1px solid theme-color('beige');
-            pointer-events:none;
-          }
-          &:hover {
-            color:lighten(theme-color('rosybrown'),5);
-            @include filter(opacity(0.9));
-            &::before {
-              @include animation(lineThorughBackAnim 0.9s linear forwards);
-            }
-          }
-        }
-      }
-    }
-  }
 }
 @media only screen and (max-width:400px) {//Down
   section.feedback-page {
@@ -2860,8 +2841,38 @@ body.page-type-basic.projects {
   // }
 }
 
-// Feedback Page (Contact Me)
+// Feedback Page (Contact Me & Hire A Project)
 body.page-type-feedback {
+  .modal {
+    &.feedback-plans-modal {
+      .modal-content {
+        .modal-body {
+          a {
+            position:relative;
+            &::before {
+              content:'';
+              position:absolute;
+              width:100%;
+              height:3px;
+              bottom:0;
+              left:0;
+              background-color:theme-color('rosybrown');
+              border-top:1px solid theme-color('beige');
+              border-bottom:1px solid theme-color('beige');
+              pointer-events:none;
+            }
+            &:hover {
+              color:lighten(theme-color('rosybrown'),5);
+              @include filter(opacity(0.9));
+              &::before {
+                @include animation(lineThorughBackAnim 0.9s linear forwards);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Theme Dark
@@ -2901,9 +2912,9 @@ body.theme-dark, body.is-bottom.page-type-basic, body.is-bottom.page-type-projec
   }
   .modal {
     .modal-content {
-      background-color:theme-color('beige');//rgba(24,16,8,0.7)
+      //background-color:theme-color('beige');//rgba(24,16,8,0.7)
       .modal-header, .modal-body, .modal-footer {
-        color:theme-color('rosybrown');
+        //color:theme-color('rosybrown');
       }
       .modal-footer {//New
         padding-top:1.6rem;//Was 1rem
