@@ -40,6 +40,12 @@ Text via font sizes, bold type/weighting, italics, capitals and distance between
 
 
 
-<!--[Hey friend! Spaming my Portfolio here]
+<!--
+[[[ Hola amigo/amiga!
 
-Soy desarrollador/diseñador web con 6 años en la industria. Si necesitas un proyecto web o algún amigo algún día necesita uno, acá estoy [manita saludando] :)-->
+Soy desarrollador/diseñador web con 6 años en la industria.
+Si necesitas un proyecto web o algún amigo o amiga algún día necesita uno, acá estoy 🖐️
+
+Este es mi sitio web nuevo.
+- https://simonsweb.design/]]]
+-->
