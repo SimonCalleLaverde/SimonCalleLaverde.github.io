@@ -4,9 +4,13 @@ image_logo: "/uploads/absurd-illustrations-development.png"
 order: 3
 ---
 
-The development phase could be done without a design, but it is always better to have a visual and approved concept to follow and re-create in a web format and a visual language that the browsers understands and can display. Having a design will also help ensure that nothing slips through the cracks when building the actual website in HTML and CSS.
+Although development could be done directly withouth a design, prototyping in web format, and reiterating on the product, it is always better to have a visual and approved design concept or mockup to follow and re-create in a <em class="text-ultra-light text-italic text-aqua">web language</em> to literally design the site again using <em class="text-ultra-light text-italic text-aqua">CSS</em> for styling, <em class="text-ultra-light text-italic text-aqua">HTML</em> which gives the main structure, and <em class="text-ultra-light text-italic text-aqua">JavaScript</em> or GSAP (which is JavaScript based) to <em class="text-ultra-light text-italic text-aqua">animate</em>, create <em class="text-ultra-light text-italic text-aqua">effects</em>, and create <em class="text-ultra-light text-italic text-aqua">interactions</em>.
 
-This is normally the longest part of the project and can take anywhere from 2 weeks to even a month or 2, depending on the size and complexity of each project. A backend, customizing and configuring it, can also be an option in the development phase. With this, the site becomes completely dynamic and all texts and images editable. It also gives the possibility to add and publish news, events or videos very easily.
+Having a design concept will also help us ensure that nothing slips through the cracks when building the actual website in languages that the browsers understands and can display: HTML, CSS, and JavaScript. This phase has its own creative concerns, a lot of unique problem solving depending on each project unique features, and can be the longest phase of the project to get to a final result.
+
+This <em class="text-ultra-light text-italic text-aqua">Front-End Development</em> phase can take anywhere from 1 week for a very small project, to even a month or 2 for a more complex project. To include a <em class="text-ultra-light text-italic text-aqua">backend</em>, customizing, and configuring it can also be an option in the development phase. With this, I can make a site completely dynamic and all texts and images in it can be editable. I can also give the possibility to add and publish <em class="text-ultra-light text-italic text-aqua">news</em>, <em class="text-ultra-light text-italic text-aqua">events</em> or <em class="text-ultra-light text-italic text-aqua">videos</em> at will through a custom backend.
+
+After a couple of iterations, the site should be able to launch and you will have control of many features throught the backend.
 
 <!--.................................
 
