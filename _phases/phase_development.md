@@ -34,3 +34,12 @@ Draw attention to key features using:
 Color, brightness and contrast. Avoid including colors or buttons excessively.
 
 Text via font sizes, bold type/weighting, italics, capitals and distance between letters. Users should pick up meanings just by scanning.-->
+
+
+
+
+
+
+<!--[Hey friend! Spaming my Portfolio here]
+
+Soy desarrollador/diseñador web con 6 años en la industria. Si necesitas un proyecto web o algún amigo algún día necesita uno, acá estoy [manita saludando] :)-->
