@@ -1199,7 +1199,7 @@ article.three-phases-article {
 .modal {
   text-align:center;
   .modal-content {
-    background-color:theme-color('beige');//rgba(184,156,146,0.95)
+    background-color:darken(#FAF5EF,3);//lighten(theme-color('aqua'),10)//Added "beige light" darken(#FAF5EF,7)//theme-color('beige')//rgba(184,156,146,0.95)
     border:none;
     //backdrop-filter:blur(5px);//@include
     @include border-radius(0.6rem);

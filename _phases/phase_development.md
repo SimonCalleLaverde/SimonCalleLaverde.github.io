@@ -15,3 +15,18 @@ The development phase could be done directly without a design, but it is always 
 This is normally the longest part of the project and can take anywhere from 2 weeks to even a month or 2, depending on the size and complexity of each project and the resources used or created.
 
 A backend and customizing it and configuring can also be an option for development phase, so the site becomes completelly dynamic and all texts and images editable, or the possibility to add and publish for example news, events or videos very easily.-->
+
+
+
+
+
+
+
+
+
+<!--Use proper alignment. Typically choose edge (over center) alignment.
+
+Draw attention to key features using:
+Color, brightness and contrast. Avoid including colors or buttons excessively.
+
+Text via font sizes, bold type/weighting, italics, capitals and distance between letters. Users should pick up meanings just by scanning.-->
