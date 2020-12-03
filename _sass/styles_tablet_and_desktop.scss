@@ -386,29 +386,21 @@
     line-height:1.2!important;//Was 1.5 from Body
     //pointer-events:none;
     ul.navbar-nav {
-      @include filter(opacity(0.8));
+      //@include filter(opacity(0.8));
       @include transition(opacity ease-in-out 0.5s, filter ease-out 0.3s);
       li.nav-item {
         a.nav-link {
+          position:relative;
           display:inline-block;
           padding:0.1rem;//0.2rem 0.1rem//0.1rem 0.5rem
-          color:rgba(35,31,32,0.8);//theme-color('chocolate')
+          font-family:$font-regular;//$font-light
           font-size:10px;//10.5px//12px
+          color:rgba(35,31,32,0.8);//theme-color('chocolate')
           letter-spacing:0.2px;
           text-transform:uppercase;
           white-space:nowrap;
-          &::before {
-            content:'';
-            position:absolute;
-            width:0;
-            top:50%;
-            right:0;
-            //left:0;
-            border-bottom:1px solid theme-color('rosybrown');
-            pointer-events:none;
-            @include filter(opacity(0.8));
-            @include transition(width 0.3s ease-in-out);
-          }
+          //@include filter(opacity(0.8));
+          @include transition(filter ease-out 0.3s, color ease-in-out 0.5s);
           small {
             display:inline-block;
             position:absolute;
@@ -418,14 +410,8 @@
             color:theme-color('chocolate');
           }
           &:hover, &:active, &:focus, &.active-link {
-            color:darken(theme-color('chocolate'),10);//color:theme-color('chocolate')
+            color:theme-color('chocolate');
             //@include filter(opacity(1));
-            //text-decoration:line-through;
-            &::before {
-              width:100%;
-              right:auto;
-              left:0;
-            }
           }
         }
         &:nth-child(3) {

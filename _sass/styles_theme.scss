@@ -315,6 +315,31 @@ figure {
 // p {
 //   max-width:70ch;//"ch" is width of the "0" of a given font. (Means, 70 characters "width" approx)
 // }
+a.link-line-throught {
+  position:relative;
+  &::before {
+    content:'';
+    position:absolute;
+    height:30%;//
+    width:0;
+    top:40%;//50%
+    right:0;
+    //left:0;
+    background-color:#CE1352;//theme-color('rosybrown')
+    //border-bottom:1px solid theme-color('rosybrown');
+    pointer-events:none;
+    mix-blend-mode:difference;
+    @include filter(opacity(0.3));//0.8
+    @include transition(width 0.3s ease-in-out);
+  }
+  &:hover, &:active, &:focus, &.active-link {
+    &::before {
+      width:100%;
+      right:auto;
+      left:0;
+    }
+  }
+}
 
 // Fonts
 h1, h2, h3, h4, h5, h6, .font-headline {
@@ -1286,31 +1311,14 @@ aside.header-social-media {
   //top:26%;
   //right:25px;
   a {
-    position:relative;
-    font-family:$font-light;
+    font-family:$font-regular;//$font-light
     font-size:11px;
-    color:theme-color('chocolate');
+    color:theme-color('chocolate');//rgba(35,31,32,0.8)
     @include filter(opacity(0.8));
     @include transition(filter ease-out 0.3s, color ease-in-out 0.5s);
-    &::before {
-      content:'';
-      position:absolute;
-      width:0;
-      top:50%;
-      right:0;
-      //left:0;
-      border-bottom:1px solid theme-color('rosybrown');
-      pointer-events:none;
-      @include filter(opacity(0.8));
-      @include transition(width 0.3s ease-in-out);
-    }
     &:hover, &:active, &:focus {
+      //color:theme-color('chocolate');
       @include filter(opacity(1));
-      &::before {
-        width:100%;
-        right:auto;
-        left:0;
-      }
     }
   }
 }
@@ -1465,12 +1473,12 @@ nav.navbar {
   ul.navbar-nav {
     li.nav-item {
       a.nav-link {//For Both Nav & Footer Nav
-        position:relative;
-        padding:0.1rem;
-        font-family:$font-light;
-        font-size:12px;
-        color:theme-color('rosybrown');
-        @include filter(opacity(0.8));
+        // position:relative;
+        // padding:0.1rem;
+        // font-family:$font-regular;//$font-light
+        // font-size:12px;
+        // color:theme-color('rosybrown');
+        // @include filter(opacity(0.8));
       }
     }
   }
