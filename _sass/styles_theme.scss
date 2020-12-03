@@ -3007,7 +3007,7 @@ body.page-type-feedback.hire_a_project {
       }
       &:hover, &:active, &:focus {
         span {
-          color:lighten($base-color-hire,3);
+          color:lighten($base-color-hire,5);
         }
       }
     }
@@ -3034,7 +3034,7 @@ body.page-type-feedback.contact_me {
       }
       &:hover, &:active, &:focus {
         span {
-          color:lighten($base-color-contact,3);
+          color:lighten($base-color-contact,5);
         }
       }
     }
