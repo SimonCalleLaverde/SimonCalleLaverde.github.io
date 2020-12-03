@@ -1501,7 +1501,7 @@ nav.navbar {
     position:relative;
     display:block;
     border:1px solid transparent;
-    @include transition(all 0.4s ease-in-out);
+    @include transition(all 0.8s ease-in-out);
     &::before, &::after {
       content:"";
       position:absolute;
@@ -1513,16 +1513,16 @@ nav.navbar {
     &::before {
       top:0;
       right:0;
-      @include transition(width 0.1s ease-in-out 0s);
+      @include transition(width 0.2s ease-in-out 0s);
     }
     &::after {
       left:0;
       bottom:0;
-      @include transition(width 0.1s ease-in-out 0.2s);
+      @include transition(width 0.2s ease-in-out 0.4s);
     }
     span {
       position:relative;
-      @include transition(color 0.4s ease-in-out, filter 0.4s ease-in-out);
+      @include transition(color 0.8s ease-in-out, filter 0.8s ease-in-out);
       &::before, &::after {
         content:"";
         position:absolute;
@@ -1534,12 +1534,12 @@ nav.navbar {
       &::after {
         right:-1px;
         bottom:0;
-        @include transition(height 0.1s ease-in-out 0.1s);
+        @include transition(height 0.2s ease-in-out 0.2s);
       }
       &::before {
         left:-1px;
         top:0;
-        @include transition(height 0.1s ease-in-out 0.3s);
+        @include transition(height 0.2s ease-in-out 0.6s);
       }
       display:block;
       //width:56px;
@@ -3007,7 +3007,7 @@ body.page-type-feedback.hire_a_project {
       }
       &:hover, &:active, &:focus {
         span {
-          color:darken($base-color-hire,15);
+          color:lighten($base-color-hire,3);
         }
       }
     }
