@@ -2696,7 +2696,7 @@ section.feedback-page {
 // Footer
 footer {
   margin:0;
-  > a.container {
+  > .container {//a.container
     min-height:100vh;
     > div {
       pointer-events:none;//From "row", To All Elements Inside <a>
@@ -2870,8 +2870,16 @@ footer {
       ul.navbar-nav {
         li.nav-item {
           a.nav-link {
+            padding:0.1rem;
+            font-family:$font-ultra-light;
+            font-size:12px;
+            color:theme-color('rosybrown');
+            //text-transform:uppercase;
             &::before {
               display:none;
+            }
+            &:hover, &:active, &:focus {
+              color:#FFF;
             }
           }
         }

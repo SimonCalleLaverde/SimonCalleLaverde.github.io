@@ -386,7 +386,7 @@
     line-height:1.2!important;//Was 1.5 from Body
     //pointer-events:none;
     ul.navbar-nav {
-      //@include filter(opacity(0.8));
+      //@include filter(opacity(0.8));javascript:delay('/about')
       @include transition(opacity ease-in-out 0.5s, filter ease-out 0.3s);
       li.nav-item {
         a.nav-link {
