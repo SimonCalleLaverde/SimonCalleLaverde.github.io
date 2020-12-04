@@ -1048,6 +1048,13 @@
       }
       nav.footer-nav.navbar {
         bottom:228px;
+        ul.navbar-nav {
+          li.nav-item {
+            a.nav-link {
+              text-transform:none;
+            }
+          }
+        }
       }
       .footer-credits {
         bottom:370px;
