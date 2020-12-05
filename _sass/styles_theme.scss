@@ -477,7 +477,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   background-color:transparent;
   color:theme-color('rosybrown');//transparent
   border:1px solid theme-color('rosybrown');
-  @include border-radius(0);
+  @include border-radius(1rem);
   @include filter(opacity(1));
   @include transition(all ease-out 0.4s);
   &.btn-chocolate {
@@ -521,6 +521,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     text-align:center;
     white-space:nowrap;
     pointer-events:none;
+    @include border-radius(1rem);
     @include transform(translate(3px,3px));
     @include transition(all ease-out 0.4s);
   }
@@ -540,13 +541,13 @@ $btn-lg-padding:0.7rem 2.3rem;
   //   }
   // }
   &:hover {//, &:active, &:focus
-    background-color:transparent!important;
-    color:theme-color('rosybrown');//transparent
+    background-color:theme-color('rosybrown')!important;//transparent!important
+    color:theme-color('chocolate');//transparent
     border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
-    @include filter(opacity(0.8));
+    //@include filter(opacity(0.8));
     //@include transform(scale(1.03));
-    //@include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);
-    @include box-shadow(none!important);
+    @include box-shadow(0 5px 15px rgba(24,16,8,0.1)!important);//0 5px 15px rgba(0,0,0,0.4)
+    //@include box-shadow(none!important);
     &::before {
       right:0;
       bottom:0;
@@ -1269,9 +1270,13 @@ article.three-phases-article {
         padding:0 0.5rem 0.08rem;//0.6rem 1rem//Was 1rem 1rem
         border:1px solid theme-color('aqua');
         @include border-radius(1rem);
-        @include transition(opacity ease-in-out 0.5s);
+        @include text-shadow(none);
+        @include transition(all ease-in-out 0.5s);
         &:hover, &:active, &:focus {
           outline:none;
+          color:darken(#FAF5EF,3)!important;//Added From J.I. Posts But Darken
+          background-color:theme-color('aqua');
+          @include box-shadow(0 2.5px 7.5px rgba(24,16,8,0.2));
         }
       }
     }
@@ -1346,7 +1351,7 @@ aside.header-social-media {
   a {
     font-family:$font-regular;//$font-light
     font-size:11px;
-    color:theme-color('chocolate');//rgba(35,31,32,0.8)
+    color:theme-color('chocolate');//rgba(24,16,8,0.8)
     @include filter(opacity(0.8));
     @include transition(filter ease-out 0.3s, color ease-in-out 0.5s);
     &:hover, &:active, &:focus {
@@ -3246,6 +3251,11 @@ body.theme-dark, body.is-bottom.page-type-basic, body.is-bottom.page-type-projec
   }
   main {
     background-color:theme-color('chocolate');
+  }
+  .btn {
+    &:hover {//, &:active, &:focus
+      @include box-shadow(0 5px 15px rgba(255,232,228,0.1)!important);
+    }
   }
   aside.burger-mobile {
     background-color:theme-color('chocolate');
