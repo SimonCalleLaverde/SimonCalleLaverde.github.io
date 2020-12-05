@@ -2975,23 +2975,23 @@ body.page-type-basic.about {
   .logo {
     a {
       &::before, &::after {
-        background-color:darken($base-color-about,5);
+        background-color:darken($base-color-about,10);
       }
       span {
         &::before, &::after {
-          background-color:darken($base-color-about,5);
+          background-color:darken($base-color-about,10);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:darken($base-color-about,35);
+          color:darken($base-color-about,30);
         }
       }
     }
   }
   a.link-line-throught {
     &::before {
-      background-color:$base-color-about;
+      background-color:darken($base-color-about,10);//$base-color-about
     }
   }
 }
@@ -3027,33 +3027,29 @@ body.page-type-basic.projects {
   //     color:theme-color('rosybrown');
   //   }
   // }
-
-
   $base-color-projects:theme-color('rosybrown');
   .logo {
     a {
       &::before, &::after {
-        background-color:lighten($base-color-projects,2);
+        background-color:darken($base-color-projects,1);
       }
       span {
         &::before, &::after {
-          background-color:lighten($base-color-projects,2);
+          background-color:darken($base-color-projects,1);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:darken($base-color-projects,2);
+          color:darken($base-color-projects,3);
         }
       }
     }
   }
   a.link-line-throught {
     &::before {
-      background-color:$base-color-projects;
+      background-color:darken($base-color-projects,3);//$base-color-projects
     }
   }
-
-
 }
 
 // Feedback Page (Hire A Project)
@@ -3089,16 +3085,16 @@ body.page-type-feedback.contact_me {
   .logo {
     a {
       &::before, &::after {
-        background-color:$base-color-contact;
+        background-color:lighten($base-color-contact,3);
       }
       span {
         &::before, &::after {
-          background-color:$base-color-contact;
+          background-color:lighten($base-color-contact,3);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:lighten($base-color-contact,3);//5
+          color:lighten($base-color-contact,1);
         }
       }
     }
