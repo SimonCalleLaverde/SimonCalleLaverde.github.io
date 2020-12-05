@@ -1820,7 +1820,6 @@ div.menu-mobile {
         @include transform(translateY(50px));
         @include transition(none);
         h1, h2, h3, h4, h5, h6 {
-          font-family:$font-regular;
           color:theme-color('rosybrown');
           @include transition(color ease-out 0.3s, letter-spacing ease-out 0.3s);
           // &::after {
@@ -1835,7 +1834,7 @@ div.menu-mobile {
         }
         &:hover, &:active, &:focus, &.active {
           h1, h2, h3, h4, h5, h6 {
-            color:theme-color('white');
+            color:darken(theme-color('rosybrown'),5);
             letter-spacing:1px;//2px
             @include animation(letterSpaceAnim 0.8s ease-out forwards);
             // &::after {
