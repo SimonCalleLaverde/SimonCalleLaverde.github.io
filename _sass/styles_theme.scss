@@ -2908,50 +2908,28 @@ footer {
 
 // Body (Simply Changing Logo Hover And Links Hover Colour At Once | For Same As ::Selection)
 body {
-  // $base-color-links:rgba(105,169,179,1);
-  // .logo {
-  //   a {
-  //     &::before, &::after {
-  //       background-color:darken($base-color-links,15);
-  //     }
-  //     span {
-  //       &::before, &::after {
-  //         background-color:darken($base-color-links,15);
-  //       }
-  //     }
-  //     &:hover, &:active, &:focus {
-  //       span {
-  //         color:darken($base-color-links,10);
-  //       }
-  //     }
-  //   }
-  // }
-  // a.link-line-throught {
-  //   &::before {
-  //     background-color:$base-color-links;
-  //   }
-  // }
-  $base-color-contact:$theme-color-azalea;
+  $base-color-links:theme-color('aqua');
   .logo {
     a {
       &::before, &::after {
-        background-color:$base-color-contact;
+        background-color:lighten($base-color-links,15);
       }
       span {
         &::before, &::after {
-          background-color:$base-color-contact;
+          background-color:lighten($base-color-links,15);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:lighten($base-color-contact,3);//5
+          color:$base-color-links;
         }
       }
     }
   }
   a.link-line-throught {
     &::before {
-      background-color:$base-color-contact;
+      background-color:lighten($base-color-links,10);//$base-color-links
+      mix-blend-mode:difference;
     }
   }
 }
@@ -2993,29 +2971,29 @@ body.page-type-basic.home {
 
 // Basic Page (About)
 body.page-type-basic.about {
-  // $base-color-about:rgba(105,169,179,1);
-  // .logo {
-  //   a {
-  //     &::before, &::after {
-  //       background-color:darken($base-color-about,5);
-  //     }
-  //     span {
-  //       &::before, &::after {
-  //         background-color:darken($base-color-about,5);
-  //       }
-  //     }
-  //     &:hover, &:active, &:focus {
-  //       span {
-  //         color:darken($base-color-about,35);
-  //       }
-  //     }
-  //   }
-  // }
-  // a.link-line-throught {
-  //   &::before {
-  //     background-color:$base-color-about;
-  //   }
-  // }
+  $base-color-about:rgba(105,169,179,1);
+  .logo {
+    a {
+      &::before, &::after {
+        background-color:darken($base-color-about,5);
+      }
+      span {
+        &::before, &::after {
+          background-color:darken($base-color-about,5);
+        }
+      }
+      &:hover, &:active, &:focus {
+        span {
+          color:darken($base-color-about,35);
+        }
+      }
+    }
+  }
+  a.link-line-throught {
+    &::before {
+      background-color:$base-color-about;
+    }
+  }
 }
 
 // Basic Page (Projects)
@@ -3049,6 +3027,33 @@ body.page-type-basic.projects {
   //     color:theme-color('rosybrown');
   //   }
   // }
+
+
+  $base-color-projects:theme-color('rosybrown');
+  .logo {
+    a {
+      &::before, &::after {
+        background-color:lighten($base-color-projects,2);
+      }
+      span {
+        &::before, &::after {
+          background-color:lighten($base-color-projects,2);
+        }
+      }
+      &:hover, &:active, &:focus {
+        span {
+          color:darken($base-color-projects,2);
+        }
+      }
+    }
+  }
+  a.link-line-throught {
+    &::before {
+      background-color:$base-color-projects;
+    }
+  }
+
+
 }
 
 // Feedback Page (Hire A Project)
@@ -3080,29 +3085,29 @@ body.page-type-feedback.hire_a_project {
 
 // Feedback Page (Contact Me)
 body.page-type-feedback.contact_me {
-  // $base-color-contact:$theme-color-azalea;
-  // .logo {
-  //   a {
-  //     &::before, &::after {
-  //       background-color:$base-color-contact;
-  //     }
-  //     span {
-  //       &::before, &::after {
-  //         background-color:$base-color-contact;
-  //       }
-  //     }
-  //     &:hover, &:active, &:focus {
-  //       span {
-  //         color:lighten($base-color-contact,3);//5
-  //       }
-  //     }
-  //   }
-  // }
-  // a.link-line-throught {
-  //   &::before {
-  //     background-color:$base-color-contact;
-  //   }
-  // }
+  $base-color-contact:$theme-color-azalea;
+  .logo {
+    a {
+      &::before, &::after {
+        background-color:$base-color-contact;
+      }
+      span {
+        &::before, &::after {
+          background-color:$base-color-contact;
+        }
+      }
+      &:hover, &:active, &:focus {
+        span {
+          color:lighten($base-color-contact,3);//5
+        }
+      }
+    }
+  }
+  a.link-line-throught {
+    &::before {
+      background-color:$base-color-contact;
+    }
+  }
 }
 
 // Feedback Page (Contact Me & Hire A Project)
@@ -3163,6 +3168,7 @@ body.theme-dark, body.is-bottom.page-type-basic, body.is-bottom.page-type-projec
   a.link-line-throught {
     &::before {
       background-color:$base-color-links;
+      mix-blend-mode:color-dodge;//hue
     }
   }
   main {
