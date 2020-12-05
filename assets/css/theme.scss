@@ -15,10 +15,8 @@ $theme-color-aqua:#004743;//rgba(0,71,67,1)//Nice Aqua
 
 // Colours For Testing If So
 $theme-color-ivskaya:rgba(240,217,194,1);//Terminal//#FCF9F5//Beige Light (Iv Skaya) (TO TEST COLOURS AND ERRASE ROW)
-$theme-color-mustard:rgba(235,189,48,1);//Mustard (TO TEST COLOURS AND ERRASE ROW)
 $theme-color-azalea:rgba(248,198,198,1);//#F8C6C6//Azalea//rgba(188,143,143,1)//#BC8F8F//Rosybrown First (TO TEST COLOURS AND ERRASE ROW)
 $theme-color-blue:lighten(rgba(63,67,147,1),35);//#3F4393//Logo Blue   #e0e0f2; (TO TEST COLOURS AND ERRASE ROW)
-$theme-color-silver:rgba(199,197,195,1);//Silver (Terminal's Silver) (TO TEST COLOURS AND ERRASE ROW)
 $theme-color-green-dark:darken(rgba(3,42,28,1),5);//Green Dark (TO TEST COLOURS AND ERRASE ROW)
 $theme-color-gold:rgba(206,156,76,1);//Gold Terminal (TO TEST COLOURS AND ERRASE ROW)
 //rgba(50,1,1,1);// .... darken(rgba(101,67,33,1),20);//Dark Brown/Otter Brown//rgba(32,29,22,1)//Vansijl//rgba(35,35,33,1)//Tuatara (TO TEST COLOURS AND ERRASE ROW)
@@ -52,8 +50,7 @@ $theme-colors: (
   "redish":$theme-color-redish,
   "aqua":$theme-color-aqua,
 
-  "azalea":$theme-color-azalea,
-  "silver":$theme-color-silver
+  "azalea":$theme-color-azalea
 );
 
 // Bootstrap 4

@@ -2936,27 +2936,51 @@ footer {
 
 // Body (Simply Changing Logo Hover And Links Hover Colour At Once | For Same As ::Selection)
 body {
-  $base-color-links:theme-color('aqua');
+  // $base-color-links:theme-color('aqua');
+  // .logo {
+  //   a {
+  //     &::before, &::after {
+  //       background-color:lighten($base-color-links,15);
+  //     }
+  //     span {
+  //       &::before, &::after {
+  //         background-color:lighten($base-color-links,15);
+  //       }
+  //     }
+  //     &:hover, &:active, &:focus {
+  //       span {
+  //         color:$base-color-links;
+  //       }
+  //     }
+  //   }
+  // }
+  // a.link-line-throught {
+  //   &::before {
+  //     background-color:lighten($base-color-links,15);//$base-color-links
+  //     mix-blend-mode:difference;
+  //   }
+  // }
+  $base-color-links:theme-color('azalea');
   .logo {
     a {
       &::before, &::after {
-        background-color:lighten($base-color-links,15);
+        background-color:lighten($base-color-links,3);
       }
       span {
         &::before, &::after {
-          background-color:lighten($base-color-links,15);
+          background-color:lighten($base-color-links,3);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:$base-color-links;
+          color:lighten($base-color-links,1);
         }
       }
     }
   }
   a.link-line-throught {
     &::before {
-      background-color:lighten($base-color-links,10);//$base-color-links
+      background-color:$base-color-links;
       mix-blend-mode:difference;
     }
   }
@@ -2999,29 +3023,29 @@ body.page-type-basic.home {
 
 // Basic Page (About)
 body.page-type-basic.about {
-  $base-color-about:rgba(105,169,179,1);
-  .logo {
-    a {
-      &::before, &::after {
-        background-color:darken($base-color-about,10);
-      }
-      span {
-        &::before, &::after {
-          background-color:darken($base-color-about,10);
-        }
-      }
-      &:hover, &:active, &:focus {
-        span {
-          color:darken($base-color-about,30);
-        }
-      }
-    }
-  }
-  a.link-line-throught {
-    &::before {
-      background-color:darken($base-color-about,10);//$base-color-about
-    }
-  }
+  // $base-color-about:rgba(105,169,179,1);
+  // .logo {
+  //   a {
+  //     &::before, &::after {
+  //       background-color:darken($base-color-about,10);
+  //     }
+  //     span {
+  //       &::before, &::after {
+  //         background-color:darken($base-color-about,10);
+  //       }
+  //     }
+  //     &:hover, &:active, &:focus {
+  //       span {
+  //         color:darken($base-color-about,30);
+  //       }
+  //     }
+  //   }
+  // }
+  // a.link-line-throught {
+  //   &::before {
+  //     background-color:darken($base-color-about,10);//$base-color-about
+  //   }
+  // }
 }
 
 // Basic Page (Projects)
@@ -3055,29 +3079,29 @@ body.page-type-basic.projects {
   //     color:theme-color('rosybrown');
   //   }
   // }
-  $base-color-projects:theme-color('rosybrown');
-  .logo {
-    a {
-      &::before, &::after {
-        background-color:darken($base-color-projects,1);
-      }
-      span {
-        &::before, &::after {
-          background-color:darken($base-color-projects,1);
-        }
-      }
-      &:hover, &:active, &:focus {
-        span {
-          color:darken($base-color-projects,3);
-        }
-      }
-    }
-  }
-  a.link-line-throught {
-    &::before {
-      background-color:darken($base-color-projects,3);//$base-color-projects
-    }
-  }
+  // $base-color-projects:theme-color('rosybrown');
+  // .logo {
+  //   a {
+  //     &::before, &::after {
+  //       background-color:darken($base-color-projects,1);
+  //     }
+  //     span {
+  //       &::before, &::after {
+  //         background-color:darken($base-color-projects,1);
+  //       }
+  //     }
+  //     &:hover, &:active, &:focus {
+  //       span {
+  //         color:darken($base-color-projects,3);
+  //       }
+  //     }
+  //   }
+  // }
+  // a.link-line-throught {
+  //   &::before {
+  //     background-color:darken($base-color-projects,3);//$base-color-projects
+  //   }
+  // }
 }
 
 // Feedback Page (Hire A Project)
@@ -3109,29 +3133,29 @@ body.page-type-feedback.hire_a_project {
 
 // Feedback Page (Contact Me)
 body.page-type-feedback.contact_me {
-  $base-color-contact:$theme-color-azalea;
-  .logo {
-    a {
-      &::before, &::after {
-        background-color:lighten($base-color-contact,3);
-      }
-      span {
-        &::before, &::after {
-          background-color:lighten($base-color-contact,3);
-        }
-      }
-      &:hover, &:active, &:focus {
-        span {
-          color:lighten($base-color-contact,1);
-        }
-      }
-    }
-  }
-  a.link-line-throught {
-    &::before {
-      background-color:$base-color-contact;
-    }
-  }
+  // $base-color-contact:theme-color('azalea');
+  // .logo {
+  //   a {
+  //     &::before, &::after {
+  //       background-color:lighten($base-color-contact,3);
+  //     }
+  //     span {
+  //       &::before, &::after {
+  //         background-color:lighten($base-color-contact,3);
+  //       }
+  //     }
+  //     &:hover, &:active, &:focus {
+  //       span {
+  //         color:lighten($base-color-contact,1);
+  //       }
+  //     }
+  //   }
+  // }
+  // a.link-line-throught {
+  //   &::before {
+  //     background-color:$base-color-contact;
+  //   }
+  // }
 }
 
 // Feedback Page (Contact Me & Hire A Project)
@@ -3189,7 +3213,7 @@ body.page-type-feedback {
 
 // Theme Dark
 body.theme-dark, body.is-bottom.page-type-basic, body.is-bottom.page-type-project, body.page-type-feedback.hire_a_project, body.theme-dark-mobile-wide {
-  $base-color-links:$theme-color-silver;
+  $base-color-links:theme-color('azalea');
   .logo {
     a {
       &::before, &::after {
@@ -3202,7 +3226,7 @@ body.theme-dark, body.is-bottom.page-type-basic, body.is-bottom.page-type-projec
       }
       &:hover, &:active, &:focus {
         span {
-          color:lighten($base-color-links,10);//darken($base-color-links,35)
+          color:lighten($base-color-links,5);//darken($base-color-links,35)
         }
       }
     }
