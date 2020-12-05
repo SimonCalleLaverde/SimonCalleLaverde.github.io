@@ -1264,7 +1264,12 @@ article.three-phases-article {
     }
     .modal-header {
       button.close {
-        padding:0.6rem 1rem;//Was 1rem 1rem
+        margin-top:0.5rem;
+        margin-right:0.5rem;
+        padding:0 0.5rem 0.08rem;//0.6rem 1rem//Was 1rem 1rem
+        border:1px solid theme-color('aqua');
+        @include border-radius(1rem);
+        @include transition(opacity ease-in-out 0.5s);
         &:hover, &:active, &:focus {
           outline:none;
         }
