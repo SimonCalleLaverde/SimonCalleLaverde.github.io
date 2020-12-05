@@ -480,6 +480,34 @@ $btn-lg-padding:0.7rem 2.3rem;
   @include border-radius(0);
   @include filter(opacity(1));
   @include transition(all ease-out 0.4s);
+  &.btn-chocolate {
+    color:theme-color('chocolate');
+    border:1px solid theme-color('chocolate');
+    &::before {
+      border:1px solid theme-color('chocolate');
+    }
+    &:hover {//, &:active, &:focus
+      color:theme-color('chocolate');//transparent
+      border-color:theme-color('chocolate');//lighten(theme-color('rosybrown'),10)
+      &::before {
+        border-color:theme-color('chocolate');//lighten(theme-color('rosybrown'),10)
+      }
+    }
+  }
+  &.btn-aqua {
+    color:theme-color('aqua');
+    border:1px solid theme-color('aqua');
+    &::before {
+      border:1px solid theme-color('aqua');
+    }
+    &:hover {//, &:active, &:focus
+      color:theme-color('aqua');//transparent
+      border-color:theme-color('aqua');//lighten(theme-color('rosybrown'),10)
+      &::before {
+        border-color:theme-color('aqua');//lighten(theme-color('rosybrown'),10)
+      }
+    }
+  }
   &::before {
     content:"";
     position:absolute;
