@@ -1292,6 +1292,7 @@ article.three-phases-article {
           color:darken(#FAF5EF,3);
           border-color:theme-color('aqua');//Added From J.I. Posts But Darken
           @include filter(opacity(0.75));
+          @include box-shadow(0 5px 15px rgba(24,16,8,0.2)!important);
         }
       }
     }
