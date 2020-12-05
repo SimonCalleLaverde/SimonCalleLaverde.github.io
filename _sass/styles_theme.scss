@@ -320,14 +320,14 @@ a.link-line-throught {
   &::before {
     content:'';
     position:absolute;
-    height:1px;//30%
+    height:2px;//30%
     width:0;
     //top:50%;//40%
     right:0;
-    bottom:1px;//
+    bottom:0;//
     //left:0;
     background-color:theme-color('rosybrown');//#CE1352
-    //border-bottom:1px solid theme-color('rosybrown');
+    border-bottom:1px solid theme-color('chocolate');//rosybrown
     pointer-events:none;
     //mix-blend-mode:difference;
     @include filter(opacity(0.8));//0.4//0.3//0.8
@@ -1284,6 +1284,16 @@ article.three-phases-article {
     .modal-body {
       font-size:15px;
       line-height:1.8;
+    }
+    .modal-footer {
+      .btn {
+        &:hover {//, &:active, &:focus
+          background-color:theme-color('aqua')!important;//Added From J.I. Posts But Darken
+          color:darken(#FAF5EF,3);
+          border-color:theme-color('aqua');//Added From J.I. Posts But Darken
+          @include filter(opacity(0.75));
+        }
+      }
     }
   }
   &.home-three-phases-modal {
@@ -2924,7 +2934,7 @@ footer {
             }
             &.link-line-throught {
               &::before {
-                bottom:3px;//
+                bottom:2px;//
               }
             }
           }
