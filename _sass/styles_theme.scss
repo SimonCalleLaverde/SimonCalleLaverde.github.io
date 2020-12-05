@@ -315,31 +315,32 @@ figure {
 // p {
 //   max-width:70ch;//"ch" is width of the "0" of a given font. (Means, 70 characters "width" approx)
 // }
-// a.link-line-throught {
-//   position:relative;
-//   &::before {
-//     content:'';
-//     position:absolute;
-//     height:30%;//
-//     width:0;
-//     top:40%;//50%
-//     right:0;
-//     //left:0;
-//     background-color:theme-color('rosybrown');//#CE1352
-//     //border-bottom:1px solid theme-color('rosybrown');
-//     pointer-events:none;
-//     //mix-blend-mode:difference;
-//     @include filter(opacity(0.4));//0.3//0.8
-//     @include transition(width 0.4s ease-in-out);
-//   }
-//   &:hover, &:active, &:focus, &.active-link {
-//     &::before {
-//       width:100%;
-//       right:auto;
-//       left:0;
-//     }
-//   }
-// }
+a.link-line-throught {
+  position:relative;
+  &::before {
+    content:'';
+    position:absolute;
+    height:1px;//30%
+    width:0;
+    //top:50%;//40%
+    right:0;
+    bottom:1px;//
+    //left:0;
+    background-color:theme-color('rosybrown');//#CE1352
+    //border-bottom:1px solid theme-color('rosybrown');
+    pointer-events:none;
+    //mix-blend-mode:difference;
+    @include filter(opacity(0.8));//0.4//0.3//0.8
+    @include transition(width 0.4s ease-in-out);
+  }
+  &:hover, &:active, &:focus, &.active-link {
+    &::before {
+      width:100%;
+      right:auto;
+      left:0;
+    }
+  }
+}
 
 // Fonts
 h1, h2, h3, h4, h5, h6, .font-headline {
@@ -2909,7 +2910,8 @@ footer {
         li.nav-item {
           a.nav-link {
             display:inline-block;
-            padding:0.1rem;
+            margin:0.1rem auto;
+            padding:0 0.1rem;
             font-family:$font-ultra-light;
             font-size:12px;
             color:theme-color('rosybrown');
@@ -2917,8 +2919,13 @@ footer {
             // &::before {
             //   display:none;
             // }
-            &:hover, &:active, &:focus {
-              //color:#FFF;
+            &:hover, &:active, &:focus, &.active-link {
+              color:lighten(theme-color('rosybrown'),10);
+            }
+            &.link-line-throught {
+              &::before {
+                bottom:3px;//
+              }
             }
           }
         }
@@ -2950,11 +2957,11 @@ body {
   .logo {
     a {
       &::before, &::after {
-        background-color:$base-color-links;
+        background-color:lighten($base-color-links,5);
       }
       span {
         &::before, &::after {
-          background-color:$base-color-links;
+          background-color:lighten($base-color-links,5);
         }
       }
       &:hover, &:active, &:focus {
