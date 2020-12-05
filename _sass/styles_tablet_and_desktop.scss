@@ -408,11 +408,14 @@
             right:-20.5px;//-19.5px;
             font-size:10px;//9px
             color:theme-color('chocolate');
-            @include transition(color ease-out 0.3s);
+            @include transition(color ease-in-out 0.5s);
           }
           &:hover, &:active, &:focus, &.active-link {
-            color:theme-color('chocolate');
+            color:lighten(theme-color('aqua'),5);//theme-color('chocolate')
             //@include filter(opacity(1));
+            small {
+              color:lighten(theme-color('aqua'),5);
+            }
           }
         }
         &:nth-child(3) {
@@ -1099,7 +1102,10 @@
               }
             }
             &:hover, &:active, &:focus, &.active-link {
-              color:theme-color('rosybrown');
+              color:darken(theme-color('rosybrown'),5);
+              small {
+                color:darken(theme-color('rosybrown'),5);
+              }
             }
           }
         }
