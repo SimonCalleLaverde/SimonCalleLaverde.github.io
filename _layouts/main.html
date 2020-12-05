@@ -45,7 +45,9 @@ layout: "compress"
 
     <div class="rolly-on-off" id="rolly">
       <main id="main">
-        <h1 class="sr-only">This is the {{ page.title }} page</h1>
+        <h1 class="sr-only">
+          This is the {{ page.title }} page
+        </h1>
 
         {{ content }}
 
@@ -67,7 +69,7 @@ layout: "compress"
 
 
     {% if page.slug == "home" %}
-      {% include home/home_phase_modal.html %}
+      {% include home/home_three_phases_modal.html %}
     {% endif %}
 
     {% comment %}

@@ -1247,7 +1247,7 @@ article.three-phases-article {
       line-height:1.8;
     }
   }
-  &.home-phase-modal {
+  &.home-three-phases-modal {
     .modal-content {
       .modal-body {
         img {
@@ -3132,6 +3132,24 @@ body.page-type-feedback {
               @include filter(opacity(0.9));
               &::before {
                 @include animation(lineThroughtBack98Anim 0.9s linear forwards);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-down(md) {//Down
+  body.page-type-feedback {
+    .modal {
+      &.feedback-plans-modal {
+        .modal-content {
+          .modal-body {
+            text-align:left;
+            ul {
+              padding-left:15px;
+              li {
               }
             }
           }
