@@ -1105,9 +1105,9 @@
               }
             }
             &:hover, &:active, &:focus, &.active-link {
-              color:darken(theme-color('rosybrown'),5);
+              //color:darken(theme-color('rosybrown'),5);
               small {
-                color:darken(theme-color('rosybrown'),5);
+                //color:darken(theme-color('rosybrown'),5);
               }
             }
           }

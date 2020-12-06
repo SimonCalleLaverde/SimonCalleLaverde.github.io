@@ -3088,16 +3088,16 @@ body.page-type-basic.projects {
   .logo {
     a {
       &::before, &::after {
-        background-color:darken($base-color-projects,15);
+        background-color:darken($base-color-projects,10);
       }
       span {
         &::before, &::after {
-          background-color:darken($base-color-projects,15);
+          background-color:darken($base-color-projects,10);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:darken($base-color-projects,25);
+          color:darken($base-color-projects,20);
         }
       }
     }
@@ -3113,9 +3113,9 @@ body.page-type-basic.projects {
       li.nav-item {
         a.nav-link {
           &:hover, &:active, &:focus, &.active-link {
-            color:darken($base-color-projects,20);
+            color:darken($base-color-projects,15);
             small {
-              color:darken($base-color-projects,20);
+              color:darken($base-color-projects,15);
             }
           }
         }
@@ -3256,22 +3256,22 @@ body.page-type-feedback {
 
 // Theme Dark
 body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-type-feedback.theme-dark, body.page-type-basic.is-bottom, body.page-type-project.is-bottom, body.page-type-feedback.hire_a_project, body.page-type-basic.theme-dark-mobile-wide, body.page-type-project.theme-dark-mobile-wide, body.page-type-feedback.theme-dark-mobile-wide {
-  $base-color-links:theme-color('rosybrown');
+  $base-color-links:theme-color('azalea');//theme-color('rosybrown')
   .logo {
     a {
       &::before, &::after {
-        background-color:darken($base-color-links,7);
+        background-color:darken($base-color-links,5);
       }
       span {
-        color:$base-color-links;
-        border:1px solid $base-color-links;
+        color:theme-color('rosybrown');
+        border:1px solid theme-color('rosybrown');
         &::before, &::after {
-          background-color:darken($base-color-links,7);
+          background-color:darken($base-color-links,5);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:darken($base-color-links,2);
+          color:$base-color-links;
         }
       }
     }
@@ -3280,6 +3280,20 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
     &::before {
       //background-color:$base-color-links;
       //mix-blend-mode:color-dodge;//hue
+    }
+  }
+  nav.navbar {
+    ul.navbar-nav {
+      li.nav-item {
+        a.nav-link {
+          &:hover, &:active, &:focus, &.active-link {
+            color:$base-color-links;
+            small {
+              color:$base-color-links;
+            }
+          }
+        }
+      }
     }
   }
   main {
