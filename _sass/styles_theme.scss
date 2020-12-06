@@ -3084,7 +3084,7 @@ body.page-type-basic.about {
 
 // Basic Page (Projects)
 body.page-type-basic.projects {
-  $base-color-projects:$theme-color-gold;
+  $base-color-projects:theme-color('redish');//$theme-color-gold
   .logo {
     a {
       &::before, &::after {
