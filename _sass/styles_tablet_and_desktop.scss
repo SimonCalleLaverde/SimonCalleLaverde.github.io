@@ -400,7 +400,7 @@
           text-transform:uppercase;
           white-space:nowrap;
           //@include filter(opacity(0.8));
-          @include transition(filter ease-out 0.3s, color ease-in-out 0.5s);
+          @include transition(color ease-in-out 0.5s, filter ease-out 0.3s, transform ease-out 0.3s);
           small {
             display:inline-block;
             position:absolute;
@@ -416,6 +416,9 @@
             small {
               color:lighten(theme-color('aqua'),5);
             }
+          }
+          &:hover, &:active, &:focus {
+            @include transform(scale(1.05));
           }
         }
         &:nth-child(3) {

@@ -1376,14 +1376,16 @@ aside.header-social-media {
   //top:26%;
   //right:25px;
   a {
+    display:inline-block;
     font-family:$font-regular;//$font-light
     font-size:11px;
-    color:theme-color('chocolate');//rgba(24,16,8,0.8)
-    @include filter(opacity(0.8));
-    @include transition(filter ease-out 0.3s, color ease-in-out 0.5s);
+    color:rgba(24,16,8,0.8);//theme-color('chocolate')
+    //@include filter(opacity(0.8));
+    @include transition(color ease-in-out 0.5s, transform ease-out 0.3s);//filter ease-out 0.3s
     &:hover, &:active, &:focus {
       color:lighten(theme-color('aqua'),5);//theme-color('chocolate')
-      @include filter(opacity(1));
+      //@include filter(opacity(1));
+      @include transform(scale(1.05));
     }
   }
 }
@@ -1393,6 +1395,15 @@ aside.header-social-media {
     left:100%;
     @include transform-origin(0 0);
     @include transform(rotate(90deg));
+  }
+}
+@include media-breakpoint-down(sm) {//Down
+  aside.header-social-media {
+    a {
+      &:hover, &:active, &:focus {
+        color:lighten(theme-color('rosybrown'),5);
+      }
+    }
   }
 }
 @media only screen and (max-width:400px) {//Down
@@ -1850,7 +1861,9 @@ div.menu-mobile {
   }
   nav.nav-mobile {
     > div {
-      overflow:hidden;
+      padding-right:10px;
+      padding-left:10px;
+      overflow-y:hidden;
       a.nav-mobile-link {
         display:block;
         @include filter(opacity(0));
@@ -1858,7 +1871,7 @@ div.menu-mobile {
         @include transition(none);
         h1, h2, h3, h4, h5, h6 {
           color:theme-color('rosybrown');
-          @include transition(color ease-out 0.3s, letter-spacing ease-out 0.3s);
+          @include transition(color ease-in-out 0.5s, letter-spacing ease-out 0.3s, transform ease-out 0.3s);
           // &::after {
           //   content:"";
           //   position:absolute;
@@ -1872,8 +1885,9 @@ div.menu-mobile {
         &:hover, &:active, &:focus, &.active {
           h1, h2, h3, h4, h5, h6 {
             color:darken(theme-color('rosybrown'),5);
-            letter-spacing:1px;//2px
-            @include animation(letterSpaceAnim 0.8s ease-out forwards);
+            //letter-spacing:1px;//2px
+            @include transform(scale(1.05));
+            //@include animation(letterSpaceAnim 0.8s ease-out forwards);
             // &::after {
             //   width:100%;
             //   right:auto;
@@ -3003,30 +3017,6 @@ body {
       mix-blend-mode:difference;
     }
   }
-  // $base-color-links:theme-color('azalea');
-  // .logo {
-  //   a {
-  //     &::before, &::after {
-  //       background-color:lighten($base-color-links,2);
-  //     }
-  //     span {
-  //       &::before, &::after {
-  //         background-color:lighten($base-color-links,2);
-  //       }
-  //     }
-  //     &:hover, &:active, &:focus {
-  //       span {
-  //         color:$base-color-links;
-  //       }
-  //     }
-  //   }
-  // }
-  // a.link-line-throught {
-  //   &::before {
-  //     background-color:$base-color-links;
-  //     mix-blend-mode:difference;
-  //   }
-  // }
 }
 
 // Basic Page
@@ -3040,28 +3030,6 @@ body.page-type-basic.home {
 // Basic Page (Home)
 body.page-type-basic.home {
   // $base-color-home:#CE1352;
-  // .logo {
-  //   a {
-  //     &::before, &::after {
-  //       background-color:darken($base-color-home,10);
-  //     }
-  //     span {
-  //       &::before, &::after {
-  //         background-color:darken($base-color-home,10);
-  //       }
-  //     }
-  //     &:hover, &:active, &:focus {
-  //       span {
-  //         color:darken($base-color-home,35);
-  //       }
-  //     }
-  //   }
-  // }
-  // a.link-line-throught {
-  //   &::before {
-  //     background-color:$base-color-home;
-  //   }
-  // }
 }
 
 // Basic Page (About)
@@ -3103,6 +3071,13 @@ body.page-type-basic.about {
       }
     }
   }
+  aside.header-social-media {
+    a {
+      &:hover, &:active, &:focus {
+        color:darken($base-color-about,20);
+      }
+    }
+  }
 }
 
 // Basic Page (Projects)
@@ -3111,16 +3086,16 @@ body.page-type-basic.projects {
   .logo {
     a {
       &::before, &::after {
-        background-color:darken($base-color-projects,20);
+        background-color:darken($base-color-projects,15);
       }
       span {
         &::before, &::after {
-          background-color:darken($base-color-projects,20);
+          background-color:darken($base-color-projects,15);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:darken($base-color-projects,30);
+          color:darken($base-color-projects,25);
         }
       }
     }
@@ -3145,63 +3120,16 @@ body.page-type-basic.projects {
       }
     }
   }
-
   // div.cursor {
   //   .cursor-project {
   //     background-color:theme-color('redish');//chocolate
   //     color:theme-color('rosybrown');
   //   }
   // }
-  // $base-color-projects:theme-color('rosybrown');
-  // .logo {
-  //   a {
-  //     &::before, &::after {
-  //       background-color:darken($base-color-projects,1);
-  //     }
-  //     span {
-  //       &::before, &::after {
-  //         background-color:darken($base-color-projects,1);
-  //       }
-  //     }
-  //     &:hover, &:active, &:focus {
-  //       span {
-  //         color:darken($base-color-projects,3);
-  //       }
-  //     }
-  //   }
-  // }
-  // a.link-line-throught {
-  //   &::before {
-  //     background-color:darken($base-color-projects,3);//$base-color-projects
-  //   }
-  // }
 }
 
 // Feedback Page (Hire A Project)
 body.page-type-feedback.hire_a_project {
-  // $base-color-hire:$theme-color-silver;
-  // .logo {
-  //   a {
-  //     &::before, &::after {
-  //       background-color:$base-color-hire;
-  //     }
-  //     span {
-  //       &::before, &::after {
-  //         background-color:$base-color-hire;
-  //       }
-  //     }
-  //     &:hover, &:active, &:focus {
-  //       span {
-  //         color:lighten($base-color-hire,5);
-  //       }
-  //     }
-  //   }
-  // }
-  // a.link-line-throught {
-  //   &::before {
-  //     background-color:$base-color-hire;
-  //   }
-  // }
 }
 
 // Feedback Page (Contact Me)
@@ -3298,8 +3226,34 @@ body.page-type-feedback {
   }
 }
 
+// Menu Opened
+body.page-type-basic, body.page-type-feedback {
+  &.menu-opened {
+    $logo-color-menu-opened:theme-color('rosybrown');
+    .logo {
+      a {
+        &::before, &::after {
+          background-color:darken($logo-color-menu-opened,7);
+        }
+        span {
+          color:$logo-color-menu-opened;
+          border:1px solid $logo-color-menu-opened;
+          &::before, &::after {
+            background-color:darken($logo-color-menu-opened,7);
+          }
+        }
+        &:hover, &:active, &:focus {
+          span {
+            color:darken($logo-color-menu-opened,2);
+          }
+        }
+      }
+    }
+  }
+}
+
 // Theme Dark
-body.theme-dark, body.is-bottom.page-type-basic, body.is-bottom.page-type-project, body.page-type-feedback.hire_a_project, body.theme-dark-mobile-wide {
+body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-type-feedback.theme-dark, body.page-type-basic.is-bottom, body.page-type-project.is-bottom, body.page-type-feedback.hire_a_project, body.page-type-basic.theme-dark-mobile-wide, body.page-type-project.theme-dark-mobile-wide, body.page-type-feedback.theme-dark-mobile-wide {
   $base-color-links:theme-color('rosybrown');
   .logo {
     a {
@@ -3307,8 +3261,8 @@ body.theme-dark, body.is-bottom.page-type-basic, body.is-bottom.page-type-projec
         background-color:darken($base-color-links,7);
       }
       span {
-        color:theme-color('rosybrown');
-        border:1px solid theme-color('rosybrown');
+        color:$base-color-links;
+        border:1px solid $base-color-links;
         &::before, &::after {
           background-color:darken($base-color-links,7);
         }
