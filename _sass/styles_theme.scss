@@ -2983,11 +2983,11 @@ body {
   .logo {
     a {
       &::before, &::after {
-        background-color:lighten($base-color-links,5);
+        background-color:lighten($base-color-links,12);
       }
       span {
         &::before, &::after {
-          background-color:lighten($base-color-links,5);
+          background-color:lighten($base-color-links,12);
         }
       }
       &:hover, &:active, &:focus {
@@ -2999,7 +2999,7 @@ body {
   }
   a.link-line-throught {
     &::before {
-      background-color:lighten($base-color-links,15);//$base-color-links
+      background-color:lighten($base-color-links,10);//$base-color-links
       mix-blend-mode:difference;
     }
   }
@@ -3066,56 +3066,86 @@ body.page-type-basic.home {
 
 // Basic Page (About)
 body.page-type-basic.about {
-  // $base-color-about:rgba(105,169,179,1);
-  // .logo {
-  //   a {
-  //     &::before, &::after {
-  //       background-color:darken($base-color-about,10);
-  //     }
-  //     span {
-  //       &::before, &::after {
-  //         background-color:darken($base-color-about,10);
-  //       }
-  //     }
-  //     &:hover, &:active, &:focus {
-  //       span {
-  //         color:darken($base-color-about,30);
-  //       }
-  //     }
-  //   }
-  // }
-  // a.link-line-throught {
-  //   &::before {
-  //     background-color:darken($base-color-about,10);//$base-color-about
-  //   }
-  // }
+  $base-color-about:rgba(105,169,179,1);
+  .logo {
+    a {
+      &::before, &::after {
+        background-color:darken($base-color-about,10);
+      }
+      span {
+        &::before, &::after {
+          background-color:darken($base-color-about,10);
+        }
+      }
+      &:hover, &:active, &:focus {
+        span {
+          color:darken($base-color-about,20);
+        }
+      }
+    }
+  }
+  a.link-line-throught {
+    &::before {
+      //background-color:darken($base-color-about,10);//$base-color-about
+    }
+  }
+  nav.navbar {
+    ul.navbar-nav {
+      li.nav-item {
+        a.nav-link {
+          &:hover, &:active, &:focus, &.active-link {
+            color:darken($base-color-about,20);
+            small {
+              color:darken($base-color-about,20);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Basic Page (Projects)
 body.page-type-basic.projects {
-  // $base-color-projects:$theme-color-gold;
-  // .logo {
-  //   a {
-  //     &::before, &::after {
-  //       background-color:darken($base-color-projects,5);
-  //     }
-  //     span {
-  //       &::before, &::after {
-  //         background-color:darken($base-color-projects,5);
-  //       }
-  //     }
-  //     &:hover, &:active, &:focus {
-  //       span {
-  //         color:darken($base-color-projects,35);
-  //       }
-  //     }
-  //   }
-  // }
-  // a.link-line-throught {
-  //   &::before {
-  //     background-color:$base-color-projects;
-  //   }
-  // }
+  $base-color-projects:$theme-color-gold;
+  .logo {
+    a {
+      &::before, &::after {
+        background-color:darken($base-color-projects,20);
+      }
+      span {
+        &::before, &::after {
+          background-color:darken($base-color-projects,20);
+        }
+      }
+      &:hover, &:active, &:focus {
+        span {
+          color:darken($base-color-projects,30);
+        }
+      }
+    }
+  }
+  a.link-line-throught {
+    &::before {
+      //background-color:$base-color-projects;
+    }
+  }
+
+  nav.navbar {
+    ul.navbar-nav {
+      li.nav-item {
+        a.nav-link {
+          &:hover, &:active, &:focus, &.active-link {
+            color:darken($base-color-projects,20);
+            small {
+              color:darken($base-color-projects,20);
+            }
+          }
+        }
+      }
+    }
+  }
+
   // div.cursor {
   //   .cursor-project {
   //     background-color:theme-color('redish');//chocolate
@@ -3176,29 +3206,43 @@ body.page-type-feedback.hire_a_project {
 
 // Feedback Page (Contact Me)
 body.page-type-feedback.contact_me {
-  // $base-color-contact:theme-color('azalea');
-  // .logo {
-  //   a {
-  //     &::before, &::after {
-  //       background-color:lighten($base-color-contact,3);
-  //     }
-  //     span {
-  //       &::before, &::after {
-  //         background-color:lighten($base-color-contact,3);
-  //       }
-  //     }
-  //     &:hover, &:active, &:focus {
-  //       span {
-  //         color:lighten($base-color-contact,1);
-  //       }
-  //     }
-  //   }
-  // }
-  // a.link-line-throught {
-  //   &::before {
-  //     background-color:$base-color-contact;
-  //   }
-  // }
+  $base-color-contact:theme-color('azalea');
+  .logo {
+    a {
+      &::before, &::after {
+        background-color:lighten($base-color-contact,7);
+      }
+      span {
+        &::before, &::after {
+          background-color:lighten($base-color-contact,7);
+        }
+      }
+      &:hover, &:active, &:focus {
+        span {
+          color:lighten($base-color-contact,5);
+        }
+      }
+    }
+  }
+  a.link-line-throught {
+    &::before {
+      //background-color:$base-color-contact;
+    }
+  }
+  nav.navbar {
+    ul.navbar-nav {
+      li.nav-item {
+        a.nav-link {
+          &:hover, &:active, &:focus, &.active-link {
+            color:lighten($base-color-contact,5);
+            small {
+              color:lighten($base-color-contact,5);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Feedback Page (Contact Me & Hire A Project)
