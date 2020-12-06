@@ -3015,8 +3015,8 @@ body {
   }
   a.link-line-throught {
     &::before {
-      background-color:lighten($base-color-links,10);//$base-color-links
-      mix-blend-mode:difference;
+      //background-color:lighten($base-color-links,10);//$base-color-links
+      //mix-blend-mode:difference;
     }
   }
 }
@@ -3228,31 +3228,31 @@ body.page-type-feedback {
   }
 }
 
-// Menu Opened
-body.page-type-basic, body.page-type-feedback {
-  &.menu-opened {
-    $logo-color-menu-opened:theme-color('rosybrown');
-    .logo {
-      a {
-        &::before, &::after {
-          background-color:darken($logo-color-menu-opened,7);
-        }
-        span {
-          color:$logo-color-menu-opened;
-          border:1px solid $logo-color-menu-opened;
-          &::before, &::after {
-            background-color:darken($logo-color-menu-opened,7);
-          }
-        }
-        &:hover, &:active, &:focus {
-          span {
-            color:darken($logo-color-menu-opened,2);
-          }
-        }
-      }
-    }
-  }
-}
+// // Menu Opened
+// body.page-type-basic, body.page-type-project, body.page-type-feedback {
+//   &.menu-opened {
+//     $logo-color-menu-opened:theme-color('rosybrown');
+//     .logo {
+//       a {
+//         &::before, &::after {
+//           background-color:darken($logo-color-menu-opened,7);
+//         }
+//         span {
+//           color:$logo-color-menu-opened;
+//           border:1px solid $logo-color-menu-opened;
+//           &::before, &::after {
+//             background-color:darken($logo-color-menu-opened,7);
+//           }
+//         }
+//         &:hover, &:active, &:focus {
+//           span {
+//             color:darken($logo-color-menu-opened,2);
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 // Theme Dark
 body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-type-feedback.theme-dark, body.page-type-basic.is-bottom, body.page-type-project.is-bottom, body.page-type-feedback.hire_a_project, body.page-type-basic.theme-dark-mobile-wide, body.page-type-project.theme-dark-mobile-wide, body.page-type-feedback.theme-dark-mobile-wide {
@@ -3278,8 +3278,8 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
   }
   a.link-line-throught {
     &::before {
-      background-color:$base-color-links;
-      mix-blend-mode:color-dodge;//hue
+      //background-color:$base-color-links;
+      //mix-blend-mode:color-dodge;//hue
     }
   }
   main {
