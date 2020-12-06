@@ -1672,6 +1672,7 @@ nav.navbar {
     }
     &:hover, &:active, &:focus {
       //border-color:transparent;
+      //@include transform(scale(1.05));
       &::before, &::after {
         width:100%;
       }
@@ -2961,6 +2962,7 @@ footer {
             // }
             &:hover, &:active, &:focus, &.active-link {
               color:lighten(theme-color('rosybrown'),10);
+              @include transform(scale(1));
             }
             &.link-line-throught {
               &::before {
