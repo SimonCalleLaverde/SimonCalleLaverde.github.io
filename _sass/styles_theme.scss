@@ -1233,19 +1233,34 @@ article.three-phases-article {
       }
     }
     &:hover, &:active, &:focus {
+      color:theme-color('rosybrown')!important;
       span {
         @include transform(scale(1.03));
         @include box-shadow(0 5px 15px rgba(24,16,8,0.2));
       }
+      // Same ":hover" Styles From "btn" [Start]
+      div.btn {
+        background-color:theme-color('rosybrown')!important;
+        color:theme-color('chocolate');
+        border-color:theme-color('rosybrown');
+        @include box-shadow(0 5px 15px rgba(24,16,8,0.1)!important);
+        &::before {
+          right:0;
+          bottom:0;
+          border-color:theme-color('rosybrown');
+          @include transform(translate(0,0));
+        }
+      }
+      // Same ":hover" Styles From "btn" [End]
     }
     &:focus {
       //outline:none;
       @include box-shadow(none);
     }
-  }
-  .btn {
-    &:hover {
-      //cursor:zoom-in;
+    div.btn {
+      &:hover {
+        //cursor:zoom-in;
+      }
     }
   }
 }
