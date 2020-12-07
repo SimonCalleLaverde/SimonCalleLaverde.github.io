@@ -1547,7 +1547,7 @@ a.header-hire-button-area {
   position:absolute;
   width:300px;//Hover Area
   height:300px;//Hover Area
-  right:0;
+  right:-10px;//0
   bottom:0;
   //border:1px dotted theme-color('redish');//Only To Display Hover Area
   z-index:200;
