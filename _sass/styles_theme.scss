@@ -1542,6 +1542,80 @@ aside.header-scroll-down {
   }
 }
 
+// Header Hire Button Area (Magnetic Button)
+a.header-hire-button-area {
+  position:absolute;
+  width:300px;//Hover Area
+  height:300px;//Hover Area
+  right:0;
+  bottom:0;
+  //border:1px dotted theme-color('redish');//Only To Display Hover Area
+  z-index:200;
+  @include border-radius(50%);
+  .hire-button-circle {
+    position:absolute;
+    width:125px;//Main Button
+    height:125px;//Main Button
+    top:50%;
+    left:50%;
+    border:1px solid theme-color('rosybrown');
+    pointer-events:none;
+    overflow:hidden;
+    @include border-radius(50%);
+    @include transform(translateY(-50%) translateX(-50%));
+    &:before {
+      content:"";
+      position:absolute;
+      width:0;
+      height:100%;
+      top:0;
+      right:0;
+      bottom:0;
+      left:auto;
+      background-color:theme-color('rosybrown');
+      @include border-radius(50%);
+      //@include transform(translateX(100%));
+      @include transition(width ease-in-out 0.4s);//transform ease-in-out 0.4s
+    }
+  }
+  .hire-button-text {
+    position:relative;
+    display:block;
+    font-size:13px;
+    color:darken(theme-color('rosybrown'),1);
+    line-height:1.1;
+    pointer-events:none;
+    @include filter(opacity(1));
+    @include transition(color ease-in-out 0.4s, filter ease-in-out 0.4s);
+    > span {
+      display:block;
+      @include transform(scale(1));
+      @include transition(transform ease-in-out 0.4s);
+      > span {
+        display:block;
+        @include animation(rotateAnim 10s linear infinite 5.1s);
+      }
+    }
+  }
+  &:hover {
+    .hire-button-circle {
+      &:before {
+        width:100%;
+        right:auto;
+        left:0;
+        //@include transform(translateX(0));
+      }
+    }
+    .hire-button-text {
+      color:theme-color('chocolate');//aqua
+      @include filter(opacity(0.85));
+      > span {
+        @include transform(scale(1.07));
+      }
+    }
+  }
+}
+
 //----------------------------------Section Styles----------------------------------//
 
 // Nav Desktop & Nav Footer Mobile/Desktop
@@ -1931,6 +2005,10 @@ div.menu-mobile {
             width:15px;
           }
         }
+        &.link-dribbble {
+          svg {
+          }
+        }
         &:hover, &:active, &:focus {
           &.link-linkedin {
             svg {
@@ -1945,6 +2023,11 @@ div.menu-mobile {
           &.link-angel {
             svg {
               //fill:lighten(theme-color('angel'),20)!important;
+            }
+          }
+          &.link-dribbble {
+            svg {
+              //fill:lighten(theme-color('dribbble'),20)!important;
             }
           }
         }
