@@ -4,7 +4,7 @@ title: Calle Impresores
 name_for_thumbnail: Calle<br>Impresores
 client: Calle Impresores SAS
 thumbnail_image: /uploads/site-image-calle-impresores.jpg
-header_image: /uploads/site-image-calle-impresores.jpg
+header_image: /uploads/site-image-header-calle-impresores.jpg
 platforms: [Jekyll, Bootstrap 4, Forestry]
 year: 2020
 roles: [UX, UI, Design, Development]
@@ -27,7 +27,7 @@ content_two_left: "The site is almost ready to launch, having had a delay as som
 content_two_right: "they are organizing some photos, content, and real catalogue material to later set the site live in their current domain: https://www.calleimpresores.com/."
 permalink: /calle_impresores
 type_slug: project
-order: 30
+order: 29
 ---
 
 Calle Impresores is a company that works in graphic arts and has more than 30 years in the industry. I re-designed and re-developed their website with a more modern interface, adaptable to any device and with an easier user experience and easier contact. The old site they had was created using Flash, so they needed a much more S.E.O friendly technology and a more modern and faster platform that they are able to edit and expand.

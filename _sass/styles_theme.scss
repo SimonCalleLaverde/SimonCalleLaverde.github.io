@@ -969,7 +969,7 @@ article.project-article {
           letter-spacing:0.8px;
           text-transform:uppercase;
           .project-title {
-            mix-blend-mode:screen;//luminosity//hard-light//exclusion//color-dodge//difference
+            //mix-blend-mode:screen;//luminosity//hard-light//exclusion//color-dodge//difference
             h1, h2, h3, h4, h5, h6 {
               //mix-blend-mode:screen;
             }
@@ -1295,7 +1295,7 @@ article.three-phases-article {
       button.close {
         margin-top:0.5rem;
         margin-right:0.5rem;
-        padding:0 0.5rem 0.08rem;//0.6rem 1rem//Was 1rem 1rem
+        padding:0 0.5rem 0.1rem;//0.6rem 1rem//Was 1rem 1rem
         border:1px solid theme-color('aqua');
         @include border-radius(1rem);
         @include text-shadow(none);
@@ -1557,8 +1557,8 @@ aside.header-scroll-down {
 // Header Hire Button Area (Magnetic Button)
 a.header-hire-button-area {
   position:absolute;
-  width:300px;//Hover Area
-  height:300px;//Hover Area
+  width:250px;//300px//Hover Area
+  height:250px;//300px//Hover Area
   right:-5px;//0
   bottom:0;
   //border:1px dotted theme-color('redish');//Only To Display Hover Area
@@ -1566,8 +1566,8 @@ a.header-hire-button-area {
   @include border-radius(50%);
   .hire-button-circle {
     position:absolute;
-    width:125px;//Main Button
-    height:125px;//Main Button
+    width:100px;//125px//Main Button
+    height:100px;//125px//Main Button
     top:50%;
     left:50%;
     border:1px solid theme-color('rosybrown');
@@ -1588,14 +1588,14 @@ a.header-hire-button-area {
       background-color:theme-color('rosybrown');
       @include border-radius(50%);
       //@include transform(translateX(100%));
-      @include transition(width ease-in-out 0.4s);//transform ease-in-out 0.4s
+      @include transition(width ease-in-out 0.2s);//transform ease-in-out 0.4s
     }
   }
   .hire-button-text {
     position:relative;
     display:block;
     font-size:13px;
-    color:darken(theme-color('rosybrown'),2);
+    color:darken(theme-color('rosybrown'),1);
     line-height:1.1;
     pointer-events:none;
     @include filter(opacity(1));
@@ -3341,18 +3341,18 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
   .logo {
     a {
       &::before, &::after {
-        background-color:darken($base-color-links,5);
+        background-color:$base-color-links;
       }
       span {
         color:theme-color('rosybrown');
         border:1px solid theme-color('rosybrown');
         &::before, &::after {
-          background-color:darken($base-color-links,5);
+          background-color:$base-color-links;
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:$base-color-links;
+          color:lighten($base-color-links,3);
         }
       }
     }
@@ -3368,9 +3368,9 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
       li.nav-item {
         a.nav-link {
           &:hover, &:active, &:focus, &.active-link {
-            color:$base-color-links;
+            color:lighten($base-color-links,3);
             small {
-              color:$base-color-links;
+              color:lighten($base-color-links,3);
             }
           }
         }
