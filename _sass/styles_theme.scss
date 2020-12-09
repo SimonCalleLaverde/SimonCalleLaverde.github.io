@@ -3076,20 +3076,20 @@ footer {
 
 // Body (Simply Changing Logo Hover And Links Hover Colour At Once | For Same As ::Selection)
 body {
-  $base-color-links:theme-color('aqua');
+  $base-color-links:rgba(105,169,179,1);
   .logo {
     a {
       &::before, &::after {
-        background-color:lighten($base-color-links,12);
+        background-color:darken($base-color-links,10);
       }
       span {
         &::before, &::after {
-          background-color:lighten($base-color-links,12);
+          background-color:darken($base-color-links,10);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:lighten($base-color-links,5);
+          color:darken($base-color-links,20);
         }
       }
     }
@@ -3098,6 +3098,27 @@ body {
     &::before {
       //background-color:lighten($base-color-links,10);//$base-color-links
       //mix-blend-mode:difference;
+    }
+  }
+  nav.navbar {
+    ul.navbar-nav {
+      li.nav-item {
+        a.nav-link {
+          &:hover, &:active, &:focus, &.active-link {
+            color:darken($base-color-links,20);
+            small {
+              color:darken($base-color-links,20);
+            }
+          }
+        }
+      }
+    }
+  }
+  aside.header-social-media {
+    a {
+      &:hover, &:active, &:focus {
+        color:darken($base-color-links,20);
+      }
     }
   }
 }
@@ -3117,20 +3138,20 @@ body.page-type-basic.home {
 
 // Basic Page (About)
 body.page-type-basic.about {
-  $base-color-about:rgba(105,169,179,1);
+  $base-color-about:theme-color('aqua');
   .logo {
     a {
       &::before, &::after {
-        background-color:darken($base-color-about,10);
+        background-color:lighten($base-color-about,12);
       }
       span {
         &::before, &::after {
-          background-color:darken($base-color-about,10);
+          background-color:lighten($base-color-about,12);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:darken($base-color-about,20);
+          color:lighten($base-color-about,5);
         }
       }
     }
@@ -3145,9 +3166,9 @@ body.page-type-basic.about {
       li.nav-item {
         a.nav-link {
           &:hover, &:active, &:focus, &.active-link {
-            color:darken($base-color-about,20);
+            color:lighten($base-color-about,5);
             small {
-              color:darken($base-color-about,20);
+              color:lighten($base-color-about,5);
             }
           }
         }
@@ -3157,7 +3178,7 @@ body.page-type-basic.about {
   aside.header-social-media {
     a {
       &:hover, &:active, &:focus {
-        color:darken($base-color-about,20);
+        color:lighten($base-color-about,5);
       }
     }
   }
