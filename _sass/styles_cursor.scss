@@ -250,13 +250,13 @@ div.cursor {
     }
     &.hovered29 {
       .cursor-project {
-        background-color:#5F252B;
-        color:theme-color('rosybrown');
+        background-color:lighten(rgba(221,168,163,1),5);//Pink From Calle's Stock Image//#5F252B Brown From Calle's Flowers Image
+        color:theme-color('chocolate');//rosybrown
       }
     }
     &.hovered30 {
       .cursor-project {
-        background-color:rgba(66,58,86,1);//#008080 Turquoise From Jomaira's Some Elements//lighten(rgba(221,168,163,1),5) Pink From Calle's Stock Image//#FFE8E4 Pink From Simon's Folio
+        background-color:rgba(66,58,86,1);//#008080 Turquoise From Jomaira's Some Elements//#FFE8E4 Pink From Simon's Folio
         color:theme-color('rosybrown');
       }
     }
