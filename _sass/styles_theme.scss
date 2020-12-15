@@ -3234,10 +3234,6 @@ body.page-type-basic.projects {
 
 // Feedback Page (Hire A Project)
 body.page-type-feedback.hire_a_project {
-}
-
-// Feedback Page (Contact Me)
-body.page-type-feedback.contact_me {
   $base-color-contact:theme-color('azalea');
   .logo {
     a {
@@ -3277,12 +3273,19 @@ body.page-type-feedback.contact_me {
   }
 }
 
-// Feedback Page (Contact Me & Hire A Project)
+// Feedback Page (Contact Me)
+body.page-type-feedback.contact_me {
+}
+
+// Feedback Page (Hire A Project & Contact Me)
 body.page-type-feedback {
   .modal {
     &.feedback-plans-modal {
       .modal-content {
-        //background-color:theme-color('beige');
+        //background-color:theme-color('beige');//rgba(24,16,8,0.7)
+        .modal-header, .modal-body, .modal-footer {
+          //color:theme-color('rosybrown');
+        }
         .modal-body {
           a {
             position:relative;
@@ -3306,6 +3309,10 @@ body.page-type-feedback {
               }
             }
           }
+        }
+        .modal-footer {//New
+          padding-top:1.6rem;//Was 1rem
+          padding-bottom:4rem;//1.6rem//Was 1rem
         }
       }
     }
@@ -3357,23 +3364,23 @@ body.page-type-feedback {
 // }
 
 // Theme Dark
-body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-type-feedback.theme-dark, body.page-type-basic.is-bottom, body.page-type-project.is-bottom, body.page-type-feedback.hire_a_project, body.page-type-basic.theme-dark-mobile-wide, body.page-type-project.theme-dark-mobile-wide, body.page-type-feedback.theme-dark-mobile-wide {
-  $base-color-links:theme-color('grey-mid');//theme-color('azalea')//theme-color('rosybrown')
+body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-type-feedback.theme-dark, body.page-type-basic.is-bottom, body.page-type-project.is-bottom, body.page-type-feedback.contact_me, body.page-type-basic.theme-dark-mobile-wide, body.page-type-project.theme-dark-mobile-wide, body.page-type-feedback.theme-dark-mobile-wide {//.hire_a_project
+  $base-color-links:theme-color('grey-mid');//theme-color('azalea')
   .logo {
     a {
       &::before, &::after {
-        background-color:$base-color-links;
+        background-color:lighten($base-color-links,3);
       }
       span {
         color:theme-color('rosybrown');
         border:1px solid theme-color('rosybrown');
         &::before, &::after {
-          background-color:$base-color-links;
+          background-color:lighten($base-color-links,3);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:lighten($base-color-links,3);
+          color:lighten($base-color-links,7);
         }
       }
     }
@@ -3425,18 +3432,6 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
       background-color:rgba(255,232,228,0.3);
       > div {
         background-color:theme-color('rosybrown');
-      }
-    }
-  }
-  .modal {
-    .modal-content {
-      //background-color:theme-color('beige');//rgba(24,16,8,0.7)
-      .modal-header, .modal-body, .modal-footer {
-        //color:theme-color('rosybrown');
-      }
-      .modal-footer {//New
-        padding-top:1.6rem;//Was 1rem
-        padding-bottom:4rem;//1.6rem//Was 1rem
       }
     }
   }
