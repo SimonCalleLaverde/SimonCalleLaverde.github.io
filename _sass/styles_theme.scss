@@ -3358,7 +3358,7 @@ body.page-type-feedback {
 
 // Theme Dark
 body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-type-feedback.theme-dark, body.page-type-basic.is-bottom, body.page-type-project.is-bottom, body.page-type-feedback.hire_a_project, body.page-type-basic.theme-dark-mobile-wide, body.page-type-project.theme-dark-mobile-wide, body.page-type-feedback.theme-dark-mobile-wide {
-  $base-color-links:theme-color('azalea');//theme-color('rosybrown')
+  $base-color-links:theme-color('grey-mid');//theme-color('azalea')//theme-color('rosybrown')
   .logo {
     a {
       &::before, &::after {
