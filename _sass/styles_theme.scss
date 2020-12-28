@@ -1393,7 +1393,7 @@ a.header-hire-button-area {
     height:100px;//125px//Main Button
     top:50%;
     left:50%;
-    border:1px solid theme-color('rosybrown');
+    border:1px solid theme-color('chocolate');//rosybrown
     pointer-events:none;
     overflow:hidden;
     @include border-radius(50%);
@@ -1408,7 +1408,7 @@ a.header-hire-button-area {
       right:0;
       bottom:0;
       left:auto;
-      background-color:theme-color('rosybrown');
+      background-color:theme-color('cherry');//rosybrown
       @include border-radius(50%);
       //@include transform(translateX(100%));
       @include transition(width ease-in-out 0.2s);//transform ease-in-out 0.4s
@@ -1418,7 +1418,7 @@ a.header-hire-button-area {
     position:relative;
     display:block;
     font-size:13px;
-    color:darken(theme-color('rosybrown'),1);
+    color:darken(theme-color('chocolate'),1);//rosybrown
     line-height:1.1;
     pointer-events:none;
     @include filter(opacity(1));
@@ -1435,6 +1435,7 @@ a.header-hire-button-area {
   }
   &:hover {
     .hire-button-circle {
+      border-color:theme-color('cherry');//rosybrown
       @include box-shadow(0 5px 15px rgba(24,16,8,0.2));
       &:before {
         width:100%;
@@ -1444,7 +1445,7 @@ a.header-hire-button-area {
       }
     }
     .hire-button-text {
-      color:theme-color('chocolate');//aqua
+      color:theme-color('rosybrown');//chocolate//aqua
       @include filter(opacity(0.85));
       > span {
         @include transform(scale(1.07));
