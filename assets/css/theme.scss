@@ -1,6 +1,31 @@
 ---
 ---
 
+//----------------------------------Other Possible Colours (For Future Projects)----------------------------------//
+
+// Other (Used In Circle Cursor Before)
+// background-color:rgba(240,217,194,1);//Rose Very Light
+// background-color:rgba(37,175,206,1);//Blue Terminal I Think
+
+// Blue CALLE // #2B5CA4 //rgba(43,92,164,1)
+
+// Blue Calle Logo // rgba(63,67,147,1) //#3f4393
+// Nice Red Neon // #F14949
+// Nice Green Mint //#00CFB5
+// Nice Green/Yellow //#ADD928
+// Awesome Caqui I // #CFB484
+// Super Awesome Caqui II // #E0C8A3
+// Nice Vino Tinto I // #4C081B
+// Nice Vino Tinto II // #300012
+// Nice Blue Light // #16C6E4
+// Nice Dark Coffee // #3C3C3C
+// Nice Silver // #D5DDE5
+// Awesome Skin // #D7CDBE
+
+// Pinterest Light Beige/Caqui //rgba(209,206,190,1) //#D1CEBE
+
+//----------------------------------Brand Colours----------------------------------//
+
 // Grey Colours
 $theme-color-grey-dark:#1A1A1A;//rgba(26,26,26,1)
 $theme-color-grey-mid:darken(#CCC,5);
@@ -22,7 +47,8 @@ $theme-color-gold:rgba(206,156,76,1);//Gold Terminal (TO TEST COLOURS AND ERRASE
 //rgba(50,1,1,1);// .... darken(rgba(101,67,33,1),20);//Dark Brown/Otter Brown//rgba(32,29,22,1)//Vansijl//rgba(35,35,33,1)//Tuatara (TO TEST COLOURS AND ERRASE ROW)
 $theme-color-cherry:#CE1352;
 
-// Mapping Colours
+//----------------------------------Mapping Colours----------------------------------//
+
 // https://brandcolors.net/
 $theme-colors: (
   "facebook":#3B5998,//Facebook Official
@@ -54,12 +80,43 @@ $theme-colors: (
   "azalea":$theme-color-azalea
 );
 
-// Bootstrap 4
+//----------------------------------Base Styles----------------------------------//
+
+// Bootstrap 4 Styles
 @import "bootstrap";
 
-// Custom Styles
-@import "styles_theme";
-@import "styles_tablet_and_desktop";
+// Mixins Styles
+@import "styles_mixins";
 
-// Plugins
-//@import "styles_videos_and_videomodal";
+// Fonts Styles
+@import "styles_fonts";
+
+// Animations Styles
+@import "styles_animations";
+
+//----------------------------------Extra Styles----------------------------------//
+
+// Loading Animation
+@import "styles_loading_animation";
+
+// Cursor
+@import "styles_cursor";
+
+// Hero Rotate Animation (Home)
+@import "styles_hero_rotate_animation";
+
+// Image Glitch Effect (About Me)
+@import "styles_image_glitch_effect";
+
+//----------------------------------Plugins Styles----------------------------------//
+
+// Rolly Styles
+@import "styles_rolly";
+
+//----------------------------------Custom Styles----------------------------------//
+
+// Theme (Mobile & General) Styles
+@import "styles_theme";
+
+// Tablet & Desktop Styles
+@import "styles_tablet_and_desktop";
