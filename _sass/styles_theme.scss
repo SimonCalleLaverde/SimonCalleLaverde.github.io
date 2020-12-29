@@ -39,6 +39,7 @@ html, body {
   }
 }
 html {
+  background-color:theme-color('chocolate');//In Case, While Loading
   text-rendering:optimizeLegibility;//geometricPrecision
   font-smooth:always;//
   -webkit-font-smoothing:subpixel-antialiased;//antialiased
@@ -1378,15 +1379,15 @@ a.header-hire-button-area {
   position:absolute;
   width:250px;//300px//Hover Area
   height:250px;//300px//Hover Area
-  right:-5px;//0
-  bottom:0;
+  right:-15px;//-5px//0
+  bottom:-10px;//0
   //border:1px dotted theme-color('redish');//Only To Display Hover Area
   z-index:200;
   @include border-radius(50%);
   .hire-button-circle {
     position:absolute;
-    width:100px;//125px//Main Button
-    height:100px;//125px//Main Button
+    width:125px;//100px//Main Button
+    height:125px;//100px//Main Button
     top:50%;
     left:50%;
     border:0.5px solid theme-color('chocolate');//rosybrown
@@ -1444,7 +1445,7 @@ a.header-hire-button-area {
       color:theme-color('rosybrown');//chocolate//aqua
       @include filter(opacity(0.85));
       > span {
-        @include transform(scale(1.07));
+        @include transform(scale(1.1));//1.07
       }
     }
   }
