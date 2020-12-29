@@ -305,7 +305,7 @@ body {
 //----------------------------------Loading Animation (Loader Circle Small) Styles----------------------------------//
 
 .loader-circle, .loader-circle > div {
-  $circle-size:17px;
+  $circle-size:30px;//17px
   width:$circle-size;
   height:$circle-size;
   @include border-radius(50%);
@@ -325,10 +325,12 @@ body {
 //   z-index:20010;
 // }
 .loader-circle {
-  right:22.5px;
+  //margin:auto;
+  right:22.5px;//0
   bottom:35px;//43.5px
+  //left:0;
   z-index:20011;
-  @include filter(opacity(0.9));//0.8
+  @include filter(opacity(0.6));//0.8
   > div {
     position:absolute;
     top:0;
@@ -341,8 +343,8 @@ body {
     &::before {
       content:"";
       position:absolute;
-      width:3px;
-      height:2px;
+      width:6px;//3px
+      height:4px;//2px
       top:-1px;
       left:5px;
       background-color:theme-color("chocolate");
