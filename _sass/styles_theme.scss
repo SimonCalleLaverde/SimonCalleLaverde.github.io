@@ -502,14 +502,10 @@ $btn-lg-padding:0.7rem 2.3rem;
 }
 .text-hero {
   font-size:4.3rem;
-}
-.text-gigantic {
-  font-size:3.7rem;
-}
-.text-hero {
   line-height:1.5;
 }
 .text-gigantic {
+  font-size:3.7rem;
   line-height:0.88;
 }
 .text-intro, .text-huge {
@@ -1393,7 +1389,7 @@ a.header-hire-button-area {
     height:100px;//125px//Main Button
     top:50%;
     left:50%;
-    border:1px solid theme-color('chocolate');//rosybrown
+    border:0.5px solid theme-color('chocolate');//rosybrown
     pointer-events:none;
     overflow:hidden;
     @include border-radius(50%);
@@ -2898,30 +2894,29 @@ footer {
 
 //----------------------------------Page Styles----------------------------------//
 
-// Body (Simply Changing Logo Hover And Links Hover Colour At Once | For Same As ::Selection)
+// Body (Simply Changing Logo, Nav Links, & Social Media Links Hover Colour At Once)
 body {
-  $base-color-links:rgba(105,169,179,1);
+  $base-color-home:theme-color('cherry');
   .logo {
     a {
       &::before, &::after {
-        background-color:darken($base-color-links,10);
+        background-color:darken($base-color-home,5);
       }
       span {
         &::before, &::after {
-          background-color:darken($base-color-links,10);
+          background-color:darken($base-color-home,5);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:darken($base-color-links,20);
+          color:darken($base-color-home,15);
         }
       }
     }
   }
   a.link-line-throught {
     &::before {
-      //background-color:lighten($base-color-links,10);//$base-color-links
-      //mix-blend-mode:difference;
+      //background-color:lighten($base-color-home,10);//$base-color-home
     }
   }
   nav.navbar {
@@ -2929,9 +2924,9 @@ body {
       li.nav-item {
         a.nav-link {
           &:hover, &:active, &:focus, &.active-link {
-            color:darken($base-color-links,20);
+            color:darken($base-color-home,15);
             small {
-              color:darken($base-color-links,20);
+              color:darken($base-color-home,15);
             }
           }
         }
@@ -2941,48 +2936,35 @@ body {
   aside.header-social-media {
     a {
       &:hover, &:active, &:focus {
-        color:darken($base-color-links,20);
+        color:darken($base-color-home,15);
       }
     }
   }
-}
-
-// Basic Page
-body.page-type-basic {
-}
-
-// Basic Page (Home)
-body.page-type-basic.home {
-}
-
-// Basic Page (Home)
-body.page-type-basic.home {
-  // $base-color-home:#CE1352;
 }
 
 // Basic Page (About)
 body.page-type-basic.about {
-  $base-color-about:theme-color('aqua');
+  $base-color-about:theme-color('blue');
   .logo {
     a {
       &::before, &::after {
-        background-color:lighten($base-color-about,12);
+        background-color:darken($base-color-about,5);
       }
       span {
         &::before, &::after {
-          background-color:lighten($base-color-about,12);
+          background-color:darken($base-color-about,5);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:lighten($base-color-about,5);
+          color:darken($base-color-about,15);
         }
       }
     }
   }
   a.link-line-throught {
     &::before {
-      //background-color:darken($base-color-about,10);//$base-color-about
+      //background-color:lighten($base-color-about,10);//$base-color-about
     }
   }
   nav.navbar {
@@ -2990,9 +2972,9 @@ body.page-type-basic.about {
       li.nav-item {
         a.nav-link {
           &:hover, &:active, &:focus, &.active-link {
-            color:lighten($base-color-about,5);
+            color:darken($base-color-about,15);
             small {
-              color:lighten($base-color-about,5);
+              color:darken($base-color-about,15);
             }
           }
         }
@@ -3002,7 +2984,7 @@ body.page-type-basic.about {
   aside.header-social-media {
     a {
       &:hover, &:active, &:focus {
-        color:lighten($base-color-about,5);
+        color:darken($base-color-about,15);
       }
     }
   }
@@ -3010,50 +2992,46 @@ body.page-type-basic.about {
 
 // Basic Page (Projects)
 body.page-type-basic.projects {
-  $base-color-projects:theme-color('redish');//$theme-color-gold
+  .text-hero {
+    line-height:1;
+  }
+  $base-color-projects:theme-color('aqua');
   .logo {
     a {
       &::before, &::after {
-        background-color:darken($base-color-projects,10);
+        background-color:lighten($base-color-projects,17);
       }
       span {
         &::before, &::after {
-          background-color:darken($base-color-projects,10);
+          background-color:lighten($base-color-projects,17);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:darken($base-color-projects,20);
+          color:lighten($base-color-projects,10);
         }
       }
     }
   }
   a.link-line-throught {
     &::before {
-      //background-color:$base-color-projects;
+      //background-color:darken($base-color-projects,10);//$base-color-projects
     }
   }
-
   nav.navbar {
     ul.navbar-nav {
       li.nav-item {
         a.nav-link {
           &:hover, &:active, &:focus, &.active-link {
-            color:darken($base-color-projects,15);
+            color:lighten($base-color-projects,10);
             small {
-              color:darken($base-color-projects,15);
+              color:lighten($base-color-projects,10);
             }
           }
         }
       }
     }
   }
-  // div.cursor {
-  //   .cursor-project {
-  //     background-color:theme-color('redish');//chocolate
-  //     color:theme-color('rosybrown');
-  //   }
-  // }
 }
 
 // Feedback Page (Hire A Project)
@@ -3189,29 +3167,29 @@ body.page-type-feedback {
 
 // Theme Dark
 body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-type-feedback.theme-dark, body.page-type-basic.is-bottom, body.page-type-project.is-bottom, body.page-type-feedback.contact_me, body.page-type-basic.theme-dark-mobile-wide, body.page-type-project.theme-dark-mobile-wide, body.page-type-feedback.theme-dark-mobile-wide {//.hire_a_project
-  $base-color-links:theme-color('grey-mid');//theme-color('azalea')
+  $base-color-dark:theme-color('grey-mid');//theme-color('azalea')
   .logo {
     a {
       &::before, &::after {
-        background-color:lighten($base-color-links,3);
+        background-color:lighten($base-color-dark,3);
       }
       span {
         color:theme-color('rosybrown');
         border:1px solid theme-color('rosybrown');
         &::before, &::after {
-          background-color:lighten($base-color-links,3);
+          background-color:lighten($base-color-dark,3);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:lighten($base-color-links,7);
+          color:lighten($base-color-dark,7);
         }
       }
     }
   }
   a.link-line-throught {
     &::before {
-      //background-color:$base-color-links;
+      //background-color:$base-color-dark;
       //mix-blend-mode:color-dodge;//hue
     }
   }
@@ -3220,9 +3198,9 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
       li.nav-item {
         a.nav-link {
           &:hover, &:active, &:focus, &.active-link {
-            color:lighten($base-color-links,3);
+            color:lighten($base-color-dark,3);
             small {
-              color:lighten($base-color-links,3);
+              color:lighten($base-color-dark,3);
             }
           }
         }
