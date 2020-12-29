@@ -329,10 +329,10 @@ $('#header-hire-button').mouseleave(function(e){
 
 $('#header-hire-button').mouseenter(function(e){
   TweenMax.to(this, 0.3, {transformOrigin: '0 0', scale: 1});
-  TweenMax.to('.hire-button-circle', 0.3,{scale: 1.1});
+  TweenMax.to('.hire-button-circle', 0.3,{scale: 1.2});
 });
 
-$('#header-hire-button').mousemove(function(e){   
+$('#header-hire-button').mousemove(function(e){
   callParallax(e);
 });
 

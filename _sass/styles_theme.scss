@@ -1374,8 +1374,8 @@ aside.header-scroll-down {
   }
 }
 
-// Header Hire Button Area (Magnetic Button)
-a.header-hire-button-area {
+// Header Hire Button (Magnetic Button)
+a.header-hire-button {
   position:absolute;
   width:250px;//300px//Hover Area
   height:250px;//300px//Hover Area
@@ -1390,7 +1390,7 @@ a.header-hire-button-area {
     height:125px;//100px//Main Button
     top:50%;
     left:50%;
-    border:0.5px solid theme-color('chocolate');//rosybrown
+    border:1px solid theme-color('chocolate');//rosybrown
     pointer-events:none;
     overflow:hidden;
     @include border-radius(50%);
@@ -1415,7 +1415,7 @@ a.header-hire-button-area {
     position:relative;
     display:block;
     font-size:13px;
-    color:darken(theme-color('chocolate'),1);//rosybrown
+    color:theme-color('chocolate');//rosybrown
     line-height:1.1;
     pointer-events:none;
     @include filter(opacity(1));
