@@ -322,14 +322,14 @@ $(function() {
 
 //---------------------------------MAGNETIC BUTTON---------------------------------//
 
-$('#header-hire-button').mouseleave(function(e){
-  TweenMax.to(this, 0.3, {scale: 1});
-  TweenMax.to('.hire-button-circle, .hire-button-text', 0.3,{scale: 1, x: 0, y: 0});
+$('#header-hire-button').mouseenter(function(e){
+  TweenMax.to(this, 0.5, {transformOrigin: '0 0', scale: 1});
+  TweenMax.to('.hire-button-circle', 0.5, {scale: 1.1});//scale: 1.3
 });
 
-$('#header-hire-button').mouseenter(function(e){
-  TweenMax.to(this, 0.3, {transformOrigin: '0 0', scale: 1});
-  TweenMax.to('.hire-button-circle', 0.3,{scale: 1.2});
+$('#header-hire-button').mouseleave(function(e){
+  TweenMax.to(this, 0.5, {scale: 1});
+  TweenMax.to('.hire-button-circle, .hire-button-text', 0.5, {scale: 1, x: 0, y: 0});
 });
 
 $('#header-hire-button').mousemove(function(e){
@@ -348,9 +348,9 @@ function parallaxIt(e, target, movement){
   var relY = e.pageY - boundingRect.top;
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  TweenMax.to(target, 0.3, {
-  x: (relX - boundingRect.width/2) / boundingRect.width * movement,
-  y: (relY - boundingRect.height/2 - scrollTop) / boundingRect.width * movement,
+  TweenMax.to(target, 0.5, {
+  x: (relX - boundingRect.width / 2) / boundingRect.width * movement,
+  y: (relY - boundingRect.height / 2 - scrollTop) / boundingRect.width * movement,
   ease: Power2.easeOut
   });
 }
