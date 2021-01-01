@@ -1382,7 +1382,6 @@ a.header-hire-button {
   right:-15px;//-5px//0
   bottom:-10px;//0
   //border:1px dotted theme-color('redish');//Only To Display Hover Area
-  z-index:200;
   @include border-radius(50%);
   .hire-button-circle {
     position:absolute;
@@ -1393,6 +1392,7 @@ a.header-hire-button {
     border:1px solid theme-color('chocolate');//rosybrown
     pointer-events:none;
     overflow:hidden;
+    z-index:100;//Above "header-scroll-down"
     @include border-radius(50%);
     @include transform(translateY(-50%) translateX(-50%));
     @include transition(border-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s);
@@ -1418,6 +1418,7 @@ a.header-hire-button {
     color:theme-color('chocolate');//rosybrown
     line-height:1.1;
     pointer-events:none;
+    z-index:101;//Above "header-scroll-down" & "hire-button-circle"
     @include filter(opacity(1));
     @include transition(color ease-in-out 0.4s, filter ease-in-out 0.4s);
     > span {
@@ -1449,6 +1450,36 @@ a.header-hire-button {
       }
     }
   }
+}
+
+// Trail Images Wrap
+.trail-images-wrap {
+
+
+
+
+
+  .trail-img {
+    position:absolute;
+    max-height:250px;//max-width
+    top:0;
+    left:0;
+    opacity:0;
+    will-change:transform;
+
+
+    z-index:200;
+
+
+    /*filter:sepia(1) saturate(1) contrast(180%) brightness(80%) hue-rotate(295deg);*//*var(--filter-img);*/
+  }
+
+
+
+
+
+}
+@media screen and (min-width: 53em) {/*Media-Query Used By Mary Lou In "Image Trail" Tutorial*/
 }
 
 //----------------------------------Section Styles----------------------------------//

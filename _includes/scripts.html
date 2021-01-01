@@ -6,7 +6,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <!--Green Sock Animation Platform (3)-->
+{% unless page.slug == "projects" %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+{% endunless %}
 
 <!--Scroll Magic-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
@@ -20,11 +22,18 @@
 
 <!--Hero Rotate Animation (Only For Home)-->
 {% if page.slug == "home" %}
-	<script src="{{ '/assets/js/hero_rotate_animation.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/assets/js/home_hero_rotate_animation.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/assets/js/home_header_image_3d.js' | relative_url }}" type="text/javascript"></script>
+{% endif %}
+
+<!--Trail Image Effect (Only For Projects)-->
+{% if page.slug == "projects" %}
+	<script src="{{ '/assets/js/TweenMax.min.js' | relative_url }}" type="text/javascript"></script><!--For Image Trail, Gsap Missed Some Variables For It To Work Fine-->
+	<script src="{{ '/assets/js/projects_trail_image_effect.js' | relative_url }}" type="text/javascript"></script>
 {% endif %}
 
 <!--Main (After Grunt)-->
 <script src="{{ '/assets/js/main.js' | relative_url }}" type="text/javascript"></script>
 
 <!--Live Tests (Raw)-->
-<script src="{{ '/assets/js/live_tests.js' | relative_url }}" type="text/javascript"></script>
+<!--<script src="{{ '/assets/js/live_tests.js' | relative_url }}" type="text/javascript"></script>-->

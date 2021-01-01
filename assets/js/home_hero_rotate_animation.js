@@ -1,4 +1,4 @@
-//----------------------------------ORIGINAL (UN-MINIFIED)----------------------------------//
+//---------------------------------HOME HERO ROTATE ANIMATION | ORIGINAL (UN-MINIFIED)----------------------------------//
 
 // As Per: https://www.cssscript.com/rotating-text-in-sequence-with-javascript-and-css3/
 
