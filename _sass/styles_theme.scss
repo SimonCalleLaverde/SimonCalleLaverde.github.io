@@ -1420,7 +1420,7 @@ a.header-hire-button {
     pointer-events:none;
     z-index:101;//Above "header-scroll-down" & "hire-button-circle"
     @include filter(opacity(1));
-    @include transition(color ease-in-out 0.4s, filter ease-in-out 0.4s);
+    @include transition(color ease-in-out 0.4s, letter-spacing ease-in-out 0.4s, filter ease-in-out 0.4s);
     > span {
       display:block;
       @include transform(scale(1));
@@ -1444,6 +1444,7 @@ a.header-hire-button {
     }
     .hire-button-text {
       color:theme-color('rosybrown');//chocolate//aqua
+      letter-spacing:1;
       @include filter(opacity(0.85));
       > span {
         @include transform(scale(1.1));//1.07
