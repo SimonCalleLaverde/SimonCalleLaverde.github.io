@@ -106,6 +106,9 @@ collections:
   skills:
     title: Skills Set
     output: true
+  trail_images:
+    title: Trail Images
+    output: true
   tools:
     title: Tools And Technology
     output: true

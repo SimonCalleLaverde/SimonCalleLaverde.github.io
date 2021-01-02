@@ -50,33 +50,17 @@ layout: "compress"
         </h1>
 
         {{ content }}
-
+        
         {% if page.slug == "projects" %}
           <div class="trail-images-wrap" aria-hidden="true">
-            <img class="trail-img" src="/uploads/trail_img_1.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_2.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_3.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_4.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_5.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_6.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_7.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_8.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_9.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_10.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_11.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_12.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_13.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_14.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_15.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_16.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_17.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_18.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_19.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_20.jpg" alt="Image Trail Effect">
-            <img class="trail-img" src="/uploads/trail_img_21.jpg" alt="Image Trail Effect">
+            {% assign sorted_trail_images = site.trail_images | sort:"order" %}<!--| reverse-->
+
+            {% for trail in sorted_trail_images %}
+              <img class="trail-img" src="{{ trail.trail_image }}" alt="{{ trail.title }}">
+            {% endfor %}
           </div>
         {% endif %}
-        
+
         {% unless page.type_slug == "feedback" %}
           {% include footer.html %}
         {% endunless %}

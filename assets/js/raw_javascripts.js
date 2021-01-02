@@ -191,9 +191,9 @@ $(function() {
     }
 
     if (scrollFromTop >= 30) {
-      fadeOutThisDiv.addClass("fade-out");
+      fadeOutThisDiv.addClass("trail-fade-out");
     } else if (scrollFromTop <= 30) {
-      fadeOutThisDiv.removeClass("fade-out");
+      fadeOutThisDiv.removeClass("trail-fade-out");
     }
   });
 });

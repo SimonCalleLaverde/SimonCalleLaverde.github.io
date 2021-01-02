@@ -2,10 +2,10 @@
 .glitch-image-wrap {
   --gap-horizontal:4px;//0//10px
   --gap-vertical:2px;//0//5px
-  --gap-horizontal-new:0;//10px
-  --gap-vertical-new:0;//5px
+  --gap-horizontal-new:10px;//0 For Smoother Anim
+  --gap-vertical-new:5px;//0 For Smoother Anim
   --anim-duration:10s;//5s
-  --anim-delay:10s;//3s//1s
+  --anim-delay:5s;//10s//3s//1s
   position:relative;
   overflow:hidden;
   img.glitch-img {

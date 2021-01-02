@@ -1454,8 +1454,14 @@ a.header-hire-button {
 
 // Trail Images Wrap
 .trail-images-wrap {//To make "trail-images-wrap" hidden when scrolling down
-  @include transition(filter ease-out 0.3s);
-  .trail-img {
+  opacity:1;
+  //@include filter(opacity(1));
+  @include transition(opacity ease-out 1s);//filter ease-out 1s
+  &.trail-fade-out {
+    opacity:0;
+    //@include filter(opacity(0));
+  }
+  img.trail-img {
     position:absolute;
     max-height:250px;
     top:0;
@@ -1465,11 +1471,8 @@ a.header-hire-button {
     will-change:transform;
     //@include filter(sepia(1) saturate(1) contrast(180%) brightness(80%) hue-rotate(295deg));
   }
-  &.fade-out {
-    @include filter(opacity(0));
-  }
 }
-@media screen and (min-width: 53em) {/*Media-Query Used By Mary Lou In "Image Trail" Tutorial*/
+@media screen and (min-width:53em) {//Media-Query Used By Mary Lou In "Image Trail" Tutorial
 }
 
 //----------------------------------Section Styles----------------------------------//
