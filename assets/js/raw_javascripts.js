@@ -173,6 +173,7 @@ $(function() {
   //caches a jQuery object containing the body element
   var hideThisDivs = $("aside .show-it, aside .hide-it");//.mouse-svg,//.logo .show-it, .logo .hide-it,
   var toggleLogoSize = $(".logo");
+  var fadeOutThisDiv = $(".trail-images-wrap");
 
   $(window).scroll(function() {
     var scrollFromTop = $(window).scrollTop();
@@ -187,6 +188,12 @@ $(function() {
       toggleLogoSize.addClass("logo-smaller");
     } else if (scrollFromTop <= 30) {
       toggleLogoSize.removeClass("logo-smaller");
+    }
+
+    if (scrollFromTop >= 30) {
+      fadeOutThisDiv.addClass("fade-out");
+    } else if (scrollFromTop <= 30) {
+      fadeOutThisDiv.removeClass("fade-out");
     }
   });
 });

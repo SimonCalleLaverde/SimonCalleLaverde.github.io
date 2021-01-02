@@ -1453,26 +1453,20 @@ a.header-hire-button {
 }
 
 // Trail Images Wrap
-.trail-images-wrap {
-
-
-
-
-  // To make "trail-images-wrap" hidden when scrolling down
+.trail-images-wrap {//To make "trail-images-wrap" hidden when scrolling down
+  @include transition(filter ease-out 0.3s);
   .trail-img {
-    position:fixed;//absolute
-    max-height:250px;//max-width
+    position:absolute;
+    max-height:250px;
     top:0;
     left:0;
     opacity:0;
-
-
-
-
-
-    z-index:100;//
+    z-index:100;
     will-change:transform;
-    filter:sepia(1) saturate(1) contrast(180%) brightness(80%) hue-rotate(295deg);//*var(--filter-img);
+    //@include filter(sepia(1) saturate(1) contrast(180%) brightness(80%) hue-rotate(295deg));
+  }
+  &.fade-out {
+    @include filter(opacity(0));
   }
 }
 @media screen and (min-width: 53em) {/*Media-Query Used By Mary Lou In "Image Trail" Tutorial*/
