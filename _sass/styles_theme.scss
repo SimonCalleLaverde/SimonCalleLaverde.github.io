@@ -2924,7 +2924,6 @@ footer {
 // Body (Simply Changing Logo, Nav Links, & Social Media Links Hover Colour At Once)
 body {
   $base-color-aqua:theme-color('aqua');
-  $base-color-chocolate:theme-color('chocolate');
   .logo {
     a {
       &::before, &::after {
@@ -2964,7 +2963,7 @@ body {
   aside.header-social-media {
     a {
       &:hover, &:active, &:focus {
-        color:lighten($base-color-chocolate,10);//lighten($base-color-aqua,10)
+        color:lighten($base-color-aqua,10);
       }
     }
   }
