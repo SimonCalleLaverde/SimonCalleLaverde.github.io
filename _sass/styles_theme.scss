@@ -2963,7 +2963,7 @@ body {
   aside.header-social-media {
     a {
       &:hover, &:active, &:focus {
-        color:darken($base-color-aqua,10);
+        color:lighten($base-color-aqua,10);
       }
     }
   }
@@ -3063,27 +3063,27 @@ body.page-type-basic.projects {
 
 // Feedback Page (Hire A Project)
 body.page-type-feedback.hire_a_project {
-  $base-color-contact:theme-color('azalea');
+  $base-color-azalea:theme-color('azalea');
   .logo {
     a {
       &::before, &::after {
-        background-color:lighten($base-color-contact,7);
+        background-color:lighten($base-color-azalea,7);
       }
       span {
         &::before, &::after {
-          background-color:lighten($base-color-contact,7);
+          background-color:lighten($base-color-azalea,7);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:lighten($base-color-contact,5);
+          color:lighten($base-color-azalea,5);
         }
       }
     }
   }
   a.link-line-throught {
     &::before {
-      //background-color:$base-color-contact;
+      //background-color:$base-color-azalea;
     }
   }
   nav.navbar {
@@ -3091,9 +3091,9 @@ body.page-type-feedback.hire_a_project {
       li.nav-item {
         a.nav-link {
           &:hover, &:active, &:focus, &.active-link {
-            color:lighten($base-color-contact,5);
+            color:lighten($base-color-azalea,5);
             small {
-              color:lighten($base-color-contact,5);
+              color:lighten($base-color-azalea,5);
             }
           }
         }
