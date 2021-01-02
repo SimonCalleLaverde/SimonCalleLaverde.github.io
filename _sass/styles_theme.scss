@@ -2921,27 +2921,27 @@ footer {
 
 // Body (Simply Changing Logo, Nav Links, & Social Media Links Hover Colour At Once)
 body {
-  $base-color-home:theme-color('cherry');
+  $base-color-aqua:theme-color('aqua');
   .logo {
     a {
       &::before, &::after {
-        background-color:darken($base-color-home,5);
+        background-color:lighten($base-color-aqua,17);
       }
       span {
         &::before, &::after {
-          background-color:darken($base-color-home,5);
+          background-color:lighten($base-color-aqua,17);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:darken($base-color-home,15);
+          color:lighten($base-color-aqua,10);
         }
       }
     }
   }
   a.link-line-throught {
     &::before {
-      //background-color:lighten($base-color-home,10);//$base-color-home
+      //background-color:darken($base-color-aqua,10);//$base-color-aqua
     }
   }
   nav.navbar {
@@ -2949,9 +2949,9 @@ body {
       li.nav-item {
         a.nav-link {
           &:hover, &:active, &:focus, &.active-link {
-            color:darken($base-color-home,15);
+            color:lighten($base-color-aqua,10);
             small {
-              color:darken($base-color-home,15);
+              color:lighten($base-color-aqua,10);
             }
           }
         }
@@ -2961,7 +2961,7 @@ body {
   aside.header-social-media {
     a {
       &:hover, &:active, &:focus {
-        color:darken($base-color-home,15);
+        color:darken($base-color-aqua,10);
       }
     }
   }
@@ -2969,27 +2969,27 @@ body {
 
 // Basic Page (About)
 body.page-type-basic.about {
-  $base-color-about:theme-color('blue');
+  $base-color-blue:theme-color('blue');
   .logo {
     a {
       &::before, &::after {
-        background-color:darken($base-color-about,5);
+        background-color:darken($base-color-blue,5);
       }
       span {
         &::before, &::after {
-          background-color:darken($base-color-about,5);
+          background-color:darken($base-color-blue,5);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:darken($base-color-about,15);
+          color:darken($base-color-blue,15);
         }
       }
     }
   }
   a.link-line-throught {
     &::before {
-      //background-color:lighten($base-color-about,10);//$base-color-about
+      //background-color:lighten($base-color-blue,10);//$base-color-blue
     }
   }
   nav.navbar {
@@ -2997,9 +2997,9 @@ body.page-type-basic.about {
       li.nav-item {
         a.nav-link {
           &:hover, &:active, &:focus, &.active-link {
-            color:darken($base-color-about,15);
+            color:darken($base-color-blue,15);
             small {
-              color:darken($base-color-about,15);
+              color:darken($base-color-blue,15);
             }
           }
         }
@@ -3009,7 +3009,7 @@ body.page-type-basic.about {
   aside.header-social-media {
     a {
       &:hover, &:active, &:focus {
-        color:darken($base-color-about,15);
+        color:darken($base-color-blue,15);
       }
     }
   }
@@ -3020,27 +3020,27 @@ body.page-type-basic.projects {
   .text-hero {
     line-height:1;
   }
-  $base-color-projects:theme-color('aqua');
+  $base-color-cherry:theme-color('cherry');
   .logo {
     a {
       &::before, &::after {
-        background-color:lighten($base-color-projects,17);
+        background-color:darken($base-color-cherry,5);
       }
       span {
         &::before, &::after {
-          background-color:lighten($base-color-projects,17);
+          background-color:darken($base-color-cherry,5);
         }
       }
       &:hover, &:active, &:focus {
         span {
-          color:lighten($base-color-projects,10);
+          color:darken($base-color-cherry,15);
         }
       }
     }
   }
   a.link-line-throught {
     &::before {
-      //background-color:darken($base-color-projects,10);//$base-color-projects
+      //background-color:lighten($base-color-cherry,10);//$base-color-cherry
     }
   }
   nav.navbar {
@@ -3048,9 +3048,9 @@ body.page-type-basic.projects {
       li.nav-item {
         a.nav-link {
           &:hover, &:active, &:focus, &.active-link {
-            color:lighten($base-color-projects,10);
+            color:darken($base-color-cherry,15);
             small {
-              color:lighten($base-color-projects,10);
+              color:darken($base-color-cherry,15);
             }
           }
         }
