@@ -1385,8 +1385,8 @@ a.header-hire-button {
   @include border-radius(50%);
   .hire-button-circle {
     position:absolute;
-    width:125px;//100px//Main Button
-    height:125px;//100px//Main Button
+    width:115px;//125px//100px//Main Button
+    height:115px;//125px//100px//Main Button
     top:50%;
     left:50%;
     border:1px solid theme-color('chocolate');//rosybrown
