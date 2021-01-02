@@ -125,7 +125,7 @@ if ('addEventListener' in document) {//Github
 // }, false);
 
 // Init Rellax
-$(window).ready(function() {//onload//$(document).ready(function() {//$(function() {
+$(document).ready(function() {//$(window).ready(function() {//onload//$(function() {
   // Accepts any class name
   var rellax = new Rellax('.rellax', {
     center:true

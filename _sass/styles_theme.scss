@@ -2924,6 +2924,7 @@ footer {
 // Body (Simply Changing Logo, Nav Links, & Social Media Links Hover Colour At Once)
 body {
   $base-color-aqua:theme-color('aqua');
+  $base-color-chocolate:theme-color('chocolate');
   .logo {
     a {
       &::before, &::after {
@@ -2950,7 +2951,7 @@ body {
     ul.navbar-nav {
       li.nav-item {
         a.nav-link {
-          &:hover, &:active, &:focus, &.active-link {
+          &:hover, &:active, &:focus {//&.active-link
             color:lighten($base-color-aqua,10);
             small {
               color:lighten($base-color-aqua,10);
@@ -2963,7 +2964,7 @@ body {
   aside.header-social-media {
     a {
       &:hover, &:active, &:focus {
-        color:lighten($base-color-aqua,10);
+        color:lighten($base-color-chocolate,10);//lighten($base-color-aqua,10)
       }
     }
   }
@@ -2998,7 +2999,7 @@ body.page-type-basic.about {
     ul.navbar-nav {
       li.nav-item {
         a.nav-link {
-          &:hover, &:active, &:focus, &.active-link {
+          &:hover, &:active, &:focus {//&.active-link
             color:darken($base-color-blue,15);
             small {
               color:darken($base-color-blue,15);
@@ -3049,7 +3050,7 @@ body.page-type-basic.projects {
     ul.navbar-nav {
       li.nav-item {
         a.nav-link {
-          &:hover, &:active, &:focus, &.active-link {
+          &:hover, &:active, &:focus {//&.active-link
             color:darken($base-color-cherry,15);
             small {
               color:darken($base-color-cherry,15);
@@ -3090,7 +3091,7 @@ body.page-type-feedback.hire_a_project {
     ul.navbar-nav {
       li.nav-item {
         a.nav-link {
-          &:hover, &:active, &:focus, &.active-link {
+          &:hover, &:active, &:focus {//&.active-link
             color:lighten($base-color-azalea,5);
             small {
               color:lighten($base-color-azalea,5);
@@ -3224,7 +3225,7 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
     ul.navbar-nav {
       li.nav-item {
         a.nav-link {
-          &:hover, &:active, &:focus, &.active-link {
+          &:hover, &:active, &:focus {//&.active-link
             color:lighten($base-color-dark,3);
             small {
               color:lighten($base-color-dark,3);
