@@ -387,7 +387,7 @@
     //pointer-events:none;
     ul.navbar-nav {
       //@include filter(opacity(0.8));javascript:delay('/about')
-      @include transition(opacity ease-in-out 0.5s, filter ease-out 0.3s);
+      @include transition(opacity ease-out 0.3s, filter ease-out 0.3s);
       li.nav-item {
         a.nav-link {
           position:relative;
@@ -400,7 +400,7 @@
           text-transform:uppercase;
           white-space:nowrap;
           //@include filter(opacity(0.8));
-          @include transition(color ease-out 0.5s, filter ease-out 0.5s, transform ease-out 0.5s);
+          @include transition(color ease-out 0.3s, filter ease-out 0.3s, transform ease-out 0.3s);
           small {
             display:inline-block;
             position:absolute;
@@ -408,7 +408,7 @@
             right:-20.5px;//-19.5px;
             font-size:10px;//9px
             color:theme-color('chocolate');
-            @include transition(color ease-out 0.5s);
+            @include transition(color ease-out 0.3s);
           }
           &:hover, &:active, &:focus, &.active-link {
             //color:lighten(theme-color('aqua'),5);
@@ -421,7 +421,7 @@
           }
           &:hover, &:active, &:focus {
             @include filter(opacity(1));
-            @include transform(scale(1.05));
+            @include transform(scale(1.03));//1.05
           }
         }
         &:nth-child(3) {
