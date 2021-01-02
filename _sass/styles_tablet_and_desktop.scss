@@ -916,7 +916,7 @@
 
   // Projects Header
   header.projects-header {
-    padding:70px 0 20px;//30px Less To Compensate "rellax.js" So It Doesn't Jump//70px 0 50px//50px 0//30px 0
+    padding:70px 0 0;//50px Less To Compensate "rellax.js" So It Doesn't Jump//70px 0 50px//50px 0//30px 0
     .projects-header-middle {
       img {
         width:200px;
@@ -928,7 +928,7 @@
   }
   @media only screen and (min-width:850px) {
     header.projects-header {
-      padding:90px 0 50px;//30px Less To Compensate "rellax.js" So It Doesn't Jump//90px 0 80px
+      padding:90px 0 30px;//50px Less To Compensate "rellax.js" So It Doesn't Jump//90px 0 80px
       .projects-header-middle {
         h1, h2, h3, h4, h5, h6 {
           top:-55px;
@@ -942,7 +942,7 @@
   }
   @include media-breakpoint-up(lg) {
     header.projects-header {
-      padding:80px 0 50px;//30px Less To Compensate "rellax.js" So It Doesn't Jump//80px 0
+      padding:80px 0 30px;//50px Less To Compensate "rellax.js" So It Doesn't Jump//80px 0
       .projects-header-middle {
         img {
           width:210px;
@@ -955,7 +955,7 @@
   }
   @include media-breakpoint-up(xl) {
     header.projects-header {
-      padding:100px 0 70px;//30px Less To Compensate "rellax.js" So It Doesn't Jump//100px 0
+      padding:100px 0 50px;//50px Less To Compensate "rellax.js" So It Doesn't Jump//100px 0
       .projects-header-middle {
         img {
           width:263px;
@@ -970,7 +970,7 @@
   // Projects Section
   section.projects-section {
     position:relative;
-    padding:130px 0 0;//30px More To Compensate "rellax.js" So It Doesn't Jump//100px 0 0//"rellax" Changes It A Bit If Active
+    padding:150px 0 0;//50px More To Compensate "rellax.js" So It Doesn't Jump//100px 0 0//"rellax" Changes It A Bit If Active
   }
 
   // Project Header
