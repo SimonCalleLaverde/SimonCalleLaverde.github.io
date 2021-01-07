@@ -5,7 +5,7 @@ name_for_thumbnail: Calle<br>Impresores
 client: Calle Impresores SAS
 thumbnail_image: /uploads/site-image-calle-impresores.jpg
 header_image: /uploads/site-image-header-calle-impresores.jpg
-platforms: [Jekyll, Bootstrap 4, Forestry]
+platforms: [Jekyll, Bootstrap 4, Forestry CMS]
 year: 2020
 roles: [UX, UI, Design, Development]
 web:

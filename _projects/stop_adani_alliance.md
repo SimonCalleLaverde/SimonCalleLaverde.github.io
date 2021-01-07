@@ -5,7 +5,7 @@ name_for_thumbnail: Stop Adani<br>Alliance
 client: The Stop Adani Team
 thumbnail_image: /uploads/site-image-stop-adani-alliance.jpg
 header_image: /uploads/site-image-stop-adani-alliance.jpg
-platforms: [Jekyll, Slides, Forestry]
+platforms: [Jekyll, Slides, Forestry CMS]
 year: 2017
 roles: Frontend & backend development
 web:

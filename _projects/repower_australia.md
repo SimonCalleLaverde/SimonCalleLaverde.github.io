@@ -5,7 +5,7 @@ name_for_thumbnail: Repower<br>Australia
 client: Repower Australia
 thumbnail_image: /uploads/site-image-repower-australia.jpg
 header_image: /uploads/site-image-repower-australia.jpg
-platforms: [Jekyll, Slides, Forestry]
+platforms: [Jekyll, Slides, Forestry CMS]
 year: 2018
 roles: Frontend & backend development
 web:

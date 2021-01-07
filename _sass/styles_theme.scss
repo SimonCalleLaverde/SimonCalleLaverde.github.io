@@ -1213,11 +1213,11 @@ aside.header-social-media {
     font-size:11px;
     color:rgba(24,16,8,0.8);//theme-color('chocolate')
     //@include filter(opacity(0.8));
-    @include transition(color ease-in-out 0.5s, transform ease-out 0.3s);//filter ease-out 0.3s
+    @include transition(color ease-in-out 0.5s, transform ease-out 0.5s);//filter ease-out 0.3s
     &:hover, &:active, &:focus {
       color:lighten(theme-color('aqua'),5);//theme-color('chocolate')
       //@include filter(opacity(1));
-      @include transform(scale(1.05));
+      @include transform(scale(1.03));//1.05
     }
   }
 }
@@ -2924,6 +2924,7 @@ footer {
 // Body (Simply Changing Logo, Nav Links, & Social Media Links Hover Colour At Once)
 body {
   $base-color-aqua:theme-color('aqua');
+  $base-color-chocolate:theme-color('chocolate');
   .logo {
     a {
       &::before, &::after {
@@ -2951,9 +2952,9 @@ body {
       li.nav-item {
         a.nav-link {
           &:hover, &:active, &:focus {//&.active-link
-            color:lighten($base-color-aqua,10);
+            color:lighten($base-color-chocolate,10);//aqua
             small {
-              color:lighten($base-color-aqua,10);
+              color:lighten($base-color-chocolate,10);//aqua
             }
           }
         }
@@ -2963,7 +2964,7 @@ body {
   aside.header-social-media {
     a {
       &:hover, &:active, &:focus {
-        color:lighten($base-color-aqua,10);
+        color:lighten($base-color-chocolate,10);//aqua
       }
     }
   }
@@ -2994,27 +2995,27 @@ body.page-type-basic.about {
       //background-color:lighten($base-color-blue,10);//$base-color-blue
     }
   }
-  nav.navbar {
-    ul.navbar-nav {
-      li.nav-item {
-        a.nav-link {
-          &:hover, &:active, &:focus {//&.active-link
-            color:darken($base-color-blue,15);
-            small {
-              color:darken($base-color-blue,15);
-            }
-          }
-        }
-      }
-    }
-  }
-  aside.header-social-media {
-    a {
-      &:hover, &:active, &:focus {
-        color:darken($base-color-blue,15);
-      }
-    }
-  }
+  // nav.navbar {
+  //   ul.navbar-nav {
+  //     li.nav-item {
+  //       a.nav-link {
+  //         &:hover, &:active, &:focus {//&.active-link
+  //           color:darken($base-color-blue,15);
+  //           small {
+  //             color:darken($base-color-blue,15);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // aside.header-social-media {
+  //   a {
+  //     &:hover, &:active, &:focus {
+  //       color:darken($base-color-blue,15);
+  //     }
+  //   }
+  // }
 }
 
 // Basic Page (Projects)
@@ -3045,20 +3046,20 @@ body.page-type-basic.projects {
       //background-color:lighten($base-color-cherry,10);//$base-color-cherry
     }
   }
-  nav.navbar {
-    ul.navbar-nav {
-      li.nav-item {
-        a.nav-link {
-          &:hover, &:active, &:focus {//&.active-link
-            color:darken($base-color-cherry,15);
-            small {
-              color:darken($base-color-cherry,15);
-            }
-          }
-        }
-      }
-    }
-  }
+  // nav.navbar {
+  //   ul.navbar-nav {
+  //     li.nav-item {
+  //       a.nav-link {
+  //         &:hover, &:active, &:focus {//&.active-link
+  //           color:darken($base-color-cherry,15);
+  //           small {
+  //             color:darken($base-color-cherry,15);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 // Feedback Page (Hire A Project)
@@ -3086,20 +3087,20 @@ body.page-type-feedback.hire_a_project {
       //background-color:$base-color-azalea;
     }
   }
-  nav.navbar {
-    ul.navbar-nav {
-      li.nav-item {
-        a.nav-link {
-          &:hover, &:active, &:focus {//&.active-link
-            color:lighten($base-color-azalea,5);
-            small {
-              color:lighten($base-color-azalea,5);
-            }
-          }
-        }
-      }
-    }
-  }
+  // nav.navbar {
+  //   ul.navbar-nav {
+  //     li.nav-item {
+  //       a.nav-link {
+  //         &:hover, &:active, &:focus {//&.active-link
+  //           color:lighten($base-color-azalea,5);
+  //           small {
+  //             color:lighten($base-color-azalea,5);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 // Feedback Page (Contact Me)
@@ -3220,20 +3221,20 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
       //mix-blend-mode:color-dodge;//hue
     }
   }
-  nav.navbar {
-    ul.navbar-nav {
-      li.nav-item {
-        a.nav-link {
-          &:hover, &:active, &:focus {//&.active-link
-            color:lighten($base-color-dark,3);
-            small {
-              color:lighten($base-color-dark,3);
-            }
-          }
-        }
-      }
-    }
-  }
+  // nav.navbar {
+  //   ul.navbar-nav {
+  //     li.nav-item {
+  //       a.nav-link {
+  //         &:hover, &:active, &:focus {//&.active-link
+  //           color:lighten($base-color-dark,3);
+  //           small {
+  //             color:lighten($base-color-dark,3);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
   main {
     background-color:theme-color('chocolate');
   }
