@@ -1479,6 +1479,13 @@ a.header-hire-button {
 @media screen and (min-width:53em) {//Media-Query Used By Mary Lou In "Image Trail" Tutorial
 }
 
+// Hide If No Pointer
+@media (pointer:coarse) and (hover:none) {//For Devices Without A Cursor
+  .hide-if-no-pointer {
+    display:none!important;
+  }
+}
+
 //----------------------------------Section Styles----------------------------------//
 
 // Logo

@@ -52,7 +52,7 @@ layout: "compress"
         {{ content }}
         
         {% if page.slug == "projects" %}
-          <div class="trail-images-wrap" aria-hidden="true">
+          <div class="trail-images-wrap d-none d-lg-block hide-if-no-pointer" aria-hidden="true">
             {% assign sorted_trail_images = site.trail_images | sort:"order" %}<!--| reverse-->
 
             {% for trail in sorted_trail_images %}
