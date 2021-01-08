@@ -316,7 +316,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   border:1px solid theme-color('rosybrown');
   @include border-radius(1rem);
   @include filter(opacity(1));
-  @include transition(all ease-out 0.4s);
+  @include transition(background-color ease-out 0.4s, color ease-out 0.4s, border-color ease-out 0.4s, transform ease-out 0.4s, box-shadow ease-out 0.4s);
   &.btn-chocolate {
     color:theme-color('chocolate');
     border:1px solid theme-color('chocolate');
@@ -360,7 +360,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     pointer-events:none;
     @include border-radius(1rem);
     @include transform(translate(3px,3px));
-    @include transition(all ease-out 0.4s);
+    @include transition(border-color ease-out 0.4s, transform ease-out 0.4s);
   }
   // &.btn-view-the-site {
   //   &::before {
@@ -383,6 +383,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
     //@include filter(opacity(0.8));
     //@include transform(scale(1.03));
+    @include transform(translate(1.5px,1.5px));
     @include box-shadow(0 5px 15px rgba(24,16,8,0.1)!important);//0 5px 15px rgba(0,0,0,0.4)
     //@include box-shadow(none!important);
     &::before {
@@ -706,6 +707,7 @@ input[type="submit"] {
         &:hover, &:checked {//, &:active, &:focus
           ~ label.custom-control-label {
             @include filter(opacity(0.8));
+            @include transform(translate(1.5px,1.5px));
             &::before {
               right:0;
               bottom:0;
@@ -735,7 +737,7 @@ input[type="submit"] {
         font-size:14px;
         background-color:transparent;
         border:1px solid theme-color('rosybrown');
-        @include transition(background-color ease-out 0.4s, color ease-out 0.4s, filter ease-out 0.4s);
+        @include transition(background-color ease-out 0.4s, color ease-out 0.4s, filter ease-out 0.4s, transform ease-out 0.4s);
         &::before {
           //content:'';
           position:absolute;
@@ -1379,14 +1381,14 @@ a.header-hire-button {
   position:absolute;
   width:250px;//300px//Hover Area
   height:250px;//300px//Hover Area
-  right:-15px;//-5px//0
-  bottom:-10px;//0
+  right:-25px;//-15px//-5px//0
+  bottom:-20px;//-10px//0
   //border:1px dotted theme-color('redish');//Only To Display Hover Area
   @include border-radius(50%);
   .hire-button-circle {
     position:absolute;
-    width:115px;//125px//100px//Main Button
-    height:115px;//125px//100px//Main Button
+    width:94px;//115px//125px//100px//Main Button
+    height:94px;//115px//125px//100px//Main Button
     top:50%;
     left:50%;
     border:1px solid theme-color('chocolate');//rosybrown
