@@ -331,7 +331,7 @@ $(function() {
 
 $('#header-hire-button').mouseenter(function(e){
   TweenMax.to(this, 0.5, {transformOrigin: '0 0', scale: 1});
-  TweenMax.to('.hire-button-circle', 0.5, {scale: 1.1});//scale: 1.3
+  TweenMax.to('.hire-button-circle', 0.5, {scale: 1.3});
 });
 
 $('#header-hire-button').mouseleave(function(e){

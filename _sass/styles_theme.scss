@@ -1381,14 +1381,14 @@ a.header-hire-button {
   position:absolute;
   width:250px;//300px//Hover Area
   height:250px;//300px//Hover Area
-  right:-25px;//-15px//-5px//0
-  bottom:-20px;//-10px//0
+  right:-20px;//-25px//-15px//-5px//0
+  bottom:-30px;//-20px//-10px//0
   //border:1px dotted theme-color('redish');//Only To Display Hover Area
   @include border-radius(50%);
   .hire-button-circle {
     position:absolute;
-    width:94px;//115px//125px//100px//Main Button
-    height:94px;//115px//125px//100px//Main Button
+    width:95px;//115px//125px//100px//Main Button
+    height:95px;//115px//125px//100px//Main Button
     top:50%;
     left:50%;
     border:1px solid theme-color('chocolate');//rosybrown
