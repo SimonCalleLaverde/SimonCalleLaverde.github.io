@@ -1362,7 +1362,7 @@ aside.header-scroll-down {
     width:1px;
     height:35px;
     background-color:rgba(24,16,8,0.3);//redish
-    @include transition(background-color ease-in-out 0.5s);
+    @include transition(background-color ease-in-out 0.5s, filter ease-in-out 0.5s);
     > div {
       position:absolute;
       width:1px;
