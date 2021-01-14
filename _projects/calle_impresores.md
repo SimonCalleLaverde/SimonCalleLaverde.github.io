@@ -11,14 +11,16 @@ roles: [UX, UI, Design, Development]
 web:
   launch_url: https://calle-impresores.netlify.com # https://www.calleimpresores.com
   images:
-    - /uploads/site-web-calle-impresores-1.png
-    - /uploads/site-web-calle-impresores-2.png
-    - /uploads/site-web-calle-impresores-3.png
-    - /uploads/site-web-calle-impresores-4.png
-    - /uploads/site-web-calle-impresores-5.png
-    - /uploads/site-web-calle-impresores-6.png
-    - /uploads/site-web-calle-impresores-7.png
-    - /uploads/site-web-calle-impresores-8.png
+    - /uploads/site-web-calle-impresores-01.png
+    - /uploads/site-web-calle-impresores-02.png
+    - /uploads/site-web-calle-impresores-03.png
+    - /uploads/site-web-calle-impresores-04.png
+    - /uploads/site-web-calle-impresores-05.png
+    - /uploads/site-web-calle-impresores-06.png
+    - /uploads/site-web-calle-impresores-07.png
+    - /uploads/site-web-calle-impresores-08.png
+    - /uploads/site-web-calle-impresores-09.png
+    - /uploads/site-web-calle-impresores-10.png
   image_fonts: /uploads/style-guide-image-calle-impresores.png
 type: Business Website & Catalogue
 category: Recent Independent Project

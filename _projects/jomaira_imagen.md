@@ -11,14 +11,16 @@ roles: [UX, UI, Design, Development]
 web:
   launch_url: https://www.jomairaimagen.com/
   images:
-    - /uploads/site-web-jomaira-imagen-1.png
-    - /uploads/site-web-jomaira-imagen-2.png
-    - /uploads/site-web-jomaira-imagen-3.png
-    - /uploads/site-web-jomaira-imagen-4.png
-    - /uploads/site-web-jomaira-imagen-5.png
-    - /uploads/site-web-jomaira-imagen-6.png
-    - /uploads/site-web-jomaira-imagen-7.png
-    - /uploads/site-web-jomaira-imagen-8.png
+    - /uploads/site-web-jomaira-imagen-01.png
+    - /uploads/site-web-jomaira-imagen-02.png
+    - /uploads/site-web-jomaira-imagen-03.png
+    - /uploads/site-web-jomaira-imagen-04.png
+    - /uploads/site-web-jomaira-imagen-05.png
+    - /uploads/site-web-jomaira-imagen-06.png
+    - /uploads/site-web-jomaira-imagen-07.png
+    - /uploads/site-web-jomaira-imagen-08.png
+    - /uploads/site-web-jomaira-imagen-09.png
+    - /uploads/site-web-jomaira-imagen-10.png
   image_fonts: /uploads/style-guide-image-jomaira-imagen.png
 type: Business Website & Blog
 category: Recent Independent Project
