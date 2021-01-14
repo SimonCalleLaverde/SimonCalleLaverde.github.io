@@ -2826,13 +2826,14 @@ footer {
           //   }
           // }
           // }
-          // &.icon-instagram {
-          //   svg {
-          //   }
-          // }
+          &.icon-instagram {
+            svg {
+              //width:16px;
+            }
+          }
           &.icon-facebook {
             svg {
-              width:16px;
+              width:15px;
             }
           }
         }
