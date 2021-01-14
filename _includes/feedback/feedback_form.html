@@ -1,5 +1,5 @@
 <!--Formspree | https://test.formspree.io/ | https://codepen.io/jonathanbarreto/pen/NAjPQW-->
-<form method="POST" id="contact_form"><!--action="https://formspree.io/simoncallelaverde@gmail.com"-->
+<form method="POST" id="contact_form"><!--action="https://formspree.io/f/mpzoknkb"--><!--action="https://formspree.io/simoncallelaverde@gmail.com"-->
   <div class="row mb-3 mb-sm-4more">
     <div class="col-md-12">
       <div class="form-group">
@@ -43,8 +43,8 @@
   </div>
 </form>
 
-<!--Small Security For Auto Spam-->
+<!--Small Security For Auto Spam | Used To Be For Full Email, But Formspree Now Uses A Randomized Endpoint & Formspree Account-->
 <script>
   var contactFormSecurity = document.getElementById('contact_form');
-  contactFormSecurity.setAttribute('action', 'https://formspree.io/' + 'simoncallelaverde' + '@' + 'gmail' + '.' + 'com');
+  contactFormSecurity.setAttribute('action', 'https://formspree.io/' + 'f/mp' + 'zo' + 'kn' + 'kb');
 </script>
