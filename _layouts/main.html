@@ -10,9 +10,9 @@ layout: "compress"
   {% include liquid_top_variables.html %}
 
   <body class="{% if page.type_slug.size > 0 %}page-type-{{ page.type_slug | replace:'_','-' }} {% endif %}{% if page_tags_list contains '#theme_dark#' %}theme-dark {% endif %}{{ page.slug }} is-top loading" data-spy="scroll" data-target="#navbar" data-offset="80">
-    {% comment %}
+    <!--{% comment %}
     {% include grid_display.html %}
-    {% endcomment %}
+    {% endcomment %}-->
     
     {% include loader_area.html %}
 
@@ -84,9 +84,13 @@ layout: "compress"
       {% include home/home_three_phases_modal.html %}
     {% endif %}
 
-    {% comment %}
+    <!--{% comment %}
     {% include projects/projects_project_modal.html %}
-    {% endcomment %}
+
+    {% if page.slug == "projects" %}
+      {% include projects/projects_disclaimer_modal.html %}
+    {% endif %}
+    {% endcomment %}-->
 
     {% if page.type_slug == "feedback" %}
       {% include feedback/feedback_plans_modal.html %}

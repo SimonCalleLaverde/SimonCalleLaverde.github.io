@@ -13,7 +13,7 @@ web:
   images:
     - /uploads/site-web-total-environment-centre.png
 type: Campaign Website
-category: Coded for Code Nation Australia
+category: Coded for Code Nation, Later Additions/Graphics By Teammates
 tags: [Campaign Platform, Theme Dark]
 type_slug: project
 order: 9
