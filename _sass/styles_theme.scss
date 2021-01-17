@@ -2564,12 +2564,13 @@ header.projects-header {
   padding:30px 20px;
   a {
     position:relative;
+    display:inline-block;
     &::before {
       content:'';
       position:absolute;
       width:100%;
       height:3px;
-      bottom:1px;
+      bottom:6px;//1px
       left:0;
       background-color:theme-color('rosybrown');
       border-top:1px solid theme-color('beige');
