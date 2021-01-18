@@ -1,5 +1,5 @@
 ---
-title: UX&nbsp;Research<br>&&nbsp;Strategy
+title: UX&nbsp;Research/<br>Strategy
 image_logo: "/uploads/absurd-illustrations-strategy.png"
 order: 1
 ---

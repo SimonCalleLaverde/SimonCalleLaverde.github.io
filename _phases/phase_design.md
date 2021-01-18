@@ -1,5 +1,5 @@
 ---
-title: UI&nbsp;Design<br>&&nbsp;Mockup
+title: UI&nbsp;Design/<br>Mockup
 image_logo: "/uploads/absurd-illustrations-design.png"
 order: 2
 ---
