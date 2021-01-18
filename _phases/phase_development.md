@@ -1,5 +1,5 @@
 ---
-title: Development/<br>Launch
+title: Development<br>/&nbsp;Launch
 image_logo: "/uploads/absurd-illustrations-development.png"
 order: 3
 ---
