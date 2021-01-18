@@ -1,6 +1,6 @@
 ---
 layout: feedback
-title: Freelance
+title: Hire A Project
 headline: Do you want to create a project with me?
 description: "Let me know something more about your project, your goals, and who you are. Please fill the form below to get in contact with me."
 permalink: /hire_a_project
