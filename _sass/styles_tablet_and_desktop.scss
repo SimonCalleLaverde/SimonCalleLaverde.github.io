@@ -583,14 +583,14 @@
 
   // Home See All Projects Section
   section.home-see-all-projects-section {
-    padding:57px 0 66px;//57px 0 51px
+    padding:57px 0 71px;//57px 0 51px
     .see-all-projects-link-track.text-hero {
       line-height:0.88;
     }
   }
   @include media-breakpoint-up(lg) {
     section.home-see-all-projects-section {
-      padding:127px 0 86px;//127px 0 71px//147px 0 71px
+      padding:127px 0 91px;//127px 0 71px//147px 0 71px
     }
   }
 

@@ -1077,21 +1077,13 @@ article.three-phases-article {
         background-color:theme-color('rosybrown')!important;
         color:theme-color('chocolate');
         border-color:theme-color('rosybrown');
-
-
         @include transform(translate(1.5px,1.5px));
-
-        
         @include box-shadow(0 5px 15px rgba(24,16,8,0.1)!important);
         &::before {
           right:0;
           bottom:0;
           border-color:theme-color('rosybrown');
-
-
           @include transform(translate(0,0));
-
-
         }
       }
       // Same ":hover" Styles From "btn" [End]
@@ -2305,7 +2297,7 @@ section.home-business-projects-section, section.home-campaign-projects-section {
 
 // Home See All Projects Section
 section.home-see-all-projects-section {
-  padding:50px 20px 45px;
+  padding:50px 20px 55px;//50px 20px 45px
   .see-all-projects-link-track {
     // width:calc(100% + 30px);
     // margin-left:-15px;
