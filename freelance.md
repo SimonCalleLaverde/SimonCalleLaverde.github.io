@@ -9,4 +9,4 @@ type_slug: feedback
 header_image: "/uploads/header-image-feedback.jpg"
 ---
 
-<span class="d-block text-center" style="height:200px; padding-top:85px;">Plans & prices is in development today:<br>05.02.2021</span>
+<span class="d-block text-center" style="height:200px; padding-top:65px;">Plans & prices is in development today<br>05.02.2021</span>
