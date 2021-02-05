@@ -20,13 +20,13 @@ header_image: "/uploads/header-image-feedback.jpg"
 <ul class="text-left" style="font-size:14px; list-style-type:none;">
 	<br><br>
 	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Small Project<br>/ Starting at $700 USD</span>
-	This plan's description is being edited from 05.02.2021 - 07.02.2021.</li>
+	This plan's description is being edited from 05.02.2021 - 10.02.2021.</li>
 	<br><br>
 	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Medium Project<br>/ Starting at $1,500 USD</span>
-	This plan's description is being edited from 05.02.2021 - 07.02.2021.</li>
+	This plan's description is being edited from 05.02.2021 - 10.02.2021.</li>
 	<br><br>
 	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Large Project<br>/ Starting at $3,000 USD</span>
-	This plan's description is being edited from 05.02.2021 - 07.02.2021.</li>
+	This plan's description is being edited from 05.02.2021 - 10.02.2021.</li>
 	<br><br>
 	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">E-commerce Project</span>
 	E-commerce options, plans, and prices will be coming soon. We'll be working with Snipcart or Shopify. An e-commerce store feature with Snipcart or Shopify Button will be an adition to any of the previous plans with a custom website.</li>
