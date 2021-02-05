@@ -1816,7 +1816,7 @@ div.menu-mobile {
           h1, h2, h3, h4, h5, h6 {
             color:darken(theme-color('rosybrown'),5);
             //letter-spacing:1px;//2px
-            @include transform(scale(1.05));
+            @include transform(scale(1.03));
             //@include animation(letterSpaceAnim 0.8s ease-out forwards);
             // &::after {
             //   width:100%;
@@ -1843,10 +1843,11 @@ div.menu-mobile {
         //font-size:12px;
         //color:theme-color('rosybrown');
         svg {
+          display:inline-block;
           width:17px;
           fill:theme-color('rosybrown');
           pointer-events:none;
-          @include transition(fill ease-in-out 0.5s);
+          @include transition(fill ease-out 0.3s, transform ease-out 0.3s);
         }
         &.link-linkedin {
           svg {
@@ -1873,7 +1874,10 @@ div.menu-mobile {
         }
         &:hover, &:active, &:focus {
           //color:darken(theme-color('rosybrown'),5);
-          @include transform(scale(1.05));
+          svg {
+            fill:darken(theme-color('rosybrown'),5);
+            @include transform(scale(1.05));
+          }
           &.link-linkedin {
             svg {
               //fill:lighten(theme-color('linkedin'),20)!important;
