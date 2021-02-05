@@ -1840,6 +1840,8 @@ div.menu-mobile {
       @include filter(opacity(0));
       @include transform(translateX(-50px));
       a {
+        //font-size:12px;
+        //color:theme-color('rosybrown');
         svg {
           width:17px;
           fill:theme-color('rosybrown');
@@ -1870,6 +1872,8 @@ div.menu-mobile {
           }
         }
         &:hover, &:active, &:focus {
+          //color:darken(theme-color('rosybrown'),5);
+          @include transform(scale(1.05));
           &.link-linkedin {
             svg {
               //fill:lighten(theme-color('linkedin'),20)!important;
@@ -3296,6 +3300,7 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
   aside.header-social-media {
     a {
       color:theme-color('rosybrown');
+      opacity:(0.8);//@include filter(opacity(0.8))
       // &::before {
       //   border-bottom:1px solid theme-color('redish');
       // }
