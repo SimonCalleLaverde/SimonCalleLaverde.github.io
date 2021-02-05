@@ -10,7 +10,7 @@ header_image: "/uploads/header-image-feedback.jpg"
 ---
 
 <span class="font-light">
-	A website project including design and development rounds up somewhere between $700 USD to $3,000 USD or more<!--; if the project is big or can involve more people, sometimes more--> depending on the project's size and scope. We can also do branding in the medium or large project's plan.
+	A project including design and development rounds up somewhere between $700 USD to $3,000 USD or more<!--; if the project is big or can involve more people, sometimes more--> depending on the project's size and scope. We can also do branding starting in the medium or large project's plan.
 	<br><br><!-- requirements and size.-->
 	<!--<br><br>Estimates can vary widely depending on factors like deadlines, expected results, project's spectrum, resources or web features involved, number of pages, complexity of the development phase, if branding or any extra production is needed, and more.--><!-- Prices will be adjusted within one of the three main plans if we are starting already with a full brand guideline or with an existing--><!-- strategy and--><!-- design that is viable for development.
 	<br><br>-->Prices are based on 6 years of experience working in the industry, 4 of those working for a five star rated digital agency based in Australia and are competitive in the industry<!-- for any work in custom web development, custom web design, UX research/strategy or UI design-->. As a reference please see <a class="text-aqua" href="https://designagency.io/" target="_blank"><em class="font-light text-italic">this</em></a> pricing tool created by a well known agency in the U.S.A to compare some industry prices vs. working with a freelancer. If you are located in Colombia please see <a class="text-aqua" href="https://www.ikkonos.com/ideate/cuanto-debe-cobrar-por-una-pagina-web-en-colombia-si-es-freelancer" target="_blank"><em class="font-light text-italic">this</em></a> article as a reference for a <em class="font-light text-italic">custom</em> website specifically.
@@ -20,13 +20,19 @@ header_image: "/uploads/header-image-feedback.jpg"
 <ul class="text-left" style="font-size:14px; list-style-type:none;">
 	<br><br>
 	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Small Project<br>/ Starting at $700 USD</span>
-	This plan is having edits today 05.02.2021.</li>
+	This plan's description is being edited from 05.02.2021 - 07.02.2021.</li>
 	<br><br>
 	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Medium Project<br>/ Starting at $1,500 USD</span>
-	This plan is having edits today 05.02.2021.</li>
+	This plan's description is being edited from 05.02.2021 - 07.02.2021.</li>
 	<br><br>
 	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Large Project<br>/ Starting at $3,000 USD</span>
-	This plan is having edits today 05.02.2021.</li>
+	This plan's description is being edited from 05.02.2021 - 07.02.2021.</li>
+	<br><br>
+	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">E-commerce Project</span>
+	E-commerce options, plans, and prices will be coming soon. We'll be working with Snipcart or Shopify. An e-commerce store feature will be an adition to any of the previous plans.</li>
+	<br><br>
+	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Squarespace Project<br>/ Starting at $700 USD</span>
+	We will be exploring some collaboration projects with <a class="text-aqua" href="https://larambladiseno.com/" target="_blank"><em class="font-light text-italic">La&nbsp;Rambla&nbsp;Diseño</em></a> focusing especially in Squarespace platform. We will be exploring e-commerce through Squarespace Online Store (and maybe through WooCommerce) this year 2021.</li>
 </ul>
 
 <!--
