@@ -4,7 +4,7 @@
     <div class="col-md-12">
       <h4 class="text-small mb-4 pb-1">
         <!--What services do you need?-->
-        Please confirm. What services do<br>you think you require?<!--need-->
+        Please confirm. What services<br>do you need?
       </h4>
 
       <div class="custom-checkbox-squared d-flex flex-row justify-content-around"><!--justify-content-between-->
@@ -41,9 +41,9 @@
     <div class="col-md-12">
       <div class="form-group">
         <label for="feedback_email"><!--class="sr-only"-->
-          <h4 class="text-small mb-1 mb-sm-2">Contact e-mail for communication</h4>
+          <h4 class="text-small mb-1 mb-sm-2">Please confirm a contact e-mail<br>for communication</h4>
         </label>
-        <input class="text form-control form-control-lg" type="email" name="email" id="feedback_email" placeholder="email@domain.com">
+        <input class="text form-control form-control-lg" type="email" name="email" id="feedback_email" placeholder="email@domain.design">
       </div>
     </div>
   </div>
@@ -52,9 +52,9 @@
     <div class="col-md-12">
       <div class="form-group">
         <label for="feedback_timeframe"><!--class="sr-only"-->
-          <h4 class="text-small mb-1 mb-sm-2">What's an expected timeframe when you need to have your project?</h4>
+          <h4 class="text-small mb-1 mb-sm-2">What would be an expected timeframe when<br>you need to have your project?</h4>
         </label>
-        <input class="text form-control form-control-lg" type="text" name="what_is_your_timeframe" placeholder="Timeframes could vary depending on each project's spectrum." id="feedback_timeframe">
+        <input class="text form-control form-control-lg" type="text" name="what_is_your_timeframe" placeholder="Expected timeframe" id="feedback_timeframe"><!--Timeframes could vary depending on each project's spectrum.-->
       </div>
     </div>
   </div>
@@ -90,13 +90,14 @@
     <div class="col-md-12">
       <div class="form-group">
         <label for="feedback_message"><!--class="sr-only"-->
-          <h4 class="text-small mb-1 mb-sm-2">Please, tell me more about your project as a first small brief, to understand what you need and what your objectives are.</h4>
+          <h4 class="text-small mb-1 mb-sm-2">Please, tell me more about<br>your project<!-- as a first small brief, to understand what you need and what your objectives are-->.</h4>
         </label>
-        <textarea class="textarea form-control form-control-lg" rows="2" name="more_about_the_project" id="feedback_message" placeholder="Let me know something more about the project."></textarea>
+        <textarea class="textarea form-control form-control-lg" rows="2" name="more_about_the_project" id="feedback_message" placeholder="What do you think you will require and what do you expect from this project?"></textarea><!--Let me know something more about the project.-->
       </div>
     </div>
   </div>
 
+  {% comment %}
   <div class="row mb-4 mb-sm-4more">
     <div class="col-md-12">
       <div class="form-group">
@@ -107,6 +108,7 @@
       </div>
     </div>
   </div>
+  {% endcomment %}
 
   {% comment %}
   <div class="row">
