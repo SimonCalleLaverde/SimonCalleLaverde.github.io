@@ -31,7 +31,7 @@ header_image: "/uploads/header-image-feedback.jpg"
 	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">E-commerce Project</span>
 	E-commerce options, plans, and prices will be coming soon. We'll be working with Snipcart or Shopify. An e-commerce store feature with Snipcart or Shopify Button will be an adition to any of the previous plans with a custom website.</li>
 	<br><br>
-	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Squarespace Project<!-- & Squarespace E-commerce Project--><br>/ Starting at $700 USD or 2'000,000 COP</span>
+	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Squarespace Project<!-- & Squarespace E-commerce Project--><br>/ Starting at $700 USD (2'000,000 COP)</span>
 	We will be exploring some collaboration projects with <a class="text-aqua" href="https://larambladiseno.com/" target="_blank"><em class="font-light text-italic">La&nbsp;Rambla&nbsp;Diseño</em></a> focusing especially in Squarespace platform. We will be exploring e-commerce through Squarespace Online Store (and maybe through WooCommerce) this year 2021.</li>
 </ul>
 
