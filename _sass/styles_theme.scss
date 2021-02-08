@@ -1812,17 +1812,30 @@ div.menu-mobile {
           //   @include transition(width ease-out 0.3s);
           // }
         }
-        &:hover, &:active, &:focus, &.active {
+        &:hover, &:active, &:focus, &.active-link {
           h1, h2, h3, h4, h5, h6 {
             color:darken(theme-color('rosybrown'),5);
             //letter-spacing:1px;//2px
-            @include transform(scale(1.03));
+            //@include transform(scale(1.03));
             //@include animation(letterSpaceAnim 0.8s ease-out forwards);
             // &::after {
             //   width:100%;
             //   right:auto;
             //   left:0;
             // }
+          }
+        }
+        &:hover, &:active, &:focus {
+          h1, h2, h3, h4, h5, h6 {
+            //@include filter(opacity(1));
+            @include transform(scale(1.03));
+          }
+        }
+        &.active-link {
+          h1, h2, h3, h4, h5, h6 {
+            font-style:italic;//
+            @include filter(opacity(0.8));
+            @include transform(scale(1));
           }
         }
       }
@@ -1876,7 +1889,7 @@ div.menu-mobile {
           //color:darken(theme-color('rosybrown'),5);
           svg {
             fill:darken(theme-color('rosybrown'),5);
-            @include transform(scale(1.05));
+            @include transform(scale(1.07));
           }
           &.link-linkedin {
             svg {

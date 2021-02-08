@@ -26,29 +26,29 @@
 
   <nav class="nav-mobile d-flex flex-column justify-content-around align-items-center d-md-none mb-5 pb-2">
     <div class="py-3">
-      <a class="nav-mobile-link" href="/about">
-        <h2 class="link mb-0{% if page.slug == 'about' %} active{% endif %}">
+      <a class="nav-mobile-link{% if page.slug == 'about' %} active-link{% endif %}" href="/about">
+        <h2 class="link mb-0">
           About Me
         </h2>
       </a>
     </div>
     <div class="py-3">
-      <a class="nav-mobile-link" href="/projects">
-        <h2 class="link mb-0{% if page.slug == 'projects' %} active{% endif %}">
+      <a class="nav-mobile-link{% if page.slug == 'projects' %} active-link{% endif %}" href="/projects">
+        <h2 class="link mb-0">
           All Projects
         </h2>
       </a>
     </div>
     <div class="py-3">
-      <a class="nav-mobile-link" href="/hire_a_project">
-        <h2 class="link mb-0{% if page.slug == 'hire_a_project' %} active{% endif %}">
+      <a class="nav-mobile-link{% if page.slug == 'hire_a_project' %} active-link{% endif %}" href="/hire_a_project">
+        <h2 class="link mb-0">
           Hire a project
         </h2>
       </a>
     </div>
     <div class="py-3">
-      <a class="nav-mobile-link" href="/contact_me">
-        <h2 class="link mb-0{% if page.slug == 'contact_me' %} active{% endif %}"><!--page.type_slug == 'feedback'-->
+      <a class="nav-mobile-link{% if page.slug == 'contact_me' %} active-link{% endif %}" href="/contact_me">
+        <h2 class="link mb-0"><!--page.type_slug == 'feedback'-->
           Contact Me
         </h2>
       </a>
