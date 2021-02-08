@@ -61,13 +61,13 @@ header_image: "/uploads/header-image-feedback.jpg"
 	<br>- We could even manage to book a photographer in your place through freelance for an extra cost depending on the project needs and what we finally arrange and if it is viable<!-- through freelance-->. Whilst I'll be retaining the lead on the concept of the branding and the strategy and visual of the project and website.
   <br>- We will research your competitors, other similar companies, and more.
   <br>- We can arrange a<!-- full--> basic or complete UX research if needed, with me or with a second professional specialized in UX for an extra cost.
-  <br>- We can do Google Analytics and more.
-  <br>- We can do<!-- some--> social media marketing.
+  <br>- We can do Google Analytics to the site.
+  <br>- We can do some Social Media marketing.
   <br>- I'll try to help and assist in anything else that you need to reach your goals.
   <br>- We can have up to 6 revisions and iterations during this time in the design and development phases.
   <br>- Ongoing support for a few months with help.
   <br>- Better premium custom fonts or Adobe Typekit fonts, plugins with licences without you having any extra cost, or using stock galleries like Shutterstock that uses licenced high quality photography, among others.
-  <br>- Big focus on S.E.O.
+  <br>- Big focus on S.E.O. (Search Engine Optimization) or ranking search engines like Google and others.
   <br>
   <svg viewBox="0 0 24 24" width="12" style="display:inline-block; margin-right:2px; fill:#231F20; vertical-align:middle;">
 		<path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.848 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111-.719 0-1.301-.582-1.301-1.301 0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014l.985 6.238 5.394 1.011z">
@@ -85,6 +85,6 @@ header_image: "/uploads/header-image-feedback.jpg"
 	<br>
 	<br>
 	<br>
-	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Squarespace or Webflow Project<!-- & Squarespace E-commerce Project--><br>Starting at $700 USD</span>
+	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Squarespace or Webflow Project with La Rambla Diseño<!-- & Squarespace E-commerce Project--><br>Starting at $700 USD</span>
 	We will be exploring some collaboration projects with <a class="text-aqua" href="https://larambladiseno.com/" target="_blank"><em class="font-light text-italic">La&nbsp;Rambla&nbsp;Diseño</em></a> focusing especially in Squarespace and Webflow platforms in 2021. We will be exploring business projects with branding, web design, and web development. We will also explore with e-commerce through Squarespace Online Store or Webflow Ecommerce (and maybe some WooCommerce).</li>
 </ul>
