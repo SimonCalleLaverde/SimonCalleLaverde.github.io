@@ -1392,13 +1392,13 @@ a.header-hire-button {
     height:95px;//115px//125px//100px//Main Button
     top:50%;
     left:50%;
-    border:1px solid theme-color('chocolate');//rosybrown
+    border:1px dotted theme-color('chocolate');//rosybrown
     pointer-events:none;
     overflow:hidden;
     z-index:100;//Above "header-scroll-down"
     @include border-radius(50%);
     @include transform(translateY(-50%) translateX(-50%));
-    @include transition(border-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s);
+    @include transition(border-style ease-in-out 0.4s, border-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s);
     &:before {
       content:"";
       position:absolute;
@@ -1436,7 +1436,7 @@ a.header-hire-button {
   }
   &:hover {
     .hire-button-circle {
-      border-color:theme-color('aqua');//cherry//rosybrown
+      border:0 solid theme-color('aqua');//1px//cherry//rosybrown
       @include box-shadow(0 5px 15px rgba(24,16,8,0.2));
       &:before {
         width:100%;
