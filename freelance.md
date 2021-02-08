@@ -10,7 +10,7 @@ header_image: "/uploads/header-image-feedback.jpg"
 ---
 
 <span class="font-light">
-	A project including design and development rounds up somewhere between $700 USD to $3,000 USD or more<!--; if the project is big or can involve more people, sometimes more--> depending on the project's size and scope. There are three plans; we can also do branding starting in the medium or large project's plan.
+	A project including design and development rounds up somewhere between $700 USD to $4,000 USD or more<!--; if the project is big or can involve more people, sometimes more--> depending on the project's size and scope. There are three plans; we can also do branding starting in the medium or large project's plan.
 	<br><br><!-- requirements and size.-->
 	<!--<br><br>Estimates can vary widely depending on factors like deadlines, expected results, project's spectrum, resources or web features involved, number of pages, complexity of the development phase, if branding or any extra production is needed, and more.--><!-- Prices will be adjusted within one of the three main plans if we are starting already with a full brand guideline or with an existing--><!-- strategy and--><!-- design that is viable for development.
 	<br><br>-->Prices are based on 6 years of experience working in the industry, 4 of those working for a digital agency based in Australia, and are competitive in the industry<!-- for any work in custom web development, custom web design, UX research/strategy or UI design-->. As a reference please see <a class="text-aqua" href="https://designagency.io/" target="_blank"><em class="font-light text-italic">this</em></a> pricing tool created by a well known agency in the U.S.A. to compare some industry prices vs. working with a freelancer or contractor. If you are located in Colombia please see <a class="text-aqua" href="https://www.ikkonos.com/ideate/cuanto-debe-cobrar-por-una-pagina-web-en-colombia-si-es-freelancer" target="_blank"><em class="font-light text-italic">this</em></a> article as a reference of prices for a <em class="font-light text-italic">custom</em> website specifically.
@@ -19,36 +19,48 @@ header_image: "/uploads/header-image-feedback.jpg"
 
 <ul class="text-left" style="font-size:14px; list-style-type:none;">
 	<br><br>
-	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Small Project<br>/ Starting at $700 USD</span>
-	This plan's description is being edited from 05.02.2021 - 10.02.2021.</li>
+	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Small Project<br>$700 USD - $1,500 USD</span>
+	This allows for one of the following:
+	<ul>
+		<li>A custom simple brochure type site of a few pages (1-4 pages).</li>
+		<li>One long pager interactive site.</li>
+		<li>A marketing landing page.</li>
+		<li>An infographic page or small site (1-4 pages).</li>
+		<li>A simple but awesome small portfolio.</li>
+	</ul>
+	- We will build a completely custom simple site that fits your brand using Jekyll (the fourth most popular <a class="text-aqua" href="https://jamstack.org/generators/" target="_blank"><em class="font-light text-italic">SSG&nbsp;framework</em></a> in the world), and we can arrange or not to add <a class="text-aqua" href="https://forestry.io/" target="_blank"><em class="font-light text-italic">Forestry&nbsp;CMS</em></a> (Content Management System) for you to easily edit different elements like images and texts.
+	<br>- We will have up to 2 design<!-- and/or development--> revisions.
+	<br>- A small project should take anywhere from 2 weeks to 1 month.
 	<br><br>
-	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Medium Project<br>/ Starting at $1,500 USD</span>
-	This plan's description is being edited from 05.02.2021 - 10.02.2021.</li>
+	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Medium Project<br>$1,500 USD - $3,000 USD</span>
+	This allows for a bigger fully custom website (5-10 customized pages).
+	<br>- Hand-crafted design that reflects your visual image and brand.
+	<br>- More interactive elements and/or animations for your brand's visual interest. We can get inspired in Winning Award design websites like <a class="text-aqua" href="https://www.csswinner.com/" target="_blank"><em class="font-light text-italic">CSS Winner</em></a> for some sections and elements in our art direction.
+	<br>- We can arrange branding conceptual including guidelines, logo, and graphics within the top of this budget.
+	<!--<br>- We could go deeper including a second designer for branding and retail, depending on the final arrangement.-->
+	<br>- We can arrange the use of high quality custom fonts or plugins that may have a licence and normaly a<!--n extra--> higher cost like: Premium custom fonts or Adobe Typekit fonts, popup photo or video galleries like <a class="text-aqua" href="https://fancyapps.com/fancybox/" target="_blank"><em class="font-light text-italic">Fancybox</em></a>, or others that you agree and approve.
+	<br>- We will have up to 4 revisions and iterations on the design and site.
+	<br>- This plan will include a <a class="text-aqua" href="https://forestry.io/" target="_blank"><em class="font-light text-italic">Forestry</em></a> CMS (Content Management System) totally customized with descriptions and explanations, custom fields, color-pickers, date-pickers, and more to easily edit most of the site.
+	<br>- A medium project could take anywhere from 3 weeks to sometimes even 2 months including development if the project is big, or if we need complete brand guidelines, logo, complex interactions or animations, and more.</li>
 	<br><br>
-	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Large Project<br>/ Starting at $3,000 USD</span>
-	This plan's description is being edited from 05.02.2021 - 10.02.2021.</li>
+	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Large Project<br>$3,000 USD - $4,000 USD or more</span>
+	This will give the opportunity to create you a full custom awesome site, brand, logo, and all the visual identity if you are looking for a complete branding.
+	<br>- We could also include a second graphic designer partner, an audiovisual-media professional for videos or more, a second designer for branding and retail, an illustrator, or even book a photographer in your place depending on the project needs and what we finally arrange and is viable. Whilst I'll be retaining the lead on the concept of the branding and the strategy of the project and website.
+  <br>- We will research your competitors, other similar companies, and more.
+  <br>- We can do analytics.
+  <br>- I'll try to help and assist in anything else that you need to reach your goals.
+  <br>- We can have up to 6 revisions and iterations during design and development phases.
+  <br>- Ongoing support for a few months with help.
+  <br>- Better premium custom fonts or Adobe Typekit fonts, plugins with licences without you having any extra cost, or using stock galleries like Shutterstock that uses licenced high quality photography, among others.
+  <br>- Big focus on S.E.O.
+  <br>- A large project should take anywhere from 3 weeks to even 3 months if the project is big.</li>
 	<br><br>
-	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">E-commerce Project<br>/ Coming Soon</span>
+	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Extra<br>Ongoing Support</span>
+	We can arrange some small new design tweaks later at an extra cost.</li>
+  <br><br>
+	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">E-commerce Project<br>Coming Soon 2021</span>
 	E-commerce options, plans, and prices will be coming soon. We'll be working with Snipcart or Shopify. An e-commerce store feature with Snipcart or Shopify Button will be an adition to any of the previous plans with a custom website. Custom websites will mostly use Jekyll (fourth most popular <a class="text-aqua" href="https://jamstack.org/generators/" target="_blank"><em class="font-light text-italic">SSG&nbsp;framework</em></a>) & <a class="text-aqua" href="https://forestry.io/" target="_blank"><em class="font-light text-italic">Forestry&nbsp;CMS.</em></a></li>
 	<br><br>
-	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Squarespace or Webflow Project<!-- & Squarespace E-commerce Project--><br>/ Starting at $700 USD</span>
+	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Squarespace or Webflow Project<!-- & Squarespace E-commerce Project--><br>Starting at $700 USD</span>
 	We will be exploring some collaboration projects with <a class="text-aqua" href="https://larambladiseno.com/" target="_blank"><em class="font-light text-italic">La&nbsp;Rambla&nbsp;Diseño</em></a> focusing especially in Squarespace and Webflow platforms in 2021. We will be exploring business projects with branding, web design, and web development. We will also explore with e-commerce through Squarespace Online Store or Webflow Ecommerce (and maybe some WooCommerce).</li>
 </ul>
-
-<!--
-<ul class="text-left" style="font-size:14px; list-style-type:none;">
-	<br><br>
-	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Small Project<br>/ Starting at $700 USD</span>
-	This approximate budget will allow me to create a custom small site of a few pages, a one pager site, a marketing landing page, or a simple but awesome portfolio with your content and logo. It will allow me to build you a completely custom small site that fits your brand. As a second option, we could also create a template based site using a <a class="text-aqua" href="https://jekyllthemes.io/free" target="_blank">Jekyll Theme</a> and accommodating your content to it, making some modifications to the theme code, removing undesired items, changing colors to fit the brand, and more. A small project should take anywhere from 2 weeks to 4 weeks.
-  <br>We can arrange to connect your site to a backend too, and I can configure and personalize it with explanations for you or your company to edit every element, I'll add custom fields, color-pickers, date-pickers, so you can completely edit your site. This should take another couple days.</li>
-	<br><br>
-	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Medium Project<br>/ Starting at $1,500 USD</span>
-	This will allow me to create a bigger fully custom website with a hand-crafted design where we can have a few revisions and iterations on it. We can arrange to do branding within this plan and the site will end reflecting completely your company's brand, feel, and even culture. It will have only what you need, and we can have inspiration from different web design trends or sites like: <a class="text-aqua" href="https://www.csswinner.com/" target="_blank"><em class="font-light text-italic">CSS Winner</em></a>, Pinterest, or Dribbble, researching your competitors websites, other similar companies, and more. We can arrange the use of custom fonts or some plugin with a licence that you agree, approve, and want, like an Adobe Typekit font, a fancy popup photo or video gallery like Fancybox or others, but it can be at an extra cost or enter around the top side of the rate in this budget; high quality and unique font families normally come at a cost from the authors or require a licence and the prices should include anywhere from one font type, to a whole font family depending on them. We will only use any of these features or fonts if you approve as we find that it fits the design or is the best choise for the brand, or if it is required for some functionality you need. This plan will include a <a class="text-aqua" href="https://forestry.io/" target="_blank"><em class="font-light text-italic">Forestry.io</em></a> CMS (or backend) as per the previous plan. A medium project could take anywhere from 3 weeks to sometimes even 2 months including development if the project is big, or if we need complete brand guidelines, logo, complex interactions or animations, and more.</li>
-	<br><br>
-	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Large Project<br>/ Starting at $3,000 USD</span>
-	This will give me the opportunity to create your full custom site, brand, logo, and all the visual identity if you are looking for a complete branding. I'll try to help and assist in anything else that you need to reach your goals and this can last a few months, having support from me. We can have a few more iterations in the design and in the development phase, it will also allow me to add plugins with licences without you worrying or having any extra cost, use better fonts that I can purchase for the project specifically to reach a certain feel, or using stock galleries like Shutterstock that uses licenced high quality photography, among others. I can outsource the logo graphic design, a video development, an illustration or some other work to an audiovisual-media partner or graphic-designer, whilst retaining the lead on the concept of the branding and the strategy of the project and website, creating the best resources that fits your brand and site, depending on what we arrange. This plan will include a <a class="text-aqua" href="https://forestry.io/" target="_blank"><em class="font-light text-italic">Forestry.io</em></a> CMS (or backend) as per the previous plans. A project with full branding and guidelines, completely customized website, big focus on S.E.O and support for a few months, which can also require to hire a second-hand production, should take anywhere around 3 weeks to even 3 months if the project is big.</li>
-	<br><br>
-	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">E-commerce Project</span>
-	E-commerce options, plans, and prices will be coming soon. We'll be working with Snipcart or Shopify. An e-commerce feature or capability will be basically an adition to any of the previous plans.</li>
-</ul>
--->
