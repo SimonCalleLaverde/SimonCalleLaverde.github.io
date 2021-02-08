@@ -56,12 +56,15 @@ header_image: "/uploads/header-image-feedback.jpg"
 	<br>
 	<br>
 	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">Large Project<br>$3,000 USD - $4,000 USD or more</span>
-	This will give the opportunity to create you a full custom awesome site, brand, logo, and all the visual identity if you are looking for a complete branding.
-	<br>- We could also include a second graphic designer partner, an audiovisual-media professional for videos or more, a second designer for branding and retail, an illustrator, or even book a photographer in your place depending on the project needs and what we finally arrange and is viable. Whilst I'll be retaining the lead on the concept of the branding and the strategy of the project and website.
+	This will give space to create you a full custom website following<!-- any--> new trends and possibilities, web best practices, brand, logo, and all the visual identity if you are looking for a complete branding.
+	<br>- We could also include a second graphic designer partner, an audiovisual-media professional for videos or more, a second designer or friend agency for branding and retail, or an illustrator.
+	<br>- We could even manage to book a photographer in your place through freelance for an extra cost depending on the project needs and what we finally arrange and if it is viable<!-- through freelance-->. Whilst I'll be retaining the lead on the concept of the branding and the strategy and visual of the project and website.
   <br>- We will research your competitors, other similar companies, and more.
-  <br>- We can do analytics.
+  <br>- We can arrange a<!-- full--> basic or complete UX research if needed, with me or with a second professional specialized in UX for an extra cost.
+  <br>- We can do Google Analytics and more.
+  <br>- We can do<!-- some--> social media marketing.
   <br>- I'll try to help and assist in anything else that you need to reach your goals.
-  <br>- We can have up to 6 revisions and iterations during design and development phases.
+  <br>- We can have up to 6 revisions and iterations during this time in the design and development phases.
   <br>- Ongoing support for a few months with help.
   <br>- Better premium custom fonts or Adobe Typekit fonts, plugins with licences without you having any extra cost, or using stock galleries like Shutterstock that uses licenced high quality photography, among others.
   <br>- Big focus on S.E.O.
