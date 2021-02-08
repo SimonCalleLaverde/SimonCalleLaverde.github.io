@@ -51,7 +51,7 @@ header_image: "/uploads/header-image-feedback.jpg"
 	<svg viewBox="0 0 24 24" width="12" style="display:inline-block; margin-right:2px; fill:#231F20; vertical-align:middle;">
 		<path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.848 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111-.719 0-1.301-.582-1.301-1.301 0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014l.985 6.238 5.394 1.011z">
 	</svg>
-	A medium project could take anywhere from 3 weeks to sometimes even 2 months including development if the project is big, or if we need complete brand guidelines, logo, complex interactions or animations, and more.</li>
+	A medium project could take anywhere between 3 weeks to even 2 months including development if the project is big, if we need complete branding, complex features, or more.</li>
 	<br>
 	<br>
 	<br>
