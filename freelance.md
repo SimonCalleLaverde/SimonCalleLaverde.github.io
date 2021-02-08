@@ -30,7 +30,11 @@ header_image: "/uploads/header-image-feedback.jpg"
 	</ul>
 	- We will build a completely custom simple site that fits your brand using Jekyll (the fourth most popular <a class="text-aqua" href="https://jamstack.org/generators/" target="_blank"><em class="font-light text-italic">SSG&nbsp;framework</em></a> in the world), and we can arrange or not to add <a class="text-aqua" href="https://forestry.io/" target="_blank"><em class="font-light text-italic">Forestry&nbsp;CMS</em></a> (Content Management System) for you to easily edit different elements like images and texts.
 	<br>- We will have up to 2 design<!-- and/or development--> revisions.
-	<br>- A small project should take anywhere from 2 weeks to 1 month.
+	<br>
+	<svg viewBox="0 0 24 24" width="12" style="display:inline-block; margin-right:2px; fill:#231F20; vertical-align:middle;">
+		<path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.848 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111-.719 0-1.301-.582-1.301-1.301 0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014l.985 6.238 5.394 1.011z">
+	</svg>
+	A small project should take anywhere from 2 weeks to 1 month.
 	<br>
 	<br>
 	<br>
@@ -38,12 +42,16 @@ header_image: "/uploads/header-image-feedback.jpg"
 	This allows for a bigger fully custom website (5-10 pages).
 	<br>- You get a hand-crafted design that reflects your visual image and brand.
 	<br>- More interactive elements and/or animations for your brand's visual interest. We can get inspired in Winning Award design websites like <a class="text-aqua" href="https://www.csswinner.com/" target="_blank"><em class="font-light text-italic">CSS Winner</em></a> sites or trending designs and more for some sections and elements in our art direction.
-	<br>- We can arrange branding conceptual including guidelines, logo, and graphics within the middle or top of this budget.
+	<br>- We can arrange branding conceptual including guidelines, logo, and graphics within the middle to top of this budget.
 	<!--<br>- We could go deeper including a second designer for branding and retail, depending on the final arrangement.-->
 	<br>- We can arrange the use of quality custom fonts or plugins that may have a licence and normaly a<!--n extra--> higher cost like: Premium custom fonts or <a class="text-aqua" href="https://fonts.adobe.com/" target="_blank"><em class="font-light text-italic"> Adobe&nbsp;Typekit</em></a> fonts, popup photo or video galleries like <a class="text-aqua" href="https://fancyapps.com/fancybox/" target="_blank"><em class="font-light text-italic">Fancybox</em></a>, or others that you agree and approve.
-	<br>- We will have up to 4 revisions and iterations on the design and site.
-	<br>- This plan will include a <a class="text-aqua" href="https://forestry.io/" target="_blank"><em class="font-light text-italic">Forestry</em></a> CMS (Content Management System) totally customized with descriptions and explanations, custom fields, color-pickers, date-pickers, and more to easily edit most of the site.
-	<br>- A medium project could take anywhere from 3 weeks to sometimes even 2 months including development if the project is big, or if we need complete brand guidelines, logo, complex interactions or animations, and more.</li>
+	<br>- We can have up to 4 revisions and iterations along the design and development phases.
+	<br>- This plan will include a <a class="text-aqua" href="https://forestry.io/" target="_blank"><em class="font-light text-italic">Forestry</em></a> CMS totally customized with descriptions and explanations, custom fields, color-pickers, date-pickers, and more if needed to easily edit most of the content and even style some elements through the backend.
+	<br>
+	<svg viewBox="0 0 24 24" width="12" style="display:inline-block; margin-right:2px; fill:#231F20; vertical-align:middle;">
+		<path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.848 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111-.719 0-1.301-.582-1.301-1.301 0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014l.985 6.238 5.394 1.011z">
+	</svg>
+	A medium project could take anywhere from 3 weeks to sometimes even 2 months including development if the project is big, or if we need complete brand guidelines, logo, complex interactions or animations, and more.</li>
 	<br>
 	<br>
 	<br>
@@ -57,7 +65,11 @@ header_image: "/uploads/header-image-feedback.jpg"
   <br>- Ongoing support for a few months with help.
   <br>- Better premium custom fonts or Adobe Typekit fonts, plugins with licences without you having any extra cost, or using stock galleries like Shutterstock that uses licenced high quality photography, among others.
   <br>- Big focus on S.E.O.
-  <br>- A large project should take anywhere from 3 weeks to even 3 months if the project is big.</li>
+  <br>
+  <svg viewBox="0 0 24 24" width="12" style="display:inline-block; margin-right:2px; fill:#231F20; vertical-align:middle;">
+		<path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.848 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111-.719 0-1.301-.582-1.301-1.301 0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014l.985 6.238 5.394 1.011z">
+	</svg>
+	A large project should take anywhere from 3 weeks to 3 months if the project is big.</li>
 	<br>
 	<br>
 	<br>
