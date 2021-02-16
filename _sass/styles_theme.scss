@@ -1320,15 +1320,18 @@ aside.header-left-info {
   color:theme-color('chocolate');
   writing-mode:vertical-rl;
   text-orientation:mixed;
-  pointer-events:none;
   text-align:center;
   opacity:(0.8);//@include filter(opacity(0.8))
+  pointer-events:none;
   @include transform(rotate(180deg));//translateY(50%)
   @include transition(color ease-in-out 0.5s);
   &.landscape-small-block {
     //top:39%;//34%
     //@include transform-origin(0 0);
     //@include transform(rotate(180deg));//translateY(33%)//50%
+  }
+  > div {
+    pointer-events:none;//
   }
 }
 .landscape-small-none {
@@ -1385,6 +1388,7 @@ a.header-hire-button {
   right:-20px;//-25px//-15px//-5px//0
   bottom:-30px;//-20px//-10px//0
   //border:1px dotted theme-color('redish');//Only To Display Hover Area
+  z-index:100;//Above "header-scroll-down"
   @include border-radius(50%);
   .hire-button-circle {
     position:absolute;
@@ -1435,6 +1439,7 @@ a.header-hire-button {
     }
   }
   &:hover {
+    //cursor:none;
     .hire-button-circle {
       border:0 solid theme-color('aqua');//1px//cherry//rosybrown
       @include box-shadow(0 5px 15px rgba(24,16,8,0.2));

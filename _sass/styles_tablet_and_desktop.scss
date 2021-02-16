@@ -480,6 +480,7 @@
         }
       }
       &:hover {
+        //cursor:none;
         .area-left {
           @include transform(translateY(12.5px));//25px
         }
