@@ -28,7 +28,7 @@ header_image: "/uploads/header-image-freelance.jpg"
 		<li>An infographic page or small site (1-4 pages).</li>
 		<li>A simple but awesome small portfolio.</li>
 	</ul>
-	- We will build a completely custom simple site that fits your brand using Jekyll (the fourth most popular <a class="text-aqua" href="https://jamstack.org/generators/" target="_blank"><em class="font-light text-italic">SSG&nbsp;framework</em></a> in the world), and we can arrange or not to add <a class="text-aqua" href="https://forestry.io/" target="_blank"><em class="font-light text-italic">Forestry&nbsp;CMS</em></a> (Content Management System) for you to easily edit different elements like images and texts.
+	- We will build a completely custom simple site that fits your brand using Jekyll (fourth most popular <a class="text-aqua" href="https://jamstack.org/generators/" target="_blank"><em class="font-light text-italic">Jamstack&nbsp;framework</em></a> in the world), and we can arrange or not to add <a class="text-aqua" href="https://forestry.io/" target="_blank"><em class="font-light text-italic">Forestry&nbsp;CMS</em></a> (Content Management System) for you to easily edit different elements like images and texts.
 	<br>- We will have up to 2 design<!-- and/or development--> revisions.
 	<br>
 	<svg viewBox="0 0 24 24" width="12" style="display:inline-block; margin-right:2px; fill:#231F20; vertical-align:middle;">
@@ -82,7 +82,7 @@ header_image: "/uploads/header-image-freelance.jpg"
   <br><br>
   <br><br>-->
 	<li><span class="d-block font-regular text-aqua text-center text-md-left mb-1">E-commerce Project<br>Coming Soon 2021</span>
-	E-commerce options, plans, and prices will be coming soon. We'll be working with Snipcart or Shopify. An e-commerce store feature with Snipcart or Shopify Button will be an adition to any of the previous plans with a custom website. Custom websites will mostly use Jekyll (fourth most popular <a class="text-aqua" href="https://jamstack.org/generators/" target="_blank"><em class="font-light text-italic">SSG&nbsp;framework</em></a>) & <a class="text-aqua" href="https://forestry.io/" target="_blank"><em class="font-light text-italic">Forestry&nbsp;CMS</em></a>. Last option is to use <a class="text-aqua" href="https://www.shopify.com/" target="_blank"><em class="font-light text-italic">Shopify's</em></a> platform and CMS which uses templates based in Liquid Code,<!-- same as--> similar to Jekyll.</li>
+	E-commerce options, plans, and prices will be coming soon. We'll be working with Snipcart or Shopify. An e-commerce store feature with Snipcart or Shopify Button will be an adition to any of the previous plans with a custom website. Custom websites will mostly use Jekyll (fourth most popular <a class="text-aqua" href="https://jamstack.org/generators/" target="_blank"><em class="font-light text-italic">Jamstack&nbsp;framework</em></a>) & <a class="text-aqua" href="https://forestry.io/" target="_blank"><em class="font-light text-italic">Forestry&nbsp;CMS</em></a>. Last option is to use <a class="text-aqua" href="https://www.shopify.com/" target="_blank"><em class="font-light text-italic">Shopify's</em></a> platform and CMS which uses templates based in Liquid Code,<!-- same as--> similar to Jekyll.</li>
 	<br>
 	<br>
 	<br>
