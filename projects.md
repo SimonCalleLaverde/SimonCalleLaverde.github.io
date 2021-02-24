@@ -12,14 +12,13 @@ Hi! Here I'm displaying some <em class="font-ultra-light text-italic">case studi
 
 The first couple projects are those which I worked recently as independent doing UI design and development completely. I want to continue my job of helping people to put their businesses names out there with good design, branding, and high quality websites that reflect their personalities.
 
-I'm now very passionate in interactive and digital design to bring live to brands through awesome sites that break the common rules of the web and let them <!--show-->communicate exactly what they want, with hand-crafted designs and great user experience. I started with a course in Web Design and Design for Mobile Devices 7 years ago, after a bachelor's degree as a Publicist.
-
 I worked with the great team of <a class="text-rosybrown" href="https://www.codenation.com/" target="_blank">Code Nation</a>, a five star rated digital and creative agency headquartered in Australia for over 4 years; we developed dozens of awesome websites and campaign platforms for awesome clients and organizations around the world both onsite and remotely, helping this planet a bit.
 
 Most of the projects displayed between 2015 to 2019 are those which I worked as a team and was tasked with the development phase starting from a base design I used to receive and a base template that we iterated on, and worked at the time over half or most of the development phase. Some sites may have new changes or additions by Code Nation's team in terms of UI or by the clients themselves through their CMS in terms of content through the years.
 
 Disclaimer: The majority of the projects I have worked on through the years were developed within Code Nation Australia for many clients around the world, the most recent ones are independent projects. Images are used just to display the respective project and most of the original material and images are property of each client. We put heart on each project, so material is used only for its corresponding case study and project, linking to each live website.
 
+I'm now very passionate in interactive and digital design to bring live to brands through awesome sites that break the common rules of the web and let them <!--show-->communicate exactly what they want, with hand-crafted designs and great user experience. I started with a course in Web Design and Design for Mobile Devices 7 years ago, after a bachelor's degree as a Publicist.
 
 
 <!--OLD-->
