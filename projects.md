@@ -10,8 +10,20 @@ header_image: "/uploads/header-image-projects.jpg"
 
 Hi! Here I'm displaying some <em class="font-ultra-light text-italic">case studies</em> I'm actively working on.
 
-I worked with the great team of <a class="text-rosybrown" href="https://www.codenation.com/" target="_blank">Code Nation</a>, a five star rated digital and creative agency headquartered in Australia for over 4 years; we developed dozens of awesome websites and campaign platforms for awesome clients and organizations around the world both onsite and remotely, helping this planet a bit. Most of the projects displayed here are those which I worked in the development phase starting from a base design and a base template that we iterated on, and worked in most of the development phase at the time. Some may have new changes by Code Nation's team or by the clients themselves through the years.
+The first couple projects are those which I worked recently as independent doing UI design and development completely. I want to continue my job of helping people to put their businesses names out there with good design, branding, and high quality websites that reflect their personalities.
 
+I'm now very passionate in interactive and digital design to bring live to brands through awesome sites that break the common rules of the web and let them <!--show-->communicate exactly what they want, with hand-crafted designs and great user experience. I started with a course in Web Design and Design for Mobile Devices 7 years ago, after a bachelor's degree as a Publicist.
+
+I worked with the great team of <a class="text-rosybrown" href="https://www.codenation.com/" target="_blank">Code Nation</a>, a five star rated digital and creative agency headquartered in Australia for over 4 years; we developed dozens of awesome websites and campaign platforms for awesome clients and organizations around the world both onsite and remotely, helping this planet a bit.
+
+Most of the projects displayed between 2015 to 2019 are those which I worked as a team and was tasked with the development phase starting from a base design I used to receive and a base template that we iterated on, and worked at the time over half or most of the development phase. Some sites may have new changes or additions by Code Nation's team in terms of UI or by the clients themselves through their CMS in terms of content through the years.
+
+Disclaimer: The majority of the projects I have worked on through the years were developed within Code Nation Australia for many clients around the world, the most recent ones are independent projects. Images are used just to display the respective project and most of the original material and images are property of each client. We put heart on each project, so material is used only for its corresponding case study and project, linking to each live website.
+
+
+
+<!--OLD-->
+{% comment %}
 <!--I never really received <em class="font-ultra-light text-italic">Mobile</em> or <em class="font-ultra-light text-italic">Tablet</em> version designs, so I had to iterate and design this versions on the fly-->
 In my previous job, I used to receive a <em class="font-ultra-light text-italic">desktop</em> design to start each project, although<!--never really received--> I had to create the <em class="font-ultra-light text-italic">tablet</em> and <em class="font-ultra-light text-italic">mobile</em> versions during development phase for each website most of the time at the end of the development, verifying everything worked well for all devices and iterating in some design changes for each version, each project being<!-- completelly--> responsive and mobile friendly, and most of them very <a class="text-rosybrown" href="https://www.interaction-design.org/literature/topics/accessibility" target="_blank" rel="ugc">accessible</a> from different devices including screen-readers<!--for any type of device-->.
 
@@ -24,7 +36,9 @@ I'm focusing on<!-- very--> polished and detailed <em class="font-ultra-light te
 <!--I'm currently occasionally taking on freelance projects! Although this year was a roller coaster. I have been also improving on my skills: I've been learning much more about <em class="font-ultra-light text-italic">UX research and strategy</em>, <em class="font-ultra-light text-italic">UI design</em>, <em class="font-ultra-light text-italic">Web Best Practices</em>, as well as improving my coding skills with <em class="font-ultra-light text-italic">JavaScript</em>, <em class="font-ultra-light text-italic">React.js</em>, and <em class="font-ultra-light text-italic">Liquid Code</em>. The first projects are a few I had the opportunity to recently design and develop completelly.-->
 
 I'm also working on some conceptual desings-only and case studies to display soon and better show my <em class="font-ultra-light text-italic">UI design</em> skills which really started more than 6 years ago with a university course in <em class="font-ultra-light text-italic">Web Design and Design for Mobile Devices</em> I took in the <a class="text-rosybrown" href="https://www.javeriana.edu.co/home" target="blank">Pontificia&nbsp;Universidad&nbsp;Javeriana</a> after a 5 year creative advertising design focused career in the <a class="text-rosybrown" href="https://www.utadeo.edu.co/es" target="blank">Universidad&nbsp;Jorge&nbsp;Tadeo&nbsp;Lozano</a> where I created full campaigns including print media, ATL, BTL, and digital marketing campaigns including wireframing, prototyping, and creating mockups; at the time we used Adobe Fireworks and Adobe Dreamweaver,<!--<img src="/uploads/smile-face.png" style="height:15px">--> although today I mostly use Adobe XD and I have knowledge on Figma and Sketch.<!--<img src="/uploads/heart.webp" style="height:15px">-->
+{% endcomment %}
 
+<!--EVEN OLDER / But I Will Re-Use Some-->
 {% comment %}
 I worked in the great team of Code Nation Australia for more than 4 years. We created dozens of awesome campaign websites and platforms for dozens of happy clients and thousands of happy users, who could raise their voices through successful and very useful custom digital interfaces with robust usability and customized design.<!--Same from LinkedIn experience-->
 
