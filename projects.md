@@ -16,12 +16,16 @@ I worked with the great team of <a class="text-rosybrown" href="https://www.code
 
 Most of the projects displayed between 2015 to 2019 are those which I worked there mostly in the development phase, starting from a base design that I used to receive and a base template that we iterated on, and worked at the time over half or most of the development. Some sites may have new changes or additions by Code Nation's team or by the clients themselves through their CMS over the years.
 
-<!--I want to continue my job of helping people to put their business name out there with good design, branding, and high quality websites that reflect their personalities.
+<!--Images are just used to display and link to the corresponding project and most of the original material and images are property of each client.-->
 
-I'm now very passionate in interactive and digital design to bring live to brands through awesome sites that break the common rules of the web and let them communicate exactly what they want, with hand-crafted designs and great user experience. I started with a course in <em class="font-ultra-light text-italic">Web Design and Design for Mobile Devices</em> 7 years ago, after graduating with a bachelor's degree as a <em class="font-ultra-light text-italic">Publicist</em>.-->
+I want to continue helping businesses put their names out there with branding, good design, and high quality websites that reflect their personalities.
 
-<em class="font-ultra-light text-italic">Disclaimer: The majority of the projects displayed below were developed for many clients around the world. Images are used just to display each corresponding project and most of the original material and images are property of each client. We put heart on each project, so material is used only for its corresponding case study and project, then linking to each live website I worked on.</em>
+I'm now very passionate in interactive and digital design to be able to bring brands to live through awesome online presence that break the common rules of the web and let them communicate exactly what they want, with hand-crafted designs and great user experience.
 
+
+
+<!--DISCLAIMER-->
+<!--<em class="font-ultra-light text-italic">Disclaimer: The majority of the projects displayed below were developed for many clients around the world. Images are used just to display each corresponding project and most of the original material and images are property of each client. We put heart on each project, so material is used only for its corresponding case study and project, then linking to each live website I worked on.</em>-->
 
 <!--OLD-->
 {% comment %}
