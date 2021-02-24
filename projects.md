@@ -20,7 +20,7 @@ Most of the projects displayed between 2015 to 2019 are those which I worked the
 
 I'm now very passionate in interactive and digital design to bring live to brands through awesome sites that break the common rules of the web and let them communicate exactly what they want, with hand-crafted designs and great user experience. I started with a course in <em class="font-ultra-light text-italic">Web Design and Design for Mobile Devices</em> 7 years ago, after graduating with a bachelor's degree as a <em class="font-ultra-light text-italic">Publicist</em>.-->
 
-<em class="font-ultra-light text-italic">Disclaimer: The majority of the projects displayed below were developed for many clients around the world. Images are used just to display each corresponding project and most of the original material and images are property of each client. We put heart on each project, so material is used only for its corresponding case study and project, linking to each live website.</em>
+<em class="font-ultra-light text-italic">Disclaimer: The majority of the projects displayed below were developed for many clients around the world. Images are used just to display each corresponding project and most of the original material and images are property of each client. We put heart on each project, so material is used only for its corresponding case study and project, then linking to each live website I worked on.</em>
 
 
 <!--OLD-->
