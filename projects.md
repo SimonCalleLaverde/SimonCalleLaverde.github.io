@@ -14,13 +14,13 @@ The first couple of projects are those which I worked recently as independent do
 
 I worked with the great team of <a class="text-rosybrown" href="https://www.codenation.com/" target="_blank">Code Nation</a>, a five star rated digital and creative agency headquartered in Australia for over 4 years; we developed dozens of awesome websites and campaign platforms for clients and organizations around the world both onsite and remotely, helping this planet a bit.
 
-Most of the projects displayed between 2015 to 2019 are those which I worked there mostly in the development phase, starting from a base design that I used to receive and a base template that we iterated on, and worked at the time over half or most of the development. Some sites may have new changes or additions by Code Nation's team or by the clients themselves through their CMS over the years.
+Most of the projects displayed between 2015 to 2019 are those which I worked as a team member mostly in the development phase, starting from a base design that I used to receive and a base template that we iterated on, and worked at the time over half or most of the development. Some sites may have new changes or additions by Code Nation's team or by the clients themselves through their CMS over the years.
 
 <!--Images are just used to display and link to the corresponding project and most of the original material and images are property of each client.-->
 
-I want to continue helping businesses put their names out there with branding, good design, and high quality websites that reflect their personalities.
+I want to continue helping businesses put their names out there with branding, good design, and high quality websites that reflect their personalities<!--passion-->.
 
-I'm now very passionate in interactive and digital design to be able to bring brands to live through awesome online presence that break the common rules of the web and let them communicate exactly what they want, with hand-crafted designs and great user experience.
+I'm now very passionate in interactive and digital design to be able to bring brands to live through an awesome online presence that breaks the common rules of the web and let them communicate exactly what they want, with hand-crafted designs and great user experience.
 
 
 
