@@ -1052,6 +1052,7 @@ article.three-phases-article {
   $phase-size:185px;
   font-size:13px;
   a {
+    display:block;
     span {
       //display:inline-flex;//inline-block
       width:$phase-size;
@@ -1068,6 +1069,7 @@ article.three-phases-article {
     }
     &:hover, &:active, &:focus {
       color:theme-color('rosybrown')!important;
+      @include transform(scale(1.02));
       span {
         @include transform(scale(1.03));
         @include box-shadow(0 5px 15px rgba(24,16,8,0.2));
