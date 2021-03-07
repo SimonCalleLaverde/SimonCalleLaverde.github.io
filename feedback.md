@@ -6,7 +6,7 @@ description: "Contact me or let me know anything you need. Do you want to hire m
 permalink: /contact_me
 slug: contact_me
 type_slug: feedback
-header_image: "/uploads/header-image-freelance.jpg"
+header_image: "/uploads/header-image-feedback.jpg"
 
 # <h1>Jekyll Contact Forms | Recommended As Per Jekyll Page Below</h1>
 # <h3>https://jekyllthemes.io/resources/jekyll-contact-forms/</h3>
