@@ -1436,7 +1436,7 @@ a.header-hire-button {
       @include transition(transform ease-in-out 0.4s);
       > span {
         display:block;
-        @include animation(rotateAnim 10s linear infinite 5.1s);
+        //@include animation(rotateAnim 10s linear infinite 5.1s);
       }
     }
   }
