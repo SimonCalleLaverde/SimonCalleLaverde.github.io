@@ -2,7 +2,7 @@
 layout: feedback
 title: Contact Me
 headline: Contact me
-description: "Contact me or let me know anything you need work related. Want to hire me for some work, or want to talk about something specific? Let's talk."
+description: "Contact me or let me know anything you need. Do you want to hire me for something else, or do you want to talk about something specific? Let's talk." # work related
 permalink: /contact_me
 slug: contact_me
 type_slug: feedback
