@@ -1,0 +1,15 @@
+I"g<div class="embed-container">
+  <iframe src="https://www.youtube.com/embed/putYourIDHere" width="700" height="480" frameborder="0" allowfullscreen="">
+  </iframe>
+</div>
+
+<div class="embed-container">
+  <iframe src="https://player.vimeo.com/video/putYourIDHere" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+  </iframe>
+</div>
+
+<div class="embed-container">
+  <iframe src="https://clips.twitch.tv/embed?clip=putYourIDHere" height="360" width="640" frameborder="0" scrolling="no" muted="false" autoplay="false" allowfullscreen="true">
+  </iframe>
+</div>
+:ET
