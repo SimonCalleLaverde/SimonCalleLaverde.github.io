@@ -130,7 +130,8 @@
           figcaption {
             .project-title {
               position:absolute;
-              min-width:50%;//So Text Bellow Doesn't Fall If Title Is Short
+              width:100%;//
+              //min-width:50%;//So Text Below Doesn't Fall If Title Is Short
               margin-top:0;
               right:auto;
               bottom:-25px;//-36px//-33px

@@ -12,8 +12,8 @@ web:
   launch_url: https://www.arrcc.org.au/
   images:
     - /uploads/site-web-australian-religious-response-to-climate-change.png
-type: Campaign Website & Award Winner
-category: Coded for Code Nation Australia
+type: Campaigning Platform
+category: Development for Code Nation Australia
 tags: [Campaign Platform, Theme Dark]
 type_slug: project
 order: 2

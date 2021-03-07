@@ -12,8 +12,8 @@ web:
   launch_url: https://nt.seedmob.org.au/
   images:
     - /uploads/site-web-seed-ban-fracking.png
-type: Campaign Website
-category: Coded for Code Nation Australia
+type: Campaigning Platform
+category: Development for Code Nation Australia
 tags: [Campaign Platform, Theme Dark]
 type_slug: project
 order: 15

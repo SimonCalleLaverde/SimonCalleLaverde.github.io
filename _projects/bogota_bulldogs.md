@@ -7,13 +7,13 @@ thumbnail_image: /uploads/site-image-bogota-bulldogs.jpg
 header_image: /uploads/site-image-bogota-bulldogs.jpg
 platforms: [Jekyll, Bootstrap 4, Forestry CMS]
 year: 2019
-roles: Frontend & backend development
+roles: Frontend development & CMS
 web:
   launch_url: https://bogota-bulldogs.netlify.com/
   images:
     - /uploads/site-web-bogota-bulldogs.png
-type: Campaign Website
-category: Coded for Code Nation Australia
+type: Sports Campaign Website
+category: Development for Code Nation Australia
 tags: [Campaign Platform, Theme Dark]
 type_slug: project
 order: 28

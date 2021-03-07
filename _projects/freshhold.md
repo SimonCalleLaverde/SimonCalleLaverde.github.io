@@ -14,7 +14,7 @@ web:
     - /uploads/site-web-freshhold-1.png
     - /uploads/site-web-freshhold-2.png
     - /uploads/site-web-freshhold-3.png
-type: Concept Website
+type: Conceptual Website
 category: Concept Presentation Website
 tags: [Presentation Website, Theme Dark]
 type_slug: project

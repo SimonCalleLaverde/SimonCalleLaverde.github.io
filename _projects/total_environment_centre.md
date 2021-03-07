@@ -12,8 +12,8 @@ web:
   launch_url: https://www.tec.org.au/
   images:
     - /uploads/site-web-total-environment-centre.png
-type: Campaign Website
-category: Coded for Code Nation, Later Additions/Graphics By Teammates
+type: Campaigning Platform
+category: Development for Code Nation, Later Additions & Graphics By Code Nation
 tags: [Campaign Platform, Theme Dark]
 type_slug: project
 order: 9

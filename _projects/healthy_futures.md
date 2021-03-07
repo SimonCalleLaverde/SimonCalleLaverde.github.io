@@ -12,8 +12,8 @@ web:
   launch_url: http://www.healthyfutures.net.au/
   images:
     - /uploads/site-web-healthy-futures.png
-type: Campaign Website
-category: Coded for Code Nation Australia
+type: Campaigning Platform
+category: Development for Code Nation Australia
 tags: [Campaign Platform, Campaign Featured, Theme Dark]
 type_slug: project
 order: 4

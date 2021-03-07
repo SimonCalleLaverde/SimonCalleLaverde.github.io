@@ -12,8 +12,8 @@ web:
   launch_url: https://www.alicecommunitygarden.org.au/
   images:
     - /uploads/site-web-alice-springs-community-garden.png
-type: Campaign Website
-category: Coded for Code Nation Australia
+type: Campaigning Platform
+category: Development for Code Nation Australia
 tags: [Campaign Platform, Theme Dark]
 type_slug: project
 order: 12

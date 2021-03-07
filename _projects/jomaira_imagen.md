@@ -5,7 +5,7 @@ name_for_thumbnail: Jomaira<br>Imagen
 client: Jomaira Laverde
 thumbnail_image: /uploads/site-image-jomaira-imagen.jpg
 header_image: /uploads/site-image-header-jomaira-imagen.jpg
-platforms: [Jekyll, Bootstrap 4, Forestry CMS]
+platforms: [Forestry CMS, Jekyll, Bootstrap 4]
 year: 2020
 roles: [UX, UI, Design, Development]
 web:

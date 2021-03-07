@@ -7,13 +7,13 @@ thumbnail_image: /uploads/site-image-stop-adani-alliance.jpg
 header_image: /uploads/site-image-stop-adani-alliance.jpg
 platforms: [Jekyll, Slides, Forestry CMS]
 year: 2017
-roles: Frontend & backend development
+roles: Frontend development & CMS
 web:
   launch_url: http://www.stopadanialliance.com/
   images:
     - /uploads/site-web-stop-adani-alliance.png
-type: Campaign Website
-category: Coded for Code Nation Australia
+type: Campaigning Platform
+category: Development for Code Nation Australia
 tags: [Campaign Platform, Theme Dark]
 type_slug: project
 order: 14

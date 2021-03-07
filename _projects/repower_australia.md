@@ -7,13 +7,13 @@ thumbnail_image: /uploads/site-image-repower-australia.jpg
 header_image: /uploads/site-image-repower-australia.jpg
 platforms: [Jekyll, Slides, Forestry CMS]
 year: 2018
-roles: Frontend & backend development
+roles: Frontend development & CMS
 web:
   launch_url: https://www.repoweraustralia.org.au/
   images:
     - /uploads/site-web-repower-australia.png
-type: Campaign & Infographic Website
-category: Coded for Code Nation Australia
+type: Infographic Campaign Website & Reed Awards Winner 2019
+category: Development for Code Nation Australia
 tags: [Campaign Platform, Campaign Featured, Theme Dark, Award Winner Website]
 content_two_left: "I handled to add as a bonus as part of some extra time, some clean animations and cool effects like every element entering from the sides or fading in, to make the site and content easier to consume."
 content_two_right: "The button shadow small unique effect touch and things I tryied to put with love that are not priority for the campaign projects' workflow but ends up with an awesome user experience."
