@@ -1458,6 +1458,9 @@ a.header-hire-button {
       @include filter(opacity(0.85));
       > span {
         @include transform(scale(1.1));//1.07
+        > span {
+          @include animation(rotateAnim 10s linear infinite 5.1s);
+        }
       }
     }
   }
