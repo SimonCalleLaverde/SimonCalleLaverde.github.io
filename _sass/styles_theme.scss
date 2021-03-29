@@ -1415,16 +1415,16 @@ a.header-hire-button {
       left:0;
       @include border-radius(50%);
     }
-    &:after {
-      border:1px dotted theme-color('chocolate');//rosybrown
-      @include animation(rotateAnim 50s linear infinite 5.1s);//Rotating just dotted circle
-    }
     &:before {
       width:0;
       left:auto;
       background-color:theme-color('cherry');//aqua//rosybrown
       //@include transform(translateX(100%));
       @include transition(width ease-in-out 0.2s);//transform ease-in-out 0.4s
+    }
+    &:after {
+      border:1px dotted theme-color('chocolate');//rosybrown
+      @include animation(rotateAnim 40s linear infinite);//Rotating just dotted circle
     }
   }
   .hire-button-text {
