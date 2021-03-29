@@ -2977,6 +2977,9 @@ footer {
               color:lighten(theme-color('rosybrown'),10);
               @include transform(scale(1));
             }
+            &.active-link {
+              filter:opacity(1);//0.7
+            }
             &.link-line-throught {
               &::before {
                 bottom:2px;//
