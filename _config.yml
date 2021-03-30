@@ -95,7 +95,7 @@ exclude:
   - Gruntfile.js
   - README*
   - LICENSE
-  - ".gitignore"
+  #- ".gitignore"
   - raw_custom.js
   - .DS_Store
 

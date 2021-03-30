@@ -1423,7 +1423,7 @@ a.header-hire-button {
       @include transition(width ease-in-out 0.2s);//transform ease-in-out 0.4s
     }
     &:after {
-      border:1px dotted theme-color('chocolate');//rosybrown
+      border:1px dashed theme-color('chocolate');//rosybrown//dotted
       @include animation(rotateAnim 40s linear infinite);//Rotating just dotted circle
     }
   }
@@ -1443,7 +1443,7 @@ a.header-hire-button {
       @include transition(transform ease-in-out 0.4s);
       > span {
         display:block;
-        @include transition(transform ease-in-out 2s);
+        @include transition(none);//transform ease-in-out 2s//To get it back with no anim
         //@include animation(rotateAnim 10s linear infinite 5.1s);
       }
     }
@@ -1470,7 +1470,7 @@ a.header-hire-button {
         @include transform(scale(1.1));//1.07
         > span {
           @include transform(rotate(360deg));//720deg (2 Rounds)
-          @include transition(transform ease-in-out 3s);//10s//20s
+          @include transition(transform ease-in-out 3s 5s);//10s//20s//After 5 sec staying there, staring at the button Lol
           //@include animation(rotateAnim 10s linear);
         }
       }
