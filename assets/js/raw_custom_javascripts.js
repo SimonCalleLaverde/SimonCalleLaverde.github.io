@@ -57,8 +57,8 @@ jQuery(document).ready(function($) {
               const { previous, current, transformPrefix } = globalState;
               const { context } = sceneState.cache;
               const delta = current - previous;
-              const rotationZ = delta / 24;//32//40//48//2
-              const skew = delta / 30;//40//50//60//2.5
+              const rotationZ = delta / 32;//24//40//48//2
+              const skew = delta / 40;//30//50//60//2.5
               context.style[transformPrefix] = `translate3d(0, ${transform}px, 0) rotateZ(${rotationZ}deg) skew(${skew}deg)`;
             },
           },
