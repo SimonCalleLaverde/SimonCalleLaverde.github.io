@@ -1509,7 +1509,7 @@ a.header-hire-button {
   }
 }
 
-//----------------------------------Section Styles----------------------------------//
+//----------------------------------Menu Styles----------------------------------//
 
 // Logo
 .logo {
@@ -1839,7 +1839,7 @@ div.menu-mobile {
             color:darken(theme-color('rosybrown'),5);
             //letter-spacing:1px;//2px
             //@include transform(scale(1.03));
-            //@include animation(letterSpaceAnim 0.8s ease-out forwards);
+            //@include animation(letterSpacingAnim 0.8s ease-out forwards);
             // &::after {
             //   width:100%;
             //   right:auto;
@@ -2038,6 +2038,8 @@ div.menu-mobile {
     @include transform(translate(0,0));
   }
 }
+
+//----------------------------------Section Styles----------------------------------//
 
 // Home Hello Header
 header.home-hello-header {
