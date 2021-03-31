@@ -1470,7 +1470,7 @@ a.header-hire-button {
         @include transform(scale(1.1));//1.07
         > span {
           @include transform(rotate(360deg));//720deg (2 Rounds)
-          @include transition(transform ease-in-out 3s 5s);//10s//20s//After 5 sec staying there, staring at the button Lol
+          @include transition(transform ease-in-out 3s 5s);//10s//20s//After 5 sec staying there
           //@include animation(rotateAnim 10s linear);
         }
       }
@@ -1540,12 +1540,12 @@ a.header-hire-button {
     &::before {
       top:0;
       right:0;
-      @include transition(width 0.2s ease-in-out 0s);
+      //@include transition(width 0.2s ease-in-out 0s);
     }
     &::after {
       left:0;
       bottom:0;
-      @include transition(width 0.2s ease-in-out 0.4s);
+      //@include transition(width 0.2s ease-in-out 0.4s);
     }
     span {
       position:relative;
@@ -1561,12 +1561,12 @@ a.header-hire-button {
       &::after {
         right:-1px;
         bottom:0;
-        @include transition(height 0.2s ease-in-out 0.2s);
+        // @include transition(height 0.2s ease-in-out 0.2s);
       }
       &::before {
         left:-1px;
         top:0;
-        @include transition(height 0.2s ease-in-out 0.6s);
+        // @include transition(height 0.2s ease-in-out 0.6s);
       }
       display:block;
       //width:56px;
@@ -1625,30 +1625,34 @@ a.header-hire-button {
       //border-color:transparent;
       //@include transform(scale(1.05));
       &::before, &::after {
-        width:100%;
+        // width:100%;
       }
       &::before {
-        right:auto;
-        left:0;
+        // right:auto;
+        // left:0;
+        @include animation(logo1Anim 0.2s ease-in-out 0s forwards);
       }
       &::after {
-        right:0;
-        left:auto;
+        // right:0;
+        // left:auto;
+        @include animation(logo3Anim 0.2s ease-in-out 0.4s forwards);
       }
       span {
         color:darken(theme-color('rosybrown'),3);//#CE1352
         //border-color:transparent;
         //@include filter(opacity(0.6));
         &::before, &::after {
-          height:100%;
+          // height:100%;
         }
         &::after {
-          top:0;
-          bottom:auto;
+          // top:0;
+          // bottom:auto;
+          @include animation(logo2Anim 0.2s ease-in-out 0.2s forwards);
         }
         &::before {
-          top:auto;
-          bottom:0;
+          // top:auto;
+          // bottom:0;
+          @include animation(logo4Anim 0.2s ease-in-out 0.6s forwards);
         }
       }
     }
