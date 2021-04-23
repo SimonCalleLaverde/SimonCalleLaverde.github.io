@@ -1423,7 +1423,7 @@ a.header-hire-button {
       @include transition(width ease-in-out 0.2s);//transform ease-in-out 0.4s
     }
     &:after {
-      border:1px dashed theme-color('chocolate');//rosybrown//dotted
+      border:1px dotted theme-color('chocolate');//rosybrown//dashed
       @include animation(rotateAnim 40s linear infinite);//Rotating just dotted circle
     }
   }
