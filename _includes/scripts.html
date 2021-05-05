@@ -10,7 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
 {% endunless %}
 
-<!--TweenMax For Trail Image Effect, Gsap 3 Missed Some Variables For Code To Work Fine-->
+<!--TweenMax For Trail Image Effect | Gsap 3 Misses Some Variables, Works Properly With Older TweenMax-->
 {% if page.slug == "projects" %}
 	<script src="{{ '/assets/js/TweenMax.min.js' | relative_url }}" type="text/javascript"></script>
 {% endif %}
@@ -25,13 +25,13 @@
 <!--Imagesloaded | imagesloaded.desandro.com-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
 
-<!--Hero Rotate Animation (Only For Home)-->
+<!--Hero Rotate Animation & Header Image 3D (Only For "Home" Page)-->
 {% if page.slug == "home" %}
 	<script src="{{ '/assets/js/home_hero_rotate_animation.js' | relative_url }}" type="text/javascript"></script>
 	<script src="{{ '/assets/js/home_header_image_3d.js' | relative_url }}" type="text/javascript"></script>
 {% endif %}
 
-<!--Trail Image Effect (Only For Projects)-->
+<!--Trail Image Effect (Only For "Projects" Page)-->
 {% if page.slug == "projects" %}
 	<script src="{{ '/assets/js/projects_trail_image_effect.js' | relative_url }}" type="text/javascript"></script>
 {% endif %}

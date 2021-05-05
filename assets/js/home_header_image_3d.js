@@ -9,8 +9,8 @@
 //   let xAxis = (window.innerWidth / 2 - e.pageX) / 15;
 //   let yAxis = (window.innerHeight / 2 - e.pageY) / 15;
 
-//   //xAxis = xAxis * (-1);//Making "xAxis" Negative
-//   yAxis = yAxis * (-1);//Making "yAxis" Negative//Inverted Y Axis
+//   xAxis = xAxis * (-1);//Making "xAxis" Negative
+//   //yAxis = yAxis * (-1);//Making "yAxis" Negative//Inverted Y Axis
 
 //   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 // });
@@ -30,5 +30,5 @@
 
 //----------------------------------CLOSURE COMPILE SERVICE (MINIFIED)----------------------------------//
 
-var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,b){a.raw=b;return a};var container=document.querySelector(".home-hello-header .container"),card=document.querySelector(".header-3d");container.addEventListener("mousemove",function(a){card.style.transform="rotateY("+(window.innerWidth/2-a.pageX)/15+"deg) rotateX("+(window.innerHeight/2-a.pageY)/15*-1+"deg)"});
+var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,b){a.raw=b;return a};var container=document.querySelector(".home-hello-header .container"),card=document.querySelector(".header-3d");container.addEventListener("mousemove",function(a){card.style.transform="rotateY("+(window.innerWidth/2-a.pageX)/15*-1+"deg) rotateX("+(window.innerHeight/2-a.pageY)/15+"deg)"});
 container.addEventListener("mouseenter",function(a){card.style.transition="all 0.5s ease-out"});container.addEventListener("mouseleave",function(a){card.style.transform="rotateY(0deg) rotateX(0deg)";card.style.transition="all 0.5s ease-in"});
