@@ -1599,7 +1599,7 @@ a.header-hire-button {
       display:block;
       //width:56px;
       //height:50px;
-      padding:3px 5px 1px;
+      padding:4px 5px 2px;//3px 5px 1px
       color:theme-color('chocolate');
       border:1px solid theme-color('chocolate');
       @include transition(filter ease-out 1s, color ease-in-out 0.5s, border-color ease-in-out 0.5s);
@@ -1698,7 +1698,7 @@ a.header-hire-button {
   .logo {
     a {
       span {
-        padding:3px 5px 2px;
+        padding:4px 5px 3px;//3px 5px 2px
       }
     }
     @include transform-origin(top left);
@@ -1709,7 +1709,7 @@ a.header-hire-button {
   .logo {
     a {
       span {
-        padding:3px 5px 3.3px;
+        padding:4px 5px 4.3px;//3px 5px 3.3px
       }
     }
     @include transform(scale(0.85));
