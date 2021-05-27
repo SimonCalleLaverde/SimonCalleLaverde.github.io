@@ -1418,7 +1418,7 @@ a.header-hire-button {
       right:0;
       bottom:0;
       left:0;
-      @include animation(rotateAnim 40s linear reverse infinite);
+      @include animation(rotateAnim 30s linear reverse infinite);//40s
     }
   }
   .hire-button-circle {
