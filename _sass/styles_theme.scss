@@ -1599,7 +1599,7 @@ a.header-hire-button {
       display:block;
       //width:56px;
       //height:50px;
-      padding:4px 5px 2px;//3px 5px 1px
+      padding:4px 3px 2px 4px;//4px 5px 2px//3px 5px 1px
       color:theme-color('chocolate');
       border:1px solid theme-color('chocolate');
       @include transition(filter ease-out 1s, color ease-in-out 0.5s, border-color ease-in-out 0.5s);
