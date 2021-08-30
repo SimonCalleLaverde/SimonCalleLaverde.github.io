@@ -1,0 +1,47 @@
+<section class="content-todo-list text-center d-flex flex-row justify-content-center align-items-center px-4 px-md-0 pt-4 pt-md-5 pb-4more clearfix" data-scene>
+  <div class="container">
+
+    <div class="row pb-4">
+      <div class="col-md-8 offset-md-2">
+
+        <h1 class="font-headline text-stroke-grey-dark text-huge text-uppercase d-inline-block pb-5">
+          {{ page.headline | default:page.title }}
+        </h1>
+
+        <div class="mb-5">
+          {{ content }}
+        </div>
+
+
+
+        <form class="d-flex flex-row align-items-center">
+          <input class="todo-input" type="text" name="">
+
+          <button class="todo-button" type="submit">
+            <!--<i class="fab fa-octopus-deploy"></i>-->
+            <!--fas fa-mug-hot-->
+            <!--<i class="fab fa-creative-commons-sampling-plus"></i>-->
+            <i class="fas fa-plus-square"></i>
+          </button>
+
+          <div class="select">
+            <select name="todos" class="filter-todo">
+              <option value="all">All</option>
+              <option value="completed">Completed</option>
+              <option value="uncompleted">Uncompleted</option>
+            </select>
+          </div>
+        </form>
+
+        <div class="todo-container d-flex d-row justify-content-center align-items-center">
+          <ul class="todo-ul">
+          </ul>
+        </div>
+
+
+
+      </div>
+    </div>
+    
+  </div>
+</section>

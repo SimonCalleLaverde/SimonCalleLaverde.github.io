@@ -15,6 +15,9 @@ layout: "main"
 	{% include workflow/workflow_tools_headline_section.html %}
 	{% include workflow/workflow_tools_technology_section.html %}
 
+{% elsif page.slug == "todo_list_javascript" %}
+	{% include content_todo_list_javascript.html %}
+
 {% else %}
 
   {% include content_simple.html %}

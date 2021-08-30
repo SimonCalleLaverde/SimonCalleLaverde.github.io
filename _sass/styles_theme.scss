@@ -2819,6 +2819,150 @@ section.feedback-page {
   }
 }
 
+
+
+// Content Todo List (Section)
+section.content-todo-list {
+  min-height:100vh;
+  // display:flex;
+  // flex-direction:row;
+  // justify-content:center;
+  // align-items:center;
+  form {
+    input.todo-input, button.todo-button {
+      padding:0.5rem 20px;
+      background-color:transparent;
+      border:1px solid theme-color("grey-dark");
+    }
+    input.todo-input {
+      width:78%;//calc(76.9% - 7px)
+      height:60px;
+      //margin-right:7px;//1%
+      font-size:2rem;
+      border-right:none;
+    }
+    button.todo-button {
+      width:22%;//23.1%
+      height:60px;
+      //min-width:70px;
+      font-size:2.2rem;//Gives some "line-height" space for now to center it vertically
+      color:theme-color("aqua");
+      //cursor:pointer;
+      line-height:1.1;
+      @include transition(all ease-in-out 0.5s);
+      > i.fas {
+        font-size:1.7rem;
+        pointer-events:none;
+        @include transform(translateY(-3px))
+      }
+      &:hover, &:active, &:focus {
+        background-color:theme-color("grey-light");
+        color:theme-color("cherry");
+        border-color:theme-color("grey-light");
+      }
+    }
+    div.select {//.form-group
+      position:relative;
+      margin:1rem;
+      margin-right:0;
+      //overflow:hidden;
+      &::after {
+        content:"\25BC";//Carret
+        position:absolute;
+        padding:1.1rem 1rem 0.6rem;
+        top:0;
+        right:0;
+        bottom:0;
+        background-color:theme-color("aqua");
+        color:theme-color("beige");
+        pointer-events:none;
+        @include transition(all ease-in-out 0.5s)
+      }
+      > select {
+        width:182px;//10rem
+        height:60px;
+        padding:1rem 1rem 0.7rem;
+        color:theme-color("aqua");
+        border:none;
+        outline:none;
+        -webkit-appearance:none;//Create mixin?
+        -moz-appearance:none;//Create mixin?
+        appearance:none;//Create mixin?
+        cursor:pointer;
+        //@include box-shadow(none);
+        > option {
+        }
+      }
+      &:hover {
+        &::after {
+          background-color:theme-color("cherry");
+          color:theme-color("beige");
+        }
+      }
+    }
+  }
+  .todo-container {
+    ul.todo-ul {
+      width:100%;
+      padding-left:0;
+      list-style-type:none;
+      div.todo-div {
+        margin:0.4rem 0;
+        font-size:1.5rem;
+        display:-webkit-box;//For less importance than @extend
+        display:-ms-flexbox;//For less importance than @extend
+        display:-webkit-flex;//For less importance than @extend
+        display:flex;//For less importance than @extend
+        //@extend .d-flex;
+        @extend .flex-row;
+        @extend .justify-content-between;
+        @extend .align-items-center;
+        @include transition(all ease-in-out 0.5s);
+        &.done {//&.completed
+          text-decoration:line-through;
+          @include filter(opacity(0.5));
+        }
+        &.fall {
+          @include filter(opacity(0));
+          @include transform(translateY(8rem) rotateZ(20deg));
+        }
+        li.todo-item {
+          flex:1;//Pushes Buttons To The Right
+          padding:0 1rem;
+          height:65.5px;
+          background-color:#FFF;
+          color:theme-color("aqua");
+          text-align:left;
+          @extend .d-flex;
+          @extend .flex-row;
+          @extend .align-items-center;
+        }
+        button.btn-complete, button.btn-trash {
+          width:11%;
+          padding:0.7rem;
+          background-color:orange;
+          border:none;
+          > i.fas {
+            //font-weight:lighter;
+            font-size:1.2rem;
+            color:theme-color("aqua");
+            pointer-events:none;
+            @include transform(translateY(-2px));
+          }
+        }
+        button.btn-complete {
+          background-color:theme-color("aqua");
+          > i.fas {
+            color:#FFF;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 // Footer
 footer {
   margin:0;
