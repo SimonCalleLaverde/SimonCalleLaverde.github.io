@@ -45,7 +45,7 @@ description_short_twitter_200_characters: >- # this means to ignore newlines unt
   use copywriting, good design, and strategy to persuade people to take
   action.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://simonsweb.design" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://simoncallelaverde.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_repository: SimonCalleLaverde/SimonCalleLaverde.github.io
 
 # Social Media & Communication [Simón Calle Laverde]
