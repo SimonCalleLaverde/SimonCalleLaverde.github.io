@@ -6,7 +6,7 @@ description: "Let me know something more about your project, your goals, and who
 permalink: /hire_a_project
 slug: hire_a_project
 type_slug: feedback
-header_image: "/uploads/header-image-hire-a-project.jpg"
+header_image: "/uploads/header-image-feedback.jpg"
 ---
 
 <span class="font-light">

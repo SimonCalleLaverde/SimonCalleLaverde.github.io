@@ -3330,10 +3330,6 @@ body.page-type-basic.projects {
 
 // Feedback Page (Hire A Project)
 body.page-type-feedback.hire_a_project {
-}
-
-// Feedback Page (Contact Me)
-body.page-type-feedback.contact_me {
   $base-color-azalea:theme-color('azalea');
   .logo {
     a {
@@ -3371,6 +3367,10 @@ body.page-type-feedback.contact_me {
   //     }
   //   }
   // }
+}
+
+// Feedback Page (Contact Me)
+body.page-type-feedback.contact_me {
 }
 
 // Feedback Page (Hire A Project & Contact Me)
@@ -3470,7 +3470,7 @@ body.page-type-feedback {
 // }
 
 // Theme Dark
-body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-type-feedback.theme-dark, body.page-type-basic.is-bottom, body.page-type-project.is-bottom, body.page-type-feedback.hire_a_project, body.page-type-basic.theme-dark-mobile-wide, body.page-type-project.theme-dark-mobile-wide, body.page-type-feedback.theme-dark-mobile-wide {//.hire_a_project
+body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-type-feedback.theme-dark, body.page-type-basic.is-bottom, body.page-type-project.is-bottom, body.page-type-feedback.contact_me, body.page-type-basic.theme-dark-mobile-wide, body.page-type-project.theme-dark-mobile-wide, body.page-type-feedback.theme-dark-mobile-wide {//.hire_a_project
   $base-color-dark:theme-color('grey-mid');//theme-color('azalea')
   .logo {
     a {
