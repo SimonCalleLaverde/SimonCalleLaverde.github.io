@@ -2529,9 +2529,9 @@ header.about-header {
       }
       > div {
         span.about-header-info {
+          //top:55px;
           right:-24px;//-23px
-          top:55px;//bottom:26px//11px
-          bottom:auto;
+          bottom:26px;//55px//auto//26px//11px
           //color:theme-color('chocolate')!important;
           //mix-blend-mode:difference;
           @include transform(rotate(90deg));
