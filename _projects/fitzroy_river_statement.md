@@ -7,7 +7,7 @@ thumbnail_image: /uploads/site-image-fitzroy-river-statement.jpg
 header_image: /uploads/site-image-fitzroy-river-statement.jpg
 platforms: [NationBuilder, Bootstrap 3]
 year: 2017
-roles: [Frontend development, Design improvised to match older site's feel] # feel of client's statement site
+roles: [Frontend development, Design improvisation matching older site] # feel of client's statement site
 web:
   launch_url: http://www.fitzroystatement.org
   images:
