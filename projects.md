@@ -10,7 +10,7 @@ header_image: "/uploads/header-image-projects.jpg"
 
 Hi there!
 
-I'm showcasing a bunch of projects I had the opportunity<!-- got--> to work on in the past years.
+Here I'm showcasing some projects I had the opportunity<!-- got--> to work on in the past years.
 
 The first two projects are some experimental which I worked recently (during those pandemic times) as independent doing UI design and development completely.
 
