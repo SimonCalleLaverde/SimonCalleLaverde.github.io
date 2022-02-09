@@ -406,8 +406,8 @@
             display:inline-block;
             position:absolute;
             top:2px;//-0.5px//4.5px
-            right:-17px;//-19.5px//-20.5px
-            font-size:8px;//9px//10px
+            right:-18px;//-19.5px//-20.5px
+            font-size:9px;//8px
             color:theme-color('chocolate');
             @include transition(color ease-out 0.5s);
           }

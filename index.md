@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Simón Calle Laverde - Portfolio 2020
+title: Simón Calle Laverde - Portfolio 2021
 headline: Simón Calle Laverde
 permalink: /
 slug: home
