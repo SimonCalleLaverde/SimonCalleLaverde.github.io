@@ -193,25 +193,25 @@
 
         <li class="nav-item">
           <a class="link nav-link link-line-throught link-page-load{% if page.slug == 'about' %} active-link{% endif %}" href="javascript:delay('/about')">
-            <span>About me</span>
+            <span>About<!-- me--></span>
           </a>
         </li>
 
         <li class="nav-item">
           <a class="link nav-link link-line-throught link-page-load{% if page.slug == 'projects' %} active-link{% endif %}" href="javascript:delay('/projects')">
-            <span>All projects</span>
+            <span><!--All p-->Projects</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="link nav-link link-line-throught link-page-load{% if page.slug == 'contact_me' %} active-link{% endif %}" href="javascript:delay('/contact_me')"><!--if page.type_slug == 'feedback'-->
+            <span>Contact<!-- me--></span>
           </a>
         </li>
 
         <li class="nav-item">
           <a class="link nav-link link-line-throught link-page-load{% if page.slug == 'hire_a_project' %} active-link{% endif %}" href="javascript:delay('/hire_a_project')">
             <span>Hire a project</span>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="link nav-link link-line-throught link-page-load{% if page.slug == 'contact_me' %} active-link{% endif %}" href="javascript:delay('/contact_me')"><!--if page.type_slug == 'feedback'-->
-            <span>Contact me</span>
           </a>
         </li>
       </ul>
