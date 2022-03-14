@@ -14,7 +14,7 @@ web:
     - /uploads/site-web-fitzroy-river-statement.png
 type: Campaigning Platform
 category: Development for Code Nation Australia
-tags: [Campaign Platform, Campaign Featured, Theme Dark]
+tags: [Campaign Platform, Theme Dark]
 type_slug: project
 order: 19
 ---

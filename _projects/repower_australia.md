@@ -12,7 +12,7 @@ web:
   launch_url: https://www.repoweraustralia.org.au/
   images:
     - /uploads/site-web-repower-australia.png
-type: Infographic Campaign Website & Reed Awards Winner 2019
+type: Infographic Campaigning Website / Reed Awards Winner 2019
 category: Development for Code Nation Australia
 tags: [Campaign Platform, Campaign Featured, Theme Dark, Award Winner Website]
 content_two_left: "I handled to add as a bonus as part of some extra time, some clean animations and cool effects like every element entering from the sides or fading in, to make the site and content easier to consume."

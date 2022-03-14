@@ -22,9 +22,9 @@ web:
     - /uploads/site-web-jomaira-imagen-09.png
     - /uploads/site-web-jomaira-imagen-10.png
   image_fonts: /uploads/style-guide-image-jomaira-imagen.png
-type: Business Website & Blog
+type: Portfolio Website & Blog
 category: Recent Independent Project
-tags: [Business Website, Business Recent, Theme Dark]
+tags: [Portfolio Website, Business Featured, Theme Dark]
 content_two_left: "The site is almost ready to launch. I delivered the site and backend, the owner
   is organizing some articles, videos, photos, and content, with the lockdown having delayed the"
 content_two_right: "planned launch a bit. We will later set the site live in the current domain:

@@ -14,7 +14,7 @@ web:
     - /uploads/site-web-time-for-melbournes-west.png
 type: Campaigning Platform
 category: Developed a part for Code Nation Australia
-tags: [Campaign Platform, Campaign Featured, Theme Dark]
+tags: [Campaign Platform, Theme Dark]
 type_slug: project
 order: 16
 ---

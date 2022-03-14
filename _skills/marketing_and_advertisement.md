@@ -3,6 +3,12 @@ title: <span class="d-none d-md-block">Marketing<br>& Advertising</span><span cl
 order: 4
 ---
 
+<!--TO EXPLAIN NEXT-->
+{% comment %}
+<p><span class="font-light">Digital Marketing (To Explain Next)</span><br>...</p>
+{% endcomment %}
+
+<!--TO SHORTEN EVERYTHING-->
 <p><span class="font-light">Marketing & Advertising</span><br>I have a bachelor's degree as a <em class="font-ultra-light text-italic">Publicist</em> with a 5 year career and background focused in advertising, advertising design, campaigning, and marketing; including numerous exercises and projects on branding, public presentations and hundreds of individual and group projects creating ATL & BTL advertising, commercials, social media marketing campaigns, and even learning<!-- some digital marketing and--> some web design. I put an important focus on the psychology of persuasion underpinning communication, <!--ads, -->copy, slogans, and promotional text. My background involves a deep understanding of the importance of visual semiotics and linguistics, creating messages and visual designs that touch on human emotions and ultimately generate action.</p>
 
 <p><span class="font-light">Branding & Identity</span><br>Branding was a big focus in my career, we analyzed everything about brands and the phychology around all their marketing, each advertizing piece and the why of everything, from a logo to a full advertising campaign.<!-- <small class="font-ultra-light">- Even the colors i.e. in Mc Donals were decided by phychologists and publicists, and they have a why, they let you a sense of eagerness so you eat and go, you don't stay too much there; just one of thousands of examples. -</small>--> We analyzed and created concept logos from scratch, color schemes, and brands, studying color theory and experimenting with color psychology, as well as understanding the elements that compose a logo which is in simple words: Reducing a brand to its minimal visual components. I can help you build a strong brand conceptual and visual identity that reflects your company's culture and feel. Branding encompasses much more than just a logo or graphic design, it goes into the whole experience and the brand's recognition and positioning in people's minds.</p>
