@@ -136,7 +136,7 @@ figure {
   outline:none!important;
 }
 .scale-element {
-  will-change:transform;
+  //will-change:transform;
   //@include box-shadow(0 2px 7px rgba(0,0,0,0.1)!important);//Starting With Slight Shadow (Optional)
   @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
   &:hover {
@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
 // Luxy, Rolly
 #luxy, #rolly {
   z-index:2;
-  will-change:transform;
+  //will-change:transform;
 }
 
 // Header Image
@@ -1278,7 +1278,7 @@ aside.header-copyright {
 
 // Show It, Hide It
 .show-it, .hide-it {
-  will-change:filter;
+  //will-change:filter;
   @include transition(filter ease-in-out 0.7s);
 }
 .show-it {
@@ -1523,7 +1523,7 @@ a.header-hire-button {
     //border:1px solid theme-color('cherry');
     opacity:0;
     z-index:100;
-    will-change:transform;
+    //will-change:transform;
     //@include filter(sepia(1) saturate(1) contrast(180%) brightness(80%) hue-rotate(295deg));
   }
 }
@@ -1740,7 +1740,7 @@ aside.burger-mobile {
     width:1px;
     height:1px;
     margin:auto;
-    will-change:filter, transform;//background-color
+    //will-change:filter, transform;//background-color
     @include transform(translate(-0.5px,-0.5px));
     @include transition(filter ease-out 0.5s, transform ease-out 0.5s);//background-color ease-out 0.5s
     &:nth-child(1) {
@@ -1834,7 +1834,7 @@ div.menu-mobile {
     top:30px;
     right:21px;//31px//34px
     background-color:transparent;
-    will-change:width, height, background-color, transform;
+    //will-change:width, height, background-color, transform;
     @include border-radius(50%);
     @include transform-origin(top right);
     @include transition(width cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, height cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s, background-color cubic-bezier(0.455,0.03,0.515,0.955) 0s 0.6s, transform cubic-bezier(0.455,0.03,0.515,0.955) 0.5s 0.1s);
@@ -2381,7 +2381,8 @@ section.home-see-all-projects-section {
       min-width:5000px;
       color:theme-color('rosybrown')!important;
       -webkit-text-stroke:1px theme-color('rosybrown');
-      @include transform(translateX(-1500px));//Will be replaced by "laxxx.js" transform
+      //will-change:transform;
+      @include transform(translateX(-580px));//Will be replaced by "laxxx.js" transform
       &:hover, &:active, &:focus {
         color:transparent!important;
         //-webkit-text-stroke-color:theme-color('rosybrown');

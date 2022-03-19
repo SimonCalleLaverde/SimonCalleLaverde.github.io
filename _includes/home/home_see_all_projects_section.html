@@ -1,10 +1,16 @@
 <section class="home-see-all-projects-section d-none d-md-block clearfix" id="see_all_projects_section" data-scene><!--data-scene="rotateZ"-->
 	<div class="container">
 
+		<!--It Starts When "Top Of Element" Is 'vh + 100px' From The "Top Of Viewport". The 100px Is To Not Do It At The Very Edge, Starting 100px Before Element Shows-->
+		<!--When It Starts It's Moved '580px' Left Instantly, To Be Roughly Centered-->
+		<!--It Will Move 200px Over To '780px'-->
+		<!--It Will Stop When "Top Of Viewport" Is At '-215px' From "Top Of Element", Being Element '115px' Height, So To Not End At The Very Edge, But Passed 100px Of The Whole Element-->
+		<!--Matching '-580px' TranslateX In Styles, So It Doesn't Jump (As Much)-->
 		<div class="see-all-projects-link-track font-headline text-hero text-uppercase">
-			<a href="javascript:delay('/projects')" class="text-rosybrown lax link-page-load" data-lax-translate-x_xs="vh -1500, -120 -1700" data-lax-translate-x_sm="vh -1500, -120 -1700" data-lax-translate-x_md="vh -1500, -120 -1700" data-lax-translate-x_lg="vh -1500, -120 -1700" data-lax-translate-x_xl="vh -1500, -120 -1700" data-lax-anchor="self"><!--href="/projects"-->
-				All Projects - See All Projects - See All Projects - See
+			<a href="javascript:delay('/projects')" class="text-rosybrown lax link-page-load" data-lax-translate-x_md="(vh+100) -580, -215 -780" data-lax-translate-x_lg="(vh+100) -580, -215 -780" data-lax-translate-x_xl="(vh+100) -580, -215 -780" data-lax-anchor="self"><!--href="/projects"-->
+				All Projects - See All Projects - See All Projects
 			</a>
+			<!--data-lax-translate-x_xs="(vh+100) -580, -215 -780" data-lax-translate-x_sm="(vh+100) -580, -215 -780"-->
 		</div>
 
 	</div>
