@@ -20,17 +20,33 @@
         </div>
       </div>
 
-      <div class="col-12 col-lg-9 offset-lg-1 col-xl-10 offset-xl-0 mt-4">
-        <div class="mb-4more">
-          <button class="btn btn-read-more" data-toggle="modal" data-target="#disclaimerModal">
-            Disclaimer
-          </button>
-        </div>
-
-        <div>
+      <!--Desktop-->
+      <div class="col-md-12 col-lg-9 offset-lg-1 col-xl-10 offset-xl-0 mt-2 d-none d-md-block">
+        <div class="projects-header-buttons mt-1">
           <button class="btn btn-read-more" data-toggle="modal" data-target="#adventuresModal">
             My most recent adventures
           </button>
+
+          <button class="btn btn-read-more ml-4" data-toggle="modal" data-target="#disclaimerModal">
+            Disclaimer
+          </button>
+        </div>
+      </div>
+
+      <!--Mobile-->
+      <div class="col-12 mt-2 d-block d-md-none">
+        <div class="projects-header-buttons">
+          <div class="mt-1 mb-4">
+            <button class="btn btn-read-more" data-toggle="modal" data-target="#adventuresModal">
+              My most recent adventures
+            </button>
+          </div>
+
+          <div class="mb-3">
+            <button class="btn btn-read-more" data-toggle="modal" data-target="#disclaimerModal">
+              Disclaimer
+            </button>
+          </div>
         </div>
       </div>
     </div>

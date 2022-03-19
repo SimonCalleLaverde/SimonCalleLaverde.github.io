@@ -2378,14 +2378,16 @@ section.home-see-all-projects-section {
     > a {
       display:block;
       padding:22px 0 3px;
-      min-width:5000px;
+      //min-width:5000px;
       color:theme-color('rosybrown')!important;
+      white-space:nowrap;
       -webkit-text-stroke:1px theme-color('rosybrown');
       //will-change:transform;
       @include transform(translateX(-580px));//Will be replaced by "laxxx.js" transform
       &:hover, &:active, &:focus {
         color:transparent!important;
         //-webkit-text-stroke-color:theme-color('rosybrown');
+        @include transition(all ease-out 0.5s 0.2s);//Adding 0.2s Delay In Hover//0.1s
       }
     }
   }
@@ -2683,7 +2685,7 @@ header.projects-header {
       }
     }
   }
-  .projects-header-headline, .projects-header-intro {
+  .projects-header-headline, .projects-header-intro, .projects-header-buttons {
     padding-left:30px;
     padding-right:30px;
   }
@@ -2736,7 +2738,7 @@ header.projects-header {
         top:-9.7%;//-41px
       }
     }
-    .projects-header-headline, .projects-header-intro {
+    .projects-header-headline, .projects-header-intro, .projects-header-buttons {
       padding-left:15px;
       padding-right:15px;
     }
