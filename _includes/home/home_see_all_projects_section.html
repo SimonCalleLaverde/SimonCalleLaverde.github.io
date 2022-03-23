@@ -1,17 +1,42 @@
+<!--Making "See All Projects" an 'automatic-infinite-loop-slide', instead of 'on-scroll-only' with "laxxx.js" as it was-->
+<!--Based on this codepen "https://codepen.io/GreenSock/pen/rNGxEvq" or same example here "https://greensock.com/forums/topic/28289-question-of-infinite-text-animation/" (by 'Cassie')-->
+<!--Using "Green Sock Animation Platform"-->
+
 <section class="home-see-all-projects-section d-none d-md-block clearfix" id="see_all_projects_section" data-scene><!--data-scene="rotateZ"-->
 	<div class="container">
 
-		<!--It Starts When "Top Of Element" Is 'vh + 100px' From The "Top Of Viewport". The 100px Is To Not Do It At The Very Edge, Starting 100px Before Element Shows-->
-		<!--When It Starts It's Moved '580px' Left Instantly, To Be Roughly Centered-->
-		<!--It Will Move 200px Over To '780px'-->
-		<!--It Will Stop When "Top Of Viewport" Is At '-215px' From "Top Of Element", Being Element '115px' Height, So To Not End At The Very Edge, But Passed 100px Of The Whole Element-->
-		<!--Matching '-580px' TranslateX In Styles, So It Doesn't Jump (As Much)-->
-		<div class="see-all-projects-link-track font-headline text-hero text-uppercase">
-			<a href="javascript:delay('/projects')" class="text-rosybrown lax link-page-load" data-lax-translate-x_md="(vh+100) -580, -215 -780" data-lax-translate-x_lg="(vh+100) -580, -215 -780" data-lax-translate-x_xl="(vh+100) -580, -215 -780" data-lax-anchor="self"><!--href="/projects"-->
-				All Projects - See All Projects - See All Projects
+		<!--[No Longer Using Laxxx.js]-->
+		<!--It starts when "Top Of Element" is 'vh + 100px' from the "Top Of Viewport". The 100px is to not do it at the very edge, starting 100px before element shows. When it starts it's moved '580px' left instantly, to have "See All Projects" words roughly centered. It will move 200px over to '780px'. It will stop when "Top Of Viewport" is at '-215px' from "Top Of Element", being element '115px' height, so to not end at the very edge (again), but passed 100px of the whole element-->
+		<!--Matching '-580px' translateX in styles, so it doesn't jump (as much)-->
+		<div class="see-all-projects-link-track font-headline text-hero text-uppercase"><!--"text-marquee"-->
+			<a href="javascript:delay('/projects')" class="text-rosybrown link-page-load"><!--text-single--><!--lax--><!--href="/projects"--><!--Was: data-lax-translate-x_md="(vh+100) -580, -215 -780" data-lax-translate-x_lg="(vh+100) -580, -215 -780" data-lax-translate-x_xl="(vh+100) -580, -215 -780" data-lax-anchor="self"-->
+				<!-- All Projects - See All Projects - See All Projects -->
+
+				<span>See All Projects -</span><!--text-piece--><!--js-text-->
+	    	<span>See All Projects -</span><!--text-piece--><!--js-text-->
+	    	<span>See All Projects -</span><!--text-piece--><!--js-text-->
+	    	<span>See All Projects -</span><!--text-piece--><!--js-text-->
+	    	<span>See All Projects -&nbsp;</span><!--text-piece--><!--js-text--><!--"&nbsp;" to compensate for "display:inline-block's" spacing. Other fix is to use comment between each line joining them together-->
+
 			</a>
-			<!--data-lax-translate-x_xs="(vh+100) -580, -215 -780" data-lax-translate-x_sm="(vh+100) -580, -215 -780"-->
+			<!--Removed Mobile: data-lax-translate-x_xs="(vh+100) -580, -215 -780" data-lax-translate-x_sm="(vh+100) -580, -215 -780"-->
 		</div>
 
 	</div>
 </section>
+
+<!--Based off GreenSock's pen here: "https://codepen.io/GreenSock/pen/jOBBVjr"-->
+
+<!--<div class="scroll-area"></div>
+
+<div class="text-marquee">
+  <div class="text-single">
+    <span class="text-piece js-text">SEE ALL PROJECTS 1 -</span>
+    <span class="text-piece js-text">SEE ALL PROJECTS 2 -</span>
+    <span class="text-piece js-text">SEE ALL PROJECTS 3 -</span>
+    <span class="text-piece js-text">SEE ALL PROJECTS 4 -</span>
+    <span class="text-piece js-text">SEE ALL PROJECTS 5 -</span>
+  </div>
+</div>
+
+<div class="scroll-area"></div>-->

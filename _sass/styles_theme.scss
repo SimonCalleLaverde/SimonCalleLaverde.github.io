@@ -2382,15 +2382,49 @@ section.home-see-all-projects-section {
       color:theme-color('rosybrown')!important;
       white-space:nowrap;
       -webkit-text-stroke:1px theme-color('rosybrown');
-      //will-change:transform;
-      @include transform(translateX(-580px));//Will be replaced by "laxxx.js" transform
+      will-change:transform;//Removed for "laxxx.js"//Added back for "automatic-infinite-loop-slide"
+      //@include transform(translateX(-580px));//Will be replaced by "laxxx.js" transform
+      @include transform(translateX(-1000px));//Used for "automatic-infinite-loop-slide" as well, so it doesn't jump and text doesn't disappear in front of eyes
+      > span {//From Example Below
+        display:inline-block;//Important
+        margin-right:0.2rem;//2rem
+      }
       &:hover, &:active, &:focus {
         color:transparent!important;
         //-webkit-text-stroke-color:theme-color('rosybrown');
-        @include transition(all ease-out 0.5s 0.2s);//Adding 0.2s Delay In Hover//0.1s
+        @include transition(all ease-out 0.5s 0.1s);//Adding 0.1s Delay In Hover
       }
     }
   }
+  // Changing To Use An "Automatic-Infinite-Loop-Slide"
+  // .scroll-area {
+  //   display:flex;//Example
+  //   justify-content:center;//Example
+  //   align-items:center;//Example
+  //   height:60vh;//Example
+  //   font-size:4rem;//Example
+  // }
+  // .text-marquee {//Same ".see-all-projects-link-track"
+  //   display:flex;//Example
+  //   align-items:center;//Example
+  //   position:relative;//Example
+  //   overflow-x:hidden;//Example
+  // }
+  // .text-single {//Same "a"
+  //   position:relative;//Example
+  //   margin:0;//Example
+  //   padding:0;//Example
+  //   white-space:nowrap;//Example
+  //   will-change:transform;//Example
+  // }
+  // .text-piece {//Same "span"
+  //   display:inline-block;//Example//Added Above! Only Two Styles I Needed From Example
+  //   margin-right:2rem;//Example//Added Above! Only Two Styles I Needed From Example
+  //   padding:0;//Example
+  //   font-family:arial;//Example
+  //   font-weight:bold;//Example
+  //   font-size:6.4rem;//Example
+  // }
 }
 
 // Home Three Phases Section
@@ -2826,11 +2860,11 @@ section.feedback-page {
 
 // Content Todo List (Section)
 section.content-todo-list {
-  min-height:100vh;
   // display:flex;
   // flex-direction:row;
   // justify-content:center;
   // align-items:center;
+  min-height:100vh;
   form {
     input.todo-input, button.todo-button {
       padding:0.5rem 20px;
